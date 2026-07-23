@@ -1,0 +1,115 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+
+type Locale = "en" | "zh";
+
+const copy = {
+  en: {
+    submit: "Send inquiry",
+    sending: "Sending...",
+    success: "Thank you. Your inquiry has been sent.",
+    error: "We could not send your inquiry. Please try again or email mkhsu2002@gmail.com.",
+  },
+  zh: {
+    submit: "送出洽詢",
+    sending: "傳送中...",
+    success: "謝謝，您的洽詢已成功送出。",
+    error: "目前無法送出，請稍後再試，或直接寄信至 mkhsu2002@gmail.com。",
+  },
+};
+
+export default function ContactForm({ locale = "en" }: { locale?: Locale }) {
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  async function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStatus("sending");
+    const form = event.currentTarget;
+    const data = Object.fromEntries(new FormData(form).entries());
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...data, locale }),
+      });
+      if (!response.ok) throw new Error("Request failed");
+      form.reset();
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  const zh = locale === "zh";
+
+  return <form className="contact-form" onSubmit={submit}>
+    <div className="form-grid two">
+      <label>{zh ? "姓名" : "Name"}<input name="name" required maxLength={100} /></label>
+      <label>{zh ? "公司／機構" : "Company / organization"}<input name="company" required maxLength={160} /></label>
+      <label>{zh ? "Email" : "Work email"}<input name="email" type="email" required maxLength={160} /></label>
+      <label>{zh ? "電話／WhatsApp（選填）" : "Phone / WhatsApp (optional)"}<input name="phone" maxLength={60} /></label>
+      <label>{zh ? "國家／地區" : "Country / region"}<input name="country" required maxLength={100} /></label>
+      <label>{zh ? "公司網站" : "Company website"}<input name="website" type="url" placeholder="https://" maxLength={240} /></label>
+    </div>
+
+    <label>{zh ? "您屬於哪一類型？" : "Which best describes your organization?"}
+      <select name="audience" required defaultValue="">
+        <option value="" disabled>{zh ? "請選擇" : "Select one"}</option>
+        <option value="global-supplier">{zh ? "全球機器人、無人機或關鍵零組件廠商" : "Global robotics, drone or critical-component supplier"}</option>
+        <option value="canadian-industry">{zh ? "加拿大本土相關業者、整合商或終端使用者" : "Canadian integrator, operator or industry buyer"}</option>
+        <option value="research-investment">{zh ? "研究機構、投資人或產業組織" : "Research, investment or industry organization"}</option>
+        <option value="other">{zh ? "其他" : "Other"}</option>
+      </select>
+    </label>
+
+    <div className="form-grid two">
+      <label>{zh ? "主要產品／技術領域" : "Primary product / technology area"}
+        <select name="technology" required defaultValue="">
+          <option value="" disabled>{zh ? "請選擇" : "Select one"}</option>
+          <option value="components">{zh ? "關鍵零組件與子系統" : "Critical components and subsystems"}</option>
+          <option value="drones">{zh ? "無人機與任務酬載" : "Drones and mission payloads"}</option>
+          <option value="mobile-robots">{zh ? "AMR、UGV、四足或人形機器人" : "AMR, UGV, quadruped or humanoid robots"}</option>
+          <option value="sensors-ai">{zh ? "感測器、邊緣 AI、導航與機器視覺" : "Sensors, edge AI, navigation and machine vision"}</option>
+          <option value="services">{zh ? "系統整合、軟體或產業服務" : "Integration, software or industry services"}</option>
+          <option value="other">{zh ? "其他" : "Other"}</option>
+        </select>
+      </label>
+      <label>{zh ? "目前合作階段" : "Current stage"}
+        <select name="stage" required defaultValue="">
+          <option value="" disabled>{zh ? "請選擇" : "Select one"}</option>
+          <option value="exploring">{zh ? "初步了解加拿大市場／尋找技術" : "Early market or technology exploration"}</option>
+          <option value="partner-search">{zh ? "尋找通路、整合商或合作夥伴" : "Searching for partners, channels or integrators"}</option>
+          <option value="pilot">{zh ? "已有潛在客戶，準備 PoC／Pilot" : "Preparing a PoC or pilot"}</option>
+          <option value="representation">{zh ? "尋找長期市場開發或在地代表" : "Seeking ongoing market development or representation"}</option>
+          <option value="sourcing">{zh ? "尋找亞洲供應商或解決方案" : "Sourcing Asian suppliers or solutions"}</option>
+        </select>
+      </label>
+    </div>
+
+    <fieldset>
+      <legend>{zh ? "您希望獲得哪些協助？（可複選）" : "What support are you looking for? (Select all that apply)"}</legend>
+      <div className="check-grid">
+        {[['market-research', zh ? '加拿大市場研究與機會評估' : 'Canadian market research and opportunity assessment'],['partner-discovery', zh ? '合作夥伴、通路或客戶開發' : 'Partner, channel or customer development'],['supplier-sourcing', zh ? '亞洲供應商與技術搜尋' : 'Asian supplier and technology sourcing'],['technical-translation', zh ? '技術與商務溝通協調' : 'Technical-commercial translation'],['pilot', zh ? 'PoC／Pilot 規劃與協調' : 'PoC / pilot planning and coordination'],['representation', zh ? '持續性加拿大市場開發' : 'Ongoing Canadian market development']].map(([value,label]) => <label className="check" key={value}><input type="checkbox" name="support" value={value} />{label}</label>)}
+      </div>
+    </fieldset>
+
+    <label>{zh ? "請簡述產品、需求與希望達成的目標" : "Tell us about your product, requirements and desired outcome"}
+      <textarea name="message" required minLength={20} maxLength={3000} rows={8} />
+    </label>
+
+    <div className="form-grid two">
+      <label>{zh ? "預計時程" : "Expected timeline"}<input name="timeline" placeholder={zh ? "例如：3–6 個月" : "e.g. 3–6 months"} maxLength={100} /></label>
+      <label>{zh ? "如何得知 FlyPig AI？" : "How did you hear about FlyPig AI?"}<input name="referral" maxLength={160} /></label>
+    </div>
+
+    <label className="honeypot" aria-hidden="true">Website<input name="company_site" tabIndex={-1} autoComplete="off" /></label>
+
+    <div className="form-submit">
+      <button className="pill primary" type="submit" disabled={status === "sending"}>{status === "sending" ? copy[locale].sending : copy[locale].submit}</button>
+      {status === "success" && <p className="form-message success">{copy[locale].success}</p>}
+      {status === "error" && <p className="form-message error">{copy[locale].error}</p>}
+    </div>
+  </form>;
+}
