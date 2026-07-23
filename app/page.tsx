@@ -22,19 +22,19 @@ export default function HomePage() {
       <a className="pill secondary" href="mailto:hello@flypigai.ca?subject=Canadian Market Development">Start a conversation</a>
     </header>
 
-    <section className="hero">
-      <div className="shell hero-grid">
-        <div>
+    <section className="hero home-hero">
+      <div className="shell hero-grid home-hero-grid">
+        <div className="home-hero-copy">
           <p className="eyebrow">Robotics · Drones · Autonomy · Canada</p>
-          <h1>Bringing advanced robotics technologies into Canadian industry.</h1>
-          <p className="lead">FlyPig AI supports market development, industry partnerships and commercialization for robotics, drone and critical-component companies seeking meaningful opportunities in Canada.</p>
+          <h1>Advanced robotics technologies. Real market opportunity in Canada.</h1>
+          <p className="lead">FlyPig AI supports market development, industry partnerships and commercialization for robotics, drone and critical-component companies entering Canada.</p>
           <div className="actions">
             <a className="pill primary" href="mailto:hello@flypigai.ca?subject=Canadian Market Development">Explore the Canadian market</a>
             <a className="pill secondary" href="#capabilities">View capabilities</a>
             <a className="pill secondary" href="/insights">Read market insights</a>
           </div>
         </div>
-        <aside className="signal-card">
+        <aside className="signal-card home-signal-card">
           <p className="eyebrow">Market development focus</p>
           <div className="signal-line"><span>Market</span><strong>Canada</strong></div>
           <div className="signal-line"><span>Technology</span><strong>Robotics + autonomous systems</strong></div>
