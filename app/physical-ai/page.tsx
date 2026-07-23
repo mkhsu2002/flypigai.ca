@@ -21,7 +21,7 @@ export default function PhysicalAIPage() {
   return <main>
     <header className="shell nav">
       <a className="brand" href="/"><span className="mark">FP</span><span>FlyPig AI</span></a>
-      <nav className="navlinks"><a href="#services">Services</a><a href="#markets">Use cases</a><a href="#partners">Partners</a><a href="#about">About</a></nav>
+      <nav className="navlinks"><a href="#services">Services</a><a href="#markets">Use cases</a><a href="#partners">Partners</a><a href="/insights">Insights</a><a href="#about">About</a></nav>
       <a className="pill secondary" href="mailto:hello@flypigai.ca">Start a conversation</a>
     </header>
 
@@ -57,6 +57,10 @@ export default function PhysicalAIPage() {
     <section className="section shell">
       <div className="section-head"><div><p className="eyebrow">Deployment method</p><h2>Five steps from interest to operation.</h2></div><p className="section-copy">A disciplined sequence protects both the customer and the manufacturer. Every stage has explicit evidence, responsibilities and a decision gate.</p></div>
       <div className="process">{[["01","Assess","Map tasks, economics and risk."],["02","Select","Choose the right form factor and vendor."],["03","Pilot","Prove performance in a bounded scope."],["04","Integrate","Connect systems, people and controls."],["05","Operate","Monitor, support and improve."]].map(([n,t,d])=><div className="step" key={t}><span className="num">{n}</span><strong>{t}</strong><span>{d}</span></div>)}</div>
+    </section>
+
+    <section className="section shell">
+      <div className="section-head"><div><p className="eyebrow">FlyPig AI Insights</p><h2>Follow the operating layer—not only the machines.</h2></div><div><p className="section-copy">Our opening research series examines Canada's emerging Physical AI value chain, platform-agnostic robotics, infrastructure adoption and the gap between impressive hardware and reliable deployment.</p><div className="actions"><a className="pill secondary" href="/insights">Explore Physical AI insights</a></div></div></div>
     </section>
 
     <section id="partners" className="section shell">
