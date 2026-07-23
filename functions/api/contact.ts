@@ -29,9 +29,49 @@ function escapeHtml(value: unknown): string {
     .replaceAll("'", "&#039;");
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+
+function toOptionalString(value: unknown): string | undefined {
+  return typeof value === "string" ? value : undefined;
+}
+
+function parsePayload(value: unknown): ContactPayload | null {
+  if (!isRecord(value)) return null;
+
+  const supportValue = value.support;
+  const support = Array.isArray(supportValue)
+    ? supportValue.filter((item): item is string => typeof item === "string")
+    : toOptionalString(supportValue);
+
+  return {
+    name: toOptionalString(value.name),
+    company: toOptionalString(value.company),
+    email: toOptionalString(value.email),
+    phone: toOptionalString(value.phone),
+    country: toOptionalString(value.country),
+    website: toOptionalString(value.website),
+    audience: toOptionalString(value.audience),
+    technology: toOptionalString(value.technology),
+    stage: toOptionalString(value.stage),
+    support,
+    message: toOptionalString(value.message),
+    timeline: toOptionalString(value.timeline),
+    referral: toOptionalString(value.referral),
+    company_site: toOptionalString(value.company_site),
+    locale: toOptionalString(value.locale),
+  };
+}
+
 export const onRequestPost: PagesFunction<Env> = async (context) => {
   try {
-    const payload = await context.request.json<ContactPayload>();
+    const rawPayload: unknown = await context.request.json();
+    const payload = parsePayload(rawPayload);
+
+    if (!payload) {
+      return Response.json({ error: "Invalid request body" }, { status: 400 });
+    }
 
     if (payload.company_site) {
       return Response.json({ ok: true });
@@ -48,6 +88,11 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
     if ((payload.message ?? "").length > 3000) {
       return Response.json({ error: "Message too long" }, { status: 400 });
+    }
+
+    if (!context.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not configured");
+      return Response.json({ error: "Email service is not configured" }, { status: 503 });
     }
 
     const support = Array.isArray(payload.support) ? payload.support.join(", ") : payload.support || "Not specified";
