@@ -2,6 +2,11 @@ interface Env {
   RESEND_API_KEY: string;
 }
 
+interface FunctionContext<TEnv> {
+  request: Request;
+  env: TEnv;
+}
+
 interface ContactPayload {
   name?: string;
   company?: string;
@@ -64,7 +69,7 @@ function parsePayload(value: unknown): ContactPayload | null {
   };
 }
 
-export const onRequestPost: PagesFunction<Env> = async (context) => {
+export const onRequestPost = async (context: FunctionContext<Env>): Promise<Response> => {
   try {
     const rawPayload: unknown = await context.request.json();
     const payload = parsePayload(rawPayload);
