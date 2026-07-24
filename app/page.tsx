@@ -18,7 +18,7 @@ export default function HomePage() {
   return <main>
     <header className="shell nav">
       <a className="brand" href="/"><span className="mark">FP</span><span>FlyPig AI</span></a>
-      <nav className="navlinks"><a href="#capabilities">Capabilities</a><a href="#focus">Technology focus</a><a href="/insights">Insights</a><a href="#about">About</a><a href="/zh" className="lang-link">繁中</a></nav>
+      <nav className="navlinks"><a href="/atlas">Atlas</a><a href="#capabilities">Capabilities</a><a href="#focus">Technology focus</a><a href="/insights">Insights</a><a href="#about">About</a><a href="/zh" className="lang-link">繁中</a></nav>
       <a className="pill secondary" href="/contact">Contact us</a>
     </header>
 
@@ -30,7 +30,7 @@ export default function HomePage() {
           <p className="lead">FlyPig AI supports market development, industry partnerships and commercialization for robotics, drone and critical-component companies entering Canada.</p>
           <div className="actions">
             <a className="pill primary" href="/contact">Explore the Canadian market</a>
-            <a className="pill secondary" href="#capabilities">View capabilities</a>
+            <a className="pill secondary" href="/atlas">Explore the Physical AI Atlas</a>
             <a className="pill secondary" href="/insights">Read market insights</a>
           </div>
         </div>
