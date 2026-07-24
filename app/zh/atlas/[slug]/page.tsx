@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import "../../../atlas/atlas.css";
 import AtlasCategoryPage from "../../../atlas/AtlasCategoryPage";
 import { atlasCategories, getAtlasCategory } from "../../../atlas/data";
 
