@@ -25,7 +25,7 @@ export default function ZhHomePage() {
   return <main lang="zh-Hant">
     <header className="shell nav">
       <a className="brand" href="/zh"><span className="mark">FP</span><span>FlyPig AI</span></a>
-      <nav className="navlinks"><a href="#capabilities">服務能力</a><a href="#focus">技術領域</a><a href="/insights">Insights</a><a href="#about">關於我們</a><a href="/">EN</a></nav>
+      <nav className="navlinks"><a href="/zh/atlas">產業圖譜</a><a href="#capabilities">服務能力</a><a href="#focus">技術領域</a><a href="/insights">Insights</a><a href="#about">關於我們</a><a href="/">EN</a></nav>
       <a className="pill secondary" href="/zh/contact">聯絡我們</a>
     </header>
 
@@ -37,7 +37,7 @@ export default function ZhHomePage() {
           <p className="lead">FlyPig AI 協助全球機器人、無人機與關鍵零組件廠商拓展加拿大市場，也協助加拿大業者尋找合適的亞洲技術與供應鏈。</p>
           <div className="actions">
             <a className="pill primary" href="/zh/contact">洽談加拿大市場</a>
-            <a className="pill secondary" href="#capabilities">了解服務能力</a>
+            <a className="pill secondary" href="/zh/atlas">探索加拿大產業圖譜</a>
             <a className="pill secondary" href="/insights">閱讀產業洞察</a>
           </div>
         </div>
