@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
 
 export const metadata: Metadata = { title: "FlyPig AI｜加拿大機器人市場開發與商業化", description: "為機器人與 Physical AI 業者提供加拿大市場開發、在地代表、供應商搜尋與商業化支援。" };
 
@@ -11,7 +12,7 @@ const services = [
 
 export default function ZhHomePage() {
   return <main lang="zh-Hant">
-    <header className="shell nav"><a className="brand" href="/zh"><span className="mark">FP</span><span>FlyPig AI</span></a><nav className="navlinks"><a href="/zh/services">服務</a><a href="/zh/atlas">Atlas</a><a href="/insights">Insights</a><a href="/zh/about">關於</a><a href="/" className="lang-link">EN</a></nav><a className="pill secondary" href="/zh/contact">聯絡我們</a></header>
+    <SiteHeader locale="zh" languageHref="/" />
 
     <section className="hero home-hero"><div className="shell hero-grid home-hero-grid"><div className="home-hero-copy"><p className="eyebrow">機器人 · Physical AI · 加拿大</p><h1>為先進機器人技術發展真實市場機會。</h1><p className="lead">FlyPig AI 是服務加拿大與亞洲市場的機器人、無人機、自主系統及關鍵零組件市場開發與商業化合作夥伴。</p><div className="actions"><a className="pill primary" href="/zh/contact">洽談市場機會</a><a className="pill secondary" href="/zh/services">查看服務</a><a className="pill secondary" href="/zh/atlas">探索 Atlas</a></div></div><aside className="signal-card home-signal-card"><p className="eyebrow">商業角色</p><div className="signal-line"><span>市場</span><strong>加拿大</strong></div><div className="signal-line"><span>角色</span><strong>市場開發＋在地代表</strong></div><div className="signal-line"><span>領域</span><strong>機器人＋Physical AI</strong></div><div className="signal-line"><span>路徑</span><strong>研究 → 合作 → Pilot → 規模化</strong></div></aside></div></section>
 
@@ -24,6 +25,6 @@ export default function ZhHomePage() {
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">雙向服務</p><h2>進入加拿大，也協助加拿大尋找技術。</h2></div><p className="section-copy">全球供應商可發展加拿大通路與客戶；加拿大業者則可尋找並評估合適的亞洲技術與製造夥伴。</p></div><div className="grid3"><article className="card"><span className="num">全球供應商</span><h3>進入加拿大</h3><p>市場評估、合作夥伴、在地代表、Pilot 與商業化。</p></article><article className="card"><span className="num">加拿大業者</span><h3>尋找技術</h3><p>供應商搜尋、技術資格評估、引介與試點協調。</p></article><article className="card"><span className="num">公開研究</span><h3>理解生態系</h3><p>透過 Atlas 與 Insights 探索公司、技術、應用與地區。</p></article></div></section>
 
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">加拿大市場開發</p><h2>你希望銷售、採購或部署什麼技術？</h2></div><div className="actions"><a className="pill primary" href="/zh/contact">聯絡 FlyPig AI</a></div></div></section>
-    <footer className="shell footer"><span>© 2026 FlyPig AI · Vancouver, Canada</span><span>商業服務 · Canada Physical AI Atlas · Insights</span></footer>
+    <SiteFooter locale="zh" />
   </main>;
 }
