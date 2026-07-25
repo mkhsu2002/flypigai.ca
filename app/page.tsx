@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteFooter, SiteHeader } from "../components/SiteChrome";
 
 export const metadata: Metadata = { title: "FlyPig AI | Robotics Market Development in Canada", description: "Canadian market development, representation, supplier sourcing and commercialization support for robotics and Physical AI companies." };
 
@@ -11,7 +12,7 @@ const services = [
 
 export default function HomePage() {
   return <main>
-    <header className="shell nav"><a className="brand" href="/"><span className="mark">FP</span><span>FlyPig AI</span></a><nav className="navlinks"><a href="/services">Services</a><a href="/atlas">Atlas</a><a href="/insights">Insights</a><a href="/about">About</a><a href="/zh" className="lang-link">繁中</a></nav><a className="pill secondary" href="/contact">Contact us</a></header>
+    <SiteHeader languageHref="/zh" />
 
     <section className="hero home-hero"><div className="shell hero-grid home-hero-grid"><div className="home-hero-copy"><p className="eyebrow">Robotics · Physical AI · Canada</p><h1>Developing real market opportunities for advanced robotics.</h1><p className="lead">FlyPig AI is a Canadian market-development and commercialization partner for robotics, drone, autonomous-system and critical-component companies working across Canada and Asia.</p><div className="actions"><a className="pill primary" href="/contact">Discuss a market opportunity</a><a className="pill secondary" href="/services">Explore services</a><a className="pill secondary" href="/atlas">Explore the Atlas</a></div></div><aside className="signal-card home-signal-card"><p className="eyebrow">Commercial role</p><div className="signal-line"><span>Market</span><strong>Canada</strong></div><div className="signal-line"><span>Role</span><strong>Development + representation</strong></div><div className="signal-line"><span>Scope</span><strong>Robotics + Physical AI</strong></div><div className="signal-line"><span>Path</span><strong>Research → Partner → Pilot → Scale</strong></div></aside></div></section>
 
@@ -24,6 +25,6 @@ export default function HomePage() {
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">Two directions</p><h2>Market entry and technology sourcing.</h2></div><p className="section-copy">Global suppliers can develop Canadian channels and customers. Canadian organizations can identify and qualify relevant technologies and manufacturing partners in Asia.</p></div><div className="grid3"><article className="card"><span className="num">For suppliers</span><h3>Enter Canada</h3><p>Market assessment, partnerships, local representation, pilots and commercialization.</p></article><article className="card"><span className="num">For Canadian industry</span><h3>Find technology</h3><p>Supplier discovery, technical qualification, introductions and pilot coordination.</p></article><article className="card"><span className="num">Public research</span><h3>Understand the ecosystem</h3><p>Use the Atlas and Insights to explore companies, technologies, applications and regions.</p></article></div></section>
 
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">Canadian market development</p><h2>What are you trying to sell, source or deploy?</h2></div><div className="actions"><a className="pill primary" href="/contact">Contact FlyPig AI</a></div></div></section>
-    <footer className="shell footer"><span>© 2026 FlyPig AI · Vancouver, Canada</span><span>Services · Canada Physical AI Atlas · Insights</span></footer>
+    <SiteFooter />
   </main>;
 }
