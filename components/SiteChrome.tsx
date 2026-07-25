@@ -1,3 +1,5 @@
+import "./site-chrome.css";
+
 type Locale = "en" | "zh";
 
 type HeaderProps = {
@@ -16,12 +18,12 @@ export function SiteHeader({ locale = "en", languageHref }: HeaderProps) {
 
   return <header className="shell nav">
     <a className="brand" href={home}><span className="mark">FP</span><span>FlyPig AI</span></a>
-    <nav className="navlinks">
+    <nav className="navlinks" aria-label={zh ? "主要導覽" : "Primary navigation"}>
       <a href={services}>{zh ? "服務" : "Services"}</a>
       <a href={atlas}>Atlas</a>
       <a href="/insights">Insights</a>
       <a href={about}>{zh ? "關於" : "About"}</a>
-      <a href={switchHref} className="lang-link">{zh ? "EN" : "繁中"}</a>
+      <a href={switchHref} className="lang-link" lang={zh ? "en" : "zh-Hant"}>{zh ? "EN" : "繁中"}</a>
     </nav>
     <a className="pill secondary" href={contact}>{zh ? "聯絡我們" : "Contact us"}</a>
   </header>;
