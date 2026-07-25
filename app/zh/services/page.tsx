@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
 
 export const metadata: Metadata = { title: "服務項目｜FlyPig AI", description: "為機器人與 Physical AI 業者提供加拿大市場開發、合作夥伴開發、供應商搜尋與商業化支援。" };
 
@@ -13,11 +14,11 @@ const services = [
 
 export default function ZhServicesPage() {
   return <main lang="zh-Hant">
-    <header className="shell nav"><a className="brand" href="/zh"><span className="mark">FP</span><span>FlyPig AI</span></a><nav className="navlinks"><a href="/zh/services">服務</a><a href="/zh/atlas">Atlas</a><a href="/insights">Insights</a><a href="/zh/about">關於</a><a href="/services" className="lang-link">EN</a></nav><a className="pill secondary" href="/zh/contact">聯絡我們</a></header>
+    <SiteHeader locale="zh" languageHref="/services" />
     <section className="hero shell"><p className="eyebrow">商業服務</p><h1>從理解市場，到推動商業落地。</h1><p className="lead">FlyPig AI 是服務加拿大與亞洲市場的機器人、無人機、自主系統與關鍵零組件市場開發及商業化合作夥伴。</p></section>
     <section className="section shell"><div className="grid3">{services.map(([n,t,d]) => <article className="card" key={t}><span className="num">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></section>
     <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">合作模式</p><h2>依不同市場階段彈性設計。</h2></div><p className="section-copy">合作可採固定範圍研究、月度市場開發、專案協調、在地代表、引介合作、經銷代理，或在合適情況下採成果導向的商業模式。</p></div></div></section>
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">從正確問題開始</p><h2>你希望在加拿大銷售、採購或部署什麼技術？</h2></div><div className="actions"><a className="pill primary" href="/zh/contact">洽談合作機會</a></div></div></section>
-    <footer className="shell footer"><span>© 2026 FlyPig AI · Vancouver, Canada</span><span>市場開發 · 在地代表 · 商業化</span></footer>
+    <SiteFooter locale="zh" />
   </main>;
 }
