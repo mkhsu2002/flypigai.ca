@@ -1,5 +1,16 @@
+import type { Metadata } from "next";
 import "../../../atlas/atlas.css";
 import { SiteFooter, SiteHeader } from "../../../../components/SiteChrome";
+import { makeMetadata } from "../../../seo";
+
+export const metadata: Metadata = makeMetadata({
+  title: "提交機構至 Canada Physical AI Atlas",
+  description: "推薦適合接受 Canada Physical AI Atlas 編輯審查的加拿大機器人、無人機、自動化、研究或產業組織。",
+  path: "/zh/atlas/submit",
+  enPath: "/atlas/submit",
+  zhPath: "/zh/atlas/submit",
+  locale: "zh_TW",
+});
 
 export default function ZhSubmitAtlasPage() {
   return <main lang="zh-Hant">

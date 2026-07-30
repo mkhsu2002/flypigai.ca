@@ -1,13 +1,38 @@
 import type { Metadata } from "next";
+import JsonLd from "../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
+import { makeMetadata, siteUrl } from "../../seo";
 
-export const metadata: Metadata = {
-  title: "Canada Needs Physical AI Integrators | FlyPig AI",
-  description: "Why Canada's next robotics opportunity lies in deployment, integration and operations—not simply building or importing more machines.",
-};
+const title = "Canada Needs Physical AI Integrators";
+const description = "Why Canada's next robotics opportunity lies in deployment, integration and operations—not simply building or importing more machines.";
+
+export const metadata: Metadata = makeMetadata({
+  title: "Canada Needs Physical AI Integrators",
+  description,
+  path: "/insights/canada-needs-physical-ai-integrators",
+  enPath: "/insights/canada-needs-physical-ai-integrators",
+  type: "article",
+});
 
 export default function ArticlePage() {
   return <main>
+    <JsonLd data={{
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: title,
+      description,
+      datePublished: "2026-07-01",
+      dateModified: "2026-07-30",
+      author: {
+        "@type": "Organization",
+        name: "FlyPig AI",
+        url: siteUrl,
+      },
+      publisher: { "@id": `${siteUrl}/#organization` },
+      mainEntityOfPage: `${siteUrl}/insights/canada-needs-physical-ai-integrators`,
+      articleSection: "Physical AI in Canada",
+      inLanguage: "en-CA",
+    }} />
     <SiteHeader />
     <article className="article-shell shell">
       <header className="article-header">

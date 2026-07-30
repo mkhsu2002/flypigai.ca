@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
 import ContactForm from "../../../components/ContactForm";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
+import { makeMetadata } from "../../seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = makeMetadata({
   title: "聯絡 FlyPig AI",
   description: "告訴我們您的機器人、無人機、關鍵零組件採購或加拿大市場開發需求。",
-};
+  path: "/zh/contact",
+  enPath: "/contact",
+  zhPath: "/zh/contact",
+  locale: "zh_TW",
+});
 
 export default function ZhContactPage() {
   return <main lang="zh-Hant">

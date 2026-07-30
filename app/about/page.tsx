@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
+import { makeMetadata } from "../seo";
 
-export const metadata: Metadata = { title: "About | FlyPig AI", description: "About FlyPig AI, a founder-led Canadian robotics market-development and commercialization business." };
+export const metadata: Metadata = makeMetadata({
+  title: "About FlyPig AI",
+  description: "About FlyPig AI, a founder-led Canadian robotics market-development and commercialization business based in Vancouver.",
+  path: "/about",
+  enPath: "/about",
+  zhPath: "/zh/about",
+});
 
 export default function AboutPage() {
   return <main>
     <SiteHeader languageHref="/zh/about" />
     <section className="hero shell"><p className="eyebrow">About FlyPig AI</p><h1>A practical bridge between technology capability and market execution.</h1><p className="lead">FlyPig AI is a founder-led business based in Canada. We help robotics and Physical AI companies understand markets, develop relationships and move commercial opportunities forward across Canada and Asia.</p></section>
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">What we are</p><h2>A commercial partner, not an official industry body.</h2></div><p className="section-copy">FlyPig AI operates as a market-development, representation, sourcing and commercialization business. We may work with manufacturers, component suppliers, integrators, operators and research partners under consulting, referral, agency, distribution or project-based arrangements.</p></div><div className="grid3"><article className="card"><span className="num">01</span><h3>Founder-led</h3><p>Direct involvement in research, partner conversations and commercial development.</p></article><article className="card"><span className="num">02</span><h3>Cross-market</h3><p>Working knowledge of Canadian market expectations and Asian technology supply.</p></article><article className="card"><span className="num">03</span><h3>Evidence-based</h3><p>Opportunities are developed through research, qualification and real conversations—not broad claims.</p></article></div></section>
-    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">Public research initiative</p><h2>Canada Physical AI Atlas</h2></div><div><p className="section-copy">The Atlas is a market-research and ecosystem-mapping initiative developed by FlyPig AI. It organizes public information about companies, technologies, industries and regions. It is not an official government directory or a claim of endorsement.</p><div className="actions"><a className="pill primary" href="/atlas">Explore the Atlas</a><a className="pill secondary" href="/atlas/methodology">Read the methodology</a></div></div></div></section>
+    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">Public research initiative</p><h2>Canada Physical AI Atlas</h2></div><div><p className="section-copy">The Atlas is a market-research and ecosystem-mapping initiative developed by FlyPig AI. It organizes public information about companies, technologies, industries and regions. It is not an official government directory or a claim of endorsement.</p><div className="actions"><a className="pill primary" href="/atlas">Explore the Atlas</a><a className="pill secondary" href="/atlas/methodology">Read the methodology</a></div></div></div></div></section>
     <section className="section shell founder"><div><p className="eyebrow">Founder</p><h2>M.K. Hsu</h2><p className="section-copy">M.K. Hsu works across AI automation, digital products, e-commerce and cross-border business development, with experience spanning Taiwan and Canada.</p><div className="actions"><a className="pill secondary" href="https://mkhsu.icareu.tw/" target="_blank" rel="noreferrer">Founder profile ↗</a></div></div><div className="founder-card"><span className="mono">Vancouver · Canada</span><h3>FlyPig AI</h3><p>Robotics market development and commercialization.</p></div></section>
     <SiteFooter />
   </main>;

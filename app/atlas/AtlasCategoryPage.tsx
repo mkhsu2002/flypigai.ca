@@ -1,4 +1,6 @@
+import JsonLd from "../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
+import { breadcrumbJsonLd, siteUrl } from "../seo";
 import type { AtlasCategory } from "./data";
 
 type Props = { category: AtlasCategory; locale?: "en" | "zh" };
@@ -10,6 +12,29 @@ export default function AtlasCategoryPage({ category, locale = "en" }: Props) {
   const languageHref = zh ? `/atlas/${category.slug}` : `/zh/atlas/${category.slug}`;
 
   return <main lang={zh ? "zh-Hant" : "en"}>
+    <JsonLd data={breadcrumbJsonLd([
+      { name: "Home", path: zh ? "/zh" : "/" },
+      { name: "Canada Physical AI Atlas", path: atlasHref },
+      { name: zh ? category.titleZh : category.title, path: zh ? `/zh/atlas/${category.slug}` : `/atlas/${category.slug}` },
+    ])} />
+    <JsonLd data={{
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: zh ? category.titleZh : `${category.title} in Canada`,
+      url: `${siteUrl}${zh ? `/zh/atlas/${category.slug}` : `/atlas/${category.slug}`}`,
+      description: zh ? category.summaryZh : category.summary,
+      itemListElement: category.companies.map((company, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "Organization",
+          name: company.name,
+          url: company.url,
+          description: company.description,
+          address: company.location,
+        },
+      })),
+    }} />
     <SiteHeader locale={locale} languageHref={languageHref} />
     <section className="atlas-hero shell">
       <a className="atlas-back" href={atlasHref}>← {zh ? "返回 Canada Physical AI Atlas" : "Back to Canada Physical AI Atlas"}</a>
@@ -24,6 +49,7 @@ export default function AtlasCategoryPage({ category, locale = "en" }: Props) {
         <h2>{company.name}</h2><strong className="atlas-focus">{company.focus}</strong><p>{company.description}</p>
         <div className="atlas-tags">{company.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
         <a className="atlas-link" href={company.url} target="_blank" rel="noreferrer">{zh ? "前往官方網站 ↗" : "Official website ↗"}</a>
+        <p className="small-copy">{zh ? "主要來源：官方網站；最近編輯檢視：2026-07-30。" : "Primary source: official website; last editorial review: 2026-07-30."}</p>
       </article>)}
     </section>
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">{zh ? "加拿大 Physical AI 市場" : "Canada Physical AI market"}</p><h2>{zh ? "正在尋找合作夥伴、供應商或應用機會？" : "Looking for partners, suppliers or deployment opportunities?"}</h2></div><div className="actions"><a className="pill primary" href={contactHref}>{zh ? "聯絡我們" : "Contact us"}</a></div></div></section>

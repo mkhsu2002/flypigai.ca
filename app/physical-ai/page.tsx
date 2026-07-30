@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import JsonLd from "../../components/JsonLd";
+import { makeMetadata, siteUrl } from "../seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = makeMetadata({
   title: "Physical AI Deployment for Canadian Industry",
   description: "FlyPig AI connects robotics manufacturers with Canadian businesses through market validation, pilot deployment, AI workflow integration and localized operational support.",
-};
+  path: "/physical-ai",
+  enPath: "/physical-ai",
+});
 
 const services = [
   ["01", "Readiness assessment", "We identify high-value, automatable tasks, map constraints and build a realistic ROI case before hardware is selected."],
@@ -19,6 +23,29 @@ const markets = [
 
 export default function PhysicalAIPage() {
   return <main>
+    <JsonLd data={{
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is Physical AI deployment?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Physical AI deployment turns robotics, sensors, edge intelligence and human workflows into safe, measurable operations in real facilities and field environments.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What does FlyPig AI do in Physical AI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "FlyPig AI supports readiness assessment, pilot scoping, market validation, partner development and local commercialization for robotics and Physical AI opportunities in Canada.",
+          },
+        },
+      ],
+      publisher: { "@id": `${siteUrl}/#organization` },
+    }} />
     <header className="shell nav">
       <a className="brand" href="/"><span className="mark">FP</span><span>FlyPig AI</span></a>
       <nav className="navlinks"><a href="#services">Services</a><a href="#markets">Use cases</a><a href="#partners">Partners</a><a href="/insights">Insights</a><a href="#about">About</a></nav>
@@ -48,6 +75,10 @@ export default function PhysicalAIPage() {
     <section id="services" className="section shell">
       <div className="section-head"><div><p className="eyebrow">What we do</p><h2>Start with the work—not the robot.</h2></div><p className="section-copy">Most robotics projects fail before deployment: the task is poorly defined, the environment is underestimated, or the integration burden is ignored. We begin with operational evidence and design the smallest pilot that can prove business value.</p></div>
       <div className="grid3">{services.map(([n,t,d])=><article className="card" key={t}><span className="num">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div>
+    </section>
+
+    <section className="section shell">
+      <div className="section-head"><div><p className="eyebrow">Short answer</p><h2>What is Physical AI deployment?</h2></div><p className="section-copy">Physical AI deployment turns robotics, sensors, edge intelligence, safety rules and human workflows into a measurable operating system. In Canada, the near-term opportunity is often assessment, integration and support—not buying a robot first.</p></div>
     </section>
 
     <section id="markets" className="section dark">

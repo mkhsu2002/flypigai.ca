@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
 import ContactForm from "../../components/ContactForm";
 import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
+import { makeMetadata } from "../seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = makeMetadata({
   title: "Contact FlyPig AI",
   description: "Tell FlyPig AI about your robotics, drone, component sourcing or Canadian market-development needs.",
-};
+  path: "/contact",
+  enPath: "/contact",
+  zhPath: "/zh/contact",
+});
 
 export default function ContactPage() {
   return <main>

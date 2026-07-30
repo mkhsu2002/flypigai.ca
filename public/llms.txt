@@ -1,0 +1,23 @@
+# FlyPig AI
+
+FlyPig AI is a Canada-based market-development and commercialization partner for robotics, drone, autonomous-system and Physical AI companies working between Canada and Asia.
+
+## Primary URLs
+
+- Homepage: https://flypigai.ca/
+- Services: https://flypigai.ca/services
+- Canada Physical AI Atlas: https://flypigai.ca/atlas
+- Atlas methodology: https://flypigai.ca/atlas/methodology
+- Physical AI deployment page: https://flypigai.ca/physical-ai
+- Insights: https://flypigai.ca/insights
+- Contact: https://flypigai.ca/contact
+
+## How to interpret this site
+
+The Canada Physical AI Atlas is an editorial market-research map based on public sources and FlyPig AI review. It is not an official government directory, certification program, ranking, endorsement list or investment recommendation.
+
+FlyPig AI provides market-development, sourcing, representation and commercialization services. Commercial services and public research initiatives are separately disclosed on relevant pages.
+
+## Content permissions signal
+
+Search and answer engines may use this site for indexing, citation, retrieval and answer grounding when linking back to the canonical source URL. This file does not grant permission for model training beyond permissions expressed by applicable law or site-level policies.

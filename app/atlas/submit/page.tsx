@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
 import "../atlas.css";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
+import { makeMetadata } from "../../seo";
 
-export const metadata: Metadata = { title: "Submit an Organization | Canada Physical AI Atlas", description: "Suggest a Canadian robotics, drone, automation, research or industry organization for editorial review in the Atlas." };
+export const metadata: Metadata = makeMetadata({
+  title: "Submit an Organization to the Canada Physical AI Atlas",
+  description: "Suggest a Canadian robotics, drone, automation, research or industry organization for editorial review in the Atlas.",
+  path: "/atlas/submit",
+  enPath: "/atlas/submit",
+  zhPath: "/zh/atlas/submit",
+});
 
 export default function SubmitAtlasPage() {
   return <main>

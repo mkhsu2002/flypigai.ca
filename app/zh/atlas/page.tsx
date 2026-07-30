@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
 import "../../atlas/atlas.css";
 import { atlasCategories } from "../../atlas/data";
+import { makeMetadata } from "../../seo";
 
-export const metadata: Metadata = {
-  title: "加拿大 Physical AI 產業圖譜｜FlyPig AI",
+export const metadata: Metadata = makeMetadata({
+  title: "加拿大 Physical AI 產業圖譜",
   description: "加拿大機器人、無人機、自主系統、整合商、關鍵技術、研究機構與產業應用者的精選產業名錄。",
-};
+  path: "/zh/atlas",
+  enPath: "/atlas",
+  zhPath: "/zh/atlas",
+  locale: "zh_TW",
+});
 
 const browseDimensions = [
   ["依生態系角色", "依照機構在 Physical AI 價值鏈中的角色，探索製造商、整合商、研究機構與產業應用者。", "/zh/atlas#ecosystem"],
@@ -40,6 +45,7 @@ export default function ZhAtlasPage() {
     </div></section>
 
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">如何使用 Atlas</p><h2>同時服務供應端與加拿大需求端。</h2></div><p className="section-copy">全球供應商可以藉此理解加拿大市場的進入路徑；加拿大業者則能發現本土能力，並辨識適合導入海外技術的供應缺口。</p></div><div className="grid3"><article className="card"><span className="num">01</span><h3>尋找市場通路</h3><p>辨識與技術或應用情境相關的整合商、研究夥伴與產業營運者。</p></article><article className="card"><span className="num">02</span><h3>理解產業堆疊</h3><p>掌握零組件、平台、軟體、系統整合與產業需求之間的關係。</p></article><article className="card"><span className="num">03</span><h3>發展合作機會</h3><p>以產業地圖作為供應商資格評估、合作引介與 Pilot 開發的起點。</p></article></div></section>
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">簡短答案</p><h2>Canada Physical AI Atlas 是什麼？</h2></div><p className="section-copy">Canada Physical AI Atlas 是 FlyPig AI 建立的公開研究地圖，整理加拿大機器人、無人機、自主系統、關鍵技術、研究機構與產業應用組織。它是編輯型市場研究，不是官方名錄、背書清單或投資建議。</p></div></section>
 
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">加入或合作</p><h2>你的公司是否也應該被收錄在 Atlas？</h2></div><div className="actions"><a className="pill primary" href="/zh/atlas/submit">提交收錄</a><a className="pill secondary" href="/zh/contact">聯絡 FlyPig AI</a></div></div></section>
     <SiteFooter locale="zh" />

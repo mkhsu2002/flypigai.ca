@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
+import JsonLd from "../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../components/SiteChrome";
+import { makeMetadata, siteUrl } from "./seo";
 
-export const metadata: Metadata = { title: "FlyPig AI | Robotics Market Development in Canada", description: "Canadian market development, representation, supplier sourcing and commercialization support for robotics and Physical AI companies." };
+export const metadata: Metadata = makeMetadata({
+  title: "Robotics Market Development in Canada",
+  description: "Canadian market development, representation, supplier sourcing and commercialization support for robotics and Physical AI companies.",
+  path: "/",
+  enPath: "/",
+  zhPath: "/zh",
+});
 
 const services = [
   ["01", "Market development", "Understand the Canadian market, identify target sectors and develop qualified opportunities."],
@@ -12,6 +20,16 @@ const services = [
 
 export default function HomePage() {
   return <main>
+    <JsonLd data={{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": `${siteUrl}/#website`,
+      name: "FlyPig AI",
+      url: siteUrl,
+      description: metadata.description,
+      publisher: { "@id": `${siteUrl}/#organization` },
+      inLanguage: "en-CA",
+    }} />
     <SiteHeader languageHref="/zh" />
 
     <section className="hero home-hero"><div className="shell hero-grid home-hero-grid"><div className="home-hero-copy"><p className="eyebrow">Robotics · Physical AI · Canada</p><h1>Developing real market opportunities for advanced robotics.</h1><p className="lead">FlyPig AI is a Canadian market-development and commercialization partner for robotics, drone, autonomous-system and critical-component companies working across Canada and Asia.</p><div className="actions"><a className="pill primary" href="/contact">Discuss a market opportunity</a><a className="pill secondary" href="/services">Explore services</a><a className="pill secondary" href="/atlas">Explore the Atlas</a></div></div><aside className="signal-card home-signal-card"><p className="eyebrow">Commercial role</p><div className="signal-line"><span>Market</span><strong>Canada</strong></div><div className="signal-line"><span>Role</span><strong>Development + representation</strong></div><div className="signal-line"><span>Scope</span><strong>Robotics + Physical AI</strong></div><div className="signal-line"><span>Path</span><strong>Research → Partner → Pilot → Scale</strong></div></aside></div></section>
@@ -20,7 +38,9 @@ export default function HomePage() {
 
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">Commercial services</p><h2>From market understanding to execution.</h2></div><p className="section-copy">We work with manufacturers, component suppliers, integrators and operators. Engagements may include research, partner development, local representation, sourcing, referrals, distribution or project-based commercialization support.</p></div><div className="grid3">{services.slice(0,3).map(([n,t,d]) => <article className="card" key={t}><span className="num">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div><div className="grid3" style={{marginTop:18}}><article className="card"><span className="num">04</span><h3>{services[3][1]}</h3><p>{services[3][2]}</p></article><article className="card"><span className="num">Engagement</span><h3>Flexible commercial models.</h3><p>Fixed-scope projects, monthly development, representation, referral, distribution and success-based arrangements where appropriate.</p></article><article className="card"><span className="num">Next step</span><h3>Start with qualification.</h3><p>We first clarify the product, market fit, export readiness, support requirements and realistic route to market.</p></article></div><div className="actions"><a className="pill secondary" href="/services">View all services</a></div></section>
 
-    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">A FlyPig AI research initiative</p><h2>Canada Physical AI Atlas</h2></div><div><p className="section-copy">A public market-research and ecosystem-mapping project organizing Canadian companies, technologies, industries and regional clusters. The Atlas supports better market understanding; it is not an official government directory or a claim of endorsement.</p><div className="actions"><a className="pill primary" href="/atlas">Explore the Atlas</a><a className="pill secondary" href="/atlas/methodology">How it is built</a></div></div></div></section>
+    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">A FlyPig AI research initiative</p><h2>Canada Physical AI Atlas</h2></div><div><p className="section-copy">A public market-research and ecosystem-mapping project organizing Canadian companies, technologies, industries and regional clusters. The Atlas supports better market understanding; it is not an official government directory or a claim of endorsement.</p><div className="actions"><a className="pill primary" href="/atlas">Explore the Atlas</a><a className="pill secondary" href="/atlas/methodology">How it is built</a></div></div></div></div></section>
+
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Short answer</p><h2>What is FlyPig AI?</h2></div><p className="section-copy">FlyPig AI is a Canada-based market-development partner helping robotics, drone, autonomous-system and Physical AI companies validate Canadian opportunities, find qualified partners, coordinate pilots and commercialize between Canada and Asia.</p></div></section>
 
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">Two directions</p><h2>Market entry and technology sourcing.</h2></div><p className="section-copy">Global suppliers can develop Canadian channels and customers. Canadian organizations can identify and qualify relevant technologies and manufacturing partners in Asia.</p></div><div className="grid3"><article className="card"><span className="num">For suppliers</span><h3>Enter Canada</h3><p>Market assessment, partnerships, local representation, pilots and commercialization.</p></article><article className="card"><span className="num">For Canadian industry</span><h3>Find technology</h3><p>Supplier discovery, technical qualification, introductions and pilot coordination.</p></article><article className="card"><span className="num">Public research</span><h3>Understand the ecosystem</h3><p>Use the Atlas and Insights to explore companies, technologies, applications and regions.</p></article></div></section>
 

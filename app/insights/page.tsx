@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
+import { makeMetadata } from "../seo";
 
-export const metadata: Metadata = {
-  title: "Physical AI Insights | FlyPig AI",
+export const metadata: Metadata = makeMetadata({
+  title: "Physical AI Insights",
   description: "Analysis of Canada's Physical AI ecosystem, robotics deployment, market structure and commercialization.",
-};
+  path: "/insights",
+  enPath: "/insights",
+});
 
 const upcoming = [
   ["02", "Inside Canada's Physical AI Ecosystem", "A map of the companies, research centres, infrastructure operators and integration layers shaping the market."],
