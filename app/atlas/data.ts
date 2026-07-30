@@ -4,6 +4,10 @@ export type AtlasCompany = {
   focus: string;
   description: string;
   url: string;
+  sourceName?: string;
+  sourceUrl?: string;
+  lastReviewed?: string;
+  inclusionReason?: string;
   tags: string[];
 };
 

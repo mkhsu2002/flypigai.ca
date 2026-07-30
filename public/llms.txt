@@ -10,6 +10,11 @@ FlyPig AI is a Canada-based market-development and commercialization partner for
 - Atlas methodology: https://flypigai.ca/atlas/methodology
 - Physical AI deployment page: https://flypigai.ca/physical-ai
 - Insights: https://flypigai.ca/insights
+- Canada robotics market entry guide: https://flypigai.ca/insights/canada-robotics-market-entry-guide
+- Canada Physical AI ecosystem overview: https://flypigai.ca/insights/canada-physical-ai-ecosystem-overview
+- Robotics integrators in Canada: https://flypigai.ca/insights/robotics-integrators-in-canada
+- Drone and autonomous systems market in Canada: https://flypigai.ca/insights/drone-autonomous-systems-market-canada
+- Asian robotics suppliers entering Canada: https://flypigai.ca/insights/asian-robotics-suppliers-enter-canada
 - Contact: https://flypigai.ca/contact
 
 ## How to interpret this site

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { atlasCategories } from "./atlas/data";
+import { insightGuides } from "./insights/guides";
 
 const baseUrl = "https://flypigai.ca";
 const lastModified = new Date("2026-07-30");
@@ -19,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/atlas/submit", 0.65, "monthly"], ["/zh/atlas/submit", 0.6, "monthly"],
     ["/insights", 0.8, "weekly"], ["/physical-ai", 0.7, "monthly"],
     ["/contact", 0.65, "monthly"], ["/zh/contact", 0.6, "monthly"],
-    ["/privacy", 0.35, "yearly"],
+    ["/privacy", 0.35, "yearly"], ["/zh/privacy", 0.3, "yearly"],
   ] as const;
 
   const coreRoutes: MetadataRoute.Sitemap = corePaths.map(([path, priority, changeFrequency]) => ({
@@ -34,5 +35,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/zh/atlas/${category.slug}`, lastModified, changeFrequency: "monthly" as const, priority: 0.75 },
   ]);
 
-  return [...coreRoutes, ...atlasRoutes];
+  const insightRoutes: MetadataRoute.Sitemap = insightGuides.map((guide) => ({
+    url: `${baseUrl}/insights/${guide.slug}`,
+    lastModified,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...coreRoutes, ...atlasRoutes, ...insightRoutes];
 }

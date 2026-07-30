@@ -34,11 +34,12 @@ export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
   const atlas = zh ? "/zh/atlas" : "/atlas";
   const methodology = zh ? "/zh/atlas/methodology" : "/atlas/methodology";
   const submit = zh ? "/zh/atlas/submit" : "/atlas/submit";
+  const privacy = zh ? "/zh/privacy" : "/privacy";
 
   return <footer className="shell footer site-footer">
     <div><strong>FlyPig AI</strong><span>{zh ? "加拿大機器人市場開發與商業化" : "Robotics market development and commercialization in Canada"}</span></div>
     <div><strong>Canada Physical AI Atlas</strong><span>{zh ? "FlyPig AI 發起的市場研究與產業圖譜計畫" : "A market-research and ecosystem-mapping initiative by FlyPig AI"}</span></div>
-    <div className="footer-links"><a href={atlas}>Atlas</a><a href={methodology}>{zh ? "收錄方法" : "Methodology"}</a><a href={submit}>{zh ? "提交收錄" : "Submit"}</a><a href="/privacy">{zh ? "隱私" : "Privacy"}</a></div>
+    <div className="footer-links"><a href={atlas}>Atlas</a><a href={methodology}>{zh ? "收錄方法" : "Methodology"}</a><a href={submit}>{zh ? "提交收錄" : "Submit"}</a><a href={privacy}>{zh ? "隱私" : "Privacy"}</a></div>
     <div className="footer-legal"><span>© 2026 FlyPig AI · Vancouver, Canada</span><span>{zh ? "商業服務與公開研究計畫分別揭露" : "Commercial services and public research are separately disclosed"}</span></div>
   </footer>;
 }

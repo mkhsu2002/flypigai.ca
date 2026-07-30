@@ -32,6 +32,7 @@ export default function AtlasCategoryPage({ category, locale = "en" }: Props) {
           url: company.url,
           description: company.description,
           address: company.location,
+          sameAs: company.sourceUrl ?? company.url,
         },
       })),
     }} />
@@ -49,7 +50,11 @@ export default function AtlasCategoryPage({ category, locale = "en" }: Props) {
         <h2>{company.name}</h2><strong className="atlas-focus">{company.focus}</strong><p>{company.description}</p>
         <div className="atlas-tags">{company.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
         <a className="atlas-link" href={company.url} target="_blank" rel="noreferrer">{zh ? "前往官方網站 ↗" : "Official website ↗"}</a>
-        <p className="small-copy">{zh ? "主要來源：官方網站；最近編輯檢視：2026-07-30。" : "Primary source: official website; last editorial review: 2026-07-30."}</p>
+        <p className="small-copy">
+          {zh
+            ? `主要來源：${company.sourceName ?? "官方網站"}；最近編輯檢視：${company.lastReviewed ?? "2026-07-30"}。${company.inclusionReason ? ` 收錄理由：${company.inclusionReason}` : ""}`
+            : `Primary source: ${company.sourceName ?? "official website"}; last editorial review: ${company.lastReviewed ?? "2026-07-30"}.${company.inclusionReason ? ` Inclusion reason: ${company.inclusionReason}` : ""}`}
+        </p>
       </article>)}
     </section>
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">{zh ? "加拿大 Physical AI 市場" : "Canada Physical AI market"}</p><h2>{zh ? "正在尋找合作夥伴、供應商或應用機會？" : "Looking for partners, suppliers or deployment opportunities?"}</h2></div><div className="actions"><a className="pill primary" href={contactHref}>{zh ? "聯絡我們" : "Contact us"}</a></div></div></section>
