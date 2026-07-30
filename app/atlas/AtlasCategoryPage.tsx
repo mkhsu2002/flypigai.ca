@@ -44,6 +44,10 @@ export default function AtlasCategoryPage({ category, locale = "en" }: Props) {
       <p className="lead">{zh ? category.summaryZh : category.summary}</p>
       <div className="atlas-note">{zh ? "首批收錄 6 家代表性業者。本頁為編輯選輯，並非排名或完整名單。" : "Initial editorial selection of six representative organizations. This is not a ranking or exhaustive directory."}</div>
     </section>
+    {!zh ? <section className="section shell">
+      <div className="section-head"><div><p className="eyebrow">Category analysis</p><h2>How this layer fits into the Canadian market.</h2></div><p className="section-copy">{category.analysis}</p></div>
+      {category.useCases ? <div className="grid3">{category.useCases.map((useCase, index) => <article className="card" key={useCase}><span className="num">{String(index + 1).padStart(2, "0")}</span><h3>Use case</h3><p>{useCase}</p></article>)}</div> : null}
+    </section> : null}
     <section className="section shell atlas-company-grid">
       {category.companies.map((company, index) => <article className="atlas-company" key={company.name}>
         <div className="atlas-company-top"><span className="num">{String(index + 1).padStart(2, "0")}</span><span className="atlas-location">{company.location}</span></div>
@@ -57,6 +61,7 @@ export default function AtlasCategoryPage({ category, locale = "en" }: Props) {
         </p>
       </article>)}
     </section>
+    {!zh ? <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">Data limitations</p><h2>Use this page as a market map, not a certification list.</h2></div><p className="section-copy">{category.limitations ?? "This category is an editorial selection based on public sources and FlyPig AI review. It is not a complete list, ranking, endorsement or technical validation."}</p></div></div></section> : null}
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">{zh ? "加拿大 Physical AI 市場" : "Canada Physical AI market"}</p><h2>{zh ? "正在尋找合作夥伴、供應商或應用機會？" : "Looking for partners, suppliers or deployment opportunities?"}</h2></div><div className="actions"><a className="pill primary" href={contactHref}>{zh ? "聯絡我們" : "Contact us"}</a></div></div></section>
     <SiteFooter locale={locale} />
   </main>;

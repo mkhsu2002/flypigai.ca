@@ -19,6 +19,9 @@ export type AtlasCategory = {
   summaryZh: string;
   layer: string;
   layerZh: string;
+  analysis?: string;
+  useCases?: string[];
+  limitations?: string;
   companies: AtlasCompany[];
 };
 
@@ -31,6 +34,9 @@ export const atlasCategories: AtlasCategory[] = [
     layerZh: "整機與平台",
     summary: "Canadian companies building mobile robots, robotic arms, humanoids, service robots and subsea systems.",
     summaryZh: "製造移動機器人、機械手臂、人形機器人、服務型機器人與水下系統的加拿大代表企業。",
+    analysis: "Robotics manufacturers define the visible platform layer of Physical AI, but Canadian commercialization depends on more than hardware availability. Successful market development usually requires a clear use case, local integration capacity, support expectations, safety review and a buyer who can measure operational value after the first deployment.",
+    useCases: ["Benchmark Canadian platform capability.", "Identify where foreign suppliers may need local integrators or support partners.", "Compare platform categories such as mobile robots, robotic arms, humanoids, service robots and subsea systems."],
+    limitations: "This category is an editorial selection, not a complete manufacturer registry or ranking. Inclusion does not imply FlyPig AI endorsement or verified product performance.",
     companies: [
       { name: "Clearpath Robotics", location: "Kitchener, Ontario", focus: "Research mobile robots", description: "Developer of unmanned ground vehicles and mobile robotics platforms used by research and development teams worldwide.", url: "https://clearpathrobotics.com/", tags: ["UGV", "ROS", "Research"] },
       { name: "Sanctuary AI", location: "Vancouver, British Columbia", focus: "Physical AI and dexterous robotics", description: "Develops production-oriented Physical AI, robotic hands and automation systems for complex industrial tasks.", url: "https://sanctuary.ai/", tags: ["Physical AI", "Humanoid", "Dexterity"] },
@@ -48,6 +54,9 @@ export const atlasCategories: AtlasCategory[] = [
     layerZh: "飛行平台",
     summary: "Canadian UAV manufacturers, operators and solution providers serving inspection, logistics, defence and public safety.",
     summaryZh: "服務巡檢、物流、國防與公共安全的加拿大無人機製造商、營運商與解決方案業者。",
+    analysis: "Drone and autonomous-aircraft opportunities in Canada often follow infrastructure, distance and safety problems. The commercial value is rarely the aircraft alone; it is the mission package, operating permission, data workflow, payload fit and ability to turn collected information into a buyer decision.",
+    useCases: ["Map UAV operators and solution providers by mission type.", "Identify potential partners for inspection, public safety, energy or environmental monitoring.", "Understand where payload, data and compliance questions matter before sales outreach."],
+    limitations: "This page includes representative organizations and should not be read as a complete list of Canadian RPAS, UAV or autonomous-aircraft operators.",
     companies: [
       { name: "InDro Robotics", location: "Sidney, British Columbia", focus: "Drones and autonomous robots", description: "Develops, integrates and operates UAV and ground robotic systems for complex missions and research.", url: "https://indrorobotics.ca/", tags: ["UAV", "UGV", "Integration"] },
       { name: "Draganfly", location: "Saskatoon, Saskatchewan", focus: "UAV systems and services", description: "Long-established Canadian drone company providing aircraft, sensors, software and mission services.", url: "https://draganfly.com/", tags: ["UAV", "Public Safety", "Sensors"] },
@@ -65,6 +74,9 @@ export const atlasCategories: AtlasCategory[] = [
     layerZh: "系統整合",
     summary: "Engineering companies that turn robotics, controls and software into deployable production systems.",
     summaryZh: "將機器人、控制系統與軟體整合為可落地生產系統的加拿大工程服務企業。",
+    analysis: "Automation and robotics integrators are often the most important commercialization layer for suppliers entering Canada. They translate product capability into site-specific systems, connect controls and workflows, manage deployment risk and help buyers define whether a pilot has actually succeeded.",
+    useCases: ["Find potential implementation partners for robotics suppliers.", "Understand which firms may carry engineering, controls or operational integration responsibility.", "Separate integrator roles from distributors, resellers and research partners."],
+    limitations: "Integrator fit is highly use-case specific. This category should be used for market mapping, not as a substitute for technical partner due diligence.",
     companies: [
       { name: "ATS Corporation", location: "Cambridge, Ontario", focus: "Industrial automation", description: "Global automation company founded in Canada, delivering engineered manufacturing and assembly systems.", url: "https://www.atsautomation.com/", tags: ["Manufacturing", "Life Sciences", "Automation"] },
       { name: "CONVERGIX Automation Solutions", location: "London, Ontario", focus: "Automation integration", description: "Integrates robotics, controls, data and production technologies across industrial sectors.", url: "https://convergixautomation.com/", tags: ["Robotics", "Controls", "Integration"] },
@@ -82,6 +94,9 @@ export const atlasCategories: AtlasCategory[] = [
     layerZh: "核心技術層",
     summary: "Canadian-developed sensing, imaging, positioning, embedded software and robotic subsystems.",
     summaryZh: "加拿大研發的感測、成像、定位、嵌入式軟體與機器人子系統。",
+    analysis: "Enabling technologies are where many Physical AI systems become reliable enough for real operations. Sensors, machine vision, positioning, embedded software and safety-critical systems often determine whether a robot can perceive, decide, communicate and operate inside changing environments.",
+    useCases: ["Identify component and subsystem capabilities inside the Canadian ecosystem.", "Understand supplier categories that may complement robot platforms.", "Map technology gaps where international components or manufacturing partners may fit."],
+    limitations: "This page groups broad enabling technologies. It does not validate compatibility, certification status or technical performance for a specific deployment.",
     companies: [
       { name: "LMI Technologies", location: "Burnaby, British Columbia", focus: "3D machine vision", description: "Develops smart 3D sensors and inspection technologies for factory automation and quality control.", url: "https://lmi3d.com/", tags: ["3D Vision", "Inspection", "Sensors"] },
       { name: "Teledyne DALSA", location: "Waterloo, Ontario", focus: "Machine vision and imaging", description: "Designs industrial cameras, image sensors and vision technologies for demanding applications.", url: "https://www.teledynedalsa.com/", tags: ["Imaging", "Cameras", "Semiconductors"] },
@@ -99,6 +114,9 @@ export const atlasCategories: AtlasCategory[] = [
     layerZh: "研究與人才",
     summary: "Major Canadian research institutions and AI hubs supporting robotics, autonomy and commercialization.",
     summaryZh: "支援機器人、自主系統、AI 研究與商業化的加拿大重要研究機構與人才中心。",
+    analysis: "Research and innovation organizations shape the talent, methods and early technical validation behind Physical AI. For commercialization, they are most useful when connected to deployable use cases, industry partners and a realistic path from research signal to operational adoption.",
+    useCases: ["Map talent and research nodes relevant to robotics and autonomy.", "Identify potential validation, collaboration or ecosystem-learning partners.", "Understand where academic capability may support but not replace commercial deployment."],
+    limitations: "Research presence does not automatically mean a technology is commercially deployable. Specific collaborations require direct institutional review.",
     companies: [
       { name: "National Research Council Canada", location: "Canada-wide", focus: "Applied research and commercialization", description: "Canada's federal research organization supporting advanced manufacturing, aerospace, AI and robotics innovation.", url: "https://nrc.canada.ca/", tags: ["Research", "Funding", "Commercialization"] },
       { name: "Vector Institute", location: "Toronto, Ontario", focus: "Artificial intelligence", description: "AI research institute connecting academic talent with industry and public-sector adoption.", url: "https://vectorinstitute.ai/", tags: ["AI", "Research", "Industry"] },
@@ -116,6 +134,9 @@ export const atlasCategories: AtlasCategory[] = [
     layerZh: "需求與應用端",
     summary: "Large Canadian operators in sectors where robotics, drones and autonomous inspection can create measurable value.",
     summaryZh: "在機器人、無人機與自主巡檢具有明確應用價值的加拿大大型營運業者。",
+    analysis: "Industrial adopters and operators represent the demand side of Physical AI. These organizations may not be robotics companies, but their infrastructure, safety exposure, labor constraints and field operations create the problems that make robotics commercially relevant.",
+    useCases: ["Understand which Canadian sectors may generate serious deployment demand.", "Frame robotics opportunities around operational pain rather than product novelty.", "Identify where suppliers may need integrators, compliance support and careful pilot design."],
+    limitations: "Listing an operator indicates market relevance, not confirmed adoption, endorsement, procurement interest or FlyPig AI relationship.",
     companies: [
       { name: "BC Hydro", location: "British Columbia", focus: "Electric utility", description: "Provincial electricity utility with extensive generation, transmission and field infrastructure suitable for remote inspection technologies.", url: "https://www.bchydro.com/", tags: ["Utilities", "Inspection", "Infrastructure"] },
       { name: "Hydro One", location: "Ontario", focus: "Electric transmission and distribution", description: "Major electricity transmission and distribution operator with a large geographically dispersed asset base.", url: "https://www.hydroone.com/", tags: ["Utilities", "Grid", "Field Operations"] },

@@ -62,16 +62,26 @@ export const insightGuides: InsightGuide[] = [
     sections: [
       {
         heading: "The ecosystem is a stack",
-        body: "Physical AI depends on multiple layers: platforms, sensors, embedded software, perception, connectivity, workflow integration, human operations and commercial ownership. The missing value is often between the robot and the operating environment.",
-        bullets: ["Platforms create capability.", "Integrators make capability usable.", "Operators prove whether capability produces measurable value."],
+        body: "Physical AI depends on multiple layers: platforms, sensors, embedded software, perception, connectivity, workflow integration, human operations and commercial ownership. The missing value is often between the robot and the operating environment. A platform may be technically impressive, but the market only forms when someone can connect it to a real task, support it in context and prove an outcome.",
+        bullets: ["Platforms create capability.", "Enabling technologies make capability reliable.", "Integrators make capability usable.", "Operators prove whether capability produces measurable value.", "Commercial partners translate evidence into repeatable adoption."],
       },
       {
         heading: "Canada has several strong regional clusters",
-        body: "British Columbia, Ontario, Quebec, Alberta and Atlantic Canada each contribute different strengths across robotics, AI research, drones, industrial automation, marine systems and resource-sector applications.",
+        body: "British Columbia, Ontario, Quebec, Alberta and Atlantic Canada each contribute different strengths across robotics, AI research, drones, industrial automation, marine systems and resource-sector applications. A practical ecosystem map should not treat these regions as interchangeable. Their industrial demand, research base, field conditions and partner networks create different entry paths.",
+        bullets: ["British Columbia has relevant activity around Physical AI, drones, robotics software and resource-adjacent applications.", "Ontario has a dense industrial automation and AI research base.", "Quebec connects AI research, aerospace, manufacturing and precision automation.", "Alberta links industrial drones, energy, resources and applied AI.", "Atlantic Canada has marine, subsea, ocean technology and remote-operations relevance."],
       },
       {
         heading: "Adoption matters as much as invention",
-        body: "Canada's near-term Physical AI opportunity is not limited to manufacturing robots. It includes deployment, localization, operations, field support, regulatory adaptation and integration into existing industrial systems.",
+        body: "Canada's near-term Physical AI opportunity is not limited to manufacturing robots. It includes deployment, localization, operations, field support, regulatory adaptation and integration into existing industrial systems. For many suppliers, the best Canadian entry point may be an integrator, utility, industrial operator or pilot partner rather than a traditional distributor.",
+      },
+      {
+        heading: "How suppliers should use the ecosystem",
+        body: "A supplier should use the ecosystem to decide which layer it needs first. A mature product may need channel access and deployment partners. An early platform may need research validation or a narrow pilot. A component supplier may need platform manufacturers or integrators. Treating all ecosystem contacts as sales prospects weakens the strategy.",
+        bullets: ["Use research organizations to understand technical validation and talent signals.", "Use integrators to understand implementation requirements.", "Use industrial operators to test demand and business value.", "Use enabling-technology companies to identify complementors and gaps."],
+      },
+      {
+        heading: "What the Atlas contributes",
+        body: "The Canada Physical AI Atlas is designed to organize these layers into a usable market map. It does not replace due diligence, but it helps make the first questions sharper: where is capability located, who might integrate it, where is demand likely to form and what evidence would make a market-entry decision credible?",
       },
     ],
     cta: "Explore the Canada Physical AI Atlas",
@@ -122,16 +132,26 @@ export const insightGuides: InsightGuide[] = [
     sections: [
       {
         heading: "Demand follows geography and infrastructure",
-        body: "Canada's size, climate, remote assets and resource economy create strong use cases for aerial inspection, mapping, emergency response, environmental sensing and infrastructure monitoring.",
+        body: "Canada's size, climate, remote assets and resource economy create strong use cases for aerial inspection, mapping, emergency response, environmental sensing and infrastructure monitoring. Drones and autonomous systems are most compelling where distance, risk, frequency or data quality makes conventional inspection expensive or inconsistent.",
+        bullets: ["Long corridors such as pipelines, transmission lines, rail and transportation infrastructure.", "Remote or hazardous industrial sites where reducing human exposure matters.", "Public safety and emergency response scenarios where time and visibility are critical.", "Environmental monitoring where repeated data collection creates value."],
       },
       {
         heading: "Commercialization requires more than aircraft",
-        body: "Successful market entry depends on payload fit, compliance, operating permissions, data workflows, training, maintenance and the buyer's ability to use collected intelligence.",
-        bullets: ["Define the mission before selecting the aircraft.", "Clarify data ownership and reporting.", "Plan for local operating constraints and support."],
+        body: "Successful market entry depends on payload fit, compliance, operating permissions, data workflows, training, maintenance and the buyer's ability to use collected intelligence. A UAV platform without a mission workflow can become a demonstration tool rather than a recurring operational system.",
+        bullets: ["Define the mission before selecting the aircraft.", "Clarify data ownership, reporting format and decision use.", "Plan for local operating constraints and support.", "Identify whether the buyer wants equipment, a service provider or a complete intelligence workflow."],
       },
       {
         heading: "Where opportunities concentrate",
-        body: "Likely early adopters include utilities, pipelines, mining operations, public safety organizations, industrial service providers, ports, construction and environmental monitoring teams.",
+        body: "Likely early adopters include utilities, pipelines, mining operations, public safety organizations, industrial service providers, ports, construction and environmental monitoring teams. These buyers tend to care less about aircraft novelty and more about coverage, safety, repeatability, reporting and integration with existing operating processes.",
+      },
+      {
+        heading: "What suppliers should validate first",
+        body: "Suppliers should validate the mission, operating constraint and data workflow before scaling outreach. For example, an inspection drone opportunity is not only about flight time or payload capacity. It is also about whether the buyer can use the resulting data, whether permissions and site procedures are manageable, and whether local support can keep the operation reliable.",
+        bullets: ["Mission: what problem is being solved and how often?", "Constraint: what airspace, weather, site safety or communications limitations apply?", "Workflow: what data is delivered and who acts on it?", "Support: who operates, maintains and troubleshoots the system locally?"],
+      },
+      {
+        heading: "Where FlyPig AI fits",
+        body: "FlyPig AI can help drone and autonomous-systems suppliers frame Canadian use cases, identify relevant operators or service partners, separate product sales from service-led opportunities and design a more credible first pilot conversation.",
       },
     ],
     cta: "Discuss a drone or autonomous-systems opportunity",
