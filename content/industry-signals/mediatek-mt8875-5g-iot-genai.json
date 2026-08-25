@@ -2,6 +2,7 @@
   "eventId": "EVT-2026-0019",
   "slug": "mediatek-mt8875-5g-iot-genai",
   "publishedAt": "2026-08-25",
+  "modifiedAt": "2026-08-25",
   "supplier": "MediaTek",
   "category": "5G IoT · Edge AI · GenAI",
   "title": "MediaTek MT8875 Brings 5G and On-Device GenAI Into a Single IoT Platform",
@@ -39,5 +40,18 @@
   "sourceName": "MediaTek official product page and Tek Talk announcement",
   "sourceUrl": "https://www.mediatek.com/tek-talk-blogs/mediatek-mt8875-our-next-gen-5g-iot-platform-for-genai-applications",
   "sourceProductUrl": "https://www.mediatek.com/iot/modem-based-iot/mt8875",
-  "sourceNote": "FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Product specifications and availability should be verified with the manufacturer before design-in or procurement decisions."
+  "sourceNote": "FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Product specifications and availability should be verified with the manufacturer before design-in or procurement decisions.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/mediatek-mt8875-5g-iot-genai.svg",
+    "alt": "FlyPig AI infographic summarizing MediaTek MT8875 with 4nm process, 12.8 TOPS NPU and support for up to 24GB LPDDR5X.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.mediatek.com/iot/modem-based-iot/mt8875",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "public/images/signals/source/mediatek-mt8875-5g-iot-genai.svg"
+    }
+  }
 }
