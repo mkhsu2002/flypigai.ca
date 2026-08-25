@@ -34,6 +34,7 @@ Use the approved “preserve and polish” direction:
 - improve typography, spacing, contrast, focus states, responsive behavior, and component consistency;
 - add a favicon, Apple touch icon, and Open Graph image based on the existing FP mark and palette;
 - do not introduce decorative stock photography or a wholesale rebrand.
+- require repository evidence for every third-party visual asset; an ordinary source page is not a media license.
 
 ### 3.2 Audience priority
 
@@ -55,8 +56,8 @@ Remove the non-functional Next.js newsletter route handler. Same-origin producer
 
 The desktop and mobile navigation use one shared route definition:
 
-1. For Canada — `/canada`
-2. For Taiwan — `/taiwan`
+1. Canada Atlas — `/atlas`
+2. Taiwan Solutions — `/taiwan`
 3. Technology Intelligence — `/technologies`
 4. Industry Signals — `/signals`
 5. Insights — `/insights`
@@ -65,6 +66,8 @@ The desktop and mobile navigation use one shared route definition:
 8. Primary CTA — `/contact`
 
 The Canada Physical AI Atlas remains reachable from the homepage, contextual links, Insights, footer, and sitemap. It does not compete with the new two-sided gateway in the primary navigation.
+
+`Taiwan Solutions` describes public-source solution and technology research. It must not imply supplier authorization, endorsement, inventory, representation, or an official relationship.
 
 ### 4.2 Homepage sequence
 
@@ -117,6 +120,21 @@ Existing large page files are not broadly refactored unless a shared unit direct
 - Meet WCAG AA contrast for body copy, muted text, buttons, and dark sections.
 - Add only restrained CSS motion and disable it under `prefers-reduced-motion: reduce`.
 - Ensure form status messages use `aria-live` and do not rely on color alone.
+
+### 5.4 Industry Signals article template
+
+All existing and future `/signals/[slug]` pages use one shared editorial template and the content contract in `docs/editorial/industry-signals-standard.md`.
+
+- The headline uses `clamp(2.25rem, 4.4vw, 4rem)`, approximately `1.02` line-height, balanced wrapping, and a bounded column.
+- The deck, published/modified date, supplier, and `Reported by FlyPig AI` form a quiet metadata hierarchy.
+- The body remains within a 720–760 pixel reading column with 17–18 pixel copy and `1.75–1.85` line-height.
+- Section headings stay around 34–40 pixels and do not become secondary hero titles.
+- The close contains FlyPig interpretation, visible source/editorial disclosure, related Signals, and a compact newsletter CTA.
+- NewsArticle image, dates, publisher, and citations match the visible article.
+
+Every article includes a meaningful local hero visual. Allowed rights states are `owned`, `licensed`, and `approved_press_asset`. Content validation fails when the asset, alt text, dimensions, credit, source URL, rights status, or separate rights evidence is missing.
+
+The MediaTek MT8875 article will use a FlyPig AI-owned specification infographic. The product PNG found on MediaTek’s ordinary article page is not production-approved unless written permission or a matching approved Media Asset entry is documented.
 
 ## 6. Event-driven backend
 
@@ -191,6 +209,7 @@ There is no primary polling. The design incurs approximately one ingress invocat
 - Preserve the new Canada–Taiwan Edge AI and Physical AI intelligence position.
 - Do not claim supplier authorization, customer relationships, proprietary data, design wins, or platform maturity without evidence.
 - Keep Industry Signals source attribution visually clear and use official sources first.
+- Treat factual-source evidence and media-rights evidence as separate requirements. Do not download or hotlink a manufacturer image merely because the source is official.
 - Keep project requirements, customer identities, BOMs, pricing, volume, architecture, and uploaded documents private by default.
 - Update privacy content to disclose form storage, processing purpose, subscriber state, service providers, and correction/deletion contact paths.
 

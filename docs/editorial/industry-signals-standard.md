@@ -1,0 +1,147 @@
+# Industry Signals Editorial and Visual Standard
+
+This document is the required handoff standard for every current and future page under `/signals`.
+
+## Purpose
+
+Industry Signals turns verified Taiwan Edge AI, semiconductor, embedded-computing, robotics, and Physical AI developments into original English reporting for Canadian and North American readers. It is independent editorial analysis, not supplier marketing or evidence of a commercial relationship.
+
+## Shared article structure
+
+Every article renders through the same reusable template in this order:
+
+1. breadcrumb or Signals category path;
+2. category eyebrow;
+3. balanced headline;
+4. concise deck;
+5. published/modified date, supplier name, and `Reported by FlyPig AI`;
+6. hero visual with alt text and visible credit;
+7. `The signal` summary;
+8. numbered `Why it matters` points;
+9. reporting sections;
+10. FlyPig AI interpretation;
+11. source and editorial disclosure;
+12. related Signals;
+13. compact newsletter CTA.
+
+Do not expose internal event-processing notes, SEO strategy, prompt history, approval logic, or content-operation language in visible copy.
+
+## Typography and layout
+
+- Article headline: `clamp(2.25rem, 4.4vw, 4rem)` with approximately `1.02` line-height, balanced wrapping, and a bounded text column.
+- Deck: approximately `1.125rem` on desktop with `1.6` line-height.
+- Body column: 720–760 pixels maximum.
+- Body copy: 17–18 pixels with `1.75–1.85` line-height.
+- Section headings: approximately 34–40 pixels, never another hero-scale heading.
+- Mobile headline target: approximately 36 pixels; it must not overflow or dominate the entire first viewport.
+- Metadata stays visually quiet and wraps without horizontal scrolling.
+- Focus, contrast, keyboard, and reduced-motion behavior follow the repository accessibility rules.
+
+Do not solve long titles by changing one article’s inline style. Fix the shared template and preserve the title’s meaning unless an editorial rewrite improves accuracy.
+
+## Hero visual requirement
+
+Every article must provide one relevant hero visual. Allowed visual types are:
+
+- a FlyPig AI-owned editorial infographic;
+- an asset covered by an explicit license that allows the intended web use;
+- a manufacturer press/media-library asset explicitly marked as approved for usage.
+
+Not allowed by default:
+
+- images copied from ordinary manufacturer product or article pages;
+- social-media images, Open Graph images, screenshots, search-result images, or hotlinked files without explicit permission;
+- third-party diagrams or block diagrams redrawn so closely that the original expression is reproduced;
+- visuals that imply FlyPig AI is an authorized supplier partner;
+- stock or AI-generated images without a recorded license/provenance decision.
+
+Facts and specifications may inform an original FlyPig AI infographic, but the wording, layout, iconography, and composition must be independently created. Cite the factual source below the visual.
+
+## Required content contract
+
+Every Industry Signal record must include the following hero-visual structure:
+
+```json
+{
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/example.webp",
+    "alt": "Concise description of the visible information",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://official-source.example/product",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Source SVG and export are committed under public/images/signals/source/"
+    }
+  }
+}
+```
+
+Allowed `kind` values:
+
+- `original_infographic`
+- `licensed_image`
+- `approved_press_asset`
+
+Allowed `assetRights.status` values:
+
+- `owned`
+- `licensed`
+- `approved_press_asset`
+
+The build must reject missing fields, unknown statuses, remote hotlinks, and evidence that is only an ordinary source-page URL. `sourceUrl` supports the facts or identifies the media source; `assetRights.evidence` separately proves permission or ownership.
+
+## Rights evidence
+
+For `owned` assets, keep the editable source or reproducible generation input in the repository and identify it in `evidence`.
+
+For `licensed` assets, record:
+
+- licensor or platform;
+- license name or grant;
+- asset URL or purchase/reference ID;
+- permitted web/editorial/commercial use;
+- required credit;
+- date verified.
+
+Do not commit private invoices, account credentials, or license keys. Store non-secret proof or a redacted reference.
+
+For `approved_press_asset`, record:
+
+- the manufacturer media/press-library page that explicitly permits usage;
+- the exact asset identifier or download URL;
+- brand-guideline requirements;
+- required credit;
+- date verified.
+
+An ordinary product page, blog post, press release, or terms page that reserves copyright is not sufficient approval evidence.
+
+## Current MT8875 decision
+
+The product PNG used on MediaTek’s ordinary MT8875 article page is not approved for production use unless a written grant or matching approved Media Asset entry is documented.
+
+The production article will instead use a FlyPig AI-owned specification infographic containing independently typeset, verified facts such as process, connectivity, NPU performance, and supported memory. Credit it as an original FlyPig AI editorial graphic and link the official MediaTek product page as the factual source.
+
+Verified policy references as of 2026-08-25:
+
+- MediaTek Terms of Use: `https://corp.mediatek.com/legal-notice`
+- MediaTek Media Assets: `https://corp.mediatek.com/news-events/press-library`
+
+Re-check the current versions before relying on them for a later publication. The media library’s general approval applies only to assets actually offered there and does not automatically extend to images found elsewhere on MediaTek websites.
+
+## Publication validation
+
+Before an article can be built or pushed:
+
+1. validate the complete content schema;
+2. confirm the local hero asset exists and dimensions match metadata;
+3. validate `assetRights.status` and evidence;
+4. verify the factual source is official or primary;
+5. render desktop and 390-pixel mobile screenshots;
+6. confirm title wrapping, image crop, alt text, visible credit, source disclosure, related reading, and newsletter CTA;
+7. confirm NewsArticle schema matches visible content;
+8. run broken-link, typecheck, build, and console-error checks.
+
+No manual override is permitted merely to make a scheduled article publish. Missing rights evidence blocks publication.

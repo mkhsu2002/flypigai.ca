@@ -2,11 +2,21 @@
 
 This repository is the official website and product surface for FlyPig AI Canada.
 
+## Mandatory IDE and agent handoff
+
+Before editing or publishing, read:
+
+- `AGENTS.md` for repository-specific terminology, relationship claims, and asset-rights rules;
+- `docs/editorial/industry-signals-standard.md` for the required Signals article template and build-blocking media-rights contract;
+- `docs/superpowers/specs/2026-08-25-site-stabilization-design.md` for the approved stabilization architecture and release gates.
+
+General project instructions still apply. Repository rules do not replace backend/schema/environment synchronization or secret-handling requirements.
+
 ## IDE handoff status
 
 The project is being handed over to the IDE for full technical ownership from this point forward. The IDE should treat this README as the current source of truth for product direction, deployment issues, unfinished work, and implementation priorities.
 
-Do not assume the current production deployment is healthy just because `https://flypigai.ca/` loads. As of 2026-08-25, the custom domain is still serving an older production deployment while newer `main` commits have been queued or not promoted successfully.
+Do not assume the current production deployment is healthy just because `https://flypigai.ca/` loads. A 2026-08-25 readback confirmed that the custom domain serves the new Canada–Taiwan pages and Signals article, but the statically exported site still returns 404 for the Next.js newsletter route. The event-driven backend described in the stabilization design is not complete.
 
 ### Current repository state
 
@@ -22,9 +32,9 @@ Do not assume the current production deployment is healthy just because `https:/
   - `fe3b857` enable direct publishing policy
   - `ec4ad53` static-export hardening for Industry Signals
 
-### Known deployment problem
+### Deployment history and remaining problem
 
-Cloudflare Production was still serving old commit `290b197` while newer `main` commits existed. The Cloudflare dashboard showed:
+Cloudflare Production previously served old commit `290b197` while newer `main` commits existed. The Cloudflare dashboard showed:
 
 - old production `main 290b197` active
 - `b1c9c0e` no deployment available
@@ -32,11 +42,13 @@ Cloudflare Production was still serving old commit `290b197` while newer `main` 
 - `ec4ad53` queued
 - preview branch `flypig-phase1-repositioning` successfully deployed at a Cloudflare preview URL
 
-Symptoms:
+The static pages were later promoted and are publicly readable. Remaining verified symptoms:
 
-- `https://flypigai.ca/` loads, but may still show the old site
-- `https://flypigai.ca/signals` and signal article routes return 404 until the new build is actually promoted
-- some visual assets / image presentation may be incomplete or inconsistent
+- `POST https://flypigai.ca/api/newsletter/subscribe` returns 404 because the route handler is incompatible with static export;
+- the legacy contact endpoint has no persistent event/audit record and uses obsolete hard-coded mail configuration;
+- mobile primary navigation is hidden without a replacement menu;
+- `favicon.ico` returns 404;
+- Signals article typography and media-rights enforcement are not yet standardized in code.
 
 First IDE task is to inspect Cloudflare Pages build settings, production branch, build command, output directory, compatibility with Next.js static export, and deployment logs. Do not continue feature work until the deployment pipeline is deterministic.
 
