@@ -83,4 +83,3 @@ The release is accepted only when:
 7. internal links contain no obsolete gateway paths or broken local targets;
 8. desktop and 390px article screenshots show readable title, hero, metadata, body, related content, and CTA;
 9. the reviewed commit is pushed to `main`, and the public site is read back after deployment.
-

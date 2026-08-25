@@ -120,4 +120,3 @@
 - [ ] Start a local static server, capture desktop and 390px screenshots of `/`, `/Solutions`, `/signals`, and one long-title Signal, and inspect each screenshot.
 - [ ] Run `git diff --check`, inspect the staged diff, commit coherent source and generated assets, and push `main`.
 - [ ] Poll the public domain until the pushed commit is deployed, then verify canonical routes, redirects, OG assets, icon assets, and the representative Signal page.
-
