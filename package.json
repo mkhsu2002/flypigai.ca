@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate:signals": "node scripts/generate-signal-heroes.mjs",
+    "predev": "npm run generate:signals",
     "dev": "next dev",
+    "prebuild": "npm run generate:signals",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit"
