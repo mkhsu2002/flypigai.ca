@@ -9,6 +9,7 @@ export type SignalHeroVisual = {
   height: number;
   credit: string;
   sourceUrl: string;
+  facts?: string[];
   assetRights: {
     status: "owned" | "licensed" | "approved_press_asset";
     evidence: string;
@@ -72,27 +73,25 @@ function validateHeroVisual(signal: IndustrySignal, fileName: string) {
 }
 
 function validateSignal(signal: IndustrySignal, fileName: string) {
-  [
-    ["eventId", signal.eventId], ["slug", signal.slug], ["publishedAt", signal.publishedAt],
-    ["supplier", signal.supplier], ["category", signal.category], ["title", signal.title],
-    ["dek", signal.dek], ["summary", signal.summary], ["flypigTake", signal.flypigTake],
-    ["sourceName", signal.sourceName], ["sourceUrl", signal.sourceUrl], ["sourceNote", signal.sourceNote],
-  ].forEach(([field, value]) => requireString(value, String(field), fileName));
+  [["eventId", signal.eventId], ["slug", signal.slug], ["publishedAt", signal.publishedAt], ["supplier", signal.supplier], ["category", signal.category], ["title", signal.title], ["dek", signal.dek], ["summary", signal.summary], ["flypigTake", signal.flypigTake], ["sourceName", signal.sourceName], ["sourceUrl", signal.sourceUrl], ["sourceNote", signal.sourceNote]]
+    .forEach(([field, value]) => requireString(value, String(field), fileName));
   if (!Array.isArray(signal.whyItMatters) || signal.whyItMatters.length < 2) throw new Error(`Industry Signal ${fileName}: whyItMatters needs at least two points`);
   if (!Array.isArray(signal.reporting) || signal.reporting.length < 2) throw new Error(`Industry Signal ${fileName}: reporting needs at least two sections`);
   validateHeroVisual(signal, fileName);
 }
 
-function readSignalFile(fileName: string): IndustrySignal {
-  const signal = JSON.parse(fs.readFileSync(path.join(signalsDirectory, fileName), "utf8")) as IndustrySignal;
-  validateSignal(signal, fileName);
-  return signal;
+function readSignalFile(fileName: string): IndustrySignal[] {
+  const parsed = JSON.parse(fs.readFileSync(path.join(signalsDirectory, fileName), "utf8")) as IndustrySignal | IndustrySignal[];
+  const signals = Array.isArray(parsed) ? parsed : [parsed];
+  signals.forEach((signal, index) => validateSignal(signal, `${fileName}${signals.length > 1 ? `#${index + 1}` : ""}`));
+  return signals;
 }
 
 export function getIndustrySignals(): IndustrySignal[] {
   if (!fs.existsSync(signalsDirectory)) return [];
-  return fs.readdirSync(signalsDirectory).filter((f) => f.endsWith(".json")).map(readSignalFile)
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.eventId.localeCompare(a.eventId));
+  const signals = fs.readdirSync(signalsDirectory).filter((f) => f.endsWith(".json")).flatMap(readSignalFile);
+  const unique = new Map(signals.map((signal) => [signal.eventId, signal]));
+  return [...unique.values()].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.eventId.localeCompare(a.eventId));
 }
 
 export function getIndustrySignal(slug: string): IndustrySignal | undefined {
@@ -110,6 +109,5 @@ export function getRelatedIndustrySignals(signal: IndustrySignal, limit = 3): In
     const categoryScore = [...sourceTokens].filter((token) => candidateTokens.has(token)).length;
     const supplierScore = candidate.supplier === signal.supplier ? 2 : 0;
     return { candidate, score: categoryScore + supplierScore };
-  }).sort((a, b) => b.score - a.score || b.candidate.publishedAt.localeCompare(a.candidate.publishedAt))
-    .slice(0, limit).map(({ candidate }) => candidate);
+  }).sort((a, b) => b.score - a.score || b.candidate.publishedAt.localeCompare(a.candidate.publishedAt)).slice(0, limit).map(({ candidate }) => candidate);
 }
