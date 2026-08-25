@@ -8,6 +8,8 @@ import { makeMetadata, siteUrl } from "../../seo";
 
 type PageProps = { params: Promise<{ slug: string }> };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getIndustrySignals().map((signal) => ({ slug: signal.slug }));
 }
