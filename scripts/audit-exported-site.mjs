@@ -37,6 +37,7 @@ for (const filePath of htmlFiles) {
   const html = fs.readFileSync(filePath, "utf8");
   const expectedLanguage = route === "/zh" || route.startsWith("/zh/") ? "zh-Hant" : "en-CA";
   if (!html.includes(`<html lang="${expectedLanguage}">`)) errors.push(`${route}: expected html lang ${expectedLanguage}`);
+  if (expectedLanguage === "zh-Hant" && html.includes('\\"lang\\":\\"en-CA\\"')) errors.push(`${route}: hydrated document language would revert to en-CA`);
   const title = html.match(/<title>([^<]+)<\/title>/)?.[1]
     ?.replaceAll("&amp;", "&")
     .replaceAll("&quot;", '"')

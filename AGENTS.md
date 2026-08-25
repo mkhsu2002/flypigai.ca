@@ -21,6 +21,7 @@ General deployment, backend-contract, secret-handling, browser-lane, and release
 - Public email: `info@flypigai.ca`.
 - Founder: `M.K. Hsu`, with the canonical profile `https://mkhsu.icareu.tw/`.
 - Organization schema, About, Contact, Privacy, footer, `llms.txt`, and future entity references must use this identity. Do not revert the location to Vancouver.
+- Exported `/zh` HTML must declare `lang="zh-Hant"`. Preserve the direct-build safeguard in `next.config.ts` because Cloudflare Pages may invoke `next build` without npm lifecycle hooks; always verify the raw public HTML after deployment.
 
 ## Industry Signals
 

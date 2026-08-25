@@ -16,7 +16,7 @@ General project instructions still apply. Repository rules do not replace backen
 
 The project is being handed over to the IDE for full technical ownership from this point forward. The IDE should treat this README as the current source of truth for product direction, deployment issues, unfinished work, and implementation priorities.
 
-Do not assume the current production deployment is healthy just because `https://flypigai.ca/` loads. A 2026-08-25 readback confirmed that the custom domain serves the new Canada–Taiwan pages and Signals article, but the statically exported site still returns 404 for the Next.js newsletter route. The event-driven backend described in the stabilization design is not complete.
+Do not assume the current production deployment is healthy just because `https://flypigai.ca/` loads. A 2026-08-25 readback confirmed the canonical Atlas/Solutions architecture, article media, redirects, metadata, icons, and public entity identity. The statically exported site still returns 404 for the Next.js newsletter route; the event-driven backend described in the stabilization design remains separate unfinished work.
 
 ### Current repository state
 
@@ -37,7 +37,7 @@ Do not assume the current production deployment is healthy just because `https:/
   - `fe3b857` enable direct publishing policy
   - `ec4ad53` static-export hardening for Industry Signals
 
-### Deployment history and remaining problem
+### Deployment history and remaining backend problem
 
 Cloudflare Production previously served old commit `290b197` while newer `main` commits existed. The Cloudflare dashboard showed:
 
@@ -47,15 +47,14 @@ Cloudflare Production previously served old commit `290b197` while newer `main` 
 - `ec4ad53` queued
 - preview branch `flypig-phase1-repositioning` successfully deployed at a Cloudflare preview URL
 
-The static pages were later promoted and are publicly readable. Remaining verified symptoms:
+The static pages were later promoted and are publicly readable. The SEO/GEO/AEO release added a repository-level safeguard for hosts that invoke `next build` directly: `next.config.ts` runs `scripts/postprocess-static-html.mjs` at the end of a successful direct build so raw `/zh` HTML still declares `lang="zh-Hant"`. Keep the npm `postbuild` hook and this direct-build safeguard until the hosting build command is contractually fixed.
+
+Remaining verified backend symptoms:
 
 - `POST https://flypigai.ca/api/newsletter/subscribe` returns 404 because the route handler is incompatible with static export;
-- the legacy contact endpoint has no persistent event/audit record and uses obsolete hard-coded mail configuration;
-- mobile primary navigation is hidden without a replacement menu;
-- `favicon.ico` returns 404;
-- Signals article typography and media-rights enforcement are not yet standardized in code.
+- the legacy contact endpoint has no durable event/audit record and uses obsolete hard-coded mail configuration.
 
-First IDE task is to inspect Cloudflare Pages build settings, production branch, build command, output directory, compatibility with Next.js static export, and deployment logs. Do not continue feature work until the deployment pipeline is deterministic.
+The next infrastructure task is the separate newsletter/contact event-delivery work. Preserve the static export audit and perform raw public HTML readback after every deployment.
 
 ## Strategic positioning
 
