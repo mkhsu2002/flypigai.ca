@@ -1,6 +1,81 @@
 {
-  "eventId":"EVT-2026-0004","slug":"himax-wiseeye-embedded-world-2026","publishedAt":"2026-03-09","modifiedAt":"2026-03-09","supplier":"Himax","category":"Always-On AI · Sensing","title":"Himax WiseEye Showcase Extends Always-On AI Into Security, Smart Home and Wearables","dek":"Himax used Embedded World 2026 to show WiseEye always-on AI across smart glasses, security and other low-power sensing applications, reinforcing the platform’s role in endpoint intelligence.","summary":"WiseEye’s significance is architectural: useful vision stays awake while a larger host can remain asleep, a pattern that directly affects battery life in cameras, locks and wearable devices.",
-  "whyItMatters":["Always-on endpoint AI can keep a high-power host asleep until a meaningful event occurs.","That architecture is relevant to battery cameras, locks, wearables and presence-sensing devices where standby power dominates product design.","Turnkey modules, reference designs and real production examples matter more than demo breadth for the next stage of adoption."],
-  "reporting":[{"heading":"Always-on AI is fundamentally a power architecture","paragraphs":["Himax’s WiseEye portfolio is built around the idea that useful sensing can remain active without waking a larger application processor for every frame or event.","At Embedded World 2026, the company extended that story across AIoT applications including smart glasses and security-oriented sensing, illustrating how a low-power vision layer can sit in front of a more capable host."]},{"heading":"The product value is often in what stays asleep","paragraphs":["For battery-powered devices, the advantage of always-on intelligence is not merely performing a small neural-network task. It is reducing how often cameras, radios or host processors need to enter higher-power states.","That can reshape the battery budget of door locks, outdoor cameras, wearables and other devices that spend most of their lives waiting for a relevant event."]},{"heading":"Commercial readiness depends on the surrounding design kit","paragraphs":["Product teams still need camera pairings, module form factors, firmware, model tools, reference power numbers and a route to production.","Those layers will determine whether WiseEye is a convenient endpoint-AI subsystem or a platform that still requires significant custom engineering."]}],
-  "flypigTake":"WiseEye is strategically relevant because always-on AI is a system-level power decision. FlyPig will prioritize evidence that shows how quickly a team can move from the low-power processor to a validated camera, model and module stack.","sourceName":"Himax official Embedded World 2026 announcement","sourceUrl":"https://www.himax.com.tw/wp-content/uploads/2026/03/PR-Himax-at-Embedded-World-2026-Final.pdf","sourceNote":"FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions.","heroVisual":{"kind":"original_infographic","src":"/images/signals/himax-wiseeye-embedded-world-2026.svg","alt":"FlyPig AI editorial infographic summarizing Himax WiseEye always-on AI at Embedded World 2026.","width":1600,"height":1000,"credit":"Original editorial graphic by FlyPig AI","sourceUrl":"https://www.himax.com.tw/wp-content/uploads/2026/03/PR-Himax-at-Embedded-World-2026-Final.pdf","facts":["Always-on endpoint AI","Security + smart home + wearables","Low-power local sensing"],"assetRights":{"status":"owned","evidence":"scripts/generate-signal-heroes.mjs"}}
+  "eventId": "EVT-2026-0004",
+  "slug": "himax-wiseeye-embedded-world-2026",
+  "publishedAt": "2026-03-09",
+  "modifiedAt": "2026-08-25",
+  "supplier": "Himax",
+  "category": "Always-On AI · Sensing",
+  "title": "Himax WiseEye Showcase Extends Always-On AI Into Security, Smart Home and Wearables",
+  "seoTitle": "Himax Shows WiseEye Always-On AI at Embedded World 2026",
+  "socialTitle": "Himax Shows WiseEye Always-On AI at Embedded World 2026",
+  "dek": "Himax used Embedded World 2026 to show WiseEye always-on AI across smart glasses, security and other low-power sensing applications, reinforcing the platform’s role in endpoint intelligence.",
+  "summary": "WiseEye’s significance is architectural: useful vision stays awake while a larger host can remain asleep, a pattern that directly affects battery life in cameras, locks and wearable devices.",
+  "keyFacts": [
+    "Always-on endpoint AI",
+    "Security + smart home + wearables",
+    "Low-power local sensing"
+  ],
+  "whyItMatters": [
+    "Always-on endpoint AI can keep a high-power host asleep until a meaningful event occurs.",
+    "That architecture is relevant to battery cameras, locks, wearables and presence-sensing devices where standby power dominates product design.",
+    "Turnkey modules, reference designs and real production examples matter more than demo breadth for the next stage of adoption."
+  ],
+  "reporting": [
+    {
+      "heading": "Always-on AI is fundamentally a power architecture",
+      "paragraphs": [
+        "Himax’s WiseEye portfolio is built around the idea that useful sensing can remain active without waking a larger application processor for every frame or event.",
+        "At Embedded World 2026, the company extended that story across AIoT applications including smart glasses and security-oriented sensing, illustrating how a low-power vision layer can sit in front of a more capable host."
+      ]
+    },
+    {
+      "heading": "The product value is often in what stays asleep",
+      "paragraphs": [
+        "For battery-powered devices, the advantage of always-on intelligence is not merely performing a small neural-network task. It is reducing how often cameras, radios or host processors need to enter higher-power states.",
+        "That can reshape the battery budget of door locks, outdoor cameras, wearables and other devices that spend most of their lives waiting for a relevant event."
+      ]
+    },
+    {
+      "heading": "Commercial readiness depends on the surrounding design kit",
+      "paragraphs": [
+        "Product teams still need camera pairings, module form factors, firmware, model tools, reference power numbers and a route to production.",
+        "Those layers will determine whether WiseEye is a convenient endpoint-AI subsystem or a platform that still requires significant custom engineering."
+      ]
+    }
+  ],
+  "flypigTake": "WiseEye is strategically relevant because always-on AI is a system-level power decision. FlyPig will prioritize evidence that shows how quickly a team can move from the low-power processor to a validated camera, model and module stack.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "himax-wiseeye-palm-vein-waferlock-l322",
+    "himax-itof-depth-decoder-robotics-vision",
+    "mediatek-mt8875-5g-iot-genai"
+  ],
+  "relatedTechnologies": [
+    "Always-On AI",
+    "Sensing",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "Himax official Embedded World 2026 announcement",
+  "sourceUrl": "https://www.himax.com.tw/wp-content/uploads/2026/03/PR-Himax-at-Embedded-World-2026-Final.pdf",
+  "sourceNote": "FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/himax-wiseeye-embedded-world-2026.png",
+    "socialSrc": "/images/signals/og/himax-wiseeye-embedded-world-2026.png",
+    "alt": "FlyPig AI editorial infographic summarizing Himax always-on ai · sensing developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.himax.com.tw/wp-content/uploads/2026/03/PR-Himax-at-Embedded-World-2026-Final.pdf",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/himax-wiseeye-embedded-world-2026.svg"
+    }
+  }
 }

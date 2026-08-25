@@ -1,6 +1,81 @@
 {
-  "eventId":"EVT-2026-0016","slug":"himax-wiseeye-palm-vein-waferlock-l322","publishedAt":"2026-08-18","modifiedAt":"2026-08-18","supplier":"Himax","category":"Biometrics · Endpoint AI","title":"Himax WiseEye Palm-Vein AI Reaches a Commercial Smart Lock","dek":"Himax’s WiseEye palm-vein authentication technology is now integrated into WAFERLOCK’s L322 smart lock, providing a commercial example of low-power biometric AI running locally at the endpoint.","summary":"The L322 matters as evidence of commercialization: WiseEye palm-vein processing is operating inside a purchasable, battery-conscious identity product rather than remaining only a technology demonstration.",
-  "whyItMatters":["The L322 moves WiseEye palm-vein recognition from a technology showcase into a purchasable consumer security product.","Local image capture, feature matching and authentication reduce dependence on cloud connectivity for an identity-sensitive workflow.","The next design-in question is whether Himax exposes the capability as an IC, module or reference design that other device makers can adopt."],
-  "reporting":[{"heading":"Commercial deployment is stronger evidence than a demo","paragraphs":["Himax says its WiseEye palm-vein biometric technology powers WAFERLOCK’s L322 smart lock, which is commercially available. The system integrates an ultra-low-power AI processor, image sensing and the authentication algorithm at the endpoint.","That is important because it demonstrates the technology inside a battery-conscious consumer product rather than only on an evaluation board."]},{"heading":"Keeping biometrics local changes the privacy and latency model","paragraphs":["Palm-vein authentication depends on sensitive biometric information. Performing capture, feature extraction and matching on the device can reduce the need to transmit raw biometric data to a cloud service.","Local processing can also make the lock less dependent on network availability and help keep authentication latency predictable."]},{"heading":"The platform opportunity is broader than one lock","paragraphs":["If the WiseEye palm-vein stack is available in a reusable module or reference design, the same approach could extend to access control, smart-home devices and other identity-sensitive terminals.","That depends on details not yet established publicly for third-party design-in: module form, power, recognition distance, liveness performance, SDK terms, MOQ and sample availability."]}],
-  "flypigTake":"The WAFERLOCK deployment is exactly the kind of signal FlyPig values: it proves a Taiwan endpoint-AI technology can survive inside a commercial product. The next step is to learn whether that implementation can be productized for other OEMs, not simply celebrate the design win.","sourceName":"Himax official WAFERLOCK L322 announcement","sourceUrl":"https://www.himax.com.tw/wp-content/uploads/2026/08/PR-Himax-WiseEye-Palm-Vein-Biometric-Authentication-Technology-Powers-WAFERLOCK-L322-Smart-Lock-Final-v1.pdf","sourceNote":"FlyPig AI independently reports from Himax’s public announcement. Commercial availability refers to the WAFERLOCK L322; standalone WiseEye component, module and licensing terms should be confirmed with Himax.","heroVisual":{"kind":"original_infographic","src":"/images/signals/himax-wiseeye-palm-vein-waferlock-l322.svg","alt":"FlyPig AI editorial infographic summarizing Himax WiseEye palm-vein AI in the WAFERLOCK L322 smart lock.","width":1600,"height":1000,"credit":"Original editorial graphic by FlyPig AI","sourceUrl":"https://www.himax.com.tw/wp-content/uploads/2026/08/PR-Himax-WiseEye-Palm-Vein-Biometric-Authentication-Technology-Powers-WAFERLOCK-L322-Smart-Lock-Final-v1.pdf","facts":["Commercial smart-lock deployment","Local palm-vein authentication","Next: reusable module / reference design"],"assetRights":{"status":"owned","evidence":"scripts/generate-signal-heroes.mjs"}}
+  "eventId": "EVT-2026-0016",
+  "slug": "himax-wiseeye-palm-vein-waferlock-l322",
+  "publishedAt": "2026-08-18",
+  "modifiedAt": "2026-08-25",
+  "supplier": "Himax",
+  "category": "Biometrics · Endpoint AI",
+  "title": "Himax WiseEye Palm-Vein AI Reaches a Commercial Smart Lock",
+  "seoTitle": "Himax WiseEye Powers WAFERLOCK L322 Palm-Vein Access",
+  "socialTitle": "Himax WiseEye Powers WAFERLOCK L322 Palm-Vein Access",
+  "dek": "Himax’s WiseEye palm-vein authentication technology is now integrated into WAFERLOCK’s L322 smart lock, providing a commercial example of low-power biometric AI running locally at the endpoint.",
+  "summary": "The L322 matters as evidence of commercialization: WiseEye palm-vein processing is operating inside a purchasable, battery-conscious identity product rather than remaining only a technology demonstration.",
+  "keyFacts": [
+    "Commercial smart-lock deployment",
+    "Local palm-vein authentication",
+    "Next: reusable module / reference design"
+  ],
+  "whyItMatters": [
+    "The L322 moves WiseEye palm-vein recognition from a technology showcase into a purchasable consumer security product.",
+    "Local image capture, feature matching and authentication reduce dependence on cloud connectivity for an identity-sensitive workflow.",
+    "The next design-in question is whether Himax exposes the capability as an IC, module or reference design that other device makers can adopt."
+  ],
+  "reporting": [
+    {
+      "heading": "Commercial deployment is stronger evidence than a demo",
+      "paragraphs": [
+        "Himax says its WiseEye palm-vein biometric technology powers WAFERLOCK’s L322 smart lock, which is commercially available. The system integrates an ultra-low-power AI processor, image sensing and the authentication algorithm at the endpoint.",
+        "That is important because it demonstrates the technology inside a battery-conscious consumer product rather than only on an evaluation board."
+      ]
+    },
+    {
+      "heading": "Keeping biometrics local changes the privacy and latency model",
+      "paragraphs": [
+        "Palm-vein authentication depends on sensitive biometric information. Performing capture, feature extraction and matching on the device can reduce the need to transmit raw biometric data to a cloud service.",
+        "Local processing can also make the lock less dependent on network availability and help keep authentication latency predictable."
+      ]
+    },
+    {
+      "heading": "The platform opportunity is broader than one lock",
+      "paragraphs": [
+        "If the WiseEye palm-vein stack is available in a reusable module or reference design, the same approach could extend to access control, smart-home devices and other identity-sensitive terminals.",
+        "That depends on details not yet established publicly for third-party design-in: module form, power, recognition distance, liveness performance, SDK terms, MOQ and sample availability."
+      ]
+    }
+  ],
+  "flypigTake": "The WAFERLOCK deployment is exactly the kind of signal FlyPig values: it proves a Taiwan endpoint-AI technology can survive inside a commercial product. The next step is to learn whether that implementation can be productized for other OEMs, not simply celebrate the design win.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "himax-itof-depth-decoder-robotics-vision",
+    "himax-wiseeye-embedded-world-2026",
+    "mediatek-mt8875-5g-iot-genai"
+  ],
+  "relatedTechnologies": [
+    "Biometrics",
+    "Endpoint AI",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "Himax official WAFERLOCK L322 announcement",
+  "sourceUrl": "https://www.himax.com.tw/wp-content/uploads/2026/08/PR-Himax-WiseEye-Palm-Vein-Biometric-Authentication-Technology-Powers-WAFERLOCK-L322-Smart-Lock-Final-v1.pdf",
+  "sourceNote": "FlyPig AI independently reports from Himax’s public announcement. Commercial availability refers to the WAFERLOCK L322; standalone WiseEye component, module and licensing terms should be confirmed with Himax.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/himax-wiseeye-palm-vein-waferlock-l322.png",
+    "socialSrc": "/images/signals/og/himax-wiseeye-palm-vein-waferlock-l322.png",
+    "alt": "FlyPig AI editorial infographic summarizing Himax biometrics · endpoint ai developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.himax.com.tw/wp-content/uploads/2026/08/PR-Himax-WiseEye-Palm-Vein-Biometric-Authentication-Technology-Powers-WAFERLOCK-L322-Smart-Lock-Final-v1.pdf",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/himax-wiseeye-palm-vein-waferlock-l322.svg"
+    }
+  }
 }

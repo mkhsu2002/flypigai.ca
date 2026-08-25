@@ -27,6 +27,11 @@ Do not assume the current production deployment is healthy just because `https:/
 - Current Next.js mode: static export via `output: "export"`
 - Public domain: `https://flypigai.ca`
 - Cloudflare Pages domain: `flypigai-ca.pages.dev`
+- Public brand: `FlyPig AI`
+- Legal operator: `ICareU Global Trading Ltd.`
+- Public address: `11936 Woodridge Cres., Delta, BC V4E 3H5, Canada`
+- Public email: `info@flypigai.ca`
+- Founder: `M.K. Hsu` — `https://mkhsu.icareu.tw/`
 - Latest handoff-era main commits include:
   - `b1c9c0e` Phase 1 Canada-Taiwan design intelligence repositioning
   - `fe3b857` enable direct publishing policy
@@ -56,7 +61,7 @@ First IDE task is to inspect Cloudflare Pages build settings, production branch,
 
 FlyPig AI is not intended to be a generic sourcing agent, trade consultant, distributor, or another electronics marketplace.
 
-The working positioning is:
+The current positioning is:
 
 > Canada-Taiwan Edge AI and Physical AI design intelligence.
 
@@ -109,11 +114,11 @@ Core principle:
 
 ## Target information architecture
 
-The intended top-level structure is approximately:
+The approved top-level owner structure is:
 
 - `/`
-- `/canada`
-- `/taiwan`
+- `/atlas` — Canadian companies, operators, industries and ecosystem context
+- `/Solutions` — Taiwan solution and supply-side intelligence
 - `/technologies`
 - `/signals`
 - `/design-routes`
@@ -131,15 +136,15 @@ Entity routes should eventually support patterns such as:
 - `/design-route/{slug}`
 - `/signals/{slug}`
 
-The existing Atlas and older Physical AI pages may contain reusable content, but the IDE should audit whether they fit the new positioning before preserving them in navigation.
+`/canada` permanently redirects to `/atlas`. `/taiwan` and lowercase `/solutions` permanently redirect to the intentionally capitalized canonical route `/Solutions`. Do not restore the retired gateway pages. The older Physical AI page is an educational deployment-readiness owner; `/services` owns the commercial engagement process.
 
 ## Current Phase 1 changes already implemented
 
 Recent work added or modified:
 
 - homepage positioning toward Canada-Taiwan Edge AI / Physical AI intelligence
-- `/canada` landing page
-- `/taiwan` landing page
+- `/atlas` Canada owner page
+- `/Solutions` Taiwan solution-intelligence owner page
 - `/technologies` intelligence hub
 - global SEO metadata
 - Organization JSON-LD
@@ -334,7 +339,7 @@ Each page should cover:
 - environmental constraints
 - Taiwan technology candidates
 - trade-offs
-- potential design partners
+- relevant solution and supplier candidates, without implying an existing relationship
 
 These pages should serve product intelligence, sales collateral, SEO, AEO and GEO simultaneously.
 
@@ -397,7 +402,7 @@ Work in this order.
 6. fix any Next.js / Cloudflare architectural mismatch
 7. ensure `main` automatically deploys to production
 8. verify custom domain points at newest successful production deployment
-9. verify `/`, `/canada`, `/taiwan`, `/technologies`, `/signals`, and the first signal article
+9. verify `/`, `/atlas`, `/Solutions`, `/technologies`, `/signals`, and the first signal article, plus the three legacy redirects
 10. verify mobile layout and missing assets
 
 Do not proceed until production deploy is reliable.

@@ -1,6 +1,81 @@
 {
-  "eventId":"EVT-2026-0003","slug":"phison-intel-aidaptiv-ai-pc-memory-extension","publishedAt":"2026-06-02","modifiedAt":"2026-06-02","supplier":"Phison","category":"AI Memory · Storage Extension","title":"Phison and Intel Use NAND as an AI Memory Extension for Larger Local Models","dek":"Phison’s Pascari aiDAPTIV work with Intel uses flash storage as an extension of effective AI memory, targeting larger MoE and agentic workloads on local AI PCs.","summary":"The announcement attacks a different edge-AI bottleneck from NPU performance: how to keep larger models local when DRAM capacity becomes the limiting and expensive part of the system.",
-  "whyItMatters":["Flash-backed memory extension attacks a different bottleneck from NPU TOPS: the capacity needed to keep larger models local.","The approach could let more modest systems run workloads that otherwise require substantially more DRAM or accelerator memory.","Latency, endurance and workload-specific performance remain critical; this should not be read as a general replacement for DRAM or HBM."],
-  "reporting":[{"heading":"Local AI is running into a memory-capacity wall","paragraphs":["As local models grow, inference is constrained not only by compute but also by how much model state can be kept close to the processor. Phison’s aiDAPTIV approach treats NAND as an additional memory tier rather than only persistent storage.","The June collaboration with Intel positions that idea around Core Ultra Series 3 systems and larger mixture-of-experts and agentic workloads."]},{"heading":"A new tier changes system economics, but also the performance model","paragraphs":["Using flash to extend effective memory can change the cost curve for AI PCs and edge appliances. It may allow a system to trade some latency for much larger local model capacity instead of scaling expensive DRAM linearly.","That trade-off has to be measured workload by workload. Random access behaviour, flash endurance, model paging patterns and software orchestration all affect whether the architecture is useful."]},{"heading":"The edge opportunity is broader than PCs if the stack proves portable","paragraphs":["If the mechanism can be exposed cleanly in compact AI appliances, private AI boxes or industrial edge systems, it could become a useful architecture tool for teams trying to keep models local.","The important next evidence is therefore not headline model size, but reproducible performance data on representative local workloads and clear platform support."]}],
-  "flypigTake":"aiDAPTIV is interesting because it reframes storage as part of the AI memory hierarchy. FlyPig would treat it as an architecture option for capacity-constrained local AI, not as a substitute for fast memory without workload-specific validation.","sourceName":"Phison official aiDAPTIV and Intel announcement","sourceUrl":"https://www.phison.com/phison-collaborates-with-intel-to-bring-larger-local-ai-workloads-to-intel-ai-pc-platforms/","sourceNote":"FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions.","heroVisual":{"kind":"original_infographic","src":"/images/signals/phison-intel-aidaptiv-ai-pc-memory-extension.svg","alt":"FlyPig AI editorial infographic summarizing Phison aiDAPTIV memory extension with Intel.","width":1600,"height":1000,"credit":"Original editorial graphic by FlyPig AI","sourceUrl":"https://www.phison.com/phison-collaborates-with-intel-to-bring-larger-local-ai-workloads-to-intel-ai-pc-platforms/","facts":["NAND-backed memory extension","Larger MoE + agentic AI","Intel Core Ultra Series 3"],"assetRights":{"status":"owned","evidence":"scripts/generate-signal-heroes.mjs"}}
+  "eventId": "EVT-2026-0003",
+  "slug": "phison-intel-aidaptiv-ai-pc-memory-extension",
+  "publishedAt": "2026-06-02",
+  "modifiedAt": "2026-08-25",
+  "supplier": "Phison",
+  "category": "AI Memory · Storage Extension",
+  "title": "Phison and Intel Use NAND as an AI Memory Extension for Larger Local Models",
+  "seoTitle": "Phison and Intel Expand Local AI Memory with aiDAPTIV",
+  "socialTitle": "Phison and Intel Expand Local AI Memory with aiDAPTIV",
+  "dek": "Phison’s Pascari aiDAPTIV work with Intel uses flash storage as an extension of effective AI memory, targeting larger MoE and agentic workloads on local AI PCs.",
+  "summary": "The announcement attacks a different edge-AI bottleneck from NPU performance: how to keep larger models local when DRAM capacity becomes the limiting and expensive part of the system.",
+  "keyFacts": [
+    "NAND-backed memory extension",
+    "Larger MoE + agentic AI",
+    "Intel Core Ultra Series 3"
+  ],
+  "whyItMatters": [
+    "Flash-backed memory extension attacks a different bottleneck from NPU TOPS: the capacity needed to keep larger models local.",
+    "The approach could let more modest systems run workloads that otherwise require substantially more DRAM or accelerator memory.",
+    "Latency, endurance and workload-specific performance remain critical; this should not be read as a general replacement for DRAM or HBM."
+  ],
+  "reporting": [
+    {
+      "heading": "Local AI is running into a memory-capacity wall",
+      "paragraphs": [
+        "As local models grow, inference is constrained not only by compute but also by how much model state can be kept close to the processor. Phison’s aiDAPTIV approach treats NAND as an additional memory tier rather than only persistent storage.",
+        "The June collaboration with Intel positions that idea around Core Ultra Series 3 systems and larger mixture-of-experts and agentic workloads."
+      ]
+    },
+    {
+      "heading": "A new tier changes system economics, but also the performance model",
+      "paragraphs": [
+        "Using flash to extend effective memory can change the cost curve for AI PCs and edge appliances. It may allow a system to trade some latency for much larger local model capacity instead of scaling expensive DRAM linearly.",
+        "That trade-off has to be measured workload by workload. Random access behaviour, flash endurance, model paging patterns and software orchestration all affect whether the architecture is useful."
+      ]
+    },
+    {
+      "heading": "The edge opportunity is broader than PCs if the stack proves portable",
+      "paragraphs": [
+        "If the mechanism can be exposed cleanly in compact AI appliances, private AI boxes or industrial edge systems, it could become a useful architecture tool for teams trying to keep models local.",
+        "The important next evidence is therefore not headline model size, but reproducible performance data on representative local workloads and clear platform support."
+      ]
+    }
+  ],
+  "flypigTake": "aiDAPTIV is interesting because it reframes storage as part of the AI memory hierarchy. FlyPig would treat it as an architecture option for capacity-constrained local AI, not as a substitute for fast memory without workload-specific validation.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "mediatek-mt8875-5g-iot-genai",
+    "advantech-aom-2721-ubuntu-qcs6490",
+    "primax-aisf-delivery-robot-commercialization"
+  ],
+  "relatedTechnologies": [
+    "AI Memory",
+    "Storage Extension",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "Phison official aiDAPTIV and Intel announcement",
+  "sourceUrl": "https://www.phison.com/phison-collaborates-with-intel-to-bring-larger-local-ai-workloads-to-intel-ai-pc-platforms/",
+  "sourceNote": "FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/phison-intel-aidaptiv-ai-pc-memory-extension.png",
+    "socialSrc": "/images/signals/og/phison-intel-aidaptiv-ai-pc-memory-extension.png",
+    "alt": "FlyPig AI editorial infographic summarizing Phison ai memory · storage extension developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.phison.com/phison-collaborates-with-intel-to-bring-larger-local-ai-workloads-to-intel-ai-pc-platforms/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/phison-intel-aidaptiv-ai-pc-memory-extension.svg"
+    }
+  }
 }

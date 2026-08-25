@@ -59,7 +59,7 @@ export default function PhysicalAIPage() {
           name: "What does FlyPig AI do in Physical AI?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "FlyPig AI supports readiness assessment, pilot scoping, market validation, partner development and local commercialization for robotics and Physical AI opportunities in Canada.",
+            text: "FlyPig AI publishes readiness and ecosystem intelligence that helps teams frame tasks, pilot evidence, operating constraints and the specialist roles required for Physical AI deployment.",
           },
         },
       ],
@@ -72,7 +72,7 @@ export default function PhysicalAIPage() {
         <div>
           <p className="eyebrow">Canada · Asia · Physical AI</p>
           <h1>AI moves into the real world.</h1>
-          <p className="lead">We help Canadian businesses validate robotics opportunities—and help robotics manufacturers build a credible path into Canada. The focus is the operating layer: tasks, sites, safety, support, integration and measurable business value.</p>
+          <p className="lead">This educational guide explains the operating layer behind Physical AI deployment: tasks, sites, safety, support, integration and measurable business value. It is a readiness framework, not an engineering certification or claim of an existing deployment relationship.</p>
           <div className="actions"><a className="pill primary" href="/contact">Discuss a deployment</a><a className="pill secondary" href="/insights/canada-physical-ai-ecosystem-overview">Read the ecosystem overview</a></div>
         </div>
         <aside className="signal-card">
@@ -80,15 +80,15 @@ export default function PhysicalAIPage() {
           <div className="signal-line"><span>Market</span><strong>Canada</strong></div>
           <div className="signal-line"><span>Operating model</span><strong>Human + autonomy</strong></div>
           <div className="signal-line"><span>Method</span><strong>Assess → Pilot → Operate</strong></div>
-          <div className="signal-line"><span>Current focus</span><strong>Design partners</strong></div>
+          <div className="signal-line"><span>Current focus</span><strong>Deployment readiness</strong></div>
         </aside>
       </div>
     </section>
 
     <div className="ticker">Physical AI readiness · robotics market entry · pilot development · AI workflow integration · localized deployment support</div>
 
-    <section id="services" className="section shell">
-      <div className="section-head"><div><p className="eyebrow">What we do</p><h2>Start with the work—not the robot.</h2></div><p className="section-copy">Most robotics projects fail before deployment: the task is poorly defined, the environment is underestimated, or the integration burden is ignored. We begin with operational evidence and design the smallest pilot that can prove business value.</p></div>
+    <section id="readiness-path" className="section shell">
+      <div className="section-head"><div><p className="eyebrow">Readiness path</p><h2>Start with the work—not the robot.</h2></div><p className="section-copy">A useful readiness review begins with operational evidence and the smallest pilot that could prove value. Technical validation, safety and sign-off remain with qualified specialists and the operating organization.</p></div>
       <div className="grid3">{services.map(([n,t,d])=><article className="card" key={t}><span className="num">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div>
     </section>
 
@@ -119,14 +119,14 @@ export default function PhysicalAIPage() {
       <div className="section-head"><div><p className="eyebrow">FlyPig AI Insights</p><h2>Follow the operating layer—not only the machines.</h2></div><div><p className="section-copy">Our opening research series examines Canada's emerging Physical AI value chain, platform-agnostic robotics, infrastructure adoption and the gap between impressive hardware and reliable deployment.</p><div className="actions"><a className="pill secondary" href="/insights">Explore Physical AI insights</a></div></div></div>
     </section>
 
-    <section id="partners" className="section shell">
-      <div className="section-head"><div><p className="eyebrow">For manufacturers</p><h2>A practical bridge into Canada.</h2></div><p className="section-copy">We support market validation, local use-case discovery, pilot recruitment, bilingual business development, deployment coordination and the creation of credible Canadian reference cases.</p></div>
-      <div className="grid3"><article className="card"><span className="num">Phase 01</span><h3>Market validation</h3><p>Test positioning, identify target accounts and surface local compliance or service barriers.</p></article><article className="card"><span className="num">Phase 02</span><h3>Pilot partnership</h3><p>Match qualified design partners with the right product and coordinate a measurable trial.</p></article><article className="card"><span className="num">Phase 03</span><h3>Local deployment</h3><p>Develop the integration, support and operating model required for repeatable Canadian growth.</p></article></div>
+    <section id="route-to-market" className="section shell">
+      <div className="section-head"><div><p className="eyebrow">For product teams</p><h2>Frame a credible Canadian deployment route.</h2></div><p className="section-copy">The sequence below describes research questions, not an existing partner network or a promise of deployment.</p></div>
+      <div className="grid3"><article className="card"><span className="num">Phase 01</span><h3>Market validation</h3><p>Test positioning, identify operator categories and surface local compliance or service barriers.</p></article><article className="card"><span className="num">Phase 02</span><h3>Pilot qualification</h3><p>Define the use case, responsible parties, evidence threshold and selection criteria for a possible trial.</p></article><article className="card"><span className="num">Phase 03</span><h3>Deployment planning</h3><p>Identify the integration, support and operating responsibilities required before repeatable adoption.</p></article></div>
     </section>
 
     <section id="about" className="section shell founder">
       <div><p className="eyebrow">Founder-led</p><h2>Canada-based. Asia-connected. Business-first.</h2><p className="section-copy">FlyPig AI is led by M.K. Hsu, an entrepreneur working across Canada and Taiwan in AI automation, e-commerce, digital products and cross-border market development. The founder profile remains on the independent personal site, preserving a clear distinction between personal thought leadership and FlyPig AI’s commercial work.</p><div className="actions"><a className="pill secondary" href="https://mkhsu.icareu.tw/" target="_blank" rel="noreferrer">Founder profile ↗</a></div></div>
-      <div className="founder-card"><span className="mono">Founder & Physical AI Deployment Strategist</span><h3>M.K. Hsu</h3><p>From digital agents to physical operations.</p></div>
+      <div className="founder-card"><span className="mono">Founder · FlyPig AI</span><h3>M.K. Hsu</h3><p>Independent Canada-Taiwan technology and ecosystem intelligence.</p></div>
     </section>
 
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">Boundaries</p><h2>Deployment support does not replace specialist review.</h2></div><p className="section-copy">FlyPig AI can help frame readiness, market fit, partner paths and pilot scope. It does not provide legal advice, engineering certification, site safety approval, procurement approval or regulatory sign-off. Those responsibilities must be handled by qualified specialists and the customer’s internal owners.</p></div></section>

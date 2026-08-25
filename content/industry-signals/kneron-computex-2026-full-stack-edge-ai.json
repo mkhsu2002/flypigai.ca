@@ -1,6 +1,81 @@
 {
-  "eventId":"EVT-2026-0002","slug":"kneron-computex-2026-full-stack-edge-ai","publishedAt":"2026-05-27","modifiedAt":"2026-05-27","supplier":"Kneron","category":"Edge AI Platform · Modules","title":"Kneron Uses COMPUTEX 2026 to Push Full-Stack Edge AI Beyond Single-Chip Positioning","dek":"Kneron’s COMPUTEX 2026 showcase emphasized a broader edge-AI stack spanning processors, modules and software, moving the company’s story beyond a standalone NPU.","summary":"The strategic signal is Kneron’s effort to sell a development path rather than only an accelerator: silicon, modules, local-AI software and application demonstrations are being presented as one stack.",
-  "whyItMatters":["A full-stack pitch can reduce integration work for teams that need local vision or AI but do not want to assemble every software layer themselves.","KL730 and Kneo-family platforms give Kneron multiple entry points from embedded modules to more complete development systems.","The commercial test is whether tooling, model conversion, documentation and supply can support repeatable design-in outside demonstrations."],
-  "reporting":[{"heading":"The product story is shifting from accelerator to stack","paragraphs":["Kneron used COMPUTEX 2026 to present a portfolio that links its edge-AI silicon with Kneo systems, KL730-class platforms and application demonstrations. That is a different proposition from selling raw inference throughput.","For product teams, the value of a stack is the possibility of moving from model to hardware with fewer integration boundaries and a more coherent software path."]},{"heading":"Local AI remains the centre of gravity","paragraphs":["Kneron continues to frame local inference around privacy, latency and always-available operation. Those attributes are relevant to security, home care, fall detection, vision appliances and other products where cloud dependence is undesirable.","The harder question is application fit: model support, sustained performance, memory, camera interfaces and power budgets still need to be matched to each product rather than inferred from a trade-show demo."]},{"heading":"Developer experience will determine North American adoption","paragraphs":["An edge-AI platform becomes easier to adopt when SDK maturity, model conversion, benchmark tooling, reference designs and purchasable modules are aligned.","FlyPig will track those practical layers because they determine whether Kneron becomes a realistic option for smaller Canadian hardware teams or remains mainly a silicon evaluation."]}],
-  "flypigTake":"Kneron’s strongest differentiation may be the combination of local-AI silicon and a more complete development stack. For FlyPig, the next useful evidence is not another demo but repeatable module availability, developer tooling and design-in support.","sourceName":"Kneron official COMPUTEX 2026 coverage","sourceUrl":"https://www.kneron.com/en/news/blog/291/","sourceNote":"FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions.","heroVisual":{"kind":"original_infographic","src":"/images/signals/kneron-computex-2026-full-stack-edge-ai.svg","alt":"FlyPig AI editorial infographic summarizing Kneron’s COMPUTEX 2026 full-stack edge-AI portfolio.","width":1600,"height":1000,"credit":"Original editorial graphic by FlyPig AI","sourceUrl":"https://www.kneron.com/en/news/blog/291/","facts":["Chip + module + software stack","KL730 + Kneo ecosystem","Local AI + privacy"],"assetRights":{"status":"owned","evidence":"scripts/generate-signal-heroes.mjs"}}
+  "eventId": "EVT-2026-0002",
+  "slug": "kneron-computex-2026-full-stack-edge-ai",
+  "publishedAt": "2026-05-27",
+  "modifiedAt": "2026-08-25",
+  "supplier": "Kneron",
+  "category": "Edge AI Platform · Modules",
+  "title": "Kneron Uses COMPUTEX 2026 to Push Full-Stack Edge AI Beyond Single-Chip Positioning",
+  "seoTitle": "Kneron Presents Full-Stack Edge AI at COMPUTEX 2026",
+  "socialTitle": "Kneron Presents Full-Stack Edge AI at COMPUTEX 2026",
+  "dek": "Kneron’s COMPUTEX 2026 showcase emphasized a broader edge-AI stack spanning processors, modules and software, moving the company’s story beyond a standalone NPU.",
+  "summary": "The strategic signal is Kneron’s effort to sell a development path rather than only an accelerator: silicon, modules, local-AI software and application demonstrations are being presented as one stack.",
+  "keyFacts": [
+    "Chip + module + software stack",
+    "KL730 + Kneo ecosystem",
+    "Local AI + privacy"
+  ],
+  "whyItMatters": [
+    "A full-stack pitch can reduce integration work for teams that need local vision or AI but do not want to assemble every software layer themselves.",
+    "KL730 and Kneo-family platforms give Kneron multiple entry points from embedded modules to more complete development systems.",
+    "The commercial test is whether tooling, model conversion, documentation and supply can support repeatable design-in outside demonstrations."
+  ],
+  "reporting": [
+    {
+      "heading": "The product story is shifting from accelerator to stack",
+      "paragraphs": [
+        "Kneron used COMPUTEX 2026 to present a portfolio that links its edge-AI silicon with Kneo systems, KL730-class platforms and application demonstrations. That is a different proposition from selling raw inference throughput.",
+        "For product teams, the value of a stack is the possibility of moving from model to hardware with fewer integration boundaries and a more coherent software path."
+      ]
+    },
+    {
+      "heading": "Local AI remains the centre of gravity",
+      "paragraphs": [
+        "Kneron continues to frame local inference around privacy, latency and always-available operation. Those attributes are relevant to security, home care, fall detection, vision appliances and other products where cloud dependence is undesirable.",
+        "The harder question is application fit: model support, sustained performance, memory, camera interfaces and power budgets still need to be matched to each product rather than inferred from a trade-show demo."
+      ]
+    },
+    {
+      "heading": "Developer experience will determine North American adoption",
+      "paragraphs": [
+        "An edge-AI platform becomes easier to adopt when SDK maturity, model conversion, benchmark tooling, reference designs and purchasable modules are aligned.",
+        "FlyPig will track those practical layers because they determine whether Kneron becomes a realistic option for smaller Canadian hardware teams or remains mainly a silicon evaluation."
+      ]
+    }
+  ],
+  "flypigTake": "Kneron’s strongest differentiation may be the combination of local-AI silicon and a more complete development stack. For FlyPig, the next useful evidence is not another demo but repeatable module availability, developer tooling and design-in support.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "mediatek-mt8875-5g-iot-genai",
+    "advantech-aom-2721-ubuntu-qcs6490",
+    "primax-aisf-delivery-robot-commercialization"
+  ],
+  "relatedTechnologies": [
+    "Edge AI Platform",
+    "Modules",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "Kneron official COMPUTEX 2026 coverage",
+  "sourceUrl": "https://www.kneron.com/en/news/blog/291/",
+  "sourceNote": "FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/kneron-computex-2026-full-stack-edge-ai.png",
+    "socialSrc": "/images/signals/og/kneron-computex-2026-full-stack-edge-ai.png",
+    "alt": "FlyPig AI editorial infographic summarizing Kneron edge ai platform · modules developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.kneron.com/en/news/blog/291/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/kneron-computex-2026-full-stack-edge-ai.svg"
+    }
+  }
 }

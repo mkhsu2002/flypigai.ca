@@ -1,40 +1,28 @@
 import type { Metadata } from "next";
 import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
+import { siteIdentity } from "../../lib/site";
 import { makeMetadata } from "../seo";
 
 export const metadata: Metadata = makeMetadata({
-  title: "加拿大機器人市場開發與商業化",
-  description: "為機器人與 Physical AI 業者提供加拿大市場開發、在地代表、供應商搜尋與商業化支援。",
+  title: "加拿大與台灣 Edge AI／Physical AI 技術情報",
+  description: "FlyPig AI 提供獨立、以來源為基礎的加拿大產業生態與台灣 Edge AI、半導體、嵌入式運算及 Physical AI 技術情報。",
   path: "/zh",
   enPath: "/",
   zhPath: "/zh",
   locale: "zh_TW",
 });
 
-const services = [
-  ["01", "市場開發", "理解加拿大市場、辨識目標產業，並發展具資格的商業機會。"],
-  ["02", "合作夥伴與通路", "串接整合商、經銷商、營運業者、研究機構與 Pilot 客戶。"],
-  ["03", "在地市場代表", "持續進行技術商務溝通，追蹤並推進經篩選的合作機會。"],
-  ["04", "供應商搜尋與評估", "協助加拿大業者辨識並評估合適的亞洲機器人技術與供應商。"],
-];
+const domains = ["半導體與 AI 加速", "嵌入式運算", "機器視覺", "感測技術", "連線能力", "機器人與自主系統"];
 
 export default function ZhHomePage() {
   return <main lang="zh-Hant">
     <SiteHeader locale="zh" languageHref="/" />
-
-    <section className="hero home-hero"><div className="shell hero-grid home-hero-grid"><div className="home-hero-copy"><p className="eyebrow">機器人 · Physical AI · 加拿大</p><h1>為先進機器人技術發展真實市場機會。</h1><p className="lead">FlyPig AI 是服務加拿大與亞洲市場的機器人、無人機、自主系統及關鍵零組件市場開發與商業化合作夥伴。</p><div className="actions"><a className="pill primary" href="/zh/contact">洽談市場機會</a><a className="pill secondary" href="/zh/services">查看服務</a><a className="pill secondary" href="/zh/atlas">探索 Atlas</a></div></div><aside className="signal-card home-signal-card"><p className="eyebrow">商業角色</p><div className="signal-line"><span>市場</span><strong>加拿大</strong></div><div className="signal-line"><span>角色</span><strong>市場開發＋在地代表</strong></div><div className="signal-line"><span>領域</span><strong>機器人＋Physical AI</strong></div><div className="signal-line"><span>路徑</span><strong>研究 → 合作 → Pilot → 規模化</strong></div></aside></div></section>
-
-    <div className="ticker">市場開發 · 在地代表 · 合作夥伴開發 · 供應商搜尋 · Pilot 協調 · 商業化</div>
-
-    <section className="section shell"><div className="section-head"><div><p className="eyebrow">商業服務</p><h2>從理解市場，到推動執行。</h2></div><p className="section-copy">我們服務製造商、零組件供應商、整合商與營運業者。合作可能涵蓋研究、夥伴開發、在地代表、供應商搜尋、引介、經銷或專案型商業化支援。</p></div><div className="grid3">{services.slice(0,3).map(([n,t,d]) => <article className="card" key={t}><span className="num">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div><div className="grid3" style={{marginTop:18}}><article className="card"><span className="num">04</span><h3>{services[3][1]}</h3><p>{services[3][2]}</p></article><article className="card"><span className="num">合作模式</span><h3>依階段彈性設計。</h3><p>可採固定範圍專案、月度市場開發、代理、引介、經銷，或在合適情況下採成果導向合作。</p></article><article className="card"><span className="num">第一步</span><h3>先確認是否適合。</h3><p>釐清產品、市場適配、出口準備、售後支援與合理的加拿大進入路徑。</p></article></div><div className="actions"><a className="pill secondary" href="/zh/services">查看完整服務</a></div></section>
-
-    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">FlyPig AI 公開研究子專案</p><h2>Canada Physical AI Atlas</h2></div><div><p className="section-copy">以公開資訊整理加拿大公司、技術、產業與地區生態系的市場研究與產業圖譜計畫。Atlas 用來協助理解市場，不是政府官方名錄，也不代表對收錄機構的背書。</p><div className="actions"><a className="pill primary" href="/zh/atlas">探索 Atlas</a><a className="pill secondary" href="/zh/atlas/methodology">了解收錄方法</a></div></div></div></div></section>
-
-    <section className="section shell"><div className="section-head"><div><p className="eyebrow">簡短答案</p><h2>FlyPig AI 是什麼？</h2></div><p className="section-copy">FlyPig AI 是以加拿大為基地的市場開發合作夥伴，協助機器人、無人機、自主系統與 Physical AI 業者驗證加拿大市場機會、尋找合格合作夥伴、協調 Pilot，並推進加拿大與亞洲之間的商業化。</p></div></section>
-
-    <section className="section shell"><div className="section-head"><div><p className="eyebrow">雙向服務</p><h2>進入加拿大，也協助加拿大尋找技術。</h2></div><p className="section-copy">全球供應商可發展加拿大通路與客戶；加拿大業者則可尋找並評估合適的亞洲技術與製造夥伴。</p></div><div className="grid3"><article className="card"><span className="num">全球供應商</span><h3>進入加拿大</h3><p>市場評估、合作夥伴、在地代表、Pilot 與商業化。</p></article><article className="card"><span className="num">加拿大業者</span><h3>尋找技術</h3><p>供應商搜尋、技術資格評估、引介與試點協調。</p></article><article className="card"><span className="num">公開研究</span><h3>理解生態系</h3><p>透過 Atlas 與 Insights 探索公司、技術、應用與地區。</p></article></div></section>
-
-    <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">加拿大市場開發</p><h2>你希望銷售、採購或部署什麼技術？</h2></div><div className="actions"><a className="pill primary" href="/zh/contact">聯絡 FlyPig AI</a></div></div></section>
+    <section className="hero home-hero"><div className="shell hero-grid home-hero-grid"><div className="home-hero-copy"><p className="eyebrow">加拿大 ↔ 台灣 · Edge AI · Physical AI</p><h1>從加拿大產品需求，看懂台灣技術路徑。</h1><p className="lead">FlyPig AI 以公開、可驗證的來源，整理加拿大產業情境與台灣半導體、Edge AI、嵌入式運算、感測及 Physical AI 技術。公開研究不代表供應商授權、背書或既有合作關係。</p><div className="actions"><a className="pill primary" href="/zh/atlas">探索加拿大 Atlas</a><a className="pill secondary" href="/Solutions" lang="en">Taiwan Solutions</a><a className="pill secondary" href="/signals" lang="en">Industry Signals</a></div></div><aside className="signal-card home-signal-card"><p className="eyebrow">FlyPig AI 的角色</p><div className="signal-line"><span>市場情境</span><strong>加拿大</strong></div><div className="signal-line"><span>技術生態</span><strong>台灣</strong></div><div className="signal-line"><span>研究重點</span><strong>Edge AI＋Physical AI</strong></div><div className="signal-line"><span>定位</span><strong>獨立情報＋合格媒合</strong></div></aside></div></section>
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">雙向情報架構</p><h2>需求端與供應端，各有清楚的入口。</h2></div><p className="section-copy">Canada Atlas 由加拿大業者、應用、產業與地區出發；Taiwan Solutions 由台灣技術能力與解決方案路徑出發。Technology Intelligence 提供長期技術分類，Industry Signals 則追蹤最新產品與產業動態。</p></div><div className="grid3"><article className="card"><span className="num">Canada Atlas</span><h3>加拿大業者與應用情境</h3><p>查找加拿大公司、營運業者、整合能力、產業需求與區域生態。</p><div className="actions"><a className="pill secondary" href="/zh/atlas">探索 Atlas</a></div></article><article className="card"><span className="num">Taiwan Solutions</span><h3>台灣技術與供應端情報</h3><p>從晶片、模組、感測、連線到製造，研究可驗證的技術能力與設計路徑。</p><div className="actions"><a className="pill secondary" href="/Solutions" lang="en">Explore Solutions</a></div></article><article className="card"><span className="num">Industry Signals</span><h3>最新產品與生態訊號</h3><p>以英文獨立改寫官方來源，區分已確認事實、設計影響與 FlyPig AI 判讀。</p><div className="actions"><a className="pill secondary" href="/signals" lang="en">Read Signals</a></div></article></div></section>
+    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">研究範圍</p><h2>聚焦智慧硬體背後的關鍵技術層。</h2></div><p className="section-copy">我們優先整理會影響產品架構、開發風險、供應鏈與部署可行性的技術，不製作大量低價值的 SEO 填充內容。</p></div><div className="grid3">{domains.map((domain, index) => <article className="card" key={domain}><span className="num">{String(index + 1).padStart(2, "0")}</span><h3>{domain}</h3></article>)}</div></div></section>
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">信任邊界</p><h2>公開情報與私有機會資料分開處理。</h2></div><p className="section-copy">公司公開資訊、技術規格、產業脈絡與來源引用可成為公開研究；專案需求、BOM、價格、數量、客戶身分、時程及機密文件預設視為私有資料，未經明確同意不會公開。</p></div><div className="actions"><a className="pill secondary" href="/editorial-policy" lang="en">編輯與更正政策</a><a className="pill secondary" href="/zh/privacy">隱私權說明</a></div></section>
+    <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">聯絡 FlyPig AI</p><h2>分享加拿大產品需求、台灣技術來源或 Atlas 更正。</h2></div><div className="actions"><a className="pill primary" href="/zh/contact">開始對話</a></div></div></section>
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">營運主體</p><h2>{siteIdentity.legalName}</h2></div><p className="section-copy">FlyPig AI 由加拿大公司 {siteIdentity.legalName} 營運，創辦人為 <a href={siteIdentity.founder.url} target="_blank" rel="noreferrer">{siteIdentity.founder.name}</a>。</p></div></section>
     <SiteFooter locale="zh" />
   </main>;
 }

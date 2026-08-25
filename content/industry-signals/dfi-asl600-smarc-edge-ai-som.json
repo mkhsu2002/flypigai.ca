@@ -1,6 +1,81 @@
 {
-  "eventId":"EVT-2026-0013","slug":"dfi-asl600-smarc-edge-ai-som","publishedAt":"2026-07-15","modifiedAt":"2026-07-15","supplier":"DFI","category":"SMARC · Low-Power Edge","title":"DFI ASL600 Packages Low-Power Intel Compute Into a SMARC 2.2 Module","dek":"DFI’s ASL600 uses the 82 × 50 mm SMARC 2.2 form factor with low-power Intel processors, MIPI-CSI, dual 2.5GbE and wide-temperature support for compact edge systems.","summary":"ASL600 is less about peak AI throughput than preserving a product’s carrier-board investment while giving compact vision, HMI and robot-controller designs a standardized compute module.",
-  "whyItMatters":["The standardized SMARC form factor separates the compute module from the carrier board, helping OEMs preserve I/O and mechanical work across processor changes.","MIPI-CSI, dual 2.5GbE and dual CAN make the module relevant to vision, HMI and compact robot-control designs.","A -40°C to 85°C operating range and fanless orientation target harsh embedded deployments rather than consumer notebooks."],
-  "reporting":[{"heading":"SMARC shifts the redesign boundary","paragraphs":["Instead of integrating the processor directly onto a custom motherboard, the ASL600 packages Intel Atom x7000RE, Processor N or Core 3 N options on an 82 × 50 mm SMARC 2.2 module.","This lets an OEM invest in a carrier board for product-specific I/O while keeping a more replaceable compute core, which can be useful for long-lived industrial products."]},{"heading":"The I/O mix is unusually relevant to compact vision systems","paragraphs":["DFI routes MIPI-CSI, dual Intel I226 2.5GbE, dual CAN and multiple display interfaces through the module. That combination maps well to compact machine-vision, HMI and AGV/AMR controller designs.","The value is not high-end NPU performance; it is integration density, low-power operation and a standardized upgrade path."]},{"heading":"Thermal and lifecycle claims need SKU-level validation","paragraphs":["DFI highlights fanless use and operation from -40°C to 85°C, but final thermal behaviour depends on processor SKU, enclosure and sustained workload.","For design-in, buyers still need module pricing, carrier availability, exact AI capability by CPU option and the support horizon of the selected configuration."]}],
-  "flypigTake":"ASL600 is attractive when mechanical stability and carrier-board reuse matter more than peak AI TOPS. FlyPig would position it as a compact embedded-compute route that can pair with external accelerators if the application later needs more inference performance.","sourceName":"DFI official ASL600 article","sourceUrl":"https://blog.dfi.com/en/asl600-low-power-smarc-2.2-som-for-compact-edge-ai","sourceNote":"FlyPig AI independently analyzes DFI’s public specifications. Processor SKU, thermal behaviour, carrier availability and commercial terms should be confirmed for the target design.","heroVisual":{"kind":"original_infographic","src":"/images/signals/dfi-asl600-smarc-edge-ai-som.svg","alt":"FlyPig AI editorial infographic summarizing DFI ASL600 SMARC 2.2 module.","width":1600,"height":1000,"credit":"Original editorial graphic by FlyPig AI","sourceUrl":"https://blog.dfi.com/en/asl600-low-power-smarc-2.2-som-for-compact-edge-ai","facts":["82 × 50 mm SMARC 2.2","MIPI-CSI + dual 2.5GbE + CAN","-40°C to 85°C cited range"],"assetRights":{"status":"owned","evidence":"scripts/generate-signal-heroes.mjs"}}
+  "eventId": "EVT-2026-0013",
+  "slug": "dfi-asl600-smarc-edge-ai-som",
+  "publishedAt": "2026-07-15",
+  "modifiedAt": "2026-08-25",
+  "supplier": "DFI",
+  "category": "SMARC · Low-Power Edge",
+  "title": "DFI ASL600 Packages Low-Power Intel Compute Into a SMARC 2.2 Module",
+  "seoTitle": "DFI ASL600 Brings Low-Power Edge AI to SMARC 2.2",
+  "socialTitle": "DFI ASL600 Brings Low-Power Edge AI to SMARC 2.2",
+  "dek": "DFI’s ASL600 uses the 82 × 50 mm SMARC 2.2 form factor with low-power Intel processors, MIPI-CSI, dual 2.5GbE and wide-temperature support for compact edge systems.",
+  "summary": "ASL600 is less about peak AI throughput than preserving a product’s carrier-board investment while giving compact vision, HMI and robot-controller designs a standardized compute module.",
+  "keyFacts": [
+    "82 × 50 mm SMARC 2.2",
+    "MIPI-CSI + dual 2.5GbE + CAN",
+    "-40°C to 85°C cited range"
+  ],
+  "whyItMatters": [
+    "The standardized SMARC form factor separates the compute module from the carrier board, helping OEMs preserve I/O and mechanical work across processor changes.",
+    "MIPI-CSI, dual 2.5GbE and dual CAN make the module relevant to vision, HMI and compact robot-control designs.",
+    "A -40°C to 85°C operating range and fanless orientation target harsh embedded deployments rather than consumer notebooks."
+  ],
+  "reporting": [
+    {
+      "heading": "SMARC shifts the redesign boundary",
+      "paragraphs": [
+        "Instead of integrating the processor directly onto a custom motherboard, the ASL600 packages Intel Atom x7000RE, Processor N or Core 3 N options on an 82 × 50 mm SMARC 2.2 module.",
+        "This lets an OEM invest in a carrier board for product-specific I/O while keeping a more replaceable compute core, which can be useful for long-lived industrial products."
+      ]
+    },
+    {
+      "heading": "The I/O mix is unusually relevant to compact vision systems",
+      "paragraphs": [
+        "DFI routes MIPI-CSI, dual Intel I226 2.5GbE, dual CAN and multiple display interfaces through the module. That combination maps well to compact machine-vision, HMI and AGV/AMR controller designs.",
+        "The value is not high-end NPU performance; it is integration density, low-power operation and a standardized upgrade path."
+      ]
+    },
+    {
+      "heading": "Thermal and lifecycle claims need SKU-level validation",
+      "paragraphs": [
+        "DFI highlights fanless use and operation from -40°C to 85°C, but final thermal behaviour depends on processor SKU, enclosure and sustained workload.",
+        "For design-in, buyers still need module pricing, carrier availability, exact AI capability by CPU option and the support horizon of the selected configuration."
+      ]
+    }
+  ],
+  "flypigTake": "ASL600 is attractive when mechanical stability and carrier-board reuse matter more than peak AI TOPS. FlyPig would position it as a compact embedded-compute route that can pair with external accelerators if the application later needs more inference performance.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "dfi-arh171-arh173-core-ultra-mini-itx",
+    "mediatek-mt8875-5g-iot-genai",
+    "advantech-aom-2721-ubuntu-qcs6490"
+  ],
+  "relatedTechnologies": [
+    "SMARC",
+    "Low-Power Edge",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "DFI official ASL600 article",
+  "sourceUrl": "https://blog.dfi.com/en/asl600-low-power-smarc-2.2-som-for-compact-edge-ai",
+  "sourceNote": "FlyPig AI independently analyzes DFI’s public specifications. Processor SKU, thermal behaviour, carrier availability and commercial terms should be confirmed for the target design.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/dfi-asl600-smarc-edge-ai-som.png",
+    "socialSrc": "/images/signals/og/dfi-asl600-smarc-edge-ai-som.png",
+    "alt": "FlyPig AI editorial infographic summarizing DFI smarc · low-power edge developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://blog.dfi.com/en/asl600-low-power-smarc-2.2-som-for-compact-edge-ai",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/dfi-asl600-smarc-edge-ai-som.svg"
+    }
+  }
 }

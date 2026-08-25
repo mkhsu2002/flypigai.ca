@@ -1,6 +1,81 @@
 {
-  "eventId":"EVT-2026-0015","slug":"aaeon-pico-adn2-embedded-platform-refresh","publishedAt":"2026-08-14","modifiedAt":"2026-08-14","supplier":"AAEON","category":"2.5-inch SBC · Embedded","title":"AAEON PICO-ADN2 Signals a 2.5-Inch Embedded Platform Refresh, With Key Specs Still Pending","dek":"AAEON listed PICO-ADN2 as a new 2.5-inch board update in August, but the public information captured so far is not detailed enough to treat it as a fully characterized edge-AI platform.","summary":"This is intentionally a conservative Signal: the important news is a compact-board lifecycle refresh, while processor, I/O and AI details still need a complete official specification before comparison.",
-  "whyItMatters":["The signal is mainly a product-line refresh and lifecycle event, not evidence of a new high-performance NPU platform.","A 2.5-inch SBC can be useful for compact gateways and appliances where Mini-ITX is unnecessarily large.","CPU options, I/O, temperature range, AI acceleration support, pricing and production status still need confirmation."],
-  "reporting":[{"heading":"A product refresh can matter even without a headline AI feature","paragraphs":["AAEON’s August news feed added PICO-ADN2 as a new 2.5-inch product update, while lifecycle material for PICO-APL2 points to PICO-ADN2 as a recommended successor series.","For embedded OEMs, migration paths matter because board availability, software continuity and mechanical fit can be more important than a single benchmark improvement."]},{"heading":"The current public data are deliberately incomplete","paragraphs":["The available announcement does not yet provide enough verified specification detail for FlyPig to infer processor SKUs, AI TOPS or I/O from neighbouring PICO products.","That restraint matters. A technology-intelligence database becomes less useful if gaps are filled by assumptions merely because a model name resembles an existing board."]},{"heading":"The next update should be a specification update","paragraphs":["Once AAEON publishes a detailed product page or datasheet, the useful questions will be processor choice, memory, I/O, working temperature, lifecycle, accelerator-module compatibility and commercial availability.","Until then, FlyPig classifies PICO-ADN2 as a platform-refresh signal rather than a complete design route."]}],
-  "flypigTake":"PICO-ADN2 is worth tracking precisely because product-lifecycle signals affect real designs. FlyPig will not manufacture missing specifications: this entry stays intentionally conservative until AAEON publishes the details needed for a meaningful comparison.","sourceName":"AAEON Solutions product-news index","sourceUrl":"https://solutions.aaeon.com/news/","sourceNote":"AAEON’s news index identifies PICO-ADN2 as an August 14, 2026 product update. FlyPig does not infer unverified specifications from other PICO boards; design-in details remain pending a complete official product page or datasheet.","heroVisual":{"kind":"original_infographic","src":"/images/signals/aaeon-pico-adn2-embedded-platform-refresh.svg","alt":"FlyPig AI editorial infographic summarizing the AAEON PICO-ADN2 2.5-inch embedded-platform refresh.","width":1600,"height":1000,"credit":"Original editorial graphic by FlyPig AI","sourceUrl":"https://solutions.aaeon.com/news/","facts":["2.5-inch SBC refresh","Lifecycle / migration signal","Key specs still pending"],"assetRights":{"status":"owned","evidence":"scripts/generate-signal-heroes.mjs"}}
+  "eventId": "EVT-2026-0015",
+  "slug": "aaeon-pico-adn2-embedded-platform-refresh",
+  "publishedAt": "2026-08-14",
+  "modifiedAt": "2026-08-25",
+  "supplier": "AAEON",
+  "category": "2.5-inch SBC · Embedded",
+  "title": "AAEON PICO-ADN2 Signals a 2.5-Inch Embedded Platform Refresh, With Key Specs Still Pending",
+  "seoTitle": "AAEON PICO-ADN2 Refreshes Its 2.5-Inch Embedded Platform",
+  "socialTitle": "AAEON PICO-ADN2 Refreshes Its 2.5-Inch Embedded Platform",
+  "dek": "AAEON listed PICO-ADN2 as a new 2.5-inch board update in August, but the public information captured so far is not detailed enough to treat it as a fully characterized edge-AI platform.",
+  "summary": "This is intentionally a conservative Signal: the important news is a compact-board lifecycle refresh, while processor, I/O and AI details still need a complete official specification before comparison.",
+  "keyFacts": [
+    "2.5-inch SBC refresh",
+    "Lifecycle / migration signal",
+    "Key specs still pending"
+  ],
+  "whyItMatters": [
+    "The signal is mainly a product-line refresh and lifecycle event, not evidence of a new high-performance NPU platform.",
+    "A 2.5-inch SBC can be useful for compact gateways and appliances where Mini-ITX is unnecessarily large.",
+    "CPU options, I/O, temperature range, AI acceleration support, pricing and production status still need confirmation."
+  ],
+  "reporting": [
+    {
+      "heading": "A product refresh can matter even without a headline AI feature",
+      "paragraphs": [
+        "AAEON’s August news feed added PICO-ADN2 as a new 2.5-inch product update, while lifecycle material for PICO-APL2 points to PICO-ADN2 as a recommended successor series.",
+        "For embedded OEMs, migration paths matter because board availability, software continuity and mechanical fit can be more important than a single benchmark improvement."
+      ]
+    },
+    {
+      "heading": "The current public data are deliberately incomplete",
+      "paragraphs": [
+        "The available announcement does not yet provide enough verified specification detail for FlyPig to infer processor SKUs, AI TOPS or I/O from neighbouring PICO products.",
+        "That restraint matters. A technology-intelligence database becomes less useful if gaps are filled by assumptions merely because a model name resembles an existing board."
+      ]
+    },
+    {
+      "heading": "The next update should be a specification update",
+      "paragraphs": [
+        "Once AAEON publishes a detailed product page or datasheet, the useful questions will be processor choice, memory, I/O, working temperature, lifecycle, accelerator-module compatibility and commercial availability.",
+        "Until then, FlyPig classifies PICO-ADN2 as a platform-refresh signal rather than a complete design route."
+      ]
+    }
+  ],
+  "flypigTake": "PICO-ADN2 is worth tracking precisely because product-lifecycle signals affect real designs. FlyPig will not manufacture missing specifications: this entry stays intentionally conservative until AAEON publishes the details needed for a meaningful comparison.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-mix-q870a1-mini-itx-edge-ai",
+    "aaeon-hailo10h-deepx-dxm1-up-ai-toolkit",
+    "aaeon-ucom-q6490-smarc-qcs6490"
+  ],
+  "relatedTechnologies": [
+    "2.5-inch SBC",
+    "Embedded",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "AAEON Solutions product-news index",
+  "sourceUrl": "https://solutions.aaeon.com/news/",
+  "sourceNote": "AAEON’s news index identifies PICO-ADN2 as an August 14, 2026 product update. FlyPig does not infer unverified specifications from other PICO boards; design-in details remain pending a complete official product page or datasheet.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-pico-adn2-embedded-platform-refresh.png",
+    "socialSrc": "/images/signals/og/aaeon-pico-adn2-embedded-platform-refresh.png",
+    "alt": "FlyPig AI editorial infographic summarizing AAEON 2.5-inch sbc · embedded developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://solutions.aaeon.com/news/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-pico-adn2-embedded-platform-refresh.svg"
+    }
+  }
 }

@@ -1,6 +1,80 @@
 {
-  "eventId":"EVT-2026-0011","slug":"aaeon-mix-q870a1-mini-itx-edge-ai","publishedAt":"2026-07-31","modifiedAt":"2026-07-31","supplier":"AAEON","category":"Mini-ITX · Edge AI","title":"AAEON MIX-Q870A1 Brings Core Ultra 200S and PCIe Gen5 Into Mini-ITX Edge Systems","dek":"AAEON’s MIX-Q870A1 pairs Intel Core Ultra 200S processors with PCIe Gen5 expansion in Mini-ITX, targeting fixed edge-AI systems that need more compute and expansion than a low-power module can provide.","summary":"MIX-Q870A1 is a fixed-system design route rather than a low-power module: it combines integrated Intel AI resources with enough PCIe headroom to add accelerators, storage or capture hardware later.",
-  "whyItMatters":["AAEON cites up to 36 TOPS of integrated AI performance from Core Ultra 200S, combining CPU, GPU and NPU resources.","A PCIe Gen5 x16 slot with bifurcation keeps room for discrete accelerators, storage, networking or capture hardware.","The 65W-class platform fits fixed appliances and kiosks better than battery-powered devices, so power and enclosure assumptions matter."],
-  "reporting":[{"heading":"Mini-ITX remains relevant when edge AI needs expansion","paragraphs":["AAEON’s MIX-Q870A1 uses Intel Core Ultra 200S processors in a standard Mini-ITX footprint, with the company citing up to 36 TOPS of integrated AI performance.","That makes it a plausible base for AI kiosks, video analytics appliances and fixed edge systems where PCIe expansion and conventional storage are more important than ultra-low power."]},{"heading":"PCIe Gen5 keeps the architecture open","paragraphs":["The x16 Gen5 slot supports bifurcation, allowing designers to split lanes among accelerators, NVMe storage, network interfaces or capture cards.","The trade-off is that the board’s 65W processor class pushes the design toward mains-powered products with active thermal planning."]},{"heading":"Integrated AI is only the starting point","paragraphs":["Intel’s NPU and integrated graphics can cover a range of inference tasks, while the expansion slot leaves a path to heavier acceleration.","The practical design choice depends on sustained workload, thermals, software framework and the cost of any add-in card."]}],
-  "flypigTake":"The MIX-Q870A1 is useful where a product needs a familiar Mini-ITX ecosystem and a lot of expansion headroom. Its strength is architectural flexibility; its weakness for smaller devices is the power and mechanical budget that comes with that flexibility.","sourceName":"AAEON Solutions official MIX-Q870A1 announcement","sourceUrl":"https://solutions.aaeon.com/rethink-mini-itx-builds-with-the-new-mix-q870a1/","sourceNote":"FlyPig AI independently analyzes AAEON’s public specifications. Processor configuration, sustained AI performance, thermal design and commercial availability should be verified for the intended system.","heroVisual":{"kind":"original_infographic","src":"/images/signals/aaeon-mix-q870a1-mini-itx-edge-ai.svg","alt":"FlyPig AI editorial infographic summarizing AAEON MIX-Q870A1 Mini-ITX edge-AI capabilities.","width":1600,"height":1000,"credit":"Original editorial graphic by FlyPig AI","sourceUrl":"https://solutions.aaeon.com/rethink-mini-itx-builds-with-the-new-mix-q870a1/","facts":["Core Ultra 200S","Up to 36 TOPS integrated AI","PCIe Gen5 x16 + bifurcation"],"assetRights":{"status":"owned","evidence":"scripts/generate-signal-heroes.mjs"}}
+  "eventId": "EVT-2026-0011",
+  "slug": "aaeon-mix-q870a1-mini-itx-edge-ai",
+  "publishedAt": "2026-07-31",
+  "modifiedAt": "2026-08-25",
+  "supplier": "AAEON",
+  "category": "Mini-ITX · Edge AI",
+  "title": "AAEON MIX-Q870A1 Brings Core Ultra 200S and PCIe Gen5 Into Mini-ITX Edge Systems",
+  "seoTitle": "AAEON MIX-Q870A1 Mini-ITX Platform for Edge AI",
+  "socialTitle": "AAEON MIX-Q870A1 Mini-ITX Platform for Edge AI",
+  "dek": "AAEON’s MIX-Q870A1 pairs Intel Core Ultra 200S processors with PCIe Gen5 expansion in Mini-ITX, targeting fixed edge-AI systems that need more compute and expansion than a low-power module can provide.",
+  "summary": "MIX-Q870A1 is a fixed-system design route rather than a low-power module: it combines integrated Intel AI resources with enough PCIe headroom to add accelerators, storage or capture hardware later.",
+  "keyFacts": [
+    "Core Ultra 200S",
+    "Up to 36 TOPS integrated AI",
+    "PCIe Gen5 x16 + bifurcation"
+  ],
+  "whyItMatters": [
+    "AAEON cites up to 36 TOPS of integrated AI performance from Core Ultra 200S, combining CPU, GPU and NPU resources.",
+    "A PCIe Gen5 x16 slot with bifurcation keeps room for discrete accelerators, storage, networking or capture hardware.",
+    "The 65W-class platform fits fixed appliances and kiosks better than battery-powered devices, so power and enclosure assumptions matter."
+  ],
+  "reporting": [
+    {
+      "heading": "Mini-ITX remains relevant when edge AI needs expansion",
+      "paragraphs": [
+        "AAEON’s MIX-Q870A1 uses Intel Core Ultra 200S processors in a standard Mini-ITX footprint, with the company citing up to 36 TOPS of integrated AI performance.",
+        "That makes it a plausible base for AI kiosks, video analytics appliances and fixed edge systems where PCIe expansion and conventional storage are more important than ultra-low power."
+      ]
+    },
+    {
+      "heading": "PCIe Gen5 keeps the architecture open",
+      "paragraphs": [
+        "The x16 Gen5 slot supports bifurcation, allowing designers to split lanes among accelerators, NVMe storage, network interfaces or capture cards.",
+        "The trade-off is that the board’s 65W processor class pushes the design toward mains-powered products with active thermal planning."
+      ]
+    },
+    {
+      "heading": "Integrated AI is only the starting point",
+      "paragraphs": [
+        "Intel’s NPU and integrated graphics can cover a range of inference tasks, while the expansion slot leaves a path to heavier acceleration.",
+        "The practical design choice depends on sustained workload, thermals, software framework and the cost of any add-in card."
+      ]
+    }
+  ],
+  "flypigTake": "The MIX-Q870A1 is useful where a product needs a familiar Mini-ITX ecosystem and a lot of expansion headroom. Its strength is architectural flexibility; its weakness for smaller devices is the power and mechanical budget that comes with that flexibility.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-pico-adn2-embedded-platform-refresh",
+    "aaeon-hailo10h-deepx-dxm1-up-ai-toolkit",
+    "aaeon-ucom-q6490-smarc-qcs6490"
+  ],
+  "relatedTechnologies": [
+    "Mini-ITX",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "AAEON Solutions official MIX-Q870A1 announcement",
+  "sourceUrl": "https://solutions.aaeon.com/rethink-mini-itx-builds-with-the-new-mix-q870a1/",
+  "sourceNote": "FlyPig AI independently analyzes AAEON’s public specifications. Processor configuration, sustained AI performance, thermal design and commercial availability should be verified for the intended system.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-mix-q870a1-mini-itx-edge-ai.png",
+    "socialSrc": "/images/signals/og/aaeon-mix-q870a1-mini-itx-edge-ai.png",
+    "alt": "FlyPig AI editorial infographic summarizing AAEON mini-itx · edge ai developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://solutions.aaeon.com/rethink-mini-itx-builds-with-the-new-mix-q870a1/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-mix-q870a1-mini-itx-edge-ai.svg"
+    }
+  }
 }

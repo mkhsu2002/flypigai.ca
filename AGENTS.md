@@ -7,10 +7,20 @@ General deployment, backend-contract, secret-handling, browser-lane, and release
 ## Positioning and terminology
 
 - FlyPig AI is a Canada–Taiwan Edge AI and Physical AI intelligence company. Do not present it as an authorized distributor, official supplier representative, or partner unless repository evidence proves that relationship.
-- The primary navigation labels are `Canada Atlas` and `Taiwan Solutions`. `Canada Atlas` links to `/atlas`; `Taiwan Solutions` links to `/taiwan`.
+- The primary navigation labels are `Canada Atlas` and `Taiwan Solutions`. `Canada Atlas` links to `/atlas`; `Taiwan Solutions` links to the intentionally capitalized canonical route `/Solutions`.
+- `/canada` is retired and permanently redirects to `/atlas`. `/taiwan` and lowercase `/solutions` are retired and permanently redirect to `/Solutions`. Do not restore retired routes to navigation, canonical tags, sitemaps, or new internal links.
 - `Taiwan Solutions` describes publicly researched technologies and solution paths. It does not imply FlyPig AI authorization, endorsement, inventory, or a direct supplier relationship.
 - Do not use `Partners` as a primary navigation label. Do not use `Authorized`, `Official`, `Represented by`, or equivalent language that implies an existing relationship without explicit written evidence stored or referenced in the repository. Generic phrases such as `potential partners` or `partner discovery` are allowed only when they clearly describe prospecting rather than an existing relationship.
 - Do not call the Canadian downstream audience `Projects` in primary navigation. Use Atlas, ecosystem, industry, operator, application, or requirement language that matches the actual page content.
+
+## Legal and entity identity
+
+- Public brand: `FlyPig AI`.
+- Legal operator: `ICareU Global Trading Ltd.`.
+- Public address: `11936 Woodridge Cres., Delta, BC V4E 3H5, Canada`.
+- Public email: `info@flypigai.ca`.
+- Founder: `M.K. Hsu`, with the canonical profile `https://mkhsu.icareu.tw/`.
+- Organization schema, About, Contact, Privacy, footer, `llms.txt`, and future entity references must use this identity. Do not revert the location to Vancouver.
 
 ## Industry Signals
 

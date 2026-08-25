@@ -57,7 +57,7 @@ Remove the non-functional Next.js newsletter route handler. Same-origin producer
 The desktop and mobile navigation use one shared route definition:
 
 1. Canada Atlas — `/atlas`
-2. Taiwan Solutions — `/taiwan`
+2. Taiwan Solutions — `/Solutions`
 3. Technology Intelligence — `/technologies`
 4. Industry Signals — `/signals`
 5. Insights — `/insights`
@@ -67,7 +67,7 @@ The desktop and mobile navigation use one shared route definition:
 
 The Canada Physical AI Atlas remains reachable from the homepage, contextual links, Insights, footer, and sitemap. It does not compete with the new two-sided gateway in the primary navigation.
 
-`Taiwan Solutions` describes public-source solution and technology research. It must not imply supplier authorization, endorsement, inventory, representation, or an official relationship.
+`Taiwan Solutions` describes public-source solution and technology research. It must not imply supplier authorization, endorsement, inventory, representation, or an official relationship. `/taiwan` and lowercase `/solutions` redirect permanently to `/Solutions`; `/canada` redirects permanently to `/atlas`.
 
 ### 4.2 Homepage sequence
 
@@ -272,7 +272,7 @@ Before production release, verify individually:
 ### 10.3 Production
 
 - deploy the same reviewed commit and migration set;
-- verify `/`, `/canada`, `/taiwan`, `/technologies`, `/signals`, the first signal article, `/atlas`, `/insights`, `/contact`, `/zh`, `robots.txt`, `sitemap.xml`, favicon, and Open Graph image;
+- verify `/`, `/Solutions`, `/technologies`, `/signals`, the first signal article, `/atlas`, `/insights`, `/contact`, `/zh`, `robots.txt`, `sitemap.xml`, favicon, and Open Graph image; verify legacy `/canada`, `/taiwan`, and `/solutions` redirects;
 - verify a controlled contact event and subscription state through the public domain;
 - read back D1 audit evidence and provider response IDs without exposing them publicly;
 - confirm `flypigai.ca`, `flypigai-ca.pages.dev`, deployed code, deployed schema, and live behavior are consistent.

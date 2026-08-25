@@ -1,6 +1,80 @@
 {
-  "eventId":"EVT-2026-0005","slug":"aaeon-boxer-8653ai-plus-multicamera-edge-ai","publishedAt":"2026-02-03","modifiedAt":"2026-02-03","supplier":"AAEON","category":"Multi-Camera Edge AI","title":"AAEON BOXER-8653AI-PLUS Targets Multi-Camera Edge AI With Four Independent PoE Links","dek":"AAEON’s BOXER-8653AI-PLUS combines NVIDIA Jetson Orin NX with four independent PoE LAN interfaces, packaging compute and camera connectivity for multi-stream edge-AI deployments.","summary":"The system’s value is not simply Jetson compute. AAEON is packaging camera power, networking and industrial system integration around a known AI platform to shorten multi-camera deployment work.",
-  "whyItMatters":["Four independent PoE links can simplify power and data wiring for multi-camera vision systems.","Jetson Orin NX provides a familiar CUDA-based software path for vision inference and robotics workloads.","The system’s value is integration and deployment readiness, not simply raw AI TOPS."],
-  "reporting":[{"heading":"Multi-camera AI often fails at the system-integration layer","paragraphs":["Vision systems need more than an accelerator. Camera power, network interfaces, sustained ingest, thermal design, storage, remote management and physical deployment all have to work together.","AAEON’s BOXER-8653AI-PLUS packages Jetson Orin NX with four independent PoE LAN connections, directly addressing a common camera-integration problem."]},{"heading":"PoE changes the deployment equation","paragraphs":["Independent PoE ports can reduce external injectors and simplify cabling when multiple Ethernet cameras need both data and power. That is useful in machine vision, security, retail analytics and prototype environments where camera topology is a major part of the BOM.","The design still needs validation for exact camera count, bandwidth, encoding and AI workload under sustained conditions."]},{"heading":"A system platform can shorten the path from demo to pilot","paragraphs":["Using an industrialized box rather than a developer board can move thermal, power and I/O questions earlier in a project and reduce enclosure work during a pilot.","For smaller teams, that can be more valuable than optimizing every component at the first prototype stage."]}],
-  "flypigTake":"The BOXER-8653AI-PLUS is a useful example of Taiwan’s value above the chip layer: packaging a known AI compute platform into a deployable multi-camera system. FlyPig would evaluate it by time-to-pilot, camera compatibility and lifecycle support rather than TOPS alone.","sourceName":"AAEON official product announcement","sourceUrl":"https://www.aaeon.com/tw/news/detail/boxer-8653ai-plus_news","sourceNote":"FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions."
+  "eventId": "EVT-2026-0005",
+  "slug": "aaeon-boxer-8653ai-plus-multicamera-edge-ai",
+  "publishedAt": "2026-02-03",
+  "modifiedAt": "2026-08-25",
+  "supplier": "AAEON",
+  "category": "Multi-Camera Edge AI",
+  "title": "AAEON BOXER-8653AI-PLUS Targets Multi-Camera Edge AI With Four Independent PoE Links",
+  "seoTitle": "AAEON BOXER-8653AI-PLUS Multi-Camera Edge AI System",
+  "socialTitle": "AAEON BOXER-8653AI-PLUS Multi-Camera Edge AI System",
+  "dek": "AAEON’s BOXER-8653AI-PLUS combines NVIDIA Jetson Orin NX with four independent PoE LAN interfaces, packaging compute and camera connectivity for multi-stream edge-AI deployments.",
+  "summary": "The system’s value is not simply Jetson compute. AAEON is packaging camera power, networking and industrial system integration around a known AI platform to shorten multi-camera deployment work.",
+  "keyFacts": [
+    "NVIDIA Jetson Orin NX",
+    "4 independent PoE LAN links",
+    "Multi-camera edge AI"
+  ],
+  "whyItMatters": [
+    "Four independent PoE links can simplify power and data wiring for multi-camera vision systems.",
+    "Jetson Orin NX provides a familiar CUDA-based software path for vision inference and robotics workloads.",
+    "The system’s value is integration and deployment readiness, not simply raw AI TOPS."
+  ],
+  "reporting": [
+    {
+      "heading": "Multi-camera AI often fails at the system-integration layer",
+      "paragraphs": [
+        "Vision systems need more than an accelerator. Camera power, network interfaces, sustained ingest, thermal design, storage, remote management and physical deployment all have to work together.",
+        "AAEON’s BOXER-8653AI-PLUS packages Jetson Orin NX with four independent PoE LAN connections, directly addressing a common camera-integration problem."
+      ]
+    },
+    {
+      "heading": "PoE changes the deployment equation",
+      "paragraphs": [
+        "Independent PoE ports can reduce external injectors and simplify cabling when multiple Ethernet cameras need both data and power. That is useful in machine vision, security, retail analytics and prototype environments where camera topology is a major part of the BOM.",
+        "The design still needs validation for exact camera count, bandwidth, encoding and AI workload under sustained conditions."
+      ]
+    },
+    {
+      "heading": "A system platform can shorten the path from demo to pilot",
+      "paragraphs": [
+        "Using an industrialized box rather than a developer board can move thermal, power and I/O questions earlier in a project and reduce enclosure work during a pilot.",
+        "For smaller teams, that can be more valuable than optimizing every component at the first prototype stage."
+      ]
+    }
+  ],
+  "flypigTake": "The BOXER-8653AI-PLUS is a useful example of Taiwan’s value above the chip layer: packaging a known AI compute platform into a deployable multi-camera system. FlyPig would evaluate it by time-to-pilot, camera compatibility and lifecycle support rather than TOPS alone.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-pico-adn2-embedded-platform-refresh",
+    "aaeon-mix-q870a1-mini-itx-edge-ai",
+    "aaeon-hailo10h-deepx-dxm1-up-ai-toolkit"
+  ],
+  "relatedTechnologies": [
+    "Multi-Camera Edge AI",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "AAEON official product announcement",
+  "sourceUrl": "https://www.aaeon.com/tw/news/detail/boxer-8653ai-plus_news",
+  "sourceNote": "FlyPig AI rewrites and analyzes public product announcements from an independent industry-intelligence perspective. Specifications, availability and commercial terms should be verified with the manufacturer before design-in or procurement decisions.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-boxer-8653ai-plus-multicamera-edge-ai.png",
+    "socialSrc": "/images/signals/og/aaeon-boxer-8653ai-plus-multicamera-edge-ai.png",
+    "alt": "FlyPig AI editorial infographic summarizing AAEON multi-camera edge ai developments.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.aaeon.com/tw/news/detail/boxer-8653ai-plus_news",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-boxer-8653ai-plus-multicamera-edge-ai.svg"
+    }
+  }
 }
