@@ -6,8 +6,7 @@
     "generate:signals": "node scripts/generate-signal-heroes.mjs",
     "predev": "npm run generate:signals",
     "dev": "next dev",
-    "prebuild": "npm run generate:signals",
-    "build": "next build",
+    "build": "node scripts/generate-signal-heroes.mjs && next build",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
