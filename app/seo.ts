@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteUrl = "https://flypigai.ca";
 export const siteName = "FlyPig AI";
 export const defaultDescription =
-  "FlyPig AI supports Canadian market development, industry partnerships and commercialization for robotics, drone and autonomous-system technology companies.";
+  "FlyPig AI connects Canadian product opportunities with Taiwan's Edge AI, semiconductor and Physical AI ecosystem through independent technology intelligence and qualified matching.";
 
 type SeoOptions = {
   title: string;
@@ -71,14 +71,18 @@ export const organizationJsonLd = {
     name: "M.K. Hsu",
     url: "https://mkhsu.icareu.tw/",
   },
-  areaServed: ["Canada", "Asia"],
+  areaServed: ["Canada", "Taiwan"],
   knowsAbout: [
-    "Robotics market development",
+    "Edge AI",
     "Physical AI",
+    "Robotics",
     "Drones",
     "Autonomous systems",
-    "Canadian commercialization",
-    "Technology sourcing",
+    "Semiconductors",
+    "Embedded computing",
+    "Machine vision",
+    "Technology intelligence",
+    "Canada Taiwan technology collaboration",
   ],
 };
 
@@ -94,4 +98,3 @@ export function breadcrumbJsonLd(items: Array<{ name: string; path: string }>) {
     })),
   };
 }
-

@@ -5,7 +5,7 @@ import { defaultDescription, organizationJsonLd, siteUrl } from "./seo";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "FlyPig AI | Robotics Market Development in Canada", template: "%s | FlyPig AI" },
+  title: { default: "FlyPig AI | Canada-Taiwan Edge AI & Physical AI Intelligence", template: "%s | FlyPig AI" },
   description: defaultDescription,
   alternates: {
     canonical: siteUrl,
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "FlyPig AI | Robotics Market Development in Canada",
+    title: "FlyPig AI | Canada-Taiwan Edge AI & Physical AI Intelligence",
     description: defaultDescription,
     url: siteUrl,
     siteName: "FlyPig AI",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FlyPig AI | Robotics Market Development in Canada",
+    title: "FlyPig AI | Canada-Taiwan Edge AI & Physical AI Intelligence",
     description: defaultDescription,
   },
 };
