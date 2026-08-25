@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import "./newsletter.css";
 
 export default function NewsletterSignup() {
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
