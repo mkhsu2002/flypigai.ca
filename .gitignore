@@ -1,6 +1,7 @@
 .next/
 node_modules/
 out/
+.worktrees/
 tsconfig.tsbuildinfo
 .env*
 !.env.example
