@@ -10,8 +10,6 @@ type HeaderProps = {
 export function SiteHeader({ locale = "en", languageHref }: HeaderProps) {
   const zh = locale === "zh";
   const home = zh ? "/zh" : "/";
-  const services = zh ? "/zh/services" : "/services";
-  const atlas = zh ? "/zh/atlas" : "/atlas";
   const about = zh ? "/zh/about" : "/about";
   const contact = zh ? "/zh/contact" : "/contact";
   const switchHref = languageHref ?? (zh ? "/" : "/zh");
@@ -19,27 +17,25 @@ export function SiteHeader({ locale = "en", languageHref }: HeaderProps) {
   return <header className="shell nav">
     <a className="brand" href={home}><span className="mark">FP</span><span>FlyPig AI</span></a>
     <nav className="navlinks" aria-label={zh ? "主要導覽" : "Primary navigation"}>
-      <a href={services}>{zh ? "服務" : "Services"}</a>
-      <a href={atlas}>Atlas</a>
-      <a href="/insights">Insights</a>
+      <a href="/canada">{zh ? "加拿大需求" : "For Canada"}</a>
+      <a href="/taiwan">{zh ? "台灣供應商" : "For Taiwan"}</a>
+      <a href="/technologies">{zh ? "技術情報" : "Technology Intelligence"}</a>
+      <a href="/insights">{zh ? "產業情報" : "Intelligence"}</a>
       <a href={about}>{zh ? "關於" : "About"}</a>
       <a href={switchHref} className="lang-link" lang={zh ? "en" : "zh-Hant"}>{zh ? "EN" : "繁中"}</a>
     </nav>
-    <a className="pill secondary" href={contact}>{zh ? "聯絡我們" : "Contact us"}</a>
+    <a className="pill secondary" href={contact}>{zh ? "開始合作" : "Start a conversation"}</a>
   </header>;
 }
 
 export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
   const zh = locale === "zh";
-  const atlas = zh ? "/zh/atlas" : "/atlas";
-  const methodology = zh ? "/zh/atlas/methodology" : "/atlas/methodology";
-  const submit = zh ? "/zh/atlas/submit" : "/atlas/submit";
   const privacy = zh ? "/zh/privacy" : "/privacy";
 
   return <footer className="shell footer site-footer">
-    <div><strong>FlyPig AI</strong><span>{zh ? "加拿大機器人市場開發與商業化" : "Robotics market development and commercialization in Canada"}</span></div>
-    <div><strong>Canada Physical AI Atlas</strong><span>{zh ? "FlyPig AI 發起的市場研究與產業圖譜計畫" : "A market-research and ecosystem-mapping initiative by FlyPig AI"}</span></div>
-    <div className="footer-links"><a href={atlas}>Atlas</a><a href={methodology}>{zh ? "收錄方法" : "Methodology"}</a><a href={submit}>{zh ? "提交收錄" : "Submit"}</a><a href={privacy}>{zh ? "隱私" : "Privacy"}</a></div>
-    <div className="footer-legal"><span>© 2026 FlyPig AI · Vancouver, Canada</span><span>{zh ? "商業服務與公開研究計畫分別揭露" : "Commercial services and public research are separately disclosed"}</span></div>
+    <div><strong>FlyPig AI</strong><span>{zh ? "加拿大與台灣之間的 Edge AI 與 Physical AI 技術情報橋梁" : "Canada-Taiwan Edge AI and Physical AI design intelligence"}</span></div>
+    <div><strong>{zh ? "公開情報，私有機會資料" : "Public intelligence, private opportunity data"}</strong><span>{zh ? "公開內容建立產業權威，專案需求與商業資料依保密原則處理。" : "Public research builds authority; submitted project and commercial data are handled as private by default."}</span></div>
+    <div className="footer-links"><a href="/canada">{zh ? "加拿大" : "Canada"}</a><a href="/taiwan">{zh ? "台灣" : "Taiwan"}</a><a href="/technologies">{zh ? "技術" : "Technologies"}</a><a href="/insights">{zh ? "情報" : "Intelligence"}</a><a href={privacy}>{zh ? "隱私" : "Privacy"}</a></div>
+    <div className="footer-legal"><span>© 2026 FlyPig AI · Vancouver, Canada</span><span>{zh ? "加拿大公司 · 聚焦台灣技術生態" : "A Canadian company focused on Taiwan's technology ecosystem"}</span></div>
   </footer>;
 }
