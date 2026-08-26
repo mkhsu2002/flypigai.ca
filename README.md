@@ -469,3 +469,84 @@ The handoff is considered stabilized when:
 - site clearly communicates the Canada-Taiwan Edge AI / Physical AI intelligence positioning
 
 Once this is achieved, proceed into supplier entity pages, design routes, structured intake and content-scale automation.
+
+## 2026-08-25 entity positioning update
+
+### Why this change was made
+
+A strategic review found that FlyPig's public knowledge assets had begun to mature faster than the corporate narrative around them. Atlas, Solutions, Insights and Industry Signals were increasingly behaving like the foundations of an intelligence product, while older wording could still make FlyPig look like a market-development consultancy, sourcing intermediary or representation business.
+
+That framing creates three problems:
+
+1. it understates the long-term software and data ambition;
+2. it makes FlyPig easier to confuse with existing trade consultants, distributors and sourcing agencies;
+3. it teaches search engines and AI systems the wrong entity category at the exact time FlyPig is trying to establish SEO / AEO / GEO authority.
+
+The company definition was therefore tightened around one hierarchy:
+
+`technology company -> design intelligence -> structured ecosystem data -> qualified commercial execution`
+
+Commercial services remain useful, especially in the early phase, but they are no longer the company category.
+
+### New entity definition
+
+The preferred public definition is:
+
+> FlyPig AI is a Canada-based Edge AI and Physical AI design intelligence company building a structured decision layer between Canadian product demand and Taiwan technology capability.
+
+A shorter operating description is:
+
+> Design intelligence for the hardware behind Physical AI.
+
+The strategic product path remains:
+
+`product intent -> requirements -> design route -> technology fit -> qualified introduction -> design-in outcome learning`
+
+### Homepage changes
+
+`app/page.tsx` was updated to:
+
+- replace generic Canada-Taiwan intelligence language with an explicit design-intelligence company definition;
+- move the core value proposition earlier than services or matching;
+- state that FlyPig operates before the RFQ, when architecture and technology choices are still open;
+- define three core jobs: understand requirements, compare design routes, and connect qualified parties;
+- present Canada Atlas and Taiwan Solutions as two public knowledge graphs rather than simple directories;
+- position Industry Signals as a capability-change monitoring layer;
+- introduce the long-term product concept from Product Intent through Outcome Learning;
+- explicitly state that services create data and data improves intelligence;
+- preserve the public/private data principle.
+
+### About page changes
+
+`app/about/page.tsx` was updated to:
+
+- describe FlyPig as a Canada-based technology and intelligence company rather than a research initiative;
+- explain that the long-term asset is structured knowledge of applications, requirements, technology capability, ecosystem relationships and outcomes;
+- separate the company identity from early monetization methods;
+- explain why Canada and Taiwan form complementary sides of the initial graph;
+- document the three-stage evolution from public authority, to real opportunity development, to platformization;
+- preserve explicit boundaries around supplier authorization, representation claims and confidential project data.
+
+### Terminology hierarchy for future changes
+
+Future homepage, About, metadata, structured-data and high-authority pages should follow this hierarchy:
+
+1. Company category: `Edge AI / Physical AI design intelligence technology company`
+2. Core product direction: `Design Intelligence Layer / Design Intelligence Platform`
+3. Public assets: `Canada Atlas`, `Taiwan Solutions`, `Industry Signals`, `Insights`, future `Design Routes`
+4. Early execution capabilities: research, qualification, matching, technical introduction, opportunity development, BD, representation, sourcing support
+5. Monetization mechanisms: project fees, representation, qualified opportunities, supplier subscriptions, future SaaS / API
+
+Do not invert this hierarchy. In particular, consulting, representation, sourcing and BD should not return as the primary definition of FlyPig on the homepage, About page, Organization schema or main metadata.
+
+### Strategic test for new pages
+
+Before publishing a major new page, ask:
+
+> Does this page make FlyPig look more like a compounding intelligence product, or more like a labour-based intermediary?
+
+If the latter, the page should be reframed unless it is intentionally a narrow commercial-services page.
+
+The intended long-term moat is not a supplier list. It is the combination of:
+
+`Company Graph + Technology Graph + Application Graph + private Opportunity Graph + observed Design Outcome data`.

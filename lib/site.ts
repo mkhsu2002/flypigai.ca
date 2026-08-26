@@ -4,7 +4,7 @@ export const siteIdentity = {
   url: "https://flypigai.ca",
   email: "info@flypigai.ca",
   description:
-    "Independent Canada-Taiwan Edge AI and Physical AI intelligence connecting Canadian product needs with researched Taiwan technology routes.",
+    "Canada-based Edge AI and Physical AI design intelligence connecting Canadian product needs with researched Taiwan technology capabilities.",
   address: {
     streetAddress: "11936 Woodridge Cres.",
     addressLocality: "Delta",
