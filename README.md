@@ -16,7 +16,7 @@ General project instructions still apply. Repository rules do not replace backen
 
 The project is being handed over to the IDE for full technical ownership from this point forward. The IDE should treat this README as the current source of truth for product direction, deployment issues, unfinished work, and implementation priorities.
 
-Do not assume the current production deployment is healthy just because `https://flypigai.ca/` loads. A 2026-08-25 readback confirmed the canonical Atlas/Solutions architecture, article media, redirects, metadata, icons, and public entity identity. The statically exported site still returns 404 for the Next.js newsletter route; the event-driven backend described in the stabilization design remains separate unfinished work.
+Do not assume the current production deployment is healthy just because `https://flypigai.ca/` loads. A 2026-08-25 readback confirmed the canonical Atlas/Solutions architecture, article media, redirects, metadata, icons, and public entity identity. The event-driven newsletter backend described in the stabilization design remains separate unfinished work; public pages must show a static launch notice and must not call an undeployed API route until that backend is verified.
 
 ### Current repository state
 
@@ -51,7 +51,8 @@ The static pages were later promoted and are publicly readable. The SEO/GEO/AEO 
 
 Remaining verified backend symptoms:
 
-- `POST https://flypigai.ca/api/newsletter/subscribe` returns 404 because the route handler is incompatible with static export;
+- the obsolete static-export-incompatible Next.js newsletter route has been removed from the frontend contract;
+- newsletter surfaces use a transparent launch notice until a deployed, event-driven Cloudflare endpoint is verified;
 - the legacy contact endpoint has no durable event/audit record and uses obsolete hard-coded mail configuration.
 
 The next infrastructure task is the separate newsletter/contact event-delivery work. Preserve the static export audit and perform raw public HTML readback after every deployment.
@@ -260,15 +261,11 @@ Important security rule:
 
 A Resend key was supplied privately during project setup. It must not be copied into README, source code, logs, public issues or commits. If the IDE cannot retrieve the deployment secret, ask the user to configure / provide it securely in the deployment environment.
 
-Current newsletter component:
+Current newsletter notice component:
 
-`components/NewsletterSignup.tsx`
+`components/NewsletterNotice.tsx`
 
-Current API implementation:
-
-`app/api/newsletter/subscribe/route.ts`
-
-Because the site currently uses `output: "export"`, the IDE must explicitly verify whether this API route can actually run in the chosen Cloudflare Pages architecture. This is a likely architectural inconsistency. Either move subscription handling to a Cloudflare Function / Worker or migrate the site to a deployment mode that supports Next.js server routes.
+Because the site currently uses `output: "export"`, subscription handling must be implemented as the approved Cloudflare Pages Function / Worker event pipeline, not restored as a Next.js server route.
 
 This issue must be resolved before calling newsletter signup production-ready.
 

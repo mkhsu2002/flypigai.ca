@@ -23,6 +23,13 @@ type SeoOptions = {
   image?: SocialImage;
   socialTitle?: string;
   absoluteTitle?: boolean;
+  article?: {
+    publishedTime: string;
+    modifiedTime: string;
+    authors: string[];
+    section: string;
+    tags: string[];
+  };
 };
 
 export function makeMetadata({
@@ -36,6 +43,7 @@ export function makeMetadata({
   image,
   socialTitle,
   absoluteTitle = false,
+  article,
 }: SeoOptions): Metadata {
   const canonical = `${siteUrl}${path}`;
   const socialImage = image ?? {
@@ -50,6 +58,28 @@ export function makeMetadata({
   if (zhPath) languages["zh-Hant"] = `${siteUrl}${zhPath}`;
   if (enPath) languages["x-default"] = `${siteUrl}${enPath}`;
 
+  const socialBase = {
+    title: socialTitle ?? title,
+    description,
+    url: canonical,
+    siteName,
+    locale,
+    images: [{ ...socialImage, url: imageUrl }],
+  };
+
+  const openGraph: Metadata["openGraph"] = type === "article" ? {
+    ...socialBase,
+    type: "article",
+    publishedTime: article?.publishedTime,
+    modifiedTime: article?.modifiedTime,
+    authors: article?.authors,
+    section: article?.section,
+    tags: article?.tags,
+  } : {
+    ...socialBase,
+    type: "website",
+  };
+
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,
@@ -57,15 +87,7 @@ export function makeMetadata({
       canonical,
       ...(Object.keys(languages).length ? { languages } : {}),
     },
-    openGraph: {
-      title: socialTitle ?? title,
-      description,
-      url: canonical,
-      siteName,
-      locale,
-      type,
-      images: [{ ...socialImage, url: imageUrl }],
-    },
+    openGraph,
     twitter: {
       card: "summary_large_image",
       title: socialTitle ?? title,
@@ -96,6 +118,7 @@ export const organizationJsonLd = {
   },
   founder: {
     "@type": "Person",
+    "@id": `${siteIdentity.founder.url}#person`,
     ...siteIdentity.founder,
   },
   contactPoint: {

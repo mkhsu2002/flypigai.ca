@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0004",
   "slug": "himax-wiseeye-embedded-world-2026",
-  "publishedAt": "2026-03-09",
+  "sourcePublishedAt": "2026-03-09",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Himax",
   "category": "Always-On AI · Sensing",
   "title": "Himax WiseEye Showcase Extends Always-On AI Into Security, Smart Home and Wearables",
   "seoTitle": "Himax Shows WiseEye Always-On AI at Embedded World 2026",
   "socialTitle": "Himax Shows WiseEye Always-On AI at Embedded World 2026",
+  "seoDescription": "Himax’s Embedded World 2026 showcase positions WiseEye for always-on, low-power visual AI across security, smart-home and wearable devices.",
   "dek": "Himax used Embedded World 2026 to show WiseEye always-on AI across smart glasses, security and other low-power sensing applications, reinforcing the platform’s role in endpoint intelligence.",
   "summary": "WiseEye’s significance is architectural: useful vision stays awake while a larger host can remain asleep, a pattern that directly affects battery life in cameras, locks and wearable devices.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "WiseEye is strategically relevant because always-on AI is a system-level power decision. FlyPig will prioritize evidence that shows how quickly a team can move from the low-power processor to a validated camera, model and module stack.",
+  "productStatus": "Himax announced and demonstrated multiple WiseEye endpoint-AI applications at Embedded World 2026. The release establishes the technology direction, while individual modules and customer-ready configurations have separate availability.",
+  "openQuestions": ["Which reference modules, sensors and algorithms are available as supported evaluation kits?","What are the measured power, accuracy and operating limits for each demonstrated use case?"],
+  "canadaRelevance": "Battery-powered security, smart-building and wearable teams in Canada may benefit from always-on local vision where privacy and power budgets rule out continuous cloud processing.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/himax-wiseeye-embedded-world-2026.png",
     "socialSrc": "/images/signals/og/himax-wiseeye-embedded-world-2026.png",
-    "alt": "FlyPig AI editorial infographic summarizing Himax always-on ai · sensing developments.",
+    "alt": "FlyPig AI infographic on Himax WiseEye at Embedded World 2026, highlighting always-on vision, low-power endpoint AI and device applications.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

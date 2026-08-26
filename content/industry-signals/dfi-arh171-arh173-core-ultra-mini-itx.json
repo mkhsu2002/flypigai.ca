@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0012",
   "slug": "dfi-arh171-arh173-core-ultra-mini-itx",
-  "publishedAt": "2026-07-24",
+  "sourcePublishedAt": "2026-07-24",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "DFI",
   "category": "Mini-ITX · Core Ultra",
   "title": "DFI ARH171/ARH173 Spans Two Core Ultra Generations on One Mini-ITX Design",
   "seoTitle": "DFI ARH171/ARH173 Bring Core Ultra AI to Mini-ITX",
   "socialTitle": "DFI ARH171/ARH173 Bring Core Ultra AI to Mini-ITX",
+  "seoDescription": "DFI’s ARH171 and ARH173 industrial Mini-ITX boards span 16 Intel Core Ultra options, 15–28W processors and up to 99 TOPS on ARL-H.",
   "dek": "DFI’s ARH171/ARH173 puts Meteor Lake and Arrow Lake Core Ultra options on one Mini-ITX platform, giving OEMs a way to vary performance tiers without requalifying an entirely different board.",
   "summary": "The key design signal is lifecycle flexibility: DFI is using one board architecture to cover two Core Ultra generations and a broad performance range, which can reduce requalification work across product tiers.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "ARH171/ARH173 is a good example of design intelligence being about lifecycle as much as compute. A common board across two processor generations can reduce requalification cost, particularly for OEMs shipping several edge-system tiers.",
+  "productStatus": "DFI has announced ARH171 and ARH173 as Mini-ITX boards spanning Intel Core Ultra processor generations. Available performance and AI throughput depend on the selected processor option.",
+  "openQuestions": ["Which of the 16 processor configurations are stocked, sampling or supported for long-lifecycle programs?","What thermal solutions, BSPs and expansion combinations have been validated at the upper performance range?"],
+  "canadaRelevance": "Canadian industrial OEMs can use the common Mini-ITX form factor to compare lower-power and higher-AI configurations while preserving a familiar enclosure and expansion strategy.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/dfi-arh171-arh173-core-ultra-mini-itx.png",
     "socialSrc": "/images/signals/og/dfi-arh171-arh173-core-ultra-mini-itx.png",
-    "alt": "FlyPig AI editorial infographic summarizing DFI mini-itx · core ultra developments.",
+    "alt": "FlyPig AI infographic on DFI ARH171 and ARH173, highlighting 16 Core Ultra options, 15–28W processors and up to 99 TOPS.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

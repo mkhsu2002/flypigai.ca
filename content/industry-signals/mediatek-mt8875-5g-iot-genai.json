@@ -1,6 +1,7 @@
 {
   "eventId": "EVT-2026-0019",
   "slug": "mediatek-mt8875-5g-iot-genai",
+  "sourcePublishedAt": "2026-08-25",
   "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "MediaTek",
@@ -8,6 +9,7 @@
   "title": "MediaTek MT8875 Brings 5G and On-Device GenAI Into a Single IoT Platform",
   "seoTitle": "MediaTek MT8875 Combines 5G IoT and On-Device GenAI",
   "socialTitle": "MediaTek MT8875 Combines 5G IoT and On-Device GenAI",
+  "seoDescription": "MediaTek MT8875 combines Release 17 5G, a 12.8-TOPS NPU, multi-camera support and up to 24GB LPDDR5X for connected edge AI.",
   "dek": "MediaTek’s newly detailed MT8875 combines Rel. 17 5G, a 12.8-TOPS NPU, multi-camera support and up to 24GB of LPDDR5X, creating a more integrated route for connected edge-AI products.",
   "summary": "The important shift is not simply a faster IoT processor. MT8875 collapses connectivity, local AI, camera processing and application compute into one platform, potentially reducing the number of major components required in portable and connected AI devices.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "MT8875 is notable because it compresses several previously separate design decisions into one platform: wide-area connectivity, edge inference, camera processing and application compute. FlyPig will track the Taiwan module and development ecosystem around the device, because that ecosystem will determine how quickly North American product teams can actually design it in.",
+  "productStatus": "MediaTek has formally detailed the MT8875 platform and states supply support through 2032. Evaluation-kit, module, operating-system and regional certification timelines require ecosystem confirmation.",
+  "openQuestions": ["Which Taiwan module, board and ODM suppliers will expose MT8875 in evaluation-ready form?","What Linux support, Canadian carrier certification, thermal data and production pricing will be available?"],
+  "canadaRelevance": "Canadian mobile-enterprise, smart-retail and connected-vision teams could consolidate cellular and local AI compute if modules and certification paths become accessible.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -69,7 +74,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/mediatek-mt8875-5g-iot-genai.png",
     "socialSrc": "/images/signals/og/mediatek-mt8875-5g-iot-genai.png",
-    "alt": "FlyPig AI editorial infographic summarizing MediaTek 5g iot · edge ai · genai developments.",
+    "alt": "FlyPig AI infographic on MediaTek MT8875, highlighting Release 17 5G, a 12.8-TOPS NPU and support for up to 24GB LPDDR5X.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

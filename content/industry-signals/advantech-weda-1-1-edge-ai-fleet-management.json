@@ -1,49 +1,54 @@
 {
   "eventId": "EVT-2026-0009",
   "slug": "advantech-weda-1-1-edge-ai-fleet-management",
-  "publishedAt": "2026-07-17",
+  "sourcePublishedAt": "2026-08-05",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Advantech",
   "category": "Edge AI Software · Fleet Management",
-  "title": "Advantech WEDA 1.1 Adds Model and Container Management for Edge AI Fleets",
-  "seoTitle": "Advantech WEDA 1.1 Adds Edge AI Fleet Management",
-  "socialTitle": "Advantech WEDA 1.1 Adds Edge AI Fleet Management",
-  "dek": "WEDA Core and WEDA Node 1.1 expand Advantech’s edge software layer with AI model management, container controls and device-management APIs aimed at multi-device deployments.",
-  "summary": "The operational layer becomes important after the prototype: model versions, containers, device state and fleet updates have to be managed consistently across edge systems and product SKUs.",
+  "title": "Advantech WEDA 1.1.1 Reworks Edge Data Management and Model Deployment",
+  "seoTitle": "Advantech WEDA 1.1.1 Reworks Edge Data Management",
+  "socialTitle": "Advantech WEDA 1.1.1 Reworks Edge Data Management",
+  "seoDescription": "Advantech WEDA 1.1.1 reworks edge data management with DataStream, Analyzer, Alert Policy and a generally available Data Stream Bridge.",
+  "dek": "WEDA Core 1.1.1 replaces core Data Engine concepts with DataStream and Analyzer, adds organization-scoped Alert Policy and makes Data Stream Bridge generally available.",
+  "summary": "The release is a substantial API and data-model change rather than a minor feature update. Teams already using WEDA need to assess breaking changes, while new deployments gain a clearer data and alert architecture.",
   "keyFacts": [
-    "WEDA Core / Node 1.1",
-    "AI Model Management",
-    "Containers + devices + data"
+    "WEDA Core 1.1.1",
+    "DataStream + Analyzer model",
+    "Alert Policy + Data Stream Bridge"
   ],
   "whyItMatters": [
-    "Once edge AI reaches multiple sites or SKUs, model deployment and device state become operational problems rather than one-time engineering tasks.",
-    "Model, container and device management in one layer can reduce the number of separate tools needed to maintain an edge fleet.",
-    "Licensing, hardware openness and integration with existing MLOps stacks remain the most important commercial questions."
+    "WEDA 1.1.1 merges Data Source and Data Object into DataStream and renames Transfer Function to Analyzer, changing the API surface used by existing integrations.",
+    "Organization-scoped Alert Policy and the generally available Data Stream Bridge add clearer fleet-level controls for alerts and external MQTT forwarding.",
+    "Licensing, hardware openness, migration effort and integration with existing MLOps stacks remain the most important commercial questions."
   ],
   "reporting": [
     {
-      "heading": "The software layer becomes visible only after the first devices ship",
+      "heading": "This is a data-model migration, not a cosmetic release",
       "paragraphs": [
-        "A successful prototype can hide the operational work that appears when dozens or hundreds of edge devices need updates. WEDA 1.1 adds model-management and container-management capabilities alongside device naming, query APIs and unified data handling.",
-        "That moves the platform closer to the ongoing operations layer of edge AI rather than a deployment utility used only at installation."
+        "Advantech’s August 5 release notes describe WEDA Core 1.1.1 as a substantial rework of the Data Engine API. Data Source and Data Object are replaced by a unified DataStream entity, while Transfer Function becomes Analyzer.",
+        "Existing integrations therefore need an explicit migration review. Several legacy endpoints are removed or moved to organization-scoped paths, so the release should not be treated as a drop-in additive update."
       ]
     },
     {
-      "heading": "Multi-SKU fleets need abstraction",
+      "heading": "Fleet alerts and data forwarding become more explicit",
       "paragraphs": [
-        "Camera appliances, AI boxes and robots may use different compute modules while still needing common deployment, telemetry and update policies. A management layer can reduce duplicated operational tooling if it supports enough of the underlying hardware stack.",
-        "The key word is if: buyers need to know how far WEDA extends beyond Advantech systems and how portable model and container workflows are."
+        "Alert Rule is replaced by an independent, organization-scoped Alert Policy service that can attach policies to multiple DataStreams. The release also makes Data Stream Bridge generally available for one-way forwarding to a customer-hosted MQTT broker.",
+        "Those changes matter when a deployment spans many devices or customer organizations, because alert ownership and external data movement need stable boundaries."
       ]
     },
     {
-      "heading": "MLOps interoperability will shape the product’s value",
+      "heading": "Model operations improve, but interoperability still decides value",
       "paragraphs": [
-        "Many organizations already have cloud model registries, CI/CD systems or container infrastructure. WEDA becomes more useful if it can fit into those workflows rather than create a separate operational island.",
-        "FlyPig will therefore track APIs, pricing and third-party hardware support as closely as the feature list."
+        "The release notes also refine AI Model Management deployment behaviour and resumable uploads. Those operational details can help production fleets, but most organizations already have registries, CI/CD systems or container infrastructure.",
+        "WEDA becomes more useful if it fits those workflows rather than creating a separate operational island. FlyPig will therefore track API stability, pricing and third-party hardware support alongside the feature list."
       ]
     }
   ],
-  "flypigTake": "WEDA is strategically useful because the edge-AI problem does not end at inference. The more devices a customer deploys, the more lifecycle management becomes part of the design decision. Openness and integration will determine whether WEDA becomes a broader fleet layer.",
+  "flypigTake": "WEDA is strategically useful because the edge-AI problem does not end at inference. Version 1.1.1 also shows why software lifecycle risk belongs in the hardware decision: breaking API changes, migration effort, openness and integration all affect the long-term fleet architecture.",
+  "productStatus": "Advantech published WEDA Core v1.1.1 release notes on August 5, 2026. The release is documented as a substantial Data Engine API rework with breaking changes, not a purely additive update.",
+  "openQuestions": ["What licensing, support and deployment options apply to production fleets in Canada?","How portable are WEDA workflows across non-Advantech hardware, existing registries and external MLOps systems?"],
+  "canadaRelevance": "Canadian operators managing distributed edge devices may benefit from centralized state, data and model operations, but must assess migration effort and API compatibility before adopting v1.1.1.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -61,18 +66,19 @@
     "Physical AI"
   ],
   "corrections": [],
-  "sourceName": "Advantech WEDA Learning Hub",
-  "sourceUrl": "https://learn.advantech.com/zh-tw/weda/docs/Introduction/",
-  "sourceNote": "FlyPig AI independently interprets public WEDA documentation and release information. Licensing, supported hardware and integration details should be confirmed with Advantech for production use.",
+  "sourceName": "Advantech WEDA Core v1.1.1 release notes",
+  "sourceUrl": "https://learn.advantech.com/weda/docs/Release_Notes/WEDA_Core/v1_1_1/",
+  "sourceProductUrl": "https://learn.advantech.com/weda/docs/Introduction/",
+  "sourceNote": "FlyPig AI independently interprets Advantech’s public release notes and documentation. Version 1.1.1 contains breaking API changes; licensing, supported hardware and integration details should be confirmed before production use.",
   "heroVisual": {
     "kind": "original_infographic",
     "src": "/images/signals/advantech-weda-1-1-edge-ai-fleet-management.png",
     "socialSrc": "/images/signals/og/advantech-weda-1-1-edge-ai-fleet-management.png",
-    "alt": "FlyPig AI editorial infographic summarizing Advantech edge ai software · fleet management developments.",
+    "alt": "FlyPig AI infographic on Advantech WEDA 1.1.1, highlighting DataStream, Analyzer, Alert Policy and edge fleet operations.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",
-    "sourceUrl": "https://learn.advantech.com/zh-tw/weda/docs/Introduction/",
+    "sourceUrl": "https://learn.advantech.com/weda/docs/Release_Notes/WEDA_Core/v1_1_1/",
     "assetRights": {
       "status": "owned",
       "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/advantech-weda-1-1-edge-ai-fleet-management.svg"

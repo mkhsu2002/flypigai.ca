@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0013",
   "slug": "dfi-asl600-smarc-edge-ai-som",
-  "publishedAt": "2026-07-15",
+  "sourcePublishedAt": "2026-07-15",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "DFI",
   "category": "SMARC · Low-Power Edge",
   "title": "DFI ASL600 Packages Low-Power Intel Compute Into a SMARC 2.2 Module",
   "seoTitle": "DFI ASL600 Brings Low-Power Edge AI to SMARC 2.2",
   "socialTitle": "DFI ASL600 Brings Low-Power Edge AI to SMARC 2.2",
+  "seoDescription": "DFI’s ASL600 packages low-power industrial edge computing into an 82 × 50 mm SMARC 2.2 module with MIPI-CSI, dual 2.5GbE and CAN.",
   "dek": "DFI’s ASL600 uses the 82 × 50 mm SMARC 2.2 form factor with low-power Intel processors, MIPI-CSI, dual 2.5GbE and wide-temperature support for compact edge systems.",
   "summary": "ASL600 is less about peak AI throughput than preserving a product’s carrier-board investment while giving compact vision, HMI and robot-controller designs a standardized compute module.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "ASL600 is attractive when mechanical stability and carrier-board reuse matter more than peak AI TOPS. FlyPig would position it as a compact embedded-compute route that can pair with external accelerators if the application later needs more inference performance.",
+  "productStatus": "DFI has published the ASL600 module and its core SMARC 2.2 specifications, including industrial temperature claims. Processor variant, carrier and software support determine production readiness.",
+  "openQuestions": ["Which processor, memory and software configurations are available with long-term supply commitments?","Which carrier boards, camera modules and environmental validations are offered for evaluation?"],
+  "canadaRelevance": "Canadian industrial, transportation and compact-robotics teams may value a replaceable SMARC module with camera and industrial networking when power and enclosure space are constrained.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/dfi-asl600-smarc-edge-ai-som.png",
     "socialSrc": "/images/signals/og/dfi-asl600-smarc-edge-ai-som.png",
-    "alt": "FlyPig AI editorial infographic summarizing DFI smarc · low-power edge developments.",
+    "alt": "FlyPig AI infographic on DFI ASL600, highlighting the 82 × 50 mm SMARC 2.2 form factor, MIPI-CSI, dual 2.5GbE, CAN and industrial temperature range.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

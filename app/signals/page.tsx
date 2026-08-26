@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import JsonLd from "../../components/JsonLd";
-import NewsletterSignup from "../../components/NewsletterSignup";
+import NewsletterNotice from "../../components/NewsletterNotice";
 import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
 import { getIndustrySignals } from "../../lib/industrySignals";
 import { makeMetadata, siteUrl } from "../seo";
@@ -45,12 +45,12 @@ export default function SignalsPage() {
     </div><aside className="signal-card"><p className="eyebrow">Editorial standard</p><div className="signal-line"><span>Source</span><strong>Official first</strong></div><div className="signal-line"><span>Language</span><strong>English reporting</strong></div><div className="signal-line"><span>Lens</span><strong>Design + commercial relevance</strong></div><div className="signal-line"><span>Disclosure</span><strong>Source linked on every article</strong></div></aside></div></section>
 
     <section className="section shell" id="latest"><div className="section-head"><div><p className="eyebrow">Latest</p><h2>New product and ecosystem developments.</h2></div><p className="section-copy">These reports originate from FlyPig AI’s Taiwan technology monitoring workflow. We do not reproduce vendor press releases; each item is rewritten and analyzed from an independent industry-intelligence perspective.</p></div>
-      <div className="grid3 signal-index-grid">{signals.map((signal) => <a className="card signal-index-card" href={`/signals/${signal.slug}`} key={signal.eventId}><img src={signal.heroVisual.socialSrc} alt="" width="1200" height="630" loading="lazy" /><div className="signal-index-copy"><span className="num">{signal.publishedAt} · {signal.supplier}</span><h3>{signal.seoTitle}</h3><p>{signal.dek}</p><strong>Read signal →</strong></div></a>)}</div>
+      <div className="grid3 signal-index-grid">{signals.map((signal) => <a className="card signal-index-card" href={`/signals/${signal.slug}`} key={signal.eventId}><img src={signal.heroVisual.socialSrc} alt="" width="1200" height="630" loading="lazy" /><div className="signal-index-copy"><span className="num">Source update {signal.sourcePublishedAt} · {signal.supplier}</span><h3>{signal.seoTitle}</h3><p>{signal.seoDescription}</p><strong>Read signal →</strong></div></a>)}</div>
     </section>
 
     <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">Why this desk exists</p><h2>Product news becomes useful only when it changes a design decision.</h2></div><div><p className="section-copy">FlyPig tracks Taiwan technology events as inputs to a larger intelligence graph: capabilities, applications, design routes, availability and potential Canada-facing relevance.</p><div className="actions"><a className="pill secondary" href="/editorial-policy">Read the editorial policy</a></div></div></div></div></section>
 
-    <section className="cta shell"><div className="cta-box newsletter-cta"><div><p className="eyebrow">FlyPig Industry Signals</p><h2>Get the highest-signal Taiwan technology updates.</h2></div><NewsletterSignup /></div></section>
+    <section className="cta shell"><div className="cta-box newsletter-cta"><div><p className="eyebrow">FlyPig Industry Signals</p><h2>Get the highest-signal Taiwan technology updates.</h2></div><NewsletterNotice /></div></section>
     <SiteFooter />
   </main>;
 }

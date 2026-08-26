@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0014",
   "slug": "nuvoton-nau83g60yg-kcs-smart-amplifier",
-  "publishedAt": "2026-08-05",
+  "sourcePublishedAt": "2026-08-05",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Nuvoton",
   "category": "Smart Audio · DSP",
   "title": "Nuvoton NAU83G60YG Moves Speaker Protection and Nonlinear Control Into the Smart Amp",
   "seoTitle": "Nuvoton NAU83G60YG Adds Klippel KCS Smart Amplification",
   "socialTitle": "Nuvoton NAU83G60YG Adds Klippel KCS Smart Amplification",
+  "seoDescription": "Nuvoton’s NAU83G60YG combines 2 × 30W digital amplification with Klippel KCS nonlinear control for smarter compact audio systems.",
   "dek": "Nuvoton’s NAU83G60YG is a 2 × 30W stereo smart amplifier that integrates Klippel KCS nonlinear speaker control, DSP processing and signals intended to improve AEC and ANC system behaviour.",
   "summary": "For voice and AI devices, the interesting shift is moving more acoustic intelligence into the amplifier itself: distortion control, protection, diagnostics and cleaner reference signals can reduce work elsewhere in the audio stack.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "NAU83G60YG is a useful reminder that local AI products are also acoustic systems. Moving nonlinear speaker control into the amplifier could free host compute and improve voice interaction, but the real value has to be measured with the product’s actual speaker and enclosure.",
+  "productStatus": "Nuvoton has officially announced the NAU83G60YG and an evaluation-board path for Klippel KCS integration. Production timing, licensing and supported loudspeaker profiles require confirmation.",
+  "openQuestions": ["What KCS licensing, tuning services and evaluation resources are included with the device?","Which thermal, acoustic and protection results have been validated across representative speaker designs?"],
+  "canadaRelevance": "Canadian smart-device, mobility and kiosk teams could use integrated nonlinear speaker control to improve output from compact enclosures without adding a separate DSP path.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -69,7 +74,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/nuvoton-nau83g60yg-kcs-smart-amplifier.png",
     "socialSrc": "/images/signals/og/nuvoton-nau83g60yg-kcs-smart-amplifier.png",
-    "alt": "FlyPig AI editorial infographic summarizing Nuvoton smart audio · dsp developments.",
+    "alt": "FlyPig AI infographic on Nuvoton NAU83G60YG, highlighting 2 × 30W output, Klippel KCS nonlinear control and an available evaluation board.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

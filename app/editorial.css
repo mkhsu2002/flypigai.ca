@@ -144,6 +144,22 @@
   text-transform: uppercase;
 }
 
+.article-verification {
+  margin-top: 72px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.article-verification h3 {
+  margin: 30px 0 8px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.article-verification ul {
+  padding-left: 24px;
+}
+
 .article-related {
   padding: 100px 0 32px;
 }

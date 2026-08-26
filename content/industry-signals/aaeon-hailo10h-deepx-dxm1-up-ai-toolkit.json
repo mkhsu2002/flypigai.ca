@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0010",
   "slug": "aaeon-hailo10h-deepx-dxm1-up-ai-toolkit",
-  "publishedAt": "2026-07-20",
+  "sourcePublishedAt": "2026-07-20",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "AAEON",
   "category": "AI Acceleration · Modules",
   "title": "AAEON Adds Hailo-10H and DEEPX DX-M1 Acceleration Across UP Platforms",
   "seoTitle": "AAEON Adds Hailo-10H and DEEPX Acceleration to UP Systems",
   "socialTitle": "AAEON Adds Hailo-10H and DEEPX Acceleration to UP Systems",
+  "seoDescription": "AAEON adds Hailo-10H and DEEPX DX-M1 accelerator options across UP systems, with M.2 and USB modules plus a free development toolkit.",
   "dek": "AAEON is making Hailo-10H and DEEPX DX-M1 accelerators available across UP systems, using M.2 and USB form factors plus a free UP AI Toolkit to add local AI without replacing the host board.",
   "summary": "The notable design pattern is modularity: an existing x86 system can gain a dedicated AI accelerator without moving the operating system and application stack to a completely different motherboard.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "AAEON’s approach is valuable because it makes accelerator choice less coupled to the motherboard. For FlyPig, that creates a practical design route: keep the x86 host, benchmark Hailo and DEEPX against the real model, then choose based on power, memory and cost.",
+  "productStatus": "AAEON officially announced Hailo-10H and DEEPX DX-M1 accelerator options and associated UP AI development resources. Module availability and supported host combinations vary across the UP portfolio.",
+  "openQuestions": ["Which host systems, module SKUs, drivers and model examples are validated together?","What are the measured performance, power and pricing differences between the Hailo and DEEPX routes?"],
+  "canadaRelevance": "Canadian developers can compare two accelerator ecosystems on accessible UP platforms before selecting a production compute architecture for vision or local GenAI workloads.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/aaeon-hailo10h-deepx-dxm1-up-ai-toolkit.png",
     "socialSrc": "/images/signals/og/aaeon-hailo10h-deepx-dxm1-up-ai-toolkit.png",
-    "alt": "FlyPig AI editorial infographic summarizing AAEON ai acceleration · modules developments.",
+    "alt": "FlyPig AI infographic on AAEON UP AI acceleration, highlighting Hailo-10H, DEEPX DX-M1, M.2 and USB modules and the UP AI Toolkit.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0011",
   "slug": "aaeon-mix-q870a1-mini-itx-edge-ai",
-  "publishedAt": "2026-07-31",
+  "sourcePublishedAt": "2026-07-31",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "AAEON",
   "category": "Mini-ITX · Edge AI",
   "title": "AAEON MIX-Q870A1 Brings Core Ultra 200S and PCIe Gen5 Into Mini-ITX Edge Systems",
   "seoTitle": "AAEON MIX-Q870A1 Mini-ITX Platform for Edge AI",
   "socialTitle": "AAEON MIX-Q870A1 Mini-ITX Platform for Edge AI",
+  "seoDescription": "AAEON’s MIX-Q870A1 brings Intel Core Ultra 200S, up to 36 TOPS and PCIe Gen5 bifurcation to a Mini-ITX industrial platform.",
   "dek": "AAEON’s MIX-Q870A1 pairs Intel Core Ultra 200S processors with PCIe Gen5 expansion in Mini-ITX, targeting fixed edge-AI systems that need more compute and expansion than a low-power module can provide.",
   "summary": "MIX-Q870A1 is a fixed-system design route rather than a low-power module: it combines integrated Intel AI resources with enough PCIe headroom to add accelerators, storage or capture hardware later.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "The MIX-Q870A1 is useful where a product needs a familiar Mini-ITX ecosystem and a lot of expansion headroom. Its strength is architectural flexibility; its weakness for smaller devices is the power and mechanical budget that comes with that flexibility.",
+  "productStatus": "AAEON has published the MIX-Q870A1 product announcement and specifications for an industrial Mini-ITX platform. CPU choice, accelerator cards and production configuration determine the final AI capability.",
+  "openQuestions": ["Which Core Ultra 200S SKUs, memory configurations and PCIe accelerator combinations are validated?","What are Canadian availability, lifecycle, thermal-design and pricing terms for production orders?"],
+  "canadaRelevance": "The board may suit Canadian machine builders and vision-system OEMs that need desktop-class expansion in a standardized compact form factor instead of a proprietary carrier.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -67,7 +72,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/aaeon-mix-q870a1-mini-itx-edge-ai.png",
     "socialSrc": "/images/signals/og/aaeon-mix-q870a1-mini-itx-edge-ai.png",
-    "alt": "FlyPig AI editorial infographic summarizing AAEON mini-itx · edge ai developments.",
+    "alt": "FlyPig AI infographic on AAEON MIX-Q870A1, highlighting Core Ultra 200S, up to 36 TOPS and PCIe Gen5 x16 bifurcation.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

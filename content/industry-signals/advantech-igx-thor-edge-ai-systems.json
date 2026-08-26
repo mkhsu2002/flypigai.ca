@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0008",
   "slug": "advantech-igx-thor-edge-ai-systems",
-  "publishedAt": "2026-03-17",
+  "sourcePublishedAt": "2026-03-17",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Advantech",
   "category": "Physical AI · IGX Thor",
   "title": "Advantech Brings NVIDIA IGX Thor Into Deployable Edge AI Systems",
   "seoTitle": "Advantech Launches NVIDIA IGX Thor Edge AI Systems",
   "socialTitle": "Advantech Launches NVIDIA IGX Thor Edge AI Systems",
+  "seoDescription": "Advantech introduces NVIDIA IGX Thor systems for real-time, safety-conscious robotics, medical and sensor-rich industrial edge-AI workloads.",
   "dek": "Advantech’s MIC-735, AIR-427A and USM-500 turn NVIDIA IGX Thor into system-level platforms aimed at real-time, safety-aware edge AI and Physical AI deployment.",
   "summary": "The signal sits above the chip layer: Advantech is packaging IGX Thor into industrial and medical systems where thermals, I/O, reliability and lifecycle support are part of the product decision.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "Advantech’s IGX Thor systems show where Taiwan can add value between NVIDIA compute and the final machine. FlyPig would use these platforms when deployment risk and integration time matter more than minimizing the first-unit BOM.",
+  "productStatus": "Advantech has formally introduced MIC-735, AIR-427A and USM-500 systems based on NVIDIA IGX Thor. Ordering configurations, software images and certification scope differ by product and region.",
+  "openQuestions": ["Which systems are sampling or shipping in Canada, and with which IGX software and lifecycle commitments?","What safety, medical or industrial certifications apply to the complete system rather than only the underlying platform?"],
+  "canadaRelevance": "Canadian robotics, medical-device and industrial-automation teams may use these systems where high sensor throughput and managed platform support matter more than a custom carrier design.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -67,7 +72,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/advantech-igx-thor-edge-ai-systems.png",
     "socialSrc": "/images/signals/og/advantech-igx-thor-edge-ai-systems.png",
-    "alt": "FlyPig AI editorial infographic summarizing Advantech physical ai · igx thor developments.",
+    "alt": "FlyPig AI infographic on Advantech NVIDIA IGX Thor systems, highlighting MIC-735, AIR-427A, USM-500 and safety-conscious edge AI.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

@@ -50,6 +50,8 @@ for (const filePath of htmlFiles) {
   if (!canonicalTag || !attribute(canonicalTag, "href")) errors.push(`${route}: missing canonical`);
   const descriptionTag = html.match(/<meta[^>]+name=["']description["'][^>]*>/i)?.[0];
   if (!descriptionTag || !attribute(descriptionTag, "content")) errors.push(`${route}: missing description`);
+  const description = descriptionTag && attribute(descriptionTag, "content");
+  if (isSignalArticle && description && (description.length < 120 || description.length > 160)) errors.push(`${route}: Signal description must be 120-160 characters (${description.length})`);
   for (const property of ["og:image", "twitter:image"]) {
     const tag = html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${property}["'][^>]*>`, "i"))?.[0];
     const content = tag && attribute(tag, "content");
@@ -64,13 +66,18 @@ for (const filePath of htmlFiles) {
     try { structuredData.push(JSON.parse(match[1])); } catch (error) { errors.push(`${route}: invalid JSON-LD (${error.message})`); }
   }
   if (isSignalArticle) {
+    for (const property of ["article:published_time", "article:modified_time"]) {
+      const tag = html.match(new RegExp(`<meta[^>]+property=["']${property}["'][^>]*>`, "i"))?.[0];
+      if (!tag || !attribute(tag, "content")) errors.push(`${route}: missing ${property}`);
+    }
     const article = structuredData.find((entry) => entry["@type"] === "NewsArticle");
     if (!article) errors.push(`${route}: missing NewsArticle JSON-LD`);
     else {
-      for (const field of ["image", "datePublished", "dateModified", "author", "publisher", "citation"]) {
+      for (const field of ["@id", "image", "datePublished", "dateModified", "author", "publisher", "mainEntityOfPage", "isPartOf", "articleSection", "keywords", "wordCount", "citation"]) {
         if (!article[field] || (Array.isArray(article[field]) && article[field].length === 0)) errors.push(`${route}: NewsArticle missing ${field}`);
       }
     }
+    if (html.includes("/api/newsletter/subscribe")) errors.push(`${route}: references undeployed newsletter API`);
   }
   for (const match of html.matchAll(/<(?:a|img)\b[^>]+(?:href|src)=["']([^"']+)["'][^>]*>/gi)) {
     const target = match[1];

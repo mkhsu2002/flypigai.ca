@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0006",
   "slug": "winbond-cube-w77t-edge-ai-memory-security",
-  "publishedAt": "2026-04-08",
+  "sourcePublishedAt": "2026-04-08",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Winbond",
   "category": "AI Memory · Secure Flash",
   "title": "Winbond Pairs High-Bandwidth CUBE Memory With Post-Quantum Secure Flash for Edge AI",
   "seoTitle": "Winbond Pairs CUBE Memory with Post-Quantum Secure Flash",
   "socialTitle": "Winbond Pairs CUBE Memory with Post-Quantum Secure Flash",
+  "seoDescription": "Winbond pairs CUBE high-bandwidth memory for edge AI with W77T secure flash designed for firmware protection and post-quantum readiness.",
   "dek": "Winbond is advancing two different memory-side building blocks for edge AI: CUBE high-bandwidth memory technology and W77T secure flash with post-quantum security features.",
   "summary": "The useful signal is that edge-AI memory is splitting into two simultaneous design problems: feeding larger models fast enough while protecting the firmware and trust anchors of long-lived devices.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "Winbond’s signal is less about one finished product than about the memory architecture around edge AI. FlyPig will track which compute vendors and modules make CUBE and W77T actionable, because interoperability will decide their design-in value.",
+  "productStatus": "Winbond publicly describes CUBE as a customizable high-bandwidth memory technology and lists W77T secure-flash products with security and post-quantum features. Packaging, host integration and program availability remain design-specific.",
+  "openQuestions": ["Which processor, package and module programs expose CUBE as an orderable edge-AI design route?","Which W77T variants, certifications and post-quantum functions are available in production for each target application?"],
+  "canadaRelevance": "Canadian industrial and IoT teams planning long-lived edge-AI products need both memory bandwidth and firmware trust, especially where devices must remain secure and serviceable for years.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -63,12 +68,19 @@
   "corrections": [],
   "sourceName": "Winbond official technology update",
   "sourceUrl": "https://www.winbond.com/hq/support/online-learning/video-item/Whats-Next-for-Memory-Why-AI-Demand-Is-Changing-the-Industry",
+  "sourceProductUrl": "https://winbond.com/hq/product/customized-memory-solution/cube/index.html?__locale=en",
+  "additionalSources": [
+    {
+      "name": "Winbond W77Q and W77T secure-flash guide",
+      "url": "https://www.winbond.com/export/sites/winbond/product-selection-guide/file/2026-Winbond-Secure-Flash.pdf?__locale=en"
+    }
+  ],
   "sourceNote": "The source material identifies the technologies and direction; exact availability, packaging and performance conditions should be confirmed directly with Winbond before design-in. FlyPig AI provides independent analysis and does not represent the supplier.",
   "heroVisual": {
     "kind": "original_infographic",
     "src": "/images/signals/winbond-cube-w77t-edge-ai-memory-security.png",
     "socialSrc": "/images/signals/og/winbond-cube-w77t-edge-ai-memory-security.png",
-    "alt": "FlyPig AI editorial infographic summarizing Winbond ai memory · secure flash developments.",
+    "alt": "FlyPig AI infographic on Winbond CUBE and W77T, highlighting edge-AI memory bandwidth, secure flash and post-quantum readiness.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

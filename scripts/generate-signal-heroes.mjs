@@ -2,6 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 
+sharp.cache(false);
+sharp.concurrency(1);
+
 const args = Object.fromEntries(process.argv.slice(2).map((argument) => {
   const [key, value = "true"] = argument.replace(/^--/, "").split("=");
   return [key, value];
@@ -51,8 +54,14 @@ function wrapText(value, maxCharacters, maxLines) {
   return lines;
 }
 
+function fittedLines(value, maxCharacters, maxLines, label) {
+  const lines = wrapText(value, maxCharacters, maxLines);
+  if (lines.some((line) => line.endsWith("…"))) throw new Error(`${label} does not fit the approved visual safe area`);
+  return lines;
+}
+
 function svgFor(signal, width, height, social = false) {
-  const titleLines = wrapText(signal.socialTitle || signal.title, 34, social ? 2 : 3);
+  const titleLines = fittedLines(signal.socialTitle || signal.title, 34, social ? 2 : 3, `${signal.slug} title`);
   const palette = ["#0f766e", "#2563eb", "#7c3aed", "#b45309", "#be123c"];
   const accent = palette[signals.findIndex((candidate) => candidate.slug === signal.slug) % palette.length];
   const titleSize = social ? 48 : 64;
@@ -82,7 +91,7 @@ function svgFor(signal, width, height, social = false) {
   ${titleLines.map((line, index) => `<text x="${side}" y="${titleStart + index * titleStep}" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="${titleSize}" font-weight="500">${escapeXml(line)}</text>`).join("\n  ")}
   ${signal.keyFacts.map((fact, index) => {
     const x = side + index * (factWidth + factGap);
-    const factLines = wrapText(fact, social ? 24 : 27, 2);
+    const factLines = fittedLines(fact, social ? 24 : 27, 2, `${signal.slug} key fact ${index + 1}`);
     return `<g><rect x="${x}" y="${factsTop}" width="${factWidth}" height="${factHeight}" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="${x + 24}" y="${factsTop + (social ? 32 : 42)}" fill="${accent}" font-family="Arial, Helvetica, sans-serif" font-size="${factLabel}" font-weight="700">0${index + 1}</text>${factLines.map((line, lineIndex) => `<text x="${x + 24}" y="${factsTop + (social ? 68 : 92) + lineIndex * (social ? 27 : 36)}" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="${factFont}" font-weight="650">${escapeXml(line)}</text>`).join("")}</g>`;
   }).join("\n  ")}
   <text x="${side}" y="${height - (social ? 26 : 52)}" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="${social ? 14 : 17}">Independent editorial infographic · Source linked in article · flypigai.ca</text>
@@ -93,11 +102,17 @@ for (const signal of batch) {
   const heroSvg = svgFor(signal, 1600, 1000, false);
   const socialSvg = svgFor(signal, 1200, 630, true);
   const sourcePath = path.join(sourceDirectory, `${signal.slug}.svg`);
+  const socialSourcePath = path.join(sourceDirectory, `${signal.slug}-social.svg`);
   const heroPath = path.join(imageDirectory, `${signal.slug}.png`);
   const socialPath = path.join(socialDirectory, `${signal.slug}.png`);
+  const heroTemporaryPath = `${heroPath}.next.png`;
+  const socialTemporaryPath = `${socialPath}.next.png`;
   fs.writeFileSync(sourcePath, heroSvg);
-  await sharp(Buffer.from(heroSvg)).png({ compressionLevel: 9 }).toFile(heroPath);
-  await sharp(Buffer.from(socialSvg)).png({ compressionLevel: 9 }).toFile(socialPath);
+  fs.writeFileSync(socialSourcePath, socialSvg);
+  await sharp(fs.readFileSync(sourcePath)).png().toFile(heroTemporaryPath);
+  await sharp(fs.readFileSync(socialSourcePath)).png().toFile(socialTemporaryPath);
+  fs.renameSync(heroTemporaryPath, heroPath);
+  fs.renameSync(socialTemporaryPath, socialPath);
   const [heroMetadata, socialMetadata] = await Promise.all([sharp(heroPath).metadata(), sharp(socialPath).metadata()]);
   if (heroMetadata.width !== 1600 || heroMetadata.height !== 1000) throw new Error(`Unexpected hero dimensions for ${signal.slug}`);
   if (socialMetadata.width !== 1200 || socialMetadata.height !== 630) throw new Error(`Unexpected social dimensions for ${signal.slug}`);

@@ -14,15 +14,16 @@ Every article renders through the same reusable template in this order:
 2. category eyebrow;
 3. balanced headline;
 4. concise deck;
-5. published/modified date, supplier name, and `Reported by FlyPig AI`;
+5. FlyPig AI published/modified date, original source date, supplier name, and `Reported by FlyPig AI`;
 6. hero visual with alt text and visible credit;
 7. `The signal` summary;
 8. numbered `Why it matters` points;
 9. reporting sections;
 10. FlyPig AI interpretation;
-11. source and editorial disclosure;
-12. related Signals;
-13. compact newsletter CTA.
+11. current product status, open questions, and Canada relevance;
+12. source and editorial disclosure;
+13. related Signals;
+14. compact newsletter CTA or an honest launch notice while event delivery is unavailable.
 
 Do not expose internal event-processing notes, SEO strategy, prompt history, approval logic, or content-operation language in visible copy.
 
@@ -80,6 +81,8 @@ Every Industry Signal record must include the following hero-visual structure:
 }
 ```
 
+Every record must separately store `sourcePublishedAt`, `publishedAt`, and `modifiedAt`. `sourcePublishedAt` is the manufacturer or primary-source date; `publishedAt` is the first date the FlyPig AI page became public. Never display a source date as the site publication date. Records also require a 120–160 character `seoDescription`, `productStatus`, at least two `openQuestions`, and a specific `canadaRelevance` statement.
+
 Allowed `kind` values:
 
 - `original_infographic`
@@ -96,7 +99,7 @@ The visible hero is 1600×1000 and the social image is 1200×630. The build must
 
 ## Rights evidence
 
-For `owned` assets, keep the editable source or reproducible generation input in the repository and identify it in `evidence`.
+For `owned` assets, keep editable sources for both the 1600×1000 hero and 1200×630 social image, or a reproducible generation input, in the repository and identify the primary source in `evidence`.
 
 For `licensed` assets, record:
 
@@ -143,6 +146,7 @@ Before an article can be built or pushed:
 5. render desktop and 390-pixel mobile screenshots;
 6. confirm title wrapping, image crop, alt text, visible credit, source disclosure, related reading, and newsletter CTA;
 7. confirm NewsArticle schema matches visible content;
-8. run broken-link, typecheck, build, and console-error checks.
+8. confirm the newsletter surface does not call an undeployed API route;
+9. run broken-link, typecheck, build, and console-error checks.
 
 No manual override is permitted merely to make a scheduled article publish. Missing rights evidence blocks publication.

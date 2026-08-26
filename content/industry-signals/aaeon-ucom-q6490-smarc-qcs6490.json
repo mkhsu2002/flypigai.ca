@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0021",
   "slug": "aaeon-ucom-q6490-smarc-qcs6490",
-  "publishedAt": "2026-03-10",
+  "sourcePublishedAt": "2026-03-10",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "AAEON",
   "category": "SMARC · Qualcomm Edge AI",
   "title": "AAEON uCOM-Q6490 Brings Qualcomm QCS6490 Into a SMARC Edge AI Module",
   "seoTitle": "AAEON uCOM-Q6490 Brings Qualcomm QCS6490 to SMARC",
   "socialTitle": "AAEON uCOM-Q6490 Brings Qualcomm QCS6490 to SMARC",
+  "seoDescription": "AAEON’s uCOM-Q6490 packages Qualcomm QCS6490 into a SMARC module with up to 12 dense TOPS, LPDDR5 and industrial camera and network I/O.",
   "dek": "AAEON’s uCOM-Q6490 packages Qualcomm Dragonwing QCS6490 into a SMARC 2.1 module with camera, display and industrial I/O, creating another standardized route to low-power Qualcomm edge AI.",
   "summary": "uCOM-Q6490 is strategically useful because it exposes the same QCS6490 family through a different module standard from Advantech’s AOM-2721, creating a real cross-vendor design-route comparison rather than a single-chip decision.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "uCOM-Q6490 gives FlyPig a useful comparison point against Advantech’s AOM-2721: same Qualcomm family, different module standard and software story. That is exactly the kind of cross-vendor trade-off a design-intelligence layer should make explicit.",
+  "productStatus": "AAEON publicly demonstrated uCOM-Q6490 at Embedded World 2026 and now provides an official product page with configuration details. Regional availability, software support and lifecycle commitments still need confirmation.",
+  "openQuestions": ["Which Linux or Android images, Qualcomm AI SDK versions and carrier boards are production-supported?","What are the sample, pricing, thermal and Canadian distribution terms for the 8GB and 16GB variants?"],
+  "canadaRelevance": "Canadian OEMs can compare a connectorized SMARC route against solder-down QCS6490 modules when serviceability, carrier reuse and lifecycle flexibility matter.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -63,12 +68,13 @@
   "corrections": [],
   "sourceName": "AAEON official Embedded World 2026 announcement",
   "sourceUrl": "https://www.aaeon.com/en/news/detail/embedded_world_2026_news_aaeon",
+  "sourceProductUrl": "https://www.aaeon.com/en/product/detail/computing_on_module_ucom-q6490/package_content",
   "sourceNote": "FlyPig AI independently analyzes AAEON’s public product information. The module’s preliminary status is retained explicitly; production availability, software roadmap, carrier options and pricing require direct confirmation.",
   "heroVisual": {
     "kind": "original_infographic",
     "src": "/images/signals/aaeon-ucom-q6490-smarc-qcs6490.png",
     "socialSrc": "/images/signals/og/aaeon-ucom-q6490-smarc-qcs6490.png",
-    "alt": "FlyPig AI editorial infographic summarizing AAEON smarc · qualcomm edge ai developments.",
+    "alt": "FlyPig AI infographic on AAEON uCOM-Q6490, highlighting Qualcomm QCS6490, the SMARC module format and product-availability questions.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

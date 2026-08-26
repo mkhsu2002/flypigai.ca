@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0003",
   "slug": "phison-intel-aidaptiv-ai-pc-memory-extension",
-  "publishedAt": "2026-06-02",
+  "sourcePublishedAt": "2026-06-02",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Phison",
   "category": "AI Memory · Storage Extension",
   "title": "Phison and Intel Use NAND as an AI Memory Extension for Larger Local Models",
   "seoTitle": "Phison and Intel Expand Local AI Memory with aiDAPTIV",
   "socialTitle": "Phison and Intel Expand Local AI Memory with aiDAPTIV",
+  "seoDescription": "Phison and Intel extend aiDAPTIV support to Core Ultra Series 3, using SSD-backed memory extension for larger local AI workloads on PCs.",
   "dek": "Phison’s Pascari aiDAPTIV work with Intel uses flash storage as an extension of effective AI memory, targeting larger MoE and agentic workloads on local AI PCs.",
   "summary": "The announcement attacks a different edge-AI bottleneck from NPU performance: how to keep larger models local when DRAM capacity becomes the limiting and expensive part of the system.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "aiDAPTIV is interesting because it reframes storage as part of the AI memory hierarchy. FlyPig would treat it as an architecture option for capacity-constrained local AI, not as a substitute for fast memory without workload-specific validation.",
+  "productStatus": "Phison and Intel publicly announced collaboration and platform support for aiDAPTIV on Intel Core Ultra Series 3. Workload performance and supported model sizes depend on the validated hardware and software configuration.",
+  "openQuestions": ["Which OEM systems, SSD capacities and software versions are validated for production use?","How do latency, endurance, thermals and total cost compare with adding conventional system memory or GPU memory?"],
+  "canadaRelevance": "Canadian AI developers and device makers could evaluate larger private local models on PC-class hardware before committing to workstation GPUs or cloud inference.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/phison-intel-aidaptiv-ai-pc-memory-extension.png",
     "socialSrc": "/images/signals/og/phison-intel-aidaptiv-ai-pc-memory-extension.png",
-    "alt": "FlyPig AI editorial infographic summarizing Phison ai memory · storage extension developments.",
+    "alt": "FlyPig AI infographic on Phison aiDAPTIV for Intel Core Ultra Series 3, highlighting SSD-backed memory extension and larger local AI workloads.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

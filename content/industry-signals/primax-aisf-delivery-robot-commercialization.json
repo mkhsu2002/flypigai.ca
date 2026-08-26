@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0017",
   "slug": "primax-aisf-delivery-robot-commercialization",
-  "publishedAt": "2026-08-19",
+  "sourcePublishedAt": "2026-08-19",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Primax",
   "category": "Sensor Fusion · Robotics · ODM",
   "title": "Primax Pushes AI Sensor Fusion From Modules Toward Commercial Delivery Robots",
   "seoTitle": "Primax Advances Delivery Robots with AI Sensor Fusion",
   "socialTitle": "Primax Advances Delivery Robots with AI Sensor Fusion",
+  "seoDescription": "Primax advances AI sensor fusion from sensing modules to delivery robots, citing Japan and Korea trials and a first mass-production rollout in 2027.",
   "dek": "Primax Tymphany Group used Automation Taipei 2026 to show an AI Sensor Fusion stack spanning sensing, edge computing and robotics, while saying autonomous delivery robots are in market trials in Japan and Korea.",
   "summary": "The commercialization signal is stronger than a component launch: Primax is presenting modules, subsystems and complete robot systems while pointing to market trials and a planned 2027 mass-production rollout.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "Primax is strategically interesting because it sits at the boundary between component supplier and full-system ODM. That is precisely where FlyPig can create value by translating a Canadian application into the right module, subsystem or co-development scope rather than treating the company as a generic factory.",
+  "productStatus": "Primax states that autonomous delivery robots are in customer trials in Japan and South Korea, with a first mass-production rollout expected in 2027. These are supplier-stated forward milestones, not independent deployment verification.",
+  "openQuestions": ["Which modules, subsystems and software interfaces can be purchased independently from a full ODM engagement?","What trial scale, service model, certification plan, NRE and MOQ apply to a Canadian deployment?"],
+  "canadaRelevance": "Canadian hospitality, retail and service-robot teams may gain a shorter integration path if Primax exposes modular sensing and compute options rather than requiring a complete robot program.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/primax-aisf-delivery-robot-commercialization.png",
     "socialSrc": "/images/signals/og/primax-aisf-delivery-robot-commercialization.png",
-    "alt": "FlyPig AI editorial infographic summarizing Primax sensor fusion · robotics · odm developments.",
+    "alt": "FlyPig AI infographic on Primax AI sensor fusion, highlighting edge compute, delivery-robot trials in Japan and Korea and a supplier-planned 2027 rollout.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

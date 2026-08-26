@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0020",
   "slug": "advantech-aom-2721-ubuntu-qcs6490",
-  "publishedAt": "2026-08-24",
+  "sourcePublishedAt": "2026-08-24",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Advantech",
   "category": "OSM · Qualcomm · Ubuntu",
   "title": "Advantech AOM-2721 Gains Ubuntu 24.04 LTS Certification on Qualcomm QCS6490",
   "seoTitle": "Advantech AOM-2721 Earns Ubuntu Certification on QCS6490",
   "socialTitle": "Advantech AOM-2721 Earns Ubuntu Certification on QCS6490",
+  "seoDescription": "Advantech’s 45 × 45 mm AOM-2721 combines Qualcomm QCS6490 edge AI with Ubuntu 24.04 certification in a compact OSM module.",
   "dek": "Advantech’s QCS6490-based AOM-2721 now carries Ubuntu 24.04 LTS certification, giving low-power Qualcomm edge-AI designs a more standardized Linux path.",
   "summary": "The hardware was already relevant; the new signal is software maturity. Ubuntu LTS certification can materially reduce BSP and maintenance risk for teams considering Qualcomm edge AI outside an Android-centric product.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "AOM-2721 is a good example of software certification increasing hardware value. FlyPig would compare QCS6490 modules not only on form factor and TOPS, but on Linux maintenance, camera enablement and how quickly a team can reproduce the vendor’s supported stack.",
+  "productStatus": "Advantech and Canonical have announced Ubuntu 24.04 certification for AOM-2721. Module ordering, carrier options and complete software-image support remain configuration- and region-specific.",
+  "openQuestions": ["Which carrier boards, BSP images, AI SDK versions and camera combinations are validated together?","What are current sample, production, lifecycle and Canadian distribution terms?"],
+  "canadaRelevance": "Canadian OEMs can evaluate a compact Qualcomm edge-AI module with a certified Ubuntu base, potentially reducing operating-system bring-up work for connected devices.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/advantech-aom-2721-ubuntu-qcs6490.png",
     "socialSrc": "/images/signals/og/advantech-aom-2721-ubuntu-qcs6490.png",
-    "alt": "FlyPig AI editorial infographic summarizing Advantech osm · qualcomm · ubuntu developments.",
+    "alt": "FlyPig AI infographic on Advantech AOM-2721, highlighting its 45 × 45 mm OSM form factor, Qualcomm QCS6490 and Ubuntu 24.04 certification.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

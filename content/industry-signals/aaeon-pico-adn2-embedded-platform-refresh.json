@@ -1,49 +1,54 @@
 {
   "eventId": "EVT-2026-0015",
   "slug": "aaeon-pico-adn2-embedded-platform-refresh",
-  "publishedAt": "2026-08-14",
+  "sourcePublishedAt": "2026-08-14",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "AAEON",
   "category": "2.5-inch SBC · Embedded",
-  "title": "AAEON PICO-ADN2 Signals a 2.5-Inch Embedded Platform Refresh, With Key Specs Still Pending",
+  "title": "AAEON PICO-ADN2 Refreshes the 2.5-Inch SBC Format With Intel N-Series Options",
   "seoTitle": "AAEON PICO-ADN2 Refreshes Its 2.5-Inch Embedded Platform",
   "socialTitle": "AAEON PICO-ADN2 Refreshes Its 2.5-Inch Embedded Platform",
-  "dek": "AAEON listed PICO-ADN2 as a new 2.5-inch board update in August, but the public information captured so far is not detailed enough to treat it as a fully characterized edge-AI platform.",
-  "summary": "This is intentionally a conservative Signal: the important news is a compact-board lifecycle refresh, while processor, I/O and AI details still need a complete official specification before comparison.",
+  "seoDescription": "AAEON’s PICO-ADN2 is a 100 × 72 mm 2.5-inch SBC with Intel Core i3-N305 or N97 options, industrial I/O and a -20°C to 70°C range.",
+  "dek": "AAEON’s PICO-ADN2 combines Intel Core i3-N305 or N97 processors, lockable industrial I/O and a -20°C to 70°C range on a compact 100 × 72 mm board.",
+  "summary": "The update is a practical compact-computing refresh rather than a dedicated NPU launch. Its value lies in x86 compatibility, industrial connectors, multiple displays and a defined migration route for space-constrained products.",
   "keyFacts": [
-    "2.5-inch SBC refresh",
-    "Lifecycle / migration signal",
-    "Key specs still pending"
+    "100 × 72 mm 2.5-inch SBC",
+    "Intel Core i3-N305 or N97",
+    "-20°C to 70°C cited range"
   ],
   "whyItMatters": [
-    "The signal is mainly a product-line refresh and lifecycle event, not evidence of a new high-performance NPU platform.",
-    "A 2.5-inch SBC can be useful for compact gateways and appliances where Mini-ITX is unnecessarily large.",
-    "CPU options, I/O, temperature range, AI acceleration support, pricing and production status still need confirmation."
+    "The board offers an x86 refresh for compact gateways and appliances where Mini-ITX is unnecessarily large.",
+    "AAEON lists Core i3-N305 and N97 options, dual Gigabit Ethernet, industrial serial I/O and support for up to three simultaneous displays.",
+    "The platform does not establish a dedicated high-performance NPU route; accelerator support, lifecycle and regional commercial terms still need confirmation."
   ],
   "reporting": [
     {
-      "heading": "A product refresh can matter even without a headline AI feature",
+      "heading": "A compact x86 refresh can matter without a headline NPU",
       "paragraphs": [
-        "AAEON’s August news feed added PICO-ADN2 as a new 2.5-inch product update, while lifecycle material for PICO-APL2 points to PICO-ADN2 as a recommended successor series.",
-        "For embedded OEMs, migration paths matter because board availability, software continuity and mechanical fit can be more important than a single benchmark improvement."
+        "AAEON positions PICO-ADN2 as a 2.5-inch board for space-constrained systems, with a choice of 15W Intel Core i3-N305 or 12W Intel Processor N97. The 100 × 72 mm footprint keeps the platform below Mini-ITX while retaining familiar x86 software compatibility.",
+        "For embedded OEMs, migration paths matter because board availability, software continuity and mechanical fit can be more important than a single accelerator benchmark."
       ]
     },
     {
-      "heading": "The current public data are deliberately incomplete",
+      "heading": "The I/O is designed for compact industrial integration",
       "paragraphs": [
-        "The available announcement does not yet provide enough verified specification detail for FlyPig to infer processor SKUs, AI TOPS or I/O from neighbouring PICO products.",
-        "That restraint matters. A technology-intelligence database becomes less useful if gaps are filled by assumptions merely because a model name resembles an existing board."
+        "The official product article lists lockable pin-header I/O, two RS-232/422/485 headers, GPIO, I2C/SMBus, dual Gigabit Ethernet, USB expansion and support for up to three simultaneous displays.",
+        "AAEON also cites a -20°C to 70°C operating range and an optional external supercapacitor header for RTC continuity. These are relevant integration details, but they do not turn the board into a dedicated edge-AI accelerator platform."
       ]
     },
     {
-      "heading": "The next update should be a specification update",
+      "heading": "Lifecycle and accelerator support remain the next checks",
       "paragraphs": [
-        "Once AAEON publishes a detailed product page or datasheet, the useful questions will be processor choice, memory, I/O, working temperature, lifecycle, accelerator-module compatibility and commercial availability.",
-        "Until then, FlyPig classifies PICO-ADN2 as a platform-refresh signal rather than a complete design route."
+        "The direct article now resolves the earlier specification gap, but product teams still need the formal datasheet, supported operating systems, lifecycle commitments and accelerator-module compatibility before design-in.",
+        "FlyPig therefore classifies PICO-ADN2 as a compact embedded-computing route rather than inferring AI performance that AAEON does not claim for the base board."
       ]
     }
   ],
-  "flypigTake": "PICO-ADN2 is worth tracking precisely because product-lifecycle signals affect real designs. FlyPig will not manufacture missing specifications: this entry stays intentionally conservative until AAEON publishes the details needed for a meaningful comparison.",
+  "flypigTake": "PICO-ADN2 is useful as a compact x86 migration and integration option, not as an NPU headline. The direct product article now supports a meaningful board-level comparison while leaving lifecycle, software and accelerator questions open.",
+  "productStatus": "AAEON now provides a direct product-news page with processor, dimensions, I/O and operating-temperature details for PICO-ADN2. Pricing, lifecycle commitments and regional availability still require confirmation.",
+  "openQuestions": ["What are the formal lifecycle, mass-production and Canadian stocking commitments for each processor option?","Which operating systems, accelerator modules and carrier accessories are validated for production use?"],
+  "canadaRelevance": "The compact board may suit Canadian kiosks, gateways and space-constrained industrial devices that need x86 software compatibility and lockable industrial I/O.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -61,18 +66,18 @@
     "Physical AI"
   ],
   "corrections": [],
-  "sourceName": "AAEON Solutions product-news index",
-  "sourceUrl": "https://solutions.aaeon.com/news/",
-  "sourceNote": "AAEON’s news index identifies PICO-ADN2 as an August 14, 2026 product update. FlyPig does not infer unverified specifications from other PICO boards; design-in details remain pending a complete official product page or datasheet.",
+  "sourceName": "AAEON Solutions PICO-ADN2 product article",
+  "sourceUrl": "https://solutions.aaeon.com/aaeons-pico-adn2-compact-configurable-built-to-last/",
+  "sourceNote": "FlyPig AI independently analyzes AAEON’s direct product article. Processor, dimensions, I/O and operating range are supplier-published; lifecycle, software, pricing and production availability still require confirmation.",
   "heroVisual": {
     "kind": "original_infographic",
     "src": "/images/signals/aaeon-pico-adn2-embedded-platform-refresh.png",
     "socialSrc": "/images/signals/og/aaeon-pico-adn2-embedded-platform-refresh.png",
-    "alt": "FlyPig AI editorial infographic summarizing AAEON 2.5-inch sbc · embedded developments.",
+    "alt": "FlyPig AI infographic on AAEON PICO-ADN2, highlighting its 100 × 72 mm size, Intel Core i3-N305 or N97 processors and industrial I/O.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",
-    "sourceUrl": "https://solutions.aaeon.com/news/",
+    "sourceUrl": "https://solutions.aaeon.com/aaeons-pico-adn2-compact-configurable-built-to-last/",
     "assetRights": {
       "status": "owned",
       "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-pico-adn2-embedded-platform-refresh.svg"

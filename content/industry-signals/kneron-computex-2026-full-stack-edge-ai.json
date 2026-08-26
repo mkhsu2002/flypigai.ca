@@ -1,13 +1,15 @@
 {
   "eventId": "EVT-2026-0002",
   "slug": "kneron-computex-2026-full-stack-edge-ai",
-  "publishedAt": "2026-05-27",
+  "sourcePublishedAt": "2026-05-27",
+  "publishedAt": "2026-08-25",
   "modifiedAt": "2026-08-25",
   "supplier": "Kneron",
   "category": "Edge AI Platform · Modules",
   "title": "Kneron Uses COMPUTEX 2026 to Push Full-Stack Edge AI Beyond Single-Chip Positioning",
   "seoTitle": "Kneron Presents Full-Stack Edge AI at COMPUTEX 2026",
   "socialTitle": "Kneron Presents Full-Stack Edge AI at COMPUTEX 2026",
+  "seoDescription": "Kneron’s COMPUTEX 2026 update combines KL730 silicon, Kneo appliances and local AI software into a fuller edge-AI deployment stack.",
   "dek": "Kneron’s COMPUTEX 2026 showcase emphasized a broader edge-AI stack spanning processors, modules and software, moving the company’s story beyond a standalone NPU.",
   "summary": "The strategic signal is Kneron’s effort to sell a development path rather than only an accelerator: silicon, modules, local-AI software and application demonstrations are being presented as one stack.",
   "keyFacts": [
@@ -44,6 +46,9 @@
     }
   ],
   "flypigTake": "Kneron’s strongest differentiation may be the combination of local-AI silicon and a more complete development stack. For FlyPig, the next useful evidence is not another demo but repeatable module availability, developer tooling and design-in support.",
+  "productStatus": "Kneron presented the KL730, Kneo systems and supporting software as an integrated edge-AI stack at COMPUTEX 2026. Model availability, regional distribution and production configuration details vary by component.",
+  "openQuestions": ["Which Kneo configurations and KL730 modules are orderable in North America, and on what lead times?","How portable are models, toolchains and updates across Kneron silicon and third-party host platforms?"],
+  "canadaRelevance": "Canadian OEMs and integrators may benefit from a more complete local-inference stack when privacy, latency or intermittent connectivity make cloud-only AI unsuitable.",
   "author": {
     "name": "FlyPig AI Editorial Desk",
     "url": "/editorial-policy",
@@ -68,7 +73,7 @@
     "kind": "original_infographic",
     "src": "/images/signals/kneron-computex-2026-full-stack-edge-ai.png",
     "socialSrc": "/images/signals/og/kneron-computex-2026-full-stack-edge-ai.png",
-    "alt": "FlyPig AI editorial infographic summarizing Kneron edge ai platform · modules developments.",
+    "alt": "FlyPig AI infographic on Kneron’s COMPUTEX 2026 stack, highlighting KL730 edge AI, Kneo systems and local deployment software.",
     "width": 1600,
     "height": 1000,
     "credit": "Original editorial graphic by FlyPig AI",

@@ -4,6 +4,7 @@ import path from "node:path";
 export type IndustrySignal = {
   eventId: string;
   slug: string;
+  sourcePublishedAt: string;
   publishedAt: string;
   modifiedAt: string;
   supplier: string;
@@ -11,12 +12,16 @@ export type IndustrySignal = {
   title: string;
   seoTitle: string;
   socialTitle: string;
+  seoDescription: string;
   dek: string;
   summary: string;
   keyFacts: string[];
   whyItMatters: string[];
   reporting: Array<{ heading: string; paragraphs: string[] }>;
   flypigTake: string;
+  productStatus: string;
+  openQuestions: string[];
+  canadaRelevance: string;
   author: {
     name: string;
     url: string;
@@ -32,6 +37,7 @@ export type IndustrySignal = {
   sourceName: string;
   sourceUrl: string;
   sourceProductUrl?: string;
+  additionalSources?: Array<{ name: string; url: string }>;
   sourceNote: string;
   heroVisual: {
     kind: "original_infographic" | "licensed_image" | "approved_press_asset";
@@ -62,9 +68,24 @@ export function getIndustrySignals(): IndustrySignal[] {
     .readdirSync(signalsDirectory)
     .filter((fileName) => fileName.endsWith(".json"))
     .map(readSignalFile)
-    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.sourcePublishedAt.localeCompare(a.sourcePublishedAt));
 }
 
 export function getIndustrySignal(slug: string): IndustrySignal | undefined {
   return getIndustrySignals().find((signal) => signal.slug === slug);
+}
+
+export function getIndustrySignalWordCount(signal: IndustrySignal): number {
+  const reporting = signal.reporting.flatMap((section) => [section.heading, ...section.paragraphs]);
+  return [
+    signal.dek,
+    signal.summary,
+    ...signal.keyFacts,
+    ...signal.whyItMatters,
+    ...reporting,
+    signal.flypigTake,
+    signal.productStatus,
+    ...signal.openQuestions,
+    signal.canadaRelevance,
+  ].join(" ").trim().split(/\s+/).filter(Boolean).length;
 }
