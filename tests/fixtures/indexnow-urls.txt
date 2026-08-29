@@ -1,0 +1,3 @@
+# Example changed canonical URLs used only for the CLI dry-run smoke test.
+https://flypigai.ca/services
+https://flypigai.ca/technologies/edge-ai-compute

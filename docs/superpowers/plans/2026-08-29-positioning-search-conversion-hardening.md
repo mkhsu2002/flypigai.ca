@@ -119,11 +119,11 @@
 - Modify: `.env.example`
 - Modify: `package.json`
 
-- [ ] Write a failing test for canonical-host validation, URL-file parsing and missing-key refusal.
-- [ ] Implement a script that accepts newline-delimited canonical URLs, rejects foreign hosts and reads `INDEXNOW_KEY` only from the process environment.
-- [ ] Add a dry-run mode used by CI/local verification; do not commit or print the key.
-- [ ] Document Google Search Console manual recrawl and Bing AI Performance monitoring.
-- [ ] Do not add automated high-frequency submission or polling.
+- [x] Write a failing test for canonical-host validation, URL-file parsing and missing-key refusal.
+- [x] Implement a script that accepts newline-delimited canonical URLs, rejects foreign hosts and reads `INDEXNOW_KEY` only from the process environment.
+- [x] Add a dry-run mode used by CI/local verification; do not commit or print the key.
+- [x] Document Google Search Console manual recrawl and Bing AI Performance monitoring.
+- [x] Do not add automated high-frequency submission or polling.
 
 ### Task 9: Event-delivery backend tests and code
 
