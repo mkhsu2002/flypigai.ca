@@ -1,77 +1,60 @@
 import type { Metadata } from "next";
 import JsonLd from "../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
-import { siteUrl } from "../seo";
-import { makeMetadata } from "../seo";
+import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../seo";
 
 export const metadata: Metadata = makeMetadata({
-  title: "Canada-Taiwan Technology Intelligence Engagements",
-  description: "Scoped research, requirement clarification, technology qualification and opportunity-development engagements for Canada-Taiwan Edge AI and Physical AI questions.",
+  title: "Canada-Taiwan Edge AI Technology Qualification",
+  description: "Two bounded FlyPig AI engagements: technology-route qualification for Canadian product teams and Canada application readiness for Taiwan technology companies.",
   path: "/services",
   enPath: "/services",
   zhPath: "/zh/services",
 });
 
-const services = [
-  ["01", "Canadian market assessment", "Market structure, target sectors, competitor context, route-to-market options and a practical first-entry plan."],
-  ["02", "Partner and channel development", "Identify and approach integrators, distributors, operators, research organizations and qualified pilot customers."],
-  ["03", "Local representation", "Ongoing technical-commercial communication, opportunity follow-up and market presence for selected manufacturers and suppliers."],
-  ["04", "Supplier sourcing and qualification", "Help Canadian organizations identify, compare and qualify relevant robotics platforms, components and manufacturing partners in Asia."],
-  ["05", "Pilot and commercialization support", "Coordinate requirements, technical discussions, pilot scope, partner responsibilities and the path toward deployment."],
-  ["06", "Market intelligence and research", "Focused research informed by the Canada Physical AI Atlas, public sources and direct market conversations."],
+const paths = [
+  {
+    eyebrow: "For Canadian product teams",
+    title: "Edge AI Technology Route & Qualification",
+    body: "Turn product intent and operating constraints into architecture options, researched Taiwan technology candidates and a visible fit-and-risk decision.",
+    outputs: ["Requirement brief", "Architecture options", "Candidate fit and risk matrix", "Open validation questions"],
+    href: "/services/canadian-product-teams",
+    cta: "See the qualification engagement",
+  },
+  {
+    eyebrow: "For Taiwan technology companies",
+    title: "Canada Application & Design-In Readiness",
+    body: "Translate product capability into Canadian application context, identify evidence gaps and prepare a credible technical conversation before broad outreach.",
+    outputs: ["Canada application-fit brief", "Target organization categories", "Design-in friction review", "Qualified opportunity path"],
+    href: "/services/taiwan-technology-companies",
+    cta: "See the readiness engagement",
+  },
 ];
 
-const deliverables = [
-  ["Market-entry brief", "A concise view of target segments, buyer expectations, route-to-market options, visible risks and the first realistic commercial path."],
-  ["Partner shortlist", "A qualified list of integrators, distributors, operators, research groups or pilot candidates with a reason for each recommended target."],
-  ["Pilot opportunity profile", "A practical pilot outline covering the use case, acceptance criteria, likely constraints, buyer responsibilities and follow-up decision gates."],
-  ["Supplier qualification summary", "For Canadian organizations, a structured comparison of relevant Asian robotics platforms, components or manufacturing partners."],
-  ["Outreach and representation notes", "Commercial messages, conversation history, stakeholder context and next actions when FlyPig AI is supporting ongoing development."],
-  ["Risk register", "Known gaps around support, certification, safety, data handling, training, spare parts, integration and local operating requirements."],
-];
-
-const process = [
-  ["01", "Intake", "Clarify the product, deployment history, target buyer, technical maturity, support model and commercial objective."],
-  ["02", "Market fit", "Map where the technology could create measurable Canadian value and where the first use case is likely too broad or too early."],
-  ["03", "Partner path", "Separate potential buyers, integrators, distributors, research collaborators and referral channels instead of treating every contact as a sales lead."],
-  ["04", "Pilot design", "Define a bounded first deployment with success criteria, constraints, responsibilities and a credible post-pilot decision path."],
-  ["05", "Commercial follow-through", "Support selected conversations, representation, sourcing or partner development after the first market hypothesis is validated."],
+const principles = [
+  ["Evidence before outreach", "Public and approved sources are used to test a fit hypothesis before asking either market for attention."],
+  ["Questions stay visible", "Unknown software, lifecycle, compliance, supply, integration or support details remain explicit rather than becoming assumptions."],
+  ["The next step is bounded", "An introduction may follow when the fit is credible, but it does not imply authorization, agency, distribution or engineering approval."],
 ];
 
 export default function ServicesPage() {
   return <main>
+    <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "How We Help", path: "/services" }])} />
     <JsonLd data={{
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Who helps technology companies understand Canada?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "FlyPig AI offers scoped research and opportunity-development engagements that clarify Canadian demand, technology fit, relevant operator categories and the evidence needed before an introduction.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Does FlyPig AI replace technical due diligence?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. FlyPig AI supports market qualification, partner development and commercial coordination. Product certification, legal advice, site safety and engineering validation require qualified specialists.",
-          },
-        },
-      ],
-      publisher: { "@id": `${siteUrl}/#organization` },
+      "@type": "Service",
+      name: "Canada-Taiwan Edge AI technology qualification",
+      provider: { "@id": `${siteUrl}/#organization` },
+      areaServed: ["Canada", "Taiwan"],
+      serviceType: ["Edge AI Technology Route & Qualification", "Canada Application & Design-In Readiness"],
+      description: metadata.description,
+      url: `${siteUrl}/services`,
     }} />
     <SiteHeader languageHref="/zh/services" />
-    <section className="hero shell"><p className="eyebrow">Commercial engagements · Separate from editorial coverage</p><h1>Turn an intelligence question into a bounded next step.</h1><p className="lead">FlyPig AI may support scoped research, requirement clarification, technology qualification and opportunity development between Canada and Taiwan. An engagement is established case by case; public coverage never implies an existing client, supplier, representation or distribution relationship.</p><div className="actions"><a className="pill primary" href="/contact">Discuss a scoped question</a><a className="pill secondary" href="/editorial-policy">Editorial independence</a></div></section>
-    <section className="section shell"><div className="grid3">{services.map(([n,t,d]) => <article className="card" key={t}><span className="num">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></section>
-    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">What an engagement produces</p><h2>Concrete outputs, not generic market advice.</h2></div><p className="section-copy">The exact scope depends on the company, product maturity and market question. A focused engagement should leave both sides with clearer target segments, qualified contacts, deployment risks and a practical next step.</p></div><div className="grid3">{deliverables.map(([title, body]) => <article className="card" key={title}><span className="num">Deliverable</span><h3>{title}</h3><p>{body}</p></article>)}</div></div></section>
-    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Working process</p><h2>A disciplined path from interest to evidence.</h2></div><p className="section-copy">Robotics market development fails when outreach starts before the use case, buyer responsibility, support model and pilot economics are clear. FlyPig AI uses a staged process to reduce that risk before asking the market for attention.</p></div><div className="process">{process.map(([n,t,d]) => <div className="step" key={t}><span className="num">{n}</span><strong>{t}</strong><span>{d}</span></div>)}</div></section>
-    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">Engagement models</p><h2>Scope and relationship are explicit.</h2></div><p className="section-copy">Work may be structured as fixed-scope research, requirement mapping or a defined opportunity-development engagement. Representation, referral, agency or distribution language is used only after a separate written relationship exists. FlyPig AI is not a certification body, legal advisor, engineering sign-off provider or official industry authority.</p></div></div></section>
-    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Short answer</p><h2>Who helps technology companies understand Canada?</h2></div><p className="section-copy">FlyPig AI offers scoped research and opportunity-development engagements that clarify Canadian demand, technology fit, relevant operator categories and the evidence needed before an introduction.</p></div><div className="grid3"><article className="card"><span className="num">FAQ</span><h3>Do you replace technical due diligence?</h3><p>No. FlyPig AI supports market qualification, partner development and commercial coordination. Product certification, legal advice, site safety and engineering validation require qualified specialists.</p></article><article className="card"><span className="num">FAQ</span><h3>Which markets are most relevant?</h3><p>Early focus areas include manufacturing, logistics, utilities, mining, commercial facilities, public safety, infrastructure inspection and research-led deployments.</p></article><article className="card"><span className="num">FAQ</span><h3>Do you work with Canadian buyers?</h3><p>Yes. Canadian organizations can use FlyPig AI for supplier discovery, qualification support and cross-border technology sourcing.</p></article></div></section>
-    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Related guides</p><h2>Commercial context before outreach.</h2></div><p className="section-copy">These guides help suppliers and buyers prepare more concrete market-development conversations.</p></div><div className="grid3"><a className="card" href="/insights/canada-robotics-market-entry-guide"><span className="num">Guide</span><h3>Canada Robotics Market Entry Guide</h3><p>Validate demand, channels, pilots and support before launching broad sales outreach.</p></a><a className="card" href="/insights/robotics-integrators-in-canada"><span className="num">Guide</span><h3>Robotics Integrators in Canada</h3><p>Understand how integration partners reduce deployment risk and what to evaluate.</p></a><a className="card" href="/insights/asian-robotics-suppliers-enter-canada"><span className="num">Guide</span><h3>Asian Robotics Suppliers Entering Canada</h3><p>Build local proof, support and partner fit before scaling sales activity.</p></a></div></section>
-    <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">Start with the right question</p><h2>What are you trying to sell, source or deploy in Canada?</h2></div><div className="actions"><a className="pill primary" href="/contact">Discuss an opportunity</a></div></div></section>
+    <section className="hero shell"><p className="eyebrow">How We Help · Canada ↔ Taiwan</p><h1>Two focused paths from technical uncertainty to a qualified next step.</h1><p className="lead">FlyPig AI is a Canada–Taiwan Edge AI and Physical AI design-intelligence company. We help Canadian product teams qualify Taiwan technology routes and help Taiwan technology companies prepare for Canadian applications and design-in conversations.</p><div className="actions"><a className="pill primary" href="/contact">Discuss a scoped question</a><a className="pill secondary" href="/editorial-policy">How commercial work stays separate</a></div></section>
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Choose your path</p><h2>Start with the organization that owns the decision.</h2></div><p className="section-copy">Each engagement has a different input and output. Both begin with a concrete product or application question—not a generic request for leads.</p></div><div className="grid2">{paths.map((path) => <article className="card" key={path.title}><span className="num">{path.eyebrow}</span><h3>{path.title}</h3><p>{path.body}</p><ul>{path.outputs.map((output) => <li key={output}>{output}</li>)}</ul><div className="actions"><a className="pill secondary" href={path.href}>{path.cta}</a></div></article>)}</div></section>
+    <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">Working standard</p><h2>Research, qualification and a decision-ready brief.</h2></div><p className="section-copy">The work is scoped around the evidence required for one decision. It does not replace engineering validation, legal advice, certification or site-safety review.</p></div><div className="grid3">{principles.map(([title, body], index) => <article className="card" key={title}><span className="num">0{index + 1}</span><h3>{title}</h3><p>{body}</p></article>)}</div></div></section>
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Engagement boundary</p><h2>Commercial relationships are named only when they exist.</h2></div><p className="section-copy">Public research, a qualification brief or a technical introduction does not make FlyPig AI an authorized representative, referral agent, distributor, deployment contractor or supplier. Any such relationship would require separate written evidence and an explicit scope.</p></div></section>
+    <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">Start with one decision</p><h2>Share the product requirement or Canadian application question that needs to become clearer.</h2></div><div className="actions"><a className="pill primary" href="/contact">Start a scoped conversation</a></div></div></section>
     <SiteFooter />
   </main>;
 }

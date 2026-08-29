@@ -22,6 +22,7 @@ export const siteIdentity = {
     technologies: "/technologies",
     signals: "/signals",
     insights: "/insights",
+    services: "/services",
     editorialPolicy: "/editorial-policy",
   },
   images: {

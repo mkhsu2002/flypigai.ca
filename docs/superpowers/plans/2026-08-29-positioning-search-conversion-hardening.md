@@ -21,7 +21,7 @@
 - [x] Confirm `main` and `origin/main` both start at `6a13c01` and the worktree is clean.
 - [x] Create isolated branch `seo-positioning-hardening`.
 - [x] Run `npm install`, `npm run typecheck`, `npm run build`, `npm run audit:export` and require zero failures.
-- [ ] Commit the approved design and execution checklist.
+- [x] Commit the approved design and execution checklist.
 
 ### Task 2: Commercial-position contract tests
 
@@ -29,10 +29,10 @@
 - Create: `tests/site-content.test.mjs`
 - Modify: `package.json`
 
-- [ ] Write a failing test that reads the source/exported pages and requires `How We Help`, both audience owner routes, `info@flypigai.ca`, and no public `mkhsu2002@gmail.com`.
-- [ ] Run `npm test -- tests/site-content.test.mjs`; require the expected failure for missing owner routes/navigation and legacy email.
-- [ ] Add the minimal test script only after the red result.
-- [ ] Re-run after Tasks 3–5 and require all assertions to pass.
+- [x] Write a failing test that reads the source/exported pages and requires `How We Help`, both audience owner routes, `info@flypigai.ca`, and no public `mkhsu2002@gmail.com`.
+- [x] Run `npm test -- tests/site-content.test.mjs`; require the expected failure for missing owner routes/navigation and legacy email.
+- [x] Add the minimal test script only after the red result.
+- [x] Re-run after Tasks 3–5 and require all assertions to pass.
 
 ### Task 3: Navigation, homepage and Services owner
 
@@ -43,12 +43,12 @@
 - Modify: `app/zh/services/page.tsx`
 - Modify: `public/llms.txt`
 
-- [ ] Add `How We Help`/`合作方式` to desktop, mobile and footer navigation.
-- [ ] Add a homepage commercial bridge without exposing internal content strategy terminology.
-- [ ] Rewrite `/services` around Edge AI Technology Route & Qualification and Canada Application & Design-In Readiness.
-- [ ] Rewrite `/zh/services` as the Traditional Chinese commercial gateway.
-- [ ] Remove first-level local-representation, agency, distribution and deployment-execution claims.
-- [ ] Run the focused content test and inspect both language outputs.
+- [x] Add `How We Help`/`合作方式` to desktop, mobile and footer navigation.
+- [x] Add a homepage commercial bridge without exposing internal content strategy terminology.
+- [x] Rewrite `/services` around Edge AI Technology Route & Qualification and Canada Application & Design-In Readiness.
+- [x] Rewrite `/zh/services` as the Traditional Chinese commercial gateway.
+- [x] Remove first-level local-representation, agency, distribution and deployment-execution claims.
+- [x] Run the focused content test and inspect both language outputs.
 
 ### Task 4: Audience owner pages and inquiry alignment
 
@@ -61,12 +61,12 @@
 - Modify: `app/zh/contact/page.tsx`
 - Modify: `app/sitemap.ts`
 
-- [ ] Add answer-first Canadian product-team service page with visible inputs, deliverables, boundaries and CTA.
-- [ ] Add English and substantive Traditional Chinese Taiwan technology-company owner pages.
-- [ ] Align inquiry audience, stage and requested-support values with the two commercial paths.
-- [ ] Use `info@flypigai.ca` for public fallback copy.
-- [ ] Add real hreflang only for the English/Traditional Chinese Taiwan-company pair.
-- [ ] Add the new owner pages to the sitemap with content revision dates.
+- [x] Add answer-first Canadian product-team service page with visible inputs, deliverables, boundaries and CTA.
+- [x] Add English and substantive Traditional Chinese Taiwan technology-company owner pages.
+- [x] Align inquiry audience, stage and requested-support values with the two commercial paths.
+- [x] Use `info@flypigai.ca` for public fallback copy.
+- [x] Add real hreflang only for the English/Traditional Chinese Taiwan-company pair.
+- [x] Add the new owner pages to the sitemap with content revision dates.
 
 ### Task 5: Physical AI and legacy Insights positioning repair
 

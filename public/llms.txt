@@ -21,7 +21,10 @@ Public coverage does not imply that FlyPig AI is an authorized distributor, supp
 - Technology Intelligence — stable technology taxonomy and design considerations: https://flypigai.ca/technologies
 - Industry Signals — current Taiwan product and ecosystem developments: https://flypigai.ca/signals
 - Insights — evergreen market and deployment analysis: https://flypigai.ca/insights
-- Services — scoped commercial engagement process, separate from editorial coverage: https://flypigai.ca/services
+- How We Help — the two bounded commercial paths, separate from editorial coverage: https://flypigai.ca/services
+- Canadian product teams — Edge AI Technology Route & Qualification: https://flypigai.ca/services/canadian-product-teams
+- Taiwan technology companies — Canada Application & Design-In Readiness: https://flypigai.ca/services/taiwan-technology-companies
+- 台灣科技業者繁體中文入口: https://flypigai.ca/zh/services/taiwan-technology-companies
 - Physical AI deployment guide — educational readiness framework: https://flypigai.ca/physical-ai
 - Editorial, sourcing and corrections policy: https://flypigai.ca/editorial-policy
 - About: https://flypigai.ca/about

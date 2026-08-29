@@ -4,11 +4,13 @@ import { atlasCategories } from "./atlas/data";
 import { insightGuides } from "./insights/guides";
 
 const baseUrl = "https://flypigai.ca";
-const currentEditorialRevision = new Date("2026-08-25");
+const currentEditorialRevision = new Date("2026-08-29");
 const revisedCorePaths = new Set([
   "/", "/zh", "/Solutions", "/technologies", "/signals", "/services", "/zh/services",
   "/about", "/zh/about", "/physical-ai", "/contact", "/zh/contact", "/privacy",
   "/zh/privacy", "/editorial-policy", "/atlas/methodology", "/zh/atlas/methodology",
+  "/services/canadian-product-teams", "/services/taiwan-technology-companies",
+  "/zh/services/taiwan-technology-companies",
 ]);
 
 export const dynamic = "force-static";
@@ -19,6 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/Solutions", 0.95, "weekly"], ["/technologies", 0.95, "weekly"],
     ["/signals", 0.95, "weekly"], ["/insights", 0.85, "weekly"],
     ["/services", 0.7, "monthly"], ["/zh/services", 0.65, "monthly"],
+    ["/services/canadian-product-teams", 0.8, "monthly"],
+    ["/services/taiwan-technology-companies", 0.8, "monthly"],
+    ["/zh/services/taiwan-technology-companies", 0.75, "monthly"],
     ["/about", 0.75, "monthly"], ["/zh/about", 0.7, "monthly"],
     ["/atlas", 0.9, "weekly"], ["/zh/atlas", 0.85, "weekly"],
     ["/atlas/technologies", 0.8, "monthly"], ["/zh/atlas/technologies", 0.75, "monthly"],

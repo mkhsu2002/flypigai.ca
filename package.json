@@ -10,6 +10,7 @@
     "generate:brand": "node scripts/generate-brand-assets.mjs",
     "generate:signals": "node scripts/generate-signal-heroes.mjs",
     "audit:export": "node scripts/audit-exported-site.mjs",
+    "test": "node --test tests/*.test.mjs",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
