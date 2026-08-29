@@ -71,8 +71,8 @@ export default function ArticlePage() {
         <div className="thesis-grid"><div><span className="num">01</span><h3>For Canadian businesses</h3><p>Translate operational pain into a technically realistic robotics project.</p></div><div><span className="num">02</span><h3>For manufacturers</h3><p>Translate product capability into local use cases, pilots and reference customers.</p></div><div><span className="num">03</span><h3>For the ecosystem</h3><p>Connect engineering, compliance, training, service and commercial adoption.</p></div></div>
 
         <h2>FlyPig AI's position</h2>
-        <p>FlyPig AI is not presenting itself as a robot manufacturer, research laboratory or official industry body. Its commercial role is narrower: market development, partner discovery, supplier qualification, local representation and commercialization support between global robotics supply and Canadian industry.</p>
-        <p>The Canada Physical AI Atlas and FlyPig AI Insights support that work by organizing public information and developing market hypotheses. They do not replace technical due diligence, legal review, certification or customer-specific engineering.</p>
+        <p>FlyPig AI is not presenting itself as a robot manufacturer, systems integrator, research laboratory or official industry body. Its role is design intelligence, requirement clarification and technology qualification between Canadian product needs and researched Taiwan capabilities.</p>
+        <p>The Canada Physical AI Atlas and FlyPig AI Insights organize public evidence and develop testable market hypotheses. A scoped engagement may turn those inputs into a requirement brief, readiness review or bounded technical introduction, but it does not replace technical due diligence, legal review, certification, deployment ownership or customer-specific engineering.</p>
 
         <h2>The next phase of AI will be judged in the physical world</h2>
         <p>Digital AI can produce an answer in seconds. Physical AI must act inside environments that resist simplification. Floors are uneven. Networks fail. Objects move. People improvise. Regulations apply. Equipment breaks.</p>
@@ -81,7 +81,7 @@ export default function ArticlePage() {
 
       <aside className="source-note"><p className="eyebrow">Editorial note</p><p>This essay presents FlyPig AI's market thesis based on public company, institutional and deployment information. It is analysis rather than an independently audited market forecast. Specific deployment decisions require direct technical, commercial, regulatory and safety assessment.</p><div className="source-links"><a href="/atlas/methodology">Atlas methodology →</a><a href="/about">About FlyPig AI →</a><a href="/contact">Discuss a market question →</a></div></aside>
 
-      <div className="article-cta"><div><p className="eyebrow">Bring us an operational problem</p><h2>Start with the task—not the robot.</h2></div><a className="pill primary" href="/contact">Discuss an assessment</a></div>
+      <div className="article-cta"><div><p className="eyebrow">Bring us an operational problem</p><h2>Start with the task—not the robot.</h2></div><a className="pill primary" href="/services/canadian-product-teams">Review technology qualification</a></div>
     </article>
     <SiteFooter />
   </main>;

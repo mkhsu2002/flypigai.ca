@@ -4,16 +4,16 @@ import { SiteFooter, SiteHeader } from "../../components/SiteChrome";
 import { makeMetadata, siteUrl } from "../seo";
 
 export const metadata: Metadata = makeMetadata({
-  title: "Physical AI Deployment for Canadian Industry",
-  description: "FlyPig AI connects robotics manufacturers with Canadian businesses through market validation, pilot deployment, AI workflow integration and localized operational support.",
+  title: "Physical AI Deployment Readiness in Canada",
+  description: "An educational framework for evaluating Physical AI tasks, operating constraints, pilot evidence, specialist responsibilities and deployment readiness in Canada.",
   path: "/physical-ai",
   enPath: "/physical-ai",
 });
 
 const services = [
-  ["01", "Readiness assessment", "We identify high-value, automatable tasks, map constraints and build a realistic ROI case before hardware is selected."],
-  ["02", "Pilot deployment", "We define measurable success criteria, coordinate hardware, local integration and human-in-the-loop operations."],
-  ["03", "Operational support", "We turn a successful pilot into a repeatable operating system with monitoring, training, reporting and continuous improvement."],
+  ["01", "Readiness framing", "Describe the task, measurable outcome and operating constraints before selecting hardware."],
+  ["02", "Pilot definition", "Specify the evidence, acceptance criteria, specialist roles and human-in-the-loop responsibilities a trial would require."],
+  ["03", "Operational ownership", "Map who would own integration, safety, training, support, maintenance, reporting and the post-pilot decision."],
 ];
 
 const markets = [
@@ -71,9 +71,9 @@ export default function PhysicalAIPage() {
       <div className="shell hero-grid">
         <div>
           <p className="eyebrow">Canada · Asia · Physical AI</p>
-          <h1>AI moves into the real world.</h1>
+          <h1>Physical AI deployment starts with operational readiness.</h1>
           <p className="lead">This educational guide explains the operating layer behind Physical AI deployment: tasks, sites, safety, support, integration and measurable business value. It is a readiness framework, not an engineering certification or claim of an existing deployment relationship.</p>
-          <div className="actions"><a className="pill primary" href="/contact">Discuss a deployment</a><a className="pill secondary" href="/insights/canada-physical-ai-ecosystem-overview">Read the ecosystem overview</a></div>
+          <div className="actions"><a className="pill primary" href="/services/canadian-product-teams">Qualify a technology route</a><a className="pill secondary" href="/insights/canada-physical-ai-ecosystem-overview">Read the ecosystem overview</a></div>
         </div>
         <aside className="signal-card">
           <p className="eyebrow">Deployment signal</p>
@@ -85,7 +85,7 @@ export default function PhysicalAIPage() {
       </div>
     </section>
 
-    <div className="ticker">Physical AI readiness · robotics market entry · pilot development · AI workflow integration · localized deployment support</div>
+    <div className="ticker">Physical AI readiness · task definition · pilot evidence · specialist ownership · operating constraints</div>
 
     <section id="readiness-path" className="section shell">
       <div className="section-head"><div><p className="eyebrow">Readiness path</p><h2>Start with the work—not the robot.</h2></div><p className="section-copy">A useful readiness review begins with operational evidence and the smallest pilot that could prove value. Technical validation, safety and sign-off remain with qualified specialists and the operating organization.</p></div>
@@ -102,11 +102,11 @@ export default function PhysicalAIPage() {
     </section>
 
     <section id="markets" className="section dark">
-      <div className="shell"><div className="section-head"><div><p className="eyebrow">Initial use cases</p><h2>Structured environments. Measurable outcomes.</h2></div><p className="section-copy">We are deliberately focused. Early deployments should be bounded, observable and safe enough to produce reliable operating data—not just an impressive demonstration.</p></div><div className="grid3">{markets.map(([t,d],i)=><article className="card" key={t}><span className="num">0{i+1}</span><h3>{t}</h3><p>{d}</p></article>)}</div></div>
+      <div className="shell"><div className="section-head"><div><p className="eyebrow">Initial use cases</p><h2>Structured environments. Measurable outcomes.</h2></div><p className="section-copy">Readiness analysis is most useful when a proposed deployment is bounded, observable and safe enough for specialists to define reliable operating evidence—not only an impressive demonstration.</p></div><div className="grid3">{markets.map(([t,d],i)=><article className="card" key={t}><span className="num">0{i+1}</span><h3>{t}</h3><p>{d}</p></article>)}</div></div>
     </section>
 
     <section className="section shell">
-      <div className="section-head"><div><p className="eyebrow">Deployment method</p><h2>Five steps from interest to operation.</h2></div><p className="section-copy">A disciplined sequence protects both the customer and the manufacturer. Every stage has explicit evidence, responsibilities and a decision gate.</p></div>
+      <div className="section-head"><div><p className="eyebrow">Readiness sequence</p><h2>Five decision gates from interest to operation.</h2></div><p className="section-copy">This sequence shows what an operating organization and its qualified specialists need to resolve. It is a planning framework, not a claim that FlyPig AI executes these stages.</p></div>
       <div className="process">{[["01","Assess","Map tasks, economics and risk."],["02","Select","Choose the right form factor and vendor."],["03","Pilot","Prove performance in a bounded scope."],["04","Integrate","Connect systems, people and controls."],["05","Operate","Monitor, support and improve."]].map(([n,t,d])=><div className="step" key={t}><span className="num">{n}</span><strong>{t}</strong><span>{d}</span></div>)}</div>
     </section>
 
@@ -120,7 +120,7 @@ export default function PhysicalAIPage() {
     </section>
 
     <section id="route-to-market" className="section shell">
-      <div className="section-head"><div><p className="eyebrow">For product teams</p><h2>Frame a credible Canadian deployment route.</h2></div><p className="section-copy">The sequence below describes research questions, not an existing partner network or a promise of deployment.</p></div>
+      <div className="section-head"><div><p className="eyebrow">For product teams</p><h2>Frame a credible Canadian readiness route.</h2></div><p className="section-copy">The sequence below describes design-intelligence questions, not an existing partner network or a promise of deployment.</p></div>
       <div className="grid3"><article className="card"><span className="num">Phase 01</span><h3>Market validation</h3><p>Test positioning, identify operator categories and surface local compliance or service barriers.</p></article><article className="card"><span className="num">Phase 02</span><h3>Pilot qualification</h3><p>Define the use case, responsible parties, evidence threshold and selection criteria for a possible trial.</p></article><article className="card"><span className="num">Phase 03</span><h3>Deployment planning</h3><p>Identify the integration, support and operating responsibilities required before repeatable adoption.</p></article></div>
     </section>
 
@@ -129,9 +129,9 @@ export default function PhysicalAIPage() {
       <div className="founder-card"><span className="mono">Founder · FlyPig AI</span><h3>M.K. Hsu</h3><p>Independent Canada-Taiwan technology and ecosystem intelligence.</p></div>
     </section>
 
-    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Boundaries</p><h2>Deployment support does not replace specialist review.</h2></div><p className="section-copy">FlyPig AI can help frame readiness, market fit, partner paths and pilot scope. It does not provide legal advice, engineering certification, site safety approval, procurement approval or regulatory sign-off. Those responsibilities must be handled by qualified specialists and the customer’s internal owners.</p></div></section>
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Boundaries</p><h2>Design intelligence does not replace specialist review.</h2></div><p className="section-copy">FlyPig AI can help clarify requirements, compare technology routes and identify the evidence and specialist roles a readiness decision requires. It does not provide legal advice, engineering certification, site safety approval, procurement approval, deployment execution or regulatory sign-off.</p></div></section>
 
-    <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">Build the first credible pilot</p><h2>Bring us a task—not a robot wish list.</h2></div><div className="actions"><a className="pill primary" href="/contact">Discuss a deployment</a></div></div></section>
+    <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">Frame the first credible decision</p><h2>Bring the task, environment and constraints—not only a robot wish list.</h2></div><div className="actions"><a className="pill primary" href="/services/canadian-product-teams">Review technology qualification</a></div></div></section>
     <SiteFooter />
   </main>
 }

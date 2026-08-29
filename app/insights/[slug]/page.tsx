@@ -66,7 +66,7 @@ export default async function InsightGuidePage({ params }: { params: Promise<{ s
         <div className="source-links"><a href="/atlas">Explore the Atlas →</a><a href="/atlas/methodology">Read the methodology →</a><a href="/contact">Discuss a market question →</a></div>
       </aside>
 
-      <div className="article-cta"><div><p className="eyebrow">Next step</p><h2>{guide.cta}</h2></div><a className="pill primary" href="/contact">Contact FlyPig AI</a></div>
+      <div className="article-cta"><div><p className="eyebrow">Next step</p><h2>{guide.cta}</h2></div><a className="pill primary" href={guide.ctaHref}>Review the engagement</a></div>
     </article>
     <SiteFooter />
   </main>;

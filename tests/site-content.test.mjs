@@ -41,3 +41,13 @@ test("services lead with the two bounded commercial paths", () => {
   assert.match(services, /Edge AI 技術路徑與資格評估/);
   assert.match(services, /加拿大應用與 Design-In 準備度/);
 });
+
+test("Physical AI and the opening essay describe intelligence, not deployment delivery", () => {
+  const physicalAi = read("app/physical-ai/page.tsx");
+  const essay = read("app/insights/canada-needs-physical-ai-integrators/page.tsx");
+  assert.match(physicalAi, /Physical AI Deployment Readiness in Canada/);
+  assert.doesNotMatch(physicalAi, /Discuss a deployment/);
+  assert.doesNotMatch(physicalAi, /We define measurable success criteria/);
+  assert.match(essay, /design intelligence, requirement clarification and technology qualification/i);
+  assert.doesNotMatch(essay, /local representation and commercialization support/i);
+});

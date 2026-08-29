@@ -76,10 +76,10 @@
 - Modify: `app/insights/page.tsx`
 - Modify: `app/insights/guides.ts`
 
-- [ ] Re-title Physical AI around Canadian deployment readiness and remove claims that FlyPig AI performs deployment, certification or operational support.
-- [ ] Reframe the Integrators essay so it describes the ecosystem thesis and FlyPig AI's intelligence/qualification role.
-- [ ] Update legacy market-entry guides to point to the Taiwan-company owner page and product-selection guides to the Canadian-team owner page.
-- [ ] Preserve existing canonical URLs to avoid discarding indexed equity.
+- [x] Re-title Physical AI around Canadian deployment readiness and remove claims that FlyPig AI performs deployment, certification or operational support.
+- [x] Reframe the Integrators essay so it describes the ecosystem thesis and FlyPig AI's intelligence/qualification role.
+- [x] Update legacy market-entry guides to point to the Taiwan-company owner page and product-selection guides to the Canadian-team owner page.
+- [x] Preserve existing canonical URLs to avoid discarding indexed equity.
 
 ### Task 6: Technology decision pages
 

@@ -12,6 +12,7 @@ export type InsightGuide = {
     bullets?: string[];
   }>;
   cta: string;
+  ctaHref: string;
 };
 
 export const insightGuides: InsightGuide[] = [
@@ -46,10 +47,11 @@ export const insightGuides: InsightGuide[] = [
       },
       {
         heading: "What FlyPig AI can help produce",
-        body: "A market-entry engagement can produce a concise Canadian market brief, a target segment map, a partner or integrator shortlist, a pilot opportunity profile, outreach context and a risk register. The goal is not to make Canada look easy. The goal is to make the next commercial step concrete enough to evaluate.",
+        body: "A Canada Application & Design-In Readiness engagement can produce an application-fit brief, target organization categories, a design-in friction review, evidence gaps and a qualified opportunity path. The goal is not to make Canada look easy or promise demand. It is to make the next technical-commercial decision concrete enough to evaluate.",
       },
     ],
-    cta: "Discuss a Canada market-entry assessment",
+    cta: "Review Canada application and design-in readiness",
+    ctaHref: "/services/taiwan-technology-companies",
   },
   {
     slug: "canada-physical-ai-ecosystem-overview",
@@ -85,6 +87,7 @@ export const insightGuides: InsightGuide[] = [
       },
     ],
     cta: "Explore the Canada Physical AI Atlas",
+    ctaHref: "/atlas",
   },
   {
     slug: "robotics-integrators-in-canada",
@@ -116,10 +119,11 @@ export const insightGuides: InsightGuide[] = [
       },
       {
         heading: "Where FlyPig AI fits",
-        body: "FlyPig AI is not a replacement for engineering integration. Its role is market development, partner discovery, qualification support and commercial coordination between suppliers, integrators and potential buyers. In practice, that means identifying which partner category is needed, preparing the supplier for credible conversations and helping avoid mismatches between product capability and local deployment responsibility.",
+        body: "FlyPig AI is not a replacement for engineering integration. Its design-intelligence role is to clarify the application, identify which specialist category is required, examine public capability evidence and surface mismatches between a product claim and local deployment responsibility before an introduction is considered.",
       },
     ],
-    cta: "Map potential Canadian partners",
+    cta: "Review Canada application and design-in readiness",
+    ctaHref: "/services/taiwan-technology-companies",
   },
   {
     slug: "drone-autonomous-systems-market-canada",
@@ -151,10 +155,11 @@ export const insightGuides: InsightGuide[] = [
       },
       {
         heading: "Where FlyPig AI fits",
-        body: "FlyPig AI can help drone and autonomous-systems suppliers frame Canadian use cases, identify relevant operators or service partners, separate product sales from service-led opportunities and design a more credible first pilot conversation.",
+        body: "FlyPig AI can help a drone or autonomous-systems company frame a Canadian application hypothesis, identify the evidence and specialist roles it requires, and surface product, workflow and support gaps before a technical conversation is considered.",
       },
     ],
-    cta: "Discuss a drone or autonomous-systems opportunity",
+    cta: "Assess Canada application readiness",
+    ctaHref: "/services/taiwan-technology-companies",
   },
   {
     slug: "asian-robotics-suppliers-enter-canada",
@@ -190,7 +195,8 @@ export const insightGuides: InsightGuide[] = [
         bullets: ["Do not promise local support that does not exist.", "Do not over-position the product as general-purpose if it is strong in specific tasks.", "Do not skip safety, data or regulatory questions.", "Do not treat the first interested contact as proof of market demand."],
       },
     ],
-    cta: "Plan a Canada entry assessment",
+    cta: "Review Canada application and design-in readiness",
+    ctaHref: "/services/taiwan-technology-companies",
   },
 ];
 
