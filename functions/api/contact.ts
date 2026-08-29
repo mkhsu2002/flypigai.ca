@@ -1,156 +1,54 @@
-interface Env {
-  RESEND_API_KEY: string;
+import { auditDigest, normalizeEmail } from "../_shared/events";
+import { apiResponse, FunctionContext, idempotencyKey, persistAndQueue, rateLimit, readPayload, requestOriginAllowed, runtimeReady } from "../_shared/runtime";
+
+function text(value: unknown, maximum: number) {
+  return typeof value === "string" && value.trim().length <= maximum ? value.trim() : null;
 }
 
-interface FunctionContext<TEnv> {
-  request: Request;
-  env: TEnv;
-}
+export const onRequestPost = async ({ request, env }: FunctionContext): Promise<Response> => {
+  if (!runtimeReady(env)) return apiResponse("unavailable", 503, "The inquiry service is temporarily unavailable.");
+  if (!requestOriginAllowed(request)) return apiResponse("invalid", 400, "Invalid request origin.");
+  if (!(await rateLimit(request, env))) return apiResponse("rate_limited", 429, "Too many requests. Please try again later.");
+  const raw = await readPayload(request);
+  if (!raw) return apiResponse("invalid", 400, "Invalid request body.");
+  if (text(raw.company_site, 200)) return apiResponse("accepted", 202, "Your request has been received.");
 
-interface ContactPayload {
-  name?: string;
-  company?: string;
-  email?: string;
-  phone?: string;
-  country?: string;
-  website?: string;
-  audience?: string;
-  technology?: string;
-  stage?: string;
-  support?: string | string[];
-  message?: string;
-  timeline?: string;
-  referral?: string;
-  company_site?: string;
-  locale?: string;
-}
+  const name = text(raw.name, 100);
+  const company = text(raw.company, 160);
+  const email = text(raw.email, 160);
+  const country = text(raw.country, 100);
+  const audience = text(raw.audience, 100);
+  const technology = text(raw.technology, 100);
+  const stage = text(raw.stage, 100);
+  const message = text(raw.message, 3000);
+  if (!name || !company || !email || !country || !audience || !technology || !stage || !message || message.length < 20 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return apiResponse("invalid", 422, "Please review the required inquiry fields.");
+  }
 
-function escapeHtml(value: unknown): string {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === "object" && value !== null && !Array.isArray(value);
-}
-
-function toOptionalString(value: unknown): string | undefined {
-  return typeof value === "string" ? value : undefined;
-}
-
-function parsePayload(value: unknown): ContactPayload | null {
-  if (!isRecord(value)) return null;
-
-  const supportValue = value.support;
-  const support = Array.isArray(supportValue)
-    ? supportValue.filter((item): item is string => typeof item === "string")
-    : toOptionalString(supportValue);
-
-  return {
-    name: toOptionalString(value.name),
-    company: toOptionalString(value.company),
-    email: toOptionalString(value.email),
-    phone: toOptionalString(value.phone),
-    country: toOptionalString(value.country),
-    website: toOptionalString(value.website),
-    audience: toOptionalString(value.audience),
-    technology: toOptionalString(value.technology),
-    stage: toOptionalString(value.stage),
-    support,
-    message: toOptionalString(value.message),
-    timeline: toOptionalString(value.timeline),
-    referral: toOptionalString(value.referral),
-    company_site: toOptionalString(value.company_site),
-    locale: toOptionalString(value.locale),
+  const payload = {
+    name, company, email: normalizeEmail(email), country, audience, technology, stage, message,
+    phone: text(raw.phone, 60), website: text(raw.website, 240), timeline: text(raw.timeline, 100), referral: text(raw.referral, 160),
+    support: Array.isArray(raw.support) ? raw.support.filter((item): item is string => typeof item === "string").slice(0, 12) : [],
   };
-}
+  const locale = text(raw.locale, 10) ?? "en";
+  const key = idempotencyKey(request);
 
-export const onRequestPost = async (context: FunctionContext<Env>): Promise<Response> => {
   try {
-    const rawPayload: unknown = await context.request.json();
-    const payload = parsePayload(rawPayload);
-
-    if (!payload) {
-      return Response.json({ error: "Invalid request body" }, { status: 400 });
-    }
-
-    if (payload.company_site) {
-      return Response.json({ ok: true });
-    }
-
-    const required = [payload.name, payload.company, payload.email, payload.country, payload.audience, payload.technology, payload.stage, payload.message];
-    if (required.some((value) => !value || String(value).trim().length === 0)) {
-      return Response.json({ error: "Missing required fields" }, { status: 400 });
-    }
-
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email ?? "")) {
-      return Response.json({ error: "Invalid email" }, { status: 400 });
-    }
-
-    if ((payload.message ?? "").length > 3000) {
-      return Response.json({ error: "Message too long" }, { status: 400 });
-    }
-
-    if (!context.env.RESEND_API_KEY) {
-      console.error("RESEND_API_KEY is not configured");
-      return Response.json({ error: "Email service is not configured" }, { status: 503 });
-    }
-
-    const support = Array.isArray(payload.support) ? payload.support.join(", ") : payload.support || "Not specified";
-    const fields = [
-      ["Language", payload.locale],
-      ["Name", payload.name],
-      ["Company", payload.company],
-      ["Email", payload.email],
-      ["Phone / WhatsApp", payload.phone],
-      ["Country / region", payload.country],
-      ["Website", payload.website],
-      ["Organization type", payload.audience],
-      ["Technology area", payload.technology],
-      ["Current stage", payload.stage],
-      ["Requested support", support],
-      ["Timeline", payload.timeline],
-      ["Referral", payload.referral],
-    ];
-
-    const html = `
-      <div style="font-family:Arial,sans-serif;max-width:760px;margin:auto;color:#1f2933">
-        <h1 style="font-size:24px">New FlyPig AI inquiry</h1>
-        <table style="width:100%;border-collapse:collapse">
-          ${fields.map(([label, value]) => `<tr><td style="padding:9px;border-bottom:1px solid #ddd;color:#667085;width:32%">${escapeHtml(label)}</td><td style="padding:9px;border-bottom:1px solid #ddd"><strong>${escapeHtml(value || "—")}</strong></td></tr>`).join("")}
-        </table>
-        <h2 style="font-size:18px;margin-top:28px">Message</h2>
-        <div style="white-space:pre-wrap;line-height:1.7;padding:18px;background:#f4f8f7;border-left:3px solid #0f766e">${escapeHtml(payload.message)}</div>
-      </div>`;
-
-    const resendResponse = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${context.env.RESEND_API_KEY}`,
-        "Content-Type": "application/json",
+    const boundary = await persistAndQueue({
+      env,
+      idempotencyKey: key,
+      persist: async (eventId, now, auditHash) => {
+        const requestId = crypto.randomUUID();
+        const sourceIpHash = await auditDigest({ ip: request.headers.get("cf-connecting-ip") ?? "unknown" });
+        await env.FLYPIG_DB.batch([
+          env.FLYPIG_DB.prepare("INSERT INTO contact_requests (id, normalized_email, payload_json, locale, source_ip_hash, created_at, updated_at) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?6)").bind(requestId, payload.email, JSON.stringify(payload), locale, sourceIpHash, now),
+          env.FLYPIG_DB.prepare("INSERT INTO event_inbox (id, event_type, idempotency_key, domain_record_id, state, created_at, updated_at) VALUES (?1, 'contact.received', ?2, ?3, 'pending', ?4, ?4)").bind(eventId, key, requestId, now),
+          env.FLYPIG_DB.prepare("INSERT INTO event_audit (id, event_id, action, actor, metadata_hash, created_at) VALUES (?1, ?2, 'persisted', 'pages', ?3, ?4)").bind(crypto.randomUUID(), eventId, auditHash, now),
+        ]);
       },
-      body: JSON.stringify({
-        from: "FlyPig AI <contact@insightestate.ca>",
-        to: ["mkhsu2002@gmail.com"],
-        reply_to: payload.email,
-        subject: `[FlyPig AI] ${payload.company} — ${payload.audience}`,
-        html,
-      }),
     });
-
-    if (!resendResponse.ok) {
-      const detail = await resendResponse.text();
-      console.error("Resend error", detail);
-      return Response.json({ error: "Email service error" }, { status: 502 });
-    }
-
-    return Response.json({ ok: true });
-  } catch (error) {
-    console.error("Contact form error", error);
-    return Response.json({ error: "Invalid request" }, { status: 400 });
+    return apiResponse("accepted", 202, boundary.duplicate ? "Your request was already received." : "Your request has been received.");
+  } catch {
+    return apiResponse("unavailable", 503, "The inquiry could not be stored safely. Please try again later.");
   }
 };

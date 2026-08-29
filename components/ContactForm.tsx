@@ -7,7 +7,7 @@ const copy={en:{submit:"Send inquiry",sending:"Sending...",success:"Thank you. Y
 
 export default function ContactForm({locale="en"}:{locale?:Locale}){
  const[status,setStatus]=useState<"idle"|"sending"|"success"|"error">("idle");
- async function submit(event:FormEvent<HTMLFormElement>){event.preventDefault();setStatus("sending");const form=event.currentTarget;const formData=new FormData(form);const data={...Object.fromEntries(formData.entries()),support:formData.getAll("support")};try{const response=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({...data,locale})});if(!response.ok)throw new Error("Request failed");form.reset();setStatus("success")}catch{setStatus("error")}}
+ async function submit(event:FormEvent<HTMLFormElement>){event.preventDefault();setStatus("sending");const form=event.currentTarget;const formData=new FormData(form);const data={...Object.fromEntries(formData.entries()),support:formData.getAll("support")};try{const response=await fetch("/api/contact",{method:"POST",headers:{"Content-Type":"application/json","Idempotency-Key":crypto.randomUUID()},body:JSON.stringify({...data,locale})});if(!response.ok)throw new Error("Request failed");form.reset();setStatus("success")}catch{setStatus("error")}}
  const zh=locale==="zh";
  return <form className="contact-form" onSubmit={submit}>
   <div className="form-grid two">

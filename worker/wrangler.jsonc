@@ -1,0 +1,29 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "flypigai-mailer",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-29",
+  "vars": { "SITE_URL": "https://flypigai.ca" },
+  "d1_databases": [
+    { "binding": "FLYPIG_DB", "database_name": "flypigai-events-prod", "database_id": "f571464e-86e4-47d5-9651-0afaeb84613a" }
+  ],
+  "queues": {
+    "producers": [{ "binding": "OUTBOUND_EVENTS", "queue": "flypigai-outbound-prod" }],
+    "consumers": [{ "queue": "flypigai-outbound-prod", "max_batch_size": 10, "max_batch_timeout": 5, "max_retries": 5, "retry_delay": 60, "dead_letter_queue": "flypigai-outbound-prod-dlq" }]
+  },
+  "triggers": { "crons": ["17 9 * * *"] },
+  "env": {
+    "dev": {
+      "name": "flypigai-mailer-dev",
+      "vars": { "SITE_URL": "https://flypigai.ca" },
+      "d1_databases": [
+        { "binding": "FLYPIG_DB", "database_name": "flypigai-events-dev", "database_id": "a93a9a4d-9cea-4c3f-a387-59ca97ac3594" }
+      ],
+      "queues": {
+        "producers": [{ "binding": "OUTBOUND_EVENTS", "queue": "flypigai-outbound-dev" }],
+        "consumers": [{ "queue": "flypigai-outbound-dev", "max_batch_size": 10, "max_batch_timeout": 5, "max_retries": 5, "retry_delay": 60, "dead_letter_queue": "flypigai-outbound-dev-dlq" }]
+      },
+      "triggers": { "crons": ["23 9 * * *"] }
+    }
+  }
+}

@@ -140,12 +140,12 @@
 - Modify: `app/privacy/page.tsx`
 - Modify: `app/zh/privacy/page.tsx`
 
-- [ ] Write failing tests for persistence-before-queue, idempotency, hashed audit, unsubscribe token validation, unsubscribed filtering, per-event replay and missing bindings.
-- [ ] Implement Pages producer handlers that persist before enqueue and return the stable API contract.
-- [ ] Implement Queue consumer delivery with permanent D1 idempotency, provider idempotency as secondary protection and non-sensitive audit errors.
-- [ ] Keep `RESEND_API_KEY` only in the Worker contract.
-- [ ] Keep newsletter UI as an honest launch notice until both environments are deployed and verified.
-- [ ] Update privacy disclosures for persisted requests, subscriber state and service-provider processing.
+- [x] Write failing tests for persistence-before-queue, idempotency, hashed audit, unsubscribe token validation, unsubscribed filtering, per-event replay and missing bindings.
+- [x] Implement Pages producer handlers that persist before enqueue and return the stable API contract.
+- [x] Implement Queue consumer delivery with permanent D1 idempotency, provider idempotency as secondary protection and non-sensitive audit errors.
+- [x] Keep `RESEND_API_KEY` only in the Worker contract.
+- [x] Keep newsletter UI as an honest launch notice until both environments are deployed and verified.
+- [x] Update privacy disclosures for persisted requests, subscriber state and service-provider processing.
 
 ### Task 10: Cloudflare resources and activation gate
 
@@ -154,14 +154,16 @@
 - Modify after resource provisioning: `worker/wrangler.jsonc`
 - Modify after successful live verification: `components/NewsletterNotice.tsx`
 
-- [ ] Create separate dev/prod D1 databases, queues and dead-letter queues through Wrangler/API.
-- [ ] Apply `0001_event_delivery.sql` to dev and production and list applied migrations.
+- [x] Create separate dev/prod D1 databases, queues and dead-letter queues through Wrangler/API.
+- [x] Apply `0001_event_delivery.sql` and `0002_dead_letter_audit.sql` to dev and production and list applied migrations.
 - [ ] Configure Pages preview/production D1 and Queue producer bindings from downloaded project settings.
 - [ ] Store `RESEND_API_KEY`, sender, recipient and unsubscribe secrets directly in Worker secret storage; never echo values.
 - [ ] Deploy dev consumer and preview Pages build; run controlled contact, subscribe, unsubscribe, duplicate and replay checks.
 - [ ] Query dev D1 domain, inbox and audit state.
 - [ ] Deploy the same reviewed code/migration set to production only after dev passes.
 - [ ] If the provider key is unavailable in Keychain or Worker secret storage, leave the frontend launch notice and do not activate the new API contract.
+
+**Current activation gate (2026-08-29):** the existing Pages `RESEND_API_KEY` is encrypted and cannot be copied, and no Resend key is present in the process environment or checked Keychain service names. Resources and migrations are provisioned, but consumer/Pages deployment remains intentionally inactive until the key is securely injected and dev live tests pass.
 
 ### Task 11: Full verification and release
 
