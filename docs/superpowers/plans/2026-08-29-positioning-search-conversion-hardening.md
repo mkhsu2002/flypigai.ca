@@ -90,11 +90,11 @@
 - Modify: `lib/technologyTaxonomy.ts`
 - Modify: `app/sitemap.ts`
 
-- [ ] Write a failing route/content test for `edge-ai-compute`, `embedded-platforms` and `vision-sensing`.
-- [ ] Implement a typed topic contract with title, answer, criteria, questions, related technologies and CTA audience.
-- [ ] Render three static owner pages with breadcrumb, CollectionPage/WebPage schema and related Signals.
-- [ ] Replace generic `/signals#latest` links with distinct topic owner links.
-- [ ] Add only the three complete pages to the sitemap; leave incomplete taxonomy nodes as page anchors.
+- [x] Write a failing route/content test for `edge-ai-compute`, `embedded-platforms` and `vision-sensing`.
+- [x] Implement a typed topic contract with title, answer, criteria, questions, related technologies and CTA audience.
+- [x] Render three static owner pages with breadcrumb, CollectionPage/WebPage schema and related Signals.
+- [x] Replace generic `/signals#latest` links with distinct topic owner links.
+- [x] Add only the three complete pages to the sitemap; leave incomplete taxonomy nodes as page anchors.
 
 ### Task 7: Insights Article trust contract
 

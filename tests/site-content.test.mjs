@@ -51,3 +51,14 @@ test("Physical AI and the opening essay describe intelligence, not deployment de
   assert.match(essay, /design intelligence, requirement clarification and technology qualification/i);
   assert.doesNotMatch(essay, /local representation and commercialization support/i);
 });
+
+test("priority technology intents have complete owner pages", () => {
+  const taxonomy = read("lib/technologyTaxonomy.ts");
+  assert.equal(existsSync(join(root, "app/technologies/[slug]/page.tsx")), true, "dynamic technology owner page should exist");
+  assert.equal(existsSync(join(root, "app/technologies/topics.ts")), true, "technology topic content should exist");
+  const topics = read("app/technologies/topics.ts");
+  for (const slug of ["edge-ai-compute", "embedded-platforms", "vision-sensing"]) {
+    assert.match(topics, new RegExp(`slug: "${slug}"`));
+    assert.match(taxonomy, new RegExp(`/technologies/\\$\\{topicId\\}`));
+  }
+});

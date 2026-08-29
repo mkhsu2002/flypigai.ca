@@ -9,6 +9,8 @@ export const technologyTopics = [
   { id: "robotics-systems", title: "Robotics systems", description: "Controllers, perception, ODM integration and Physical AI system building blocks.", compare: "Maturity, interfaces, customization scope, serviceability and deployment evidence." },
 ] as const;
 
+const completeTopicIds = new Set(["edge-ai-compute", "embedded-platforms", "vision-sensing"]);
+
 const topicByTechnology: Record<string, (typeof technologyTopics)[number]["id"]> = {
   "2.5-inch SBC": "embedded-platforms", "3D Sensing": "vision-sensing", "5G IoT": "connectivity",
   "AI Acceleration": "edge-ai-compute", "AI Memory": "memory-security", "Always-On AI": "vision-sensing",
@@ -26,5 +28,6 @@ const topicByTechnology: Record<string, (typeof technologyTopics)[number]["id"]>
 };
 
 export function technologyTopicHref(technology: string): string {
-  return `/technologies#${topicByTechnology[technology] ?? "edge-ai-compute"}`;
+  const topicId = topicByTechnology[technology] ?? "edge-ai-compute";
+  return completeTopicIds.has(topicId) ? `/technologies/${topicId}` : `/technologies#${topicId}`;
 }

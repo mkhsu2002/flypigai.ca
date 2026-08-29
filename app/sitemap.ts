@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getIndustrySignals } from "../lib/industrySignals";
 import { atlasCategories } from "./atlas/data";
 import { insightGuides } from "./insights/guides";
+import { technologyOwnerTopics } from "./technologies/topics";
 
 const baseUrl = "https://flypigai.ca";
 const currentEditorialRevision = new Date("2026-08-29");
@@ -55,6 +56,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  const technologyRoutes: MetadataRoute.Sitemap = technologyOwnerTopics.map((topic) => ({
+    url: `${baseUrl}/technologies/${topic.slug}`,
+    lastModified: currentEditorialRevision,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
   const signalRoutes: MetadataRoute.Sitemap = getIndustrySignals().map((signal) => ({
     url: `${baseUrl}/signals/${signal.slug}`,
     lastModified: new Date(signal.modifiedAt),
@@ -62,5 +70,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...coreRoutes, ...atlasRoutes, ...insightRoutes, ...signalRoutes];
+  return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...signalRoutes];
 }
