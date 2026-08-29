@@ -156,14 +156,14 @@
 
 - [x] Create separate dev/prod D1 databases, queues and dead-letter queues through Wrangler/API.
 - [x] Apply `0001_event_delivery.sql` and `0002_dead_letter_audit.sql` to dev and production and list applied migrations.
-- [ ] Configure Pages preview/production D1 and Queue producer bindings from downloaded project settings.
-- [ ] Store `RESEND_API_KEY`, sender, recipient and unsubscribe secrets directly in Worker secret storage; never echo values.
-- [ ] Deploy dev consumer and preview Pages build; run controlled contact, subscribe, unsubscribe, duplicate and replay checks.
-- [ ] Query dev D1 domain, inbox and audit state.
+- [x] Configure Pages preview/production D1 and Queue producer bindings from downloaded project settings.
+- [x] Store `RESEND_API_KEY`, sender, recipient and unsubscribe secrets directly in Worker secret storage; never echo values.
+- [x] Deploy dev consumer and preview Pages build; run controlled contact, subscribe, unsubscribe, duplicate and replay checks.
+- [x] Query dev D1 domain, inbox and audit state.
 - [ ] Deploy the same reviewed code/migration set to production only after dev passes.
-- [ ] If the provider key is unavailable in Keychain or Worker secret storage, leave the frontend launch notice and do not activate the new API contract.
+- [x] Confirm the provider key exists in Worker secret storage; keep the frontend launch notice until the dev contract passes.
 
-**Current activation gate (2026-08-29):** the existing Pages `RESEND_API_KEY` is encrypted and cannot be copied, and no Resend key is present in the process environment or checked Keychain service names. Resources and migrations are provisioned, but consumer/Pages deployment remains intentionally inactive until the key is securely injected and dev live tests pass.
+**Activation status (2026-08-29):** dev and production Worker secrets are provisioned, Pages preview and Worker consumer bindings are active, and controlled dev checks passed for contact delivery, subscription, duplicate suppression, signed unsubscribe, provider failure, protected replay and hashed D1 audit. Production remains gated until the same revision is deployed consumer-first and passes public live readback.
 
 ### Task 11: Full verification and release
 
@@ -171,9 +171,9 @@
 - Modify: `README.md`
 - Modify: `docs/superpowers/specs/2026-08-25-site-stabilization-design.md` only for verified status updates
 
-- [ ] Run `npm test` and require zero failures.
-- [ ] Run `npm run validate:content`, `npm run typecheck`, `npm run build`, `npm run audit:export`, `npm audit --omit=dev` and `git diff --check`.
-- [ ] Inspect the task checklist, staged diff and generated-output status.
+- [x] Run `npm test` and require zero failures.
+- [x] Run `npm run validate:content`, `npm run typecheck`, `npm run build`, `npm run audit:export`, `npm audit --omit=dev` and `git diff --check`.
+- [x] Inspect the task checklist, staged diff and generated-output status.
 - [ ] Commit coherent changes, merge to `main`, push `origin/main` and wait for the matching Pages deployment.
 - [ ] Read back `/`, `/services`, both audience pages, three technology pages, `/physical-ai`, representative Insights, sitemap, redirects and raw `/zh` language.
 - [ ] Submit changed canonical URLs through IndexNow only when a securely injected key is available.
