@@ -9,6 +9,7 @@ Before editing or publishing, read:
 - `AGENTS.md` for repository-specific terminology, relationship claims, and asset-rights rules;
 - `docs/editorial/industry-signals-standard.md` for the required Signals article template and build-blocking media-rights contract;
 - `docs/superpowers/specs/2026-08-25-site-stabilization-design.md` for the approved stabilization architecture and release gates.
+- `docs/superpowers/specs/2026-08-29-positioning-search-conversion-hardening-design.md` for the current commercial model, audience owners and search-content contract.
 
 General project instructions still apply. Repository rules do not replace backend/schema/environment synchronization or secret-handling requirements.
 
@@ -56,6 +57,27 @@ Remaining verified backend symptoms:
 - the legacy contact endpoint has no durable event/audit record and uses obsolete hard-coded mail configuration.
 
 The next infrastructure task is the separate newsletter/contact event-delivery work. Preserve the static export audit and perform raw public HTML readback after every deployment.
+
+### 2026-08-29 positioning and search release
+
+The public owner structure now expresses one commercial identity across homepage, navigation, Services, Physical AI and Insights:
+
+> FlyPig AI is a Canada–Taiwan Edge AI and Physical AI design-intelligence company. It helps Canadian product teams qualify Taiwan technology routes and helps Taiwan technology companies prepare for Canadian applications and design-in conversations.
+
+Current commercial owner routes:
+
+- `/services` — two-path engagement gateway
+- `/services/canadian-product-teams` — Edge AI Technology Route & Qualification
+- `/services/taiwan-technology-companies` — Canada Application & Design-In Readiness
+- `/zh/services/taiwan-technology-companies` — substantive Traditional Chinese Taiwan-company entry
+
+Current technology decision owners:
+
+- `/technologies/edge-ai-compute`
+- `/technologies/embedded-platforms`
+- `/technologies/vision-sensing`
+
+Insights now require Article image, visible organization byline, exact published/modified dates, BreadcrumbList, official source links and sitemap `lastmod`. Search release tooling is documented in `docs/operations/search-release.md`; IndexNow credentials and verification files are never committed.
 
 ## Strategic positioning
 
@@ -125,6 +147,9 @@ The approved top-level owner structure is:
 - `/suppliers`
 - `/canada-ecosystem`
 - `/insights` or `/intelligence`
+- `/services`
+- `/services/canadian-product-teams`
+- `/services/taiwan-technology-companies`
 - `/about`
 - `/submit-project`
 - `/submit-technology`
@@ -151,8 +176,10 @@ Recent work added or modified:
 - navigation / footer
 - sitemap priorities
 - Industry Signals prototype
-- newsletter signup component
-- Resend-backed newsletter API route
+- three technology decision-owner pages
+- two commercial audience-owner paths and a Traditional Chinese Taiwan-company owner
+- strengthened Insights Article metadata, citations and sitemap freshness
+- a transparent newsletter launch notice while the event pipeline remains gated
 
 Review the actual implementation before assuming quality. The current request is specifically for the IDE to clean up deployment, visual consistency, assets, architecture and production readiness.
 
