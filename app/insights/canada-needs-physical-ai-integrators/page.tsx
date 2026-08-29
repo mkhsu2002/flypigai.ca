@@ -1,10 +1,18 @@
 import type { Metadata } from "next";
 import JsonLd from "../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
-import { makeMetadata, siteUrl } from "../../seo";
+import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
 
 const title = "Canada Needs Physical AI Integrators";
 const description = "Why Canada's next robotics opportunity lies in deployment, integration and operations—not simply building or importing more machines.";
+const datePublished = "2026-07-01";
+const dateModified = "2026-08-29";
+const articleImage = `${siteUrl}/images/og/flypig-ai-default.png`;
+const sources = [
+  { name: "Government of Canada — Sensitive Technology List: Robotics and Autonomous Systems", url: "https://www.canada.ca/en/services/defence/nationalsecurity/sensitive-technology-list.html" },
+  { name: "National Research Council Canada — Advanced manufacturing initiative", url: "https://nrc.canada.ca/en/research-development/research-collaboration/programs/advanced-manufacturing-initiative" },
+  { name: "National Research Council Canada — Advanced manufacturing capabilities", url: "https://nrc.canada.ca/en/research-development/research-collaboration/programs/nrc-capabilities-advanced-manufacturing" },
+];
 
 export const metadata: Metadata = makeMetadata({
   title: "Canada Needs Physical AI Integrators",
@@ -12,25 +20,35 @@ export const metadata: Metadata = makeMetadata({
   path: "/insights/canada-needs-physical-ai-integrators",
   enPath: "/insights/canada-needs-physical-ai-integrators",
   type: "article",
+  article: {
+    publishedTime: datePublished,
+    modifiedTime: dateModified,
+    authors: ["FlyPig AI"],
+    section: "Physical AI in Canada",
+    tags: ["Physical AI", "Robotics integration", "Canada", "Deployment readiness"],
+  },
 });
 
 export default function ArticlePage() {
   return <main>
+    <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Insights", path: "/insights" }, { name: title, path: "/insights/canada-needs-physical-ai-integrators" }])} />
     <JsonLd data={{
       "@context": "https://schema.org",
       "@type": "Article",
       headline: title,
       description,
-      datePublished: "2026-07-01",
-      dateModified: "2026-07-30",
+      datePublished,
+      dateModified,
       author: {
         "@type": "Organization",
         name: "FlyPig AI",
         url: siteUrl,
       },
       publisher: { "@id": `${siteUrl}/#organization` },
+      image: { "@type": "ImageObject", url: articleImage, width: 1200, height: 630 },
       mainEntityOfPage: `${siteUrl}/insights/canada-needs-physical-ai-integrators`,
       articleSection: "Physical AI in Canada",
+      citation: sources.map((source) => source.url),
       inLanguage: "en-CA",
     }} />
     <SiteHeader />
@@ -39,7 +57,7 @@ export default function ArticlePage() {
         <p className="eyebrow">Physical AI in Canada · Essay 01</p>
         <h1>Canada Doesn't Need Another Robot Company. It Needs Physical AI Integrators.</h1>
         <p className="article-deck">Why the next opportunity is not simply building—or importing—more machines, but turning robotics, edge intelligence and human workflows into reliable operations.</p>
-        <div className="article-meta"><span>FlyPig AI Insights</span><span>July 2026</span><span>Analysis</span></div>
+        <div className="article-meta"><span>By FlyPig AI Insights</span><span>Published <time dateTime={datePublished}>July 1, 2026</time></span><span>Updated <time dateTime={dateModified}>August 29, 2026</time></span><span>Analysis</span></div>
       </header>
 
       <div className="article-lead-card"><span className="mono">Core thesis</span><p>As robot hardware becomes more available, the scarce capability shifts to deployment: identifying the right task, integrating the system, managing local constraints and keeping it useful after the pilot.</p></div>
@@ -79,7 +97,7 @@ export default function ArticlePage() {
         <p>As more machines become available, the winners may not be the companies with the most dramatic demonstrations. They may be the ones that can repeatedly turn a real task into a safe, supportable and economically defensible deployment.</p>
       </div>
 
-      <aside className="source-note"><p className="eyebrow">Editorial note</p><p>This essay presents FlyPig AI's market thesis based on public company, institutional and deployment information. It is analysis rather than an independently audited market forecast. Specific deployment decisions require direct technical, commercial, regulatory and safety assessment.</p><div className="source-links"><a href="/atlas/methodology">Atlas methodology →</a><a href="/about">About FlyPig AI →</a><a href="/contact">Discuss a market question →</a></div></aside>
+      <aside className="source-note"><p className="eyebrow">Editorial note</p><p>This essay presents FlyPig AI's market thesis based on public institutional and ecosystem information. It is analysis rather than an independently audited market forecast. Specific deployment decisions require direct technical, commercial, regulatory and safety assessment.</p><h2>Sources and further verification</h2><ul>{sources.map((source) => <li key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.name} ↗</a></li>)}</ul><div className="source-links"><a href="/atlas/methodology">Atlas methodology →</a><a href="/about">About FlyPig AI →</a><a href="/contact">Discuss a market question →</a></div></aside>
 
       <div className="article-cta"><div><p className="eyebrow">Bring us an operational problem</p><h2>Start with the task—not the robot.</h2></div><a className="pill primary" href="/services/canadian-product-teams">Review technology qualification</a></div>
     </article>

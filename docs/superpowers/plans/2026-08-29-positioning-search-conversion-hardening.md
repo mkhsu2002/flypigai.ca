@@ -105,11 +105,11 @@
 - Modify: `app/sitemap.ts`
 - Modify: `scripts/audit-exported-site.mjs`
 
-- [ ] Write a failing export-audit test requiring Article image, published/modified Open Graph metadata, BreadcrumbList and visible exact dates.
-- [ ] Extend Insight records with source/citation data and a truthful revision date.
-- [ ] Pass the Article metadata object into `makeMetadata` and emit a default owned image.
-- [ ] Add visible breadcrumb, organization byline, exact dates, source list and contextual owner-page links.
-- [ ] Use each Insight's actual `dateModified` in the sitemap.
+- [x] Write a failing export-audit test requiring Article image, published/modified Open Graph metadata, BreadcrumbList and visible exact dates.
+- [x] Extend Insight records with source/citation data and a truthful revision date.
+- [x] Pass the Article metadata object into `makeMetadata` and emit a default owned image.
+- [x] Add visible breadcrumb, organization byline, exact dates, source list and contextual owner-page links.
+- [x] Use each Insight's actual `dateModified` in the sitemap.
 
 ### Task 8: IndexNow and search release tooling
 

@@ -5,6 +5,7 @@ export type InsightGuide = {
   description: string;
   datePublished: string;
   dateModified: string;
+  sources: Array<{ name: string; url: string }>;
   answer: string;
   sections: Array<{
     heading: string;
@@ -15,6 +16,13 @@ export type InsightGuide = {
   ctaHref: string;
 };
 
+const sensitiveTechnologySource = { name: "Government of Canada — Sensitive Technology List: Robotics and Autonomous Systems", url: "https://www.canada.ca/en/services/defence/nationalsecurity/sensitive-technology-list.html" };
+const advancedManufacturingSource = { name: "National Research Council Canada — Advanced manufacturing initiative", url: "https://nrc.canada.ca/en/research-development/research-collaboration/programs/advanced-manufacturing-initiative" };
+const clusterSource = { name: "National Research Council Canada — Cluster Support programs", url: "https://nrc.canada.ca/en/research-development/research-collaboration/programs/cluster-support-programs" };
+const nrcCapabilitiesSource = { name: "National Research Council Canada — Advanced manufacturing capabilities", url: "https://nrc.canada.ca/en/research-development/research-collaboration/programs/nrc-capabilities-advanced-manufacturing" };
+const droneRulesSource = { name: "Transport Canada — Flying your drone safely and legally", url: "https://tc.canada.ca/en/aviation/drone-safety/learn-rules-you-fly-your-drone/flying-your-drone-safely-legally" };
+const droneChangesSource = { name: "Transport Canada — 2025 summary of changes to Canada's drone regulations", url: "https://tc.canada.ca/en/aviation/drone-safety/2025-summary-changes-canada-drone-regulations" };
+
 export const insightGuides: InsightGuide[] = [
   {
     slug: "canada-robotics-market-entry-guide",
@@ -22,7 +30,8 @@ export const insightGuides: InsightGuide[] = [
     title: "Canada Robotics Market Entry Guide",
     description: "A practical guide for robotics, drone and Physical AI companies evaluating Canadian market entry, channels, pilots and commercialization.",
     datePublished: "2026-07-30",
-    dateModified: "2026-07-30",
+    dateModified: "2026-08-29",
+    sources: [sensitiveTechnologySource, advancedManufacturingSource],
     answer: "Robotics companies entering Canada should validate the use case before selecting channels: identify regulated industries, local integration requirements, support expectations, pilot economics and the partners who can turn a demonstration into repeatable operation.",
     sections: [
       {
@@ -59,7 +68,8 @@ export const insightGuides: InsightGuide[] = [
     title: "Canada Physical AI Ecosystem Overview",
     description: "How Canada's Physical AI ecosystem connects robotics companies, AI institutes, integrators, infrastructure operators and industrial adopters.",
     datePublished: "2026-07-30",
-    dateModified: "2026-07-30",
+    dateModified: "2026-08-29",
+    sources: [advancedManufacturingSource, clusterSource, sensitiveTechnologySource],
     answer: "Canada's Physical AI ecosystem is strongest when research, robotics platforms, enabling technologies, integrators and industrial operators are connected around measurable deployment problems rather than isolated technology demonstrations.",
     sections: [
       {
@@ -95,7 +105,8 @@ export const insightGuides: InsightGuide[] = [
     title: "Robotics Integrators in Canada",
     description: "Why robotics integrators matter in Canada and how manufacturers should evaluate integration, service and deployment partners.",
     datePublished: "2026-07-30",
-    dateModified: "2026-07-30",
+    dateModified: "2026-08-29",
+    sources: [nrcCapabilitiesSource, advancedManufacturingSource],
     answer: "Robotics integrators in Canada matter because buyers need systems that work inside real facilities, not just hardware demonstrations. Good partners understand controls, safety, workflow integration, maintenance and acceptance criteria.",
     sections: [
       {
@@ -131,7 +142,8 @@ export const insightGuides: InsightGuide[] = [
     title: "Drone and Autonomous Systems Market in Canada",
     description: "A market-development view of Canada's drone, UAV, autonomous inspection and uncrewed systems opportunities.",
     datePublished: "2026-07-30",
-    dateModified: "2026-07-30",
+    dateModified: "2026-08-29",
+    sources: [droneRulesSource, droneChangesSource, sensitiveTechnologySource],
     answer: "Canada's drone and autonomous systems market is shaped by infrastructure inspection, public safety, energy, mining, logistics, environmental monitoring and remote operations where distance, safety and data collection create measurable value.",
     sections: [
       {
@@ -167,7 +179,8 @@ export const insightGuides: InsightGuide[] = [
     title: "How Asian Robotics Suppliers Can Enter Canada",
     description: "A practical route-to-market framework for Asian robotics, drone, component and Physical AI suppliers entering Canada.",
     datePublished: "2026-07-30",
-    dateModified: "2026-07-30",
+    dateModified: "2026-08-29",
+    sources: [sensitiveTechnologySource, advancedManufacturingSource, droneRulesSource],
     answer: "Asian robotics suppliers entering Canada should localize proof, support and partnerships before scaling sales: validate fit, clarify compliance and service expectations, identify qualified partners and build one credible Canadian reference case.",
     sections: [
       {

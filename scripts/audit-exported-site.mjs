@@ -44,6 +44,7 @@ for (const filePath of htmlFiles) {
     .replaceAll("&#x27;", "'");
   if (!title) errors.push(`${route}: missing title`);
   const isSignalArticle = route.startsWith("/signals/");
+  const isInsightArticle = route.startsWith("/insights/");
   if (isSignalArticle && title && title.length > 65) errors.push(`${route}: title exceeds 65 characters (${title.length})`);
   if ((html.match(/<h1(?:\s|>)/g) ?? []).length !== 1) errors.push(`${route}: expected exactly one h1`);
   const canonicalTag = html.match(/<link[^>]+rel=["']canonical["'][^>]*>/i)?.[0];
@@ -78,6 +79,21 @@ for (const filePath of htmlFiles) {
       }
     }
     if (html.includes("/api/newsletter/subscribe")) errors.push(`${route}: references undeployed newsletter API`);
+  }
+  if (isInsightArticle) {
+    for (const property of ["article:published_time", "article:modified_time"]) {
+      const tag = html.match(new RegExp(`<meta[^>]+property=["']${property}["'][^>]*>`, "i"))?.[0];
+      if (!tag || !attribute(tag, "content")) errors.push(`${route}: missing ${property}`);
+    }
+    const article = structuredData.find((entry) => entry["@type"] === "Article");
+    if (!article) errors.push(`${route}: missing Article JSON-LD`);
+    else {
+      for (const field of ["image", "datePublished", "dateModified", "author", "publisher", "mainEntityOfPage", "citation"]) {
+        if (!article[field] || (Array.isArray(article[field]) && article[field].length === 0)) errors.push(`${route}: Article missing ${field}`);
+      }
+    }
+    if (!structuredData.some((entry) => entry["@type"] === "BreadcrumbList")) errors.push(`${route}: missing BreadcrumbList JSON-LD`);
+    if (!/<time[^>]+datetime=["']\d{4}-\d{2}-\d{2}["']/i.test(html)) errors.push(`${route}: missing visible exact date`);
   }
   for (const match of html.matchAll(/<(?:a|img)\b[^>]+(?:href|src)=["']([^"']+)["'][^>]*>/gi)) {
     const target = match[1];

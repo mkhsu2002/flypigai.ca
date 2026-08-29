@@ -52,9 +52,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const insightRoutes: MetadataRoute.Sitemap = insightGuides.map((guide) => ({
     url: `${baseUrl}/insights/${guide.slug}`,
+    lastModified: new Date(guide.dateModified),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
+
+  insightRoutes.unshift({
+    url: `${baseUrl}/insights/canada-needs-physical-ai-integrators`,
+    lastModified: currentEditorialRevision,
+    changeFrequency: "monthly",
+    priority: 0.75,
+  });
 
   const technologyRoutes: MetadataRoute.Sitemap = technologyOwnerTopics.map((topic) => ({
     url: `${baseUrl}/technologies/${topic.slug}`,
