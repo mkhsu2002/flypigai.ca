@@ -62,3 +62,15 @@ test("priority technology intents have complete owner pages", () => {
     assert.match(taxonomy, new RegExp(`/technologies/\\$\\{topicId\\}`));
   }
 });
+
+test("Industry Signals exposes the deployed newsletter subscription contract", () => {
+  const component = read("components/NewsletterNotice.tsx");
+  const exportAudit = read("scripts/audit-exported-site.mjs");
+
+  assert.match(component, /^"use client";/);
+  assert.match(component, /fetch\("\/api\/newsletter\/subscribe"/);
+  assert.match(component, /type="email"/);
+  assert.match(component, /consent:\s*true/);
+  assert.doesNotMatch(component, /Email delivery is being finalized/);
+  assert.doesNotMatch(exportAudit, /references undeployed newsletter API/);
+});

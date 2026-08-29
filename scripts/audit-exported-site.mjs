@@ -78,7 +78,6 @@ for (const filePath of htmlFiles) {
         if (!article[field] || (Array.isArray(article[field]) && article[field].length === 0)) errors.push(`${route}: NewsArticle missing ${field}`);
       }
     }
-    if (html.includes("/api/newsletter/subscribe")) errors.push(`${route}: references undeployed newsletter API`);
   }
   if (isInsightArticle) {
     for (const property of ["article:published_time", "article:modified_time"]) {
