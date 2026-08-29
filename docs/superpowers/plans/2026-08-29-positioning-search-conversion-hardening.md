@@ -160,10 +160,10 @@
 - [x] Store `RESEND_API_KEY`, sender, recipient and unsubscribe secrets directly in Worker secret storage; never echo values.
 - [x] Deploy dev consumer and preview Pages build; run controlled contact, subscribe, unsubscribe, duplicate and replay checks.
 - [x] Query dev D1 domain, inbox and audit state.
-- [ ] Deploy the same reviewed code/migration set to production only after dev passes.
+- [x] Deploy the same reviewed code/migration set to production only after dev passes.
 - [x] Confirm the provider key exists in Worker secret storage; keep the frontend launch notice until the dev contract passes.
 
-**Activation status (2026-08-29):** dev and production Worker secrets are provisioned, Pages preview and Worker consumer bindings are active, and controlled dev checks passed for contact delivery, subscription, duplicate suppression, signed unsubscribe, provider failure, protected replay and hashed D1 audit. Production remains gated until the same revision is deployed consumer-first and passes public live readback.
+**Activation status (2026-08-29):** dev and production are active on the same reviewed code and migrated schema. Controlled checks passed for contact delivery, subscription, duplicate suppression, signed unsubscribe, provider failure, protected replay and hashed D1 audit. The provider key now exists only on the consumer Workers; Pages retains only the environment-matched unsubscribe secret.
 
 ### Task 11: Full verification and release
 
@@ -174,7 +174,7 @@
 - [x] Run `npm test` and require zero failures.
 - [x] Run `npm run validate:content`, `npm run typecheck`, `npm run build`, `npm run audit:export`, `npm audit --omit=dev` and `git diff --check`.
 - [x] Inspect the task checklist, staged diff and generated-output status.
-- [ ] Commit coherent changes, merge to `main`, push `origin/main` and wait for the matching Pages deployment.
-- [ ] Read back `/`, `/services`, both audience pages, three technology pages, `/physical-ai`, representative Insights, sitemap, redirects and raw `/zh` language.
+- [x] Commit coherent changes, merge to `main`, push `origin/main` and wait for the matching Pages deployment.
+- [x] Read back `/`, `/services`, both audience pages, three technology pages, `/physical-ai`, representative Insights, sitemap, redirects and raw `/zh` language.
 - [ ] Submit changed canonical URLs through IndexNow only when a securely injected key is available.
-- [ ] Mark backend tasks complete only when deployed schema, functions, bindings, secret names, live behavior and D1 audit all agree.
+- [x] Mark backend tasks complete only when deployed schema, functions, bindings, secret names, live behavior and D1 audit all agree.
