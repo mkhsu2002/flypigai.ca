@@ -1,6 +1,9 @@
 {
   "styleApproved": true,
-  "sourceSheetTab": "新品事件庫",
+  "sourceSheetTabs": [
+    "新品事件庫",
+    "加拿大 Industry Signals 事件庫"
+  ],
   "publicLanguage": "en-CA",
   "editorialMode": "independent industry reporter",
   "publishOnlyReviewedRows": true,
@@ -11,5 +14,5 @@
   "mediumRiskAction": "highlight",
   "articleFooter": "source-disclosure-plus-newsletter-cta",
   "auditPolicyFile": "automation/industry-signals-audit-policy.json",
-  "notes": "Publish eligible Industry Signals directly to main only after source verification and the pre-publish risk audit. High-risk articles must be marked publicationStatus=hold and must not be publicly rendered until reviewed. Medium-risk findings may publish only when uncertainty and attribution are explicit. Routine low-risk articles do not require PR review."
+  "notes": "Publish eligible Industry Signals from either approved source tab directly to main only after source verification and the pre-publish risk audit. High-risk articles must be marked publicationStatus=hold and must not be publicly rendered until reviewed. Medium-risk findings may publish only when uncertainty and attribution are explicit. Routine low-risk articles do not require PR review."
 }
