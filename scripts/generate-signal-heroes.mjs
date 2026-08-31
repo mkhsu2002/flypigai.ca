@@ -11,6 +11,7 @@ const args = Object.fromEntries(process.argv.slice(2).map((argument) => {
 }));
 const start = Number(args.start ?? 0);
 const limit = Number(args.limit ?? 6);
+const missingOnly = args.missing === "true";
 if (!Number.isInteger(start) || start < 0) throw new Error("--start must be a non-negative integer");
 if (!Number.isInteger(limit) || limit < 1 || limit > 6) throw new Error("--limit must be an integer from 1 to 6");
 
@@ -25,8 +26,21 @@ const signals = fs.readdirSync(contentDirectory)
   .filter((fileName) => fileName.endsWith(".json"))
   .sort()
   .map((fileName) => JSON.parse(fs.readFileSync(path.join(contentDirectory, fileName), "utf8")));
-const batch = signals.slice(start, start + limit);
-if (!batch.length) throw new Error(`No records found at --start=${start}`);
+
+function hasCompleteArtwork(signal) {
+  return [
+    path.join(sourceDirectory, `${signal.slug}.svg`),
+    path.join(sourceDirectory, `${signal.slug}-social.svg`),
+    path.join(imageDirectory, `${signal.slug}.png`),
+    path.join(socialDirectory, `${signal.slug}.png`),
+  ].every((filePath) => fs.existsSync(filePath));
+}
+
+const batch = missingOnly ? signals.filter((signal) => !hasCompleteArtwork(signal)) : signals.slice(start, start + limit);
+if (!batch.length) {
+  console.log(missingOnly ? "All Industry Signal artwork is already present." : `No records found at --start=${start}`);
+  process.exit(0);
+}
 
 function escapeXml(value) {
   return String(value).replace(/[<>&'\"]/g, (character) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;" })[character]);
@@ -119,4 +133,4 @@ for (const signal of batch) {
   console.log(`${signal.slug}: hero 1600x1000, social 1200x630`);
 }
 
-console.log(`Generated and verified batch of ${batch.length} Signals (start ${start}).`);
+console.log(`Generated and verified ${batch.length} Signal artwork set${batch.length === 1 ? "" : "s"}${missingOnly ? " that were missing" : ` (start ${start})`}.`);
