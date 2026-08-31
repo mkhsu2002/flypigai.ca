@@ -1,0 +1,34 @@
+{
+  "version": "1.0",
+  "scope": "content/industry-signals/*.json",
+  "purpose": "Post-generation and recurring audit for factual reliability, source integrity, misleading claims, IP/media rights, trademark confusion and regulatory exposure.",
+  "riskLevels": {
+    "low": "Claims are supported by official sources, uncertainty is preserved, media rights are documented and no misleading commercial implication is created.",
+    "medium": "Potential ambiguity, source conflict, vendor-only performance claim, incomplete availability data or other issue that can remain public only with explicit attribution and uncertainty.",
+    "high": "Material unsupported factual claim, false availability/price/partnership/customer/benchmark claim, source fabrication or broken provenance, materially misleading impression, unauthorized media use, trademark/affiliation confusion, copied press-release language beyond reasonable quotation, or another issue likely to create legal/reputational exposure."
+  },
+  "requiredChecks": [
+    "Primary source URL resolves to the supplier, platform owner, regulator or other authoritative first-party source.",
+    "Event date, product identity, specifications and announced status match the reviewed official source.",
+    "Roadmap, preview, demonstration, sample and production status are not collapsed into current availability.",
+    "Pricing, MOQ, lead time, partnerships, customers, shipment status, benchmarks and commercial claims are never invented.",
+    "Vendor performance figures are attributed and not presented as independent benchmark results.",
+    "Material conflicts between official pages are surfaced as unresolved rather than silently reconciled.",
+    "Headline, dek, summary and overall general impression do not imply authorization, endorsement or a commercial relationship with the supplier.",
+    "Article language is original reporting and analysis rather than close press-release paraphrase.",
+    "Hero and social media rights evidence is present and consistent with the declared asset-rights status.",
+    "Source disclosure, editorial independence statement and corrections path remain publicly rendered."
+  ],
+  "actions": {
+    "low": "Keep publicationStatus=published or leave it unset. Record audit metadata when the audit is performed.",
+    "medium": "Keep public only if attribution and uncertainty are explicit. Record audit.action=highlight and notify only when editorial correction is advisable.",
+    "high": "Set publicationStatus=hold immediately, record audit.action=hold with concise findings, and notify the owner with the affected eventId, slug, risk reason and recommended correction."
+  },
+  "recheckTriggers": [
+    "new or modified Industry Signal article",
+    "official source becomes unavailable or materially changes",
+    "supplier issues a correction, specification revision or availability update",
+    "media-rights evidence becomes invalid",
+    "material reader or supplier dispute is received"
+  ]
+}
