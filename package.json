@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "npm run validate:content && next build",
     "postbuild": "node scripts/postprocess-static-html.mjs",
-    "validate:content": "node scripts/validate-signal-content.mjs",
+    "validate:content": "node scripts/generate-signal-heroes.mjs --missing=true && node scripts/validate-signal-content.mjs",
     "generate:brand": "node scripts/generate-brand-assets.mjs",
     "generate:signals": "node scripts/generate-signal-heroes.mjs",
     "audit:export": "node scripts/audit-exported-site.mjs",
