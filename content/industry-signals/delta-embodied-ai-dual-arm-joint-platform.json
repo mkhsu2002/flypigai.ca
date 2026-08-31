@@ -1,0 +1,95 @@
+{
+  "eventId": "EVT-2026-0023",
+  "slug": "delta-embodied-ai-dual-arm-joint-platform",
+  "sourcePublishedAt": "2026-08-24",
+  "publishedAt": "2026-08-31",
+  "modifiedAt": "2026-08-31",
+  "supplier": "Delta Electronics",
+  "category": "Embodied AI · Robotics Control",
+  "title": "Delta Pushes Physical AI Down the Stack With Dual-Arm Control and Humanoid Joint Modules",
+  "seoTitle": "Delta Extends Physical AI Into Robot Control and Joints",
+  "socialTitle": "Delta Extends Physical AI Into Robot Joints",
+  "seoDescription": "Delta's Automation Taipei platform links embodied AI software, dual-arm control and torque-sensing joints, extending Taiwan's robotics stack beyond compute.",
+  "dek": "Delta used Automation Taipei 2026 to show an embodied-AI dual-arm platform, a robot-control software layer and compact humanoid joint modules with integrated torque sensing.",
+  "summary": "The important signal is vertical expansion. Taiwan's Physical AI supply base is not stopping at processors and embedded computers: Delta is publicly connecting AI models, robot-control software, motion hardware and force feedback in one platform. That creates a potentially useful design route for robotics teams, but it is not yet evidence that the joint modules or software are catalog products with confirmed sample or volume availability.",
+  "keyFacts": [
+    "Embodied AI dual-arm platform",
+    "AI robot control software",
+    "Torque-sensing joint module"
+  ],
+  "whyItMatters": [
+    "For a Physical AI product, the hard integration boundary often sits below the AI model: motion control, actuator response, force sensing and safety behaviour can determine whether an otherwise capable perception stack becomes a usable machine.",
+    "Delta's public demonstration suggests a path in which a Taiwan supplier can contribute more of the robot-control and actuation stack rather than only power electronics or an embedded compute box.",
+    "The announcement remains a platform and exhibition signal. FlyPig has not found public part numbers, pricing, MOQ, sample terms or a confirmed production schedule for the humanoid joint module, so design-in readiness still requires direct qualification."
+  ],
+  "reporting": [
+    {
+      "heading": "The signal moves below compute into control and actuation",
+      "paragraphs": [
+        "At Automation Taipei 2026, Delta presented an embodied-AI dual-arm platform alongside an AI robot-control software platform. The company also highlighted a humanoid joint module described as highly integrated, lightweight, compact and high-torque, with a patented torque-sensing capability for measuring external force and contact torque.",
+        "That combination matters more than any single specification. A robot architecture has to connect perception and planning to deterministic motion, actuator limits and physical contact. By showing software, dual-arm coordination and joint hardware together, Delta is signaling that its robotics ambition extends into the control loop itself rather than ending at conventional industrial automation components."
+      ]
+    },
+    {
+      "heading": "For product teams, force feedback changes the design conversation",
+      "paragraphs": [
+        "Torque sensing can be strategically important in collaborative manipulation, compliant motion and contact-rich tasks because the controller needs a credible view of what the mechanism is experiencing. For service robots, light industrial manipulators and other embodied systems, that can influence grasping, collision response, force limiting and task quality.",
+        "But a useful design decision needs far more than a statement that a joint includes torque sensing. Engineers still need continuous and peak torque curves, speed, thermal limits, backlash, encoder architecture, communication interfaces, control bandwidth, safety functions, calibration requirements and expected lifetime. None of those should be inferred from the exhibition description."
+      ]
+    },
+    {
+      "heading": "The commercial question is whether the platform becomes modular",
+      "paragraphs": [
+        "If Delta offers the joint modules and robot-control layer as independently integrable building blocks, Canadian robotics developers could evaluate a broader Taiwan design route that spans power, motion, sensing and control. That could reduce the number of vendors needed for an early prototype and may shorten integration work where the interfaces are already engineered together.",
+        "If the technology remains primarily an internal demonstration or a tightly bundled automation solution, the opportunity is different. The next step is therefore not to compare headline specifications with another robot joint; it is to establish what Delta will actually expose to external OEMs, including SDK or API boundaries, controller requirements, simulation tools, samples, engineering support and lifecycle commitments."
+      ]
+    }
+  ],
+  "flypigTake": "This is a more important Physical AI signal than another incremental TOPS increase. Delta is showing that Taiwan's robotics stack can reach from AI and control software into force-aware joint hardware. The opportunity becomes commercially meaningful only if those layers are available as documented design-in building blocks, so the next research task is interface and supply qualification rather than performance hype.",
+  "productStatus": "Delta publicly demonstrated the embodied-AI dual-arm platform, AI robot-control software and humanoid joint module at Automation Taipei 2026. The official material establishes the platform direction, but public part numbers, sample status, MOQ, pricing and mass-production timing for the humanoid joint module were not confirmed in the sources reviewed by FlyPig AI.",
+  "openQuestions": [
+    "What joint-module SKUs, continuous and peak torque curves, speed ranges, thermal limits, encoder architecture and communication interfaces will Delta make available to external OEMs?",
+    "Will the AI robot-control software expose documented SDKs, APIs, simulation interfaces and safety functions that can be integrated with third-party perception and planning stacks?",
+    "What are the sample, engineering-support, lifecycle, MOQ and production terms for teams evaluating the joint and control platform outside Delta's own automation systems?"
+  ],
+  "canadaRelevance": "Canadian robotics teams working on service robots, industrial manipulation, autonomous equipment or other contact-rich Physical AI systems may benefit from a Taiwan route that combines motion hardware and control intelligence. The near-term value is architectural optionality; procurement relevance depends on whether Delta exposes the platform as modular, supported components for external design-in.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "primax-aisf-delivery-robot-commercialization",
+    "advantech-igx-thor-edge-ai-systems"
+  ],
+  "relatedTechnologies": [
+    "Embodied AI",
+    "Robotics Control",
+    "Torque Sensing",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "Delta Electronics official Automation Taipei 2026 announcement",
+  "sourceUrl": "https://www.deltaww.com/zh-TW/press/41068",
+  "additionalSources": [
+    {
+      "name": "Delta Automation Taipei 2026 preview",
+      "url": "https://www.deltaww.com/en-US/press/41064"
+    }
+  ],
+  "sourceNote": "FlyPig AI verified the platform direction against Delta's official Automation Taipei coverage. The reporting treats the joint module and control software as demonstrated technologies, not as proof of catalog availability, volume production or an external OEM supply agreement.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/delta-embodied-ai-dual-arm-joint-platform.png",
+    "socialSrc": "/images/signals/og/delta-embodied-ai-dual-arm-joint-platform.png",
+    "alt": "FlyPig AI infographic on Delta's embodied AI dual-arm platform, robot-control software and torque-sensing humanoid joint module.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.deltaww.com/zh-TW/press/41068",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/delta-embodied-ai-dual-arm-joint-platform.svg"
+    }
+  }
+}
