@@ -1,0 +1,90 @@
+{
+  "eventId": "EVT-2026-0022",
+  "slug": "advantech-jetson-orin-nano-2-support-plan",
+  "sourcePublishedAt": "2026-08-25",
+  "publishedAt": "2026-08-31",
+  "modifiedAt": "2026-08-31",
+  "supplier": "Advantech",
+  "category": "NVIDIA Jetson · Edge AI Roadmap",
+  "title": "Advantech Puts NVIDIA Jetson Orin Nano 2 on Its Edge AI Systems Roadmap",
+  "seoTitle": "Advantech Plans Support for NVIDIA Jetson Orin Nano 2",
+  "socialTitle": "Jetson Orin Nano 2 Enters Advantech Roadmap",
+  "seoDescription": "Advantech plans Jetson Orin Nano 2 support after NVIDIA's expected 2027 launch, giving robotics and vision teams an early edge AI migration signal.",
+  "dek": "Advantech says it plans to bring NVIDIA Jetson Orin Nano 2 into several industrial edge systems after NVIDIA's expected platform launch in the first half of 2027.",
+  "summary": "This is a roadmap signal rather than a procurement event. Advantech is telling product teams where its Jetson-based system portfolio intends to go before the module is commercially available, which can matter for architectures being frozen today for 2027 deployment. The useful question is not whether 78 TOPS sounds attractive, but whether the new module will preserve the carrier, thermal, software and certification assumptions behind an existing Orin Nano design.",
+  "keyFacts": [
+    "Up to 78 TOPS",
+    "8GB · 8-core Arm CPU",
+    "Support planned after launch"
+  ],
+  "whyItMatters": [
+    "Advantech's announcement gives OEMs an early migration signal across existing Jetson-based industrial systems instead of forcing teams to wait for the module launch before considering a next-generation entry platform.",
+    "NVIDIA and Advantech position the platform as delivering substantially higher inference throughput within a 40W power envelope, but system designers still need workload-specific evidence because TOPS and vendor comparison claims do not predict sustained application performance.",
+    "The platform is not yet a shipping Advantech product path. NVIDIA's launch is expected in the first half of 2027, so sample timing, JetPack support, carrier compatibility, pricing and final system SKUs remain unresolved."
+  ],
+  "reporting": [
+    {
+      "heading": "Advantech is publishing the migration path before the module ships",
+      "paragraphs": [
+        "Advantech announced plans to expand its industrial edge AI portfolio with NVIDIA Jetson Orin Nano 2 and named existing system families including MIC-711-ON, MIC-713-ON, AIR-021, DS-015 and EPC-R7400 as targets for future support. The company states that this support is planned after NVIDIA's expected platform launch in the first half of 2027.",
+        "For product planning, that timing distinction matters. A team selecting hardware in late 2026 may care about whether a current Orin Nano system gives it a credible upgrade route, even if the next module cannot yet be sampled. That can affect carrier-board investment, enclosure design and software architecture before a purchase order is possible."
+      ]
+    },
+    {
+      "heading": "The 40W envelope is both the attraction and the constraint",
+      "paragraphs": [
+        "Advantech cites up to 78 TOPS, 8GB of memory and an eight-core Arm CPU for Jetson Orin Nano 2. It also repeats NVIDIA's comparison that the new platform can deliver roughly twice the inference performance of Jetson Orin Nano Super at a 40W envelope, with lower power at equivalent performance levels.",
+        "Those are vendor platform claims, not a substitute for application benchmarks. A mobile robot or compact vision system must still budget sustained power, heat rejection, memory capacity and bandwidth, sensor I/O and duty cycle. Forty watts may be manageable in a powered industrial enclosure while remaining consequential in a battery-operated robot."
+      ]
+    },
+    {
+      "heading": "Compatibility will decide whether the roadmap actually reduces redesign work",
+      "paragraphs": [
+        "Advantech's installed system families create the possibility of a lower-friction upgrade path, but the announcement does not establish drop-in compatibility. Product teams need final information on module pin compatibility, carrier revisions, power delivery, thermal hardware, JetPack versions, camera and peripheral support, secure boot, lifecycle commitments and regulatory implications.",
+        "That makes the commercial value conditional. If current Advantech platforms can move to Orin Nano 2 with limited mechanical and electrical changes, the roadmap could protect engineering investment. If major carrier or enclosure changes are required, teams should treat it as a new design branch rather than an upgrade."
+      ]
+    }
+  ],
+  "flypigTake": "Treat Jetson Orin Nano 2 as an architecture-planning signal, not a sourcing recommendation. Advantech has given developers useful visibility into its intended system roadmap, but the decision value will come from compatibility and sustained workload data after NVIDIA releases the platform. Until then, freezing a product around unverified drop-in assumptions would be premature.",
+  "productStatus": "Advantech has announced planned support, not immediate availability. Its official announcement says NVIDIA is expected to launch Jetson Orin Nano 2 in the first half of 2027 and that Advantech plans to bring support to its industrial systems after that launch. Final Advantech SKUs, samples, pricing and production dates are not confirmed in the reviewed source.",
+  "openQuestions": [
+    "Will Jetson Orin Nano 2 be electrically and mechanically compatible with the carrier boards used by Advantech's current Orin Nano systems, or will system revisions be required?",
+    "Which JetPack release, Jetson Agent Skills, camera stacks and security features will be production-supported when Advantech ships its implementations?",
+    "What sustained power, thermal throttling, memory-bandwidth and application-level inference results will the final systems deliver under representative robotics and multi-camera workloads?"
+  ],
+  "canadaRelevance": "Canadian robotics, autonomous-systems and machine-vision teams planning 2027 hardware can use the announcement to evaluate whether an Advantech Jetson path offers lifecycle continuity. It is particularly relevant to teams trying to preserve current carrier and software investments, but those savings remain hypothetical until final compatibility and availability are documented.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "advantech-igx-thor-edge-ai-systems",
+    "advantech-jetpack-7-2-multicamera-validation"
+  ],
+  "relatedTechnologies": [
+    "NVIDIA Jetson",
+    "Edge AI",
+    "Robotics",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "Advantech official Jetson Orin Nano 2 roadmap announcement",
+  "sourceUrl": "https://www.advantech.com/en-eu/resources/news/advantech-expands-its-edge-ai-systems-portfolio-with-nvidia-jetson-orin-nano-2-to-redefine-entry-level-edge-ai-performance",
+  "sourceProductUrl": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+  "sourceNote": "FlyPig AI independently analyzes Advantech's roadmap announcement and preserves its future-tense status. Performance comparisons are vendor-stated platform claims; FlyPig does not treat them as independent application benchmarks or proof of current product availability.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/advantech-jetson-orin-nano-2-support-plan.png",
+    "socialSrc": "/images/signals/og/advantech-jetson-orin-nano-2-support-plan.png",
+    "alt": "FlyPig AI infographic on Advantech's planned NVIDIA Jetson Orin Nano 2 support, highlighting 78 TOPS, 8GB memory and roadmap status.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.advantech.com/en-eu/resources/news/advantech-expands-its-edge-ai-systems-portfolio-with-nvidia-jetson-orin-nano-2-to-redefine-entry-level-edge-ai-performance",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/advantech-jetson-orin-nano-2-support-plan.svg"
+    }
+  }
+}
