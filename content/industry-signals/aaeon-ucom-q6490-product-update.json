@@ -1,0 +1,96 @@
+{
+  "eventId": "EVT-2026-0024",
+  "slug": "aaeon-ucom-q6490-product-update",
+  "sourcePublishedAt": "2026-08-27",
+  "publishedAt": "2026-08-31",
+  "modifiedAt": "2026-08-31",
+  "supplier": "AAEON",
+  "category": "SMARC · Qualcomm Edge AI",
+  "title": "AAEON's August uCOM-Q6490 Update Moves Its QCS6490 SMARC Path Closer to Design-In",
+  "seoTitle": "AAEON uCOM-Q6490 Moves From Preview Toward Design-In",
+  "socialTitle": "AAEON uCOM-Q6490 Moves Toward Design-In",
+  "seoDescription": "AAEON's August uCOM-Q6490 update advances its Qualcomm QCS6490 SMARC module beyond the March preview, while key supply and I/O questions remain.",
+  "dek": "AAEON has promoted uCOM-Q6490 through a formal August product update, adding commercial maturity to a Qualcomm QCS6490 SMARC module first shown publicly in March.",
+  "summary": "The new information is not a different processor or a second module. It is a product-maturity event. AAEON's uCOM-Q6490 has moved from an Embedded World introduction into the company's current product-update stream with a more complete design-in story. That makes it more relevant for real architecture comparisons, but it also raises a practical warning: specifications that evolve between preview and product-update stages must be re-verified before a carrier board is frozen.",
+  "keyFacts": [
+    "August 27 product update",
+    "QCS6490 · SMARC module",
+    "Supply terms unconfirmed"
+  ],
+  "whyItMatters": [
+    "A formal product update is a meaningful maturity signal because engineering teams can begin comparing a module as a supported design route rather than treating it only as an exhibition preview.",
+    "The same Qualcomm QCS6490 family is now available to compare across Taiwan module ecosystems, including AAEON's SMARC approach and Advantech's OSM approach, making module standard, software support and carrier strategy as important as the headline NPU figure.",
+    "FlyPig still does not treat the update as proof of mass-production availability. Public pricing, MOQ, lead time, sample status and some interface details remain items for direct vendor confirmation."
+  ],
+  "reporting": [
+    {
+      "heading": "The change is commercial maturity, not a new silicon announcement",
+      "paragraphs": [
+        "AAEON first showed uCOM-Q6490 at Embedded World 2026 in March as a SMARC implementation of Qualcomm Dragonwing QCS6490. On August 27, AAEON Solutions elevated the module into its current Product Update stream, describing it as the company's first SMARC module based on Qualcomm technology.",
+        "That distinction matters for a design-intelligence workflow. Preview announcements are useful for technology scouting, but product updates are more relevant when an OEM is deciding whether to spend engineering time on a carrier board, BSP evaluation and thermal design. The August event therefore deserves its own record even though the underlying module family was already known."
+      ]
+    },
+    {
+      "heading": "SMARC versus OSM is becoming a real QCS6490 architecture choice",
+      "paragraphs": [
+        "AAEON's module gives QCS6490 another standardized route into embedded products. For a Canadian OEM, that creates a useful comparison with Advantech's AOM-2721, which packages the same processor family in an OSM form factor and has separately advanced its Ubuntu support story.",
+        "The decision should not be reduced to TOPS. A connectorized SMARC module can favour serviceability, carrier reuse and platform migration, while a solder-down OSM module can favour compactness and mechanical robustness. Software image maturity, camera support, thermal behaviour, lifecycle terms and carrier-board availability may ultimately outweigh the form-factor preference."
+      ]
+    },
+    {
+      "heading": "Specification drift is a design-in risk that needs explicit reconciliation",
+      "paragraphs": [
+        "AAEON's newer public material is more detailed than the March launch context, but engineering teams should not assume every early interface statement remains unchanged. FlyPig's source sheet specifically flags differences between earlier camera-interface expectations and the current product listing, as well as newer power and software details that need measurement context.",
+        "The right response is not to guess which page is authoritative. Before schematic freeze, a buyer should request the current controlled datasheet, ordering code, carrier-board documentation and BSP matrix directly from AAEON. That is especially important for camera-heavy robotics and vision products, where an interface change can force a substantial redesign."
+      ]
+    }
+  ],
+  "flypigTake": "This is exactly why a design-intelligence layer should track product state, not just product names. uCOM-Q6490 is more credible as a design-in candidate than it was at the March preview, yet the maturity update also exposes the need to reconcile current I/O, power and software assumptions. The next useful comparison is AAEON SMARC versus Advantech OSM on the same QCS6490 family, with current vendor documents in hand.",
+  "productStatus": "AAEON Solutions lists uCOM-Q6490 as an August 27, 2026 Product Update and provides an active product path for inquiry. FlyPig did not find a public statement in the reviewed sources confirming inventory, MOQ, lead time or volume-production status, so those commercial terms remain unverified.",
+  "openQuestions": [
+    "What is the current controlled interface specification for camera connectivity, PCIe and other high-speed I/O, and how does it differ from the March preview material?",
+    "Under what test conditions are the current power figures specified, and what thermal solution is required for sustained CPU, GPU and NPU workloads?",
+    "Which Qualcomm Linux, QNN or other AI SDK releases, carrier boards, sample configurations, MOQ and lifecycle commitments are production-supported today?"
+  ],
+  "canadaRelevance": "Canadian OEMs evaluating low-power robotics, HMI, machine-vision or intelligent-device platforms now have a more mature QCS6490 SMARC route to compare against OSM and custom-board alternatives. The value is strongest for teams that want modular lifecycle flexibility, provided the current camera, BSP and supply details survive direct qualification.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-ucom-q6490-smarc-qcs6490",
+    "advantech-aom-2721-ubuntu-qcs6490"
+  ],
+  "relatedTechnologies": [
+    "SMARC",
+    "Qualcomm QCS6490",
+    "Edge AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "AAEON Solutions official uCOM-Q6490 Product Update",
+  "sourceUrl": "https://solutions.aaeon.com/meet-the-ucom-q6490-scalable-qualcomm-dragonwing-performance-in-smarc-module-form/",
+  "sourceProductUrl": "https://www.aaeon.com/en/product/detail/computing_on_module_ucom-q6490/package_content",
+  "additionalSources": [
+    {
+      "name": "AAEON Embedded World 2026 introduction",
+      "url": "https://www.aaeon.com/en/news/detail/embedded_world_2026_news_aaeon"
+    }
+  ],
+  "sourceNote": "FlyPig AI treats this as a product-maturity update to the previously reported uCOM-Q6490, not as a second new module. Current supply status and any specification differences between preview and production-oriented material require direct confirmation with AAEON.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-ucom-q6490-product-update.png",
+    "socialSrc": "/images/signals/og/aaeon-ucom-q6490-product-update.png",
+    "alt": "FlyPig AI infographic on AAEON's August uCOM-Q6490 product update, highlighting Qualcomm QCS6490, SMARC and unresolved supply questions.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://solutions.aaeon.com/meet-the-ucom-q6490-scalable-qualcomm-dragonwing-performance-in-smarc-module-form/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-ucom-q6490-product-update.svg"
+    }
+  }
+}
