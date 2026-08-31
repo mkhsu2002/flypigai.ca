@@ -4,6 +4,13 @@ import path from "node:path";
 export type IndustrySignal = {
   eventId: string;
   slug: string;
+  publicationStatus?: "published" | "hold";
+  audit?: {
+    riskLevel: "low" | "medium" | "high";
+    reviewedAt: string;
+    findings: string[];
+    action: "none" | "highlight" | "hold";
+  };
   sourcePublishedAt: string;
   publishedAt: string;
   modifiedAt: string;
@@ -68,6 +75,7 @@ export function getIndustrySignals(): IndustrySignal[] {
     .readdirSync(signalsDirectory)
     .filter((fileName) => fileName.endsWith(".json"))
     .map(readSignalFile)
+    .filter((signal) => signal.publicationStatus !== "hold")
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.sourcePublishedAt.localeCompare(a.sourcePublishedAt));
 }
 
