@@ -1,0 +1,90 @@
+{
+  "eventId": "EVT-2026-0025",
+  "slug": "ibase-aa400-n-fanless-edge-ai",
+  "sourcePublishedAt": "2026-08-27",
+  "publishedAt": "2026-08-31",
+  "modifiedAt": "2026-08-31",
+  "supplier": "IBASE Technology",
+  "category": "x86 Edge AI · AMD Ryzen Embedded",
+  "title": "IBASE AA400-N Pairs Ryzen Embedded 8000 With a Memory-Heavy Fanless Edge AI Design",
+  "seoTitle": "IBASE AA400-N Adds Ryzen Embedded 8000 to Edge AI",
+  "socialTitle": "IBASE AA400-N Adds Ryzen Embedded Edge AI",
+  "seoDescription": "IBASE's AA400-N combines Ryzen Embedded 8000, XDNA NPU and up to 256GB DDR5 in a fanless edge AI PC, opening a memory-rich x86 design route.",
+  "dek": "IBASE has introduced the AA400-N, a fanless x86 edge AI computer using AMD Ryzen Embedded 8000 processors with an XDNA NPU and unusually high host-memory capacity.",
+  "summary": "AA400-N creates a different edge-AI design route from Jetson or low-power Arm modules. IBASE combines CPU, RDNA 3 graphics and an XDNA NPU with up to 256GB of DDR5, standard x86 operating systems and expansion for storage, cellular connectivity and capture hardware. That combination can be attractive when a workload values memory capacity, software familiarity and mixed CPU/GPU/NPU execution, but the vendor's 39 TOPS figure alone does not establish application performance.",
+  "keyFacts": [
+    "Ryzen Embedded 8000",
+    "XDNA NPU · 39 TOPS",
+    "Up to 256GB DDR5"
+  ],
+  "whyItMatters": [
+    "Up to 256GB of system memory gives the AA400-N a different constraint profile from compact accelerator modules, potentially helping edge applications that keep large models, indexes, video buffers or multiple services resident on the same machine.",
+    "The x86 platform can reduce software friction for teams already deploying Windows or Ubuntu applications, while the integrated NPU and RDNA 3 graphics provide additional local acceleration paths without requiring a discrete GPU.",
+    "IBASE publishes ordering information and an inquiry path, but public stock, MOQ and lead time are not established. The company's own current pages also show inconsistent enclosure dimensions, so mechanical data should be reconciled before design freeze."
+  ],
+  "reporting": [
+    {
+      "heading": "The interesting specification is memory capacity, not just TOPS",
+      "paragraphs": [
+        "IBASE introduced AA400-N on August 27 as a fanless edge AI computer based on AMD Ryzen Embedded 8000 Series processors, including 8840U and 8640U options. The platform combines CPU, RDNA 3 graphics and AMD's XDNA NPU, which IBASE lists at 39 TOPS, with dual-channel DDR5-5600 memory supporting up to 256GB.",
+        "That memory ceiling is strategically more interesting than another isolated accelerator number. Edge systems increasingly run several workloads at once: vision pipelines, local databases, vector search, orchestration services and smaller language or vision-language models. A memory-rich x86 box may therefore fit applications where model residency and general-purpose compute matter more than maximizing accelerator density per watt."
+      ]
+    },
+    {
+      "heading": "A familiar x86 software stack can be a commercial advantage",
+      "paragraphs": [
+        "IBASE lists Windows 11 and Ubuntu 22.04 support, along with 2.5GbE, PCIe Gen4 NVMe storage and M.2 options for 5G or LTE, Wi-Fi, Bluetooth or capture cards. For system integrators, those are conventional interfaces that can make the platform easier to insert into existing industrial software and peripheral ecosystems.",
+        "The trade-off is that integrated acceleration only creates value when the application stack can use it. Product teams need to confirm the supported AMD AI runtime, model conversion path, framework versions and whether the NPU, GPU or CPU will actually execute the target workloads. A published TOPS figure does not answer those software questions."
+      ]
+    },
+    {
+      "heading": "Mechanical and sustained-performance details need reconciliation",
+      "paragraphs": [
+        "IBASE's announcement and current localized product pages do not present one consistent enclosure dimension. The English product page reviewed by FlyPig lists a different geometry from the launch news and some localized pages. That may reflect a page-update issue, a chassis revision or a publishing inconsistency, but it should not be guessed away.",
+        "For a fanless system, the final enclosure and thermal path directly affect sustained CPU, GPU and NPU behaviour. Before specifying AA400-N into a machine, engineers should obtain the current mechanical drawing, controlled datasheet, thermal test conditions, supported memory configurations and exact ordering code. Those details matter more than nominal peak AI throughput in a deployed cabinet or robot."
+      ]
+    }
+  ],
+  "flypigTake": "AA400-N is worth tracking because it offers a memory-rich x86 alternative to accelerator-centric edge boxes. The combination of Ryzen Embedded, up to 256GB DDR5 and fanless packaging could suit fixed-power industrial AI, vision and local model-serving workloads. The open question is whether the XDNA software path and sustained thermals make that theoretical flexibility useful in a real application, so FlyPig would qualify runtime support and mechanical data before comparing it against Jetson or discrete-accelerator systems.",
+  "productStatus": "IBASE has an active AA400-N product page with ordering information and a product-inquiry path. The reviewed public sources do not establish current inventory, MOQ or lead time. FlyPig also found inconsistent enclosure dimensions across IBASE's current pages, so mechanical specifications require direct confirmation before design-in.",
+  "openQuestions": [
+    "Which AMD XDNA runtime, framework versions and model formats are validated on IBASE's Ubuntu 22.04 image, and what workloads can use the NPU rather than falling back to CPU or GPU?",
+    "What sustained package power, chassis temperature and throttling behaviour should integrators expect when CPU, GPU and NPU workloads run concurrently in the fanless enclosure?",
+    "Which enclosure dimensions and mechanical drawing are current, and what memory modules, cellular cards and capture devices are qualified for the production ordering codes?"
+  ],
+  "canadaRelevance": "Canadian industrial automation, machine-vision, smart-retail and autonomous-equipment teams may find AA400-N useful when they need a conventional x86 software environment, large local memory and fanless operation. It is best treated as a design-route alternative rather than a direct Jetson substitute because its acceleration model, power profile and software ecosystem are fundamentally different.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-mix-q870a1-mini-itx-edge-ai",
+    "dfi-arh171-arh173-core-ultra-mini-itx"
+  ],
+  "relatedTechnologies": [
+    "x86 Edge AI",
+    "AMD Ryzen Embedded",
+    "Local AI",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "IBASE Technology official AA400-N announcement",
+  "sourceUrl": "https://www.ibase.com.tw/en/news/category/2026/Ultra-Compact_AA400-N_Edge_AI_Computer_with_39_TOPS_AI_Performance",
+  "sourceProductUrl": "https://www.ibase.com.tw/en/product/category/Edge_AI_Intelligent_System/AI_Computing_Platform/Edge_AI_Computer/AA400-N",
+  "sourceNote": "FlyPig AI independently analyzes IBASE's official launch and product information. The 39 TOPS figure is reported as a vendor specification, not an independent benchmark. Stock, MOQ, lead time, sustained workload performance and the current mechanical dimensions remain items for direct qualification.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/ibase-aa400-n-fanless-edge-ai.png",
+    "socialSrc": "/images/signals/og/ibase-aa400-n-fanless-edge-ai.png",
+    "alt": "FlyPig AI infographic on the IBASE AA400-N fanless edge AI computer, highlighting Ryzen Embedded 8000, XDNA NPU and 256GB DDR5 support.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.ibase.com.tw/en/news/category/2026/Ultra-Compact_AA400-N_Edge_AI_Computer_with_39_TOPS_AI_Performance",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/ibase-aa400-n-fanless-edge-ai.svg"
+    }
+  }
+}
