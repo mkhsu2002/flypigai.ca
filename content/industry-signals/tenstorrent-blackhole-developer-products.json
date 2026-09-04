@@ -1,0 +1,110 @@
+{
+  "eventId": "CA-2025-0004",
+  "slug": "tenstorrent-blackhole-developer-products",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "low",
+    "reviewedAt": "2026-09-04",
+    "findings": [
+      "Tenstorrent's April 3, 2025 first-party announcement confirms the Blackhole developer-product launch, the p100 and p150 accelerator cards, the TT-QuietBox workstation, 6nm Blackhole card update and launch-date order availability.",
+      "Availability language is scoped to the April 2025 announcement. Tenstorrent's current hardware page still lists Blackhole cards but reflects an evolved product lineup, so current configurations are not retroactively attributed to the launch event.",
+      "The article does not repeat vendor performance or scalability claims as independent benchmark results and does not infer current pricing, MOQ, lead time, shipment volume, customer adoption or production scale from the launch announcement.",
+      "Taiwan relevance is presented only as capability-level overlap in board and system integration, memory, power delivery, thermal management, connectors and ODM manufacturing. No Taiwan supplier, design win, purchase order or manufacturing relationship is asserted.",
+      "No Tenstorrent press image or third-party media is reused. The hero and social visual are generated as FlyPig AI-owned editorial infographics with reproducible editable-source evidence."
+    ],
+    "action": "none"
+  },
+  "sourcePublishedAt": "2025-04-03",
+  "publishedAt": "2026-09-04",
+  "modifiedAt": "2026-09-04",
+  "supplier": "Tenstorrent",
+  "category": "Canada · AI Hardware",
+  "title": "Tenstorrent Opens Blackhole Developer Hardware for Order",
+  "seoTitle": "Tenstorrent Blackhole Developer Hardware Opens for Order",
+  "socialTitle": "Tenstorrent Opens Blackhole to Developers",
+  "seoDescription": "Tenstorrent opened Blackhole p100, p150 and TT-QuietBox developer hardware for order in April 2025, moving its next AI architecture into developer access.",
+  "dek": "The Toronto-headquartered AI compute company moved Blackhole from architecture development into purchasable developer hardware, an early commercialization step that exposed a broader system-level supply-chain surface.",
+  "summary": "On April 3, 2025, Tenstorrent launched its Blackhole developer products at Tenstorrent Dev Day in San Francisco and said the new hardware was available for order. The launch included the Blackhole p100 and p150 PCIe accelerator cards and a liquid-cooled TT-QuietBox workstation built around four Blackhole processors. Tenstorrent also introduced a Developer Hub and linked the hardware to its open-source software stack. For Industry Signals, the important change is not a performance headline. It is the move from a next-generation architecture under development into hardware developers could actually acquire and begin integrating. The announcement did not establish volume production, customer deployments, supplier awards or a Taiwan sourcing relationship.",
+  "keyFacts": [
+    "p100 + p150 orderable",
+    "TT-QuietBox launched",
+    "6nm Blackhole cards"
+  ],
+  "whyItMatters": [
+    "Developer-order availability is a meaningful commercialization threshold because it lets software teams, system integrators and prospective customers begin real hardware evaluation instead of relying only on architecture disclosures or pre-silicon roadmaps.",
+    "A PCIe accelerator card and a multi-processor workstation create a wider hardware ecosystem than the chip alone, touching host systems, board design, memory, power delivery, cooling, high-speed connectivity, enclosure engineering and manufacturing integration.",
+    "For Taiwan's electronics ecosystem, the overlap is credible at the capability level across board and system integration, memory, power, thermal, connectors and ODM manufacturing, but Tenstorrent did not identify Taiwan suppliers or external component awards in the reviewed launch materials."
+  ],
+  "reporting": [
+    {
+      "heading": "Blackhole crossed from architecture work into developer access",
+      "paragraphs": [
+        "Tenstorrent's April 3, 2025 Dev Day announcement marked a concrete status change for Blackhole. The company introduced the p100 and p150 developer cards and the TT-QuietBox workstation and stated that the products were available for order. That matters because orderability is different from a roadmap reveal or a controlled demonstration: outside developers could begin acquiring hardware, bringing up software and evaluating how the architecture behaves inside real host systems.",
+        "The launch announcement described the Blackhole PCIe cards as updated to a 6nm manufacturing process with a faster Network-on-Chip, higher memory density and additional integrated RISC-V cores. It also differentiated the p100 as a single-processor card without Ethernet and the p150 as a network-capable product offered in multiple cooling configurations. FlyPig AI treats those as vendor product specifications from the launch, not as independent performance validation."
+      ]
+    },
+    {
+      "heading": "The software layer made the hardware more than a board launch",
+      "paragraphs": [
+        "Tenstorrent paired the hardware release with a Developer Hub for model support, tutorials, bounties and developer resources. The company also said the Blackhole cards and TT-QuietBox were supported by its open-source software stack, including TT-Forge, TT-NN, TT-Metalium and TT-LLK. That combination is commercially relevant because a new accelerator is difficult to evaluate on silicon specifications alone; developers need compilers, kernels, libraries, debugging tools and model support before a platform can move into broader design consideration.",
+        "For North American buyers, the April 2025 signal was therefore an ecosystem-opening event rather than proof of production deployment. The reviewed source does not state shipment volume, broad customer adoption, production cluster deployment or enterprise design wins. Those are later maturity questions and should not be collapsed into the developer-product launch."
+      ]
+    },
+    {
+      "heading": "Canada gains a hardware platform, while Taiwan remains a capability hypothesis",
+      "paragraphs": [
+        "Tenstorrent is headquartered in Toronto even though the Dev Day launch took place in San Francisco. That makes Blackhole commercially significant to Canada's AI-hardware sector: a Canadian-headquartered company was putting its own accelerator architecture into purchasable developer systems rather than participating only through software, research or cloud services. It also creates a useful benchmark for how Canadian AI compute companies may progress from chip architecture to boards, workstations and eventually larger systems.",
+        "For Taiwan, the most defensible intersection is at the system-manufacturing layer. Accelerator cards and multi-processor workstations require board engineering, memory, power delivery, thermal hardware, connectors, mechanical integration and manufacturing capacity, all areas where Taiwan has deep industry capability. The launch source, however, does not disclose a board manufacturer, ODM, memory supplier, power supplier, thermal partner or assembly geography. The appropriate conclusion is that a supply-chain surface exists, not that a cross-border commercial relationship has been confirmed."
+      ]
+    },
+    {
+      "heading": "The procurement questions start after developer availability",
+      "paragraphs": [
+        "Opening a product for order answers the first commercial question, but not the questions that matter to a component or manufacturing supplier. The launch materials do not disclose forecast volumes, lifecycle commitments, qualification requirements, contract manufacturers, regional fulfilment structure, bill-of-material ownership, sourcing policy, MOQ or lead times. They also do not clarify which subsystems are designed internally by Tenstorrent and which may be open to external partners.",
+        "Those missing details define the real design-in window. A future supplier signal would be stronger if Tenstorrent names manufacturing partners, expands qualified system configurations, publishes subsystem requirements, announces volume-production status or identifies customers deploying Blackhole-based systems. Until then, the April 2025 event is best read as the moment Blackhole became accessible developer hardware and began generating evidence that could support later commercial scale."
+      ]
+    }
+  ],
+  "flypigTake": "Blackhole's April 2025 launch is important because it converted a Canadian AI architecture into hardware developers could order and integrate. That is the point where software maturity, host compatibility, thermals, power, networking and manufacturability begin to matter together. For Taiwan, this is a credible capability intersection but not yet a deal signal. The next high-value evidence would be named manufacturing relationships, production-volume milestones, qualified system partners or procurement disclosures that reveal where external suppliers can enter the stack.",
+  "productStatus": "At the April 3, 2025 launch, Tenstorrent stated that Blackhole p100 and p150 cards and the TT-QuietBox workstation were available for order. The reviewed launch announcement does not establish volume-production scale, shipment volume, enterprise customer deployments, MOQ, lead time or supplier assignments. Tenstorrent's current hardware pages show that the Blackhole product family has continued to evolve, so present-day configurations and availability should be checked separately rather than assumed from the 2025 launch record.",
+  "openQuestions": [
+    "Which board, memory, power-delivery, cooling, connector and system-integration components are designed or sourced externally across Blackhole cards and workstations?",
+    "Has Tenstorrent qualified any Taiwan-based ODM, board, memory, power or thermal suppliers for Blackhole products, and if so at what product or production stage?",
+    "What production-volume, lifecycle-support and lead-time commitments apply as Blackhole moves from developer hardware into larger commercial deployments?"
+  ],
+  "canadaRelevance": "Tenstorrent is headquartered in Toronto and is one of Canada's most visible AI-compute hardware companies. Blackhole developer availability demonstrated a Canadian-headquartered company moving proprietary AI silicon into orderable cards and workstations, strengthening the country's position in the physical compute layer of the AI stack rather than only in software and research.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "advantech-igx-thor-edge-ai-systems",
+    "winbond-cube-w77t-edge-ai-memory-security"
+  ],
+  "relatedTechnologies": [
+    "AI Accelerators",
+    "RISC-V",
+    "AI Workstations",
+    "System Integration"
+  ],
+  "corrections": [],
+  "sourceName": "Tenstorrent official April 3, 2025 Blackhole developer-product announcement",
+  "sourceUrl": "https://tenstorrent.com/en/newsroom/tenstorrent-launches-blackhole-developer-products-at-tenstorrent-dev-day",
+  "sourceProductUrl": "https://tenstorrent.com/en/hardware/cards",
+  "sourceNote": "Tenstorrent's April 3, 2025 announcement is the authoritative source for the launch event and states that the p100, p150 and TT-QuietBox developer products were available for order at that time. The current Tenstorrent hardware page reflects a later, evolved Blackhole card lineup. FlyPig AI therefore preserves the 2025 launch status without inferring current pricing, unchanged specifications, shipment volume, MOQ, lead time, customer adoption, Taiwan sourcing or production scale.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/tenstorrent-blackhole-developer-products.png",
+    "socialSrc": "/images/signals/og/tenstorrent-blackhole-developer-products.png",
+    "alt": "FlyPig AI infographic showing Tenstorrent's Blackhole developer launch with p100 and p150 cards, TT-QuietBox and order availability.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://tenstorrent.com/en/newsroom/tenstorrent-launches-blackhole-developer-products-at-tenstorrent-dev-day",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/tenstorrent-blackhole-developer-products.svg"
+    }
+  }
+}
