@@ -56,6 +56,11 @@ export default async function SignalArticlePage({ params }: PageProps) {
   const authorUrl = absoluteUrl(signal.author.url);
   const articleUrl = `${siteUrl}/signals/${signal.slug}`;
   const citations = [signal.sourceUrl, signal.sourceProductUrl, ...(signal.additionalSources ?? []).map((source) => source.url)].filter(Boolean);
+  const isCanadaSignal = signal.category.startsWith("Canada ·");
+  const regionLabel = isCanadaSignal ? "Canada Industry Signal" : "Taiwan Industry Signal";
+  const newsletterHeading = isCanadaSignal
+    ? "Follow Canada’s Physical AI, autonomous systems and advanced-manufacturing signals before they reach mainstream procurement."
+    : "Follow Taiwan’s Edge AI and Physical AI ecosystem before it reaches the mainstream.";
 
   return <main>
     <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Industry Signals", path: "/signals" }, { name: signal.seoTitle, path: `/signals/${signal.slug}` }])} />
@@ -84,7 +89,7 @@ export default async function SignalArticlePage({ params }: PageProps) {
     <article className="shell article-shell">
       <nav className="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/signals">Industry Signals</a><span>/</span><span aria-current="page">{signal.supplier}</span></nav>
       <header className="article-header">
-        <p className="eyebrow">Taiwan Industry Signal · {signal.category}</p>
+        <p className="eyebrow">{regionLabel} · {signal.category}</p>
         <h1>{signal.title}</h1>
         <p className="article-deck">{signal.dek}</p>
         <div className="article-meta"><span>Published by FlyPig AI {formatDate(signal.publishedAt)}</span>{signal.modifiedAt !== signal.publishedAt ? <span>Updated {formatDate(signal.modifiedAt)}</span> : null}<span>Source dated {formatDate(signal.sourcePublishedAt)}</span><span>{signal.supplier}</span><span>{signal.eventId}</span><a href={signal.author.url}>Reported by {signal.author.name}</a></div>
@@ -129,7 +134,7 @@ export default async function SignalArticlePage({ params }: PageProps) {
 
       <aside className="corrections-note"><strong>Updates and corrections</strong>{signal.corrections.length ? <ul>{signal.corrections.map((correction) => <li key={`${correction.date}-${correction.note}`}>{formatDate(correction.date)} — {correction.note}</li>)}</ul> : <p>No material corrections are recorded. See our <a href="/editorial-policy">editorial and corrections policy</a>.</p>}</aside>
 
-      <section className="article-cta newsletter-article-cta"><div><p className="eyebrow">FlyPig Industry Signals</p><h2>Follow Taiwan’s Edge AI and Physical AI ecosystem before it reaches the mainstream.</h2></div><NewsletterNotice /></section>
+      <section className="article-cta newsletter-article-cta"><div><p className="eyebrow">FlyPig Industry Signals</p><h2>{newsletterHeading}</h2></div><NewsletterNotice /></section>
     </article>
     <SiteFooter />
   </main>;
