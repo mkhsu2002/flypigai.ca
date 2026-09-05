@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-09-05",
+  "scope": {
+    "existingCollectors": [
+      "Taiwan Industry Signals",
+      "Canada Physical AI Atlas and Canada-facing monitoring"
+    ],
+    "supplementalCollector": "Global Strategic Signals only: developments with material implications for the Physical AI stack, platform control points or FlyPig predictions.",
+    "deduplication": "Do not create a duplicate global item when an event is already represented by a Taiwan or Canada signal. Link the existing evidence record instead."
+  },
+  "evidence": [
+    {
+      "id": "PAI-EV-2026-0001",
+      "date": "2026-05-05",
+      "geography": "global",
+      "category": "reference-robot",
+      "subject": "NVIDIA Isaac GR00T Reference Humanoid Robot",
+      "sourceType": "official",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design",
+      "summary": "NVIDIA announced an open reference humanoid design combining Unitree H2 Plus, Sharpa hands, Jetson Thor and the Isaac GR00T software stack.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "strong"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series"
+    },
+    {
+      "id": "PAI-EV-2026-0002",
+      "date": "2026-08-25",
+      "geography": "taiwan",
+      "category": "edge-ai-platform",
+      "subject": "MediaTek MT8875 integrated 5G and edge AI platform",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/mediatek-mt8875-5g-iot-genai",
+      "summary": "Existing Taiwan Industry Signal records increasing integration of connectivity, local inference, camera processing and application compute into a single platform.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0003",
+      "date": "2026-08-19",
+      "geography": "taiwan",
+      "category": "robotics-commercialization",
+      "subject": "Primax AI sensor fusion and delivery robot commercialization",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/primax-aisf-delivery-robot-commercialization",
+      "summary": "Existing Taiwan Industry Signal records Primax spanning sensing, edge compute and complete delivery-robot systems, with Japan and Korea trials and a supplier-planned 2027 rollout.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "weak"},
+        {"predictionId": "FP-PAI-003", "effect": "neutral", "strength": "weak"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    }
+  ]
+}
