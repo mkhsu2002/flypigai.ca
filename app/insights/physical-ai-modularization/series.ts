@@ -12,98 +12,204 @@ export const seriesTitle = "Physical AI Goes Modular";
 export const seriesPath = "/insights/physical-ai-modularization";
 export const seriesDate = "2026-09-05";
 
-const ros = { name: "ROS — About ROS 2", url: "https://docs.ros.org/en/jazzy/The-ROS2-Project.html" };
-const nvidiaIsaac = { name: "NVIDIA — Isaac robotics platform", url: "https://developer.nvidia.com/isaac" };
-const nvidiaGroot = { name: "NVIDIA — Isaac GR00T", url: "https://developer.nvidia.com/isaac/gr00t" };
-const jetson = { name: "NVIDIA — Jetson", url: "https://developer.nvidia.com/embedded-computing" };
-const qualcomm = { name: "Qualcomm — Robotics platforms", url: "https://www.qualcomm.com/products/internet-of-things/industrial/robotics" };
-const raspberryPi = { name: "Raspberry Pi — Compute Module", url: "https://www.raspberrypi.com/products/compute-module-5/" };
-const xgo = { name: "Luwu Dynamics — XGO", url: "https://shop.xgorobot.com/" };
+const ros = { name: "ROS 2 documentation", url: "https://docs.ros.org/en/jazzy/The-ROS2-Project.html" };
+const nvidiaIsaac = { name: "NVIDIA Isaac robotics platform", url: "https://developer.nvidia.com/isaac" };
+const nvidiaGroot = { name: "NVIDIA Isaac GR00T", url: "https://developer.nvidia.com/isaac/gr00t" };
+const nvidiaReferenceRobot = { name: "NVIDIA Isaac GR00T Reference Humanoid Robot", url: "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design" };
+const jetson = { name: "NVIDIA Jetson", url: "https://developer.nvidia.com/embedded-computing" };
+const qualcomm = { name: "Qualcomm robotics platforms", url: "https://www.qualcomm.com/products/internet-of-things/industrial/robotics" };
+const raspberryPi = { name: "Raspberry Pi Compute Module 5", url: "https://www.raspberrypi.com/products/compute-module-5/" };
+const xgo = { name: "Luwu Dynamics XGO", url: "https://shop.xgorobot.com/" };
 const unitree = { name: "Unitree Robotics", url: "https://www.unitree.com/" };
+const android = { name: "Android Open Source Project", url: "https://source.android.com/" };
+const androidFaq = { name: "AOSP FAQ on open platform and compatibility", url: "https://source.android.com/docs/setup/about/faqs" };
+const mediatekReference = { name: "MediaTek smartphone reference design example", url: "https://corp.mediatek.com/news-events/press-releases/mediatek-and-omnivision-release-reference-designs-for-smartphones-with-viv-video-in-video-feature-support" };
+const mediatekTurnkey = { name: "MediaTek turnkey reference design example", url: "https://www.mediatek.com/press-room/mediatek-collaborates-with-google-to-bring-ar-and-lens-visual-search-experiences-to-mid-range-smartphones" };
 
 export const physicalAiSeries: SeriesArticle[] = [
   {
     slug: "from-reference-phones-to-reference-robots",
     number: "01",
     title: "From Reference Phones to Reference Robots",
-    description: "Why robotics may follow smartphones from vertically integrated products toward reusable compute, control and hardware reference platforms.",
-    answer: "The useful analogy is not that robots will become identical to smartphones. It is that more of the robot stack can become reusable, allowing companies to differentiate above standardized compute, control, sensing and mechanical building blocks.",
-    sources: [xgo, unitree, raspberryPi],
+    description: "Why Physical AI may repeat one of mobile computing's most important transitions: from expensive custom hardware to reusable platforms that let many companies build on top.",
+    answer: "FlyPig AI's core thesis is not that robots will become identical to smartphones. It is that Physical AI is approaching a decade in which reusable hardware, compute and software layers sharply lower the cost of building machines. History suggests that when hardware becomes widely reproducible, the most durable value often migrates toward platforms, software, applications and the workflows built on top.",
+    sources: [android, androidFaq, mediatekReference, mediatekTurnkey, xgo, unitree, nvidiaReferenceRobot],
     sections: [
-      { heading: "The smartphone lesson is modularization", body: "Smartphone scale accelerated when brands no longer had to invent every layer themselves. Chipsets, operating systems, radio modules, reference designs and contract manufacturing reduced the amount of proprietary engineering required to ship a credible device. Robotics is beginning to expose a similar possibility as compute modules, motor controllers, cameras, batteries, actuators and complete robot platforms become easier to source and integrate." },
-      { heading: "A reference robot is more than a parts kit", body: "A useful reference platform must hide difficult low-level work behind stable interfaces. Motion control, calibration, power management, sensor timing and mechanical integration need to be sufficiently solved that an application team can focus on perception, planning and the job to be done.", bullets: ["Standard compute and I/O reduce board-level reinvention.", "Stable motion APIs turn mechanics into callable capabilities.", "Documented interfaces make software portable across product generations.", "Manufacturing repeatability matters as much as prototype performance."] },
-      { heading: "XGO shows the small-scale version", body: "Desktop robots such as XGO illustrate the direction clearly: a developer can work at the Python and AI layer without first designing a quadruped drivetrain. That does not make XGO a universal reference design, but it demonstrates what happens when embodied hardware is packaged as a programmable platform." },
-      { heading: "The limit of the phone analogy", body: "Robots operate in a far less standardized physical world. Payload, reach, terrain, safety, duty cycle and manipulation requirements vary dramatically. Hardware commoditization will therefore happen by robot class and task envelope rather than through one universal body." },
+      {
+        heading: "Every new computing era begins with a question: who needs this?",
+        body: "When mobile phones first appeared, it was easy to treat them as an expensive convenience for a narrow group of users. Similar skepticism now surrounds humanoids, quadrupeds and other Physical AI systems: why does a home, warehouse, hospital or factory need one? FlyPig AI believes that is the wrong time horizon. The more useful question is what happens when hardware cost, reliability, software abstraction and developer access improve together for ten years. That is the pattern that turned mobile computing from a device category into an application economy."
+      },
+      {
+        heading: "The smartphone lesson is not the phone. It is the platform shift.",
+        body: "Android created an openly available operating-system base that device makers could customize, while chipset and reference-design vendors reduced the amount of engineering required to produce a competent handset. MediaTek's public reference-design history shows how hardware, software support and pre-integrated capabilities can shorten time to market for OEMs. The result was not one standardized phone. It was an explosion of differentiated products built on increasingly standardized foundations."
+      },
+      {
+        heading: "Physical AI is beginning to expose the same pattern",
+        body: "Robot builders can increasingly start from complete bodies, compute modules, motion controllers, perception stacks and open robotics software rather than from raw motors and custom boards. XGO demonstrates the small-scale developer version. Unitree demonstrates larger programmable quadruped and humanoid platforms. NVIDIA's 2026 Isaac GR00T Reference Humanoid Robot makes the analogy much harder to dismiss: NVIDIA explicitly combined a Unitree body, dexterous hands, Jetson Thor compute and an open GR00T software stack as a reference design for humanoid research."
+      },
+      {
+        heading: "Hardware can be valuable without being the final value pool",
+        body: "FlyPig AI does not argue that hardware companies cannot make money. Some will. The stronger historical warning is that capital-intensive hardware categories often face brutal competition once manufacturing knowledge spreads and specifications converge. Digital cameras, LCD panels and many consumer-electronics categories show how quickly technically difficult hardware can become a scale game. In that environment, the highest-leverage businesses frequently emerge above the component layer: operating systems, developer ecosystems, applications, services and proprietary user or operating data."
+      },
+      {
+        heading: "The phone analogy has a hard limit",
+        body: "Robots act in a physical world that is far less standardized than a phone screen. Payload, reach, terrain, safety, manipulation, battery life and duty cycle differ by use case. Physical AI is therefore unlikely to converge on one universal body. Modularization will happen by robot class and capability envelope. That makes the software abstraction above the body even more strategically important."
+      },
     ],
   },
   {
     slug: "who-becomes-android-for-physical-ai",
     number: "02",
     title: "Who Becomes the Android of Physical AI?",
-    description: "The missing software layer between robot hardware, foundation models and deployable physical skills.",
-    answer: "There is not yet one Android-like Physical AI operating system. ROS 2 supplies important middleware, while platforms such as NVIDIA Isaac add simulation, perception and robot-learning infrastructure. The eventual abstraction may sit above both.",
-    sources: [ros, nvidiaIsaac, nvidiaGroot],
+    description: "The defining strategic question of the series: what software layer will make heterogeneous robots programmable as a shared application platform?",
+    answer: "There is no single Android of Physical AI today. ROS 2 provides foundational middleware. NVIDIA Isaac and GR00T connect simulation, robot learning, accelerated runtime and edge deployment. The eventual Android-like layer may be neither one operating system nor one model, but a compatibility contract that lets many robot bodies expose trusted capabilities to agents and applications.",
+    sources: [android, androidFaq, ros, nvidiaIsaac, nvidiaGroot, nvidiaReferenceRobot],
     sections: [
-      { heading: "ROS is foundational, but it is not Android", body: "ROS 2 provides a widely used framework for distributed robot software, communication, packages and tooling. Its importance is closer to a robotics middleware and Linux-like ecosystem than to a consumer-ready operating environment that makes heterogeneous robots behave consistently out of the box." },
-      { heading: "A Physical AI OS needs a higher abstraction", body: "An Android-like layer would need to expose common robot capabilities while managing hardware differences beneath them.", bullets: ["Perception and sensor access", "Localization and navigation", "Manipulation and motion skills", "Model execution and planning", "Memory and task state", "Safety policies and permissions", "Fleet, updates and observability"] },
-      { heading: "NVIDIA is assembling several pieces", body: "NVIDIA's Isaac ecosystem spans simulation, accelerated robotics libraries and robot-learning infrastructure, while GR00T targets general-purpose humanoid reasoning and skills. Combined with Jetson, NVIDIA can influence both the compute substrate and the software above it. That is strategically powerful, but it does not mean the industry has already converged on a single robot OS." },
-      { heading: "The winning layer may be an interface, not a monolith", body: "Physical AI may standardize around capability contracts rather than one operating system. If different bodies can reliably advertise skills such as navigate, inspect, grasp and dock, agents can plan against those interfaces while vendors continue competing underneath." },
+      {
+        heading: "Why Android mattered",
+        body: "Android did more than provide software. It created a common platform around which OEMs, semiconductor vendors, developers and users could coordinate. A device maker could differentiate hardware without inventing an application ecosystem from zero, while developers could target a broader installed base. That combination of openness, compatibility and distribution is the benchmark for any serious Physical AI Android analogy."
+      },
+      {
+        heading: "ROS is foundational, but it is not yet Android",
+        body: "ROS 2 solves important distributed-robotics problems: communication, packages, tooling and interfaces between robot software components. It is closer to a powerful middleware and Linux-like foundation than to a consumer-ready platform that makes heterogeneous robots behave consistently out of the box. A deployed robot still requires substantial integration around safety, state, perception, task execution, fleet management and hardware-specific behavior."
+      },
+      {
+        heading: "NVIDIA is assembling more of the stack",
+        body: "Isaac spans simulation, accelerated robotics libraries and deployment infrastructure, while GR00T adds open data pipelines, a robot foundation model, middleware, runtime libraries and Jetson Thor for onboard inference and control. NVIDIA's reference humanoid design goes further by integrating a specific body, hands, compute and software stack. This is strong evidence that the market is moving toward reusable full-stack reference platforms, but it is not evidence that one winner has already emerged."
+      },
+      {
+        heading: "The real OS may be a capability contract",
+        body: "A Physical AI platform becomes strategically important when an application does not need to know how a particular robot achieves a task. Instead of commanding joints, it should be able to request capabilities such as navigate, inspect, grasp, place, dock or hand over. The platform would then manage hardware differences, permissions, safety conditions, failure states and observability underneath."
+      },
+      {
+        heading: "FlyPig's central question",
+        body: "FlyPig AI focuses on Physical AI, but not on the physical layer alone. Our core strategic question is who creates the shared software and application environment that turns millions of increasingly affordable machines into a programmable economy. The next robotics giant may not be the company with the most impressive body. It may be the company that defines how bodies, skills, agents and applications interoperate."
+      },
     ],
   },
   {
     slug: "the-qualcomm-moment-for-robotics",
     number: "03",
     title: "The Qualcomm Moment for Robotics",
-    description: "How standardized edge compute and reference platforms could shrink the engineering burden of building intelligent machines.",
-    answer: "Robotics needs repeatable compute platforms that combine AI acceleration, camera and sensor I/O, connectivity, lifecycle support and software tooling. Jetson, Qualcomm robotics platforms and lower-cost modules such as Raspberry Pi occupy different points on that emerging spectrum.",
-    sources: [jetson, qualcomm, raspberryPi],
+    description: "How standardized edge compute and supported reference platforms could reduce the cost of building intelligent machines.",
+    answer: "Physical AI needs repeatable compute platforms that combine AI acceleration, camera and sensor I/O, connectivity, lifecycle support and software tooling. Jetson, Qualcomm robotics platforms and Raspberry Pi occupy different points on that emerging spectrum. The strategic effect is larger than performance: reference compute changes who is able to build.",
+    sources: [jetson, qualcomm, raspberryPi, nvidiaReferenceRobot],
     sections: [
-      { heading: "Compute becomes a platform decision", body: "Once perception and local AI become standard robot requirements, the compute module is no longer just a CPU choice. It determines model support, camera pipelines, power, thermal design, connectivity, software portability and product lifecycle." },
-      { heading: "Different platforms serve different envelopes", body: "Jetson emphasizes accelerated AI and robotics development, Qualcomm brings mobile-derived efficiency and connectivity into robotics platforms, and Raspberry Pi offers an accessible general-purpose ecosystem for lighter workloads and prototyping. A modular market does not require one winner; it requires stable platform classes." },
-      { heading: "Reference design changes who can build", body: "When compute, BSPs, inference runtimes and peripheral interfaces arrive as a supported platform, smaller teams can spend less time assembling infrastructure. This is the robotics equivalent of moving from custom electronics toward a known application processor and reference board." },
-      { heading: "Lifecycle becomes part of the moat", body: "Industrial robots live longer than consumer phones. Long-term software support, module availability, security updates, thermal qualification and replaceability may matter more than peak benchmark performance. The platform that wins design-ins must survive production reality." },
+      {
+        heading: "Compute becomes a platform decision",
+        body: "Once perception, local inference and multimodal models become standard robot requirements, the compute module determines more than CPU performance. It shapes camera pipelines, accelerator support, power, thermal design, connectivity, tooling, security and the software that developers can reuse."
+      },
+      {
+        heading: "The important transition is from component to reference platform",
+        body: "The smartphone industry scaled when silicon vendors stopped selling only chips and increasingly supplied software, board support, reference designs and integration guidance. Robotics is moving in the same direction. Jetson emphasizes accelerated AI and robotics software, Qualcomm brings mobile-derived efficiency and connectivity, while Raspberry Pi lowers the barrier for lighter workloads and prototypes."
+      },
+      {
+        heading: "Reference platforms shrink the team required to build",
+        body: "A startup that can inherit drivers, inference runtimes, camera support and tested interfaces can spend more time on the application and less on foundational infrastructure. This does not eliminate systems engineering. It changes the minimum viable organization needed to bring a credible robot product to market."
+      },
+      {
+        heading: "Industrial lifecycle still separates prototypes from products",
+        body: "Robots often stay in service far longer than consumer phones. Long-term module availability, security updates, thermal qualification, replaceability and support can matter more than peak AI benchmark performance. A platform becomes a true design-in standard only when it survives production reality."
+      },
+      {
+        heading: "The strategic implication",
+        body: "As edge compute becomes easier to source, compute itself becomes less of a reason for every robotics company to reinvent the stack. That pushes competitive energy upward toward robot skills, domain integration, operating data and application economics."
+      },
     ],
   },
   {
     slug: "china-reference-robot-supply-chain",
     number: "04",
     title: "XGO, Unitree and the Rise of the Reference Robot Supply Chain",
-    description: "What China's increasingly productized robot platforms reveal about the path from custom machines to reusable embodied hardware.",
-    answer: "Chinese robot makers are demonstrating that increasingly capable quadruped, humanoid and desktop platforms can be sold as programmable products rather than bespoke research systems. The next step is not necessarily one generic robot, but a supply chain of reusable bodies and subsystems.",
-    sources: [xgo, unitree],
+    description: "What increasingly productized Chinese robot platforms reveal about the path from custom machines to reusable embodied hardware.",
+    answer: "XGO and Unitree show two ends of the same structural change: developers can increasingly buy programmable robot bodies instead of beginning with drivetrain, actuation and mechanical design. NVIDIA's Unitree-based reference humanoid makes the next step explicit: a body can become one layer inside a broader Physical AI reference stack.",
+    sources: [xgo, unitree, nvidiaReferenceRobot],
     sections: [
-      { heading: "Productization is the signal", body: "The important development is not any single robot specification. It is that developers can increasingly purchase complete mobile or legged platforms with documented control interfaces instead of starting from motors, reducers, batteries and mechanical design." },
-      { heading: "Desktop and full-scale platforms test different markets", body: "XGO lowers the entry barrier for education, prototyping and embodied-AI experimentation. Unitree operates at larger quadruped and humanoid scales. Together they illustrate how multiple standardized body classes can emerge rather than one universal robot form factor." },
-      { heading: "China has structural manufacturing advantages", body: "Dense electronics, motor, battery, machining and contract-manufacturing ecosystems can shorten iteration cycles and reduce hardware cost. But global deployment still depends on documentation, safety, cybersecurity, certification, serviceability and local support. Cheap hardware alone does not create a trusted platform." },
-      { heading: "The strategic question moves upward", body: "As bodies become easier to procure, differentiation moves toward software, task reliability, integration and ownership of the customer workflow. Hardware remains difficult, but fewer application companies will need to own every hardware problem themselves." },
+      {
+        heading: "Productization is the signal",
+        body: "The important development is not any single robot specification. It is that developers can increasingly purchase complete mobile, legged and humanoid platforms with control interfaces and supported compute paths rather than starting with motors, reducers, batteries and mechanical design."
+      },
+      {
+        heading: "Desktop and full-scale platforms test different markets",
+        body: "XGO lowers the entry barrier for education, prototyping and embodied-AI experimentation. Unitree operates at larger quadruped and humanoid scales. They should not be treated as equivalent products, but together they show how multiple standardized body classes can emerge."
+      },
+      {
+        heading: "The reference-design threshold has now been crossed",
+        body: "In May 2026 NVIDIA announced an open humanoid reference design built around a Unitree H2 Plus body, Sharpa hands, Jetson Thor and Isaac GR00T. That does not prove humanoid hardware has become a commodity. It does prove that a major platform company now sees value in separating the body, compute and software into a reusable reference architecture."
+      },
+      {
+        heading: "Manufacturing scale is not the same as platform trust",
+        body: "Low-cost or fast-moving hardware alone does not create a global platform. Documentation, cybersecurity, safety, certification, serviceability, spare parts and local support remain deployment constraints. A reference robot becomes strategically important only when application companies can depend on it over time."
+      },
+      {
+        heading: "Once bodies are easier to procure, the strategic question moves upward",
+        body: "The more application teams can treat the robot body as a purchasable platform, the less defensible it becomes to compete only by assembling another body. Differentiation shifts toward software, task reliability, integration, operating knowledge and ownership of the customer workflow."
+      },
     ],
   },
   {
     slug: "robot-skills-as-the-next-app-ecosystem",
     number: "05",
     title: "Robot Skills as the Next App Ecosystem",
-    description: "Why reusable physical capabilities may become the application layer that lets AI agents operate many kinds of robots.",
-    answer: "The most important abstraction may be the robot skill: a bounded, testable capability such as inspect, grasp, dock or deliver. Agents can compose skills into workflows while the skill layer absorbs robot-specific implementation details.",
-    sources: [ros, nvidiaIsaac, nvidiaGroot],
+    description: "Why reusable physical capabilities may become the layer that lets AI agents operate many kinds of robots without controlling every joint directly.",
+    answer: "The closest Physical AI equivalent to an app may be a trusted robot skill: a bounded capability such as inspect, grasp, dock or deliver with explicit inputs, outputs, operating constraints and failure states. Agents can compose those skills into workflows while the skill layer absorbs robot-specific implementation details.",
+    sources: [ros, nvidiaIsaac, nvidiaGroot, nvidiaReferenceRobot],
     sections: [
-      { heading: "An app is not the right mental model", body: "A phone app usually owns a screen and user session. A robot capability is different: it acts in a shared physical environment and must respect state, permissions, safety and hardware limits. The more useful unit may therefore be a skill with explicit inputs, outputs and operating constraints." },
-      { heading: "Skills turn embodiment into tools", body: "A higher-level agent could reason about a task without directly commanding joints.", bullets: ["navigate(location)", "inspect(asset)", "pick(object)", "place(object, location)", "dock(charger)", "report(exception)"] },
-      { heading: "Trust requires more than an API", body: "Physical skills need declared capability boundaries, confidence, failure states and safety conditions. A skill marketplace without validation could be dangerous. Certification, simulation evidence, hardware compatibility and runtime permissioning may become core platform functions." },
-      { heading: "This is where software value can compound", body: "A reliable skill can potentially be reused across customers, workflows and compatible robot bodies. That creates a path from one-off systems integration toward repeatable software IP, especially when skills are combined with domain-specific operating knowledge." },
+      {
+        heading: "An app is only a useful analogy up to a point",
+        body: "A phone app usually owns a screen and a user session. A robot capability acts in a shared physical environment, may move mass, interact with people and must obey hardware and safety constraints. The more useful software unit is therefore not a screen-based app but a skill with a defined contract."
+      },
+      {
+        heading: "Skills turn embodiment into callable tools",
+        body: "A higher-level agent should not need to command joints or servo loops. It should reason in terms of capabilities exposed by the platform.",
+        bullets: ["navigate(location)", "inspect(asset)", "pick(object)", "place(object, location)", "dock(charger)", "handover(object, person)", "report(exception)"]
+      },
+      {
+        heading: "A real skill requires trust metadata",
+        body: "Physical skills need declared hardware compatibility, confidence, failure modes, required sensing, operating envelope and safety conditions. A marketplace that distributes code without validating these boundaries would be far more dangerous than a conventional app store. Simulation evidence, runtime permissions and certification may become part of the platform itself."
+      },
+      {
+        heading: "This is where software reuse begins to compound",
+        body: "A reliable inspection or manipulation skill can potentially be reused across customers and compatible robot bodies. Reuse turns one-off integration work into software IP. The more that domain knowledge, telemetry and recovery logic are captured in the skill layer, the more difficult that layer becomes to commoditize."
+      },
+      {
+        heading: "The application economy begins when skills become portable",
+        body: "The decisive moment for Physical AI may not be when humanoids look impressive. It may be when a developer can build a useful physical workflow once and deploy it across multiple compatible machines. That is the point at which robotics starts behaving less like custom automation and more like a software platform economy."
+      },
     ],
   },
   {
     slug: "where-value-moves-in-modular-physical-ai",
     number: "06",
     title: "Where Value Moves When Physical AI Becomes Modular",
-    description: "A value-chain view of models, robot OS, compute, bodies, skills, agents and vertical applications as the stack standardizes.",
-    answer: "Modularization usually compresses margins in interchangeable layers and increases leverage at control points: compute platforms, software interfaces, reusable skills, proprietary operating data and vertical applications tied to measurable outcomes.",
-    sources: [ros, nvidiaIsaac, nvidiaGroot, jetson, qualcomm, xgo, unitree],
+    description: "A FlyPig AI value-chain thesis on models, robot OS, compute, bodies, skills, agents and vertical applications as the Physical AI stack standardizes.",
+    answer: "FlyPig AI expects Physical AI to enter a major build-out decade, but we do not assume the largest long-term profits will sit in robot hardware. As hardware layers become more reproducible, capital intensity and competition can compress differentiation. The more durable control points may form around operating platforms, reusable skills, application software, proprietary operating data and vertical workflows.",
+    sources: [android, androidFaq, ros, nvidiaIsaac, nvidiaGroot, nvidiaReferenceRobot, jetson, qualcomm, xgo, unitree],
     sections: [
-      { heading: "The stack is separating", body: "Physical AI can be viewed as a layered system: foundation models, runtime and middleware, edge compute, robot bodies, reusable skills, agents and vertical applications. Companies may integrate several layers, but the analytical value of the model is to ask where differentiation survives as adjacent layers standardize." },
-      { heading: "Commodity does not mean unimportant", body: "A standardized body or compute module can still be technically difficult and commercially large. Commoditization means buyers can compare alternatives and switch more easily. That changes bargaining power and pushes vendors to build ecosystem, support or software advantages." },
-      { heading: "Vertical context is difficult to commoditize", body: "A mine inspection workflow, warehouse exception process and healthcare assistance task have different safety, integration and operating requirements. The company that understands the job, connects the robot to existing systems and owns the feedback loop may capture more durable value than a reseller of generic hardware." },
-      { heading: "The opportunity is an intelligence and application layer", body: "For a company such as FlyPig AI, the strategically interesting position is not to manufacture another general robot. It is to understand the architecture, qualify technology routes, connect reusable robot capabilities to real operating requirements and gradually turn repeated integration knowledge into software and structured intelligence. This is a hypothesis to validate through deployments, not a claim that the layer is already won." },
+      {
+        heading: "The next decade may look like a hardware boom",
+        body: "Physical AI is likely to attract enormous capital into bodies, actuators, sensors, factories and compute. That is necessary infrastructure. But infrastructure build-out and durable economic power are not the same thing. The companies financing the first wave of machines may create the installed base on which later software and application companies build higher-margin businesses."
+      },
+      {
+        heading: "Hardware profits are possible, but hardware-only moats are fragile",
+        body: "FlyPig AI's thesis is deliberately narrower than saying hardware never makes money. Exceptional hardware companies can create strong margins through scale, brand, proprietary technology or ecosystem control. The risk appears when a category matures, supply expands and buyers can compare increasingly interchangeable alternatives. At that point capital intensity remains high while differentiation can fall."
+      },
+      {
+        heading: "The stack is separating",
+        body: "Physical AI can be viewed as a layered system: foundation models, runtime and middleware, edge compute, robot bodies, reusable skills, agents and vertical applications. A company may integrate several layers, but the analytical question is where switching costs, data advantages, developer adoption and customer workflow ownership accumulate as adjacent layers standardize."
+      },
+      {
+        heading: "Vertical context is difficult to commoditize",
+        body: "A mine inspection workflow, warehouse exception process and healthcare assistance task have different safety, integration and operating requirements. The company that understands the job, connects the robot to existing systems, captures exceptions and improves the workflow over time can build an advantage that is not easily reproduced by a generic hardware vendor."
+      },
+      {
+        heading: "FlyPig is Physical AI, but not merely physical",
+        body: "FlyPig AI is interested in robot hardware because hardware determines what is physically possible. But our longer-term focus is the intelligence layer above it: architecture selection, reusable capabilities, agent orchestration, deployment knowledge and software that turns machines into repeatable operating outcomes. We do not want to predict only which robot body wins. We want to understand who becomes the Android of Physical AI, who defines the skill layer, and which applications become the first category-defining businesses."
+      },
+      {
+        heading: "The investment question is therefore different",
+        body: "Instead of asking only which humanoid, quadruped or mobile robot will ship the most units, the more durable question may be which platform becomes the common development surface for all of them. If that layer emerges, the hardware boom will have created something more consequential than machines: a new installed base for software."
+      },
     ],
   },
 ];
