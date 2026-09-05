@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-09-05",
+  "principles": {
+    "immutableOrigin": "Never rewrite the original wording or first-published date of a prediction to fit later evidence.",
+    "evidenceStates": ["supports", "weakens", "neutral", "invalidates"],
+    "predictionStates": ["active", "strengthening", "weakening", "confirmed", "invalidated", "retired"],
+    "publicationRule": "A prediction is analysis, not fact. Public articles must label confirmed evidence, inference and FlyPig prediction separately."
+  },
+  "predictions": [
+    {
+      "id": "FP-PAI-001",
+      "firstPublished": "2026-09-05",
+      "title": "An Android-like common layer will emerge for Physical AI",
+      "originalPrediction": "As robot bodies, compute and low-level control become more modular, the industry will converge around one or more common software abstraction layers that let higher-level agents and applications operate across heterogeneous robot hardware.",
+      "status": "active",
+      "confidence": 0.65,
+      "falsifiers": [
+        "Major robot vendors remain vertically closed with no meaningful cross-platform skill or runtime portability through 2030.",
+        "Robot applications continue to require predominantly body-specific software stacks with little reusable abstraction above ROS-class middleware."
+      ]
+    },
+    {
+      "id": "FP-PAI-002",
+      "firstPublished": "2026-09-05",
+      "title": "Reference robots will lower the cost of entering Physical AI",
+      "originalPrediction": "Reference robot designs and increasingly productized robot bodies will reduce the need for application companies to design complete electromechanical systems from scratch, creating an ODM-like layer for Physical AI.",
+      "status": "strengthening",
+      "confidence": 0.75,
+      "falsifiers": [
+        "Reference designs fail to move beyond research demonstrations into repeatable developer or commercial platforms.",
+        "Mechanical, safety and task heterogeneity prevent meaningful reuse of robot bodies and subsystems."
+      ]
+    },
+    {
+      "id": "FP-PAI-003",
+      "firstPublished": "2026-09-05",
+      "title": "Long-term differentiation will migrate above increasingly modular hardware",
+      "originalPrediction": "Physical AI hardware can create large businesses, but as major hardware classes mature and become more comparable, a growing share of durable differentiation will move toward runtime platforms, reusable skills, applications, workflow integration and operating data.",
+      "status": "active",
+      "confidence": 0.65,
+      "falsifiers": [
+        "Hardware vendors retain most industry margin and bargaining power despite broad component and platform standardization.",
+        "Reusable skills and application software fail to achieve meaningful portability or recurring economics across robot platforms."
+      ]
+    },
+    {
+      "id": "FP-PAI-004",
+      "firstPublished": "2026-09-05",
+      "title": "Robot skills will become a reusable application primitive",
+      "originalPrediction": "Bounded capabilities such as navigate, inspect, grasp, dock and deliver will increasingly be exposed as testable, permissioned skills that higher-level agents can compose into workflows without commanding joints directly.",
+      "status": "active",
+      "confidence": 0.6,
+      "falsifiers": [
+        "End-to-end models make explicit reusable skill interfaces largely unnecessary.",
+        "Safety and embodiment differences prevent skills from becoming meaningfully reusable across platforms."
+      ]
+    }
+  ]
+}
