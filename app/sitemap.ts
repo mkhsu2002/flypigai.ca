@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getIndustrySignals } from "../lib/industrySignals";
 import { atlasCategories } from "./atlas/data";
 import { insightGuides } from "./insights/guides";
+import { physicalAiSeries, seriesDate, seriesPath } from "./insights/physical-ai-modularization/series";
 import { technologyOwnerTopics } from "./technologies/topics";
 
 const baseUrl = "https://flypigai.ca";
@@ -32,7 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ["/atlas/locations", 0.75, "monthly"], ["/zh/atlas/locations", 0.7, "monthly"],
     ["/atlas/methodology", 0.65, "monthly"], ["/zh/atlas/methodology", 0.6, "monthly"],
     ["/atlas/submit", 0.6, "monthly"], ["/zh/atlas/submit", 0.55, "monthly"],
-    ["/physical-ai", 0.75, "monthly"],
+    ["/physical-ai", 0.75, "monthly"], [seriesPath, 0.8, "monthly"],
     ["/editorial-policy", 0.6, "monthly"],
     ["/contact", 0.65, "monthly"], ["/zh/contact", 0.6, "monthly"],
     ["/privacy", 0.35, "yearly"], ["/zh/privacy", 0.3, "yearly"],
@@ -40,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const coreRoutes: MetadataRoute.Sitemap = corePaths.map(([routePath, priority, changeFrequency]) => ({
     url: `${baseUrl}${routePath}`,
-    ...(revisedCorePaths.has(routePath) ? { lastModified: currentEditorialRevision } : {}),
+    ...(routePath === seriesPath ? { lastModified: new Date(seriesDate) } : revisedCorePaths.has(routePath) ? { lastModified: currentEditorialRevision } : {}),
     changeFrequency,
     priority,
   }));
@@ -50,33 +51,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/zh/atlas/${category.slug}`, changeFrequency: "monthly" as const, priority: 0.75 },
   ]);
 
-  const insightRoutes: MetadataRoute.Sitemap = insightGuides.map((guide) => ({
-    url: `${baseUrl}/insights/${guide.slug}`,
-    lastModified: new Date(guide.dateModified),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+  const insightRoutes: MetadataRoute.Sitemap = insightGuides.map((guide) => ({ url: `${baseUrl}/insights/${guide.slug}`, lastModified: new Date(guide.dateModified), changeFrequency: "monthly" as const, priority: 0.7 }));
+  insightRoutes.unshift({ url: `${baseUrl}/insights/canada-needs-physical-ai-integrators`, lastModified: currentEditorialRevision, changeFrequency: "monthly", priority: 0.75 });
 
-  insightRoutes.unshift({
-    url: `${baseUrl}/insights/canada-needs-physical-ai-integrators`,
-    lastModified: currentEditorialRevision,
-    changeFrequency: "monthly",
-    priority: 0.75,
-  });
+  const seriesRoutes: MetadataRoute.Sitemap = physicalAiSeries.map((article) => ({ url: `${baseUrl}${seriesPath}/${article.slug}`, lastModified: new Date(seriesDate), changeFrequency: "monthly" as const, priority: 0.72 }));
 
-  const technologyRoutes: MetadataRoute.Sitemap = technologyOwnerTopics.map((topic) => ({
-    url: `${baseUrl}/technologies/${topic.slug}`,
-    lastModified: currentEditorialRevision,
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
+  const technologyRoutes: MetadataRoute.Sitemap = technologyOwnerTopics.map((topic) => ({ url: `${baseUrl}/technologies/${topic.slug}`, lastModified: currentEditorialRevision, changeFrequency: "monthly" as const, priority: 0.8 }));
+  const signalRoutes: MetadataRoute.Sitemap = getIndustrySignals().map((signal) => ({ url: `${baseUrl}/signals/${signal.slug}`, lastModified: new Date(signal.modifiedAt), changeFrequency: "monthly" as const, priority: 0.8 }));
 
-  const signalRoutes: MetadataRoute.Sitemap = getIndustrySignals().map((signal) => ({
-    url: `${baseUrl}/signals/${signal.slug}`,
-    lastModified: new Date(signal.modifiedAt),
-    changeFrequency: "monthly" as const,
-    priority: 0.8,
-  }));
-
-  return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...signalRoutes];
+  return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...seriesRoutes, ...signalRoutes];
 }
