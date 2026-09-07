@@ -1,0 +1,101 @@
+{
+  "eventId": "EVT-2026-0031",
+  "slug": "dfi-ars310-w880-q870-microatx-edge-ai",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-07",
+    "findings": [
+      "DFI's August 27 official article and current Edge AI platform page verify Intel Core Ultra 200S, up to 256GB DDR5, dual PCIe Gen5 x16, and ARS310-W880 high-speed networking.",
+      "The source sheet notes an older cached datasheet value of 192GB while current first-party pages state 256GB, indicating specification revision risk.",
+      "DFI provides a current datasheet path, but public stock, pricing, MOQ, lead time and mass-production status are not established in the reviewed pages."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-08-27",
+  "publishedAt": "2026-09-07",
+  "modifiedAt": "2026-09-07",
+  "supplier": "DFI",
+  "category": "Industrial Motherboard · Edge AI",
+  "title": "DFI ARS310 Pushes Dual Gen5 Expansion and 10GbE Into Micro-ATX Edge AI",
+  "seoTitle": "DFI ARS310 Adds Dual Gen5 and 10GbE to Micro-ATX Edge AI",
+  "socialTitle": "DFI ARS310 Expands Micro-ATX Edge AI",
+  "seoDescription": "DFI's ARS310-W880/Q870 combines Intel Core Ultra 200S, dual PCIe Gen5 x16 and high-speed networking in a Micro-ATX industrial platform.",
+  "dek": "DFI's ARS310-W880/Q870 brings Intel Core Ultra 200S, dual Gen5 accelerator expansion and workstation-class networking into an industrial Micro-ATX board.",
+  "summary": "ARS310 is a board-level response to edge systems that need more accelerator and data-movement capacity without moving to a full ATX platform. DFI's current public material lists Intel Core Ultra 200S processors, up to 256GB DDR5-5600, dual PCIe Gen5 x16, multiple M.2 interfaces and extensive industrial I/O; the W880 version adds two 10GbE and two 2.5GbE ports. A source-history issue remains: the radar captured an older 192GB datasheet value while current DFI pages say 256GB. FlyPig therefore treats memory capacity as a revision-sensitive specification that should be checked against the latest controlled datasheet before design freeze.",
+  "keyFacts": [
+    "Core Ultra 200S · Micro-ATX",
+    "2× PCIe Gen5 x16",
+    "W880 · 2×10GbE + 2×2.5GbE"
+  ],
+  "whyItMatters": [
+    "Dual Gen5 x16 slots let a compact industrial system combine high-bandwidth accelerators or vision cards while retaining additional storage and peripheral expansion.",
+    "The W880 networking configuration is relevant to multi-camera inspection, imaging and robotics systems where sensor data can overwhelm conventional 1GbE or 2.5GbE links before compute becomes the bottleneck.",
+    "DFI's retained COM, USB, SATA and remote-management interfaces make the board easier to place in industrial equipment, but the memory-spec revision shows why current controlled documentation still matters for qualification."
+  ],
+  "reporting": [
+    {
+      "heading": "The board targets bandwidth-heavy edge systems",
+      "paragraphs": [
+        "DFI describes ARS310-W880/Q870 as an industrial Micro-ATX motherboard for Intel Core Ultra 200S processors on LGA1851. Its current official article lists up to 256GB DDR5-5600 and two PCIe Gen5 x16 slots, positioning the board for machine vision, edge AI, medical imaging and other workloads that combine local compute with high-volume data movement.",
+        "The W880 configuration adds two 10GbE and two 2.5GbE ports. Storage and peripheral expansion include multiple M.2 interfaces, SATA, six COM ports and thirteen USB ports, while DFI's EXT-OOB management is intended to simplify remote maintenance of deployed systems."
+      ]
+    },
+    {
+      "heading": "Micro-ATX changes the integration trade-off",
+      "paragraphs": [
+        "A board this size can offer more accelerator and network headroom than many Mini-ITX edge systems while staying smaller than a full ATX workstation. That can be useful in inspection equipment, robotics cabinets and imaging systems where enclosure volume is limited but several high-bandwidth cards or interfaces are required.",
+        "The trade-off is system engineering. Two Gen5 slots and multiple high-speed NICs create power, cooling and signal-integrity demands that cannot be evaluated from the board headline alone. OEMs need the supported CPU list, slot electrical modes, thermal guidance, memory qualification and chassis airflow assumptions."
+      ]
+    },
+    {
+      "heading": "Current public pages say 256GB, but specification history deserves caution",
+      "paragraphs": [
+        "DFI's August 27 article and current Edge AI platform page both state support for up to 256GB DDR5. The source tracker, however, records that an older cached datasheet showed 192GB. That may reflect a memory-device qualification update or document revision, but FlyPig does not infer the cause.",
+        "For a design-in decision, the latest controlled datasheet and qualified-memory list should override cached marketing material. Public product and editorial pages also do not establish current stock, MOQ, price, lead time or mass-production volume, so those commercial questions remain open."
+      ]
+    }
+  ],
+  "flypigTake": "ARS310 is compelling where compact industrial systems are becoming bandwidth-bound rather than compute-bound. Dual Gen5 expansion, 10GbE and rich I/O give designers room to scale cameras, accelerators and storage. The caution is documentation control: the memory-capacity revision is a reminder that a current datasheet and qualified BOM should be part of the design freeze, not an afterthought.",
+  "productStatus": "DFI has published current ARS310-W880/Q870 specifications and a datasheet path, and the platform is presented as a current industrial Edge AI motherboard. The reviewed public sources do not explicitly confirm inventory, MOQ, pricing, regional lead time or mass-production volume. Current pages list 256GB DDR5, while an older cached document recorded in the radar listed 192GB.",
+  "openQuestions": [
+    "Which memory modules and BIOS revisions are qualified for the current 256GB DDR5-5600 maximum, and when did the earlier 192GB documentation change?",
+    "What are the electrical lane configurations and validated accelerator combinations for the two PCIe Gen5 x16 slots under simultaneous load?",
+    "What chassis airflow, power-delivery and lifecycle conditions does DFI recommend for sustained multi-card machine-vision or robotics deployments?"
+  ],
+  "canadaRelevance": "Canadian machine builders, vision integrators and robotics developers that need high camera bandwidth and accelerator expansion in a compact industrial chassis may find ARS310 relevant. Qualification should focus on the current memory BOM, thermal design and channel availability rather than assuming every published maximum applies to all configurations.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "dfi-arh171-arh173-core-ultra-mini-itx",
+    "aaeon-mix-q870a1-mini-itx-edge-ai"
+  ],
+  "relatedTechnologies": [
+    "Intel Core Ultra 200S",
+    "Micro-ATX",
+    "PCIe Gen5",
+    "10GbE"
+  ],
+  "corrections": [],
+  "sourceName": "DFI official ARS310 Edge AI article",
+  "sourceUrl": "https://blog.dfi.com/en/great-performance-more-expansion-dfi-ars310-built-for-high-bandwidth-edge-ai-in-micro-atx",
+  "sourceProductUrl": "https://pages.dfi.com/dfi-intel-edge-ai-computing-platforms",
+  "sourceNote": "DFI's current August 27 article and Edge AI platform page list up to 256GB DDR5. The source sheet records an older cached datasheet at 192GB, so FlyPig treats memory capacity as revision-sensitive and recommends the latest controlled datasheet and qualified-memory list. Public commercial terms and volume status remain unverified.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/dfi-ars310-w880-q870-microatx-edge-ai.png",
+    "socialSrc": "/images/signals/og/dfi-ars310-w880-q870-microatx-edge-ai.png",
+    "alt": "FlyPig AI infographic on DFI ARS310-W880/Q870 highlighting Intel Core Ultra 200S, dual PCIe Gen5 x16 and high-speed Ethernet.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://blog.dfi.com/en/great-performance-more-expansion-dfi-ars310-built-for-high-bandwidth-edge-ai-in-micro-atx",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/dfi-ars310-w880-q870-microatx-edge-ai.svg"
+    }
+  }
+}
