@@ -1,0 +1,100 @@
+{
+  "eventId": "EVT-2026-0027",
+  "slug": "auo-micro-led-cpo-glass-core-ai-infrastructure",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-07",
+    "findings": [
+      "AUO's August 31 official announcement verifies the Micro LED CPO demonstration, ecosystem contributors, 10-meter target, and glass-core substrate work for SEMICON Taiwan 2026.",
+      "Temperature, lifetime, power and suitability statements are vendor-reported development claims rather than independent performance validation.",
+      "The source describes technology development and exhibition activity; it does not establish catalog SKUs, samples, volume production, pricing or external design wins."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-08-31",
+  "publishedAt": "2026-09-07",
+  "modifiedAt": "2026-09-07",
+  "supplier": "AUO",
+  "category": "Optical Interconnect · Advanced Packaging",
+  "title": "AUO Extends Micro LED Into CPO and Glass-Core Packaging for AI Infrastructure",
+  "seoTitle": "AUO Brings Micro LED CPO and Glass-Core Packaging to AI",
+  "socialTitle": "AUO Pushes Micro LED Into AI Interconnects",
+  "seoDescription": "AUO is showing a Micro LED CPO optical module and glass-core substrate technology, extending its display-process expertise into AI infrastructure.",
+  "dek": "AUO is using Micro LED, glass processing and RDL expertise to move beyond displays into short-reach optical interconnects and glass-core packaging for AI infrastructure.",
+  "summary": "AUO's SEMICON Taiwan 2026 material is an architecture signal, not a finished-product launch. The company is developing a system-level Micro LED co-packaged-optics module with Ennostar, Tyntek, Daxin Materials and Corning, while separately advancing glass-core substrates with Corning glass and AUO redistribution-layer processing. For AI infrastructure teams, the notable change is that display-era manufacturing capabilities such as glass handling, Micro LED transfer and RDL are being repositioned for interconnect and packaging. Public supply terms, catalog part numbers and production readiness are not established.",
+  "keyFacts": [
+    "Micro LED CPO · targets up to 10 m",
+    "Ennostar · Tyntek · Daxin · Corning",
+    "Glass core substrate · AUO RDL"
+  ],
+  "whyItMatters": [
+    "Short-reach optical links are becoming a system-level power and thermal problem as AI clusters move more data between processors, memory and networking. AUO is testing whether Micro LED's parallel optical approach can become another design option for those links.",
+    "The glass-core work is strategically adjacent to advanced packaging, where dimensional stability, via formation and redistribution layers can affect large-package routing and high-speed signaling.",
+    "The announcement also shows a Taiwan supply-chain pattern in which materials, emitters, detectors, glass and integration are assembled into a module concept. Commercial value still depends on qualification data, manufacturability and whether these technologies become products available to outside system designers."
+  ],
+  "reporting": [
+    {
+      "heading": "Micro LED is being repositioned as an interconnect technology",
+      "paragraphs": [
+        "AUO says its system-level CPO concept targets high-speed links of up to 10 meters in AI data centers. The module combines Micro LED transmitters from Ennostar, micro-photodetector receivers from Tyntek, Daxin dielectric material planned for the RDL structure, and Corning optical-fiber technology, with AUO providing transfer, packaging, optical coupling and system integration.",
+        "The technical idea is a wide parallel optical architecture rather than concentrating traffic into a small number of very high-speed optical channels. AUO reports transmitter thermal stability up to 125 degrees Celsius and operating life above 30,000 hours, but those figures are supplier claims from a development announcement, not independent qualification results or proof of a production module."
+      ]
+    },
+    {
+      "heading": "Glass processing creates a second route into AI packaging",
+      "paragraphs": [
+        "Alongside the optical module, AUO and Corning are showing glass-core substrate technology that combines semiconductor-grade glass with AUO RDL processing. AUO says it is progressing work on through-glass vias, metallization and reliability validation for advanced packaging.",
+        "That direction is commercially interesting because it applies AUO's large-area glass and precision-processing capabilities to the packaging constraints of AI and HPC devices. Yet the public material remains technology-focused: it does not identify a customer-qualified substrate family, ordering code, wafer or panel size roadmap, production capacity or shipment schedule."
+      ]
+    },
+    {
+      "heading": "Qualification will decide whether the showcase becomes design-in infrastructure",
+      "paragraphs": [
+        "For a North American system designer, the next evidence should include optical link budgets, bit-error rates, connector and fiber architecture, channel density, thermal behavior, test methodology and service lifetime under representative conditions. Packaging teams also need controlled data on TGV geometry, metallization, warpage, panel size, yield and reliability.",
+        "Until those details are available, the announcement should be read as a credible capability expansion and ecosystem demonstration rather than a sourcing recommendation. The distinction matters because exhibition readiness can precede production readiness by a substantial margin."
+      ]
+    }
+  ],
+  "flypigTake": "AUO's move is noteworthy because it connects capabilities built for displays and glass processing to two bottlenecks in AI infrastructure: optical I/O and advanced packaging. The strategic logic is strong, but the commercial evidence is still early. FlyPig would track qualification data and external design-in availability before treating either the Micro LED CPO module or glass-core substrate as a production sourcing option.",
+  "productStatus": "AUO announced and exhibited development-stage Micro LED CPO and glass-core substrate technologies around SEMICON Taiwan 2026. The reviewed official source does not confirm catalog SKUs, sample programs, production volume, pricing, lead times or customer qualification. Vendor performance figures should be treated as development claims pending independent or customer validation.",
+  "openQuestions": [
+    "What optical data rate, aggregate bandwidth, bit-error rate, channel count and link-budget targets will the Micro LED CPO module support under controlled test conditions?",
+    "What are the current glass-core panel dimensions, TGV pitch, warpage limits, metallization stack, yield and reliability qualification status?",
+    "Will AUO offer the optical module and glass-core substrate as external OEM components, co-development programs or primarily internal ecosystem solutions?"
+  ],
+  "canadaRelevance": "Canadian photonics, data-center, semiconductor-packaging and AI-infrastructure teams could gain another Asia-Pacific route for short-reach optical interconnect and advanced packaging research. Near-term relevance is strongest for technology scouting and co-development; procurement relevance depends on production qualification and accessible commercial programs.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "winbond-cube-w77t-edge-ai-memory-security",
+    "advantech-igx-thor-edge-ai-systems"
+  ],
+  "relatedTechnologies": [
+    "Co-Packaged Optics",
+    "Micro LED",
+    "Glass Core Substrates",
+    "AI Infrastructure"
+  ],
+  "corrections": [],
+  "sourceName": "AUO official SEMICON Taiwan 2026 technology announcement",
+  "sourceUrl": "https://www.auo.com/en-global/New_Archive/detail/News_Archive_Product_20260831",
+  "sourceNote": "FlyPig AI reports AUO's published specifications as vendor statements and preserves the development-stage status. The official announcement establishes the exhibition and technology direction but does not confirm product ordering codes, customer qualification, sample availability, mass production or commercial terms.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/auo-micro-led-cpo-glass-core-ai-infrastructure.png",
+    "socialSrc": "/images/signals/og/auo-micro-led-cpo-glass-core-ai-infrastructure.png",
+    "alt": "FlyPig AI infographic showing AUO's Micro LED CPO optical module ecosystem and glass-core substrate direction for AI infrastructure.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.auo.com/en-global/New_Archive/detail/News_Archive_Product_20260831",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/auo-micro-led-cpo-glass-core-ai-infrastructure.svg"
+    }
+  }
+}
