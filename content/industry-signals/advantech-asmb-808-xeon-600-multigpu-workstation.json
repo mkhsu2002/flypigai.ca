@@ -1,0 +1,101 @@
+{
+  "eventId": "EVT-2026-0029",
+  "slug": "advantech-asmb-808-xeon-600-multigpu-workstation",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-07",
+    "findings": [
+      "The current Advantech news page and ASMB-808 product page verify Xeon 600 support, seven PCIe Gen5 x16 slots, up to 2TB DDR5, dual 10GbE, and the vendor's mass-production/available-for-order statement.",
+      "The source-sheet event date was September 2, while the currently accessible official news page is dated September 3; the article uses the current first-party publication date.",
+      "Availability is attributed to Advantech and is not expanded into claims about stock, regional lead time, pricing or completed customer deployments."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-03",
+  "publishedAt": "2026-09-07",
+  "modifiedAt": "2026-09-07",
+  "supplier": "Advantech",
+  "category": "AI Workstation · Multi-GPU Infrastructure",
+  "title": "Advantech ASMB-808 Brings Xeon 600 and Multi-GPU Expansion to AI Workstations",
+  "seoTitle": "Advantech ASMB-808 Adds Xeon 600 and Multi-GPU Expansion",
+  "socialTitle": "Advantech ASMB-808 Targets Multi-GPU AI Workstations",
+  "seoDescription": "Advantech's ASMB-808 pairs Intel Xeon 600 processors with seven PCIe Gen5 x16 slots and up to 2TB DDR5 for professional AI workstation designs.",
+  "dek": "Advantech has launched the ASMB-808, a CEB workstation motherboard built around Intel Xeon 600 processors, high-capacity DDR5 and unusually dense Gen5 expansion.",
+  "summary": "ASMB-808 moves Advantech's workstation platform toward a server-class memory and expansion profile without forcing system builders into a proprietary appliance. The board combines Intel Xeon 600 workstation processors, eight DDR5 slots supporting up to 2TB, seven PCIe Gen5 x16 slots, dual 10GbE and broad storage connectivity. Advantech says the board is in mass production and available for order. That makes this a real sourcing signal, although public stock, price, regional lead time and validated application performance are not established by the reviewed material.",
+  "keyFacts": [
+    "Xeon 600 · LGA4710",
+    "7× PCIe Gen5 x16",
+    "Up to 2TB DDR5"
+  ],
+  "whyItMatters": [
+    "Seven Gen5 x16 slots give workstation and edge-server builders more freedom to combine GPUs, capture cards, networking and storage accelerators without immediately moving to a larger dual-socket server architecture.",
+    "Up to 2TB of registered DDR5 can matter for memory-heavy local AI, simulation, engineering and data-preparation workloads where host-memory capacity is as important as accelerator throughput.",
+    "Advantech's explicit mass-production and order-availability statement moves the platform beyond roadmap status, but design teams still need validated GPU configurations, thermal limits, chassis constraints and regional supply terms before freezing a system."
+  ],
+  "reporting": [
+    {
+      "heading": "The design centers on expansion density rather than a single accelerator",
+      "paragraphs": [
+        "Advantech's current product page lists Intel Xeon 600 workstation processors on LGA4710, eight DDR5 slots with support up to 2TB, seven PCIe Gen5 x16 slots, dual Intel X710 10GbE, eight SATA connections and two M.2 connectors. The launch material positions the board for professional AI and compute-intensive workstation use, including configurations with multiple dual-slot GPUs.",
+        "That architecture is relevant when an OEM needs to mix accelerators and I/O rather than buy a fixed AI box. Vision systems, simulation workstations and local model-development platforms can consume PCIe lanes quickly through GPUs, frame grabbers, NVMe and high-speed networking, so slot topology and chassis design can become the limiting factors before raw CPU performance."
+      ]
+    },
+    {
+      "heading": "Mass production reduces one uncertainty but not the integration work",
+      "paragraphs": [
+        "Advantech states that ASMB-808 is currently in mass production and available for order. FlyPig treats that as a vendor availability statement, not proof of inventory in every region, quoted pricing, lead time or a completed customer deployment.",
+        "System builders still need to validate power delivery, GPU spacing, airflow, memory population rules, BIOS support and mechanical fit in the intended chassis. Advantech's own launch points to HPC-series chassis as part of the solution path, which reinforces that the motherboard should be evaluated as one component in a thermally constrained multi-GPU system."
+      ]
+    },
+    {
+      "heading": "Source-date drift should be recorded rather than hidden",
+      "paragraphs": [
+        "The Taiwan radar row captured the event as September 2, while the currently accessible Advantech news page is labeled September 3. FlyPig uses the first-party page's current publication date for the public article rather than preserving an older tracker date as if it were authoritative.",
+        "That discrepancy does not change the product claims, but it illustrates why automation should retain source provenance separately from internal discovery metadata. For design intelligence, the controlled product page and current vendor documentation matter more than a cached event timestamp."
+      ]
+    }
+  ],
+  "flypigTake": "ASMB-808 is commercially more actionable than a trade-show preview because Advantech explicitly places it in mass production and open for ordering. Its real differentiator is not an AI benchmark but the combination of Xeon-class memory capacity and dense Gen5 expansion. The next decision point is system-level validation: which GPU and I/O combinations remain stable, cool and supportable in the actual chassis.",
+  "productStatus": "Advantech's official launch says ASMB-808 is in mass production and available for order, and the active product page provides current specifications. FlyPig did not find public evidence establishing regional inventory, pricing, MOQ, lead time or customer deployment, so those commercial details require direct quotation and confirmation.",
+  "openQuestions": [
+    "Which four-GPU combinations, slot bifurcation modes and power envelopes are validated across Advantech's recommended workstation and HPC chassis?",
+    "What memory configurations and MRDIMM/RDIMM population rules are production-qualified at the advertised capacity and speed?",
+    "What are current regional lead times, lifecycle commitments, BIOS support matrices and qualification status for Intel Arc Pro and third-party GPU options?"
+  ],
+  "canadaRelevance": "Canadian AI engineering, machine-vision, simulation and private-model teams that need an expandable on-premises workstation could use ASMB-808 as a configurable alternative to fixed accelerator appliances. Its value will depend on validated system configurations and local channel availability rather than the motherboard specification alone.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "ibase-aa400-n-fanless-edge-ai",
+    "dfi-arh171-arh173-core-ultra-mini-itx"
+  ],
+  "relatedTechnologies": [
+    "Intel Xeon 600",
+    "Multi-GPU",
+    "AI Workstation",
+    "PCIe Gen5"
+  ],
+  "corrections": [],
+  "sourceName": "Advantech official ASMB-808 launch announcement",
+  "sourceUrl": "https://www.advantech.com/en-us/resources/news/advantech-launches-next-gen-ai-workstation-platform-with-intel-xeon-600",
+  "sourceProductUrl": "https://www.advantech.com/en-sg/products/0c00a1fa-42cb-44ab-9959-96290ed17d2b/asmb-808/mod_c291402b-857a-498c-a855-95b99e49f911",
+  "sourceNote": "The current official Advantech news page is dated September 3, 2026, although the source-sheet tracker recorded September 2. FlyPig uses the current first-party publication date. Mass production and availability for order are Advantech statements; stock, regional lead time, pricing and customer deployment remain unverified.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/advantech-asmb-808-xeon-600-multigpu-workstation.png",
+    "socialSrc": "/images/signals/og/advantech-asmb-808-xeon-600-multigpu-workstation.png",
+    "alt": "FlyPig AI infographic on Advantech ASMB-808 highlighting Intel Xeon 600, seven PCIe Gen5 x16 slots and up to 2TB DDR5 memory.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.advantech.com/en-us/resources/news/advantech-launches-next-gen-ai-workstation-platform-with-intel-xeon-600",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/advantech-asmb-808-xeon-600-multigpu-workstation.svg"
+    }
+  }
+}
