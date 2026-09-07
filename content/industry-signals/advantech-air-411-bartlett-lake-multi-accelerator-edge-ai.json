@@ -1,0 +1,101 @@
+{
+  "eventId": "EVT-2026-0030",
+  "slug": "advantech-air-411-bartlett-lake-multi-accelerator-edge-ai",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-07",
+    "findings": [
+      "Advantech's AIR-411 announcement verifies Intel Core 200S, a PCIe Gen4 x16 FHFL accelerator slot, the listed Intel/NVIDIA/AMD/Qualcomm accelerator options, software support, and order availability.",
+      "The official news page lists GPU support up to 300W while the active AIR-411 product page lists up to 400W/FHFL; the article does not resolve the conflict by assumption.",
+      "The page header is dated September 3 while the body dateline says September 4, so publication timing is explicitly disclosed as a source inconsistency."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-03",
+  "publishedAt": "2026-09-07",
+  "modifiedAt": "2026-09-07",
+  "supplier": "Advantech",
+  "category": "Edge AI HPC · Multi-Accelerator",
+  "title": "Advantech AIR-411 Adds Bartlett Lake-S and Broad Accelerator Choice to Compact Edge AI",
+  "seoTitle": "Advantech AIR-411 Adds Bartlett Lake-S to Compact Edge AI",
+  "socialTitle": "Advantech AIR-411 Broadens Compact Edge AI",
+  "seoDescription": "Advantech's AIR-411 combines Intel Core 200S with a full-length accelerator slot and multiple AI runtimes, but official GPU power limits conflict.",
+  "dek": "AIR-411 brings Intel Core 200S into Advantech's compact Edge AI HPC line with a full-length accelerator slot and support paths spanning Intel, NVIDIA, AMD and Qualcomm.",
+  "summary": "AIR-411 is a multi-accelerator edge system rather than a single-vendor AI appliance. Advantech pairs Intel Core 200S processors with a PCIe Gen4 x16 slot and names accelerators from Intel, NVIDIA, AMD and Qualcomm, while supporting Windows 11 IoT, Ubuntu, Edge AI SDK and WEDA. The system is now offered for ordering, but one important specification is not internally consistent: the launch announcement states support for GPUs up to 300W, while the current product page says up to 400W/FHFL. That difference should be reconciled before a thermal or power design is frozen.",
+  "keyFacts": [
+    "Core 200S · up to 24C/32T",
+    "PCIe Gen4 x16 · FHFL accelerator",
+    "Windows 11 IoT · Ubuntu 24.04"
+  ],
+  "whyItMatters": [
+    "Supporting accelerators from four silicon ecosystems can reduce platform lock-in for OEMs that need to tune cost, model compatibility, power or supply strategy without redesigning the entire host system.",
+    "The 17-liter form factor targets a useful middle ground between compact embedded boxes and rack servers for inspection, medical imaging, local LLM and multi-channel video workloads.",
+    "The unresolved 300W-versus-400W official specification is exactly the kind of integration detail that can change PSU sizing, thermals and qualified GPU choice, so it matters more to design-in than a marketing-level AI performance statement."
+  ],
+  "reporting": [
+    {
+      "heading": "AIR-411 separates the host platform from the accelerator decision",
+      "paragraphs": [
+        "Advantech's launch material specifies Intel Core 200S processors with up to 24 cores and 32 threads, a PCIe Gen4 x16 expansion slot for a full-height, full-length accelerator, and a compact 17-liter chassis. The company lists Intel Arc Pro B60, NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, AMD Radeon PRO W7900/W7800 and Qualcomm Cloud AI 100 Ultra among supported accelerator options.",
+        "That breadth is useful for industrial AI because inference stacks increasingly vary by workload and software ecosystem. A host platform that can accommodate several accelerator families may let a product team preserve cameras, storage, networking and application software while changing the compute card, provided the mechanical, driver and power boundaries are genuinely validated."
+      ]
+    },
+    {
+      "heading": "The software layer is part of the product proposition",
+      "paragraphs": [
+        "Advantech states support for Windows 11 IoT Enterprise 2024 LTSC, Ubuntu Desktop 24.04 LTS and its Edge AI SDK. It also positions WEDA as a way to manage models, data and software across distributed edge nodes.",
+        "For a fleet deployment, that operational layer can matter as much as initial inference throughput. The open question is how much of the advertised cross-accelerator flexibility carries through the actual driver, framework, model-conversion and remote-management stack for each qualified card."
+      ]
+    },
+    {
+      "heading": "Two official GPU power limits need reconciliation",
+      "paragraphs": [
+        "The launch announcement says the PCIe slot supports a full-height, full-length GPU up to 300W. The current AIR-411 product page, however, states support for high-wattage GPUs up to 400W/FHFL. FlyPig does not choose one figure without a controlled document that explains the configuration or revision difference.",
+        "That discrepancy makes the article medium risk rather than low risk, but it does not require holding publication because the conflict can be stated directly. Before design freeze, an integrator should obtain the current datasheet, PSU configuration, qualified accelerator list and thermal test conditions from Advantech."
+      ]
+    }
+  ],
+  "flypigTake": "AIR-411's strongest feature is architectural flexibility: one compact host is being positioned across several accelerator ecosystems and a managed edge software stack. But the 300W/400W conflict is not a footnote. Power and thermal limits determine which GPU can actually be sustained in a 17-liter enclosure, so FlyPig would treat the controlled configuration matrix as the deciding document before comparing AIR-411 with other edge AI HPCs.",
+  "productStatus": "Advantech's official news page says AIR-411 is available for ordering. The public source does not establish stock, MOQ, regional lead time or price. The reviewed official pages disagree on the supported GPU power ceiling, listing 300W in the launch announcement and up to 400W/FHFL on the product page; that specification requires direct vendor confirmation.",
+  "openQuestions": [
+    "Which AIR-411 chassis, PSU and thermal configurations correspond to the 300W and 400W GPU limits shown on Advantech's current official pages?",
+    "Which exact Intel, NVIDIA, AMD and Qualcomm accelerator SKUs are production-qualified with validated drivers, Edge AI SDK components and operating-system images?",
+    "What sustained acoustics, temperatures and throttling behavior should users expect during concurrent CPU, accelerator, storage and networking workloads?"
+  ],
+  "canadaRelevance": "Canadian machine-vision, medical-imaging, industrial automation and private-AI teams may value AIR-411 as a compact multi-accelerator host that can fit on-premises deployments. Its commercial usefulness depends on reconciling the power specification and confirming which accelerator/software combinations are locally supportable.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "advantech-igx-thor-edge-ai-systems",
+    "ibase-aa400-n-fanless-edge-ai"
+  ],
+  "relatedTechnologies": [
+    "Edge AI HPC",
+    "Intel Core 200S",
+    "Multi-Accelerator",
+    "WEDA"
+  ],
+  "corrections": [],
+  "sourceName": "Advantech official AIR-411 launch announcement",
+  "sourceUrl": "https://www.advantech.com/en-us/resources/news/advantech-air-411-accelerates-ai-inference-and-data-management-for-inspecti",
+  "sourceProductUrl": "https://www.advantech.com/en/products/5bfbf78e-c85b-43d2-83d9-7c12eabc6ef8/air-411/mod_7e21ee52-452c-4b73-b6dc-3601a9d3e317",
+  "sourceNote": "Advantech's page header is dated September 3, 2026 while its body dateline says September 4. The launch article specifies up to 300W GPU support, whereas the active product page specifies up to 400W/FHFL. FlyPig preserves both discrepancies and does not infer which configuration is authoritative without controlled vendor documentation.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/advantech-air-411-bartlett-lake-multi-accelerator-edge-ai.png",
+    "socialSrc": "/images/signals/og/advantech-air-411-bartlett-lake-multi-accelerator-edge-ai.png",
+    "alt": "FlyPig AI infographic on Advantech AIR-411 showing Intel Core 200S, a full-length accelerator slot and conflicting 300W versus 400W limits.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.advantech.com/en-us/resources/news/advantech-air-411-accelerates-ai-inference-and-data-management-for-inspecti",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/advantech-air-411-bartlett-lake-multi-accelerator-edge-ai.svg"
+    }
+  }
+}
