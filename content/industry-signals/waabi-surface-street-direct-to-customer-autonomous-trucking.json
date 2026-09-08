@@ -1,0 +1,124 @@
+{
+  "eventId": "CA-2025-0008",
+  "slug": "waabi-surface-street-direct-to-customer-autonomous-trucking",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-08",
+    "findings": [
+      "Waabi's November 25, 2025 first-party article supports the event date and the company's statement that its autonomous-driving capabilities had become feature complete across highways and general surface streets in the first quarter of 2025.",
+      "The article treats feature completion and the direct-to-customer model as Waabi-disclosed capability and commercial-model claims, not as proof of public-road driverless commercial deployment, fleet-scale availability or independent safety validation.",
+      "Waabi's December 19, 2025 first-party update provides an important maturity boundary: it described no-human operation on a closed course and said autonomy-ready OEM platforms had not yet received all approvals and validation needed for driverless deployment at that time.",
+      "Vendor-only superiority, generalization and safety claims are not repeated as independent findings. No pricing, MOQ, lead-time, customer shipment, fleet-volume, supplier-award or Taiwan design-win claim is made.",
+      "Taiwan relevance is limited to component categories implicated by Waabi's own description of a multi-sensor and redundant autonomous-truck architecture. No Taiwan sourcing relationship or procurement path is disclosed in the reviewed sources.",
+      "No Waabi, customer, OEM or third-party media is reused. The article uses an existing FlyPig AI-owned site graphic, and the public template renders source disclosure, editorial-independence language and the corrections path."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2025-11-25",
+  "publishedAt": "2026-09-08",
+  "modifiedAt": "2026-09-08",
+  "supplier": "Waabi",
+  "category": "Canada · Autonomous Systems",
+  "title": "Waabi Says Surface-Street Capability Opens a Direct-to-Customer Trucking Model",
+  "seoTitle": "Waabi Surface-Street Autonomous Trucking and Direct-to-Customer Model",
+  "socialTitle": "Waabi Pushes Beyond Hub-to-Hub Autonomy",
+  "seoDescription": "Waabi says highway and surface-street autonomy can support direct-to-customer trucking, while driverless public-road deployment remains a separate validation step.",
+  "dek": "Waabi's November 2025 update said its autonomous-driving stack had become feature complete across highways and general surface streets, broadening the operating model while driverless public-road deployment remained a separate validation step.",
+  "summary": "On November 25, 2025, Toronto-founded Waabi said it had reached feature-complete autonomous-driving capability across highways and general surface streets in the first quarter of that year. The company framed the milestone as the technical basis for a direct-to-customer trucking model that can cover more of a freight journey without a hub handoff. For Industry Signals, the material change is the operating-domain expansion, not a claim that driverless commercial service was already broadly available. A later Waabi update in December 2025 said no-human operation had been demonstrated on a closed course and described additional approvals and validation as prerequisites for driverless deployment on public roads.",
+  "keyFacts": [
+    "Surface-street capability added",
+    "Waabi: feature complete in Q1 2025",
+    "Public-road driverless deployment remained separate"
+  ],
+  "whyItMatters": [
+    "Extending an autonomous truck from highway corridors into general surface streets changes the commercial architecture: first-mile and last-mile segments can potentially be handled by the same autonomy system rather than handed off at fixed hubs.",
+    "A broader operating domain increases the integration burden across perception, onboard compute, fault management, vehicle networking and redundant power and control systems. Waabi has publicly described a multi-sensor hardware stack, but the reviewed sources do not disclose a production bill of materials or supplier list.",
+    "For Canadian Physical AI, the signal shows a Toronto-based autonomy company pushing beyond a narrow highway use case. For suppliers, the actionable opportunity begins only when platform qualification, sourcing requirements and deployment programs become specific enough to support design-in decisions."
+  ],
+  "reporting": [
+    {
+      "heading": "The meaningful change was the operating model",
+      "paragraphs": [
+        "Waabi's November 25 update said the company began expanding from highway autonomy into general surface streets in 2024 and reached feature-complete capability across both domains in the first quarter of 2025. Waabi defined feature complete as having implemented the intended features needed to remove the human driver for highway and surface-street driving. The company then connected that technical milestone to a direct-to-customer freight model in which the same autonomous-driving system can cover more of the journey between shipper and customer facilities.",
+        "That is materially different from a highway-only hub-to-hub architecture, where autonomous operation is concentrated on controlled freight corridors and human-driven vehicles can be used for the first and last miles. But the November article is still a vendor statement about capability and commercial model. It does not provide evidence of broad driverless public-road service, a fleet-scale rollout, a production-volume commitment or a route-by-route commercial launch schedule."
+      ]
+    },
+    {
+      "heading": "Feature complete is not the same as driverless deployment",
+      "paragraphs": [
+        "A first-party Waabi update published on December 19, 2025 helps define the maturity boundary. Waabi said it had completed no-human autonomy missions on a closed course in October and described closed-course driverless validation as a step before operating without a human on public roads. The same update said autonomy-ready OEM platforms had not yet received all necessary approvals and validation for driverless deployment at that time.",
+        "That distinction matters for procurement teams. Software feature completion can indicate that a capability set is implemented, while production deployment also depends on redundant vehicle hardware, fault management, safety validation, regulatory approvals, serviceability and operational controls. FlyPig therefore classifies the November event as a capability expansion and deployment-preparation signal, not as proof of broad commercial availability."
+      ]
+    },
+    {
+      "heading": "Surface streets raise the hardware and systems-integration burden",
+      "paragraphs": [
+        "Waabi's earlier description of the Waabi Driver says the product combines autonomy software with sensors and compute and uses multiple sensor types including LiDAR, cameras and radar. Its December driverless update also describes redundancy work across power distribution, computing, steering and braking for a development fleet used in closed-course testing. These are first-party architecture disclosures rather than a complete production BOM.",
+        "For design-in teams, the practical implication is that a broader operating domain is not only a software problem. Dense intersections, vulnerable road users, loading zones and more varied traffic patterns can increase the importance of sensor coverage, onboard processing, deterministic vehicle communications, power integrity, fault monitoring and thermal management. The reviewed sources do not identify the suppliers, qualification specifications or sourcing ownership for those subsystems."
+      ]
+    },
+    {
+      "heading": "Taiwan fit remains a design-in hypothesis, not a disclosed deal",
+      "paragraphs": [
+        "Taiwan has deep manufacturing capability in camera and perception electronics, embedded and automotive compute, networking, power electronics, thermal design and electronics manufacturing. Those categories overlap with the hardware functions Waabi has publicly described for autonomous trucking, so the event is relevant to cross-border supplier mapping at the capability level.",
+        "The evidence does not support naming a Taiwan supplier as part of the Waabi program. None of the reviewed first-party sources discloses a Taiwan RFQ, approved vendor, purchase order, design win, sourcing geography, MOQ or lead time. A credible cross-border match would require platform-specific automotive qualification requirements, environmental and functional-safety specifications, ownership of the sourcing decision and a visible supplier-qualification window."
+      ]
+    }
+  ],
+  "flypigTake": "The commercial insight is not that surface-street autonomy automatically creates a deployable door-to-door service. It is that Waabi is designing its trucking model around avoiding the hub handoff that constrains many autonomous-freight architectures. If that model progresses through driverless validation and OEM production, the hardware opportunity becomes broader because sensing, compute, power, networking and fault-tolerant vehicle integration all have to scale with it. For Taiwan, the next signal to watch is not another capability claim. It is the moment Waabi or an OEM exposes qualification, sourcing or production requirements that turn category-level fit into a real design-in window.",
+  "productStatus": "Waabi said on November 25, 2025 that its autonomous-driving capabilities were feature complete across highways and general surface streets and positioned this as the basis for a direct-to-customer trucking model. On December 19, Waabi separately said it had completed no-human missions on a closed course and that autonomy-ready OEM platforms still required approvals and validation for driverless deployment. The reviewed sources do not establish broad driverless public-road commercial service, production fleet volume, a Canadian deployment route, component sourcing decisions, pricing, MOQ, lead time or Taiwan supplier awards.",
+  "openQuestions": [
+    "When will Waabi disclose a driverless public-road commercial deployment that uses the direct-to-customer operating model, including route, fleet scale and operating conditions?",
+    "Which sensing, compute, networking, power-distribution, thermal and vehicle-control components are controlled by Waabi versus the OEM, and when do supplier-qualification windows open?",
+    "What automotive safety, environmental, cybersecurity, serviceability and lifecycle requirements would an external subsystem supplier need to meet before entering a production platform?"
+  ],
+  "canadaRelevance": "Waabi was founded in 2021 and currently lists Toronto among its operating locations. The surface-street milestone therefore represents a Canadian Physical AI company broadening the technical and commercial scope of autonomous freight in North America. It does not, by itself, establish a driverless deployment in Canada, but it is relevant to Canadian commercialization because it moves the product thesis from a constrained highway corridor toward a more complete logistics workflow.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "waabi-volvo-autonomous-trucking-partnership",
+    "waabi-volvo-vnl-autonomous-integration"
+  ],
+  "relatedTechnologies": [
+    "Physical AI",
+    "Autonomous Trucks",
+    "Automotive Edge Compute",
+    "Vehicle Electronics"
+  ],
+  "corrections": [],
+  "sourceName": "Waabi official November 25, 2025 surface-street capability update",
+  "sourceUrl": "https://waabi.ai/insights/waabi-unlocks-direct-to-customer-model-enabled-by-industry-leading-surface-street",
+  "additionalSources": [
+    {
+      "name": "Waabi official December 19, 2025 driverless validation update",
+      "url": "https://waabi.ai/insights/from-closed-course-to-public-roads-the-path-to-driverless"
+    },
+    {
+      "name": "Waabi Driver first-party technology overview",
+      "url": "https://waabi.ai/insights/introducing-the-waabi-driver"
+    },
+    {
+      "name": "Waabi company page and operating locations",
+      "url": "https://waabi.ai/company"
+    }
+  ],
+  "sourceNote": "Waabi's November 25, 2025 article is the primary source for the surface-street event and the company's feature-complete statement. FlyPig AI treats those as vendor-disclosed capability claims, not independent proof of safety, generalization, public-road driverless availability or commercial scale. Waabi's December 19 update is used to preserve the deployment boundary: closed-course no-human operation had been demonstrated, while further approvals and validation were still described as necessary for driverless deployment on public roads. No customer, fleet-volume, pricing, MOQ, lead-time, supplier-award or Taiwan sourcing claim is inferred from these sources.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/og/flypig-ai-default.png",
+    "socialSrc": "/images/og/flypig-ai-default.png",
+    "alt": "FlyPig AI editorial graphic for an Industry Signal on Waabi's surface-street autonomous trucking capability and direct-to-customer model.",
+    "width": 1200,
+    "height": 630,
+    "credit": "FlyPig AI editorial graphic",
+    "sourceUrl": "https://waabi.ai/insights/waabi-unlocks-direct-to-customer-model-enabled-by-industry-leading-surface-street",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Existing FlyPig AI-owned site graphic at public/images/og/flypig-ai-default.png; no Waabi, customer, OEM or third-party media reused."
+    }
+  }
+}
