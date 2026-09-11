@@ -1,0 +1,126 @@
+{
+  "eventId": "CA-2026-0002",
+  "slug": "waabi-uber-robotaxi-expansion-series-c",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-11",
+    "findings": [
+      "Waabi's January 28, 2026 first-party announcement confirms a closed $750 million USD Series C and a separate milestone-based future investment from Uber tied to a new robotaxi partnership.",
+      "Waabi describes the overall package as $1 billion in new funding, but its announcement does not state that the full $1 billion was closed on January 28. This article therefore distinguishes the closed Series C from future milestone-based Uber capital.",
+      "The stated plan to deploy 25,000 or more Waabi Driver-powered robotaxis is a forward-looking target 'over time,' not evidence that 25,000 vehicles have been ordered, manufactured, placed in service or assigned a deployment schedule.",
+      "The reviewed first-party source does not identify the passenger-vehicle OEM, launch city, production timeline, unit pricing, procurement terms or robotaxi hardware BOM. Those items remain open rather than inferred.",
+      "Waabi's older first-party Waabi Driver description supports only a capability-level hardware intersection involving sensors and compute, including LiDAR, cameras and radar in its trucking product. It is not used to claim that the future robotaxi implementation has the same final hardware configuration.",
+      "No vendor photography, screenshots or press artwork are reused. The article specifies a FlyPig AI-owned editorial infographic generated from the repository's reproducible hero workflow."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-01-28",
+  "publishedAt": "2026-09-11",
+  "modifiedAt": "2026-09-11",
+  "supplier": "Waabi",
+  "category": "Canada · Physical AI",
+  "title": "Waabi Expands Into Robotaxis With Uber After $750M Series C",
+  "seoTitle": "Waabi Expands Into Robotaxis With Uber After $750M Series C",
+  "socialTitle": "Waabi Expands Into Robotaxis",
+  "seoDescription": "Waabi closed a $750M Series C and announced milestone-based Uber funding for a future robotaxi program targeting 25,000 or more vehicles over time.",
+  "dek": "The Toronto-founded autonomy company is extending its shared Physical AI stack from trucks to robotaxis, but the fleet target remains forward-looking and deployment details are still open.",
+  "summary": "On January 28, 2026, Waabi announced that it had closed a $750 million USD Series C and secured additional milestone-based future investment from Uber to support a new robotaxi partnership. Waabi says the robotaxis will use the Waabi Driver and be deployed exclusively on the Uber platform, with Uber capital supporting a target of 25,000 or more vehicles over time. The commercial signal is the expansion of a Canadian-developed Physical AI platform from autonomous trucking into a second vehicle market. The maturity boundary is equally important: Waabi did not disclose a passenger-vehicle OEM, first launch market, deployment schedule, purchase commitment, production quantity or final robotaxi hardware configuration.",
+  "keyFacts": [
+    "$750M Series C closed",
+    "Uber capital is milestone-based",
+    "25,000+ robotaxis is a target"
+  ],
+  "whyItMatters": [
+    "Waabi is attempting to reuse one autonomy platform across heavy trucks and passenger robotaxis, which could spread software, validation and hardware-integration work across two large vehicle categories instead of a single fleet architecture.",
+    "Uber is more than a distribution channel in the announcement: Waabi says Uber will provide additional milestone-based capital and will be the exclusive platform for the planned robotaxi deployments. That creates a clearer commercialization path than a standalone research program, while still leaving milestones and timing undisclosed.",
+    "For Canada's Physical AI ecosystem, the financing adds substantial runway to a Toronto-founded company whose commercialization effort now spans autonomous freight and ride-hailing. Canadian investors BDC Capital, EDC, TELUS Global Ventures and BMO Global Asset Management also participated in the Series C.",
+    "For Taiwan, the credible intersection is at the subsystem and manufacturing-capability level: automotive sensing, compute, connectivity, power, thermal management and vehicle-grade electronics could become relevant once Waabi and its vehicle partner define a production-intent robotaxi platform. No Taiwan supplier or design win has been disclosed."
+  ],
+  "reporting": [
+    {
+      "heading": "The funding headline needs a maturity qualifier",
+      "paragraphs": [
+        "Waabi described the January announcement as $1 billion in new funding, but the underlying structure matters for procurement analysis. The company said it had closed a $750 million Series C and separately secured additional future investment from Uber that is contingent on milestones. FlyPig AI therefore treats $750 million as the confirmed closed round and the remaining Uber-linked capital as conditional future funding rather than a fully closed cash balance.",
+        "That distinction does not reduce the strategic importance of the event. A financing round of this scale gives Waabi more room to advance its autonomous-trucking program while starting a second commercialization track in robotaxis. It also ties the new vehicle category to a named platform partner rather than leaving market access undefined."
+      ]
+    },
+    {
+      "heading": "Robotaxis turn Waabi's shared-driver thesis into a commercial test",
+      "paragraphs": [
+        "Waabi says the same Physical AI model can power both autonomous trucks and robotaxis. The January announcement is the point where that architectural claim became a concrete market expansion: the company launched robotaxis as its second application and named Uber as the exclusive deployment platform.",
+        "The scale language must remain forward-looking. Waabi says Uber's milestone-based capital will support development and the deployment of 25,000 or more Waabi Driver-powered robotaxis over time. The source does not say that 25,000 vehicles have been purchased, built or assigned to specific cities, and it does not give a start date. For suppliers, the meaningful trigger will be a production-intent vehicle program with named hardware, validation gates and sourcing responsibility."
+      ]
+    },
+    {
+      "heading": "Canada gains a broader Physical AI commercialization anchor",
+      "paragraphs": [
+        "Waabi maintains a major team in Toronto, where the company was founded, and its Series C includes participation from Canadian institutional investors including BDC Capital and Export Development Canada. The robotaxi expansion therefore matters beyond venture financing: it broadens the set of real-world vehicle programs attached to a Canadian autonomy company that is already working with OEM and freight partners.",
+        "A two-market strategy can also change the cadence of validation and supplier qualification. Trucking emphasizes long-haul duty cycles, redundancy and commercial-fleet economics, while robotaxis add dense urban operation, passenger-service requirements and potentially different vehicle integration constraints. The shared software thesis may reduce duplication in the autonomy stack, but it does not eliminate the need for vehicle-specific hardware engineering and regulatory validation."
+      ]
+    },
+    {
+      "heading": "Taiwan's opportunity starts after the robotaxi platform is named",
+      "paragraphs": [
+        "Waabi's earlier first-party description of the Waabi Driver confirms that its trucking solution combines autonomy software with sensors and compute, using LiDAR, cameras and radar. That makes automotive sensing, compute, connectivity, power, thermal and vehicle-grade electronics reasonable capability areas to monitor. It does not establish the final bill of materials for the future robotaxi program.",
+        "The most useful Taiwan supply-chain work now is not to guess suppliers. It is to prepare qualification questions for the eventual platform: who owns the sensor and compute architecture, which components are safety-critical, what redundancy and automotive-certification levels are required, whether manufacturing sits with the vehicle OEM or an integration partner, and what volumes are attached to each rollout phase. Until those details emerge, any named Taiwan company would be speculative."
+      ]
+    },
+    {
+      "heading": "The next signal is a vehicle and deployment plan, not another funding number",
+      "paragraphs": [
+        "For commercial tracking, the next high-value disclosures would be a passenger-vehicle OEM, a production-intent vehicle, a first operating geography, regulatory milestones, fleet-operator responsibilities, validation status and a dated deployment schedule. Those would turn the 25,000-plus target into a program that suppliers can map against capacity and certification timelines.",
+        "The partnership is still meaningful before those disclosures because Uber provides a defined route to riders and has committed milestone-based capital. But supplier engagement should be staged around evidence of vehicle architecture and procurement ownership, not around the headline fleet target alone."
+      ]
+    }
+  ],
+  "flypigTake": "Waabi's robotaxi move is more important as a platform-expansion test than as a funding story. If one autonomy stack can move from factory-integrated trucks into passenger vehicles without rebuilding the core intelligence, Waabi could spread development costs across two markets and create a larger hardware-integration footprint. For Taiwan, that becomes commercially actionable only when the passenger vehicle, sensor and compute architecture, sourcing model and rollout milestones are visible. The 25,000-plus figure is a direction of travel, not yet a purchase order.",
+  "productStatus": "As of the January 28, 2026 announcement, Waabi had closed a $750 million Series C and announced a new exclusive robotaxi deployment partnership with Uber. Uber's additional investment is milestone-based future capital. Waabi said the partnership is intended to support 25,000 or more Waabi Driver-powered robotaxis over time, but the reviewed first-party source did not disclose a passenger-vehicle OEM, launch city, first deployment date, production quantity, unit purchase agreement, pricing, MOQ, lead time or final robotaxi hardware configuration. FlyPig AI therefore treats the robotaxi program as an announced commercialization expansion with a large forward-looking fleet target, not as a current 25,000-vehicle deployment.",
+  "openQuestions": [
+    "Which passenger-vehicle OEM and production-intent vehicle platform will carry the Waabi Driver for the Uber robotaxi program?",
+    "What milestones govern Uber's future investment, and what deployment dates, cities and regulatory approvals are attached to the first commercial phase?",
+    "Who will own procurement for sensors, compute, connectivity, power and thermal subsystems, and will any Taiwan-based suppliers enter the production bill of materials?"
+  ],
+  "canadaRelevance": "Waabi was founded in Toronto and continues to operate a Toronto team. The January 2026 Series C also included Canadian institutional investors such as BDC Capital and Export Development Canada. Expanding from autonomous trucking into robotaxis gives Canada's Physical AI ecosystem a second commercialization path built around the same autonomy platform, with potential downstream demand in vehicle integration, validation, simulation, compute and sensing if the program advances to a defined production vehicle.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "waabi-surface-street-direct-to-customer-autonomous-trucking",
+    "waabi-volvo-vnl-autonomous-integration",
+    "waabi-volvo-autonomous-trucking-partnership"
+  ],
+  "relatedTechnologies": [
+    "Physical AI",
+    "Autonomous Vehicles",
+    "AI Vision",
+    "Automotive Edge AI"
+  ],
+  "corrections": [],
+  "sourceName": "Waabi official January 28, 2026 funding and robotaxi expansion announcement",
+  "sourceUrl": "https://waabi.ai/insights/waabi-secures-1-billion-in-new-funding-to-lead-physical-ai-revolution",
+  "sourceProductUrl": "https://waabi.ai/insights/introducing-the-waabi-driver",
+  "additionalSources": [
+    {
+      "name": "Waabi official company page",
+      "url": "https://waabi.ai/company"
+    }
+  ],
+  "sourceNote": "Waabi's January 28, 2026 announcement is the primary source for the closed $750 million Series C, the separate milestone-based future investment from Uber, the exclusive Uber-platform robotaxi partnership and the stated target of 25,000 or more Waabi Driver-powered robotaxis over time. The $1 billion figure is Waabi's description of the overall funding package and is not presented here as $1 billion of funding already closed. Waabi's earlier Driver page is used only to establish that its trucking solution combines autonomy software with sensors and compute, including LiDAR, cameras and radar; it is not evidence of the final robotaxi hardware bill of materials. Vendor claims about leadership, safety, generalization, scale and performance are not treated as independently verified. No Taiwan supplier relationship, customer purchase, production volume, pricing, MOQ or lead time is asserted.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/waabi-uber-robotaxi-expansion-series-c.png",
+    "socialSrc": "/images/signals/og/waabi-uber-robotaxi-expansion-series-c.png",
+    "alt": "FlyPig AI editorial infographic showing Waabi's closed Series C, milestone-based Uber capital and the forward-looking 25,000-plus robotaxi target.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://waabi.ai/insights/waabi-secures-1-billion-in-new-funding-to-lead-physical-ai-revolution",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/waabi-uber-robotaxi-expansion-series-c.svg"
+    }
+  }
+}
