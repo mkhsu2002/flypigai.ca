@@ -3,24 +3,37 @@ import JsonLd from "../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
 import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
 import { seriesUpdatedDate } from "./evidenceReviews";
-import { physicalAiSeries, seriesPath, seriesTitle } from "./series";
+import { physicalAiSeries, seriesDate, seriesPath, seriesTitle } from "./series";
+
+const articleImage = `${siteUrl}/images/og/flypig-ai-default.png`;
+const seriesCitations = Array.from(new Set(physicalAiSeries.flatMap((article) => article.sources.map((source) => source.url))));
 
 export const metadata: Metadata = makeMetadata({
   title: `${seriesTitle}: Who Becomes the Android of Physical AI?`,
   description: "FlyPig AI's six-part research series on the coming modularization of robotics, why hardware may become the infrastructure layer, and who could become the Android of Physical AI.",
   path: seriesPath,
   enPath: seriesPath,
+  type: "article",
+  article: {
+    publishedTime: seriesDate,
+    modifiedTime: seriesUpdatedDate,
+    authors: ["FlyPig AI"],
+    section: "Physical AI Goes Modular",
+    tags: ["Physical AI", "Robotics", "Robot OS", "Edge AI", "Embodied AI"],
+  },
 });
 
 export default function PhysicalAiModularizationHub() {
   return <main>
     <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Insights", path: "/insights" }, { name: seriesTitle, path: seriesPath }])} />
     <JsonLd data={{ "@context": "https://schema.org", "@type": "CollectionPage", name: seriesTitle, description: "FlyPig AI research on modular Physical AI, robot platforms, operating layers and the emerging application economy.", url: `${siteUrl}${seriesPath}`, dateModified: seriesUpdatedDate, hasPart: physicalAiSeries.map((article) => ({ "@type": "Article", name: article.title, url: `${siteUrl}${seriesPath}/${article.slug}` })) }} />
+    <JsonLd data={{ "@context": "https://schema.org", "@type": "Article", headline: `${seriesTitle}: Who Becomes the Android of Physical AI?`, description: "FlyPig AI's six-part research series on modular robotics, robot platforms, operating layers and the emerging Physical AI application economy.", datePublished: seriesDate, dateModified: seriesUpdatedDate, author: { "@type": "Organization", name: "FlyPig AI", url: siteUrl }, publisher: { "@id": `${siteUrl}/#organization` }, image: { "@type": "ImageObject", url: articleImage, width: 1200, height: 630 }, mainEntityOfPage: `${siteUrl}${seriesPath}`, articleSection: "Physical AI Goes Modular", citation: seriesCitations, inLanguage: "en-CA" }} />
     <SiteHeader />
     <section className="hero insights-hero"><div className="shell hero-grid"><div>
       <p className="eyebrow">FlyPig AI Research Series · Physical AI</p>
       <h1>Who becomes the Android of Physical AI?</h1>
       <p className="lead">When mobile phones first appeared, many people asked why anyone needed one. Physical AI may be entering a similar take-off decade. FlyPig AI believes the most consequential winner may not be the company that builds the most impressive robot body, but the platform that turns many kinds of machines into a programmable application economy.</p>
+      <div className="article-meta"><span>Published <time dateTime={seriesDate}>September 5, 2026</time></span><span>Updated <time dateTime={seriesUpdatedDate}>September 12, 2026</time></span><span>Research series</span></div>
       <div className="actions"><a className="pill primary" href={`${seriesPath}/${physicalAiSeries[0].slug}`}>Start the series</a><a className="pill secondary" href={`${seriesPath}/${physicalAiSeries[1].slug}`}>The Android question</a></div>
     </div><aside className="signal-card"><p className="eyebrow">FlyPig thesis</p><div className="signal-line"><span>01</span><strong>Physical AI enters a build-out decade</strong></div><div className="signal-line"><span>02</span><strong>Hardware becomes more modular</strong></div><div className="signal-line"><span>03</span><strong>Software abstractions become the control point</strong></div><div className="signal-line"><span>04</span><strong>Applications capture the new installed base</strong></div></aside></div></section>
 

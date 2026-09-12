@@ -23,7 +23,7 @@
   "title": "Tenstorrent Says Galaxy Blackhole Is in Production and Shipping in Volume",
   "seoTitle": "Tenstorrent Galaxy Blackhole Reaches Volume Shipping",
   "socialTitle": "Galaxy Blackhole Reaches Volume Shipping",
-  "seoDescription": "Tenstorrent says Galaxy Blackhole moved into production and volume shipping, marking a maturity shift from developer hardware to deployable AI server infrastructure.",
+  "seoDescription": "Tenstorrent says Galaxy Blackhole is in production and volume shipping, moving from developer hardware toward deployable AI server infrastructure.",
   "dek": "The important change is product maturity, not another benchmark headline: Tenstorrent moved Galaxy Blackhole from launch-stage hardware into production, volume shipping and multi-server deployment.",
   "summary": "On May 4, 2026, Tenstorrent's TT-Deploy recap said Galaxy Blackhole was in production and shipping in volume. An April 28 first-party release had already announced general availability, and Tenstorrent's current Galaxy product page continues to present Blackhole as a commercial scale-out AI server. For Canadian Industry Signals, this is a meaningful maturity transition for a Toronto-headquartered AI hardware company: the Blackhole platform moved beyond developer products into deployable server infrastructure. For Taiwan, the credible overlap is at the system and subsystem level, including board and system manufacturing, power, memory, thermal management, high-speed networking, connectors and rack integration. No Taiwan supplier or design win has been disclosed.",
   "keyFacts": [
