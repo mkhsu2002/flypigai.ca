@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import JsonLd from "../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
+import { pageOgImageUrl } from "../../../lib/socialImages";
 import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
 
 const title = "Canada Needs Physical AI Integrators";
 const description = "Why Canada's next robotics opportunity lies in deployment, integration and operations—not simply building or importing more machines.";
 const datePublished = "2026-07-01";
 const dateModified = "2026-08-29";
-const articleImage = `${siteUrl}/images/og/flypig-ai-default.png`;
+const articleImage = pageOgImageUrl("insights-canada-needs-physical-ai-integrators");
 const sources = [
   { name: "Government of Canada — Sensitive Technology List: Robotics and Autonomous Systems", url: "https://www.canada.ca/en/services/defence/nationalsecurity/sensitive-technology-list.html" },
   { name: "National Research Council Canada — Advanced manufacturing initiative", url: "https://nrc.canada.ca/en/research-development/research-collaboration/programs/advanced-manufacturing-initiative" },

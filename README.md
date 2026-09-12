@@ -167,7 +167,7 @@ Entity routes should eventually support patterns such as:
 
 Recent work added or modified:
 
-- homepage positioning toward Canada-Taiwan Edge AI / Physical AI intelligence
+- homepage positioning toward Canada-Taiwan Edge AI research and Physical AI design intelligence
 - `/atlas` Canada owner page
 - `/Solutions` Taiwan solution-intelligence owner page
 - `/technologies` intelligence hub
@@ -180,6 +180,7 @@ Recent work added or modified:
 - two commercial audience-owner paths and a Traditional Chinese Taiwan-company owner
 - strengthened Insights Article metadata, citations and sitemap freshness
 - a transparent newsletter launch notice while the event pipeline remains gated
+- a page-level Open Graph image system for homepage, major hubs, Atlas categories, Technology guides and Insights articles
 
 Review the actual implementation before assuming quality. The current request is specifically for the IDE to clean up deployment, visual consistency, assets, architecture and production readiness.
 
@@ -204,6 +205,24 @@ Editorial style:
 - include newsletter CTA at the bottom
 
 Articles should be published directly to the live site once written. The user prefers reviewing real public webpages rather than drafts or PR-only previews.
+
+## Open Graph image system
+
+The default social image is:
+
+- `/public/images/og/flypig-ai-default.png`
+- source: `/public/images/og/source/flypig-ai-default.svg`
+
+Page-specific social images live under:
+
+- `/public/images/og/pages/*.png`
+- source: `/public/images/og/source/pages/*.svg`
+
+Generate page-level images in batches of at most six:
+
+`npm run generate:page-og -- --start=0 --limit=6`
+
+The generator writes contact sheets to `/artifacts/og-review-sheets/` for visual inspection. `makeMetadata()` maps canonical page paths to page-specific images automatically; Industry Signals keep their article-specific `heroVisual.socialSrc` images.
 
 ### Source database
 
@@ -500,7 +519,7 @@ The handoff is considered stabilized when:
 - first Industry Signal article is publicly viewable
 - `/signals` archive works
 - newsletter subscription has a valid server-side execution path
-- site clearly communicates the Canada-Taiwan Edge AI / Physical AI intelligence positioning
+- site clearly communicates the Canada-Taiwan Edge AI research and Physical AI design-intelligence positioning
 
 Once this is achieved, proceed into supplier entity pages, design routes, structured intake and content-scale automation.
 

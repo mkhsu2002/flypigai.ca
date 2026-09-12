@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl, siteIdentity } from "../lib/site";
+import { pageOgImage } from "../lib/socialImages";
 
 export const siteUrl = siteIdentity.url;
 export const siteName = siteIdentity.brandName;
@@ -32,6 +33,36 @@ type SeoOptions = {
   };
 };
 
+function pageOgSlug(path: string) {
+  if (path === "/zh/about") return "about";
+  if (path === "/zh/contact") return "contact";
+  if (path === "/zh/privacy") return "privacy";
+  if (path === "/zh/services") return "services";
+  if (path === "/zh/services/taiwan-technology-companies") return "services-taiwan-technology-companies";
+  if (path === "/zh/atlas") return "atlas";
+  if (path.startsWith("/zh/atlas/")) return `atlas-${path.split("/").at(-1)}`;
+  if (path === "/about") return "about";
+  if (path === "/contact") return "contact";
+  if (path === "/editorial-policy") return "editorial-policy";
+  if (path === "/privacy") return "privacy";
+  if (path === "/newsletter/unsubscribe") return "newsletter-unsubscribe";
+  if (path === "/Solutions") return "taiwan-solutions";
+  if (path === "/technologies") return "technologies";
+  if (path.startsWith("/technologies/")) return `technology-${path.split("/").at(-1)}`;
+  if (path === "/signals") return "signals";
+  if (path === "/insights") return "insights";
+  if (path === "/insights/physical-ai-modularization") return "insights-physical-ai-modularization";
+  if (path.startsWith("/insights/physical-ai-modularization/")) return `insights-physical-ai-modularization-${path.split("/").at(-1)}`;
+  if (path.startsWith("/insights/")) return `insights-${path.split("/").at(-1)}`;
+  if (path === "/services") return "services";
+  if (path === "/services/canadian-product-teams") return "services-canadian-product-teams";
+  if (path === "/services/taiwan-technology-companies") return "services-taiwan-technology-companies";
+  if (path === "/atlas") return "atlas";
+  if (path.startsWith("/atlas/")) return `atlas-${path.split("/").at(-1)}`;
+  if (path === "/physical-ai") return "physical-ai";
+  return undefined;
+}
+
 export function makeMetadata({
   title,
   description,
@@ -46,12 +77,15 @@ export function makeMetadata({
   article,
 }: SeoOptions): Metadata {
   const canonical = `${siteUrl}${path}`;
-  const socialImage = image ?? {
-    url: siteIdentity.images.defaultSocial,
-    width: 1200,
-    height: 630,
-    alt: "FlyPig AI — Canada-Taiwan Edge AI and Physical AI intelligence",
-  };
+  const mappedOgSlug = pageOgSlug(path);
+  const socialImage = image ?? (mappedOgSlug
+    ? pageOgImage(mappedOgSlug, `${siteName} - ${title}`)
+    : {
+      url: siteIdentity.images.defaultSocial,
+      width: 1200,
+      height: 630,
+      alt: "FlyPig AI - Canada-Taiwan Edge AI and Physical AI research",
+    });
   const imageUrl = absoluteUrl(socialImage.url);
   const languages: Record<string, string> = {};
   if (enPath) languages["en-CA"] = `${siteUrl}${enPath}`;

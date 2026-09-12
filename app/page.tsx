@@ -4,7 +4,7 @@ import { SiteFooter, SiteHeader } from "../components/SiteChrome";
 import { makeMetadata, siteUrl } from "./seo";
 
 export const metadata: Metadata = makeMetadata({
-  title: "Edge AI & Physical AI Design Intelligence | Canada ↔ Taiwan",
+  title: "Canada-Taiwan Edge AI Research for Physical AI",
   description: "FlyPig AI is a Canada-based design intelligence company mapping Canadian product needs to Taiwan's Edge AI, semiconductor and embedded-system capabilities.",
   path: "/",
   enPath: "/",

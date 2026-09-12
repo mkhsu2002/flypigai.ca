@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import JsonLd from "../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
+import { pageOgImageUrl } from "../../../lib/socialImages";
 import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
 import { seriesUpdatedDate } from "./evidenceReviews";
 import { physicalAiSeries, seriesDate, seriesPath, seriesTitle } from "./series";
 
-const articleImage = `${siteUrl}/images/og/flypig-ai-default.png`;
+const articleImage = pageOgImageUrl("insights-physical-ai-modularization");
 const seriesCitations = Array.from(new Set(physicalAiSeries.flatMap((article) => article.sources.map((source) => source.url))));
 
 export const metadata: Metadata = makeMetadata({

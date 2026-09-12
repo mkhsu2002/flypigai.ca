@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import JsonLd from "../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
+import { pageOgImageUrl } from "../../../lib/socialImages";
 import { getInsightGuide, insightGuides } from "../guides";
 import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
-
-const articleImage = `${siteUrl}/images/og/flypig-ai-default.png`;
 
 function formatDate(date: string) {
   return new Intl.DateTimeFormat("en-CA", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${date}T12:00:00Z`));
@@ -39,6 +38,7 @@ export default async function InsightGuidePage({ params }: { params: Promise<{ s
   const { slug } = await params;
   const guide = getInsightGuide(slug);
   if (!guide) notFound();
+  const articleImage = pageOgImageUrl(`insights-${guide.slug}`);
 
   return <main>
     <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Insights", path: "/insights" }, { name: guide.title, path: `/insights/${guide.slug}` }])} />

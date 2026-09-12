@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import JsonLd from "../../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../../components/SiteChrome";
+import { pageOgImageUrl } from "../../../../lib/socialImages";
 import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../../seo";
 import { getEvidenceReview } from "../evidenceReviews";
 import { getSeriesArticle, physicalAiSeries, seriesDate, seriesPath, seriesTitle } from "../series";
-
-const articleImage = `${siteUrl}/images/og/flypig-ai-default.png`;
 
 function formatEvidenceDate(value: string) {
   return new Intl.DateTimeFormat("en-CA", {
@@ -32,6 +31,7 @@ export default async function SeriesArticlePage({ params }: { params: Promise<{ 
   const { slug } = await params;
   const article = getSeriesArticle(slug);
   if (!article) notFound();
+  const articleImage = pageOgImageUrl(`insights-physical-ai-modularization-${article.slug}`);
   const review = getEvidenceReview(slug);
   const modifiedTime = review?.modifiedDate ?? seriesDate;
   const articleSources = [...article.sources, ...(review?.sources ?? [])].filter((source, sourceIndex, sources) => sources.findIndex((candidate) => candidate.url === source.url) === sourceIndex);
