@@ -219,7 +219,14 @@ Important tab:
 
 `新品事件庫`
 
-Current known event IDs ran from `EVT-2026-0001` through at least `EVT-2026-0021` as of 2026-08-25.
+Current known event IDs ran from `EVT-2026-0001` through at least `EVT-2026-0035` as of a 2026-09-12 readback of `新品事件庫`.
+
+Latest published Industry Signal added on 2026-09-12:
+
+- event `EVT-2026-0035`
+- AAEON MAX-Q870A / MAX-H810A Micro-ATX Industrial Motherboards
+- canonical slug: `/signals/aaeon-max-q870a-max-h810a-micro-atx-edge-ai`
+- official source: `https://www.aaeon.com/en/news/detail/max-q870a-max-h810a-mico-itx-motherboard-arrow-lake`
 
 The first prototype article is based on:
 

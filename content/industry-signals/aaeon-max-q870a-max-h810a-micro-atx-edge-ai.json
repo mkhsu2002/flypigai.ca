@@ -1,0 +1,96 @@
+{
+  "eventId": "EVT-2026-0035",
+  "slug": "aaeon-max-q870a-max-h810a-micro-atx-edge-ai",
+  "sourcePublishedAt": "2026-09-09",
+  "publishedAt": "2026-09-12",
+  "modifiedAt": "2026-09-12",
+  "supplier": "AAEON",
+  "category": "Micro-ATX · Edge AI",
+  "title": "AAEON's New Micro-ATX Boards Define Two Edge AI Paths",
+  "seoTitle": "AAEON MAX-Q870A and MAX-H810A Micro-ATX Edge AI Boards",
+  "socialTitle": "AAEON Micro-ATX Boards for Edge AI",
+  "seoDescription": "AAEON's MAX-Q870A and MAX-H810A bring Core Ultra 200S, Micro-ATX expansion, Ubuntu support and mass-production status to edge AI systems.",
+  "dek": "AAEON's MAX-Q870A and MAX-H810A turn Intel Core Ultra 200S desktop-class processors into two industrial Micro-ATX paths: one for higher-expansion AI and machine vision, and one for cost-conscious automation and HMI systems.",
+  "summary": "The practical signal is not only that AAEON added two more Arrow Lake-S boards. It is that Micro-ATX is being positioned as a flexible edge-system base where CPU power, PCIe expansion, networking, displays and operating-system support can be chosen for different product tiers.",
+  "keyFacts": [
+    "Core Ultra 200S support",
+    "Q870A up to 125W CPUs",
+    "Mass production + samples"
+  ],
+  "whyItMatters": [
+    "AAEON separates the pair by workload: MAX-Q870A is aimed at advanced AI and machine vision, while MAX-H810A targets industrial automation and HMI systems with a lower CPU power ceiling.",
+    "MAX-Q870A's four memory slots, multiple PCIe slots and dual NVMe storage route make it more relevant to multi-camera vision, accelerator cards or compact edge workstations than to sealed low-power devices.",
+    "Official mass-production and sample availability reduce one common design-in uncertainty, but regional pricing, lifecycle terms and validated expansion combinations still need direct confirmation."
+  ],
+  "reporting": [
+    {
+      "heading": "AAEON is using one form factor for two edge roles",
+      "paragraphs": [
+        "AAEON announced two Micro-ATX industrial motherboards based on Intel Core Ultra 200S processors: MAX-Q870A with the Q870 chipset and MAX-H810A with the H810 chipset.",
+        "The split matters because the two boards are not simply higher and lower versions of the same marketing claim. MAX-Q870A is framed for AI and machine vision workloads that may need more CPU headroom, memory, PCIe expansion and storage, while MAX-H810A keeps the same general form factor for automation and HMI use cases where cost and essential I/O may matter more."
+      ]
+    },
+    {
+      "heading": "MAX-Q870A is the heavier edge-AI path",
+      "paragraphs": [
+        "The official announcement says MAX-Q870A supports Core Ultra 200S CPU SKUs up to 125W, four CU/U-DIMM slots for as much as 256GB DDR5, two M.2 M-Key NVMe storage slots and two SATA ports with RAID support.",
+        "It also offers simultaneous support for four PCIe devices through one PCIe Gen5 x16 slot, two PCIe Gen4 x4 slots and one PCIe Gen4 x1 slot. For a product team, that can create room for a GPU, AI accelerator, frame grabber, high-speed networking or additional storage without jumping to a full ATX board."
+      ]
+    },
+    {
+      "heading": "MAX-H810A keeps Micro-ATX available for lower-cost systems",
+      "paragraphs": [
+        "MAX-H810A is described as supporting Core Ultra 200S SKUs up to 65W and up to 128GB DDR5 across two memory slots. It still keeps PCIe expansion, M.2 storage, wireless-module support, dual 2.5GbE LAN, HDMI and DisplayPort output and industrial serial I/O.",
+        "That combination is important for HMI, control and machine-interface products where the board must fit a stable enclosure, run standard software and connect to legacy equipment, but may not justify the heavier Q870A expansion budget."
+      ]
+    },
+    {
+      "heading": "Software and operating range are part of the design signal",
+      "paragraphs": [
+        "AAEON lists Windows 11 and Ubuntu 24.04.2 support for both boards, which is useful for teams that want to prototype AI vision, local inference or edge-control software without staying locked to a custom BSP path.",
+        "The company also cites a -20C to 60C operating range for both platforms. That does not remove enclosure, thermal and vibration validation, but it makes the boards more plausible for fixed industrial and infrastructure systems than ordinary desktop hardware."
+      ]
+    }
+  ],
+  "flypigTake": "MAX-Q870A and MAX-H810A show why edge AI platform choice is often about system architecture, not just TOPS. If a Canadian team needs PCIe cards, multiple displays, Ubuntu support and a production industrial board in a smaller-than-ATX footprint, Micro-ATX may be a useful middle path. The risk is overbuilding: a 125W-class board only makes sense when the workload, enclosure and power budget justify it.",
+  "productStatus": "AAEON's official announcement states that both platforms are in mass production and that samples are available through the AAEON eShop. Exact Canadian availability, lead time, pricing, validated processor SKUs and expansion-card support should still be confirmed for the target configuration.",
+  "openQuestions": [
+    "Which Core Ultra 200S CPU SKUs, GPU or AI accelerator cards, frame grabbers and memory configurations are validated for sustained operation on MAX-Q870A?",
+    "What are the regional price, MOQ, lead time, lifecycle support and Ubuntu image delivery terms for Canadian or Taiwan-to-Canada design-in projects?"
+  ],
+  "canadaRelevance": "Canadian machine-vision integrators, industrial automation builders and physical-AI product teams may use these boards when they need a production industrial motherboard with desktop-class expansion, but still want a smaller standardized form factor than ATX.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-mix-q870a1-mini-itx-edge-ai",
+    "dfi-arh171-arh173-core-ultra-mini-itx",
+    "advantech-aom-2721-ubuntu-qcs6490"
+  ],
+  "relatedTechnologies": [
+    "Core Ultra",
+    "Edge AI",
+    "Embedded",
+    "Ubuntu"
+  ],
+  "corrections": [],
+  "sourceName": "AAEON official MAX-Q870A and MAX-H810A announcement",
+  "sourceUrl": "https://www.aaeon.com/en/news/detail/max-q870a-max-h810a-mico-itx-motherboard-arrow-lake",
+  "sourceNote": "FlyPig AI independently analyzes AAEON's public product announcement. Inclusion does not imply representation, inventory, reseller status or an official commercial relationship; production configuration and regional availability should be verified directly with AAEON.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-max-q870a-max-h810a-micro-atx-edge-ai.png",
+    "socialSrc": "/images/signals/og/aaeon-max-q870a-max-h810a-micro-atx-edge-ai.png",
+    "alt": "FlyPig AI infographic on AAEON MAX-Q870A and MAX-H810A, highlighting Core Ultra 200S support, up to 125W CPUs and mass-production sample status.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.aaeon.com/en/news/detail/max-q870a-max-h810a-mico-itx-motherboard-arrow-lake",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-max-q870a-max-h810a-micro-atx-edge-ai.svg"
+    }
+  }
+}
