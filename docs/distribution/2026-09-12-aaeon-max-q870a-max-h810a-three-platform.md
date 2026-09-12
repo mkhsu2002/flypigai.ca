@@ -1,4 +1,18 @@
-# 2026-09-12 Three-Platform Expansion Draft
+# 2026-09-12 Three-Platform Expansion Record
+
+Status: published on 2026-09-12.
+
+Published URLs:
+
+- Substack: https://flypig2026.substack.com/p/aaeons-new-micro-atx-boards-show
+- Medium: https://medium.com/@flypig2026/aaeon-max-q870a-and-max-h810a-a-micro-atx-signal-for-edge-ai-system-builders-440469f0035d
+- Vocus: https://vocus.cc/article/6aa58595fd89780001d76490
+
+Publication notes:
+
+- Substack was published as web-only from the FlyPig AI publication dashboard, without sending email/app delivery.
+- Medium was published from the `@flypig2026` account, with subscriber notification disabled and topic `Artificial Intelligence`; the live Medium article uses a condensed version of the source draft below.
+- Vocus was published publicly under FlyPig AI 生存指南 / 未來領航員, category 科技, with AI-assisted content labeling enabled.
 
 Canonical article:
 
