@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-12",
   "principles": {
     "immutableOrigin": "Never rewrite the original wording or first-published date of a prediction to fit later evidence.",
     "evidenceStates": ["supports", "weakens", "neutral", "invalidates"],
@@ -13,12 +13,17 @@
       "firstPublished": "2026-09-05",
       "title": "An Android-like common layer will emerge for Physical AI",
       "originalPrediction": "As robot bodies, compute and low-level control become more modular, the industry will converge around one or more common software abstraction layers that let higher-level agents and applications operate across heterogeneous robot hardware.",
-      "status": "active",
-      "confidence": 0.65,
+      "status": "strengthening",
+      "confidence": 0.68,
       "falsifiers": [
         "Major robot vendors remain vertically closed with no meaningful cross-platform skill or runtime portability through 2030.",
         "Robot applications continue to require predominantly body-specific software stacks with little reusable abstraction above ROS-class middleware."
-      ]
+      ],
+      "latestAssessment": {
+        "date": "2026-09-12",
+        "evidenceIds": ["PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010"],
+        "summary": "Confidence rises modestly because multiple independent architecture strategies now target common capability language, standardized runtime deployment, hardware abstraction or omni-bodied models. None is yet an accepted cross-vendor application standard, so the prediction remains unconfirmed."
+      }
     },
     {
       "id": "FP-PAI-002",
@@ -26,23 +31,33 @@
       "title": "Reference robots will lower the cost of entering Physical AI",
       "originalPrediction": "Reference robot designs and increasingly productized robot bodies will reduce the need for application companies to design complete electromechanical systems from scratch, creating an ODM-like layer for Physical AI.",
       "status": "strengthening",
-      "confidence": 0.75,
+      "confidence": 0.77,
       "falsifiers": [
         "Reference designs fail to move beyond research demonstrations into repeatable developer or commercial platforms.",
         "Mechanical, safety and task heterogeneity prevent meaningful reuse of robot bodies and subsystems."
-      ]
+      ],
+      "latestAssessment": {
+        "date": "2026-09-12",
+        "evidenceIds": ["PAI-EV-2026-0007", "PAI-EV-2026-0009"],
+        "summary": "The Qualcomm-NEURA plan for multiple robotic reference platforms and Arm's effort to reduce integration complexity add support to the existing NVIDIA reference-robot evidence, but repeatable commercial reuse across vendors remains the critical test."
+      }
     },
     {
       "id": "FP-PAI-003",
       "firstPublished": "2026-09-05",
       "title": "Long-term differentiation will migrate above increasingly modular hardware",
       "originalPrediction": "Physical AI hardware can create large businesses, but as major hardware classes mature and become more comparable, a growing share of durable differentiation will move toward runtime platforms, reusable skills, applications, workflow integration and operating data.",
-      "status": "active",
-      "confidence": 0.65,
+      "status": "strengthening",
+      "confidence": 0.68,
       "falsifiers": [
         "Hardware vendors retain most industry margin and bargaining power despite broad component and platform standardization.",
         "Reusable skills and application software fail to achieve meaningful portability or recurring economics across robot platforms."
-      ]
+      ],
+      "latestAssessment": {
+        "date": "2026-09-12",
+        "evidenceIds": ["PAI-EV-2026-0004", "PAI-EV-2026-0005", "PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0010"],
+        "summary": "Modular accelerator hosts, reusable autonomy across vehicle categories, licensed robot skills and generalist robot foundation models all point toward value accumulating above individual hardware components. Evidence on industry margins and bargaining power is still insufficient, so the confidence increase is deliberately small."
+      }
     },
     {
       "id": "FP-PAI-004",
@@ -54,7 +69,12 @@
       "falsifiers": [
         "End-to-end models make explicit reusable skill interfaces largely unnecessary.",
         "Safety and embodiment differences prevent skills from becoming meaningfully reusable across platforms."
-      ]
+      ],
+      "latestAssessment": {
+        "date": "2026-09-12",
+        "evidenceIds": ["PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010"],
+        "summary": "Evidence is mixed. AmbiOS and Qualcomm-NEURA directly support reusable skills and build-once deployment, while Skild S1 is a live counter-signal because in-context foundation models can learn and compose unseen behaviors without task-specific fine-tuning or an explicit externally packaged skill. Confidence therefore remains unchanged."
+      }
     }
   ]
 }
