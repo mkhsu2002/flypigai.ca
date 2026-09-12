@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getIndustrySignals } from "../lib/industrySignals";
 import { atlasCategories } from "./atlas/data";
 import { insightGuides } from "./insights/guides";
+import { getEvidenceReview, seriesUpdatedDate } from "./insights/physical-ai-modularization/evidenceReviews";
 import { physicalAiSeries, seriesDate, seriesPath } from "./insights/physical-ai-modularization/series";
 import { technologyOwnerTopics } from "./technologies/topics";
 
@@ -41,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const coreRoutes: MetadataRoute.Sitemap = corePaths.map(([routePath, priority, changeFrequency]) => ({
     url: `${baseUrl}${routePath}`,
-    ...(routePath === seriesPath ? { lastModified: new Date(seriesDate) } : revisedCorePaths.has(routePath) ? { lastModified: currentEditorialRevision } : {}),
+    ...(routePath === seriesPath ? { lastModified: new Date(seriesUpdatedDate) } : revisedCorePaths.has(routePath) ? { lastModified: currentEditorialRevision } : {}),
     changeFrequency,
     priority,
   }));
@@ -54,7 +55,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const insightRoutes: MetadataRoute.Sitemap = insightGuides.map((guide) => ({ url: `${baseUrl}/insights/${guide.slug}`, lastModified: new Date(guide.dateModified), changeFrequency: "monthly" as const, priority: 0.7 }));
   insightRoutes.unshift({ url: `${baseUrl}/insights/canada-needs-physical-ai-integrators`, lastModified: currentEditorialRevision, changeFrequency: "monthly", priority: 0.75 });
 
-  const seriesRoutes: MetadataRoute.Sitemap = physicalAiSeries.map((article) => ({ url: `${baseUrl}${seriesPath}/${article.slug}`, lastModified: new Date(seriesDate), changeFrequency: "monthly" as const, priority: 0.72 }));
+  const seriesRoutes: MetadataRoute.Sitemap = physicalAiSeries.map((article) => {
+    const review = getEvidenceReview(article.slug);
+    return { url: `${baseUrl}${seriesPath}/${article.slug}`, lastModified: new Date(review?.modifiedDate ?? seriesDate), changeFrequency: "monthly" as const, priority: 0.72 };
+  });
 
   const technologyRoutes: MetadataRoute.Sitemap = technologyOwnerTopics.map((topic) => ({ url: `${baseUrl}/technologies/${topic.slug}`, lastModified: currentEditorialRevision, changeFrequency: "monthly" as const, priority: 0.8 }));
   const signalRoutes: MetadataRoute.Sitemap = getIndustrySignals().map((signal) => ({ url: `${baseUrl}/signals/${signal.slug}`, lastModified: new Date(signal.modifiedAt), changeFrequency: "monthly" as const, priority: 0.8 }));
