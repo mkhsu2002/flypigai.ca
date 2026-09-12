@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import JsonLd from "../../../components/JsonLd";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
 import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
-import { physicalAiSeries, seriesDate, seriesPath, seriesTitle } from "./series";
+import { seriesUpdatedDate } from "./evidenceReviews";
+import { physicalAiSeries, seriesPath, seriesTitle } from "./series";
 
 export const metadata: Metadata = makeMetadata({
   title: `${seriesTitle}: Who Becomes the Android of Physical AI?`,
@@ -14,7 +15,7 @@ export const metadata: Metadata = makeMetadata({
 export default function PhysicalAiModularizationHub() {
   return <main>
     <JsonLd data={breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Insights", path: "/insights" }, { name: seriesTitle, path: seriesPath }])} />
-    <JsonLd data={{ "@context": "https://schema.org", "@type": "CollectionPage", name: seriesTitle, description: "FlyPig AI research on modular Physical AI, robot platforms, operating layers and the emerging application economy.", url: `${siteUrl}${seriesPath}`, dateModified: seriesDate, hasPart: physicalAiSeries.map((article) => ({ "@type": "Article", name: article.title, url: `${siteUrl}${seriesPath}/${article.slug}` })) }} />
+    <JsonLd data={{ "@context": "https://schema.org", "@type": "CollectionPage", name: seriesTitle, description: "FlyPig AI research on modular Physical AI, robot platforms, operating layers and the emerging application economy.", url: `${siteUrl}${seriesPath}`, dateModified: seriesUpdatedDate, hasPart: physicalAiSeries.map((article) => ({ "@type": "Article", name: article.title, url: `${siteUrl}${seriesPath}/${article.slug}` })) }} />
     <SiteHeader />
     <section className="hero insights-hero"><div className="shell hero-grid"><div>
       <p className="eyebrow">FlyPig AI Research Series · Physical AI</p>
@@ -30,6 +31,8 @@ export default function PhysicalAiModularizationHub() {
     <section className="section shell"><div className="section-head"><div><p className="eyebrow">The emerging stack</p><h2>Model → Runtime → Compute → Body → Skills → Agent → Application</h2></div><p className="section-copy">The central FlyPig question is not simply which humanoid or quadruped will win. It is which layer becomes the common development surface across many bodies. Android transformed phones by creating a shared platform for OEMs and developers. Physical AI may eventually need an equivalent compatibility and application layer of its own.</p></div></section>
 
     <section className="section dark"><div className="shell"><div className="section-head"><div><p className="eyebrow">Why this matters now</p><h2>The reference-robot era is no longer hypothetical.</h2></div><p className="section-copy">NVIDIA's 2026 Isaac GR00T Reference Humanoid Robot combines a Unitree body, dexterous hands, Jetson Thor compute and an open GR00T software stack. That does not prove the industry has already found its Android. It does show that major robotics platforms are beginning to package the physical body, compute and software as separable, reusable layers.</p></div><div className="actions"><a className="pill secondary" href={`${seriesPath}/${physicalAiSeries[3].slug}`}>Read the reference robot analysis</a></div></div></section>
+
+    <section className="section shell"><div className="section-head"><div><p className="eyebrow">Evidence review · September 12, 2026</p><h2>Two abstraction strategies are now becoming visible.</h2></div><p className="section-copy">Arm's new Robotics Capability Framework and the Qualcomm-NEURA runtime plan point toward explicit common interfaces and capability language. AmbiOS turns production-hardened robot skills into licensable software, while Skild S1 shows a competing path in which an end-to-end foundation model learns unseen behavior from a single video demonstration. FlyPig now treats the explicit-skill layer and the generalist-model layer as competing but potentially complementary architectures rather than assuming one must replace the other.</p></div><div className="actions"><a className="pill secondary" href={`${seriesPath}/${physicalAiSeries[1].slug}`}>Read the Android evidence update</a><a className="pill secondary" href={`${seriesPath}/${physicalAiSeries[4].slug}`}>Read the robot skills counter-thesis</a></div></section>
 
     <section className="cta shell"><div className="cta-box"><div><p className="eyebrow">FlyPig AI research direction</p><h2>Follow the layer above the machine.</h2><p>FlyPig AI studies how robot platforms, edge compute, Taiwan's technology ecosystem and Canadian deployment requirements connect. The longer-term objective is to understand where reusable intelligence, skills and applications can become more valuable than another piece of hardware.</p></div><div className="actions"><a className="pill primary" href="/technologies">Technology Intelligence</a><a className="pill secondary" href="/atlas">Canada Atlas</a></div></div></section>
     <SiteFooter />
