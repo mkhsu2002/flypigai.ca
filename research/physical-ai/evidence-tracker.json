@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-09-05",
+  "updatedAt": "2026-09-12",
   "scope": {
     "existingCollectors": [
       "Taiwan Industry Signals",
@@ -54,6 +54,123 @@
         {"predictionId": "FP-PAI-003", "effect": "neutral", "strength": "weak"}
       ],
       "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0004",
+      "date": "2026-08-31",
+      "trackerAddedAt": "2026-09-12",
+      "geography": "taiwan",
+      "category": "platform-ecosystem",
+      "subject": "MediaTek and NVIDIA expand collaboration from custom XPUs to local AI and automotive",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/mediatek-nvidia-edge-cloud-ai-partnership",
+      "summary": "The existing Taiwan Industry Signal records a broader MediaTek-NVIDIA architecture relationship spanning NVLink Fusion custom XPU work, local AI computing and automotive. The announcement is an ecosystem and roadmap signal rather than evidence of a new shipping MediaTek product.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0005",
+      "date": "2026-09-03",
+      "trackerAddedAt": "2026-09-12",
+      "geography": "taiwan",
+      "category": "modular-edge-compute",
+      "subject": "Advantech AIR-411 separates compact edge host from accelerator choice",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/advantech-air-411-bartlett-lake-multi-accelerator-edge-ai",
+      "summary": "The existing Taiwan Industry Signal records a compact industrial host that supports accelerator paths from Intel, NVIDIA, AMD and Qualcomm together with edge-management software. It is evidence of increasing compute modularity, although official GPU power specifications remain inconsistent and must be qualified per configuration.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0006",
+      "date": "2026-01-28",
+      "trackerAddedAt": "2026-09-12",
+      "geography": "canada",
+      "category": "cross-application-physical-ai-platform",
+      "subject": "Waabi extends one Physical AI platform from autonomous trucks to robotaxis",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/waabi-uber-robotaxi-expansion-series-c",
+      "summary": "The existing Canada Industry Signal records Waabi's expansion of the Waabi Driver from autonomous trucking into a second vehicle category, robotaxis, with Uber as the exclusive planned deployment platform. The source supports software-platform reuse across related embodiments but still requires vehicle-specific hardware engineering, validation and regulation.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "weak"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0007",
+      "date": "2026-09-08",
+      "trackerAddedAt": "2026-09-12",
+      "geography": "global",
+      "category": "capability-framework",
+      "subject": "Arm Total Design for Physical AI and Robotics Capability Framework",
+      "sourceType": "official",
+      "sourceUrl": "https://newsroom.arm.com/news/arm-total-design-and-robotics-capability-framework-for-physical-ai",
+      "summary": "Arm expanded Total Design to Physical AI with more than 80 ecosystem participants and introduced a Robotics Capability Framework as a starting point for a common language linking use cases, robot behavior and system requirements. The framework is an early ecosystem initiative, not yet a runtime compatibility standard or proof of cross-vendor adoption.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "weak"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0008",
+      "date": "2026-09-09",
+      "trackerAddedAt": "2026-09-12",
+      "geography": "global",
+      "category": "robot-foundation-model",
+      "subject": "Skild reports commercialization of an omni-bodied Physical AI model and S1 in-context learning",
+      "sourceType": "official",
+      "sourceUrl": "https://www.skild.ai/blogs/skild-crosses-100m-arr",
+      "additionalSourceUrls": [
+        "https://www.skild.ai/blogs/s1"
+      ],
+      "summary": "Skild reports more than 60 paying customers and deployment of its generalist robot intelligence across varied applications, while S1 can take a single video demonstration as context and execute previously unseen tasks without task-specific weight updates. Revenue and customer counts are company-reported, and the evidence does not establish an industry-wide portability standard.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-004", "effect": "weakens", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0009",
+      "date": "2026-03-09",
+      "trackerAddedAt": "2026-09-12",
+      "geography": "global",
+      "category": "runtime-reference-platform",
+      "subject": "Qualcomm and NEURA plan standardized Physical AI runtime and multi-form-factor reference platforms",
+      "sourceType": "official",
+      "sourceUrl": "https://www.qualcomm.com/news/releases/2026/03/neura-robotics-and-qualcomm--enter-strategic-collaboration-to-ad",
+      "summary": "Qualcomm and NEURA announced plans for a standardized runtime and deployment interface across robotic platforms, reference platforms spanning several robot form factors, and a developer ecosystem intended to support build-once deployment across multiple form factors. These are collaboration plans and should not be treated as proof that portability has already been achieved at scale.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-004", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0010",
+      "date": "2026-02-10",
+      "trackerAddedAt": "2026-09-12",
+      "geography": "global",
+      "category": "robot-skills-platform",
+      "subject": "Ambi Robotics licenses AI Skill Suite across third-party robotic hardware",
+      "sourceType": "official",
+      "sourceUrl": "https://www.ambirobotics.com/media/ambi-robotics-expands-ambios-physical-ai-platform-with-ai-skill-suite/",
+      "summary": "Ambi Robotics introduced a licensing model for production-proven AI skills under AmbiOS and says its software isolates hardware complexity so applications can operate across varying robotic form factors and third-party hardware use cases. The current evidence is first-party and limited to trusted partners, so broad cross-platform portability remains to be independently demonstrated.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-004", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series-update"
     }
   ]
 }
