@@ -20,7 +20,10 @@ const contentDirectory = path.join(root, "content", "industry-signals");
 const sourceDirectory = path.join(root, "public", "images", "signals", "source");
 const imageDirectory = path.join(root, "public", "images", "signals");
 const socialDirectory = path.join(imageDirectory, "og");
-for (const directory of [sourceDirectory, imageDirectory, socialDirectory]) fs.mkdirSync(directory, { recursive: true });
+const officialLogoPath = path.join(root, "public", "images", "brand", "flypig-logo.png");
+const sheetDirectory = path.join(root, "artifacts", "signal-review-sheets");
+for (const directory of [sourceDirectory, imageDirectory, socialDirectory, sheetDirectory]) fs.mkdirSync(directory, { recursive: true });
+if (!fs.existsSync(officialLogoPath)) throw new Error("Missing official FlyPig logo at public/images/brand/flypig-logo.png");
 
 const signals = fs.readdirSync(contentDirectory)
   .filter((fileName) => fileName.endsWith(".json"))
@@ -74,20 +77,35 @@ function fittedLines(value, maxCharacters, maxLines, label) {
   return lines;
 }
 
+function officialLogoImage(x, y, width, height) {
+  return `<image href="/images/brand/flypig-logo.png" x="${x}" y="${y}" width="${width}" height="${height}" preserveAspectRatio="xMidYMid meet"/>`;
+}
+
+const logoBuffers = new Map();
+async function officialLogoBuffer(width) {
+  if (!logoBuffers.has(width)) {
+    logoBuffers.set(width, await sharp(officialLogoPath).resize({ width, fit: "inside", withoutEnlargement: true }).png().toBuffer());
+  }
+  return logoBuffers.get(width);
+}
+
 function svgFor(signal, width, height, social = false) {
-  const titleLines = fittedLines(signal.socialTitle || signal.title, 34, social ? 2 : 3, `${signal.slug} title`);
+  const titleLines = fittedLines(signal.socialTitle || signal.title, social ? 28 : 34, social ? 3 : 3, `${signal.slug} title`);
   const palette = ["#0f766e", "#2563eb", "#7c3aed", "#b45309", "#be123c"];
   const accent = palette[signals.findIndex((candidate) => candidate.slug === signal.slug) % palette.length];
   const titleSize = social ? 48 : 64;
   const titleStart = social ? 206 : 292;
   const titleStep = social ? 62 : 82;
-  const factsTop = social ? 428 : 690;
+  const factsTop = social ? 438 : 690;
   const factWidth = social ? 330 : 438;
   const factGap = social ? 24 : 30;
   const side = social ? 72 : 96;
   const factHeight = social ? 118 : 174;
   const factFont = social ? 22 : 28;
   const factLabel = social ? 15 : 18;
+  const logoWidth = social ? 320 : 430;
+  const logoLeft = width - side - logoWidth;
+  const logoTop = social ? 166 : 260;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
   <defs>
@@ -97,21 +115,36 @@ function svgFor(signal, width, height, social = false) {
   <rect width="${width}" height="${height}" fill="url(#background)"/>
   <rect width="${width}" height="${height}" fill="url(#grid)"/>
   <rect x="0" y="0" width="18" height="${height}" fill="${accent}"/>
-  <circle cx="${side + 34}" cy="${social ? 86 : 112}" r="34" fill="#1f2933"/>
-  <text x="${side + 34}" y="${social ? 92 : 118}" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">FP</text>
-  <text x="${side + 86}" y="${social ? 79 : 105}" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
-  <text x="${side + 86}" y="${social ? 105 : 132}" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
+  <text x="${side}" y="${social ? 79 : 105}" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
+  <text x="${side}" y="${social ? 105 : 132}" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
   <text x="${side}" y="${social ? 167 : 222}" fill="${accent}" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">${escapeXml(signal.supplier.toUpperCase())} · ${escapeXml(signal.category.toUpperCase())}</text>
   ${titleLines.map((line, index) => `<text x="${side}" y="${titleStart + index * titleStep}" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="${titleSize}" font-weight="500">${escapeXml(line)}</text>`).join("\n  ")}
-  ${signal.keyFacts.map((fact, index) => {
+  ${social ? signal.keyFacts.map((fact, index) => {
+    const factLines = fittedLines(fact, 54, 1, `${signal.slug} key fact ${index + 1}`);
+    return `<text x="${side}" y="${factsTop + index * 34}" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="${accent}">0${index + 1}</tspan> ${escapeXml(factLines[0])}</text>`;
+  }).join("\n  ") : signal.keyFacts.map((fact, index) => {
     const x = side + index * (factWidth + factGap);
     const factLines = fittedLines(fact, social ? 24 : 27, 2, `${signal.slug} key fact ${index + 1}`);
     return `<g><rect x="${x}" y="${factsTop}" width="${factWidth}" height="${factHeight}" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="${x + 24}" y="${factsTop + (social ? 32 : 42)}" fill="${accent}" font-family="Arial, Helvetica, sans-serif" font-size="${factLabel}" font-weight="700">0${index + 1}</text>${factLines.map((line, lineIndex) => `<text x="${x + 24}" y="${factsTop + (social ? 68 : 92) + lineIndex * (social ? 27 : 36)}" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="${factFont}" font-weight="650">${escapeXml(line)}</text>`).join("")}</g>`;
   }).join("\n  ")}
+  ${officialLogoImage(logoLeft, logoTop, logoWidth, Math.round(logoWidth * 550 / 650))}
   <text x="${side}" y="${height - (social ? 26 : 52)}" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="${social ? 14 : 17}">Independent editorial infographic · Source linked in article · flypigai.ca</text>
   </svg>`;
 }
 
+async function renderWithOfficialLogo(svg, outputPath, social) {
+  const width = social ? 1200 : 1600;
+  const side = social ? 72 : 96;
+  const logoWidth = social ? 320 : 430;
+  const logoLeft = width - side - logoWidth;
+  const logoTop = social ? 166 : 260;
+  await sharp(Buffer.from(svg))
+    .composite([{ input: await officialLogoBuffer(logoWidth), left: logoLeft, top: logoTop }])
+    .png()
+    .toFile(outputPath);
+}
+
+const renderedSocialPaths = [];
 for (const signal of batch) {
   const heroSvg = svgFor(signal, 1600, 1000, false);
   const socialSvg = svgFor(signal, 1200, 630, true);
@@ -123,14 +156,29 @@ for (const signal of batch) {
   const socialTemporaryPath = `${socialPath}.next.png`;
   fs.writeFileSync(sourcePath, heroSvg);
   fs.writeFileSync(socialSourcePath, socialSvg);
-  await sharp(fs.readFileSync(sourcePath)).png().toFile(heroTemporaryPath);
-  await sharp(fs.readFileSync(socialSourcePath)).png().toFile(socialTemporaryPath);
+  await renderWithOfficialLogo(heroSvg, heroTemporaryPath, false);
+  await renderWithOfficialLogo(socialSvg, socialTemporaryPath, true);
   fs.renameSync(heroTemporaryPath, heroPath);
   fs.renameSync(socialTemporaryPath, socialPath);
   const [heroMetadata, socialMetadata] = await Promise.all([sharp(heroPath).metadata(), sharp(socialPath).metadata()]);
   if (heroMetadata.width !== 1600 || heroMetadata.height !== 1000) throw new Error(`Unexpected hero dimensions for ${signal.slug}`);
   if (socialMetadata.width !== 1200 || socialMetadata.height !== 630) throw new Error(`Unexpected social dimensions for ${signal.slug}`);
+  renderedSocialPaths.push(socialPath);
   console.log(`${signal.slug}: hero 1600x1000, social 1200x630`);
 }
 
+const thumbs = await Promise.all(renderedSocialPaths.map((filePath) => sharp(filePath).resize(400, 210).extend({ top: 0, bottom: 34, left: 0, right: 0, background: "#fbfaf7" }).composite([{ input: Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="400" height="34"><text x="16" y="23" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1f2933">${escapeXml(path.basename(filePath, ".png"))}</text></svg>`), top: 210, left: 0 }]).toBuffer()));
+const columns = Math.min(3, thumbs.length);
+const rows = Math.ceil(thumbs.length / columns);
+const sheetPath = path.join(sheetDirectory, `signal-og-${String(start).padStart(2, "0")}-${String(start + batch.length - 1).padStart(2, "0")}.png`);
+await sharp({
+  create: {
+    width: columns * 400,
+    height: rows * 244,
+    channels: 4,
+    background: "#fbfaf7",
+  },
+}).composite(thumbs.map((input, index) => ({ input, left: (index % columns) * 400, top: Math.floor(index / columns) * 244 }))).png({ compressionLevel: 9 }).toFile(sheetPath);
+
 console.log(`Generated and verified ${batch.length} Signal artwork set${batch.length === 1 ? "" : "s"}${missingOnly ? " that were missing" : ` (start ${start})`}.`);
+console.log(`Review sheet: ${path.relative(root, sheetPath)}`);

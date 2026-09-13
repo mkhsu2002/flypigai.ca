@@ -6,15 +6,14 @@
   <rect width="1200" height="630" fill="url(#background)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
   <rect x="0" y="0" width="18" height="630" fill="#0f766e"/>
-  <circle cx="106" cy="86" r="34" fill="#1f2933"/>
-  <text x="106" y="92" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">FP</text>
-  <text x="158" y="79" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
-  <text x="158" y="105" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
+  <text x="72" y="79" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
+  <text x="72" y="105" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
   <text x="72" y="167" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">DELTA ELECTRONICS · EMBODIED AI · ROBOTICS CONTROL</text>
-  <text x="72" y="206" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Delta Extends Physical AI Into</text>
-  <text x="72" y="268" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Robot Joints</text>
-  <g><rect x="72" y="428" width="330" height="118" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="96" y="460" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">01</text><text x="96" y="496" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">Embodied AI dual-arm</text><text x="96" y="523" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">platform</text></g>
-  <g><rect x="426" y="428" width="330" height="118" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="450" y="460" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">02</text><text x="450" y="496" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">AI robot control</text><text x="450" y="523" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">software</text></g>
-  <g><rect x="780" y="428" width="330" height="118" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="804" y="460" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">03</text><text x="804" y="496" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">Torque-sensing joint</text><text x="804" y="523" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">module</text></g>
+  <text x="72" y="206" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Delta Extends Physical AI</text>
+  <text x="72" y="268" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Into Robot Joints</text>
+  <text x="72" y="438" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#0f766e">01</tspan> Embodied AI dual-arm platform</text>
+  <text x="72" y="472" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#0f766e">02</tspan> AI robot control software</text>
+  <text x="72" y="506" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#0f766e">03</tspan> Torque-sensing joint module</text>
+  <image href="/images/brand/flypig-logo.png" x="808" y="166" width="320" height="271" preserveAspectRatio="xMidYMid meet"/>
   <text x="72" y="604" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="14">Independent editorial infographic · Source linked in article · flypigai.ca</text>
   </svg>

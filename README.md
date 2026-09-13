@@ -208,6 +208,12 @@ Articles should be published directly to the live site once written. The user pr
 
 ## Open Graph image system
 
+The official FlyPig logo asset is:
+
+- `/public/images/brand/flypig-logo.png`
+
+Open Graph artwork may vary by page title, copy and accent color, but the FlyPig brand mark must be composed from this checked-in logo asset only. Do not redraw, reinterpret, decorate or overlay anything on the logo in generated social images.
+
 The default social image is:
 
 - `/public/images/og/flypig-ai-default.png`
@@ -218,11 +224,13 @@ Page-specific social images live under:
 - `/public/images/og/pages/*.png`
 - source: `/public/images/og/source/pages/*.svg`
 
-Generate page-level images in batches of at most six:
+Generate page-level and Industry Signal images in batches of at most six:
 
 `npm run generate:page-og -- --start=0 --limit=6`
 
-The generator writes contact sheets to `/artifacts/og-review-sheets/` for visual inspection. `makeMetadata()` maps canonical page paths to page-specific images automatically; Industry Signals keep their article-specific `heroVisual.socialSrc` images.
+`npm run generate:signals -- --start=0 --limit=6`
+
+The generators write contact sheets to `/artifacts/og-review-sheets/` and `/artifacts/signal-review-sheets/` for visual inspection. `makeMetadata()` maps canonical page paths to page-specific images automatically; Industry Signals keep their article-specific `heroVisual.socialSrc` images.
 
 ### Source database
 

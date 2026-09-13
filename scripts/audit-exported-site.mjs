@@ -103,7 +103,7 @@ for (const filePath of htmlFiles) {
   }
 }
 
-for (const asset of ["favicon.ico", "apple-touch-icon.png", "images/og/flypig-ai-default.png", "images/brand/flypig-ai-mark-512.png"]) {
+for (const asset of ["favicon.ico", "apple-touch-icon.png", "images/og/flypig-ai-default.png", "images/brand/flypig-logo.png", "images/brand/flypig-ai-mark-512.png"]) {
   if (!fs.existsSync(path.join(outputDirectory, asset))) errors.push(`Missing exported asset /${asset}`);
 }
 

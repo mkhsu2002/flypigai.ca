@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: [`${siteUrl}${siteIdentity.images.defaultSocial}`],
   },
   icons: {
-    icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/images/brand/flypig-ai-mark.svg", type: "image/svg+xml" }],
+    icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/images/brand/flypig-logo.png", type: "image/png" }, { url: "/images/brand/flypig-ai-mark.svg", type: "image/svg+xml" }],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };

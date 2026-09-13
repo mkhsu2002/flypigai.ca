@@ -6,15 +6,14 @@
   <rect width="1200" height="630" fill="url(#background)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
   <rect x="0" y="0" width="18" height="630" fill="#b45309"/>
-  <circle cx="106" cy="86" r="34" fill="#1f2933"/>
-  <text x="106" y="92" text-anchor="middle" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">FP</text>
-  <text x="158" y="79" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
-  <text x="158" y="105" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
+  <text x="72" y="79" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
+  <text x="72" y="105" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
   <text x="72" y="167" fill="#b45309" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">TENSTORRENT · CANADA · AI HARDWARE</text>
-  <text x="72" y="206" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Galaxy Blackhole Reaches Volume</text>
-  <text x="72" y="268" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Shipping</text>
-  <g><rect x="72" y="428" width="330" height="118" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="96" y="460" fill="#b45309" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">01</text><text x="96" y="496" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">Production status</text><text x="96" y="523" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">announced</text></g>
-  <g><rect x="426" y="428" width="330" height="118" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="450" y="460" fill="#b45309" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">02</text><text x="450" y="496" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">Volume shipping</text><text x="450" y="523" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">announced</text></g>
-  <g><rect x="780" y="428" width="330" height="118" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="804" y="460" fill="#b45309" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700">03</text><text x="804" y="496" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">Galaxy scales as a</text><text x="804" y="523" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="650">multi-server system</text></g>
+  <text x="72" y="206" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Galaxy Blackhole Reaches</text>
+  <text x="72" y="268" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Volume Shipping</text>
+  <text x="72" y="438" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#b45309">01</tspan> Production status announced</text>
+  <text x="72" y="472" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#b45309">02</tspan> Volume shipping announced</text>
+  <text x="72" y="506" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#b45309">03</tspan> Galaxy scales as a multi-server system</text>
+  <image href="/images/brand/flypig-logo.png" x="808" y="166" width="320" height="271" preserveAspectRatio="xMidYMid meet"/>
   <text x="72" y="604" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="14">Independent editorial infographic · Source linked in article · flypigai.ca</text>
   </svg>
