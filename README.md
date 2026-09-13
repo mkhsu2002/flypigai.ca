@@ -232,6 +232,8 @@ Generate page-level and Industry Signal images in batches of at most six:
 
 The generators write contact sheets to `/artifacts/og-review-sheets/` and `/artifacts/signal-review-sheets/` for visual inspection. `makeMetadata()` maps canonical page paths to page-specific images automatically; Industry Signals keep their article-specific `heroVisual.socialSrc` images.
 
+Social image URLs are versioned through `lib/socialImages.ts` so CDN and social crawler caches do not keep serving an older image after the PNG at the same path is regenerated.
+
 ### Source database
 
 Primary Google Sheet:

@@ -4,6 +4,7 @@ import NewsletterNotice from "../../../components/NewsletterNotice";
 import { SiteFooter, SiteHeader } from "../../../components/SiteChrome";
 import JsonLd from "../../../components/JsonLd";
 import { absoluteUrl } from "../../../lib/site";
+import { socialImageUrl } from "../../../lib/socialImages";
 import { getIndustrySignal, getIndustrySignals, getIndustrySignalWordCount } from "../../../lib/industrySignals";
 import { technologyTopicHref } from "../../../lib/technologyTaxonomy";
 import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
@@ -72,7 +73,7 @@ export default async function SignalArticlePage({ params }: PageProps) {
       description: signal.seoDescription,
       datePublished: signal.publishedAt,
       dateModified: signal.modifiedAt,
-      image: [absoluteUrl(signal.heroVisual.src), absoluteUrl(signal.heroVisual.socialSrc)],
+      image: [absoluteUrl(signal.heroVisual.src), socialImageUrl(signal.heroVisual.socialSrc)],
       author: { "@type": signal.author.type, "@id": `${siteUrl}/#editorial-desk`, name: signal.author.name, url: authorUrl, parentOrganization: { "@id": `${siteUrl}/#organization` } },
       publisher: { "@id": `${siteUrl}/#organization` },
       mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl, siteIdentity } from "../lib/site";
-import { pageOgImage } from "../lib/socialImages";
+import { pageOgImage, versionSocialImagePath } from "../lib/socialImages";
 
 export const siteUrl = siteIdentity.url;
 export const siteName = siteIdentity.brandName;
@@ -78,7 +78,7 @@ export function makeMetadata({
 }: SeoOptions): Metadata {
   const canonical = `${siteUrl}${path}`;
   const mappedOgSlug = pageOgSlug(path);
-  const socialImage = image ?? (mappedOgSlug
+  const rawSocialImage = image ?? (mappedOgSlug
     ? pageOgImage(mappedOgSlug, `${siteName} - ${title}`)
     : {
       url: siteIdentity.images.defaultSocial,
@@ -86,6 +86,7 @@ export function makeMetadata({
       height: 630,
       alt: "FlyPig AI - Canada-Taiwan Edge AI and Physical AI research",
     });
+  const socialImage = { ...rawSocialImage, url: versionSocialImagePath(rawSocialImage.url) };
   const imageUrl = absoluteUrl(socialImage.url);
   const languages: Record<string, string> = {};
   if (enPath) languages["en-CA"] = `${siteUrl}${enPath}`;

@@ -3,6 +3,7 @@ import JsonLd from "../components/JsonLd";
 import "./globals.css";
 import "./editorial.css";
 import { siteIdentity } from "../lib/site";
+import { socialImageUrl } from "../lib/socialImages";
 import { defaultDescription, organizationJsonLd, siteUrl } from "./seo";
 
 export const metadata: Metadata = {
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     locale: "en_CA",
     type: "website",
     images: [{
-      url: `${siteUrl}${siteIdentity.images.defaultSocial}`,
+      url: socialImageUrl(siteIdentity.images.defaultSocial),
       width: 1200,
       height: 630,
       alt: "FlyPig AI - Canada-Taiwan Edge AI and Physical AI research",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FlyPig AI | Canada-Taiwan Edge AI & Physical AI Research",
     description: defaultDescription,
-    images: [`${siteUrl}${siteIdentity.images.defaultSocial}`],
+    images: [socialImageUrl(siteIdentity.images.defaultSocial)],
   },
   icons: {
     icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/images/brand/flypig-logo.png", type: "image/png" }, { url: "/images/brand/flypig-ai-mark.svg", type: "image/svg+xml" }],
