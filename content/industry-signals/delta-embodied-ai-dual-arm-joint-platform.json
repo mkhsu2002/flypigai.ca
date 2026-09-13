@@ -1,6 +1,19 @@
 {
   "eventId": "EVT-2026-0023",
   "slug": "delta-embodied-ai-dual-arm-joint-platform",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "low",
+    "reviewedAt": "2026-09-13",
+    "findings": [
+      "Delta's August 24, 2026 first-party Automation Taipei coverage confirms the AI robot control software platform and humanoid joint module with integrated torque sensing used as the factual basis of the article.",
+      "The article preserves the exhibition and demonstration maturity boundary and does not infer catalog availability, samples, MOQ, pricing, production timing or an external OEM supply agreement for the humanoid joint module.",
+      "The shortened SEO description remains supported by the official source and does not create a stronger availability, performance or partnership claim than the article body.",
+      "No vendor benchmark is presented as independently verified, and the Canada relevance is framed as a conditional design route rather than a confirmed procurement opportunity.",
+      "Hero and social media are declared FlyPig AI-owned editorial graphics with repository-editable source evidence; the shared Signal template provides source disclosure, editorial-independence language and the corrections path."
+    ],
+    "action": "none"
+  },
   "sourcePublishedAt": "2026-08-24",
   "publishedAt": "2026-08-31",
   "modifiedAt": "2026-08-31",
