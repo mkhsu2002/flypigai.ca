@@ -1,6 +1,19 @@
 {
   "eventId": "EVT-2026-0035",
   "slug": "aaeon-max-q870a-max-h810a-micro-atx-edge-ai",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "low",
+    "reviewedAt": "2026-09-13",
+    "findings": [
+      "AAEON's September 9, 2026 first-party announcement confirms the MAX-Q870A and MAX-H810A, Intel Core Ultra 200S support, the 125W and 65W CPU ceilings, memory and expansion details, Ubuntu 24.04.2 support, and the -20C to 60C operating range used in the article.",
+      "The same official source explicitly states that both platforms are in mass production and that samples are available through the AAEON eShop, supporting the article's maturity wording without inferring regional stock, pricing, MOQ or lead time.",
+      "The article does not present vendor performance claims as independent benchmarks and does not infer customers, partnerships, deployment volumes or commercial relationships beyond the official source.",
+      "The reporting is original analysis rather than a close press-release rewrite, and unresolved regional availability, lifecycle, validation and configuration questions remain explicit.",
+      "Hero and social media are declared FlyPig AI-owned editorial graphics with repository-editable source evidence; the shared Signal template provides source disclosure, editorial-independence language and the corrections path."
+    ],
+    "action": "none"
+  },
   "sourcePublishedAt": "2026-09-09",
   "publishedAt": "2026-09-12",
   "modifiedAt": "2026-09-12",
