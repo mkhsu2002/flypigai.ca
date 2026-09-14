@@ -1,0 +1,116 @@
+{
+  "eventId": "EVT-2026-0034",
+  "slug": "realtek-ibc2026-ai-home-radar-100gbe",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-14",
+    "findings": [
+      "Realtek's September 10, 2026 first-party IBC2026 announcement confirms AI Home Media SoC and AV2 Streaming Platform SoC families, Android/RDK/Linux support, a transformer-based NPU for offline Edge LM, a Wi-Fi 6/Bluetooth LE/Thread human-sensing SoC using Realtek radar technology, 100GbE mass-production status, and a sub-1W 10GbE target for Q2 2027.",
+      "The source combines product families at different maturity levels, so the article keeps 100GbE mass production separate from AI Home, radar-sensing and future 10GbE roadmap status.",
+      "The under-1W 10GbE figure, image-quality language and sensing capability are treated as vendor-stated targets or features, not independent benchmark results.",
+      "No part number, price, sample availability, MOQ, lead time, customer, design win or shipping volume is inferred for the newly announced SoCs.",
+      "Because multiple maturity states and unnamed SoCs appear in a single announcement, the article publishes with explicit attribution and uncertainty."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-10",
+  "publishedAt": "2026-09-14",
+  "modifiedAt": "2026-09-14",
+  "supplier": "Realtek",
+  "category": "AI Home · Sensing · Connectivity",
+  "title": "Realtek Pushes Edge AI Into Home Media, Radar Sensing and 100GbE",
+  "seoTitle": "Realtek IBC2026: AI Home, Radar Sensing and 100GbE",
+  "socialTitle": "Realtek Expands AI Home and Edge Connectivity",
+  "seoDescription": "Realtek's IBC2026 portfolio adds offline Edge LM media SoCs, radar-based human sensing, mass-production 100GbE and a sub-1W 10GbE roadmap.",
+  "dek": "Realtek used IBC2026 to connect three normally separate product layers: local AI in home-media SoCs, sensor-light human presence detection in an IoT SoC, and high-speed networking for edge infrastructure. The maturity of those layers is not the same.",
+  "summary": "The strongest signal is breadth. Realtek is extending local AI from media enhancement into offline language-model interaction while also integrating radar-based human sensing with Wi-Fi 6, Bluetooth LE and Thread. At the infrastructure side, the company says its 100GbE solution is already in mass production, while a lower-power 10GbE generation remains a 2027 roadmap item. Product teams should evaluate each element on its own maturity curve.",
+  "keyFacts": [
+    "Offline Edge LM media SoC",
+    "Radar sensing + Wi-Fi 6 / Thread",
+    "100GbE in mass production"
+  ],
+  "whyItMatters": [
+    "A media SoC with a transformer-oriented NPU and local Edge LM support can move voice, media navigation and home-assistant interactions closer to the television or hub instead of requiring every request to leave the home.",
+    "Combining Wi-Fi 6, Bluetooth LE, Thread and radar-based human sensing in one IoT SoC could reduce external sensor modules and RF integration work for occupancy, wake-on-approach and smart-home control products if Realtek exposes usable development tools and production SKUs.",
+    "The networking signal is unusually concrete: Realtek says its 100GbE solution is already in mass production, while the next 10GbE generation targets under 1W and Q2 2027. Those are different maturity states and should not be merged into one availability claim."
+  ],
+  "reporting": [
+    {
+      "heading": "Local AI is moving into the home-media control plane",
+      "paragraphs": [
+        "Realtek announced AI Home Media SoC and AV2 Streaming Platform SoC product families with Android, RDK and Linux support. The AI Home Media SoC includes a transformer-based NPU that Realtek says can run offline Edge Language Model applications for smart-home interfaces and hands-free voice interaction.",
+        "The interesting product question is not whether a TV can claim AI features; it is whether the media processor can host useful local language and multimodal functions without adding a separate accelerator. Realtek has not published a part number, NPU throughput, memory configuration, model-size envelope or software toolchain in the reviewed announcement, so the practical inference budget remains unknown."
+      ]
+    },
+    {
+      "heading": "Radar sensing could remove an external module from some IoT designs",
+      "paragraphs": [
+        "Realtek also introduced an IoT SoC that combines Wi-Fi 6, Bluetooth LE, Thread and its own radar sensing technology. The company says the device can detect human presence and motion without an additional sensing component and supports wake-on-approach behavior.",
+        "If implemented in a single production-ready platform, that combination could be valuable for smart displays, lighting controllers, home hubs and appliances where a separate PIR or radar module adds cost, board area and certification work. The announcement does not disclose the radar band, antenna architecture, field of view, range, power draw, false-trigger behavior or development SDK, so integration risk remains substantial."
+      ]
+    },
+    {
+      "heading": "100GbE is the mature piece; sub-1W 10GbE is still a target",
+      "paragraphs": [
+        "Realtek says its 100GbE, four-by-25GbE solution is now in mass production and is aimed at Edge AI and internal enterprise servers. The company describes an integrated receive and transmit chain with an on-chip MCU intended to lower system cost.",
+        "By contrast, the next 10GbE solution is explicitly a preview for Q2 2027 and targets power consumption below 1W. That number should be treated as a vendor roadmap target until a production device, measurement conditions and validated power figures are available."
+      ]
+    },
+    {
+      "heading": "The portfolio is commercially interesting because the layers can converge",
+      "paragraphs": [
+        "Media compute, human sensing and edge connectivity are usually sourced from different teams. Realtek's IBC announcement suggests a strategy in which more of those functions sit inside one supplier ecosystem across the home device and its local infrastructure.",
+        "For North American product teams, the next step is not to compare marketing labels. It is to obtain part numbers, EVKs, BSP and model-conversion details, sensing validation data, regional certifications and lifecycle terms for the specific function being designed in."
+      ]
+    }
+  ],
+  "flypigTake": "Realtek's IBC2026 announcement is strategically stronger than any single specification in it. The company is trying to own more of the local-AI path from interaction and sensing through connectivity. The opportunity is lower integration complexity; the risk is assuming the newly named SoC families are as commercially mature as the 100GbE product. They are not yet documented at the same level.",
+  "productStatus": "Realtek states that its 100GbE (25GbE x4) solution is in mass production. The AI Home Media SoC, AV2 Streaming Platform SoC and radar-based human-sensing IoT SoC are announced product families or showcase solutions without public part numbers, pricing, sample status, MOQ or lead time in the reviewed source. The next-generation 10GbE solution is a preview targeted for Q2 2027 with a vendor-stated power goal below 1W.",
+  "openQuestions": [
+    "What are the formal part numbers, NPU throughput, supported Edge LM model sizes, memory configurations, BSP versions and model-conversion tools for the AI Home Media SoC family?",
+    "What radar frequency, antenna design, sensing range, field of view, power, accuracy and SDK/API are used by the human-sensing IoT SoC, and what certifications or reference designs will be available?",
+    "Which 100GbE devices are in production today, and what package, optical/electrical reference designs and lifecycle terms apply to edge-server design-in?"
+  ],
+  "canadaRelevance": "Canadian smart-home, media-platform, telecom and edge-infrastructure teams may find the portfolio relevant because it spans local inference, occupancy-aware interaction and high-speed local networking. The practical value will depend on whether Realtek exposes development hardware, software and regional supply channels for the new SoC families.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "mediatek-mt8875-5g-iot-genai",
+    "kneron-computex-2026-full-stack-edge-ai",
+    "winbond-cube-w77t-edge-ai-memory-security"
+  ],
+  "relatedTechnologies": [
+    "Edge AI",
+    "Smart Home",
+    "Radar Sensing",
+    "Ethernet"
+  ],
+  "corrections": [],
+  "sourceName": "Realtek official IBC2026 portfolio announcement",
+  "sourceUrl": "https://www.realtek.com/Article/NewsDetail?app_id=18&id=4824&lang=zh-TW",
+  "additionalSources": [
+    {
+      "name": "Realtek official English IBC2026 announcement",
+      "url": "https://www.realtek.com/Article/NewsDetail?app_id=18&id=4825&lang=en-GB"
+    }
+  ],
+  "sourceNote": "FlyPig AI independently analyzes Realtek's September 10, 2026 IBC2026 announcement. The article separates mass-production status for 100GbE from unnamed or roadmap-stage SoCs, and treats performance or power statements as vendor claims rather than independent benchmarks.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/realtek-ibc2026-ai-home-radar-100gbe.png",
+    "socialSrc": "/images/signals/og/realtek-ibc2026-ai-home-radar-100gbe.png",
+    "alt": "FlyPig AI infographic on Realtek's IBC2026 portfolio, highlighting offline Edge LM media SoCs, radar human sensing and mass-production 100GbE.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.realtek.com/Article/NewsDetail?app_id=18&id=4824&lang=zh-TW",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/realtek-ibc2026-ai-home-radar-100gbe.svg"
+    }
+  }
+}
