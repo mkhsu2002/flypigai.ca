@@ -1,0 +1,108 @@
+{
+  "eventId": "EVT-2026-0033",
+  "slug": "himax-sid-2026-multi-output-tcon-slim-3d",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-14",
+    "findings": [
+      "Himax's September 10, 2026 first-party release confirms a planned SID Detroit showcase of a new Multi-Output Tcon with high-speed eDP input, up to six LVDS outputs and up to 8K x 1K resolution, plus a SLiM 3D sensing module with head-orientation tracking up to a vendor-stated 180Hz report rate.",
+      "The source is a pre-event showcase announcement, so the article preserves future tense where appropriate and does not state that the demonstrations, samples or commercial products have already been delivered.",
+      "The 180Hz figure and low-latency claims are treated as Himax-stated capabilities rather than independent benchmark results.",
+      "No part numbers, pricing, MOQ, customer programs, sample status or production timeline are invented.",
+      "Because product identifiers and commercial status remain incomplete, the article publishes with explicit uncertainty and audit highlighting rather than presenting the technologies as design-ready catalog products."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-10",
+  "publishedAt": "2026-09-14",
+  "modifiedAt": "2026-09-14",
+  "supplier": "Himax",
+  "category": "3D Sensing · Automotive HMI",
+  "title": "Himax Extends Cockpit HMI With Multi-Output Tcon and 180Hz 3D Tracking",
+  "seoTitle": "Himax Adds Multi-Output Tcon and 180Hz 3D Tracking",
+  "socialTitle": "Himax Expands Cockpit Display and 3D Sensing",
+  "seoDescription": "Himax is previewing a six-output automotive Tcon and SLiM 3D head tracking up to 180Hz, widening its cockpit HMI stack beyond touch and display drivers.",
+  "dek": "Ahead of SID Detroit, Himax disclosed a multi-output automotive timing controller and a faster SLiM 3D sensing demonstration, pushing its cockpit portfolio toward wider displays and real-time spatial interaction while leaving product identifiers and supply status unresolved.",
+  "summary": "The signal is a broader HMI stack. Himax is pairing display-side scaling, through a timing controller with one eDP input and as many as six LVDS outputs, with 3D head, eye and hand tracking intended to understand where a user is looking or interacting. That combination is relevant to Physical AI interfaces, but the announcement is still a showcase preview rather than evidence of catalog availability.",
+  "keyFacts": [
+    "Up to 6 LVDS outputs",
+    "Resolution up to 8K x 1K",
+    "Head tracking up to 180Hz"
+  ],
+  "whyItMatters": [
+    "Ultra-wide and multi-display cockpits create a routing and synchronization problem before they create an AI problem. A multi-output Tcon can centralize more of that display fan-out and image-processing work behind a high-speed eDP input.",
+    "Himax's SLiM 3D module adds head-orientation tracking to the interaction layer. If the vendor-stated 180Hz report rate holds under production conditions, it could support lower-latency gaze-adjacent or attention-aware HMI behaviors without requiring every interaction to be inferred by the main compute platform.",
+    "The commercial gap remains large: the announcement does not provide new part numbers, sample status, power, field of view, host interfaces, SDK terms or production dates for the Tcon or 3D module."
+  ],
+  "reporting": [
+    {
+      "heading": "A multi-output Tcon addresses the display fan-out problem",
+      "paragraphs": [
+        "Himax says its new automotive Multi-Output Tcon accepts high-speed eDP input and supports up to six LVDS outputs with resolution up to 8K by 1K. The company also lists local dimming, edge sharpness, HDR, fail detection, CRC and on-screen display functions.",
+        "For product architects, the significance is not the headline resolution alone. A free-form or pillar-to-pillar display can require several timing, safety and signal-routing decisions across a very wide surface. Consolidating more of those functions into one Tcon may reduce controller count or simplify partitioning, but the design value depends on the exact output topology, redundancy model, startup behavior and failure containment."
+      ]
+    },
+    {
+      "heading": "The sensing side moves from presence toward interaction intent",
+      "paragraphs": [
+        "The same SID preview describes a SLiM 3D Sensing Module with head-orientation tracking at a report rate of up to 180Hz, along with continuous 3D eye and hand tracking. Himax frames the capability as a way for an HMI system to identify which display or interaction zone a user is focused on.",
+        "That can matter in vehicle cabins, AR-adjacent displays and other spatial interfaces where the system needs context about a person's position and orientation. The 180Hz figure is a Himax specification in a pre-show announcement; FlyPig has not found an independent latency or accuracy benchmark, and the release does not disclose sensor architecture, field of view, range, host bandwidth or compute requirements."
+      ]
+    },
+    {
+      "heading": "Do not collapse a trade-show preview into product availability",
+      "paragraphs": [
+        "The release says Himax will showcase these technologies at the September 15-16 SID Vehicle Displays and Interfaces Symposium in Detroit. As of the reviewed source, that is a demonstration commitment, not evidence of samples, production qualification or customer shipments.",
+        "Design teams should therefore separate architectural interest from sourcing readiness. The next useful evidence would be formal part numbers, controlled datasheets, SDK or API documentation, evaluation hardware, automotive qualification status and a sample-to-production timeline."
+      ]
+    }
+  ],
+  "flypigTake": "Himax is building a credible bridge between the display pipeline and spatial sensing, which is exactly where many Physical AI interfaces become tangible to users. The concept is strategically interesting, but the sourcing signal is still weak. Treat the six-output Tcon and 180Hz SLiM tracking as architecture watch items until Himax exposes part numbers, interfaces, measured conditions and supply milestones.",
+  "productStatus": "Himax announced that the Multi-Output Tcon and SLiM 3D head-orientation tracking would be demonstrated at SID Detroit on September 15-16, 2026. The reviewed source does not establish product part numbers, samples, pricing, MOQ, lead time or mass-production status for either technology. The 180Hz report rate is a vendor-stated capability.",
+  "openQuestions": [
+    "What are the formal part numbers, electrical interfaces, power, output topology, safety architecture and production roadmap for the Multi-Output Tcon?",
+    "What sensing modality, field of view, range, accuracy, end-to-end latency, host interface and SDK/API are used by the SLiM head-orientation, eye and hand tracking stack, and under what conditions is the stated 180Hz report rate achieved?"
+  ],
+  "canadaRelevance": "The technologies are relevant to Canadian automotive HMI, simulation, AR/VR and mobility teams that need to connect spatial user sensing with wide or multi-zone displays. The near-term value is roadmap visibility rather than procurement because the source does not yet expose design-ready commercial details.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "himax-itof-depth-decoder-robotics-vision",
+    "himax-wiseeye-embedded-world-2026",
+    "himax-wiseeye-palm-vein-waferlock-l322"
+  ],
+  "relatedTechnologies": [
+    "3D Sensing",
+    "Automotive HMI",
+    "Timing Controller",
+    "Spatial Interaction"
+  ],
+  "corrections": [],
+  "sourceName": "Himax official SID 2026 automotive display and 3D sensing preview",
+  "sourceUrl": "https://www.himax.com.tw/wp-content/uploads/2026/09/PR-Himax-at-SID-2026-Final.pdf",
+  "additionalSources": [
+    {
+      "name": "Himax official press-release index",
+      "url": "https://www.himax.com.tw/company/press-releases/"
+    }
+  ],
+  "sourceNote": "FlyPig AI independently analyzes Himax's pre-event SID announcement. Showcase plans and vendor-stated performance figures are preserved as such and are not treated as evidence of completed demonstrations, independent benchmark validation or commercial availability.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/himax-sid-2026-multi-output-tcon-slim-3d.png",
+    "socialSrc": "/images/signals/og/himax-sid-2026-multi-output-tcon-slim-3d.png",
+    "alt": "FlyPig AI infographic on Himax's SID 2026 Multi-Output Tcon and SLiM 3D sensing preview, highlighting six LVDS outputs and up to 180Hz head tracking.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.himax.com.tw/wp-content/uploads/2026/09/PR-Himax-at-SID-2026-Final.pdf",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/himax-sid-2026-multi-output-tcon-slim-3d.svg"
+    }
+  }
+}
