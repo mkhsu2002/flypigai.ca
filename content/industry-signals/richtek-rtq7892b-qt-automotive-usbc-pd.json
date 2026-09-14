@@ -1,0 +1,103 @@
+{
+  "eventId": "EVT-2026-0036",
+  "slug": "richtek-rtq7892b-qt-automotive-usbc-pd",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-14",
+    "findings": [
+      "Richtek's first-party product page confirms RTQ7892B-QT as a new active automotive USB Type-C PD buck-boost controller with embedded Cortex-M0, PD 3.2/PPS/AVS, UFCS, AEC-Q100 Grade 1, 4.5V-30V input, 3.3V-21V output and WQFN7x7-62 packaging.",
+      "The official page contains a product-identifier discrepancy: the page title and datasheet name use RTQ7892B-QT while the Key Spec table shows RTQ7892-QT. The article surfaces this conflict and does not silently reconcile the identifiers.",
+      "The product page offers an order path and names distributors, but it also tells users to confirm actual stock; the article therefore does not claim current inventory, price, MOQ, lead time or mass-production volume.",
+      "Datasheet Initial Release is dated September 3, 2026 and is used as the event date, without claiming that this is necessarily the product-page publication date.",
+      "Media is declared as FlyPig AI-owned editorial graphics with editable source evidence, and no Richtek product image or logo is republished."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-03",
+  "publishedAt": "2026-09-14",
+  "modifiedAt": "2026-09-14",
+  "supplier": "Richtek",
+  "category": "Power Management · Automotive USB-C",
+  "title": "Richtek Integrates USB-C PD Control and Buck-Boost Power in RTQ7892B-QT",
+  "seoTitle": "Richtek RTQ7892B-QT Integrates Automotive USB-C PD Power",
+  "socialTitle": "Richtek RTQ7892B-QT Automotive USB-C PD",
+  "seoDescription": "Richtek's RTQ7892B-QT combines USB-C PD 3.2 control, an embedded MCU and buck-boost power conversion for automotive chargers, with a naming conflict to verify.",
+  "dek": "Richtek's new RTQ7892B-QT combines the USB-C policy layer, an embedded Cortex-M0 and buck-boost control in one automotive-qualified device, potentially reducing the controller count in programmable in-vehicle power modules.",
+  "summary": "This is a power-subsystem signal rather than an AI-compute launch. As cars and Physical AI devices add higher-power USB-C ports, cameras, displays and local compute, programmable power delivery becomes part of system architecture. Richtek is integrating more of that control into one device, but its official page currently contains a part-number inconsistency that should be resolved before design freeze.",
+  "keyFacts": [
+    "USB PD 3.2 + PPS / AVS",
+    "4.5V-30V input range",
+    "AEC-Q100 Grade 1"
+  ],
+  "whyItMatters": [
+    "Integrating the PD policy manager, embedded MCU and buck-boost controller can reduce the number of control devices around an automotive USB-C power stage while keeping firmware-configurable behavior such as derating and power sharing.",
+    "The wide input range and programmable output make the part relevant to vehicle accessory power, smart cockpit ports and other systems that must translate a variable automotive rail into negotiated USB-C output.",
+    "Richtek marks the product active and provides an order path, but the page also says actual stock must be confirmed and shows two related part-number forms. Procurement and design teams should resolve both availability and identifier accuracy directly with Richtek."
+  ],
+  "reporting": [
+    {
+      "heading": "The integration target is the automotive USB-C power stack",
+      "paragraphs": [
+        "Richtek describes RTQ7892B-QT as a USB Type-C Power Delivery and PWM buck-boost controller with two integrated low-side N-channel MOSFETs and an embedded Arm Cortex-M0 MCU. The MCU manages protocol, converter control, firmware protections and customizable functions, while separate hardware protections remain available for faster response.",
+        "The device supports USB PD 3.2 SPR, PPS and AVS as well as UFCS, with a 4.5V to 30V input range and 3.3V to 21V output range. In a vehicle, that integration can reduce the number of control ICs needed around a high-power port, although external high-side power devices, magnetics, filtering and thermal design remain system-level responsibilities."
+      ]
+    },
+    {
+      "heading": "Firmware control is useful, but power electronics still need full validation",
+      "paragraphs": [
+        "Richtek lists programmable switching frequency, power sharing, VIN derating, master and slave I2C interfaces, GPIO control and online firmware update through the slave I2C interface. Those features can help an OEM or Tier 1 coordinate charging behavior with vehicle state or thermal limits.",
+        "None of that removes the need to validate efficiency, switching losses, EMI, transient behavior, cable compensation, fault handling and worst-case junction temperature in the final module. The product page does not provide a complete vehicle charger reference design or system efficiency claim that FlyPig can independently validate from the reviewed source."
+      ]
+    },
+    {
+      "heading": "The official page has a naming conflict worth stopping on",
+      "paragraphs": [
+        "The page heading and datasheet title use RTQ7892B-QT, while the Key Spec table is labeled RTQ7892-QT. That may be a page-template issue, a related revision or a genuine device-family distinction, but the public evidence is not sufficient to decide.",
+        "For a design team, this is exactly the kind of small documentation conflict that can create expensive downstream mistakes in schematic symbols, BOMs, qualification records or procurement systems. The correct response is to ask Richtek for the controlled ordering code and latest datasheet rather than infer that the two names are interchangeable."
+      ]
+    }
+  ],
+  "flypigTake": "RTQ7892B-QT is a useful reminder that Physical AI products are power systems as much as compute systems. Higher-power displays, sensors and local processors make negotiated USB-C power more important in vehicles and mobile equipment. The integration looks practical, but the part-number discrepancy on the official page should be closed before anyone treats the web listing as a controlled design document.",
+  "productStatus": "Richtek's official page marks RTQ7892B-QT as a New Product and Active, provides an Order path and links to DigiKey and Mouser, while explicitly advising customers to confirm actual stock. The datasheet table lists an Initial Release date of September 3, 2026. The reviewed source does not establish regional inventory, pricing, MOQ, lead time or shipment volume.",
+  "openQuestions": [
+    "Is RTQ7892-QT in the Key Spec table a documentation error, a related revision or a distinct ordering code from RTQ7892B-QT, and which identifier should be used for new designs?",
+    "What efficiency, thermals, EMI, transient, external MOSFET and magnetics requirements apply across 12V and 24V vehicle rails at the highest supported USB-C power levels?",
+    "What EVB, firmware programming tools, reference designs and sample or production lead times are available for Canadian and Taiwan-based design teams?"
+  ],
+  "canadaRelevance": "Canadian automotive electronics, fleet-equipment and mobility-hardware teams may encounter this class of device as cockpit and accessory power moves toward higher-power USB-C. The relevance is strongest where programmable charging, thermal derating and compact integration matter more than raw AI compute.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "silergy-2026-pmic-digital-audio-update",
+    "mediatek-mt8875-5g-iot-genai",
+    "himax-wiseeye-palm-vein-waferlock-l322"
+  ],
+  "relatedTechnologies": [
+    "Power Management",
+    "USB-C PD",
+    "Automotive Electronics",
+    "Physical AI"
+  ],
+  "corrections": [],
+  "sourceName": "Richtek official RTQ7892B-QT product page",
+  "sourceUrl": "https://www.richtek.com/Products/Product%20Line%20Not%20Found/RTQ7892B-QT?sc_lang=en",
+  "sourceNote": "FlyPig AI independently analyzes Richtek's public product page and September 3, 2026 datasheet release. The article preserves the unresolved RTQ7892B-QT versus RTQ7892-QT identifier discrepancy and does not infer inventory or mass-production volume from the order interface.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/richtek-rtq7892b-qt-automotive-usbc-pd.png",
+    "socialSrc": "/images/signals/og/richtek-rtq7892b-qt-automotive-usbc-pd.png",
+    "alt": "FlyPig AI infographic on Richtek RTQ7892B-QT automotive USB-C PD power control, highlighting PD 3.2, wide-input buck-boost conversion and AEC-Q100 status.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.richtek.com/Products/Product%20Line%20Not%20Found/RTQ7892B-QT?sc_lang=en",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/richtek-rtq7892b-qt-automotive-usbc-pd.svg"
+    }
+  }
+}
