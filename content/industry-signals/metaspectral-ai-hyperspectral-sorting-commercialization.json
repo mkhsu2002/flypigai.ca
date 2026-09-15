@@ -4,7 +4,7 @@
   "publicationStatus": "published",
   "audit": {
     "riskLevel": "medium",
-    "reviewedAt": "2026-09-14",
+    "reviewedAt": "2026-09-15",
     "findings": [
       "PacifiCan's May 11, 2026 backgrounder confirms a CAD 2,554,685 investment in MLVX Technologies, doing business as Metaspectral, to support commercialization and explicitly says the company will purchase specialized sensors and hardware and hire skilled staff.",
       "Metaspectral's current first-party industrial-sorting pages confirm that its Clarity Recover offering uses spectral analysis for real-time material classification and is designed for low-latency edge deployment in industrial sorting environments.",
