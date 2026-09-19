@@ -2,6 +2,16 @@
 
 This repository is the official website and product surface for FlyPig AI Canada.
 
+### Outreach Engine subsite integration (2026-09-19)
+
+The shared footer and `public/llms.txt` link to `https://outreach-engine.flypigai.ca/` and its Traditional Chinese `/zh` entry. That separately deployed repository owns prospect research, qualification, public validation experiments and managed prospect research. Both sites use the organization identity `https://flypigai.ca/#organization`; the subsite has its own sitemap and is not a language alternate of this website. This change does not alter either site's contact API or backend contract. The detailed audit and deployment readback live in the Outreach Engine repository's `SEO_AUDIT.md` and `SITE_OPERATIONS.md`.
+
+The integration build exposed an existing XoMotion infographic overflow. Its third key-fact label was shortened to “Scale-up toward home and community use”; the detailed manufacturing context, source/audit dates and factual claims are unchanged.
+
+The same content gate found an overlong XoMotion SEO title, an overlong Dream Photonics description and incomplete related-reading links on those two pages. Metadata was shortened and relevant existing Signals were linked; no external-source verification dates were advanced.
+
+The export auditor now decodes the same common HTML entities for descriptions as it already did for titles, avoiding a false length failure on Richtek's apostrophe. All related changes are limited to search metadata, discovery links and build validation.
+
 ## Mandatory IDE and agent handoff
 
 Before editing or publishing, read:

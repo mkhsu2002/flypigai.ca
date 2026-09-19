@@ -23,7 +23,7 @@
   "title": "Dream Photonics Gets $1.17M to Build Optical Interconnect Pilot Manufacturing in B.C.",
   "seoTitle": "Dream Photonics Gets $1.17M for Optical Interconnect Pilot Line",
   "socialTitle": "Dream Photonics Gets $1.17M for Optical Interconnect Pilot Manufacturing",
-  "seoDescription": "PacifiCan is funding Dream Photonics to buy manufacturing equipment and establish B.C. pilot production for optical interconnects serving AI and quantum hardware.",
+  "seoDescription": "PacifiCan funds Dream Photonics manufacturing equipment and B.C. pilot production for optical interconnects used in AI and quantum hardware.",
   "dek": "The Vancouver photonics company is moving from integration capability toward funded domestic pilot manufacturing, creating a more concrete packaging and equipment signal than a research-only photonics announcement.",
   "summary": "PacifiCan announced CAD 1,168,908 for Vancouver-based Dream Photonics on May 11, 2026 to purchase manufacturing equipment, hire skilled workers and establish domestic pilot manufacturing of optical interconnects used to connect AI and quantum chips. Dream Photonics' current first-party materials describe photonic wire bonding services for fiber-to-chip, chip-to-chip and laser integration, along with process-design-kit support for silicon photonics. The commercial signal is therefore a manufacturing-capacity buildout around a real photonics integration workflow. For Taiwan, the strongest overlap is in advanced packaging, substrates, fiber coupling, connectors, test, thermal management and manufacturing equipment, but the public sources do not disclose tool vendors, packaging suppliers, customers, order volumes or any Taiwan sourcing relationship.",
   "keyFacts": [
@@ -89,7 +89,8 @@
     "type": "Organization"
   },
   "relatedSignals": [
-    "metaspectral-ai-hyperspectral-sorting-commercialization"
+    "metaspectral-ai-hyperspectral-sorting-commercialization",
+    "auo-micro-led-cpo-glass-core-ai-infrastructure"
   ],
   "relatedTechnologies": [
     "Photonics",

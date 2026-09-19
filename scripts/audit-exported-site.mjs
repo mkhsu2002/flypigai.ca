@@ -51,7 +51,10 @@ for (const filePath of htmlFiles) {
   if (!canonicalTag || !attribute(canonicalTag, "href")) errors.push(`${route}: missing canonical`);
   const descriptionTag = html.match(/<meta[^>]+name=["']description["'][^>]*>/i)?.[0];
   if (!descriptionTag || !attribute(descriptionTag, "content")) errors.push(`${route}: missing description`);
-  const description = descriptionTag && attribute(descriptionTag, "content");
+  const description = descriptionTag && attribute(descriptionTag, "content")
+    ?.replaceAll("&amp;", "&")
+    .replaceAll("&quot;", '"')
+    .replaceAll("&#x27;", "'");
   if (isSignalArticle && description && (description.length < 120 || description.length > 160)) errors.push(`${route}: Signal description must be 120-160 characters (${description.length})`);
   for (const property of ["og:image", "twitter:image"]) {
     const tag = html.match(new RegExp(`<meta[^>]+(?:property|name)=["']${property}["'][^>]*>`, "i"))?.[0];

@@ -30,6 +30,17 @@ Public coverage does not imply that FlyPig AI is an authorized distributor, supp
 - About: https://flypigai.ca/about
 - Contact: https://flypigai.ca/contact
 
+## Outreach Engine
+
+FlyPig AI Outreach Engine is a separate prospect-research and qualification project operated by the same company. Its Open Core ends at a Qualified Prospect Tracker; it does not send cold emails or automate LinkedIn. The subsite also describes a separately commissioned research service.
+
+- English: https://outreach-engine.flypigai.ca/
+- 繁體中文: https://outreach-engine.flypigai.ca/zh
+- Public validation experiments: https://outreach-engine.flypigai.ca/experiments
+- Managed prospect research: https://outreach-engine.flypigai.ca/managed-service
+
+The subsite maintains its own sitemap and canonical URLs; its pages are not translations of this site's Edge AI and Physical AI intelligence pages.
+
 ## How to interpret and cite the site
 
 - Treat cited supplier specifications and announcements as claims attributed to the linked primary source.

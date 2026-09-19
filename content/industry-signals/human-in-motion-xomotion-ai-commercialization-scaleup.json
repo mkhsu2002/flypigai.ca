@@ -21,7 +21,7 @@
   "supplier": "Human in Motion Robotics",
   "category": "Canada · Physical AI",
   "title": "Canada Backs Human in Motion Robotics to Scale AI-Enabled XoMotion Beyond Clinical Use",
-  "seoTitle": "Canada Funds XoMotion AI Commercialization and Manufacturing Scale-Up",
+  "seoTitle": "Canada Funds XoMotion AI and Manufacturing Scale-Up",
   "socialTitle": "XoMotion Moves Toward Home and Community Use",
   "seoDescription": "Canada is investing CAD 3 million in Human in Motion Robotics to integrate AI into XoMotion and scale manufacturing toward home and community use.",
   "dek": "The important signal is not that a home-use exoskeleton is already on the market. It is that Vancouver-based Human in Motion Robotics now has public funding to integrate AI, protect IP and scale manufacturing beyond its current clinical footprint.",
@@ -29,7 +29,7 @@
   "keyFacts": [
     "CAD 3 million PacifiCan investment",
     "AI integration and IP work funded",
-    "Manufacturing scale-up targets home and community use"
+    "Scale-up toward home and community use"
   ],
   "whyItMatters": [
     "The funding is tied to a concrete commercialization program rather than a general research grant: AI integration, IP protection and manufacturing scale-up are all named workstreams.",
@@ -87,7 +87,10 @@
     "url": "/editorial-policy",
     "type": "Organization"
   },
-  "relatedSignals": [],
+  "relatedSignals": [
+    "kinova-kima-medical-robotic-arm-oem-platform",
+    "indro-cortex-controller-robotics-deployment-stack"
+  ],
   "relatedTechnologies": [
     "Physical AI",
     "Wearable Robotics",
