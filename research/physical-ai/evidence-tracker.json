@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-19",
   "scope": {
     "existingCollectors": [
       "Taiwan Industry Signals",
@@ -171,6 +171,122 @@
         {"predictionId": "FP-PAI-004", "effect": "supports", "strength": "medium"}
       ],
       "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0011",
+      "date": "2026-06-04",
+      "trackerAddedAt": "2026-09-19",
+      "geography": "canada",
+      "category": "oem-robot-platform",
+      "subject": "Kinova productizes KIMA as a medical robotic-arm OEM integration platform",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/kinova-kima-medical-robotic-arm-oem-platform",
+      "summary": "The existing Canada Industry Signal records KIMA as a purpose-built OEM medical-robotics subsystem with EtherCAT, a Robot Control Library and integrated joint sensing. It lets medical-device builders start from a productized motion platform rather than designing the complete arm and low-level control stack from scratch. Regulatory readiness, customer design-ins, production volume and pricing remain undisclosed.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "strong"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0012",
+      "date": "2026-06-10",
+      "trackerAddedAt": "2026-09-19",
+      "geography": "canada",
+      "category": "modular-robotics-runtime",
+      "subject": "InDro productizes Cortex and Controller as a reusable robotics deployment stack",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/indro-cortex-controller-robotics-deployment-stack",
+      "summary": "The existing Canada Industry Signal records InDro positioning Cortex compute and Controller software as a platform-agnostic integration stack across ground robots, drones and custom systems, including standalone sales and a client-bound fleet. This is evidence of reusable compute, sensing, connectivity and control infrastructure, but not a cross-vendor application standard or proof of mass-production scale.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0013",
+      "date": "2026-06-17",
+      "trackerAddedAt": "2026-09-19",
+      "geography": "canada",
+      "category": "physical-ai-on-industrial-robots",
+      "subject": "Sanctuary AI deploys learned manipulation on existing industrial robots",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/sanctuary-ai-tier1-wire-plugging-production-benchmark",
+      "summary": "The existing Canada Industry Signal records Sanctuary shifting Physical AI commercialization toward existing industrial robotic platforms and reporting a Tier-1 automotive wire-plugging benchmark that later led to a company-reported purchase order. Performance figures and the purchase-order scope remain first-party and undisclosed in detail, but the strategy is evidence that intelligence and workflow software can be monetized independently of a proprietary humanoid body.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "weak"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "existing-industry-signal"
+    },
+    {
+      "id": "PAI-EV-2026-0014",
+      "date": "2026-09-14",
+      "trackerAddedAt": "2026-09-19",
+      "geography": "global",
+      "category": "robot-platform-ecosystem",
+      "subject": "Universal Robots Gen 7 makes PolyScope X the operating environment for an AI-ready robot platform",
+      "sourceType": "official",
+      "sourceUrl": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-unveils-gen-7-new-platform-industrial-automation-physical-ai/",
+      "additionalSourceUrls": [
+        "https://www.universal-robots.com/products/gen-7/"
+      ],
+      "summary": "Universal Robots introduced Gen 7 as a unified hardware-software platform anchored by PolyScope X. UR says PolyScope X provides open APIs, ROS 2 communication and an SDK for native AI applications, while UR+ supplies validated third-party AI tools, peripherals and software and the platform exposes PolyScope X Smart Skills. This strongly supports software and ecosystem differentiation above standardized robot hardware, but it is a vendor-specific ecosystem rather than evidence of an industry-wide common layer.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "strong"},
+        {"predictionId": "FP-PAI-004", "effect": "supports", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0015",
+      "date": "2026-09-14",
+      "trackerAddedAt": "2026-09-19",
+      "geography": "global",
+      "category": "cross-embodiment-foundation-policy",
+      "subject": "Reward AI OM-1 proposes one policy and common action interface across robot bodies",
+      "sourceType": "official",
+      "sourceUrl": "https://www.rewardai.com/blog/OM-1/",
+      "summary": "Reward AI says OM-1 learns a general-purpose manipulation policy from robot-free human demonstrations and runs one policy across industrial arms and humanoids, with a high-frequency control layer absorbing body-specific dynamics. The architecture is direct evidence that a common model and control abstraction can span embodiments, while also challenging the need for every capability to exist as an explicit packaged skill. The claims are first-party; no public weights, code, standardized benchmark or independent cross-body validation is available in the reviewed release.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-004", "effect": "weakens", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0016",
+      "date": "2026-09-17",
+      "trackerAddedAt": "2026-09-19",
+      "geography": "global",
+      "category": "generalist-humanoid-policy",
+      "subject": "Figure Helix 2.5 reports zero-shot whole-body generalization across 30 unseen homes",
+      "sourceType": "official",
+      "sourceUrl": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
+      "summary": "Figure reports that Helix 2.5 performs three long-horizon whole-body behaviors across 30 unseen homes without collecting data, fine-tuning or adapting in those environments, using an Index-pretrained foundation model. The result is embodiment-specific to Figure's humanoid in the disclosed test, but it strengthens the model-centric counter-thesis that increasingly broad behavior can emerge from a general policy rather than a catalog of separately installed task skills. Results are company-reported and not independently reproduced.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-004", "effect": "weakens", "strength": "medium"}
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0017",
+      "date": "2026-09-15",
+      "trackerAddedAt": "2026-09-19",
+      "geography": "global",
+      "category": "productized-humanoid-platform",
+      "subject": "Agility Digit 5 advances the humanoid body toward a repeatable commercial platform",
+      "sourceType": "official",
+      "sourceUrl": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
+      "summary": "Agility introduced Digit 5 after more than 65,000 operating hours accumulated by Digit 4 and reported more than $300 million in multi-year orders subject to contractual milestones. Digit 5 adds standardized tool mounting, fleet integration through Agility Arc and planned broader commercial deployment beginning in 2027. It supports the productization of reusable robot bodies, but remains a vertically integrated vendor platform and several features and safety elements are still in development.",
+      "predictionLinks": [
+        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "medium"},
+        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+      ],
+      "publicationStatus": "tracker-only"
     }
   ]
 }
