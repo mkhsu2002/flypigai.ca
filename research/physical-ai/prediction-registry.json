@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-09-12",
+  "updatedAt": "2026-09-19",
   "principles": {
     "immutableOrigin": "Never rewrite the original wording or first-published date of a prediction to fit later evidence.",
     "evidenceStates": ["supports", "weakens", "neutral", "invalidates"],
@@ -14,15 +14,15 @@
       "title": "An Android-like common layer will emerge for Physical AI",
       "originalPrediction": "As robot bodies, compute and low-level control become more modular, the industry will converge around one or more common software abstraction layers that let higher-level agents and applications operate across heterogeneous robot hardware.",
       "status": "strengthening",
-      "confidence": 0.68,
+      "confidence": 0.71,
       "falsifiers": [
         "Major robot vendors remain vertically closed with no meaningful cross-platform skill or runtime portability through 2030.",
         "Robot applications continue to require predominantly body-specific software stacks with little reusable abstraction above ROS-class middleware."
       ],
       "latestAssessment": {
-        "date": "2026-09-12",
-        "evidenceIds": ["PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010"],
-        "summary": "Confidence rises modestly because multiple independent architecture strategies now target common capability language, standardized runtime deployment, hardware abstraction or omni-bodied models. None is yet an accepted cross-vendor application standard, so the prediction remains unconfirmed."
+        "date": "2026-09-19",
+        "evidenceIds": ["PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010", "PAI-EV-2026-0012", "PAI-EV-2026-0013", "PAI-EV-2026-0015"],
+        "summary": "Confidence rises from 0.68 to 0.71. InDro is productizing a reusable control-and-compute layer across robot form factors, while Reward AI's OM-1 explicitly places a common policy interface above body-specific dynamics. These reinforce earlier Arm, Qualcomm-NEURA, Skild and AmbiOS signals that abstraction is becoming a strategic control point. The main falsifier remains live: most of these layers are proprietary or vendor-led, and no accepted cross-vendor runtime or application contract has yet emerged."
       }
     },
     {
@@ -31,15 +31,15 @@
       "title": "Reference robots will lower the cost of entering Physical AI",
       "originalPrediction": "Reference robot designs and increasingly productized robot bodies will reduce the need for application companies to design complete electromechanical systems from scratch, creating an ODM-like layer for Physical AI.",
       "status": "strengthening",
-      "confidence": 0.77,
+      "confidence": 0.8,
       "falsifiers": [
         "Reference designs fail to move beyond research demonstrations into repeatable developer or commercial platforms.",
         "Mechanical, safety and task heterogeneity prevent meaningful reuse of robot bodies and subsystems."
       ],
       "latestAssessment": {
-        "date": "2026-09-12",
-        "evidenceIds": ["PAI-EV-2026-0007", "PAI-EV-2026-0009"],
-        "summary": "The Qualcomm-NEURA plan for multiple robotic reference platforms and Arm's effort to reduce integration complexity add support to the existing NVIDIA reference-robot evidence, but repeatable commercial reuse across vendors remains the critical test."
+        "date": "2026-09-19",
+        "evidenceIds": ["PAI-EV-2026-0001", "PAI-EV-2026-0007", "PAI-EV-2026-0009", "PAI-EV-2026-0011", "PAI-EV-2026-0017"],
+        "summary": "Confidence rises from 0.77 to 0.80. Kinova KIMA is direct evidence of a productized OEM motion platform designed to let medical-device builders integrate above a reusable robotic subsystem, and Agility Digit 5 adds evidence that complete humanoid bodies are moving toward repeatable commercial platforms. The thesis is not confirmed because regulatory, safety and task-specific integration can still force substantial body-level engineering, and vendor platforms remain vertically differentiated."
       }
     },
     {
@@ -48,15 +48,15 @@
       "title": "Long-term differentiation will migrate above increasingly modular hardware",
       "originalPrediction": "Physical AI hardware can create large businesses, but as major hardware classes mature and become more comparable, a growing share of durable differentiation will move toward runtime platforms, reusable skills, applications, workflow integration and operating data.",
       "status": "strengthening",
-      "confidence": 0.68,
+      "confidence": 0.72,
       "falsifiers": [
         "Hardware vendors retain most industry margin and bargaining power despite broad component and platform standardization.",
         "Reusable skills and application software fail to achieve meaningful portability or recurring economics across robot platforms."
       ],
       "latestAssessment": {
-        "date": "2026-09-12",
-        "evidenceIds": ["PAI-EV-2026-0004", "PAI-EV-2026-0005", "PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0010"],
-        "summary": "Modular accelerator hosts, reusable autonomy across vehicle categories, licensed robot skills and generalist robot foundation models all point toward value accumulating above individual hardware components. Evidence on industry margins and bargaining power is still insufficient, so the confidence increase is deliberately small."
+        "date": "2026-09-19",
+        "evidenceIds": ["PAI-EV-2026-0004", "PAI-EV-2026-0005", "PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0010", "PAI-EV-2026-0011", "PAI-EV-2026-0012", "PAI-EV-2026-0013", "PAI-EV-2026-0014", "PAI-EV-2026-0015", "PAI-EV-2026-0016"],
+        "summary": "Confidence rises from 0.68 to 0.72. Universal Robots now explicitly centers Gen 7 on PolyScope X, open APIs, an SDK and a validated third-party ecosystem; InDro and Sanctuary show intelligence and deployment layers being reused on existing hardware; Reward AI and Figure emphasize model, data and control as the differentiating layer. This is a stronger structural pattern than a single vendor announcement, but evidence on actual industry margin capture and bargaining power remains insufficient."
       }
     },
     {
@@ -64,16 +64,16 @@
       "firstPublished": "2026-09-05",
       "title": "Robot skills will become a reusable application primitive",
       "originalPrediction": "Bounded capabilities such as navigate, inspect, grasp, dock and deliver will increasingly be exposed as testable, permissioned skills that higher-level agents can compose into workflows without commanding joints directly.",
-      "status": "active",
-      "confidence": 0.6,
+      "status": "weakening",
+      "confidence": 0.56,
       "falsifiers": [
         "End-to-end models make explicit reusable skill interfaces largely unnecessary.",
         "Safety and embodiment differences prevent skills from becoming meaningfully reusable across platforms."
       ],
       "latestAssessment": {
-        "date": "2026-09-12",
-        "evidenceIds": ["PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010"],
-        "summary": "Evidence is mixed. AmbiOS and Qualcomm-NEURA directly support reusable skills and build-once deployment, while Skild S1 is a live counter-signal because in-context foundation models can learn and compose unseen behaviors without task-specific fine-tuning or an explicit externally packaged skill. Confidence therefore remains unchanged."
+        "date": "2026-09-19",
+        "evidenceIds": ["PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010", "PAI-EV-2026-0014", "PAI-EV-2026-0015", "PAI-EV-2026-0016"],
+        "summary": "Status moves from active to weakening and confidence falls from 0.60 to 0.56. Explicit skills remain commercially visible in AmbiOS, Qualcomm-NEURA and Universal Robots' PolyScope X Smart Skills and third-party application ecosystem. But the counter-thesis is no longer a single Skild result: Reward AI's OM-1 runs one policy across different robot bodies, while Figure Helix 2.5 reports zero-shot whole-body behavior across 30 unseen homes. The current evidence favors a hybrid architecture in which stable external capability contracts may persist even as increasingly general models generate much of the behavior internally."
       }
     }
   ]
