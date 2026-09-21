@@ -1,0 +1,104 @@
+{
+  "eventId": "EVT-2026-0037",
+  "slug": "mediatek-dimensity-9600-pro-9600m-agentic-ai",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-21",
+    "findings": [
+      "MediaTek's September 15 first-party release confirms the Dimensity 9600 Pro launch, 2nm process, 2+3+3 CPU topology, dual-NPU architecture, NPU 1090, 34.5MB cache, LPDDR6 and UFS 5.0 support, and on-device models up to 30B parameters.",
+      "MediaTek labels the Dimensity 9600M an upcoming chipset and says the first phones using the two platforms are expected this quarter; the article preserves that roadmap wording and does not treat expected handset launches as current commercial availability.",
+      "MediaTek states that its comparative performance and power figures were measured on demo devices in MediaTek labs. The article does not present those figures as independent benchmark results.",
+      "No handset customer, price, MOQ, lead time, module availability or shipment volume is inferred beyond the official announcement.",
+      "Hero and social assets are declared as FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-15",
+  "publishedAt": "2026-09-21",
+  "modifiedAt": "2026-09-21",
+  "supplier": "MediaTek",
+  "category": "Edge AI · Mobile SoC · Agentic AI",
+  "title": "MediaTek Pushes Agentic AI Deeper On-Device with Dimensity 9600 Pro",
+  "seoTitle": "MediaTek Dimensity 9600 Pro Brings 2nm and Agentic AI On-Device",
+  "socialTitle": "Dimensity 9600 Pro Moves Agentic AI On-Device",
+  "seoDescription": "MediaTek's 2nm Dimensity 9600 Pro adds dual-NPU agentic AI, LPDDR6 and UFS 5.0, while the 9600M remains an upcoming platform.",
+  "dek": "The 2nm Dimensity 9600 Pro expands the smartphone design envelope around local AI, memory bandwidth and storage, while MediaTek is keeping the companion 9600M in upcoming-chipset status.",
+  "summary": "MediaTek has formally launched the Dimensity 9600 Pro with a dual-NPU architecture, a 34.5MB cache, LPDDR6 and UFS 5.0 support, and support for on-device models up to 30B parameters. For Edge AI design teams, the more important shift is architectural: larger local models are pulling memory, storage, power and thermal decisions into the AI feature roadmap. MediaTek also disclosed the Dimensity 9600M, but it remains upcoming and should not be treated as currently available silicon.",
+  "keyFacts": [
+    "2nm flagship mobile SoC",
+    "Dual-NPU Agentic AI architecture",
+    "LPDDR6 and UFS 5.0 support"
+  ],
+  "whyItMatters": [
+    "Larger local models raise pressure on memory bandwidth, storage throughput, sustained thermals and power delivery, so the AI roadmap increasingly affects the full smartphone hardware stack rather than only the NPU.",
+    "The 9600 Pro combines CPU and NPU resources through MediaTek's AI Computing Fusion architecture, pointing toward tighter heterogeneous scheduling for always-on and interactive on-device agents.",
+    "The 9600M broadens the product strategy, but MediaTek calls it upcoming. Product planners should separate that roadmap signal from the already announced 9600 Pro."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "MediaTek's September 15 announcement moves its flagship smartphone platform to a 2nm process and pairs a 2+3+3 all-big-core CPU with dual NPUs. The company lists NPU 1090, an Agentic AI Engine, 34.5MB of cache, and first-time Dimensity support for LPDDR6 and UFS 5.0.",
+        "MediaTek says the platform can support on-device models up to 30B parameters. That is a vendor capability statement, not an independent workload benchmark, and actual usable model size will depend on quantization, memory capacity, runtime, context length and thermal limits in the final handset."
+      ]
+    },
+    {
+      "heading": "Commercial implications",
+      "paragraphs": [
+        "For OEMs, the shift increases the value of coordinated memory, storage, thermal and power design. The SoC may enable more local inference, but it also creates a larger validation surface around sustained performance and AI responsiveness under realistic battery and temperature constraints.",
+        "MediaTek says the first smartphones based on the 9600 Pro and 9600M are expected this quarter. It does not name those phone programs in the reviewed source, and that forecast should not be read as confirmation of general chip sampling, standalone procurement or volume shipment."
+      ]
+    },
+    {
+      "heading": "Design-in questions",
+      "paragraphs": [
+        "The biggest open questions are the real memory footprint and latency of representative agentic workloads, the practical limits of always-on perception, and how OEM thermal designs affect sustained CPU, GPU and NPU behavior.",
+        "The 9600M also needs a clearer public specification set. Its process, CPU and NPU configuration, memory interfaces and exact commercialization timing remain unresolved in the reviewed announcement."
+      ]
+    }
+  ],
+  "flypigTake": "The signal is not simply that a flagship phone SoC got faster. MediaTek is making large local models, always-on perception and agent-style workloads a first-class system-design problem. The interesting design battle now moves into memory, storage, thermals and sustained power, where headline AI capability either becomes a usable product feature or does not.",
+  "productStatus": "Dimensity 9600 Pro was formally launched on September 15, 2026. MediaTek describes Dimensity 9600M as an upcoming chipset and says first smartphones using the two platforms are expected this quarter. The reviewed source does not establish standalone silicon pricing, MOQ, lead time, module availability, named handset customers or shipment volume.",
+  "openQuestions": [
+    "What memory capacity, quantization and runtime configurations are required for the claimed support of on-device models up to 30B parameters?",
+    "How do sustained CPU, GPU and NPU performance and power behave inside shipping handset thermal envelopes rather than MediaTek demo devices?",
+    "What are the final process, CPU, NPU, memory and launch specifications for Dimensity 9600M?"
+  ],
+  "canadaRelevance": "North American mobile, AI application and device teams evaluating local-agent experiences should watch how quickly this class of architecture turns into shipping phones and whether large on-device models produce enough privacy, latency or cloud-cost advantage to justify the added memory and thermal budget.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "mediatek-mt8875-5g-iot-genai",
+    "mediatek-nvidia-edge-cloud-ai-partnership",
+    "winbond-cube-w77t-edge-ai-memory-security"
+  ],
+  "relatedTechnologies": [
+    "On-device AI",
+    "Agentic AI",
+    "Mobile SoC",
+    "LPDDR6",
+    "UFS 5.0"
+  ],
+  "corrections": [],
+  "sourceName": "MediaTek official Dimensity 9600 Pro announcement",
+  "sourceUrl": "https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips",
+  "sourceNote": "FlyPig AI independently reviewed MediaTek's September 15, 2026 first-party announcement. MediaTek identifies its comparative performance and power metrics as demo-device testing performed in MediaTek labs; those figures are not treated here as independent benchmarks. The 9600M is preserved as upcoming.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/mediatek-dimensity-9600-pro-9600m-agentic-ai.png",
+    "socialSrc": "/images/signals/og/mediatek-dimensity-9600-pro-9600m-agentic-ai.png",
+    "alt": "FlyPig AI infographic on MediaTek Dimensity 9600 Pro, highlighting 2nm processing, dual-NPU agentic AI, LPDDR6 and UFS 5.0.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.mediatek.com/press-room/mediatek-dimensity-9600-pro-sets-new-standard-for-flagship-smartphone-chips",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/mediatek-dimensity-9600-pro-9600m-agentic-ai.svg"
+    }
+  }
+}
