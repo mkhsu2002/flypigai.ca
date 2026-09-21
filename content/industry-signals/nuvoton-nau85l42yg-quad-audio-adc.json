@@ -1,0 +1,104 @@
+{
+  "eventId": "EVT-2026-0038",
+  "slug": "nuvoton-nau85l42yg-quad-audio-adc",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-21",
+    "findings": [
+      "Nuvoton's September 15 first-party launch and current product page confirm a four-channel AMIC/DMIC audio ADC, up to 192kHz at 24-bit, I2S/PCM/TDM interfaces, 106dB A-weighted SNR at 0dB gain on the current English product page, and a listed minimum 77 microsecond low-latency decimation mode at 48kHz.",
+      "Nuvoton's launch release claims latency can be one-sixth that of conventional quad ADCs and lists power below 12.4mW per channel. These are vendor claims and are not presented as independent comparative benchmarks.",
+      "The official site exposes an evaluation board and buying path, but the reviewed sources do not establish IC mass-production volume, regional inventory, price, MOQ or lead time.",
+      "No customer, design win or commercial relationship is inferred.",
+      "Hero and social assets are declared as FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-15",
+  "publishedAt": "2026-09-21",
+  "modifiedAt": "2026-09-21",
+  "supplier": "Nuvoton",
+  "category": "Edge AI · Audio Front End · Voice",
+  "title": "Nuvoton Targets Low-Latency Multi-Mic Edge Audio with NAU85L42YG",
+  "seoTitle": "Nuvoton NAU85L42YG Adds Low-Latency Quad Audio ADC for Edge AI",
+  "socialTitle": "NAU85L42YG Targets Multi-Mic Edge AI Audio",
+  "seoDescription": "Nuvoton's NAU85L42YG combines four-channel microphone capture, 192kHz/24-bit audio and low-latency filtering for voice and robotics designs.",
+  "dek": "The four-channel audio ADC gives robot, conferencing and smart-speaker designers a more integrated microphone front end, but its comparative latency and power claims remain vendor-reported and IC supply maturity is not yet explicit.",
+  "summary": "Nuvoton has launched the NAU85L42YG, a quad-channel audio ADC for analog and digital microphone arrays. The current product page lists up to 192kHz at 24-bit, a 77 microsecond minimum low-latency mode at 48kHz and 106dB A-weighted SNR. The design signal is a tighter microphone front end for real-time voice and robot sensing, while procurement status for the IC itself remains less clear than the availability of its evaluation board.",
+  "keyFacts": [
+    "4-channel AMIC/DMIC capture",
+    "Up to 192kHz at 24-bit",
+    "77µs minimum low-latency mode at 48kHz"
+  ],
+  "whyItMatters": [
+    "Microphone arrays feed voice activity detection, beamforming, speech recognition and multimodal AI pipelines, so front-end latency and channel synchronization can directly affect responsiveness.",
+    "Integrated microphone diagnostics and flexible I2S, PCM and TDM output can reduce glue logic around a host SoC and make failure detection easier in multi-mic products.",
+    "An evaluation board and buying path lower the barrier to characterization, but teams should confirm IC production status and supply terms before treating the part as a production-ready sourcing decision."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "Nuvoton's new NAU85L42YG consolidates four audio ADC channels with support for both analog and digital microphones. Its current product page lists sample rates from 8kHz to 192kHz at 24-bit and provides I2S, PCM and TDM output options.",
+        "The same page lists a minimum 77 microsecond low-latency decimation mode at 48kHz and 106dB A-weighted SNR at 0dB gain. Nuvoton's launch release separately claims latency can be reduced to one-sixth of conventional quad ADCs; FlyPig treats that as a vendor comparison rather than an independently reproduced benchmark."
+      ]
+    },
+    {
+      "heading": "Why it matters to Edge AI products",
+      "paragraphs": [
+        "Real-time audio agents and robots depend on the capture path before any model runs. Lower front-end delay can help interactive voice systems, while microphone diagnostics can support reliability in products that depend on several sensors operating together.",
+        "For a North American OEM, the practical decision is not whether the ADC is branded for AI, but whether it improves end-to-end latency, acoustic performance and fault handling once paired with the actual microphones, enclosure and host processor."
+      ]
+    },
+    {
+      "heading": "Commercial and design-in questions",
+      "paragraphs": [
+        "Nuvoton has a product page, an NL-NAU85L42 evaluation board and purchasing links. The reviewed first-party material does not establish production volume, regional IC inventory, price, MOQ or lead time.",
+        "Design teams should characterize latency across filter modes, AMIC and DMIC configurations, clocking, channel count and power states, then validate how the part interacts with the host's beamforming, echo cancellation and inference pipeline."
+      ]
+    }
+  ],
+  "flypigTake": "Audio Edge AI is often limited by the sensor path before it is limited by model compute. A four-channel ADC with explicit low-latency modes and microphone diagnostics is therefore more strategically useful than the category sounds, but only if Nuvoton's vendor figures hold up in the enclosure, microphone and host architecture that will actually ship.",
+  "productStatus": "Nuvoton formally announced NAU85L42YG on September 15, 2026 and currently lists the part plus an NL-NAU85L42 evaluation board. The reviewed official sources do not establish IC mass-production volume, regional inventory, pricing, MOQ or lead time.",
+  "openQuestions": [
+    "What are the measured end-to-end group delay and power consumption across each filter, sample-rate, AMIC and DMIC configuration?",
+    "What IC sampling and production status, regional inventory, MOQ and lead time apply to North American and Taiwan design teams?",
+    "How robust are the microphone diagnostics across real-world array tolerances, enclosure acoustics and clocking conditions?"
+  ],
+  "canadaRelevance": "Canadian conferencing, robotics, smart-building and voice-interface teams can evaluate the part as a microphone-array front end where local inference benefits from lower capture latency and explicit sensor-health diagnostics.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "nuvoton-nau83g60yg-kcs-smart-amplifier",
+    "realtek-ibc2026-ai-home-radar-100gbe",
+    "himax-wiseeye-palm-vein-waferlock-l322"
+  ],
+  "relatedTechnologies": [
+    "Audio ADC",
+    "Microphone Arrays",
+    "Voice AI",
+    "Edge AI",
+    "Sensor Front End"
+  ],
+  "corrections": [],
+  "sourceName": "Nuvoton official NAU85L42YG launch announcement",
+  "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000633/",
+  "sourceNote": "FlyPig AI reviewed Nuvoton's September 15 launch announcement and current NAU85L42YG product page. The one-sixth latency comparison and sub-12.4mW-per-channel figure are treated as vendor-reported claims, while the current product page's 77µs at 48kHz and 106dB SNR entries are reported as listed specifications, not independent validation.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/nuvoton-nau85l42yg-quad-audio-adc.png",
+    "socialSrc": "/images/signals/og/nuvoton-nau85l42yg-quad-audio-adc.png",
+    "alt": "FlyPig AI infographic on Nuvoton NAU85L42YG quad audio ADC for multi-microphone Edge AI and voice capture.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000633/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/nuvoton-nau85l42yg-quad-audio-adc.svg"
+    }
+  }
+}
