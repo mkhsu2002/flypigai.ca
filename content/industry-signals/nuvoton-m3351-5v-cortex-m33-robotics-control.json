@@ -1,0 +1,104 @@
+{
+  "eventId": "EVT-2026-0040",
+  "slug": "nuvoton-m3351-5v-cortex-m33-robotics-control",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-21",
+    "findings": [
+      "Nuvoton's September 18 first-party release confirms the M3351 series with Arm Cortex-M33 up to 144MHz, 2.7V to 5.5V operation, 256KB to 1MB Flash, up to 128KB SRAM, dual CAN FD, PWM/EQEI, 12-bit and 14-bit ADCs, TrustZone and Secure Boot.",
+      "The official launch page says Nuvoton provides a NuMaker-M3351KJ development board, while its Buy Online link points to NuMaker-M3351KI. The article surfaces this identifier mismatch and does not assume the boards are interchangeable.",
+      "The product family is formally launched and a development-board purchase path exists, but the reviewed first-party sources do not establish IC production volume, regional inventory, pricing, MOQ or lead time.",
+      "No robotics customer, design win or commercial deployment is inferred.",
+      "Hero and social assets are declared as FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-18",
+  "publishedAt": "2026-09-21",
+  "modifiedAt": "2026-09-21",
+  "supplier": "Nuvoton",
+  "category": "Physical AI · Control MCU · Robotics",
+  "title": "Nuvoton M3351 Brings 5V Cortex-M33 Control to Robotics and Industrial Motion",
+  "seoTitle": "Nuvoton M3351 Adds 5V Cortex-M33 MCU for Robotics Control",
+  "socialTitle": "Nuvoton M3351 Targets Robotics Control",
+  "seoDescription": "Nuvoton's M3351 combines a 144MHz Cortex-M33, dual CAN FD, PWM, encoder interfaces, high-resolution ADCs and secure FOTA features for control systems.",
+  "dek": "The M3351 is not an AI accelerator; it targets the deterministic control layer beneath AI, where 5V operation, motor interfaces, CAN FD and secure firmware updates can matter more than TOPS.",
+  "summary": "Nuvoton has formally launched the NuMicro M3351 MCU family for robotics, smart appliances and industrial control. The series combines a Cortex-M33 core up to 144MHz with 2.7V to 5.5V operation, dual CAN FD, PWM, encoder interfaces, 12-bit and 14-bit ADCs, TrustZone and Secure Boot. For Physical AI systems, the value is in separating deterministic actuator and motor control from the higher-level AI computer, while the official development-board naming mismatch and IC supply maturity still need clarification.",
+  "keyFacts": [
+    "Arm Cortex-M33 up to 144MHz",
+    "2.7V to 5.5V operation",
+    "Dual CAN FD plus PWM, EQEI and ADC control peripherals"
+  ],
+  "whyItMatters": [
+    "Robots and smart machines need deterministic motor, joint and actuator control even when perception and planning run on a separate Linux or AI processor.",
+    "The 5V-capable MCU can fit legacy and noise-prone control domains, while PWM, encoder and ADC trigger paths can keep time-critical loops local instead of pushing them onto the application processor.",
+    "Dual-bank Flash, ECC, Bank Swap, TrustZone and Secure Boot make firmware maintenance and security part of the control architecture rather than an afterthought."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "Nuvoton's M3351 family extends to 1MB of Flash and 128KB of SRAM, with selected high-capacity devices supporting dual-bank operation, ECC, background operation and Bank Swap. The company positions that combination for firmware update and control workloads.",
+        "Peripheral integration includes up to two CAN FD interfaces, up to 24 PWM/BPWM channels, up to two enhanced quadrature encoder interfaces, plus 12-bit and 14-bit ADC resources. Those are directly relevant to motor, joint, valve, pump and actuator subsystems."
+      ]
+    },
+    {
+      "heading": "Why Physical AI teams should care",
+      "paragraphs": [
+        "A Physical AI product normally contains more than one compute layer. A powerful NPU can plan or perceive, but a lower-level MCU still has to execute deterministic control, supervise faults and keep actuators safe when the application processor is busy or restarting.",
+        "The M3351 therefore competes on control integration, voltage range and firmware resilience rather than AI throughput. Its value should be evaluated against the actual motor topology, encoder interfaces, communication buses and safety requirements of the machine."
+      ]
+    },
+    {
+      "heading": "Commercial and documentation questions",
+      "paragraphs": [
+        "Nuvoton's announcement says it provides a NuMaker-M3351KJ board, while the same page's Buy Online link points to a NuMaker-M3351KI. That mismatch should be resolved before a team standardizes its development hardware or documentation.",
+        "The IC family is formally launched, but the reviewed sources do not establish regional inventory, production volume, MOQ or lead time. Those are procurement questions for Nuvoton or authorized channels, not facts to infer from the presence of a buy link."
+      ]
+    }
+  ],
+  "flypigTake": "As Physical AI moves toward real products, the control MCU becomes more important, not less. The upper stack may change models and accelerators frequently, while motors, encoders, power stages and field buses need deterministic behavior for years. M3351 is interesting because it addresses that durable control layer with modern security and update mechanisms.",
+  "productStatus": "Nuvoton formally launched the M3351 series on September 18, 2026 and publishes a product family page plus development-board purchase links. The launch release names NuMaker-M3351KJ, while its Buy Online link points to NuMaker-M3351KI. The reviewed source does not establish M3351 IC production volume, regional inventory, price, MOQ or lead time.",
+  "openQuestions": [
+    "Are NuMaker-M3351KJ and NuMaker-M3351KI distinct board revisions, and which board maps to each M3351 device package and reference design?",
+    "What IC sampling, production, regional inventory, MOQ and lead-time status applies to each device in the family?",
+    "Which reference designs and software examples cover closed-loop motor or robotic-joint control using CAN FD, EQEI, PWM and ADC hardware triggers?"
+  ],
+  "canadaRelevance": "Canadian robotics, industrial automation and smart-equipment teams can evaluate M3351 as the deterministic control companion to higher-level AI compute, particularly where 5V I/O environments, CAN FD and field-updatable firmware are useful.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "delta-embodied-ai-dual-arm-joint-platform",
+    "primax-aisf-delivery-robot-commercialization",
+    "richtek-rtq7892b-qt-automotive-usbc-pd"
+  ],
+  "relatedTechnologies": [
+    "Cortex-M33",
+    "Robotics Control",
+    "CAN FD",
+    "Motor Control",
+    "Secure Boot"
+  ],
+  "corrections": [],
+  "sourceName": "Nuvoton official NuMicro M3351 launch announcement",
+  "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000634/",
+  "sourceNote": "FlyPig AI independently reviewed Nuvoton's September 18, 2026 announcement and current M3351 product information. The official launch page names NuMaker-M3351KJ but links its Buy Online action to NuMaker-M3351KI; this is preserved as an unresolved documentation difference rather than silently reconciled.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/nuvoton-m3351-5v-cortex-m33-robotics-control.png",
+    "socialSrc": "/images/signals/og/nuvoton-m3351-5v-cortex-m33-robotics-control.png",
+    "alt": "FlyPig AI infographic on Nuvoton M3351 5V Cortex-M33 MCU for robotics, motor control, CAN FD and secure firmware updates.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000634/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/nuvoton-m3351-5v-cortex-m33-robotics-control.svg"
+    }
+  }
+}
