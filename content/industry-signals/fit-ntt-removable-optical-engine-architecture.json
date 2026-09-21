@@ -1,0 +1,104 @@
+{
+  "eventId": "EVT-2026-0043",
+  "slug": "fit-ntt-removable-optical-engine-architecture",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-21",
+    "findings": [
+      "Hon Hai's September 16 first-party FIT Tech Day report states that NTT Innovative Devices presented an optical engine architecture jointly developed with FIT Hon Teng and based on a socketed, removable design.",
+      "The source establishes a jointly developed architecture presentation, not a shipping product. No official part number, sample status, production timing, price, MOQ, lead time or named customer/design win is disclosed.",
+      "The article does not infer a broader commercial partnership beyond the specific co-development statement in the official source.",
+      "No performance benchmark or mass-production readiness claim is introduced beyond the first-party description.",
+      "Hero and social assets are declared as FlyPig AI-owned generated editorial graphics and do not reuse event photography."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-16",
+  "publishedAt": "2026-09-21",
+  "modifiedAt": "2026-09-21",
+  "supplier": "FIT Hon Teng / Hon Hai",
+  "category": "AI Infrastructure · Optical Interconnect · Optical Engine",
+  "title": "FIT and NTT Innovative Devices Show a Socketed Removable Optical Engine Architecture",
+  "seoTitle": "FIT and NTT Innovative Devices Disclose Removable Optical Engine Architecture",
+  "socialTitle": "FIT × NTT: Socketed Removable Optical Engine",
+  "seoDescription": "FIT Hon Teng and NTT Innovative Devices disclosed a jointly developed socket-based removable optical engine architecture at FIT Tech Day 2026.",
+  "dek": "The architecture points toward serviceable optics closer to AI compute, but the September disclosure is a co-development presentation, not evidence of samples, volume production or a hyperscaler design win.",
+  "summary": "At FIT Tech Day 2026, Hon Hai said NTT Innovative Devices presented a socket-based removable optical engine architecture jointly developed with FIT Hon Teng. The concept is relevant to the industry's effort to move optical connectivity closer to high-bandwidth AI compute while retaining serviceability. The official disclosure does not provide a part number, sampling status, production schedule, customer program or commercial terms, so it remains a technology and architecture signal rather than a product-availability event.",
+  "keyFacts": [
+    "Joint FIT and NTT Innovative Devices architecture",
+    "Socket-based removable optical engine",
+    "AI data-center interconnect focus"
+  ],
+  "whyItMatters": [
+    "As AI systems increase bandwidth density, optics is moving closer to switches and compute, creating new mechanical, electrical, thermal and serviceability tradeoffs.",
+    "A removable optical engine can be architecturally attractive if it preserves replaceability while shortening high-speed electrical paths, but the reviewed source does not provide enough engineering detail to judge the tradeoff.",
+    "FIT's connector and manufacturing background makes the disclosure relevant to Taiwan's optical-interconnect supply chain, but no production readiness or customer adoption should be inferred from the event presentation."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "Hon Hai's September 16 FIT Tech Day report says NTT Innovative Devices' Yoshiaki Sato presented an optical engine architecture jointly developed with FIT Hon Teng. The official description specifically calls it socket-based and removable.",
+        "That is a narrower and more useful fact than the surrounding event vision. It identifies a concrete co-development direction around optical engines without establishing a finished commercial product."
+      ]
+    },
+    {
+      "heading": "Why it matters to AI hardware",
+      "paragraphs": [
+        "Moving optics closer to switching and compute can reduce the distance that very high-speed electrical signals must travel, but it also raises questions around heat, packaging, connector integrity, serviceability and manufacturing yield.",
+        "A socketed removable approach suggests one attempt to keep optical components replaceable. Whether that is competitive with pluggable optics, near-packaged optics or co-packaged optics depends on interface details and reliability data that were not disclosed in the reviewed source."
+      ]
+    },
+    {
+      "heading": "Commercial status and design-in questions",
+      "paragraphs": [
+        "The announcement contains no product identifier, sample date, mass-production date, price, MOQ, lead time or named design win. FlyPig therefore treats the event as an architecture disclosure and co-development milestone only.",
+        "Next-step evidence would include lane rate, electrical and optical interfaces, laser placement, thermal envelope, mechanical form factor, qualification targets, sampling status and a clear manufacturing roadmap."
+      ]
+    }
+  ],
+  "flypigTake": "The interesting signal is serviceability. AI interconnect architecture is pushing optics inward, but data-center operators still care about replaceable failure domains. A removable engine could be strategically valuable if FIT and NTT can prove signal integrity, thermals and manufacturing economics; the current disclosure is too early to say whether they have.",
+  "productStatus": "Hon Hai reported the jointly developed removable optical engine architecture at FIT Tech Day on September 16, 2026. The reviewed first-party source does not establish a product part number, sample availability, mass-production status, pricing, MOQ, lead time or customer design win.",
+  "openQuestions": [
+    "What lane rate, electrical interface, optical interface and package form factor define the removable engine?",
+    "Where are the laser, driver, receiver and thermal interfaces located, and what reliability or service-cycle targets apply to the socket?",
+    "When will FIT and NTT disclose samples, qualification data, production timing or any customer design-in?"
+  ],
+  "canadaRelevance": "North American AI infrastructure and networking teams should treat the announcement as an emerging packaging and serviceability concept rather than a purchasable optical module. Its relevance rises if the partners publish interoperable interfaces and production evidence.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "auo-micro-led-cpo-glass-core-ai-infrastructure",
+    "dream-photonics-pilot-optical-interconnect-manufacturing",
+    "tenstorrent-open-chiplet-atlas-ecosystem"
+  ],
+  "relatedTechnologies": [
+    "Optical Engine",
+    "Optical Interconnect",
+    "NPO",
+    "CPO",
+    "AI Data Centers"
+  ],
+  "corrections": [],
+  "sourceName": "Hon Hai official FIT Tech Day 2026 report",
+  "sourceUrl": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2106",
+  "sourceNote": "FlyPig AI independently reviewed Hon Hai's September 16, 2026 first-party report. It confirms a socket-based removable optical engine architecture jointly developed by FIT and NTT Innovative Devices. The article does not extend that statement into product availability, mass production, customer adoption or a broader undisclosed partnership.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/fit-ntt-removable-optical-engine-architecture.png",
+    "socialSrc": "/images/signals/og/fit-ntt-removable-optical-engine-architecture.png",
+    "alt": "FlyPig AI infographic on the FIT and NTT Innovative Devices socket-based removable optical engine architecture for AI interconnect.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2106",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/fit-ntt-removable-optical-engine-architecture.svg"
+    }
+  }
+}
