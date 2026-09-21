@@ -1,0 +1,104 @@
+{
+  "eventId": "EVT-2026-0042",
+  "slug": "aaeon-mix-ptlwv1-panther-lake-mini-itx",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-21",
+    "findings": [
+      "AAEON's first-party product update confirms MIX-PTLWV1 with Intel Core Ultra Series 3, integrated Intel Arc graphics and Intel AI Boost NPU 5.0, dual 2.5GbE, optional additional dual 10GbE, up to 128GB DDR5 and NVMe support.",
+      "AAEON's current product page explicitly labels MIX-PTLWV1 Preliminary while also displaying a generic Shop Online message that says orders dispatch in three working days. The article treats the Preliminary status as controlling evidence and does not infer production inventory or a three-day lead time for this SKU.",
+      "The reviewed sources do not establish mass-production status, regional inventory, price, MOQ, final CPU SKU matrix or production lead time.",
+      "AAEON's marketing statements about performance and suitability are not presented as independent benchmarks.",
+      "Hero and social assets are declared as FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-09",
+  "publishedAt": "2026-09-21",
+  "modifiedAt": "2026-09-21",
+  "supplier": "AAEON",
+  "category": "Edge AI · Industrial Motherboard · Mini-ITX",
+  "title": "AAEON Brings Core Ultra Series 3 to Mini-ITX with MIX-PTLWV1, Still Marked Preliminary",
+  "seoTitle": "AAEON MIX-PTLWV1 Adds Core Ultra Series 3 to Mini-ITX Edge AI",
+  "socialTitle": "AAEON MIX-PTLWV1: Panther Lake Mini-ITX, Still Preliminary",
+  "seoDescription": "AAEON's MIX-PTLWV1 combines Core Ultra Series 3, Arc GPU, AI Boost NPU, up to 128GB DDR5 and optional 10GbE, but its product page remains Preliminary.",
+  "dek": "The Mini-ITX board concentrates CPU, GPU, NPU, memory and high-speed networking for fixed Edge AI, but AAEON's own product page still marks the design Preliminary despite a shop link.",
+  "summary": "AAEON's MIX-PTLWV1 product update brings Intel Core Ultra Series 3 into its Mini-ITX industrial motherboard line, with integrated Arc graphics, Intel AI Boost NPU 5.0, up to 128GB DDR5, dual 2.5GbE and an option for two additional 10GbE ports. That combination is relevant to machine vision, robotics and compact AI gateways. However, AAEON's current product page explicitly says Preliminary, so the board should be treated as a design-in candidate rather than confirmed mass-production stock.",
+  "keyFacts": [
+    "Intel Core Ultra Series 3 Mini-ITX",
+    "Up to 128GB DDR5",
+    "Dual 2.5GbE with optional additional dual 10GbE"
+  ],
+  "whyItMatters": [
+    "Mini-ITX remains a useful standard form factor for fixed Edge AI systems that need more I/O, memory and thermal headroom than a module or small SBC can provide.",
+    "Integrated CPU, GPU and NPU resources can consolidate conventional application processing and AI inference, while optional 10GbE expands the board's relevance to multi-camera aggregation and industrial vision.",
+    "The unresolved issue is maturity: a public product page and shop link do not override AAEON's explicit Preliminary label."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "AAEON's September product update positions MIX-PTLWV1 around Intel Core Ultra Series 3 processors. The board combines the platform's CPU with integrated Intel Arc graphics and Intel AI Boost NPU 5.0 in a standard Mini-ITX format.",
+        "AAEON lists dual 2.5GbE as standard, optional additional dual 10GbE, up to 128GB DDR5 and NVMe support. Those interfaces make the board more interesting for data-heavy edge systems than a simple desktop refresh."
+      ]
+    },
+    {
+      "heading": "Where it fits",
+      "paragraphs": [
+        "The most plausible design-ins are fixed systems such as machine-vision controllers, AI NVRs, industrial gateways and robot controllers where memory, networking and expansion matter alongside inference.",
+        "The value should be evaluated as a complete platform: thermal envelope, PCIe and M.2 topology, camera and frame-grabber compatibility, OS support, accelerator runtime and long-term industrial lifecycle can matter more than the NPU generation label."
+      ]
+    },
+    {
+      "heading": "Availability remains unresolved",
+      "paragraphs": [
+        "AAEON's current product page explicitly labels MIX-PTLWV1 Preliminary. The same page also carries a Shop Online message that mentions three-working-day dispatch, but that generic commerce element is not sufficient evidence that this preliminary board or every configuration is stocked.",
+        "Before design freeze, teams should obtain final ordering codes, CPU support, production status, BIOS and BSP versions, thermal data, regional inventory and lead time directly from AAEON."
+      ]
+    }
+  ],
+  "flypigTake": "This is a useful Edge AI motherboard because it combines standard mechanics with higher memory and network density, but the most important word on the page is still Preliminary. Hardware teams should use the public specs to shortlist the board, not to assume a production BOM is ready.",
+  "productStatus": "AAEON has published a product update and a detailed MIX-PTLWV1 product page, but the current official page explicitly marks the board Preliminary. A shop link is visible, yet the reviewed first-party evidence does not confirm mass production, regional inventory, pricing, MOQ or SKU-specific lead time.",
+  "openQuestions": [
+    "When will AAEON remove the Preliminary designation and publish the final production CPU and ordering-code matrix?",
+    "What are the final thermal and power envelopes for each supported Core Ultra Series 3 configuration under sustained CPU, GPU and NPU loads?",
+    "Which camera, frame-grabber, GPU or AI accelerator cards, Linux distributions and driver/runtime versions are formally validated?"
+  ],
+  "canadaRelevance": "Canadian machine-vision, robotics and industrial-system integrators can evaluate MIX-PTLWV1 as a compact x86 Edge AI platform, but should wait for final production documentation and local supply confirmation before locking it into a long-life BOM.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-mix-q870a1-mini-itx-edge-ai",
+    "aaeon-max-q870a-max-h810a-micro-atx-edge-ai",
+    "dfi-arh171-arh173-core-ultra-mini-itx"
+  ],
+  "relatedTechnologies": [
+    "Mini-ITX",
+    "Intel Core Ultra",
+    "Edge AI",
+    "10GbE",
+    "Machine Vision"
+  ],
+  "corrections": [],
+  "sourceName": "AAEON official MIX-PTLWV1 product update",
+  "sourceUrl": "https://solutions.aaeon.com/mix-ptlwv1/",
+  "sourceNote": "FlyPig AI independently reviewed AAEON's MIX-PTLWV1 product update and current first-party product page. The product page is explicitly marked Preliminary; its simultaneous shop message is not treated as proof of SKU-specific stock, mass production or a three-day lead time.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-mix-ptlwv1-panther-lake-mini-itx.png",
+    "socialSrc": "/images/signals/og/aaeon-mix-ptlwv1-panther-lake-mini-itx.png",
+    "alt": "FlyPig AI infographic on AAEON MIX-PTLWV1 Mini-ITX board with Core Ultra Series 3, DDR5 and high-speed networking, marked preliminary.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://solutions.aaeon.com/mix-ptlwv1/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-mix-ptlwv1-panther-lake-mini-itx.svg"
+    }
+  }
+}
