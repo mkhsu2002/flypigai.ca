@@ -30,9 +30,9 @@
   "dek": "The Canadian Army has translated Arctic drone requirements into a funded prototype challenge with unusually specific environmental, sensing, communications and supply-chain constraints.",
   "summary": "Innovation, Science and Economic Development Canada opened the Canadian Army's MINERVA Arctic Uncrewed Air System challenge on August 13, 2026. The Phase 2 competition is limited to eligible Canadian SMEs proposing TRL 5-9 systems and closes September 24 at 2:00 p.m. Eastern time. Mandatory requirements include operation from -40 C to +40 C, a minimum 20 km operational radius, at least 90 minutes of endurance, day-and-night target recognition, a ground-control station, radio, battery and charger, and a remote antenna. Canada lists up to C$500,000 per Phase 2 contract and an estimated five contracts, but explicitly says those awards are not guaranteed. For hardware suppliers, the commercial signal is the detailed component and provenance architecture, not an assumption that a production order already exists.",
   "keyFacts": [
-    "The Phase 2 Arctic UAS challenge opened August 13, 2026 and closes September 24, 2026 at 2:00 p.m. Eastern time; qualifying proposals must be TRL 5-9 and led by eligible Canadian SMEs.",
-    "Mandatory requirements include operation from -40 C to +40 C, at least a 20 km operational radius, 90 minutes of endurance and an integrated sensor, GCS, radio, battery/charger and remote-antenna stack.",
-    "Canada caps Phase 2 funding at C$500,000 per contract for up to 15 months and estimates five contracts, while explicitly stating that the number and scope of awards are not guaranteed."
+    "Closes Sep 24, 2026 at 2 PM ET",
+    "TRL 5-9 prototype challenge",
+    "Up to C$500K per Phase 2 contract"
   ],
   "whyItMatters": [
     "This is a buyer-defined engineering problem rather than a general innovation announcement: Canada has exposed the performance envelope and major subsystem classes it wants industry to integrate.",
