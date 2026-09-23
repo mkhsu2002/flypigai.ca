@@ -19,7 +19,7 @@
   },
   "sourcePublishedAt": "2026-07-23",
   "publishedAt": "2026-09-20",
-  "modifiedAt": "2026-09-20",
+  "modifiedAt": "2026-09-23",
   "supplier": "InDro Robotics",
   "category": "Canada · Robotics & Physical AI",
   "title": "InDro Axiom Turns Humanoid R&D Into a Modular Dual-Arm Research Platform",
@@ -31,7 +31,7 @@
   "keyFacts": [
     "Launched July 23, 2026",
     "Three units shipped by launch date, per InDro",
-    "Current product page lists a USD 15,900 research bundle"
+    "Current bundle listed at USD 15,900"
   ],
   "whyItMatters": [
     "Axiom lowers the hardware barrier for teams that want to work on humanoid-style manipulation without buying a full bipedal platform. That can expand the installed base for Physical AI data collection, imitation learning and manipulation research.",
