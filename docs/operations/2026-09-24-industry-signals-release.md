@@ -39,9 +39,15 @@ Local verification completed on 2026-09-24:
 
 ## Production Readback
 
-Production readback must be performed after the matching `main` commit deploys to Cloudflare Pages:
+Production readback completed on 2026-09-24.
+
+- Git commit: `59d2c0c`
+- Cloudflare Pages deployment: `https://d9cd92ea.flypigai-ca.pages.dev`
+- Public domain: `https://flypigai.ca`
+
+Readback result:
 
 - each route above returns HTTP 200 on `https://flypigai.ca`;
 - each route appears in the public `https://flypigai.ca/sitemap.xml`;
-- each route contains its dedicated `og:image`;
-- representative article HTML contains `NewsArticle` JSON-LD.
+- each route contains its dedicated `og:image`, and each OG image returns HTTP 200;
+- each route contains `NewsArticle` JSON-LD.
