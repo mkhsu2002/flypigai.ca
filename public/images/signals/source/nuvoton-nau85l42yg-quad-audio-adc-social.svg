@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfaf7"/><stop offset="1" stop-color="#eef6f4"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1f2933" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="0" y="0" width="18" height="630" fill="#2563eb"/>
+  <text x="72" y="79" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
+  <text x="72" y="105" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
+  <text x="72" y="167" fill="#2563eb" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">NUVOTON · EDGE AI · AUDIO FRONT END · VOICE</text>
+  <text x="72" y="206" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">NAU85L42YG Targets Multi-Mic</text>
+  <text x="72" y="268" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Edge AI Audio</text>
+  <text x="72" y="438" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#2563eb">01</tspan> 4-channel AMIC/DMIC capture</text>
+  <text x="72" y="472" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#2563eb">02</tspan> Up to 192kHz at 24-bit</text>
+  <text x="72" y="506" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#2563eb">03</tspan> 77µs minimum low-latency mode at 48kHz</text>
+  <image href="/images/brand/flypig-logo.png" x="808" y="166" width="320" height="271" preserveAspectRatio="xMidYMid meet"/>
+  <text x="72" y="604" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="14">Independent editorial infographic · Source linked in article · flypigai.ca</text>
+  </svg>

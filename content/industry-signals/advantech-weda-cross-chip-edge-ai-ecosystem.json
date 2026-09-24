@@ -16,7 +16,7 @@
   },
   "sourcePublishedAt": "2026-09-17",
   "publishedAt": "2026-09-21",
-  "modifiedAt": "2026-09-21",
+  "modifiedAt": "2026-09-24",
   "supplier": "Advantech",
   "category": "Edge AI · Deployment Platform · Fleet Software",
   "title": "Advantech Broadens WEDA into a Cross-Chip Edge AI Deployment Layer",
@@ -26,8 +26,8 @@
   "dek": "The September WEDA expansion is a software-stack signal rather than a new board launch: Advantech is trying to normalize development, deployment and fleet operations across heterogeneous Edge AI hardware.",
   "summary": "Advantech has expanded its WEDA-Powered Edge AI ecosystem around WEDA-Ready Linux, Edge AI SDK, WEDA Edge and Cloud, and the Advantech Container Catalog. The company explicitly lists Intel, Qualcomm, AMD, NVIDIA and NXP architectures and provides concrete container examples for Intel OpenVINO and Qualcomm IQ9/QCS6490. The strategic value is a more consistent route from PoC to managed fleets, but the announcement should not be read as proof that every supported architecture or SKU has identical validation depth.",
   "keyFacts": [
-    "Intel, Qualcomm, AMD, NVIDIA and NXP architecture coverage",
-    "WEDA-Ready Linux plus Edge AI SDK and cloud lifecycle tools",
+    "Intel, Qualcomm, AMD, NVIDIA and NXP coverage",
+    "WEDA-Ready Linux, Edge AI SDK and cloud tools",
     "Ready-to-Dev container catalog"
   ],
   "whyItMatters": [

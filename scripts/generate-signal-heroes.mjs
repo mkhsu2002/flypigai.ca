@@ -39,7 +39,8 @@ function hasCompleteArtwork(signal) {
   ].every((filePath) => fs.existsSync(filePath));
 }
 
-const batch = missingOnly ? signals.filter((signal) => !hasCompleteArtwork(signal)) : signals.slice(start, start + limit);
+const missingSignals = missingOnly ? signals.filter((signal) => !hasCompleteArtwork(signal)) : [];
+const batch = missingOnly ? missingSignals.slice(start, start + limit) : signals.slice(start, start + limit);
 if (!batch.length) {
   console.log(missingOnly ? "All Industry Signal artwork is already present." : `No records found at --start=${start}`);
   process.exit(0);
