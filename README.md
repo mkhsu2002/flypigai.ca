@@ -260,12 +260,7 @@ Important tab:
 
 Current known event IDs ran from `EVT-2026-0001` through at least `EVT-2026-0035` as of a 2026-09-12 readback of `新品事件庫`.
 
-Latest published Industry Signal added on 2026-09-12:
-
-- event `EVT-2026-0035`
-- AAEON MAX-Q870A / MAX-H810A Micro-ATX Industrial Motherboards
-- canonical slug: `/signals/aaeon-max-q870a-max-h810a-micro-atx-edge-ai`
-- official source: `https://www.aaeon.com/en/news/detail/max-q870a-max-h810a-mico-itx-motherboard-arrow-lake`
+Repository publication inventory as checked on 2026-09-25: 65 Industry Signal records. The latest site publication date in those records is 2026-09-23 for `CA-2026-0016`, `/signals/canada-minerva-arctic-uncrewed-air-system`. This repository count does not imply a fresh readback of the Google Sheet above. The 2026-09-18–24 additions and production checks are recorded in `docs/operations/2026-09-25-weekly-content-governance.md`.
 
 The first prototype article is based on:
 
