@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-09-26",
   "scope": {
     "existingCollectors": [
       "Taiwan Industry Signals",
@@ -20,9 +20,21 @@
       "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-open-humanoid-robot-reference-design",
       "summary": "NVIDIA announced an open reference humanoid design combining Unitree H2 Plus, Sharpa hands, Jetson Thor and the Isaac GR00T software stack.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "strong"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series"
     },
@@ -36,7 +48,11 @@
       "sourceUrl": "https://flypigai.ca/signals/mediatek-mt8875-5g-iot-genai",
       "summary": "Existing Taiwan Industry Signal records increasing integration of connectivity, local inference, camera processing and application compute into a single platform.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "weak"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -50,8 +66,16 @@
       "sourceUrl": "https://flypigai.ca/signals/primax-aisf-delivery-robot-commercialization",
       "summary": "Existing Taiwan Industry Signal records Primax spanning sensing, edge compute and complete delivery-robot systems, with Japan and Korea trials and a supplier-planned 2027 rollout.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "weak"},
-        {"predictionId": "FP-PAI-003", "effect": "neutral", "strength": "weak"}
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "neutral",
+          "strength": "weak"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -66,7 +90,11 @@
       "sourceUrl": "https://flypigai.ca/signals/mediatek-nvidia-edge-cloud-ai-partnership",
       "summary": "The existing Taiwan Industry Signal records a broader MediaTek-NVIDIA architecture relationship spanning NVLink Fusion custom XPU work, local AI computing and automotive. The announcement is an ecosystem and roadmap signal rather than evidence of a new shipping MediaTek product.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "weak"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -81,7 +109,11 @@
       "sourceUrl": "https://flypigai.ca/signals/advantech-air-411-bartlett-lake-multi-accelerator-edge-ai",
       "summary": "The existing Taiwan Industry Signal records a compact industrial host that supports accelerator paths from Intel, NVIDIA, AMD and Qualcomm together with edge-management software. It is evidence of increasing compute modularity, although official GPU power specifications remain inconsistent and must be qualified per configuration.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "weak"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -96,8 +128,16 @@
       "sourceUrl": "https://flypigai.ca/signals/waabi-uber-robotaxi-expansion-series-c",
       "summary": "The existing Canada Industry Signal records Waabi's expansion of the Waabi Driver from autonomous trucking into a second vehicle category, robotaxis, with Uber as the exclusive planned deployment platform. The source supports software-platform reuse across related embodiments but still requires vehicle-specific hardware engineering, validation and regulation.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "weak"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -112,9 +152,21 @@
       "sourceUrl": "https://newsroom.arm.com/news/arm-total-design-and-robotics-capability-framework-for-physical-ai",
       "summary": "Arm expanded Total Design to Physical AI with more than 80 ecosystem participants and introduced a Robotics Capability Framework as a starting point for a common language linking use cases, robot behavior and system requirements. The framework is an early ecosystem initiative, not yet a runtime compatibility standard or proof of cross-vendor adoption.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "weak"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series-update"
     },
@@ -132,9 +184,21 @@
       ],
       "summary": "Skild reports more than 60 paying customers and deployment of its generalist robot intelligence across varied applications, while S1 can take a single video demonstration as context and execute previously unseen tasks without task-specific weight updates. Revenue and customer counts are company-reported, and the evidence does not establish an industry-wide portability standard.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-004", "effect": "weakens", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "weakens",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series-update"
     },
@@ -149,9 +213,21 @@
       "sourceUrl": "https://www.qualcomm.com/news/releases/2026/03/neura-robotics-and-qualcomm--enter-strategic-collaboration-to-ad",
       "summary": "Qualcomm and NEURA announced plans for a standardized runtime and deployment interface across robotic platforms, reference platforms spanning several robot form factors, and a developer ecosystem intended to support build-once deployment across multiple form factors. These are collaboration plans and should not be treated as proof that portability has already been achieved at scale.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-004", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series-update"
     },
@@ -166,9 +242,21 @@
       "sourceUrl": "https://www.ambirobotics.com/media/ambi-robotics-expands-ambios-physical-ai-platform-with-ai-skill-suite/",
       "summary": "Ambi Robotics introduced a licensing model for production-proven AI skills under AmbiOS and says its software isolates hardware complexity so applications can operate across varying robotic form factors and third-party hardware use cases. The current evidence is first-party and limited to trusted partners, so broad cross-platform portability remains to be independently demonstrated.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-004", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series-update"
     },
@@ -183,8 +271,16 @@
       "sourceUrl": "https://flypigai.ca/signals/kinova-kima-medical-robotic-arm-oem-platform",
       "summary": "The existing Canada Industry Signal records KIMA as a purpose-built OEM medical-robotics subsystem with EtherCAT, a Robot Control Library and integrated joint sensing. It lets medical-device builders start from a productized motion platform rather than designing the complete arm and low-level control stack from scratch. Regulatory readiness, customer design-ins, production volume and pricing remain undisclosed.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "strong"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -199,8 +295,16 @@
       "sourceUrl": "https://flypigai.ca/signals/indro-cortex-controller-robotics-deployment-stack",
       "summary": "The existing Canada Industry Signal records InDro positioning Cortex compute and Controller software as a platform-agnostic integration stack across ground robots, drones and custom systems, including standalone sales and a client-bound fleet. This is evidence of reusable compute, sensing, connectivity and control infrastructure, but not a cross-vendor application standard or proof of mass-production scale.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -215,8 +319,16 @@
       "sourceUrl": "https://flypigai.ca/signals/sanctuary-ai-tier1-wire-plugging-production-benchmark",
       "summary": "The existing Canada Industry Signal records Sanctuary shifting Physical AI commercialization toward existing industrial robotic platforms and reporting a Tier-1 automotive wire-plugging benchmark that later led to a company-reported purchase order. Performance figures and the purchase-order scope remain first-party and undisclosed in detail, but the strategy is evidence that intelligence and workflow software can be monetized independently of a proprietary humanoid body.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "weak"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "existing-industry-signal"
     },
@@ -234,8 +346,16 @@
       ],
       "summary": "Universal Robots introduced Gen 7 as a unified hardware-software platform anchored by PolyScope X. UR says PolyScope X provides open APIs, ROS 2 communication and an SDK for native AI applications, while UR+ supplies validated third-party AI tools, peripherals and software and the platform exposes PolyScope X Smart Skills. This strongly supports software and ecosystem differentiation above standardized robot hardware, but it is a vendor-specific ecosystem rather than evidence of an industry-wide common layer.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "strong"},
-        {"predictionId": "FP-PAI-004", "effect": "supports", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "supports",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series-update"
     },
@@ -250,9 +370,21 @@
       "sourceUrl": "https://www.rewardai.com/blog/OM-1/",
       "summary": "Reward AI says OM-1 learns a general-purpose manipulation policy from robot-free human demonstrations and runs one policy across industrial arms and humanoids, with a high-frequency control layer absorbing body-specific dynamics. The architecture is direct evidence that a common model and control abstraction can span embodiments, while also challenging the need for every capability to exist as an explicit packaged skill. The claims are first-party; no public weights, code, standardized benchmark or independent cross-body validation is available in the reviewed release.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-001", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-004", "effect": "weakens", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "weakens",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series-update"
     },
@@ -267,8 +399,16 @@
       "sourceUrl": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization",
       "summary": "Figure reports that Helix 2.5 performs three long-horizon whole-body behaviors across 30 unseen homes without collecting data, fine-tuning or adapting in those environments, using an Index-pretrained foundation model. The result is embodiment-specific to Figure's humanoid in the disclosed test, but it strengthens the model-centric counter-thesis that increasingly broad behavior can emerge from a general policy rather than a catalog of separately installed task skills. Results are company-reported and not independently reproduced.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-004", "effect": "weakens", "strength": "medium"}
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "weakens",
+          "strength": "medium"
+        }
       ],
       "publicationStatus": "incorporated-into-series-update"
     },
@@ -283,10 +423,232 @@
       "sourceUrl": "https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale",
       "summary": "Agility introduced Digit 5 after more than 65,000 operating hours accumulated by Digit 4 and reported more than $300 million in multi-year orders subject to contractual milestones. Digit 5 adds standardized tool mounting, fleet integration through Agility Arc and planned broader commercial deployment beginning in 2027. It supports the productization of reusable robot bodies, but remains a vertically integrated vendor platform and several features and safety elements are still in development.",
       "predictionLinks": [
-        {"predictionId": "FP-PAI-002", "effect": "supports", "strength": "medium"},
-        {"predictionId": "FP-PAI-003", "effect": "supports", "strength": "weak"}
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "weak"
+        }
       ],
       "publicationStatus": "tracker-only"
+    },
+    {
+      "id": "PAI-EV-2026-0018",
+      "date": "2026-09-17",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "taiwan",
+      "category": "cross-chip-edge-runtime",
+      "subject": "Advantech WEDA expands into a cross-chip Edge AI deployment layer",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/advantech-weda-cross-chip-edge-ai-ecosystem",
+      "additionalSourceUrls": [
+        "https://www.advantech.com/en-sg/resources/news/advantech-expands-weda-powered-edge-ai-ecosystem-to-streamline-ai-from-development-to-deployment"
+      ],
+      "summary": "The existing Taiwan Industry Signal records Advantech expanding WEDA across Intel, Qualcomm, AMD, NVIDIA and NXP architectures with WEDA-Ready Linux, Edge AI SDK, edge/cloud management and a container catalog. This supports the view that deployment lifecycle and application portability are becoming strategic layers above silicon choice, although the source does not establish identical validation depth across every architecture or SKU and is not robotics-specific.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0019",
+      "date": "2026-07-23",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "canada",
+      "category": "modular-reference-robot",
+      "subject": "InDro Axiom productizes a configurable dual-arm Physical AI research platform",
+      "sourceType": "existing-signal",
+      "sourceUrl": "https://flypigai.ca/signals/indro-axiom-humanoid-style-research-platform",
+      "additionalSourceUrls": [
+        "https://indrorobotics.ca/meet-the-new-indro-axiom-humanoid-style-research-robot/",
+        "https://indrorobotics.ca/axiom/"
+      ],
+      "summary": "The existing Canada Industry Signal records InDro Axiom as a purchasable, configurable humanoid-style research platform with dual arms, sensing, optional Cortex/Controller compute and support for different arms, end effectors or a mobile base. InDro reported three units shipped at launch. This supports productization of reusable robot bodies and subsystems, but not mass-production scale, industrial safety certification or a stable long-term BOM.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "weak"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0020",
+      "date": "2026-09-21",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "global",
+      "category": "humanoid-commercialization-platform",
+      "subject": "Boston Dynamics opens Atlas RMAC and discloses large-scale production and deployment plans",
+      "sourceType": "official",
+      "sourceUrl": "https://bostondynamics.com/news/boston-dynamics-opens-robotics-metaplant-application-center-to-train-humanoid-robots-for-manufacturing-tasks",
+      "summary": "Boston Dynamics says the first phase of its Robotics Metaplant Application Center at Hyundai Motor Group Metaplant America is operational and Atlas robots are training on real manufacturing tasks. Hyundai Motor Group plans to begin with 25,000 Atlas units across Hyundai and Kia plants over the next few years and a new U.S. production facility capable of 30,000 robots annually. These are company plans rather than completed deployment volumes; Atlas remains described as a platform currently in development.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "strong"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0021",
+      "date": "2026-09-22",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "global",
+      "category": "open-robot-runtime",
+      "subject": "Intrinsic open-sources ROS-compatible hardware-agnostic robotics core",
+      "sourceType": "official",
+      "sourceUrl": "https://www.intrinsic.ai/blog/posts/introducing-intrinsic-core",
+      "additionalSourceUrls": [
+        "https://www.intrinsic.ai/intrinsic-core"
+      ],
+      "summary": "Intrinsic released Intrinsic Core under Apache 2.0 with ROS-compatible capabilities, a hardware-agnostic real-time control framework, digital twin, motion and grasp planning, simulation, calibration and preconfigured drivers. Intrinsic says different robot arms, grippers and sensors can be swapped without rewriting drivers and also released an open machine-tending reference solution. This is strong evidence for a reusable compatibility layer, but supported hardware and production validation still depend on the published driver and integration matrix.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "supports",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0022",
+      "date": "2026-09-22",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "global",
+      "category": "open-robotics-platform",
+      "subject": "NVIDIA Isaac ROS 5.0 deepens an open ROS-based Physical AI platform",
+      "sourceType": "official",
+      "sourceUrl": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+      "additionalSourceUrls": [
+        "https://developer.nvidia.com/isaac/ros"
+      ],
+      "summary": "NVIDIA released Isaac ROS 5.0 as a free, open-source ROS-based software foundation with ROS Lyrical support, accelerated perception and deployment workflows. NVIDIA also contributed a standard data-handling interface to ROS Lyrical intended to work efficiently across different computing hardware. Its new Isaac skills mainly package developer workflows rather than proving a portable runtime robot-skill marketplace, so that terminology is not treated as direct validation of FP-PAI-004.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "neutral",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0023",
+      "date": "2026-09-23",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "global",
+      "category": "foundation-model-post-training",
+      "subject": "Skild shows emergent humanoid behavior from physical self-play",
+      "sourceType": "official",
+      "sourceUrl": "https://www.skild.ai/blogs/physical-self-play",
+      "summary": "Skild reports that a policy built on its S1 base model learned humanoid soccer through self-play in simulation using a single score objective, with behaviors such as dribbling, shielding, tackling and recovery emerging without separately handcrafted rewards for each behavior before transfer to a physical robot. The result is company-reported, demonstrated on a narrow soccer task and does not establish cross-platform portability, but it adds evidence that general policies can absorb behavior internally rather than requiring every behavior to be packaged as an explicit skill.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "weakens",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0024",
+      "date": "2026-07-30",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "global",
+      "category": "multi-embodiment-foundation-model",
+      "subject": "Google DeepMind Gemini Robotics 2 runs one checkpoint across multiple embodiments",
+      "sourceType": "official",
+      "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "additionalSourceUrls": [
+        "https://deepmind.google/models/gemini-robotics/vla/",
+        "https://deepmind.google/models/model-cards/gemini-robotics-on-device-2/"
+      ],
+      "summary": "Google DeepMind reports Gemini Robotics 2 controlling three different embodiments with the same model checkpoint and says Gemini Robotics On-Device 2 is natively multi-embodiment and can adapt to new bi-arm robots with a few hours of data, typically fewer than 200 examples. This is strong first-party evidence that intelligence can span robot bodies, while the required adaptation data and early-access status show that embodiment differences have not disappeared.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "weakens",
+          "strength": "strong"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0025",
+      "date": "2026-09-24",
+      "trackerAddedAt": "2026-09-26",
+      "geography": "global",
+      "category": "robot-manufacturing-scale",
+      "subject": "AGIBOT reports its 20,000th robot and a 300-plus-robot commercial deployment",
+      "sourceType": "official",
+      "sourceUrl": "https://www.agibot.com/article/231/detail/123.html",
+      "summary": "AGIBOT says more than 300 of its robots are being deployed across entertainment, education, visitor services and hotel operations at Chimelong Spaceship Park and that the event coincided with the 20,000th robot rolling off its production line. The company's portfolio spans humanoids, quadrupeds, dexterous systems and cleaning robots, so the 20,000 figure is not treated as 20,000 humanoids. The event is strong vendor-reported evidence that embodied robot bodies and fleets can reach meaningful production and deployment scale, while offering little evidence about cross-vendor software portability.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "neutral",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "incorporated-into-series-update"
     }
   ]
 }
