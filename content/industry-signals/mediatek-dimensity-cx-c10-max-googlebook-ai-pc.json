@@ -1,0 +1,101 @@
+{
+  "eventId": "EVT-2026-0044",
+  "slug": "mediatek-dimensity-cx-c10-max-googlebook-ai-pc",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-28",
+    "findings": [
+      "MediaTek's September 22, 2026 Taiwan release and current product page confirm C10 Max as the first flagship SoC in the Dimensity CX family.",
+      "The 55 TOPS NPU rating is a MediaTek specification, not an independent application benchmark.",
+      "MediaTek says the target premium ultra-portable Googlebook is upcoming; no OEM, model, retail date, sample or EVK status, pricing, MOQ, lead time or shipment volume is disclosed.",
+      "Google's September 21 Googlebook launch material lists Intel Core Ultra Series 3 and Snapdragon X Elite as the initial preorder processor options, so C10 Max is not presented as part of the current launch wave.",
+      "MediaTek lists Bluetooth 6.0 at the platform level, while its release footnote says Bluetooth 6.0 is not supported in Googlebook devices; the article separates silicon capability from device implementation.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics and do not reuse MediaTek or Google press imagery."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-22",
+  "publishedAt": "2026-09-28",
+  "modifiedAt": "2026-09-28",
+  "supplier": "MediaTek",
+  "category": "AI PC SoC · On-device AI · Personal Computing",
+  "title": "MediaTek Brings Dimensity CX C10 Max Into the AI PC Race",
+  "seoTitle": "MediaTek Dimensity CX C10 Max Enters the AI PC Race",
+  "socialTitle": "MediaTek's C10 Max Pushes Dimensity Into AI PCs",
+  "seoDescription": "MediaTek's Dimensity CX C10 Max brings a 55 TOPS NPU and mobile-style integration to future Googlebooks, with device availability still unresolved.",
+  "dek": "MediaTek has put a concrete flagship part number behind its new PC silicon strategy. The C10 Max combines an Arm all-big-core CPU, integrated graphics, a 55 TOPS NPU and laptop-oriented I/O, but the first commercial Googlebook using it has not yet been identified.",
+  "summary": "MediaTek formally introduced Dimensity CX C10 Max as the first flagship SoC in its new Dimensity Compute Experiences family. Official specifications list a TSMC 3 nm process, an eight-core Arm CPU built from Cortex-X925, Cortex-X4 and Cortex-A720 cores, an 11-core Immortalis-G925 GPU, and an NPU 890 rated by MediaTek at up to 55 dense TOPS. The platform also supports LPDDR5X up to 9600 Mbps, UFS 4.0 storage and a 32 MP Imagiq 1090 ISP. MediaTek says the chip is intended for an upcoming premium ultra-portable Googlebook, but neither MediaTek nor Google's reviewed launch material names the C10 Max device, OEM or retail date. The signal is therefore a platform-entry event, not evidence that C10 Max systems are already on shelves.",
+  "keyFacts": [
+    "First flagship SoC in MediaTek's Dimensity CX PC family",
+    "NPU 890 rated by MediaTek at up to 55 dense TOPS",
+    "Targeted at a future premium ultra-portable Googlebook"
+  ],
+  "whyItMatters": [
+    "MediaTek is extending the integration model it has used in mobile devices into premium personal computing, where CPU, GPU, NPU, ISP, memory, storage and connectivity choices are tightly coupled at the platform level.",
+    "For Edge AI teams, a 55 TOPS-class NPU inside a client PC SoC expands the workloads that can stay local, but real throughput, memory pressure and thermals still need device-level validation.",
+    "For Taiwan's supply chain, a new Arm-based PC platform can create design-in work around ODM systems, cameras, memory, storage, power, thermal design and wireless subsystems if OEM adoption moves beyond the announcement stage."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "MediaTek's September 22 Taiwan announcement turns its broader PC ambitions into a named flagship platform. C10 Max is the inaugural Dimensity CX device, with an eight-core all-big-core CPU topology, an 11-core Immortalis-G925 GPU and the NPU 890. The product page specifies 1× Cortex-X925, 3× Cortex-X4 and 4× Cortex-A720, plus LPDDR5X up to 9600 Mbps and UFS 4.0.",
+        "The NPU is listed at up to 55 TOPS in dense mode with INT8, INT16, FP16 and BF16 support. That number is useful as a silicon specification, but it does not establish performance on a particular agent, vision model or local LLM."
+      ]
+    },
+    {
+      "heading": "Why it matters to Edge AI and product design",
+      "paragraphs": [
+        "The architectural signal is integration. MediaTek is packaging AI acceleration, graphics, camera processing and connectivity into a PC-oriented SoC rather than asking OEMs to assemble those capabilities from discrete accelerators. That can simplify board design while making software support, thermal envelopes and memory bandwidth more important design-in variables.",
+        "MediaTek positions C10 Max around Gemini Intelligence and on-device agentic AI. Product teams should read that as a workload target, not a guaranteed user experience. The official material does not publish sustained NPU performance, power at 55 TOPS, model-size limits or application-level latency."
+      ]
+    },
+    {
+      "heading": "Commercial implications and unresolved questions",
+      "paragraphs": [
+        "MediaTek says the chip will enable an upcoming premium ultra-portable Googlebook. Google's September 21 launch material says the initial preorder Googlebook choices use Intel Core Ultra Series 3 and Snapdragon X Elite processors. That makes C10 Max a future platform path rather than part of the currently identified launch wave.",
+        "No reviewed official source identifies the C10 Max OEM, notebook model, sample or EVK availability, production volume, chip pricing, MOQ or lead time. MediaTek also lists Bluetooth 6.0 capability at the platform level while its release footnote says Bluetooth 6.0 is not supported in Googlebook devices, so designers should separate silicon capability from shipping configuration."
+      ]
+    }
+  ],
+  "flypigTake": "The important move is not the headline TOPS number. MediaTek is trying to make the PC look more like an integrated edge appliance, with compute, AI, imaging and connectivity designed as one silicon platform. If C10 Max wins real Googlebook designs, it could give OEMs another path to thin, fanless local-AI systems. The next evidence that matters is a named device, sustained workload data and a clear production and software-support path.",
+  "productStatus": "Dimensity CX C10 Max is formally announced and has a live MediaTek product page. MediaTek describes the target Googlebook as upcoming. The reviewed sources do not establish a named C10 Max notebook, retail date, chip sample or EVK availability, mass-production volume, pricing, MOQ or lead time. Google's current Googlebook preorder announcement identifies Intel and Qualcomm processors for the initial launch options, not C10 Max.",
+  "openQuestions": [
+    "Which OEM and model will ship the first C10 Max Googlebook, and when will it reach preorder or retail availability?",
+    "What sustained NPU performance, power draw and memory footprint should developers expect for representative agentic and multimodal workloads?",
+    "What SDK, model-conversion, driver and lifecycle support will MediaTek expose, and will an EVK or reference platform be available outside named OEM programs?",
+    "Which platform connectivity features, including Bluetooth 6.0, will actually be enabled in shipping Googlebook designs?"
+  ],
+  "canadaRelevance": "For North American PC and edge-product teams, C10 Max is a silicon option to watch rather than a component with confirmed open-market availability. Its relevance will increase when a named Googlebook design, developer stack and production timeline are public, particularly for teams evaluating fanless local-AI endpoints and Arm-based client hardware.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "mediatek-dimensity-9600-pro-9600m-agentic-ai",
+    "mediatek-nvidia-edge-cloud-ai-partnership",
+    "mediatek-mt8875-5g-iot-genai"
+  ],
+  "relatedTechnologies": ["AI PC", "On-device AI", "Arm CPU", "NPU", "Googlebook"],
+  "corrections": [],
+  "sourceName": "MediaTek Taiwan official press release",
+  "sourceUrl": "https://www.mediatek.com/zh-tw/press-room/mediatek-dimensity-cx-c10-max-offers-flagship-performance-to-a-new-era-of-ai-first-laptops",
+  "sourceProductUrl": "https://www.mediatek.com/products/laptops-and-tablets/dimensity-cx/c10-max",
+  "additionalSources": [
+    {"name": "MediaTek Dimensity CX C10 Max product page", "url": "https://www.mediatek.com/products/laptops-and-tablets/dimensity-cx/c10-max"},
+    {"name": "Google official Googlebook launch and preorder announcement", "url": "https://blog.google/products-and-platforms/devices/googlebook/pre-order-googlebook/"}
+  ],
+  "sourceNote": "FlyPig AI independently reviewed MediaTek's September 22, 2026 Taiwan release, the current C10 Max product page and Google's September 21 Googlebook launch announcement. MediaTek's 55 TOPS figure is treated as a vendor specification. The article does not infer a named OEM design win, open-market chip availability or production volume, and it separates chipset-level Bluetooth support from the Googlebook implementation caveat in MediaTek's own footnote.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/mediatek-dimensity-cx-c10-max-googlebook-ai-pc.png",
+    "socialSrc": "/images/signals/og/mediatek-dimensity-cx-c10-max-googlebook-ai-pc.png",
+    "alt": "FlyPig AI infographic showing MediaTek Dimensity CX C10 Max as an integrated AI PC platform with CPU, GPU, NPU, memory and camera blocks.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.mediatek.com/zh-tw/press-room/mediatek-dimensity-cx-c10-max-offers-flagship-performance-to-a-new-era-of-ai-first-laptops",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/mediatek-dimensity-cx-c10-max-googlebook-ai-pc.svg"
+    }
+  }
+}

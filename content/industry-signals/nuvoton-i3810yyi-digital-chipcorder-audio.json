@@ -1,0 +1,101 @@
+{
+  "eventId": "EVT-2026-0045",
+  "slug": "nuvoton-i3810yyi-digital-chipcorder-audio",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-09-28",
+    "findings": [
+      "Nuvoton's September 22, 2026 official release and current product page confirm the I3810YYI Digital ChipCorder, its 3-channel playback architecture, up to 48 kHz sample rates, 2 Gbit external SPI flash addressing and integrated Class-D output ratings.",
+      "The 3 W at 5 V into 4 ohms and 1.7 W at 5 V into 8 ohms figures are manufacturer specifications and are not presented as independent acoustic or efficiency benchmarks.",
+      "Nuvoton now publishes a dedicated NT-I3810 evaluation-board page, so the current design-in ecosystem is more mature than the source-sheet row implied; this does not establish IC mass-production volume or general stock availability.",
+      "The reviewed first-party pages do not disclose I3810YYI IC pricing, MOQ, lead time, regional inventory or production volume. Those commercial details remain unresolved.",
+      "Earlier Nuvoton product-selection material already listed I3810YYI, so the September event is treated as a formal product launch and commercialization signal rather than proof that the technology first appeared on that date.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics and do not reuse Nuvoton press photography."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-22",
+  "publishedAt": "2026-09-28",
+  "modifiedAt": "2026-09-28",
+  "supplier": "Nuvoton Technology",
+  "category": "Audio IC · Smart Home · Consumer Electronics",
+  "title": "Nuvoton I3810YYI Packs Voice Playback and a 3 W Speaker Driver Into One IC",
+  "seoTitle": "Nuvoton I3810YYI Integrates Voice Playback and 3 W Audio",
+  "socialTitle": "Nuvoton I3810YYI Shrinks the Voice-Prompt Audio Chain",
+  "seoDescription": "Nuvoton's I3810YYI combines multi-channel voice playback, external SPI flash and a 3 W Class-D driver, with IC supply terms still undisclosed.",
+  "dek": "Nuvoton's I3810YYI is aimed at the unglamorous but important audio path inside smart appliances, alarms and connected devices: stored prompts, simple mixing and direct speaker drive without a separate audio processor and power amp.",
+  "summary": "Nuvoton formally launched the I3810YYI Digital ChipCorder on September 22, 2026. The playback-focused IC combines digital audio decompression, external-flash management, three independently controlled playback channels and a filter-free Class-D speaker driver. Nuvoton specifies up to 3 W into 4 ohms or 1.7 W into 8 ohms from a 5 V speaker supply, sample rates up to 48 kHz, and a 28-bit address space supporting external SPI NOR flash up to 2 Gbit. The company also publishes an NT-I3810 evaluation board for the device. Those resources make the part relevant for design-in work, but the reviewed first-party material still does not state IC mass-production volume, regional stock, pricing, MOQ or lead time.",
+  "keyFacts": [
+    "Three-channel playback and mixing with external SPI flash",
+    "Integrated Class-D output specified up to 3 W at 5 V into 4 ohms",
+    "Dedicated NT-I3810 evaluation board is documented by Nuvoton"
+  ],
+  "whyItMatters": [
+    "Many Edge AI and smart-home products still need deterministic local prompts, alerts and status audio even when their main AI workload runs elsewhere. A dedicated playback IC can keep those functions independent of the application processor and network connection.",
+    "Combining decompression, memory control, mixing and speaker drive can remove a separate playback controller or external power amplifier in some designs, reducing board area and integration work. The actual BOM benefit depends on the speaker, power rail, EMC and thermal requirements of the target device.",
+    "The part is not an AI accelerator. Its relevance to Physical AI comes from subsystem simplification around human-machine feedback, where robots, appliances and safety devices need reliable offline audio without consuming host-processor resources."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "Nuvoton's September launch puts the I3810YYI into a formal product announcement with a live product page and a documented evaluation platform. The device supports external SPI-flash playback, direct I²S audio input and MCU streaming over SPI, with three playback channels that can be mixed while using different sample rates.",
+        "At the output stage, Nuvoton specifies a filter-free Class-D amplifier capable of 3 W at 5 V into 4 ohms and 1.7 W at 5 V into 8 ohms. Those are electrical output specifications from the vendor, not independent measurements of loudness, efficiency or thermal performance in an enclosure."
+      ]
+    },
+    {
+      "heading": "Why it matters to Edge AI and Physical AI design",
+      "paragraphs": [
+        "AI-enabled devices often have two very different audio needs: high-bandwidth capture for speech or perception, and simple, deterministic playback for prompts and alerts. I3810YYI addresses the second path. By offloading stored-message playback and speaker drive, a product team can reserve the host MCU or application processor for sensing, inference and control.",
+        "The 2 Gbit external-flash address space also lets designers scale prompt libraries without embedding large audio assets in the host processor's local storage. That is useful for multilingual appliances, security devices, service robots and HMI products, although flash selection, update strategy and content-management tooling still need to be engineered at the system level."
+      ]
+    },
+    {
+      "heading": "Commercial implications and design-in questions",
+      "paragraphs": [
+        "Nuvoton's NT-I3810 evaluation-board page confirms a dedicated board and links the device into its development-tool ecosystem. That is stronger design-in evidence than a press release alone. It still should not be confused with proof of broad IC inventory or high-volume production.",
+        "The official sources reviewed for this report do not publish I3810YYI IC price, MOQ, lead time, regional stock or production volume. Teams evaluating the part should also confirm thermal behavior at the 3 W operating point, EMC performance of the filter-free output, supported external NOR devices, programming flow and whether Nuvoton has a reference strategy for field-updating audio content."
+      ]
+    }
+  ],
+  "flypigTake": "This is a subsystem story, not an AI-chip story. As products add more intelligence, the surrounding functions become a larger part of the integration burden. A small playback IC that owns prompts, mixing, flash access and speaker drive can make the host architecture cleaner. The next question is commercial rather than technical: how easy is the I3810YYI to source in production quantities, and what tooling exists for managing audio assets through a product's lifecycle?",
+  "productStatus": "Nuvoton formally announced I3810YYI on September 22, 2026 and maintains both a product page and an NT-I3810 evaluation-board page. The reviewed first-party sources do not state the IC's mass-production volume, regional inventory, unit pricing, MOQ or lead time. Evaluation-board documentation therefore supports design-in readiness but should not be read as proof of broad IC availability.",
+  "openQuestions": [
+    "What are the current IC sampling and mass-production status, regional stock position, MOQ, lead time and production pricing?",
+    "What thermal and efficiency limits apply when driving 4 ohm speakers near the specified 3 W output in compact enclosures?",
+    "Which external SPI NOR families are validated, and what programming or field-update workflow does Nuvoton recommend for large multilingual audio libraries?",
+    "What EMC filtering, layout and speaker-protection guidance applies to the filter-free Class-D output in consumer and industrial designs?"
+  ],
+  "canadaRelevance": "For North American smart-home, appliance, robotics and safety-device teams, I3810YYI is relevant as a way to isolate reliable offline prompts and alerts from the main compute stack. The documented evaluation board lowers prototyping friction, but procurement teams still need first-party confirmation of IC supply terms before treating it as a production-ready sourcing decision.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "nuvoton-nau83g60yg-kcs-smart-amplifier",
+    "nuvoton-nau85l42yg-quad-audio-adc",
+    "nuvoton-m3351-5v-cortex-m33-robotics-control"
+  ],
+  "relatedTechnologies": ["Digital Audio Playback", "Class-D Amplifier", "Smart Home", "Human-Machine Interface", "SPI NOR Flash"],
+  "corrections": [],
+  "sourceName": "Nuvoton official product launch",
+  "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000636/",
+  "sourceProductUrl": "https://www.nuvoton.com/products/smart-home-audio/isd-chipcorder/digital-chipcorder-series/i3810yyi/index.html",
+  "additionalSources": [
+    {"name": "Nuvoton I3810YYI product page", "url": "https://www.nuvoton.com/products/smart-home-audio/isd-chipcorder/digital-chipcorder-series/i3810yyi/index.html"},
+    {"name": "Nuvoton NT-I3810 evaluation board page", "url": "https://www.nuvoton.com/board/nt-i3810/"}
+  ],
+  "sourceNote": "FlyPig AI independently reviewed Nuvoton's September 22, 2026 launch release, the current I3810YYI product page and the NT-I3810 evaluation-board page. Electrical output and capacity figures are treated as manufacturer specifications. The article does not infer IC production volume, stock, pricing, MOQ or lead time from the existence of a product page or evaluation board.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/nuvoton-i3810yyi-digital-chipcorder-audio.png",
+    "socialSrc": "/images/signals/og/nuvoton-i3810yyi-digital-chipcorder-audio.png",
+    "alt": "FlyPig AI infographic showing the Nuvoton I3810YYI audio playback path from external SPI flash through three-channel mixing to a Class-D speaker output.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000636/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/nuvoton-i3810yyi-digital-chipcorder-audio.svg"
+    }
+  }
+}
