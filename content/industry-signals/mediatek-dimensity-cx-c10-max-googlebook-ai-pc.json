@@ -27,9 +27,9 @@
   "dek": "MediaTek has put a concrete flagship part number behind its new PC silicon strategy. The C10 Max combines an Arm all-big-core CPU, integrated graphics, a 55 TOPS NPU and laptop-oriented I/O, but the first commercial Googlebook using it has not yet been identified.",
   "summary": "MediaTek formally introduced Dimensity CX C10 Max as the first flagship SoC in its new Dimensity Compute Experiences family. Official specifications list a TSMC 3 nm process, an eight-core Arm CPU built from Cortex-X925, Cortex-X4 and Cortex-A720 cores, an 11-core Immortalis-G925 GPU, and an NPU 890 rated by MediaTek at up to 55 dense TOPS. The platform also supports LPDDR5X up to 9600 Mbps, UFS 4.0 storage and a 32 MP Imagiq 1090 ISP. MediaTek says the chip is intended for an upcoming premium ultra-portable Googlebook, but neither MediaTek nor Google's reviewed launch material names the C10 Max device, OEM or retail date. The signal is therefore a platform-entry event, not evidence that C10 Max systems are already on shelves.",
   "keyFacts": [
-    "First flagship SoC in MediaTek's Dimensity CX PC family",
+    "MediaTek's first Dimensity CX flagship",
     "NPU 890 rated by MediaTek at up to 55 dense TOPS",
-    "Targeted at a future premium ultra-portable Googlebook"
+    "Future premium ultra-portable Googlebook"
   ],
   "whyItMatters": [
     "MediaTek is extending the integration model it has used in mobile devices into premium personal computing, where CPU, GPU, NPU, ISP, memory, storage and connectivity choices are tightly coupled at the platform level.",

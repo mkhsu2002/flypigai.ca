@@ -27,9 +27,9 @@
   "dek": "Nuvoton's I3810YYI is aimed at the unglamorous but important audio path inside smart appliances, alarms and connected devices: stored prompts, simple mixing and direct speaker drive without a separate audio processor and power amp.",
   "summary": "Nuvoton formally launched the I3810YYI Digital ChipCorder on September 22, 2026. The playback-focused IC combines digital audio decompression, external-flash management, three independently controlled playback channels and a filter-free Class-D speaker driver. Nuvoton specifies up to 3 W into 4 ohms or 1.7 W into 8 ohms from a 5 V speaker supply, sample rates up to 48 kHz, and a 28-bit address space supporting external SPI NOR flash up to 2 Gbit. The company also publishes an NT-I3810 evaluation board for the device. Those resources make the part relevant for design-in work, but the reviewed first-party material still does not state IC mass-production volume, regional stock, pricing, MOQ or lead time.",
   "keyFacts": [
-    "Three-channel playback and mixing with external SPI flash",
-    "Integrated Class-D output specified up to 3 W at 5 V into 4 ohms",
-    "Dedicated NT-I3810 evaluation board is documented by Nuvoton"
+    "Three-channel playback, mixing and SPI flash",
+    "Class-D output: 3 W at 5 V into 4 ohms",
+    "Nuvoton documents an NT-I3810 evaluation board"
   ],
   "whyItMatters": [
     "Many Edge AI and smart-home products still need deterministic local prompts, alerts and status audio even when their main AI workload runs elsewhere. A dedicated playback IC can keep those functions independent of the application processor and network connection.",

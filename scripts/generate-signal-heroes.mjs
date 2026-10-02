@@ -95,7 +95,7 @@ function svgFor(signal, width, height, social = false) {
   const palette = ["#0f766e", "#2563eb", "#7c3aed", "#b45309", "#be123c"];
   const accent = palette[signals.findIndex((candidate) => candidate.slug === signal.slug) % palette.length];
   const titleSize = social ? 48 : 64;
-  const titleStart = social ? 206 : 292;
+  const titleStart = social ? 230 : 292;
   const titleStep = social ? 62 : 82;
   const factsTop = social ? 438 : 690;
   const factWidth = social ? 330 : 438;
