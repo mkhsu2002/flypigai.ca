@@ -8,6 +8,11 @@ import { technologyOwnerTopics } from "./technologies/topics";
 
 const baseUrl = "https://flypigai.ca";
 const currentEditorialRevision = new Date("2026-08-29");
+const recentPageRevisions = new Map([
+  ["/", new Date("2026-10-01")],
+  ["/zh", new Date("2026-10-01")],
+  ["/signals", new Date("2026-09-28")],
+]);
 const revisedCorePaths = new Set([
   "/", "/zh", "/Solutions", "/technologies", "/signals", "/services", "/zh/services",
   "/about", "/zh/about", "/physical-ai", "/contact", "/zh/contact", "/privacy",
@@ -42,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const coreRoutes: MetadataRoute.Sitemap = corePaths.map(([routePath, priority, changeFrequency]) => ({
     url: `${baseUrl}${routePath}`,
-    ...(routePath === seriesPath ? { lastModified: new Date(seriesUpdatedDate) } : revisedCorePaths.has(routePath) ? { lastModified: currentEditorialRevision } : {}),
+    ...(routePath === seriesPath ? { lastModified: new Date(seriesUpdatedDate) } : recentPageRevisions.has(routePath) ? { lastModified: recentPageRevisions.get(routePath) } : revisedCorePaths.has(routePath) ? { lastModified: currentEditorialRevision } : {}),
     changeFrequency,
     priority,
   }));

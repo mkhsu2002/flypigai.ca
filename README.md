@@ -266,7 +266,7 @@ Important tab:
 
 Current known event IDs ran from `EVT-2026-0001` through at least `EVT-2026-0035` as of a 2026-09-12 readback of `新品事件庫`.
 
-Repository publication inventory as checked on 2026-09-25: 65 Industry Signal records. The latest site publication date in those records is 2026-09-23 for `CA-2026-0016`, `/signals/canada-minerva-arctic-uncrewed-air-system`. This repository count does not imply a fresh readback of the Google Sheet above. The 2026-09-18–24 additions and production checks are recorded in `docs/operations/2026-09-25-weekly-content-governance.md`.
+Repository publication inventory as checked on 2026-10-02: 67 Industry Signal records. The latest site publication date in those records is 2026-09-28 for `EVT-2026-0044` and `EVT-2026-0045`. This repository count does not imply a fresh readback of the Google Sheet above. The 2026-09-25–10-01 additions and production checks are recorded in `docs/operations/2026-10-02-weekly-content-governance.md`; the prior week is recorded in `docs/operations/2026-09-25-weekly-content-governance.md`.
 
 The first prototype article is based on:
 
