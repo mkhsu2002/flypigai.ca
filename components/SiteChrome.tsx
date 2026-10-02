@@ -26,7 +26,7 @@ export function SiteHeader({ locale = "en", languageHref }: HeaderProps) {
   ];
 
   return <header className="shell nav">
-    <a className="brand" href={home}><span className="brand-mark" aria-hidden="true"><img src="/images/brand/flypig-header-mark.png" alt="" width="160" height="118" /></span><span className="brand-name">FlyPig AI</span></a>
+    <a className="brand" href={home}><img src="/images/brand/flypig-lockup.png" alt="FlyPig AI" width="1257" height="382" /></a>
     <nav className="navlinks" aria-label={zh ? "主要導覽" : "Primary navigation"}>
       {navigation.map((item) => <a href={item.href} lang={item.englishOnly ? "en" : undefined} key={item.href}>{item.label}</a>)}
       <a href={switchHref} className="lang-link" lang={zh ? "en" : "zh-Hant"}>{zh ? "EN" : "繁中"}</a>
@@ -50,7 +50,7 @@ export function SiteFooter({ locale = "en" }: { locale?: Locale }) {
   const outreach = `https://outreach-engine.flypigai.ca/${zh ? "zh" : ""}`;
 
   return <footer className="shell footer site-footer">
-    <div><strong>FlyPig AI</strong><span>{zh ? "加拿大與台灣之間的 Edge AI 與 Physical AI 獨立技術情報" : "Independent Canada-Taiwan Edge AI and Physical AI intelligence"}</span></div>
+    <div><a className="footer-brand" href={zh ? "/zh" : "/"}><img src="/images/brand/flypig-lockup.png" alt="FlyPig AI" width="1257" height="382" /></a><span>{zh ? "加拿大與台灣之間的 Edge AI 與 Physical AI 獨立技術情報" : "Independent Canada-Taiwan Edge AI and Physical AI intelligence"}</span></div>
     <div><strong>{zh ? `營運主體：${siteIdentity.legalName}` : `Operated by: ${siteIdentity.legalName}`}</strong><span>{formattedAddress()}</span><a href={`mailto:${siteIdentity.email}`}>{siteIdentity.email}</a></div>
     <div className="footer-links"><a href="/atlas">{zh ? "加拿大 Atlas" : "Canada Atlas"}</a><a href="/Solutions">{zh ? "台灣 Solutions" : "Taiwan Solutions"}</a><a href="/technologies">{zh ? "技術" : "Technologies"}</a><a href="/signals">{zh ? "訊號" : "Signals"}</a><a href="/insights">{zh ? "分析" : "Insights"}</a><a href={services}>{zh ? "合作方式" : "How We Help"}</a><a href={outreach}>{zh ? "潛在客戶研究" : "Outreach Engine"}</a><a href="/editorial-policy">{zh ? "編輯政策" : "Editorial policy"}</a><a href={privacy}>{zh ? "隱私" : "Privacy"}</a></div>
     <div className="footer-legal"><span>© 2026 FlyPig AI · Delta, British Columbia</span><span>{zh ? "公開研究不代表供應商授權、背書或正式合作關係。" : "Public research does not imply supplier authorization, endorsement or an official relationship."}</span></div>

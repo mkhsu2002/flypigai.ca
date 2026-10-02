@@ -20,10 +20,10 @@ const contentDirectory = path.join(root, "content", "industry-signals");
 const sourceDirectory = path.join(root, "public", "images", "signals", "source");
 const imageDirectory = path.join(root, "public", "images", "signals");
 const socialDirectory = path.join(imageDirectory, "og");
-const officialLogoPath = path.join(root, "public", "images", "brand", "flypig-logo.png");
+const officialLogoPath = path.join(root, "public", "images", "brand", "flypig-lockup.png");
 const sheetDirectory = path.join(root, "artifacts", "signal-review-sheets");
 for (const directory of [sourceDirectory, imageDirectory, socialDirectory, sheetDirectory]) fs.mkdirSync(directory, { recursive: true });
-if (!fs.existsSync(officialLogoPath)) throw new Error("Missing official FlyPig logo at public/images/brand/flypig-logo.png");
+if (!fs.existsSync(officialLogoPath)) throw new Error("Missing FlyPig lockup at public/images/brand/flypig-lockup.png");
 
 const signals = fs.readdirSync(contentDirectory)
   .filter((fileName) => fileName.endsWith(".json"))
@@ -79,7 +79,7 @@ function fittedLines(value, maxCharacters, maxLines, label) {
 }
 
 function officialLogoImage(x, y, width, height) {
-  return `<image href="/images/brand/flypig-logo.png" x="${x}" y="${y}" width="${width}" height="${height}" preserveAspectRatio="xMidYMid meet"/>`;
+  return `<image href="/images/brand/flypig-lockup.png" x="${x}" y="${y}" width="${width}" height="${height}" preserveAspectRatio="xMidYMid meet"/>`;
 }
 
 const logoBuffers = new Map();
@@ -92,6 +92,8 @@ async function officialLogoBuffer(width) {
 
 function svgFor(signal, width, height, social = false) {
   const titleLines = fittedLines(signal.socialTitle || signal.title, social ? 28 : 34, social ? 3 : 3, `${signal.slug} title`);
+  const categoryLines = wrapText(`${signal.supplier.toUpperCase()} · ${signal.category.toUpperCase()}`, social ? 60 : 86, 2);
+  const categoryStart = categoryLines.length > 1 ? (social ? 149 : 198) : (social ? 167 : 222);
   const palette = ["#0f766e", "#2563eb", "#7c3aed", "#b45309", "#be123c"];
   const accent = palette[signals.findIndex((candidate) => candidate.slug === signal.slug) % palette.length];
   const titleSize = social ? 48 : 64;
@@ -106,7 +108,7 @@ function svgFor(signal, width, height, social = false) {
   const factLabel = social ? 15 : 18;
   const logoWidth = social ? 320 : 430;
   const logoLeft = width - side - logoWidth;
-  const logoTop = social ? 166 : 260;
+  const logoTop = social ? 316 : 530;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
   <defs>
@@ -118,7 +120,7 @@ function svgFor(signal, width, height, social = false) {
   <rect x="0" y="0" width="18" height="${height}" fill="${accent}"/>
   <text x="${side}" y="${social ? 79 : 105}" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
   <text x="${side}" y="${social ? 105 : 132}" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
-  <text x="${side}" y="${social ? 167 : 222}" fill="${accent}" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">${escapeXml(signal.supplier.toUpperCase())} · ${escapeXml(signal.category.toUpperCase())}</text>
+  ${categoryLines.map((line, index) => `<text x="${side}" y="${categoryStart + index * 24}" fill="${accent}" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">${escapeXml(line)}</text>`).join("\n  ")}
   ${titleLines.map((line, index) => `<text x="${side}" y="${titleStart + index * titleStep}" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="${titleSize}" font-weight="500">${escapeXml(line)}</text>`).join("\n  ")}
   ${social ? signal.keyFacts.map((fact, index) => {
     const factLines = fittedLines(fact, 54, 1, `${signal.slug} key fact ${index + 1}`);
@@ -128,7 +130,7 @@ function svgFor(signal, width, height, social = false) {
     const factLines = fittedLines(fact, social ? 24 : 27, 2, `${signal.slug} key fact ${index + 1}`);
     return `<g><rect x="${x}" y="${factsTop}" width="${factWidth}" height="${factHeight}" rx="12" fill="#fff" stroke="#1f2933" stroke-opacity=".13"/><text x="${x + 24}" y="${factsTop + (social ? 32 : 42)}" fill="${accent}" font-family="Arial, Helvetica, sans-serif" font-size="${factLabel}" font-weight="700">0${index + 1}</text>${factLines.map((line, lineIndex) => `<text x="${x + 24}" y="${factsTop + (social ? 68 : 92) + lineIndex * (social ? 27 : 36)}" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="${factFont}" font-weight="650">${escapeXml(line)}</text>`).join("")}</g>`;
   }).join("\n  ")}
-  ${officialLogoImage(logoLeft, logoTop, logoWidth, Math.round(logoWidth * 550 / 650))}
+  ${officialLogoImage(logoLeft, logoTop, logoWidth, Math.round(logoWidth * 382 / 1257))}
   <text x="${side}" y="${height - (social ? 26 : 52)}" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="${social ? 14 : 17}">Independent editorial infographic · Source linked in article · flypigai.ca</text>
   </svg>`;
 }
@@ -138,7 +140,7 @@ async function renderWithOfficialLogo(svg, outputPath, social) {
   const side = social ? 72 : 96;
   const logoWidth = social ? 320 : 430;
   const logoLeft = width - side - logoWidth;
-  const logoTop = social ? 166 : 260;
+  const logoTop = social ? 316 : 530;
   await sharp(Buffer.from(svg))
     .composite([{ input: await officialLogoBuffer(logoWidth), left: logoLeft, top: logoTop }])
     .png()

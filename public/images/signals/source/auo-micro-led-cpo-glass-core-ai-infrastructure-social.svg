@@ -5,15 +5,15 @@
   </defs>
   <rect width="1200" height="630" fill="url(#background)"/>
   <rect width="1200" height="630" fill="url(#grid)"/>
-  <rect x="0" y="0" width="18" height="630" fill="#be123c"/>
+  <rect x="0" y="0" width="18" height="630" fill="#2563eb"/>
   <text x="72" y="79" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
   <text x="72" y="105" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
-  <text x="72" y="167" fill="#be123c" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">AUO · OPTICAL INTERCONNECT · ADVANCED PACKAGING</text>
-  <text x="72" y="206" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">AUO Pushes Micro LED Into AI</text>
-  <text x="72" y="268" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Interconnects</text>
-  <text x="72" y="438" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#be123c">01</tspan> Micro LED CPO · targets up to 10 m</text>
-  <text x="72" y="472" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#be123c">02</tspan> Ennostar · Tyntek · Daxin · Corning</text>
-  <text x="72" y="506" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#be123c">03</tspan> Glass core substrate · AUO RDL</text>
-  <image href="/images/brand/flypig-logo.png" x="808" y="166" width="320" height="271" preserveAspectRatio="xMidYMid meet"/>
+  <text x="72" y="167" fill="#2563eb" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">AUO · OPTICAL INTERCONNECT · ADVANCED PACKAGING</text>
+  <text x="72" y="230" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">AUO Pushes Micro LED Into AI</text>
+  <text x="72" y="292" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Interconnects</text>
+  <text x="72" y="438" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#2563eb">01</tspan> Micro LED CPO · targets up to 10 m</text>
+  <text x="72" y="472" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#2563eb">02</tspan> Ennostar · Tyntek · Daxin · Corning</text>
+  <text x="72" y="506" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#2563eb">03</tspan> Glass core substrate · AUO RDL</text>
+  <image href="/images/brand/flypig-lockup.png" x="808" y="316" width="320" height="97" preserveAspectRatio="xMidYMid meet"/>
   <text x="72" y="604" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="14">Independent editorial infographic · Source linked in article · flypigai.ca</text>
   </svg>

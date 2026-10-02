@@ -220,11 +220,13 @@ Articles should be published directly to the live site once written. The user pr
 
 ### Homepage visual (2026-10-01)
 
-The English and Traditional Chinese home heroes use the user-supplied Vancouver waterfront image at `public/images/home/vancouver-waterfront.webp`, with a light overlay that keeps foreground text readable. The shared navigation uses a compact vertical lockup made from the existing FlyPig mark (`public/images/brand/flypig-header-mark.png`) and text. This changes the visible homepage and header only; the official brand and Open Graph logo asset below remain the source of truth for social artwork.
+The English and Traditional Chinese home heroes use the user-supplied Vancouver waterfront image at `public/images/home/vancouver-waterfront.webp`, with a light overlay that keeps foreground text readable. The shared navigation displays the supplied full FlyPig AI logo as one image.
 
-The official FlyPig logo asset is:
+The user-supplied official FlyPig AI logo source is:
 
 - `/public/images/brand/flypig-logo.png`
+
+`npm run generate:brand` derives a transparent-margin-trimmed horizontal lockup (`flypig-lockup.png`) and a symbol cropped from that same artwork (`flypig-symbol.png`). The shared header, footer, and Organization schema use the lockup. Browser icons use the symbol. Page and Signal social graphics use the same lockup, and their URLs are versioned through `lib/socialImages.ts`. Regenerate social graphics in batches of no more than six and inspect each batch before proceeding.
 
 Open Graph artwork may vary by page title, copy and accent color, but the FlyPig brand mark must be composed from this checked-in logo asset only. Do not redraw, reinterpret, decorate or overlay anything on the logo in generated social images.
 

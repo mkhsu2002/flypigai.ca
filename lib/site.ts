@@ -26,7 +26,7 @@ export const siteIdentity = {
     editorialPolicy: "/editorial-policy",
   },
   images: {
-    logo: "/images/brand/flypig-ai-mark-512.png",
+    logo: "/images/brand/flypig-lockup.png",
     defaultSocial: "/images/og/flypig-ai-default.png",
   },
 } as const;

@@ -2,7 +2,7 @@
 
 **Date:** 2026-08-25
 
-**Status:** Approved in conversation
+**Status:** Historical approved design. The 2026-08-25 starting-point observations and FP-mark direction below are archived; the current official logo source was replaced by the user-supplied full lockup on 2026-10-01. See `README.md` for the current brand asset workflow.
 
 **Scope:** P0 production stabilization, P1 visual/content QA, and the minimum P2 backend work required to make contact and newsletter interactions production-safe.
 

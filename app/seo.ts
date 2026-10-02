@@ -144,8 +144,8 @@ export const organizationJsonLd = {
   logo: {
     "@type": "ImageObject",
     url: absoluteUrl(siteIdentity.images.logo),
-    width: 512,
-    height: 512,
+    width: 1257,
+    height: 382,
   },
   address: {
     "@type": "PostalAddress",

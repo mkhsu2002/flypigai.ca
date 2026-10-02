@@ -9,11 +9,11 @@
   <text x="72" y="79" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700">FlyPig AI</text>
   <text x="72" y="105" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="2">INDUSTRY SIGNAL</text>
   <text x="72" y="167" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">AAEON · MULTI-CAMERA EDGE AI</text>
-  <text x="72" y="206" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">AAEON BOXER-8653AI-PLUS</text>
-  <text x="72" y="268" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Multi-Camera Edge AI System</text>
+  <text x="72" y="230" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">AAEON BOXER-8653AI-PLUS</text>
+  <text x="72" y="292" fill="#1f2933" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="500">Multi-Camera Edge AI System</text>
   <text x="72" y="438" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#0f766e">01</tspan> NVIDIA Jetson Orin NX</text>
   <text x="72" y="472" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#0f766e">02</tspan> 4 independent PoE LAN links</text>
   <text x="72" y="506" fill="#1f2933" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700"><tspan fill="#0f766e">03</tspan> Multi-camera edge AI</text>
-  <image href="/images/brand/flypig-logo.png" x="808" y="166" width="320" height="271" preserveAspectRatio="xMidYMid meet"/>
+  <image href="/images/brand/flypig-lockup.png" x="808" y="316" width="320" height="97" preserveAspectRatio="xMidYMid meet"/>
   <text x="72" y="604" fill="#667085" font-family="Arial, Helvetica, sans-serif" font-size="14">Independent editorial infographic · Source linked in article · flypigai.ca</text>
   </svg>

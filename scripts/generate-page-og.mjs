@@ -20,9 +20,9 @@ const ogDirectory = path.join(root, "public", "images", "og");
 const pagesDirectory = path.join(ogDirectory, "pages");
 const sourceDirectory = path.join(ogDirectory, "source", "pages");
 const sheetDirectory = path.join(root, "artifacts", "og-review-sheets");
-const officialLogoPath = path.join(root, "public", "images", "brand", "flypig-logo.png");
+const officialLogoPath = path.join(root, "public", "images", "brand", "flypig-lockup.png");
 for (const directory of [ogDirectory, pagesDirectory, sourceDirectory, sheetDirectory]) fs.mkdirSync(directory, { recursive: true });
-if (!fs.existsSync(officialLogoPath)) throw new Error("Missing official FlyPig logo at public/images/brand/flypig-logo.png");
+if (!fs.existsSync(officialLogoPath)) throw new Error("Missing FlyPig lockup at public/images/brand/flypig-lockup.png");
 
 const palette = {
   home: { accent: "#0f766e", second: "#2563eb", pale: "#e7f4f1" },
@@ -118,7 +118,7 @@ function textLines(value, x, y, options = {}) {
 }
 
 function officialLogoImage(x, y, width, height) {
-  return `<image href="/images/brand/flypig-logo.png" x="${x}" y="${y}" width="${width}" height="${height}" preserveAspectRatio="xMidYMid meet"/>`;
+  return `<image href="/images/brand/flypig-lockup.png" x="${x}" y="${y}" width="${width}" height="${height}" preserveAspectRatio="xMidYMid meet"/>`;
 }
 
 const logoBuffers = new Map();
@@ -131,7 +131,7 @@ async function officialLogoBuffer(width) {
 
 function brandLogoPanel() {
   return `<g>
-    ${officialLogoImage(782, 166, 360, 305)}
+    ${officialLogoImage(760, 372, 390, 119)}
   </g>`;
 }
 
@@ -173,7 +173,7 @@ for (const page of batch) {
   if (page.slug === "home") fs.writeFileSync(path.join(ogDirectory, "source", "flypig-ai-default.svg"), svg);
   await sharp(Buffer.from(svg))
     .composite([
-      { input: await officialLogoBuffer(360), left: 782, top: 166 },
+      { input: await officialLogoBuffer(390), left: 760, top: 372 },
     ])
     .png({ compressionLevel: 9 })
     .toFile(temporaryPath);

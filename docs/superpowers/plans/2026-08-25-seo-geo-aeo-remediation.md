@@ -1,5 +1,7 @@
 # FlyPig AI SEO, GEO, AEO Remediation Implementation Plan
 
+**Status (2026-10-01):** Historical plan. Its original logo-generation steps are superseded by the user-supplied full logo and current asset workflow in `README.md`.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Complete every approved P0 and P1 SEO, GEO, AEO, social-image, content-architecture, and editorial-template remediation for `flypigai.ca`.

@@ -5,7 +5,7 @@ export const socialImageSize = {
   height: 630,
 } as const;
 
-export const socialImageVersion = "20260912-official-flypig-logo";
+export const socialImageVersion = "20261001-supplied-flypig-lockup";
 
 export function versionSocialImagePath(path: string) {
   if (!path.includes("/images/og/") && !path.includes("/images/signals/og/")) return path;
