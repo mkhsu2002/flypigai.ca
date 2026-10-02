@@ -218,6 +218,10 @@ Articles should be published directly to the live site once written. The user pr
 
 ## Open Graph image system
 
+### Homepage visual (2026-10-01)
+
+The English and Traditional Chinese home heroes use the user-supplied Vancouver waterfront image at `public/images/home/vancouver-waterfront.webp`, with a light overlay that keeps foreground text readable. The shared navigation uses a compact vertical lockup made from the existing FlyPig mark (`public/images/brand/flypig-header-mark.png`) and text. This changes the visible homepage and header only; the official brand and Open Graph logo asset below remain the source of truth for social artwork.
+
 The official FlyPig logo asset is:
 
 - `/public/images/brand/flypig-logo.png`
