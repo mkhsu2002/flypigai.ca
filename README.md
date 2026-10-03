@@ -2,6 +2,10 @@
 
 This repository is the official website and product surface for FlyPig AI Canada.
 
+### Taiwan Solutions research inventory (2026-10-02)
+
+`/Solutions` now links to the first company-specific solution analysis, `/Solutions/meta-rosetta-metalens`. It assesses MetaRosetta's public visible-light, near-infrared and long-wave infrared metasurface routes for Canadian product teams. This is independent research; it does not establish supplier authorization, product availability or a commercial relationship. The article uses a FlyPig AI-owned concept illustration at `public/images/solutions/meta-rosetta-metalens-codex-cover.webp`, cites company primary pages and a technical review, and is included in the sitemap. Research scope and follow-up editorial candidates are recorded in `docs/editorial/2026-10-02-meta-rosetta-solution-research.md`.
+
 ### Outreach Engine subsite integration (2026-09-19)
 
 The shared footer and `public/llms.txt` link to `https://outreach-engine.flypigai.ca/` and its Traditional Chinese `/zh` entry. That separately deployed repository owns prospect research, qualification, public validation experiments and managed prospect research. Both sites use the organization identity `https://flypigai.ca/#organization`; the subsite has its own sitemap and is not a language alternate of this website. This change does not alter either site's contact API or backend contract. The detailed audit and deployment readback live in the Outreach Engine repository's `SEO_AUDIT.md` and `SITE_OPERATIONS.md`.

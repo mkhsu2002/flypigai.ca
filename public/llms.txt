@@ -18,6 +18,7 @@ Public coverage does not imply that FlyPig AI is an authorized distributor, supp
 - Homepage: https://flypigai.ca/
 - Canada Atlas — Canadian companies, operators, industries and ecosystem context: https://flypigai.ca/atlas
 - Taiwan Solutions — Taiwan technology and supply-side solution intelligence: https://flypigai.ca/Solutions
+- MetaRosetta metalens solution analysis — independent vision and sensing research: https://flypigai.ca/Solutions/meta-rosetta-metalens
 - Technology Intelligence — stable technology taxonomy and design considerations: https://flypigai.ca/technologies
 - Industry Signals — current Taiwan product and ecosystem developments: https://flypigai.ca/signals
 - Insights — evergreen market and deployment analysis: https://flypigai.ca/insights

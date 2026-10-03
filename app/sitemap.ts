@@ -12,6 +12,7 @@ const recentPageRevisions = new Map([
   ["/", new Date("2026-10-01")],
   ["/zh", new Date("2026-10-01")],
   ["/signals", new Date("2026-09-28")],
+  ["/Solutions", new Date("2026-10-02")],
 ]);
 const revisedCorePaths = new Set([
   "/", "/zh", "/Solutions", "/technologies", "/signals", "/services", "/zh/services",
@@ -67,6 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const technologyRoutes: MetadataRoute.Sitemap = technologyOwnerTopics.map((topic) => ({ url: `${baseUrl}/technologies/${topic.slug}`, lastModified: currentEditorialRevision, changeFrequency: "monthly" as const, priority: 0.8 }));
   const signalRoutes: MetadataRoute.Sitemap = getIndustrySignals().map((signal) => ({ url: `${baseUrl}/signals/${signal.slug}`, lastModified: new Date(signal.modifiedAt), changeFrequency: "monthly" as const, priority: 0.8 }));
+  const solutionRoutes: MetadataRoute.Sitemap = [{ url: `${baseUrl}/Solutions/meta-rosetta-metalens`, lastModified: new Date("2026-10-02"), changeFrequency: "monthly", priority: 0.75 }];
 
-  return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...seriesRoutes, ...signalRoutes];
+  return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...seriesRoutes, ...signalRoutes, ...solutionRoutes];
 }
