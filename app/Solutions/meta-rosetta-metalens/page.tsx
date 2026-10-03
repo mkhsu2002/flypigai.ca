@@ -70,7 +70,7 @@ export default function MetaRosettaMetalensPage() {
 
       <figure className="article-hero-visual">
         <img src={image} width="1200" height="630" alt="Editorial illustration of light passing through a patterned flat optical surface toward three sensors" />
-        <figcaption>Original editorial illustration generated for FlyPig AI. It is a concept image, not a MetaRosetta product photograph or a measured optical diagram.</figcaption>
+        <figcaption>Original FlyPig AI illustration combining three separate optical routes. It does not depict one lens operating across all three bands, a MetaRosetta product or measured performance.</figcaption>
       </figure>
 
       <div className="article-lead-card"><p className="eyebrow">The short answer</p><p>MetaRosetta presents three different optical paths: a visible-light metasurface colour splitter, near-infrared receiving optics, and long-wave infrared thermal optics. Treat them as separate design questions, because their sensors, materials, performance measures and integration constraints differ.</p></div>

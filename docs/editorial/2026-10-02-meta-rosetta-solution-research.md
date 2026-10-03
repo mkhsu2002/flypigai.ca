@@ -1,7 +1,7 @@
 # MetaRosetta solution research
 
 **Research checked:** 2026-10-02
-**Publication status:** One Solutions article prepared for publication at `/Solutions/meta-rosetta-metalens`. Public deployment requires live readback after the main push.
+**Publication status:** Published at `https://flypigai.ca/Solutions/meta-rosetta-metalens` and linked from `/Solutions`. Initial public readback passed on 2026-10-02 at 22:49 PDT; the final image-caption clarification was then committed in the same release.
 **Relationship:** Independent editorial coverage; no supplier authorization or commercial relationship evidenced.
 
 ## Editorial assessment
@@ -25,6 +25,10 @@ Do not imply that the visible-light colour splitter is a complete camera lens, o
 - [2026 metalens engineering review](https://www.nature.com/articles/s44287-026-00276-9): field-of-view, bandwidth, efficiency, aperture and scaling trade-offs. This contextual research is not a test of MetaRosetta products.
 
 The company pages were checked on 2026-10-02. The generated article illustration is a conceptual FlyPig AI asset, not company imagery or a measured optical diagram. Original generated PNG: `/Users/mkhsu/.codex/generated_images/01a10043-7111-7532-ad4c-c09830e0ea55/exec-1574f352-ccba-4704-910a-007092b07760.png`; the published WebP was derived from it by local resizing.
+
+## Initial public release readback
+
+At 2026-10-02 22:49 PDT, Cloudflare Pages showed a production deployment from `main` commit `186f45d`. The article, `/Solutions` index, cover asset, sitemap entry and Pages domain article all returned HTTP 200. The live article included the official source links and disclosure. A 390 px browser readback found no horizontal overflow or broken images. The final caption clarification above requires a fresh readback after its deployment.
 
 ## Open validation questions
 
