@@ -1,0 +1,92 @@
+{
+  "eventId": "EVT-2026-0049",
+  "slug": "advantech-asr-d501-drone-edge-ai",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-10-05",
+    "findings": [
+      "Advantech's September 29 first-party launch confirms ASR-D501 with Qualcomm QCS6490, up to 12 TOPS, sub-10 W positioning, five MIPI-CSI camera interfaces and a robotics software stack.",
+      "The 12 TOPS and power figures are vendor specifications and are not presented as independent workload benchmarks.",
+      "Advantech's phrase built for production UAV deployment describes product positioning; it is not treated as proof of mass production, shipment volume or customer adoption.",
+      "No reviewed source discloses price, MOQ, lead time, broad inventory or named customer design wins.",
+      "The 2027 CQ8 platform reference is preserved as a roadmap item rather than current availability.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-29",
+  "publishedAt": "2026-10-05",
+  "modifiedAt": "2026-10-05",
+  "supplier": "Advantech",
+  "category": "Drone Edge AI · Qualcomm QCS6490 · Robotics Software",
+  "title": "Advantech ASR-D501 Packages QCS6490 Edge AI for Autonomous Drone Design",
+  "seoTitle": "Advantech ASR-D501 Targets Autonomous Drone Edge AI",
+  "socialTitle": "A Production-Oriented Edge AI Computer for Drones",
+  "seoDescription": "Advantech's ASR-D501 combines QCS6490 compute, multi-camera I/O and robotics software for UAV design, while production supply terms remain undisclosed.",
+  "dek": "Advantech's ASR-D501 is a compact companion and mission computer built around Qualcomm QCS6490, with camera, flight-control and robotics software interfaces aimed at autonomous UAVs. The platform is production-oriented, but current shipment status and commercial terms remain unconfirmed.",
+  "summary": "Advantech launched ASR-D501 on September 29 as an AI companion and mission computer for unmanned aircraft. The platform uses Qualcomm QCS6490, which Advantech specifies at up to 12 TOPS, and is positioned below 10 W. Its hardware exposes five four-lane MIPI-CSI interfaces, 2.5GbE, USB, CAN FD, UART, I2C, GPIO and M.2 expansion. The software stack supports Ubuntu 24.04 LTS, ROS 2, PX4, ArduPilot and common MAVLink tooling, with reference workflows for perception, VIO or SLAM, sensor fusion, object tracking, path planning and flight control. That combination reduces integration work for multi-sensor autonomous systems, but the phrase built for production UAV deployment does not establish current mass production, stock, pricing, MOQ, lead time or a named customer deployment.",
+  "keyFacts": [
+    "ASR-D501 uses Qualcomm QCS6490 with Advantech specifying up to 12 TOPS and sub-10 W operation.",
+    "The platform exposes five four-lane MIPI-CSI interfaces plus flight-control and expansion I/O.",
+    "Production-oriented positioning is public, but mass-production status, price, MOQ, lead time and customer adoption are not."
+  ],
+  "whyItMatters": [
+    "Drone autonomy needs camera ingest, local inference, localization and flight-controller communication inside a strict size, weight and power envelope.",
+    "Bundling Ubuntu, ROS 2 and common autopilot interfaces around the hardware can reduce the engineering gap between perception prototypes and an integrated mission computer.",
+    "The platform also creates a clearer design-in point for cameras, depth sensors, IMUs, GNSS, wireless modules and other Physical AI subsystems."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "ASR-D501 gives Advantech a purpose-built UAV edge-compute platform rather than a general embedded computer adapted to flight. The official launch combines QCS6490 compute, multi-camera connectivity and interfaces for common autopilot software and robotics middleware.",
+        "Advantech lists up to 12 TOPS and sub-10 W operation, but those are manufacturer specifications, not independently measured results for a combined perception, localization and planning workload. Product teams should validate sustained performance and thermal behaviour in their own mission profile."
+      ]
+    },
+    {
+      "heading": "Design and commercial implications",
+      "paragraphs": [
+        "The value for Physical AI design is the integration boundary. A mission computer that already exposes camera and flight-control interfaces can reduce custom carrier-board work and provide a more repeatable path for perception and autonomy software.",
+        "Commercial wording needs restraint. Advantech says the system is built for production UAV deployment, but the reviewed sources do not disclose mass-production start, broad inventory, price, MOQ, lead time or named customers. A separate 2027 CQ8 platform reference is also a roadmap item, not a currently available replacement."
+      ]
+    }
+  ],
+  "flypigTake": "ASR-D501 is notable because it packages the messy middle of autonomous-drone engineering: cameras, inference, robotics middleware and flight-controller communication. The architecture looks design-in friendly, but production readiness should be judged by supply, thermal validation, environmental qualification and a confirmed peripheral matrix rather than marketing language alone.",
+  "productStatus": "Formally launched on September 29, 2026 with product and software documentation online. Advantech describes ASR-D501 as built for production UAV deployment, but reviewed first-party material does not disclose mass-production start, broad inventory, price, MOQ, lead time or named customer shipments.",
+  "openQuestions": [
+    "Which cameras, depth sensors, IMUs, GNSS devices and flight controllers are formally validated with ASR-D501?",
+    "What sustained QCS6490 performance, thermal limits and power consumption apply when perception, VIO or SLAM and planning workloads run concurrently?",
+    "What environmental and lifecycle qualifications are available for production UAV programs?"
+  ],
+  "canadaRelevance": "Canada has active drone, remote-inspection and autonomous-systems markets, making ASR-D501 relevant as a compact UAV compute platform. Canadian availability, pricing and qualified peripheral combinations still require direct confirmation.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "advantech-aom-2721-ubuntu-qcs6490",
+    "advantech-weda-cross-chip-edge-ai-ecosystem",
+    "canada-minerva-arctic-uncrewed-air-system"
+  ],
+  "relatedTechnologies": ["Qualcomm QCS6490", "Drone Edge AI", "ROS 2", "Visual-Inertial Odometry"],
+  "corrections": [],
+  "sourceName": "Advantech ASR-D501 official launch",
+  "sourceUrl": "https://www.advantech.com/en-us/resources/news/asr-d501-grand-launch",
+  "sourceProductUrl": "https://www.advantech.com/en-us/products/8d5aadd0-1ef5-4704-a9a1-504718fb3b41/asr-d501/mod_63b146af-58b3-422f-a7e2-d1984f53b698",
+  "additionalSources": [
+    {"name": "Advantech Robotic Suite ASR-D501 guide", "url": "https://docs.robotic-suite.advantech.com/docs/Application/ASR-D501_userguide/"}
+  ],
+  "sourceNote": "FlyPig AI reviewed Advantech's September 29 launch, current product page and robotics documentation. TOPS and power figures are vendor specifications. Production-oriented wording is not treated as proof of shipment volume, stock or customer adoption.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/advantech-asr-d501-drone-edge-ai.png",
+    "socialSrc": "/images/signals/og/advantech-asr-d501-drone-edge-ai.png",
+    "alt": "FlyPig AI infographic mapping Advantech ASR-D501 from multi-camera sensing through QCS6490 edge AI to UAV flight-control software.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.advantech.com/en-us/resources/news/asr-d501-grand-launch",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/advantech-asr-d501-drone-edge-ai.svg"
+    }
+  }
+}

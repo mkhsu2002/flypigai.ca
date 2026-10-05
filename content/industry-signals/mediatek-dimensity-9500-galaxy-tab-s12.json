@@ -1,0 +1,91 @@
+{
+  "eventId": "EVT-2026-0052",
+  "slug": "mediatek-dimensity-9500-galaxy-tab-s12",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-10-05",
+    "findings": [
+      "MediaTek's September 30 first-party release and Samsung's official announcement both confirm Dimensity 9500 in Galaxy Tab S12 Ultra and Galaxy Tab S12+.",
+      "MediaTek states that retail availability begins October 7, 2026; as of October 5 this remains a future availability date rather than current retail availability.",
+      "MediaTek's CPU, NPU and GPU specifications are vendor platform specifications and are not presented as independent workload benchmarks.",
+      "The named Samsung design-in is confirmed, but the reviewed sources do not disclose MediaTek SoC pricing, MOQ, lead time, wafer or package volume, Samsung purchase quantity or unrelated supply-chain winners.",
+      "No downstream component supplier, ODM or EMS relationship is inferred without first-party evidence.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-30",
+  "publishedAt": "2026-10-05",
+  "modifiedAt": "2026-10-05",
+  "supplier": "MediaTek",
+  "category": "AI SoC · Consumer Tablet · On-Device AI",
+  "title": "MediaTek Dimensity 9500 Lands in Samsung Galaxy Tab S12, With Retail Launch Due October 7",
+  "seoTitle": "Dimensity 9500 Powers Samsung Galaxy Tab S12 Series",
+  "socialTitle": "MediaTek Wins a Named Premium Tablet Design-In",
+  "seoDescription": "MediaTek confirms Dimensity 9500 in Samsung Galaxy Tab S12 Ultra and S12+, with retail availability set for Oct. 7 and SoC supply terms undisclosed.",
+  "dek": "MediaTek has moved Dimensity 9500 from a flagship SoC announcement into a named premium-tablet design-in: Samsung's Galaxy Tab S12 Ultra and S12+. The devices are scheduled to reach retail from October 7, while MediaTek's standalone chip supply terms and volumes remain private.",
+  "summary": "MediaTek confirmed on September 30 that Dimensity 9500 powers Samsung Galaxy Tab S12 Ultra and Galaxy Tab S12+. Samsung's own announcement corroborates the processor choice for both models. MediaTek describes the platform as a TSMC 3 nm design with an All Big Core CPU, NPU 990 with Generative AI Engine 2.0 and a 12-core GPU. The important change is commercial rather than purely architectural: a named global OEM has adopted the flagship SoC in a premium tablet family. MediaTek says major-retailer availability begins October 7, which is still in the future as of October 5. The sources do not disclose standalone SoC pricing, MOQ, lead time, production volume, Samsung purchase quantity or the identity of other component suppliers.",
+  "keyFacts": [
+    "MediaTek and Samsung both confirm Dimensity 9500 in Galaxy Tab S12 Ultra and Galaxy Tab S12+.",
+    "MediaTek specifies a 3 nm platform with NPU 990, Generative AI Engine 2.0 and a 12-core GPU.",
+    "Retail availability is scheduled to begin October 7, 2026; standalone SoC supply terms and volumes are not public."
+  ],
+  "whyItMatters": [
+    "A named premium-tablet design-in is stronger commercial evidence than a chip launch because it ties the SoC to a specific shipping product family and OEM.",
+    "The move extends MediaTek's flagship mobile AI architecture into a larger-screen device where on-device generative AI, multitasking and sustained thermal behaviour become more visible design constraints.",
+    "For Taiwan's supply chain, the event creates a real platform to watch, but it does not by itself identify memory, storage, camera, power, PCB, thermal, ODM or EMS winners."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "Dimensity 9500 now has a confirmed Samsung tablet design-in. MediaTek says the SoC powers both Galaxy Tab S12 Ultra and S12+, and Samsung's official launch material independently lists the same application processor for the two models.",
+        "MediaTek also provides the retail timing: availability at major retailers is due to start October 7. Because this article is dated October 5, that date is reported as an announced future launch rather than proof that units are already on shelves."
+      ]
+    },
+    {
+      "heading": "Design and commercial implications",
+      "paragraphs": [
+        "For product teams, the significance is that MediaTek's flagship mobile AI stack is being used in a premium tablet, creating another reference point for local AI, graphics and power-management trade-offs beyond smartphones. MediaTek's NPU and GPU figures remain vendor specifications rather than independent application benchmarks.",
+        "The named Samsung relationship is official, but its commercial boundaries matter. Neither company discloses SoC unit price, MOQ, lead time, purchase quantity or production allocation. The announcement also does not justify assigning other component or manufacturing work to specific suppliers without separate first-party evidence."
+      ]
+    }
+  ],
+  "flypigTake": "This is the kind of signal that matters more than another peak-performance slide: Dimensity 9500 has crossed into a named premium device from Samsung. The next questions are execution questions, not announcement questions: how the platform behaves under sustained tablet workloads, how broadly Samsung deploys it by market, and whether MediaTek wins more large-screen AI devices after this launch.",
+  "productStatus": "Samsung Galaxy Tab S12 Ultra and S12+ are formally announced with Dimensity 9500. MediaTek says retail availability begins October 7, 2026, which is two days after this article's publication date. Standalone SoC pricing, MOQ, lead time, production volume and channel availability are not disclosed.",
+  "openQuestions": [
+    "Which Galaxy Tab S12 configurations and markets will use the Dimensity 9500 at launch, and do processor configurations vary by region?",
+    "What sustained NPU, GPU and CPU behaviour does the platform deliver under tablet-class thermal constraints?",
+    "Will MediaTek disclose additional premium-tablet or large-screen design wins after the Galaxy Tab S12 launch?"
+  ],
+  "canadaRelevance": "Samsung's Canadian announcement confirms the Tab S12 family and states availability from October 7 in select markets. Canadian buyers and developers should still verify local SKU configuration, while component sourcing terms remain outside the public evidence.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "mediatek-dimensity-9600-pro-9600m-agentic-ai",
+    "mediatek-dimensity-cx-c10-max-googlebook-ai-pc",
+    "mediatek-mt8875-5g-iot-genai"
+  ],
+  "relatedTechnologies": ["MediaTek Dimensity 9500", "On-Device Generative AI", "Premium Tablets", "Mobile NPU"],
+  "corrections": [],
+  "sourceName": "MediaTek official Galaxy Tab S12 announcement",
+  "sourceUrl": "https://www.mediatek.com/press-room/mediatek-dimensity-9500-powers-samsung-galaxy-tab-s12-series-advancing-ai-driven-tablets",
+  "additionalSources": [
+    {"name": "Samsung Canada Galaxy Tab S12 official announcement", "url": "https://news.samsung.com/ca/samsung-introduces-galaxy-tab-s12-series-the-ultimate-productivity-powerhouse-built-for-growth"}
+  ],
+  "sourceNote": "FlyPig AI cross-checked MediaTek's September 30, 2026 first-party release with Samsung's official launch. The Samsung design-in is treated as confirmed; October 7 is preserved as a future retail date, and no unsupported component supplier, volume or procurement claim is inferred.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/mediatek-dimensity-9500-galaxy-tab-s12.png",
+    "socialSrc": "/images/signals/og/mediatek-dimensity-9500-galaxy-tab-s12.png",
+    "alt": "FlyPig AI infographic linking MediaTek Dimensity 9500 compute and on-device AI to the Samsung Galaxy Tab S12 Ultra and S12+ product family.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.mediatek.com/press-room/mediatek-dimensity-9500-powers-samsung-galaxy-tab-s12-series-advancing-ai-driven-tablets",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/mediatek-dimensity-9500-galaxy-tab-s12.svg"
+    }
+  }
+}

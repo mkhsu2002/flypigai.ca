@@ -1,0 +1,92 @@
+{
+  "eventId": "EVT-2026-0050",
+  "slug": "nuvoton-ma35d0-chili-pro-edge-mpu",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-10-05",
+    "findings": [
+      "Nuvoton's October 1 first-party release confirms new LQFP128 MA35D0 variants MA35D05KH67C, MA35D05KI67C and MA35D05KJ67C plus the NuMaker-IoT-MA35D0-A2 Chili Pro development platform.",
+      "The release supports dual Cortex-A35 at up to 650 MHz, Cortex-M4 at 180 MHz and package-integrated DDR SDRAM up to 512 MB, while the Chili Pro board specifically uses MA35D05KI67C with 256 MB DDR.",
+      "Nuvoton provides an online purchasing route for the Chili Pro board, but this does not establish broad IC inventory, mass-production volume, pricing, MOQ or lead time for all three MPUs.",
+      "Security features are described as supporting industrial cybersecurity requirements; the article does not claim the device itself is IEC 62443 certified or CRA compliant.",
+      "Nuvoton's smallest-Linux-platform language is treated as vendor positioning rather than an independently verified market claim.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-10-01",
+  "publishedAt": "2026-10-05",
+  "modifiedAt": "2026-10-05",
+  "supplier": "Nuvoton Technology",
+  "category": "Industrial Edge MPU · Linux · Tiny AI · Secure IoT",
+  "title": "Nuvoton Shrinks MA35D0 Linux Design-In With LQFP128 MPUs and Chili Pro",
+  "seoTitle": "Nuvoton Adds Compact MA35D0 MPUs and Chili Pro Board",
+  "socialTitle": "A Smaller Linux MPU Path for Edge Devices",
+  "seoDescription": "Nuvoton adds compact MA35D0 LQFP128 MPUs with integrated DDR and a Chili Pro Linux board, while IC volume supply and commercial terms remain unclear.",
+  "dek": "Nuvoton's latest MA35D0 variants combine Linux-class Cortex-A35 processing, real-time Cortex-M4 control and package-integrated DDR in a compact LQFP128 format. The accompanying Chili Pro board gives developers a practical entry point, but board purchasing should not be confused with confirmed high-volume IC availability.",
+  "summary": "Nuvoton formally announced three compact MA35D0 LQFP128 MPUs on October 1: MA35D05KH67C, MA35D05KI67C and MA35D05KJ67C. The family combines dual 64-bit Cortex-A35 cores running up to 650 MHz with a 180 MHz Cortex-M4 and integrates DDR SDRAM in the package, with capacity varying by device and reaching up to 512 MB. Interfaces include Gigabit Ethernet, USB 2.0, SD or eMMC, CAN FD, Quad SPI, UART, I2C, I2S, PWM and ADC. Nuvoton also launched the NuMaker-IoT-MA35D0-A2 Chili Pro development platform based on MA35D05KI67C. That board has an official online purchasing path, but the reviewed first-party material does not state mass-production volume, regional IC stock, price, MOQ or lead time for the new MPU variants.",
+  "keyFacts": [
+    "The new LQFP128 MA35D0 devices combine dual Cortex-A35 application processing with a Cortex-M4 real-time core.",
+    "Nuvoton integrates DDR SDRAM in the package, with the family reaching up to 512 MB depending on the device.",
+    "Chili Pro is available through an official purchasing route, while IC supply terms remain undisclosed."
+  ],
+  "whyItMatters": [
+    "Putting Linux compute, real-time control and DDR in one compact package can reduce PCB complexity and high-speed memory routing in cost-sensitive edge products.",
+    "The A35 and M4 split gives designers a practical way to separate Linux application workloads from deterministic control without adding another controller.",
+    "For Tiny AI and secure IoT systems, the platform can host local analytics and connectivity while retaining hardware security features, although application performance still depends on software and model choice."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "The October launch turns MA35D0 into a more compact LQFP128 design-in option and adds a corresponding development board. Nuvoton specifies dual Cortex-A35 cores, a Cortex-M4 and integrated DDR, reducing the external-memory design burden that normally accompanies Linux-capable MPUs.",
+        "The Chili Pro board uses MA35D05KI67C and documents 256 MB of DDR on that configuration. That should not be generalized to every new device: Nuvoton's family announcement says capacity varies and reaches up to 512 MB."
+      ]
+    },
+    {
+      "heading": "Design and commercial implications",
+      "paragraphs": [
+        "For gateways, smart appliances, controllers and compact industrial endpoints, package-integrated DDR can simplify layout, reduce board area and shorten bring-up. Designers still need to validate Linux BSP support, real-time partitioning, memory headroom and the actual Tiny AI frameworks suitable for Cortex-A35 and M4 workloads.",
+        "Nuvoton links Chili Pro to an online purchasing channel, which is useful development evidence. It does not prove equivalent availability for the MPUs themselves. The official material also describes security features in the context of IEC 62443 and the EU Cyber Resilience Act, but this report does not convert that into a claim that the chip or final product is independently certified."
+      ]
+    }
+  ],
+  "flypigTake": "The useful innovation is integration rather than raw AI throughput. MA35D0 puts Linux, deterministic control and DDR into a package that can reduce board complexity for connected edge devices. Chili Pro lowers prototype friction, but production teams still need IC supply terms, long-term BSP support and precise security documentation before committing a design.",
+  "productStatus": "Nuvoton formally announced the three LQFP128 MA35D0 variants and Chili Pro on October 1, 2026. Chili Pro has an official online purchasing route. The reviewed sources do not disclose mass-production volume, broad IC inventory, unit price, MOQ or lead time for the new MPU variants.",
+  "openQuestions": [
+    "What are the sampling, mass-production, regional stock, MOQ and lead-time conditions for each new MA35D0 LQFP128 variant?",
+    "Which Linux, Yocto and Tiny AI software stacks will Nuvoton maintain for production designs, and for how long?",
+    "What formal security certification or compliance documentation is available beyond the hardware security features described in the launch?"
+  ],
+  "canadaRelevance": "Canadian industrial IoT, energy and automation teams may find the compact Linux-plus-real-time architecture useful for gateways and controllers. Production adoption still depends on confirmed IC sourcing, long-term software maintenance and security documentation.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "nuvoton-m3351-5v-cortex-m33-robotics-control",
+    "nuvoton-i3810yyi-digital-chipcorder-audio",
+    "advantech-aom-2721-ubuntu-qcs6490"
+  ],
+  "relatedTechnologies": ["Arm Cortex-A35", "Arm Cortex-M4", "Embedded Linux", "Integrated DDR", "Tiny AI"],
+  "corrections": [],
+  "sourceName": "Nuvoton MA35D0 LQFP128 official launch",
+  "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000637/",
+  "sourceProductUrl": "https://www.nuvoton.com/products/microprocessors/arm-cortex-a35-mpus/ma35d0-industrial-edge-device-series/ma35d05ki67c/",
+  "additionalSources": [
+    {"name": "Nuvoton Chili Pro development platform", "url": "https://www.nuvoton.com/products/iot-solution/iot-platform/numaker-iot-ma35d0-a2/"}
+  ],
+  "sourceNote": "FlyPig AI reviewed Nuvoton's October 1, 2026 launch release plus current MA35D0 and Chili Pro pages. Board purchasing is not treated as proof of broad IC supply, and cybersecurity positioning is not converted into an unsupported certification claim.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/nuvoton-ma35d0-chili-pro-edge-mpu.png",
+    "socialSrc": "/images/signals/og/nuvoton-ma35d0-chili-pro-edge-mpu.png",
+    "alt": "FlyPig AI infographic showing the Nuvoton MA35D0 architecture linking Cortex-A35 Linux processing, Cortex-M4 control and integrated DDR.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000637/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/nuvoton-ma35d0-chili-pro-edge-mpu.svg"
+    }
+  }
+}

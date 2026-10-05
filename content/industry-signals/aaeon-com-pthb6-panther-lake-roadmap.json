@@ -1,0 +1,87 @@
+{
+  "eventId": "EVT-2026-0051",
+  "slug": "aaeon-com-pthb6-panther-lake-roadmap",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-10-05",
+    "findings": [
+      "AAEON's September 30 first-party VISION 2026 preview names COM-PTHB6 as a COM Express Type 6 module based on Intel Core Ultra Series 3, also known as Panther Lake.",
+      "AAEON states that COM-PTHB6 is expected to enter mass production in the first half of 2027; this is a roadmap statement, not current availability.",
+      "VISION 2026 runs October 6 through October 8, so as of October 5 the module is described as scheduled for display rather than already demonstrated at the event.",
+      "The reviewed source does not disclose final CPU SKUs, NPU performance, sample timing, price, MOQ, lead time or an ordering code.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-30",
+  "publishedAt": "2026-10-05",
+  "modifiedAt": "2026-10-05",
+  "supplier": "AAEON",
+  "category": "Computer-on-Module · Edge AI · Machine Vision",
+  "title": "AAEON Previews COM-PTHB6 Panther Lake Module for H1 2027 Production",
+  "seoTitle": "AAEON COM-PTHB6 Panther Lake Module Targets H1 2027",
+  "socialTitle": "AAEON Maps Panther Lake Into COM Express",
+  "seoDescription": "AAEON previews the Panther Lake-based COM-PTHB6 COM Express Type 6 module, with mass production targeted for H1 2027 and key specs still pending.",
+  "dek": "AAEON has put a date on its next COM Express Type 6 transition: the Panther Lake-based COM-PTHB6 is scheduled for a VISION 2026 display and is expected to enter mass production in the first half of 2027. That gives system builders a planning signal, not a currently orderable product.",
+  "summary": "AAEON's September 30 VISION 2026 preview names COM-PTHB6 as a COM Express Type 6 module built around Intel Core Ultra Series 3, commonly referred to as Panther Lake. The company says the module is expected to enter mass production in the first half of 2027 and plans to show it at VISION 2026 in Stuttgart from October 6 through October 8. Because the current date is October 5, the event has not yet begun and this report treats the appearance as scheduled rather than completed. The announcement is useful to machine-vision and industrial Edge AI teams because it gives a concrete platform roadmap for carrier-board planning, while leaving major design-in details such as CPU SKUs, NPU performance, memory, I/O, sample timing, price, MOQ and lead time unresolved.",
+  "keyFacts": [
+    "COM-PTHB6 is an AAEON COM Express Type 6 module planned around Intel Core Ultra Series 3 Panther Lake.",
+    "AAEON says mass production is expected in the first half of 2027.",
+    "The module is scheduled for VISION 2026, but detailed specifications and current sampling terms are not yet public."
+  ],
+  "whyItMatters": [
+    "COM Express lets OEMs preserve a carrier-board architecture while changing compute modules, which can reduce redesign work in long-life machine-vision and control systems.",
+    "A published H1 2027 production target gives engineering teams a planning anchor for next-generation x86 Edge AI platforms without implying that hardware is available today.",
+    "The missing details remain important: NPU capability, thermal envelope, memory and I/O configuration will determine whether COM-PTHB6 fits a specific vision or robotics workload."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "AAEON has moved its Panther Lake COM Express roadmap from a generic future platform to a named module, COM-PTHB6, with a stated H1 2027 mass-production target. The module is part of the company's planned VISION 2026 display.",
+        "Timing matters. VISION 2026 starts on October 6, so an October 5 report cannot describe the product as already demonstrated at the show. AAEON's announcement supports a scheduled display and future production target only."
+      ]
+    },
+    {
+      "heading": "Design and commercial implications",
+      "paragraphs": [
+        "For machine-vision, industrial PC and robot-controller teams, the value is roadmap visibility. A COM Express design can separate carrier-board lifecycle from processor generation, allowing a future Panther Lake compute module to be evaluated without a complete system redesign.",
+        "The commercial evidence is still preliminary. AAEON has not published final CPU options, NPU or GPU figures, sample timing, pricing, MOQ, lead time or a formal ordering code. The H1 2027 statement should therefore be treated as a manufacturer roadmap rather than a guaranteed availability commitment."
+      ]
+    }
+  ],
+  "flypigTake": "COM-PTHB6 matters because AAEON has attached a named module and production window to Panther Lake for COM Express. That is enough to influence carrier-board planning, but not enough to lock a product architecture. The decisive follow-up will be controlled specifications, sample timing and whether the H1 2027 target survives the transition from trade-show preview to orderable hardware.",
+  "productStatus": "AAEON announced COM-PTHB6 as a VISION 2026 preview with mass production expected in H1 2027. As of October 5, 2026 the trade show has not yet started. No final product page, sample date, price, MOQ, lead time or ordering code was found in the reviewed first-party material.",
+  "openQuestions": [
+    "What CPU SKUs, NPU performance, memory, I/O and thermal envelope will the final COM-PTHB6 support?",
+    "When will engineering samples, carrier-board documentation and a formal ordering code become available?",
+    "Will AAEON maintain the H1 2027 mass-production target after VISION 2026?"
+  ],
+  "canadaRelevance": "Canadian machine-vision and industrial-automation teams can use the roadmap to plan future COM Express carrier designs, but present procurement decisions require later confirmation of samples, specifications and supply terms.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "aaeon-mix-ptlwv1-panther-lake-mini-itx",
+    "aaeon-ucom-q6490-product-update",
+    "aaeon-mix-q870a1-mini-itx-edge-ai"
+  ],
+  "relatedTechnologies": ["COM Express Type 6", "Intel Core Ultra Series 3", "Panther Lake", "Machine Vision"],
+  "corrections": [],
+  "sourceName": "AAEON VISION 2026 official preview",
+  "sourceUrl": "https://solutions.aaeon.com/vision-2026-sets-the-stage-for-aaeon-to-demonstrate-ai-in-action/",
+  "sourceNote": "FlyPig AI reviewed AAEON's September 30, 2026 first-party VISION preview. The scheduled trade-show display and H1 2027 production target are reported as future milestones, not current product availability.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-com-pthb6-panther-lake-roadmap.png",
+    "socialSrc": "/images/signals/og/aaeon-com-pthb6-panther-lake-roadmap.png",
+    "alt": "FlyPig AI infographic showing AAEON COM-PTHB6 as a Panther Lake COM Express Type 6 roadmap from VISION preview to H1 2027 production.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://solutions.aaeon.com/vision-2026-sets-the-stage-for-aaeon-to-demonstrate-ai-in-action/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-com-pthb6-panther-lake-roadmap.svg"
+    }
+  }
+}

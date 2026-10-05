@@ -1,0 +1,85 @@
+{
+  "eventId": "EVT-2026-0046",
+  "slug": "compal-ocp-800vdc-ai-factory-infrastructure",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-10-05",
+    "findings": [
+      "Compal's September 29 first-party release confirms a planned OCP Global Summit 2026 showcase covering 800 VDC power, megawatt-class infrastructure, liquid cooling and rack-scale integration around NVIDIA accelerated computing.",
+      "The announcement is a technology showcase, not evidence of an orderable standalone platform, production deployment, customer award or shipment milestone.",
+      "No reviewed first-party source discloses pricing, MOQ, lead time, deployment quantity or a new commercial partnership tied to this event.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-29",
+  "publishedAt": "2026-10-05",
+  "modifiedAt": "2026-10-05",
+  "supplier": "Compal Electronics",
+  "category": "AI Infrastructure · Power · Liquid Cooling",
+  "title": "Compal Extends Its AI Factory Scope to 800 VDC Power and Liquid Cooling",
+  "seoTitle": "Compal Extends AI Factory Scope to 800 VDC and Cooling",
+  "socialTitle": "Compal Moves Beyond the Server Box",
+  "seoDescription": "Compal plans an OCP showcase spanning 800 VDC power and liquid cooling, while product availability, customers and commercial terms remain undisclosed.",
+  "dek": "Compal is broadening its AI infrastructure story beyond server assembly. Its OCP Global Summit 2026 preview connects accelerated compute with 800 VDC power, large-scale power infrastructure, liquid cooling and rack integration, but the announcement remains a showcase rather than a commercial-availability notice.",
+  "summary": "Compal Electronics said on September 29 that it plans to demonstrate a broader AI factory infrastructure stack at OCP Global Summit 2026. The company describes high-density compute, an 800 VDC power architecture, megawatt-class power infrastructure, advanced liquid cooling and rack-scale integration around NVIDIA accelerated computing. The important signal is scope: a major Taiwan ODM is publicly positioning itself to engineer more of the infrastructure surrounding AI compute. That can widen design-in opportunities for power, thermal, interconnect and rack suppliers. The reviewed source does not identify a new standalone SKU, production installation, customer award, price, shipment volume or availability date.",
+  "keyFacts": [
+    "Compal plans an OCP Global Summit 2026 showcase covering 800 VDC power and liquid-cooled AI infrastructure.",
+    "The stated scope includes rack-scale integration around NVIDIA accelerated computing.",
+    "No standalone SKU, customer deployment, price or shipment commitment is disclosed."
+  ],
+  "whyItMatters": [
+    "AI systems are increasingly limited by power delivery and heat removal, so ODM responsibility is expanding beyond the compute node.",
+    "For Taiwan suppliers, the design-in surface can extend from server electronics into power, cooling, interconnect and rack-level integration.",
+    "This is an upstream AI-infrastructure signal rather than an endpoint Edge AI product, but it affects the infrastructure used to develop and operate Physical AI fleets."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "Compal's September preview shifts the company's public emphasis from individual server platforms toward integrated AI infrastructure. The planned OCP display combines high-density compute with 800 VDC power, large-scale power delivery, advanced liquid cooling and rack integration.",
+        "The wording should not be treated as a product launch. Compal does not provide an ordering code, a production deployment, a named customer or evidence that a complete 800 VDC stack is shipping in volume."
+      ]
+    },
+    {
+      "heading": "Design and commercial implications",
+      "paragraphs": [
+        "For product and supply-chain teams, the change matters because system boundaries are moving. Suppliers may increasingly be qualified as part of a rack-level architecture rather than as isolated server components, which can change interface ownership and validation requirements.",
+        "The commercial evidence remains incomplete. Compal does not disclose pricing, MOQ, lead time, deployment quantity or a new NVIDIA partnership in this announcement. The defensible reading is that Compal is engineering infrastructure around NVIDIA accelerated computing, not that a new commercial relationship or customer order has been announced."
+      ]
+    }
+  ],
+  "flypigTake": "Compal's signal is about scope more than a single product. The company wants to participate in the power and thermal layers surrounding AI compute, which could broaden Taiwan supply-chain opportunities. The next meaningful milestone would be controlled product specifications, a sampling or production timeline, or a named deployment that moves the story beyond an OCP showcase.",
+  "productStatus": "Announced as a planned OCP Global Summit 2026 technology showcase. No standalone SKU, sample program, mass-production milestone, price, MOQ, lead time, named customer deployment or shipment volume is disclosed.",
+  "openQuestions": [
+    "Which rack, power and cooling elements will receive controlled product specifications after the OCP showcase?",
+    "Will Compal disclose a sampling, production or deployment milestone for the 800 VDC architecture?"
+  ],
+  "canadaRelevance": "Canadian AI infrastructure operators and suppliers can read this as an early view of how a major Taiwan ODM is expanding system-integration scope. It does not establish Canadian deployment, local inventory or procurement terms.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "advantech-asmb-808-xeon-600-multigpu-workstation",
+    "auo-micro-led-cpo-glass-core-ai-infrastructure",
+    "tenstorrent-galaxy-blackhole-volume-shipping"
+  ],
+  "relatedTechnologies": ["800 VDC Power", "Liquid Cooling", "Rack-Scale AI Infrastructure"],
+  "corrections": [],
+  "sourceName": "Compal official OCP Global Summit 2026 announcement",
+  "sourceUrl": "https://www.compal.com/en-us/media/350/ren-bao-yu-ocp-global-summit-2026-zhan-shi-cong-de",
+  "sourceNote": "FlyPig AI reviewed Compal's September 29, 2026 first-party announcement. Showcase language is not treated as proof of commercial availability, customer adoption, pricing or a new partnership.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/compal-ocp-800vdc-ai-factory-infrastructure.png",
+    "socialSrc": "/images/signals/og/compal-ocp-800vdc-ai-factory-infrastructure.png",
+    "alt": "FlyPig AI infographic mapping Compal's planned AI infrastructure stack from 800 VDC power through liquid cooling to accelerated compute.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.compal.com/en-us/media/350/ren-bao-yu-ocp-global-summit-2026-zhan-shi-cong-de",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/compal-ocp-800vdc-ai-factory-infrastructure.svg"
+    }
+  }
+}

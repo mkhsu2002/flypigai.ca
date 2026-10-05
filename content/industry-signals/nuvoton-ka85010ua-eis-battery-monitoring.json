@@ -1,0 +1,91 @@
+{
+  "eventId": "EVT-2026-0047",
+  "slug": "nuvoton-ka85010ua-eis-battery-monitoring",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-10-05",
+    "findings": [
+      "Nuvoton's first-party announcement confirms KA85010UA as a 26-cell battery-monitoring IC with integrated EIS measurement and states that samples are planned from January 2027.",
+      "The approximately 93% reductions in power loss and PCB temperature rise are Nuvoton evaluation results under company test conditions, not independent benchmarks.",
+      "January 2027 is a sample roadmap and does not establish current general availability, mass production, inventory or customer deployment.",
+      "The reviewed sources do not disclose pricing, MOQ, production lead time, shipment volume or named customer design wins.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-29",
+  "publishedAt": "2026-10-05",
+  "modifiedAt": "2026-10-05",
+  "supplier": "Nuvoton Technology",
+  "category": "Battery Monitoring · EIS · EV · ESS · Physical AI",
+  "title": "Nuvoton Adds EIS to a 26-Cell Battery Monitor, With Samples Planned for 2027",
+  "seoTitle": "Nuvoton KA85010UA Adds EIS to 26-Cell Battery Monitoring",
+  "socialTitle": "Battery Health Sensing Moves Into the Monitor IC",
+  "seoDescription": "Nuvoton's KA85010UA integrates EIS into a 26-cell battery monitor, with January 2027 samples planned and mass-production terms still undisclosed.",
+  "dek": "KA85010UA moves electrochemical impedance measurement closer to embedded battery monitoring. The architecture could support richer pack-health diagnostics, but samples are only planned for January 2027 and Nuvoton's headline efficiency figures remain vendor test results.",
+  "summary": "Nuvoton has announced KA85010UA, a sixth-generation battery-monitoring IC for up to 26 cells with integrated electrochemical impedance spectroscopy measurement. The company says its inductor-based method reduced measurement-related power loss and PCB temperature rise by about 93% versus a resistor method in its own evaluation conditions. Nuvoton also plans EIS analysis algorithms and implementation support. Samples are scheduled from January 2027, so the event is a forward design-in signal rather than evidence of current mass production or broad inventory. Official positioning covers electric vehicles, large-scale energy storage and reused-battery diagnostics. Relevance to robotics and autonomous systems comes from the battery-health capability, not from a disclosed design win in those markets.",
+  "keyFacts": [
+    "KA85010UA monitors up to 26 cells and integrates electrochemical impedance spectroscopy measurement.",
+    "Nuvoton reports about 93% lower power loss and PCB temperature rise in its own comparison conditions.",
+    "Samples are planned from January 2027; mass-production timing and commercial supply terms are not disclosed."
+  ],
+  "whyItMatters": [
+    "EIS can add information about electrochemical state beyond conventional voltage and current telemetry, potentially improving health and anomaly analysis.",
+    "Integrating the measurement path into the monitor IC could simplify pack diagnostics, but system value depends on chemistry, topology, calibration and safety requirements.",
+    "For Physical AI platforms, richer battery telemetry could feed local diagnostic or predictive software, although Nuvoton has not announced robotics or drone customers for this part."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "KA85010UA combines multi-cell monitoring with an EIS measurement path in one 26-cell device. Nuvoton positions the integration as a route toward embedded impedance-based diagnostics rather than relying only on separate test equipment.",
+        "The launch highlights an approximately 93% reduction in both power loss and PCB temperature rise versus a resistor-based EIS method. Those figures are from Nuvoton's own evaluation setup and should be read as vendor results, not independent performance benchmarks."
+      ]
+    },
+    {
+      "heading": "Design and commercial implications",
+      "paragraphs": [
+        "Battery health is increasingly important in autonomous hardware because runtime, degradation and maintenance decisions depend on pack telemetry. EIS can become another input to local diagnostic models if the measurements remain repeatable across chemistry, temperature and aging conditions.",
+        "Commercially, the timing is still forward-looking. Nuvoton says samples begin in January 2027, while production start, inventory, price, MOQ and lead time are not disclosed. The official material also does not establish AEC-Q100, ISO 26262 or another qualification for this exact device, so those items remain design-in questions rather than assumptions."
+      ]
+    }
+  ],
+  "flypigTake": "Putting EIS into the battery monitor is more consequential than a routine channel-count update because it could make deeper health measurements practical inside deployed packs. The evidence is not yet a production story: samples are planned for 2027, and the 93% figures are vendor tests. Qualification documents, algorithm access and repeatability across real packs will decide whether the architecture changes production BMS design.",
+  "productStatus": "Formally announced with samples planned from January 2027. The reviewed first-party sources do not state a mass-production date, current inventory, production pricing, MOQ, lead time, shipment volume or named customer deployment.",
+  "openQuestions": [
+    "What evaluation hardware, algorithm package and calibration workflow will accompany the January 2027 samples?",
+    "What automotive qualification and functional-safety documentation will be available for KA85010UA?",
+    "How does EIS accuracy vary across cell chemistry, temperature, aging state and daisy-chained pack configurations?"
+  ],
+  "canadaRelevance": "Canada's EV, energy-storage and autonomous-system sectors make embedded battery-health diagnostics relevant to local engineering teams. Sourcing decisions should wait for confirmed sample access, qualification documentation and production terms.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "primax-aisf-delivery-robot-commercialization",
+    "delta-embodied-ai-dual-arm-joint-platform",
+    "canada-minerva-arctic-uncrewed-air-system"
+  ],
+  "relatedTechnologies": ["Battery Monitoring", "Electrochemical Impedance Spectroscopy", "State of Health", "Energy Storage"],
+  "corrections": [],
+  "sourceName": "Nuvoton KA85010UA official announcement",
+  "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000632/",
+  "sourceProductUrl": "https://www.nuvoton.com/products/battery-management/battery-monitoring-ics/automotive-qualified/ka85010ua/",
+  "additionalSources": [
+    {"name": "Nuvoton KA85010UA product page", "url": "https://www.nuvoton.com/products/battery-management/battery-monitoring-ics/automotive-qualified/ka85010ua/"}
+  ],
+  "sourceNote": "FlyPig AI reviewed Nuvoton's first-party launch material and current product page. The January 2027 date is reported as a sample plan, and the approximately 93% figures are explicitly attributed to Nuvoton's evaluation conditions.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/nuvoton-ka85010ua-eis-battery-monitoring.png",
+    "socialSrc": "/images/signals/og/nuvoton-ka85010ua-eis-battery-monitoring.png",
+    "alt": "FlyPig AI infographic showing a 26-cell battery stack feeding Nuvoton KA85010UA monitoring and an integrated EIS diagnostic path.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.nuvoton.com/news/news/all/TSNuvotonNews-000632/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/nuvoton-ka85010ua-eis-battery-monitoring.svg"
+    }
+  }
+}

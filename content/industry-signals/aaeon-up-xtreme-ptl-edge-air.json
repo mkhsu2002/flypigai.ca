@@ -1,0 +1,89 @@
+{
+  "eventId": "EVT-2026-0048",
+  "slug": "aaeon-up-xtreme-ptl-edge-air",
+  "publicationStatus": "published",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-10-05",
+    "findings": [
+      "AAEON's UP brand published UP Xtreme PTL Edge Air on September 24, 2026 with Intel Core Ultra Series 3 and Frore Systems AirJet cooling.",
+      "The 35% thinner, 43% lighter and sub-21 dBA figures are manufacturer claims, not independent comparative results.",
+      "The reviewed page does not state mass production, broad stock, price, MOQ or lead time.",
+      "No customer deployment or robotics design win is inferred from application examples.",
+      "Hero and social assets are FlyPig AI-owned generated editorial graphics."
+    ],
+    "action": "highlight"
+  },
+  "sourcePublishedAt": "2026-09-24",
+  "publishedAt": "2026-10-05",
+  "modifiedAt": "2026-10-05",
+  "supplier": "AAEON",
+  "category": "Edge AI Mini PC · Thermal Design · Robotics",
+  "title": "AAEON's UP Xtreme PTL Edge Air Moves Edge AI Cooling Beyond the Fan",
+  "seoTitle": "AAEON UP Xtreme PTL Edge Air Uses AirJet Cooling",
+  "socialTitle": "A Thinner Thermal Path for Edge AI PCs",
+  "seoDescription": "AAEON pairs Intel Core Ultra Series 3 with AirJet cooling in UP Xtreme PTL Edge Air, while supply status and sustained-load results remain unclear.",
+  "dek": "UP Xtreme PTL Edge Air is mainly a thermal-design update. AAEON pairs Intel Core Ultra Series 3 with AirJet cooling to target thinner, quieter edge systems, but the headline mechanical figures remain vendor claims and supply terms are not disclosed.",
+  "summary": "AAEON's UP brand introduced UP Xtreme PTL Edge Air on September 24 as a new cooling implementation for an Intel Core Ultra Series 3 edge platform. Frore Systems AirJet replaces the conventional fan approach. AAEON says the resulting system is 35% thinner and 43% lighter and operates below 21 dBA. Those claims are relevant to robotics, AMR, kiosk and mobile-health designs where enclosure height, vibration, acoustics and dust can constrain compute placement. They remain manufacturer statements rather than independently verified test results. The public update does not disclose mass-production status, broad inventory, price, MOQ or lead time.",
+  "keyFacts": [
+    "UP Xtreme PTL Edge Air combines Intel Core Ultra Series 3 with Frore Systems AirJet cooling.",
+    "AAEON claims 35% thinner, 43% lighter and less than 21 dBA operation.",
+    "The announcement does not state current inventory, mass-production status, price, MOQ or lead time."
+  ],
+  "whyItMatters": [
+    "Thermal hardware can determine whether an AI computer sustains useful performance inside a compact robot or vision appliance.",
+    "A non-fan cooling approach may change vibration and maintenance trade-offs, but the real benefit depends on workload, ambient temperature and lifecycle behaviour.",
+    "The event shows why peak AI performance alone is insufficient for product selection: enclosure and cooling can determine usable deployed performance."
+  ],
+  "reporting": [
+    {
+      "heading": "What changed",
+      "paragraphs": [
+        "AAEON applied an AirJet-based cooling architecture to its UP Xtreme PTL Edge platform. The company emphasizes mechanical and acoustic changes rather than a new processor generation.",
+        "AAEON reports lower thickness, lower weight and sub-21 dBA operation. The public article does not provide enough test methodology to treat those values as independently verified, so this report preserves them as vendor claims."
+      ]
+    },
+    {
+      "heading": "Design and commercial implications",
+      "paragraphs": [
+        "Compact Physical AI systems often place compute close to cameras and motion sensors while managing dust, vibration and tight enclosure volume. AirJet could alter those constraints if it sustains the required heat transfer over a product lifecycle.",
+        "Commercial status is less clear. The Edge Air page offers a contact route but does not explicitly state mass production, broad stock, price, MOQ or lead time. Product teams should confirm orderable processor configurations, sustained performance, thermal limits and reliability data before treating the design as production-ready."
+      ]
+    }
+  ],
+  "flypigTake": "This is a thermal-design signal more than a processor story. If AirJet helps an Edge AI computer maintain useful performance in a thinner enclosure, the system benefit can matter more than a small change in peak AI throughput. The next evidence should be sustained-load data, ambient limits, reliability documentation and clear ordering information.",
+  "productStatus": "Published as an AAEON UP product update on September 24, 2026. The reviewed first-party page does not explicitly state mass-production status, broad stock availability, pricing, MOQ or lead time.",
+  "openQuestions": [
+    "Which Intel Core Ultra Series 3 configurations and sustained power limits are orderable in Edge Air?",
+    "What thermal, reliability and acoustic documentation supports AAEON's published mechanical claims?"
+  ],
+  "canadaRelevance": "Canadian robotics, automation and machine-vision teams often face enclosure, dust and acoustic constraints. Edge Air is potentially relevant, but Canadian pricing, stock and qualified configurations require direct confirmation.",
+  "author": {"name": "FlyPig AI Editorial Desk", "url": "/editorial-policy", "type": "Organization"},
+  "relatedSignals": [
+    "aaeon-mix-ptlwv1-panther-lake-mini-itx",
+    "aaeon-ucom-q6490-product-update",
+    "advantech-air-411-bartlett-lake-multi-accelerator-edge-ai"
+  ],
+  "relatedTechnologies": ["Intel Core Ultra Series 3", "Solid-State Active Cooling", "AirJet", "Robotics Compute"],
+  "corrections": [],
+  "sourceName": "AAEON UP official product update",
+  "sourceUrl": "https://up-board.org/cool-running-reimagined-the-up-xtreme-ptl-edge-air/",
+  "additionalSources": [
+    {"name": "AAEON UP Product Updates index", "url": "https://up-board.org/category/product-update/"}
+  ],
+  "sourceNote": "FlyPig AI reviewed AAEON UP's September 24, 2026 first-party update. Size, weight and noise statements are attributed to AAEON and are not treated as independent benchmarks.",
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-up-xtreme-ptl-edge-air.png",
+    "socialSrc": "/images/signals/og/aaeon-up-xtreme-ptl-edge-air.png",
+    "alt": "FlyPig AI infographic showing the AirJet-based thermal approach used by AAEON UP Xtreme PTL Edge Air for compact edge computing.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://up-board.org/cool-running-reimagined-the-up-xtreme-ptl-edge-air/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-up-xtreme-ptl-edge-air.svg"
+    }
+  }
+}
