@@ -6,6 +6,7 @@ import { breadcrumbJsonLd, makeMetadata, siteUrl } from "../../seo";
 
 const path = "/Solutions/meta-rosetta-metalens";
 const title = "MetaRosetta metalens technology: three optical routes to evaluate";
+const seoTitle = "MetaRosetta Metalens: Visible, NIR & Thermal";
 const description = "An independent look at MetaRosetta's visible, near-infrared and thermal metasurface work, with practical qualification questions for Canadian product teams.";
 const image = "/images/solutions/meta-rosetta-metalens-codex-cover.webp";
 const publishedAt = "2026-10-02";
@@ -20,7 +21,8 @@ const sources = [
 ];
 
 export const metadata: Metadata = makeMetadata({
-  title,
+  title: seoTitle,
+  socialTitle: title,
   description,
   path,
   enPath: path,

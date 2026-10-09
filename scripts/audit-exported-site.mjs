@@ -45,7 +45,9 @@ for (const filePath of htmlFiles) {
   if (!title) errors.push(`${route}: missing title`);
   const isSignalArticle = route.startsWith("/signals/");
   const isInsightArticle = route.startsWith("/insights/");
+  const isSolutionArticle = route.startsWith("/Solutions/");
   if (isSignalArticle && title && title.length > 65) errors.push(`${route}: title exceeds 65 characters (${title.length})`);
+  if (isSolutionArticle && title && title.length > 65) errors.push(`${route}: title exceeds 65 characters (${title.length})`);
   if ((html.match(/<h1(?:\s|>)/g) ?? []).length !== 1) errors.push(`${route}: expected exactly one h1`);
   const canonicalTag = html.match(/<link[^>]+rel=["']canonical["'][^>]*>/i)?.[0];
   if (!canonicalTag || !attribute(canonicalTag, "href")) errors.push(`${route}: missing canonical`);
@@ -82,7 +84,7 @@ for (const filePath of htmlFiles) {
       }
     }
   }
-  if (isInsightArticle) {
+  if (isInsightArticle || isSolutionArticle) {
     for (const property of ["article:published_time", "article:modified_time"]) {
       const tag = html.match(new RegExp(`<meta[^>]+property=["']${property}["'][^>]*>`, "i"))?.[0];
       if (!tag || !attribute(tag, "content")) errors.push(`${route}: missing ${property}`);

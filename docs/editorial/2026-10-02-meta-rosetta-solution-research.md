@@ -24,11 +24,11 @@ Do not imply that the visible-light colour splitter is a complete camera lens, o
 - [Customization page](https://www.meta-rosetta.com/product-7.html): computational design/IP and customer manufacturing model.
 - [2026 metalens engineering review](https://www.nature.com/articles/s44287-026-00276-9): field-of-view, bandwidth, efficiency, aperture and scaling trade-offs. This contextual research is not a test of MetaRosetta products.
 
-The company pages were checked on 2026-10-02. The generated article illustration is a conceptual FlyPig AI asset, not company imagery or a measured optical diagram. Original generated PNG: `/Users/mkhsu/.codex/generated_images/01a10043-7111-7532-ad4c-c09830e0ea55/exec-1574f352-ccba-4704-910a-007092b07760.png`; the published WebP was derived from it by local resizing.
+The company pages were checked on 2026-10-02. The generated article illustration is a conceptual FlyPig AI asset, not company imagery or a measured optical diagram. Its original generated PNG is retained at `assets/solutions/meta-rosetta-metalens-generated-original.png` (SHA-256 `0c9e94b2631f9130eca1b92276d34962e53e707e9974fa5e43ae5c96642d0593`); the published 1200×630 WebP was derived from it by local resizing. The illustration contains no third-party logo or manufacturer artwork.
 
 ## Initial public release readback
 
-At 2026-10-02 22:49 PDT, Cloudflare Pages showed a production deployment from `main` commit `186f45d`. The article, `/Solutions` index, cover asset, sitemap entry and Pages domain article all returned HTTP 200. The live article included the official source links and disclosure. A 390 px browser readback found no horizontal overflow or broken images. The final caption clarification above requires a fresh readback after its deployment.
+At 2026-10-02 22:49 PDT, Cloudflare Pages showed a production deployment from `main` commit `186f45d`. The article, `/Solutions` index, cover asset, sitemap entry and Pages domain article all returned HTTP 200. The live article included the official source links and disclosure. A 390 px browser readback found no horizontal overflow or broken images. The final caption clarification was confirmed in the live article during the 2026-10-09 weekly governance readback; see `docs/operations/2026-10-09-weekly-content-governance.md` for that run's release evidence.
 
 ## Open validation questions
 

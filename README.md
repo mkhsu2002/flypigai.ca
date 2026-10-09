@@ -4,7 +4,7 @@ This repository is the official website and product surface for FlyPig AI Canada
 
 ### Taiwan Solutions research inventory (2026-10-02)
 
-`/Solutions` now links to the first company-specific solution analysis, `/Solutions/meta-rosetta-metalens`. It assesses MetaRosetta's public visible-light, near-infrared and long-wave infrared metasurface routes for Canadian product teams. This is independent research; it does not establish supplier authorization, product availability or a commercial relationship. The article uses a FlyPig AI-owned concept illustration at `public/images/solutions/meta-rosetta-metalens-codex-cover.webp`, cites company primary pages and a technical review, and is included in the sitemap. Research scope and follow-up editorial candidates are recorded in `docs/editorial/2026-10-02-meta-rosetta-solution-research.md`.
+`/Solutions` now links to the first company-specific solution analysis, `/Solutions/meta-rosetta-metalens`. It assesses MetaRosetta's public visible-light, near-infrared and long-wave infrared metasurface routes for Canadian product teams. This is independent research; it does not establish supplier authorization, product availability or a commercial relationship. The article uses a FlyPig AI-owned concept illustration at `public/images/solutions/meta-rosetta-metalens-codex-cover.webp`, cites company primary pages and a technical review, and is included in the sitemap. Research scope and follow-up editorial candidates are recorded in `docs/editorial/2026-10-02-meta-rosetta-solution-research.md`; the 2026-10-09 release check is recorded in `docs/operations/2026-10-09-weekly-content-governance.md`.
 
 ### Outreach Engine subsite integration (2026-09-19)
 
