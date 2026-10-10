@@ -1,10 +1,22 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-09-19",
+  "updatedAt": "2026-10-03",
   "principles": {
     "immutableOrigin": "Never rewrite the original wording or first-published date of a prediction to fit later evidence.",
-    "evidenceStates": ["supports", "weakens", "neutral", "invalidates"],
-    "predictionStates": ["active", "strengthening", "weakening", "confirmed", "invalidated", "retired"],
+    "evidenceStates": [
+      "supports",
+      "weakens",
+      "neutral",
+      "invalidates"
+    ],
+    "predictionStates": [
+      "active",
+      "strengthening",
+      "weakening",
+      "confirmed",
+      "invalidated",
+      "retired"
+    ],
     "publicationRule": "A prediction is analysis, not fact. Public articles must label confirmed evidence, inference and FlyPig prediction separately."
   },
   "predictions": [
@@ -14,15 +26,28 @@
       "title": "An Android-like common layer will emerge for Physical AI",
       "originalPrediction": "As robot bodies, compute and low-level control become more modular, the industry will converge around one or more common software abstraction layers that let higher-level agents and applications operate across heterogeneous robot hardware.",
       "status": "strengthening",
-      "confidence": 0.71,
+      "confidence": 0.79,
       "falsifiers": [
         "Major robot vendors remain vertically closed with no meaningful cross-platform skill or runtime portability through 2030.",
         "Robot applications continue to require predominantly body-specific software stacks with little reusable abstraction above ROS-class middleware."
       ],
       "latestAssessment": {
-        "date": "2026-09-19",
-        "evidenceIds": ["PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010", "PAI-EV-2026-0012", "PAI-EV-2026-0013", "PAI-EV-2026-0015"],
-        "summary": "Confidence rises from 0.68 to 0.71. InDro is productizing a reusable control-and-compute layer across robot form factors, while Reward AI's OM-1 explicitly places a common policy interface above body-specific dynamics. These reinforce earlier Arm, Qualcomm-NEURA, Skild and AmbiOS signals that abstraction is becoming a strategic control point. The main falsifier remains live: most of these layers are proprietary or vendor-led, and no accepted cross-vendor runtime or application contract has yet emerged."
+        "date": "2026-10-03",
+        "evidenceIds": [
+          "PAI-EV-2026-0006",
+          "PAI-EV-2026-0007",
+          "PAI-EV-2026-0008",
+          "PAI-EV-2026-0009",
+          "PAI-EV-2026-0010",
+          "PAI-EV-2026-0012",
+          "PAI-EV-2026-0013",
+          "PAI-EV-2026-0015",
+          "PAI-EV-2026-0021",
+          "PAI-EV-2026-0022",
+          "PAI-EV-2026-0024",
+          "PAI-EV-2026-0026"
+        ],
+        "summary": "Confidence rises from 0.77 to 0.79. Qualcomm's agreement to acquire PickNik is important because the target is the longtime steward of MoveIt, a widely adopted ROS-based manipulation framework, and Qualcomm explicitly says MoveIt should remain open-source, community-driven and supported across third-party hardware. This makes an open, hardware-agnostic robotics abstraction layer a strategic platform asset rather than only a developer convenience. The main falsifier remains live: the transaction has not yet closed, Qualcomm plans first-class optimization around its own Dragonwing platforms, and the industry still lacks an accepted cross-vendor application contract."
       }
     },
     {
@@ -31,15 +56,25 @@
       "title": "Reference robots will lower the cost of entering Physical AI",
       "originalPrediction": "Reference robot designs and increasingly productized robot bodies will reduce the need for application companies to design complete electromechanical systems from scratch, creating an ODM-like layer for Physical AI.",
       "status": "strengthening",
-      "confidence": 0.8,
+      "confidence": 0.83,
       "falsifiers": [
         "Reference designs fail to move beyond research demonstrations into repeatable developer or commercial platforms.",
         "Mechanical, safety and task heterogeneity prevent meaningful reuse of robot bodies and subsystems."
       ],
       "latestAssessment": {
-        "date": "2026-09-19",
-        "evidenceIds": ["PAI-EV-2026-0001", "PAI-EV-2026-0007", "PAI-EV-2026-0009", "PAI-EV-2026-0011", "PAI-EV-2026-0017"],
-        "summary": "Confidence rises from 0.77 to 0.80. Kinova KIMA is direct evidence of a productized OEM motion platform designed to let medical-device builders integrate above a reusable robotic subsystem, and Agility Digit 5 adds evidence that complete humanoid bodies are moving toward repeatable commercial platforms. The thesis is not confirmed because regulatory, safety and task-specific integration can still force substantial body-level engineering, and vendor platforms remain vertically differentiated."
+        "date": "2026-10-03",
+        "evidenceIds": [
+          "PAI-EV-2026-0001",
+          "PAI-EV-2026-0007",
+          "PAI-EV-2026-0009",
+          "PAI-EV-2026-0011",
+          "PAI-EV-2026-0017",
+          "PAI-EV-2026-0019",
+          "PAI-EV-2026-0020",
+          "PAI-EV-2026-0025",
+          "PAI-EV-2026-0028"
+        ],
+        "summary": "Confidence slips from 0.84 to 0.83 while status remains strengthening. Figure's decision to decommission its F.02 fleet as F.03 grows is meaningful counter-evidence to a simple ODM-style commoditization story: the company cites custom actuators, proprietary hardware and the engineering cost of disassembly while already preparing F.04. The broader evidence base still supports increasingly productized robot bodies and subsystems, but rapid hardware-generation turnover, safety requirements and proprietary electromechanics can limit the durability and reuse economics of any one reference body."
       }
     },
     {
@@ -48,15 +83,38 @@
       "title": "Long-term differentiation will migrate above increasingly modular hardware",
       "originalPrediction": "Physical AI hardware can create large businesses, but as major hardware classes mature and become more comparable, a growing share of durable differentiation will move toward runtime platforms, reusable skills, applications, workflow integration and operating data.",
       "status": "strengthening",
-      "confidence": 0.72,
+      "confidence": 0.81,
       "falsifiers": [
         "Hardware vendors retain most industry margin and bargaining power despite broad component and platform standardization.",
         "Reusable skills and application software fail to achieve meaningful portability or recurring economics across robot platforms."
       ],
       "latestAssessment": {
-        "date": "2026-09-19",
-        "evidenceIds": ["PAI-EV-2026-0004", "PAI-EV-2026-0005", "PAI-EV-2026-0006", "PAI-EV-2026-0007", "PAI-EV-2026-0008", "PAI-EV-2026-0010", "PAI-EV-2026-0011", "PAI-EV-2026-0012", "PAI-EV-2026-0013", "PAI-EV-2026-0014", "PAI-EV-2026-0015", "PAI-EV-2026-0016"],
-        "summary": "Confidence rises from 0.68 to 0.72. Universal Robots now explicitly centers Gen 7 on PolyScope X, open APIs, an SDK and a validated third-party ecosystem; InDro and Sanctuary show intelligence and deployment layers being reused on existing hardware; Reward AI and Figure emphasize model, data and control as the differentiating layer. This is a stronger structural pattern than a single vendor announcement, but evidence on actual industry margin capture and bargaining power remains insufficient."
+        "date": "2026-10-03",
+        "evidenceIds": [
+          "PAI-EV-2026-0004",
+          "PAI-EV-2026-0005",
+          "PAI-EV-2026-0006",
+          "PAI-EV-2026-0007",
+          "PAI-EV-2026-0008",
+          "PAI-EV-2026-0010",
+          "PAI-EV-2026-0011",
+          "PAI-EV-2026-0012",
+          "PAI-EV-2026-0013",
+          "PAI-EV-2026-0014",
+          "PAI-EV-2026-0015",
+          "PAI-EV-2026-0016",
+          "PAI-EV-2026-0018",
+          "PAI-EV-2026-0019",
+          "PAI-EV-2026-0021",
+          "PAI-EV-2026-0022",
+          "PAI-EV-2026-0023",
+          "PAI-EV-2026-0024",
+          "PAI-EV-2026-0025",
+          "PAI-EV-2026-0026",
+          "PAI-EV-2026-0027",
+          "PAI-EV-2026-0029"
+        ],
+        "summary": "Confidence rises from 0.77 to 0.81. Qualcomm is moving to acquire the steward of a widely used open manipulation framework, AMD is moving to acquire World Labs for spatial-intelligence and foundation-model expertise, and Agility is extending humanoid safety into an off-robot integration layer with FORT. Together these events show platform companies competing for middleware, models, world simulation, safety and deployment infrastructure above increasingly modular compute and robot hardware. Counter-evidence remains material: these moves may reinforce vertically integrated vendor power rather than create independent software economics, so FlyPig is not treating them as proof that hardware margins or bargaining power will decline."
       }
     },
     {
@@ -65,15 +123,27 @@
       "title": "Robot skills will become a reusable application primitive",
       "originalPrediction": "Bounded capabilities such as navigate, inspect, grasp, dock and deliver will increasingly be exposed as testable, permissioned skills that higher-level agents can compose into workflows without commanding joints directly.",
       "status": "weakening",
-      "confidence": 0.56,
+      "confidence": 0.53,
       "falsifiers": [
         "End-to-end models make explicit reusable skill interfaces largely unnecessary.",
         "Safety and embodiment differences prevent skills from becoming meaningfully reusable across platforms."
       ],
       "latestAssessment": {
-        "date": "2026-09-19",
-        "evidenceIds": ["PAI-EV-2026-0008", "PAI-EV-2026-0009", "PAI-EV-2026-0010", "PAI-EV-2026-0014", "PAI-EV-2026-0015", "PAI-EV-2026-0016"],
-        "summary": "Status moves from active to weakening and confidence falls from 0.60 to 0.56. Explicit skills remain commercially visible in AmbiOS, Qualcomm-NEURA and Universal Robots' PolyScope X Smart Skills and third-party application ecosystem. But the counter-thesis is no longer a single Skild result: Reward AI's OM-1 runs one policy across different robot bodies, while Figure Helix 2.5 reports zero-shot whole-body behavior across 30 unseen homes. The current evidence favors a hybrid architecture in which stable external capability contracts may persist even as increasingly general models generate much of the behavior internally."
+        "date": "2026-10-03",
+        "evidenceIds": [
+          "PAI-EV-2026-0008",
+          "PAI-EV-2026-0009",
+          "PAI-EV-2026-0010",
+          "PAI-EV-2026-0014",
+          "PAI-EV-2026-0015",
+          "PAI-EV-2026-0016",
+          "PAI-EV-2026-0021",
+          "PAI-EV-2026-0022",
+          "PAI-EV-2026-0023",
+          "PAI-EV-2026-0024",
+          "PAI-EV-2026-0026"
+        ],
+        "summary": "Confidence remains 0.53 and status remains weakening. Qualcomm's planned acquisition of PickNik is a useful counterweight because MoveIt exposes reusable planning, manipulation, perception and kinematics capabilities across heterogeneous hardware, reinforcing the value of stable composable interfaces. But MoveIt is middleware rather than evidence of a portable marketplace of packaged robot behaviors, so the event is scored neutral for FP-PAI-004. The working thesis remains hybrid: stable external capability contracts can persist even as increasingly general policies generate more behavior internally."
       }
     }
   ]
