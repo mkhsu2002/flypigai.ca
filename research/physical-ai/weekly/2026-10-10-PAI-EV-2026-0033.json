@@ -1,0 +1,19 @@
+{
+  "id": "PAI-EV-2026-0033",
+  "date": "2026-10-09",
+  "trackerAddedAt": "2026-10-10",
+  "geography": "global",
+  "category": "specialized-edge-silicon-roadmap",
+  "subject": "GlobalFoundries FDX Fusion FD-SOI roadmap for Physical AI edge chips",
+  "sourceType": "official",
+  "sourceUrl": "https://gf.com/news-and-events/news/gf-unveils-roadmap-to-deliver-worlds-most-advanced-platform-for-physical-ai/",
+  "summary": "GlobalFoundries announced an FD-SOI manufacturing roadmap targeting energy-efficient sensing, real-time control, connectivity and edge inference for Physical AI, with production targeted for 2028 in Dresden. A planned process and early evaluation are not shipped silicon, independently benchmarked hardware or confirmed robotics design wins. Counter-evidence to rapid hardware commoditization is currently weak.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "weakens",
+      "strength": "weak"
+    }
+  ],
+  "publicationStatus": "tracker-only"
+}
