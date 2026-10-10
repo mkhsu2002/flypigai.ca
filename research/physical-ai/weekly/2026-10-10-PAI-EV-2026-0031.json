@@ -1,0 +1,29 @@
+{
+  "id": "PAI-EV-2026-0031",
+  "date": "2026-10-08",
+  "trackerAddedAt": "2026-10-10",
+  "geography": "global",
+  "category": "world-model-cross-embodiment",
+  "subject": "Odyssey-3 world model adapted to robots, humanoids and vehicles",
+  "sourceType": "official",
+  "sourceUrl": "https://odyssey.systems/meet-odyssey-3",
+  "summary": "Odyssey announced its interactive foundation world model and demonstrated robot arms, humanoids and driving. Each domain still needs training data and a separate action decoder or policy. First-party demonstrations do not prove independently validated cross-robot portability, deployment reliability or safe control.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-001",
+      "effect": "supports",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "supports",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-004",
+      "effect": "weakens",
+      "strength": "weak"
+    }
+  ],
+  "publicationStatus": "editorial-review-pending"
+}
