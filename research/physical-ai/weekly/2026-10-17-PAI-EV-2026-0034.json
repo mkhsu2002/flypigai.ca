@@ -1,0 +1,24 @@
+{
+  "id": "PAI-EV-2026-0034",
+  "date": "2026-10-06",
+  "trackerAddedAt": "2026-10-17",
+  "geography": "global",
+  "category": "egocentric-robot-training-data-pipeline",
+  "subject": "TwelveLabs Pegasus 1.6 structures first-person video for Physical AI data curation",
+  "sourceType": "official",
+  "sourceUrl": "https://www.twelvelabs.io/blog/what%E2%80%99s-new-pegasus-1.6",
+  "summary": "TwelveLabs released Pegasus 1.6 with egocentric-video understanding, timestamped task segmentation, labels and data-quality filters. It enables upstream robotics data curation; this does not demonstrate executable robot skills, independent robot performance, application portability or recurring robotics revenue.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "supports",
+      "strength": "weak"
+    },
+    {
+      "predictionId": "FP-PAI-004",
+      "effect": "neutral",
+      "strength": "medium"
+    }
+  ],
+  "publicationStatus": "tracker-only"
+}

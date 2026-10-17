@@ -1,0 +1,29 @@
+{
+  "id": "PAI-EV-2026-0030",
+  "date": "2026-10-07",
+  "trackerAddedAt": "2026-10-10",
+  "geography": "global",
+  "category": "physical-ai-cloud-edge-lifecycle",
+  "subject": "AWS releases a modular Physical AI Toolchain spanning simulation, policy training and edge deployment",
+  "sourceType": "official",
+  "sourceUrl": "https://aws.amazon.com/blogs/physical-ai/introducing-aws-physical-ai-toolchain/",
+  "summary": "AWS published open reference architectures and deployment automation joining NVIDIA Isaac Sim, GR00T, Cosmos and OSMO with AWS services from data intake through edge deployment. AWS calls the toolchain robot-agnostic and built around portable formats, but it remains AWS-hosted and NVIDIA-native. The announcement does not prove cross-cloud portability, open robot app runtime compatibility or production fleet adoption.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-001",
+      "effect": "supports",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "supports",
+      "strength": "strong"
+    },
+    {
+      "predictionId": "FP-PAI-004",
+      "effect": "neutral",
+      "strength": "medium"
+    }
+  ],
+  "publicationStatus": "editorial-review-pending"
+}

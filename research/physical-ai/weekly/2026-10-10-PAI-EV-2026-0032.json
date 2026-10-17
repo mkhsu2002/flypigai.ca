@@ -1,0 +1,24 @@
+{
+  "id": "PAI-EV-2026-0032",
+  "date": "2026-10-08",
+  "trackerAddedAt": "2026-10-10",
+  "geography": "global",
+  "category": "foundation-model-commercialization",
+  "subject": "Helm.ai reports 70 million USD in signed automotive and industrial AI contracts",
+  "sourceType": "official",
+  "sourceUrl": "https://helm.ai/post/helm-ai-signs-70-million-in-commercial-contracts",
+  "summary": "Helm.ai reported $70 million signed commercial contracts over 12 months spanning automotive, Tier 1 suppliers and industrial automation. It describes one foundation-model lineage for vehicles and robotics development. This is a company-reported amount across sectors, not independently audited robotics revenue, ARR, margins or proof of cross-vendor reuse.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-001",
+      "effect": "neutral",
+      "strength": "weak"
+    },
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "supports",
+      "strength": "medium"
+    }
+  ],
+  "publicationStatus": "editorial-review-pending"
+}
