@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-17",
   "scope": {
     "existingCollectors": [
       "Taiwan Industry Signals",
@@ -738,6 +738,155 @@
         }
       ],
       "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0030",
+      "date": "2026-10-07",
+      "trackerAddedAt": "2026-10-10",
+      "geography": "global",
+      "category": "physical-ai-cloud-edge-lifecycle",
+      "subject": "AWS releases a modular Physical AI Toolchain spanning simulation, policy training and edge deployment",
+      "sourceType": "official",
+      "sourceUrl": "https://aws.amazon.com/blogs/physical-ai/introducing-aws-physical-ai-toolchain/",
+      "summary": "AWS published open reference architectures and deployment automation joining NVIDIA Isaac Sim, GR00T, Cosmos and OSMO with AWS services from data intake through edge deployment. AWS calls the toolchain robot-agnostic and built around portable formats, but it remains AWS-hosted and NVIDIA-native. The announcement does not prove cross-cloud portability, open robot app runtime compatibility or production fleet adoption.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "strong"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "neutral",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "editorial-review-pending"
+    },
+    {
+      "id": "PAI-EV-2026-0031",
+      "date": "2026-10-08",
+      "trackerAddedAt": "2026-10-10",
+      "geography": "global",
+      "category": "world-model-cross-embodiment",
+      "subject": "Odyssey-3 world model adapted to robots, humanoids and vehicles",
+      "sourceType": "official",
+      "sourceUrl": "https://odyssey.systems/meet-odyssey-3",
+      "summary": "Odyssey announced its interactive foundation world model and demonstrated robot arms, humanoids and driving. Each domain still needs training data and a separate action decoder or policy. First-party demonstrations do not prove independently validated cross-robot portability, deployment reliability or safe control.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "weakens",
+          "strength": "weak"
+        }
+      ],
+      "publicationStatus": "editorial-review-pending"
+    },
+    {
+      "id": "PAI-EV-2026-0032",
+      "date": "2026-10-08",
+      "trackerAddedAt": "2026-10-10",
+      "geography": "global",
+      "category": "foundation-model-commercialization",
+      "subject": "Helm.ai reports 70 million USD in signed automotive and industrial AI contracts",
+      "sourceType": "official",
+      "sourceUrl": "https://helm.ai/post/helm-ai-signs-70-million-in-commercial-contracts",
+      "summary": "Helm.ai reported $70 million signed commercial contracts over 12 months spanning automotive, Tier 1 suppliers and industrial automation. It describes one foundation-model lineage for vehicles and robotics development. This is a company-reported amount across sectors, not independently audited robotics revenue, ARR, margins or proof of cross-vendor reuse.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "neutral",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "editorial-review-pending"
+    },
+    {
+      "id": "PAI-EV-2026-0033",
+      "date": "2026-10-09",
+      "trackerAddedAt": "2026-10-10",
+      "geography": "global",
+      "category": "specialized-edge-silicon-roadmap",
+      "subject": "GlobalFoundries FDX Fusion FD-SOI roadmap for Physical AI edge chips",
+      "sourceType": "official",
+      "sourceUrl": "https://gf.com/news-and-events/news/gf-unveils-roadmap-to-deliver-worlds-most-advanced-platform-for-physical-ai/",
+      "summary": "GlobalFoundries announced an FD-SOI manufacturing roadmap targeting energy-efficient sensing, real-time control, connectivity and edge inference for Physical AI, with production targeted for 2028 in Dresden. A planned process and early evaluation are not shipped silicon, independently benchmarked hardware or confirmed robotics design wins. Counter-evidence to rapid hardware commoditization is currently weak.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "weakens",
+          "strength": "weak"
+        }
+      ],
+      "publicationStatus": "tracker-only"
+    },
+    {
+      "id": "PAI-EV-2026-0034",
+      "date": "2026-10-06",
+      "trackerAddedAt": "2026-10-17",
+      "geography": "global",
+      "category": "egocentric-robot-training-data-pipeline",
+      "subject": "TwelveLabs Pegasus 1.6 structures first-person video for Physical AI data curation",
+      "sourceType": "official",
+      "sourceUrl": "https://www.twelvelabs.io/blog/what%E2%80%99s-new-pegasus-1.6",
+      "summary": "TwelveLabs released Pegasus 1.6 with egocentric-video understanding, timestamped task segmentation, labels and data-quality filters. It enables upstream robotics data curation; this does not demonstrate executable robot skills, independent robot performance, application portability or recurring robotics revenue.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-004",
+          "effect": "neutral",
+          "strength": "medium"
+        }
+      ],
+      "publicationStatus": "tracker-only"
+    },
+    {
+      "id": "PAI-EV-2026-0035",
+      "date": "2026-10-14",
+      "trackerAddedAt": "2026-10-17",
+      "geography": "global",
+      "category": "physical-ai-world-data-infrastructure",
+      "subject": "Hesai launches Kosmo spatial-data engine for robot training",
+      "sourceType": "official",
+      "sourceUrl": "https://www.hesaitech.com/9974-2/",
+      "summary": "On 14 October, Hesai launched the previously previewed Kosmo One spatial camera and Kosmo World reconstruction cloud for robotics/world-model data. Partners named Galbot and Dexmal. The same release claimed more than 10,000 cumulative actuation modules delivered by end-Q2 2026. No independent sim-to-real validation, model portability or recurring platform revenue was disclosed. Hardware differentiation remains a live counterargument.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "neutral",
+          "strength": "weak"
+        }
+      ],
+      "publicationStatus": "tracker-only"
     }
   ]
 }
