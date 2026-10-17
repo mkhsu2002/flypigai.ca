@@ -7,7 +7,7 @@
   "subject": "TwelveLabs Pegasus 1.6 structures first-person video for Physical AI data curation",
   "sourceType": "official",
   "sourceUrl": "https://www.twelvelabs.io/blog/what%E2%80%99s-new-pegasus-1.6",
-  "summary": "TwelveLabs released Pegasus 1.6 with egocentric-video understanding, timestamped task segmentation, labels and data-quality filters. It enables upstream robotics data curation; this does not demonstrate executable robot skills, independent robot performance, application portability or recurring robotics revenue.",
+  "summary": "TwelveLabs released Pegasus 1.6 on October 6 with first-person video understanding, better entity recognition, native image support, and structured tags and timestamps for robotic onboard-camera footage. This provides upstream video understanding for data curation, not independently tested robotics training outcomes or executable robot skills.",
   "predictionLinks": [
     {
       "predictionId": "FP-PAI-003",
