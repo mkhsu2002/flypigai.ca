@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-10-03",
+  "updatedAt": "2026-10-17",
   "principles": {
     "immutableOrigin": "Never rewrite the original wording or first-published date of a prediction to fit later evidence.",
     "evidenceStates": [
@@ -32,7 +32,7 @@
         "Robot applications continue to require predominantly body-specific software stacks with little reusable abstraction above ROS-class middleware."
       ],
       "latestAssessment": {
-        "date": "2026-10-03",
+        "date": "2026-10-17",
         "evidenceIds": [
           "PAI-EV-2026-0006",
           "PAI-EV-2026-0007",
@@ -45,9 +45,12 @@
           "PAI-EV-2026-0021",
           "PAI-EV-2026-0022",
           "PAI-EV-2026-0024",
-          "PAI-EV-2026-0026"
+          "PAI-EV-2026-0026",
+          "PAI-EV-2026-0030",
+          "PAI-EV-2026-0031",
+          "PAI-EV-2026-0035"
         ],
-        "summary": "Confidence rises from 0.77 to 0.79. Qualcomm's agreement to acquire PickNik is important because the target is the longtime steward of MoveIt, a widely adopted ROS-based manipulation framework, and Qualcomm explicitly says MoveIt should remain open-source, community-driven and supported across third-party hardware. This makes an open, hardware-agnostic robotics abstraction layer a strategic platform asset rather than only a developer convenience. The main falsifier remains live: the transaction has not yet closed, Qualcomm plans first-class optimization around its own Dragonwing platforms, and the industry still lacks an accepted cross-vendor application contract."
+        "summary": "Confidence stays 0.79. AWS released an open-source yet AWS/NVIDIA-centric physical-AI training and deployment toolchain; Odyssey reports a world-model backbone adapted with embodiment-specific action decoders. These strengthen interest in reusable development layers, but neither proves cross-vendor runtime or application contract portability. Hesai's Kosmo provides world-data assets rather than a common robot control API. Falsifiers remain unresolved: most end-to-end paths still need proprietary infrastructure or robot-specific adaptation."
       }
     },
     {
@@ -62,7 +65,7 @@
         "Mechanical, safety and task heterogeneity prevent meaningful reuse of robot bodies and subsystems."
       ],
       "latestAssessment": {
-        "date": "2026-10-03",
+        "date": "2026-10-17",
         "evidenceIds": [
           "PAI-EV-2026-0001",
           "PAI-EV-2026-0007",
@@ -72,9 +75,10 @@
           "PAI-EV-2026-0019",
           "PAI-EV-2026-0020",
           "PAI-EV-2026-0025",
-          "PAI-EV-2026-0028"
+          "PAI-EV-2026-0028",
+          "PAI-EV-2026-0035"
         ],
-        "summary": "Confidence slips from 0.84 to 0.83 while status remains strengthening. Figure's decision to decommission its F.02 fleet as F.03 grows is meaningful counter-evidence to a simple ODM-style commoditization story: the company cites custom actuators, proprietary hardware and the engineering cost of disassembly while already preparing F.04. The broader evidence base still supports increasingly productized robot bodies and subsystems, but rapid hardware-generation turnover, safety requirements and proprietary electromechanics can limit the durability and reuse economics of any one reference body."
+        "summary": "Confidence stays 0.83. No new direct evidence that independent application builders can reuse stable reference robot bodies at economic scale. Hesai reports 10,000-plus actuator module cumulative deliveries, but modules are not complete reference bodies or verified interoperable mechanical subsystems. Figure F.02 retirement remains the relevant platform-lifecycle counter-signal; safety and heterogeneity remain barriers."
       }
     },
     {
@@ -83,13 +87,13 @@
       "title": "Long-term differentiation will migrate above increasingly modular hardware",
       "originalPrediction": "Physical AI hardware can create large businesses, but as major hardware classes mature and become more comparable, a growing share of durable differentiation will move toward runtime platforms, reusable skills, applications, workflow integration and operating data.",
       "status": "strengthening",
-      "confidence": 0.81,
+      "confidence": 0.82,
       "falsifiers": [
         "Hardware vendors retain most industry margin and bargaining power despite broad component and platform standardization.",
         "Reusable skills and application software fail to achieve meaningful portability or recurring economics across robot platforms."
       ],
       "latestAssessment": {
-        "date": "2026-10-03",
+        "date": "2026-10-17",
         "evidenceIds": [
           "PAI-EV-2026-0004",
           "PAI-EV-2026-0005",
@@ -112,9 +116,15 @@
           "PAI-EV-2026-0025",
           "PAI-EV-2026-0026",
           "PAI-EV-2026-0027",
-          "PAI-EV-2026-0029"
+          "PAI-EV-2026-0029",
+          "PAI-EV-2026-0030",
+          "PAI-EV-2026-0031",
+          "PAI-EV-2026-0032",
+          "PAI-EV-2026-0033",
+          "PAI-EV-2026-0034",
+          "PAI-EV-2026-0035"
         ],
-        "summary": "Confidence rises from 0.77 to 0.81. Qualcomm is moving to acquire the steward of a widely used open manipulation framework, AMD is moving to acquire World Labs for spatial-intelligence and foundation-model expertise, and Agility is extending humanoid safety into an off-robot integration layer with FORT. Together these events show platform companies competing for middleware, models, world simulation, safety and deployment infrastructure above increasingly modular compute and robot hardware. Counter-evidence remains material: these moves may reinforce vertically integrated vendor power rather than create independent software economics, so FlyPig is not treating them as proof that hardware margins or bargaining power will decline."
+        "summary": "Confidence rises cautiously from 0.81 to 0.82. AWS launches lifecycle tooling above hardware, Odyssey launches a world-model foundation adaptable with separate policies, TwelveLabs ships egocentric-video data-curation APIs, and Hesai packages spatial capture with a 3D world-data cloud. Together they show distinct vendors productizing data, simulation and deployment control layers. Helm.ai reports $70 million in signed contracts across several sectors, not audited robotics revenue or ARR. GlobalFoundries' 2028 FDX Fusion roadmap and Hesai's actuator deliveries are counter-evidence to premature hardware commoditization. No confirmed software margin shift, cross-cloud portability or recurring control-point economics yet."
       }
     },
     {
@@ -129,7 +139,7 @@
         "Safety and embodiment differences prevent skills from becoming meaningfully reusable across platforms."
       ],
       "latestAssessment": {
-        "date": "2026-10-03",
+        "date": "2026-10-17",
         "evidenceIds": [
           "PAI-EV-2026-0008",
           "PAI-EV-2026-0009",
@@ -141,9 +151,12 @@
           "PAI-EV-2026-0022",
           "PAI-EV-2026-0023",
           "PAI-EV-2026-0024",
-          "PAI-EV-2026-0026"
+          "PAI-EV-2026-0026",
+          "PAI-EV-2026-0030",
+          "PAI-EV-2026-0031",
+          "PAI-EV-2026-0034"
         ],
-        "summary": "Confidence remains 0.53 and status remains weakening. Qualcomm's planned acquisition of PickNik is a useful counterweight because MoveIt exposes reusable planning, manipulation, perception and kinematics capabilities across heterogeneous hardware, reinforcing the value of stable composable interfaces. But MoveIt is middleware rather than evidence of a portable marketplace of packaged robot behaviors, so the event is scored neutral for FP-PAI-004. The working thesis remains hybrid: stable external capability contracts can persist even as increasingly general policies generate more behavior internally."
+        "summary": "Confidence stays 0.53, status weakening. Odyssey demonstrates policy adaptation on top of a shared world backbone but still needs embodiment-specific action decoders and data. AWS tooling does not establish portable callable robot skills, and TwelveLabs timestamps and labels training footage rather than running robotic capabilities. Generalist policy counter-evidence persists, while explicit permissioned capability interfaces remain practically useful. No evidence yet resolves portability, certification and safety falsifiers."
       }
     }
   ]

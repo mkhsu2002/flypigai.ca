@@ -7,7 +7,7 @@ export type SeriesEvidenceReview = {
   sources: Array<{ name: string; url: string }>;
 };
 
-export const seriesUpdatedDate = "2026-10-03";
+export const seriesUpdatedDate = "2026-10-17";
 
 const armPhysicalAi = {
   name: "Arm Total Design for Physical AI and Robotics Capability Framework",
@@ -120,6 +120,37 @@ const agilityFortSafety = {
   url: "https://www.agilityrobotics.com/content/agility-and-fort-robotics-announce-strategic-partnership-to-advance-humanoid-robot-safety",
 };
 
+
+const awsPhysicalAi = {
+  name: "AWS: Physical AI Toolchain on AWS, 7 October 2026",
+  url: "https://www.aboutamazon.com/news/aws/aws-physical-ai-toolchain-build-intelligent-machines",
+};
+
+const odyssey3 = {
+  name: "Odyssey: Odyssey-3 world model, 8 October 2026",
+  url: "https://odyssey.systems/meet-odyssey-3",
+};
+
+const helmContracts = {
+  name: "Helm.ai: company-reported $70 million commercial contracts, 8 October 2026",
+  url: "https://helm.ai/post/helm-ai-signs-70-million-in-commercial-contracts",
+};
+
+const gfFdxFusion = {
+  name: "GlobalFoundries: FDX Fusion FD-SOI roadmap, 9 October 2026",
+  url: "https://gf.com/news-and-events/news/gf-unveils-roadmap-to-deliver-worlds-most-advanced-platform-for-physical-ai/",
+};
+
+const twelveLabsPegasus16 = {
+  name: "TwelveLabs: Pegasus 1.6, 6 October 2026",
+  url: "https://www.twelvelabs.io/blog/what%E2%80%99s-new-pegasus-1.6",
+};
+
+const hesaiKosmo = {
+  name: "Hesai: Kosmo 3D World Data Engine launch, 14 October 2026",
+  url: "https://www.hesaitech.com/9974-2/",
+};
+
 export const evidenceReviews: Record<string, SeriesEvidenceReview> = {
   "from-reference-phones-to-reference-robots": {
     modifiedDate: "2026-10-03",
@@ -130,12 +161,12 @@ export const evidenceReviews: Record<string, SeriesEvidenceReview> = {
     sources: [indroAxiom, bostonAtlasRmac, agibotChimelong, figureF02Decommission],
   },
   "who-becomes-android-for-physical-ai": {
-    modifiedDate: "2026-10-03",
-    heading: "The common layer is becoming a strategic control point, not just a developer convenience",
-    confirmed: "Qualcomm Technologies announced an agreement to acquire PickNik, longtime steward of the ROS-based MoveIt manipulation framework. Qualcomm says MoveIt 1 and MoveIt 2 are expected to remain open-source, community-driven and supported across third-party hardware, while gaining tighter integration with Dragonwing Robotics and Arduino platforms; the transaction remains subject to closing conditions. This arrives on top of Intrinsic Core's open ROS-compatible hardware abstraction, NVIDIA's open Isaac ROS foundation and Google DeepMind's multi-embodiment model work. None of these pieces is an accepted universal application contract, and vendor-specific optimization remains substantial.",
-    interpretation: "The Android analogy is becoming more about control of the compatibility surface than ownership of a literal robot OS. An open framework can remain cross-platform while still becoming strategically valuable to a compute vendor because it attracts developers, normalizes interfaces and shortens the path from models to planning, manipulation and real-time control. The likely battleground is therefore layered: ROS-class substrate, hardware abstraction, models, planning and capability contracts may stay relatively open while vendors compete to make their compute and tooling the best-supported path through that layer.",
-    prediction: "FlyPig prediction FP-PAI-001 remains strengthening, with confidence rising from 0.77 to 0.79. Qualcomm's move makes middleware itself a strategic acquisition target, which is stronger evidence than another compatibility announcement. The main falsifier remains unresolved: if cross-vendor application portability fails to materialize and open frameworks become thin front doors into incompatible proprietary stacks, the industry may settle into several vendor ecosystems rather than an Android-like common layer.",
-    sources: [qualcommPickNik, intrinsicCore, nvidiaIsaacRos5, geminiRobotics2, armPhysicalAi, qualcommNeura],
+    modifiedDate: "2026-10-17",
+    heading: "A common robot layer may be a lifecycle interface, not a single operating system",
+    confirmed: "AWS announced the Physical AI Toolchain on October 7, providing open-source architecture guidance, code and deployment automation spanning data, NVIDIA-based simulation and model training, and edge deployment. Odyssey introduced Odyssey-3 on October 8 and reported that one learned world-model backbone can support robotic arms, humanoids and driving through separately trained action decoders or policies. Earlier evidence remains material: Qualcomm has agreed to acquire the MoveIt steward PickNik, and Intrinsic Core and Isaac ROS expose reusable robotics middleware. These are distinct, vendor-led developments: AWS does not prove cross-cloud portability, Odyssey still needs body-specific adaptation, and a shared runtime or third-party application contract has not been independently demonstrated.",
+    interpretation: "The leading abstraction contest now stretches across two different levels. At execution time, middleware, sensing, planning, safety and capability interfaces determine which machines applications can command. Above that, data ingest, world reconstruction, simulation, training, validation and redeployment determine which infrastructure becomes the default developer path. These levels can be complementary but they are not interchangeable. An open reference implementation hosted around a vendor's infrastructure may attract developers without giving users the cross-platform portability implied by the Android analogy.",
+    prediction: "FP-PAI-001 stays strengthening at confidence 0.79, unchanged from October 3. The developer-lifecycle pattern is visible, but not yet strong evidence for the prediction's central claim: heterogeneous robots running portable higher-level apps. The falsifier remains active if leading vendors keep integration locked to hardware-specific controls or proprietary cloud and policy tools beyond ROS-class interfaces. Watch for an independently verified cross-vendor application deployment using the same capability contract and externally operated lifecycle tools.",
+    sources: [awsPhysicalAi, odyssey3, qualcommPickNik, intrinsicCore, nvidiaIsaacRos5, geminiRobotics2],
   },
   "robot-skills-as-the-next-app-ecosystem": {
     modifiedDate: "2026-09-26",
@@ -146,12 +177,12 @@ export const evidenceReviews: Record<string, SeriesEvidenceReview> = {
     sources: [ambiSkillSuite, qualcommNeura, universalRobotsGen7, skildDeployment, skildS1, rewardOm1, figureHelix25, intrinsicCore, geminiRobotics2, skildPhysicalSelfPlay, nvidiaIsaacRos5],
   },
   "where-value-moves-in-modular-physical-ai": {
-    modifiedDate: "2026-10-03",
-    heading: "Open interfaces are becoming distribution while platform vendors move up-stack for control",
-    confirmed: "Three current events strengthen the pattern. Qualcomm agreed to acquire PickNik while committing to keep MoveIt open and cross-hardware, with tighter integration planned for Dragonwing and Arduino. AMD entered a definitive agreement to acquire World Labs, adding spatial-intelligence and model research to a compute company; World Labs says the combination is intended to span hardware, software, foundation models and applications in an end-to-end open AI ecosystem. Agility and FORT signed an MOU to extend Digit 5 safety across a pendant, on-robot communications and off-robot interfaces. The Qualcomm and AMD transactions have not yet closed, and the Agility-FORT work is a vendor-specific partnership rather than a standard.",
-    interpretation: "The emerging platform pattern is more specific than 'software becomes valuable.' Open middleware and interfaces can function as the distribution surface, while strategic capture happens through optimized compute, models, world simulation, safety infrastructure, enterprise deployment, fleet operations and operating data. Qualcomm and AMD are not retreating from hardware; they are pulling higher layers closer to hardware. That means modularization may shift value upward without necessarily shifting bargaining power away from the largest silicon and platform companies.",
-    prediction: "FlyPig prediction FP-PAI-003 remains strengthening, with confidence rising from 0.77 to 0.81. The evidence increasingly shows companies competing for the layers above electromechanics and raw compute. FlyPig is still not registering a separate prediction that an open-core business model will win, because neither these pending acquisitions nor current open frameworks establish long-term recurring economics, margin capture or cross-vendor switching costs.",
-    sources: [qualcommPickNik, amdWorldLabs, worldLabsAmd, agilityFortSafety, intrinsicCore, nvidiaIsaacRos5, advantechWeda],
+    modifiedDate: "2026-10-17",
+    heading: "Physical AI platform capture is expanding to the world-data and learning lifecycle",
+    confirmed: "The October evidence spans four distinct stages of a deployment loop. TwelveLabs released Pegasus 1.6 on October 6 with first-person video understanding and structured action labels for robotics data preparation. AWS released a Physical AI Toolchain on October 7 with open-source code and deployment automation around a cloud and NVIDIA-based simulation-to-edge flow. Odyssey released its Odyssey-3 world model on October 8 and reported adaptations using body-specific decoders for manipulators, humanoids and cars. On October 14, Hesai formally launched the Kosmo One spatial camera and Kosmo World 3D reconstruction cloud after earlier previews, and named embodied-AI partnerships with Galbot and Dexmal. Helm.ai reported $70 million in signed contracts spanning automotive, suppliers and industrial automation, which must not be read as robotics ARR or audited profit. Counter-evidence is substantial: on October 9 GlobalFoundries unveiled a power-efficient FD-SOI Physical AI manufacturing roadmap targeting 2028, while Hesai itself reported more than 10,000 cumulative actuator-module deliveries by June 2026. Product demonstrations, efficiency claims and roadmap milestones remain first-party.",
+    interpretation: "A more precise platform pattern is emerging than the simple claim that value rises above hardware. Diverse suppliers are investing in real-world data capture and labeling, learned world models, simulation, training orchestration and cloud-to-edge operations. Those layers could become repeatable developer and enterprise control points. Yet the same vendors often own chips, sensing, actuation or dedicated cloud infrastructure; modular software adoption may therefore reinforce vertically integrated hardware players rather than transfer margins to independent application vendors. Spatial scenes captured at scale are not automatically validated robot action trajectories, and a training pipeline does not by itself create a common robot runtime.",
+    prediction: "FP-PAI-003 remains strengthening, with confidence rising cautiously from 0.81 to 0.82. The structural evidence for an emerging data-to-deployment layer improved; evidence on where durable margin and bargaining power accrue did not improve nearly as much. The hypothesis would weaken if robotics companies cannot move data, evaluations or policy deployments between competing stacks, or if specialized sensing and silicon capture most of the economics. FlyPig has not created a new stand-alone prediction or seventh essay: testable future signals are third-party cross-stack redeployments, measured recurring software receipts and independent sim-to-real performance.",
+    sources: [twelveLabsPegasus16, awsPhysicalAi, odyssey3, hesaiKosmo, helmContracts, gfFdxFusion, qualcommPickNik, amdWorldLabs, agilityFortSafety],
   },
 };
 
