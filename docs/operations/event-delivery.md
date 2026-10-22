@@ -1,5 +1,7 @@
 # FlyPig AI 事件式寄送作業
 
+> 2026-10-22 移交補註：dev／production 的兩個 migration、bindings、secret 名稱、Worker 版本與健康檢查已讀回；既有事件均 sent。本次未重新寄信。完整狀態與恢復入口見 [README](../../README.md)。以下部署順序用於後續變更，不代表目前尚未部署。
+
 ## 環境
 
 | 環境 | D1 | Queue | DLQ | Consumer |
@@ -23,7 +25,7 @@ npx wrangler d1 migrations apply FLYPIG_DB --remote --config wrangler.toml
 npx wrangler d1 migrations apply FLYPIG_DB --remote --env production --config wrangler.toml
 ```
 
-套用後必須逐一執行 `d1 migrations list`，確認兩個環境都有 `0001_event_delivery.sql`。
+套用後必須逐一執行 `d1 migrations list`，確認兩個環境都有 `0001_event_delivery.sql` 與 `0002_dead_letter_audit.sql`，並核對 `event_inbox.dead_lettered_at`。
 
 ## 部署順序
 
@@ -35,7 +37,7 @@ npx wrangler d1 migrations apply FLYPIG_DB --remote --env production --config wr
 6. 以相同 migration 與程式碼部署 production，安全注入 production secrets。
 7. 先部署 consumer，再部署 Pages production，最後執行公開網域 live readback。
 
-任何 migration、binding、secret 名稱、consumer 版本或 live behavior 不一致時，停止啟用前端。電子報介面維持 launch notice；聯絡表單也不得切到未驗證的新契約。
+任何 migration、binding、secret 名稱、consumer 版本或 live behavior 不一致時，停止啟用前端。目前前端已使用事件式訂閱與聯絡表單；遇到新版本未完成驗證時，停止發布該變更並保留已驗證的契約，不可只切換前端。
 
 ## Recovery 與 replay
 
