@@ -42,4 +42,4 @@ Both editions visibly explain that the diagram is a forecast framework rather th
 - The XML sitemap was parsed to verify that each article occurs exactly once and both entries list the correct three language alternates.
 - Editable SVGs and both Chinese raster outputs were visually inspected. Screenshots and machine-readable local checks are retained under ignored `artifacts/physical-ai-forecast-zh/`.
 
-Production publication and live readback follow the usual reviewed branch → main → Cloudflare flow. This document records local validation; it does not itself assert that deployment has finished. The production readback is recorded after live verification.
+PR #12 merged and the Cloudflare production deployment succeeded on October 24, 2026. Live bilingual verification passed at 12:11 PDT. See [the production readback](../operations/2026-10-24-physical-ai-next-decade-zh-production-readback.md) for exact commit, deployment and checks.
