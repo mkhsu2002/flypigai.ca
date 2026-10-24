@@ -1,0 +1,29 @@
+{
+  "id": "PAI-EV-2026-0036",
+  "date": "2026-10-21",
+  "trackerAddedAt": "2026-10-24",
+  "geography": "global",
+  "category": "robot-os-runtime-and-training",
+  "subject": "NVIDIA introduces Isaac OS runtime on Holoscan and makes Isaac Lab 3.0 generally available",
+  "sourceType": "official",
+  "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-advances-isaac-platform-for-general-purpose-robotics-with-new-reference-humanoid-frameworks-simulation-pipelines-and-data",
+  "summary": "NVIDIA announced the open-source Isaac OS runtime connecting AI, sensors, controls and robot hardware and stated that open-source Isaac Lab 3.0 is generally available. Its vendor-led data-to-deployment suite is not proof of independent cross-vendor portable applications, platform economics or neutral hardware compatibility.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-001",
+      "effect": "supports",
+      "strength": "strong"
+    },
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "supports",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-004",
+      "effect": "neutral",
+      "strength": "weak"
+    }
+  ],
+  "publicationStatus": "incorporated-into-series-update"
+}
