@@ -21,7 +21,7 @@ The original prediction registry, confidence scores, evidence records and histor
 
 ## Claim-to-source review
 
-The source URLs, announcement dates and claims were cross-checked against the existing reviewed repository evidence, not independently reverified online in this task. Fresh HTTPS reads of source sites, GitHub API and production were rejected by the environment proxy with a CONNECT 403. Existing Git read and dry-run push access work. The required domain additions have been saved to the environment draft; saving does not apply that policy.
+The initial environment policy blocked external verification with CONNECT 403 responses. After the environment network configuration changed, all eight official source URLs returned HTTP 200 on October 24, 2026. Their actual content, dates and claim-to-source fit were rechecked against the article and the existing evidence tracker. Qualcomm’s HTML is a client-rendered shell; its own linked text/markdown alternate was read to verify the acquisition agreement, closing conditions, MoveIt commitment and third-party hardware support. AWS’s source publication date was verified in its article metadata. Announcements remain first-party evidence; these checks do not independently validate their performance claims. GitHub API read/write access is now available through existing injected authentication.
 
 | Evidence | Article use | Boundary preserved |
 | --- | --- | --- |
@@ -59,12 +59,12 @@ Both images are original FlyPig AI editorial diagrams, generated programmaticall
 
 The temporary local export server initially served a directory listing because Next emits both a route directory and a sibling `.html` file. That validation harness was corrected to resolve `.html` first; screenshots and the passing checks above belong to the corrected run.
 
-## Outstanding release requirements
+## Release follow-through
 
-At the time of this record, production publication has NOT been verified. Do not describe the intended canonical URL as already live.
+The user subsequently explicitly requested production publication. Official-source verification is now complete. The article branch’s first Cloudflare Pages check succeeded for commit `b5194facca9c3d259e976d7350076cbdd6a19cbc`; the final release commit requires its own check.
 
-1. Apply the saved environment network additions. Re-read the eight official sources, checking source-to-claim fit and acquisition/release chronology. If a source changed, correct the article before publication.
-2. Inspect the final diff and confirm the source review, rights and visual gates. The earlier environment dependency audit reported pre-existing critical/high findings; this article does not alter dependency declarations or upgrade the runtime. Resolve the applicable release security requirement before treating this as a security-cleared release.
-3. Follow the repository’s Git-to-Cloudflare production route after the gates pass; do not deploy `out/` to a separate static host, omit Pages Functions or mutate D1/Queues/Workers for this content-only change.
-4. Confirm Cloudflare’s canonical production deployment for the final commit and read back the new URL, title, canonical, social image, Article dates/citations, sitemap and raw `/zh` HTML. A push alone does not establish publication.
-5. `INDEXNOW_KEY` and `INDEXNOW_KEY_LOCATION` are absent. Do not invent or expose them. Search notification is optional after live verification and requires the documented secure provisioning; sitemap inclusion is implemented.
+The required dependency security gate initially reproduced 1 critical and 2 high findings. To meet the documented release requirement, only the affected dependency resolutions were updated within the existing declared version ranges: Next.js 16.2.12 → 16.4.3, sharp 0.35.3 → 0.35.5 and source-map-js 1.2.1 → 1.2.2. React and React DOM remain 19.2.8. `package.json` and its overrides are unchanged; the lockfile records the new verified registry artifacts. A clean `npm ci` installation, `npm audit --omit=dev --audit-level=high` (0 vulnerabilities), all 18 tests, production build, typecheck, the 130-page export audit and `git diff --check` passed against this final dependency graph. Final Chromium screenshots at 1440px and 390px were repeated against the rebuilt export; no overflow, broken image or browser errors were observed.
+
+Production deployment follows the repository’s Git-to-Cloudflare route. Do not deploy `out/` to a separate static host, omit Pages Functions or mutate D1/Queues/Workers. After the final merge, verify the Cloudflare Pages check, new public URL, title, canonical, both images, Article dates/citations, sitemap and raw `/zh` HTML. A merge or push alone does not establish publication.
+
+`INDEXNOW_KEY` and `INDEXNOW_KEY_LOCATION` are absent. Search notification is optional after live verification and requires the documented secure provisioning; sitemap inclusion is implemented. No key was invented or exposed. Final production readback is recorded separately after it succeeds.
