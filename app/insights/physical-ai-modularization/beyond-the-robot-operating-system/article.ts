@@ -1,5 +1,6 @@
 export const forecast = {
   path: "/insights/physical-ai-modularization/beyond-the-robot-operating-system",
+  zhPath: "/zh/insights/physical-ai-modularization/beyond-the-robot-operating-system",
   title: "Physical AI’s Next Decade: The Real Android May Not Be an Operating System",
   seoTitle: "Physical AI’s Next Decade: Beyond the Robot OS",
   description: "FlyPig AI’s forecast for a layered robotics ecosystem: shared capabilities, learning lifecycles and the evidence needed to test the Android analogy.",

@@ -24,6 +24,7 @@ Public coverage does not imply that FlyPig AI is an authorized distributor, supp
 - Insights — evergreen market and deployment analysis: https://flypigai.ca/insights
 - Physical AI Goes Modular — the six-part research series and subsequent outlooks: https://flypigai.ca/insights/physical-ai-modularization
 - Physical AI’s Next Decade — an independent 2026–2036 forecast with competing scenarios and falsifiers: https://flypigai.ca/insights/physical-ai-modularization/beyond-the-robot-operating-system
+- Physical AI 的下一個十年 — the Traditional Chinese translation of that forecast: https://flypigai.ca/zh/insights/physical-ai-modularization/beyond-the-robot-operating-system
 - How We Help — the two bounded commercial paths, separate from editorial coverage: https://flypigai.ca/services
 - Canadian product teams — Edge AI Technology Route & Qualification: https://flypigai.ca/services/canadian-product-teams
 - Taiwan technology companies — Canada Application & Design-In Readiness: https://flypigai.ca/services/taiwan-technology-companies

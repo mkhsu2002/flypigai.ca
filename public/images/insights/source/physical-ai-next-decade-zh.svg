@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+    <title>Physical AI 的下一個十年：超越機器人作業系統</title>
+    <desc>七個預測技術層連結機器人硬體與應用；持續生命週期涵蓋資料、模擬、學習、驗證、部署、營運與再學習。這是預測，不是已成立的標準。</desc>
+    <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#5c8c83" stroke-width="1.2"/></marker></defs>
+    <rect width="1600" height="1000" fill="#f8f6f0"/>
+    <g font-family="Noto Sans CJK TC, sans-serif">
+      <rect x="80" y="55" width="6" height="36" fill="#0f766e"/>
+      <text x="100" y="82" font-size="22" font-weight="650" letter-spacing="2.5" fill="#0f766e">FLYPIG AI / 科技趨勢預測</text>
+      <text x="80" y="164" font-size="67" font-weight="650" letter-spacing="-1.6" fill="#182d31">超越機器人作業系統</text>
+      <text x="80" y="207" font-size="26" fill="#4d6263">共通能力、持續學習，不預設單一贏家。</text>
+      <text x="80" y="246" font-size="17" font-weight="650" letter-spacing="1.8" fill="#566b68">預測平台分層</text>
+      <text x="1010" y="246" font-size="17" font-weight="650" letter-spacing="1.8" fill="#566b68">持續生命週期</text>
+      <rect x="80" y="264" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="294" font-size="25" font-weight="650" fill="#182d31">代理與應用</text>
+      <text x="99" y="319" font-size="18" fill="#4d6263">工作流程與垂直產業服務</text>
+<rect x="80" y="346" width="810" height="70" rx="9" fill="#e4f3ed" stroke="#6bada0"/>
+      <text x="99" y="376" font-size="25" font-weight="650" fill="#182d31">能力與安全介面</text>
+      <text x="99" y="401" font-size="18" fill="#4d6263">權限、限制與失敗狀態</text>
+<rect x="80" y="428" width="810" height="70" rx="9" fill="#e4f3ed" stroke="#6bada0"/>
+      <text x="99" y="458" font-size="25" font-weight="650" fill="#182d31">生命週期平台</text>
+      <text x="99" y="483" font-size="18" fill="#4d6263">資料、模擬、訓練與部署</text>
+<rect x="80" y="510" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="540" font-size="25" font-weight="650" fill="#182d31">基礎智慧</text>
+      <text x="99" y="565" font-size="18" fill="#4d6263">世界模型與控制策略</text>
+<rect x="80" y="592" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="622" font-size="25" font-weight="650" fill="#182d31">機器人中介軟體</text>
+      <text x="99" y="647" font-size="18" fill="#4d6263">抽象化、規劃與整合</text>
+<rect x="80" y="674" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="704" font-size="25" font-weight="650" fill="#182d31">運算與控制</text>
+      <text x="99" y="729" font-size="18" fill="#4d6263">邊緣推論與即時系統</text>
+<rect x="80" y="756" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="786" font-size="25" font-weight="650" fill="#182d31">機器人硬體</text>
+      <text x="99" y="811" font-size="18" fill="#4d6263">機體、致動與物理限制</text>
+      <rect x="1010" y="271" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="304" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">資料</text>
+      <path d="M1265 327v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="353" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="386" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">模擬</text>
+      <path d="M1265 409v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="435" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="468" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">學習</text>
+      <path d="M1265 491v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="517" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="550" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">驗證</text>
+      <path d="M1265 573v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="599" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="632" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">部署</text>
+      <path d="M1265 655v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="681" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="714" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">營運</text>
+      <path d="M1265 737v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="763" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="796" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">再學習</text>
+
+      <path d="M1533 789h13V297h-13" fill="none" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="80" y1="890" x2="1520" y2="890" stroke="#bccbc4"/>
+      <text x="80" y="928" font-size="23" font-weight="650" fill="#143f42">驗證重點：降低不同機器人本體之間的整合成本。</text>
+      <text x="80" y="968" font-size="17" fill="#566b68">FlyPig AI 原創分析 · 2026 年 10 月 · 預測期間 2026–2036 · 並非產業標準</text>
+    </g>
+  </svg>

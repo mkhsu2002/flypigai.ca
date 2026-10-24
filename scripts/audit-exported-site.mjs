@@ -44,7 +44,7 @@ for (const filePath of htmlFiles) {
     .replaceAll("&#x27;", "'");
   if (!title) errors.push(`${route}: missing title`);
   const isSignalArticle = route.startsWith("/signals/");
-  const isInsightArticle = route.startsWith("/insights/");
+  const isInsightArticle = route.startsWith("/insights/") || route.startsWith("/zh/insights/");
   const isSolutionArticle = route.startsWith("/Solutions/");
   if (isSignalArticle && title && title.length > 65) errors.push(`${route}: title exceeds 65 characters (${title.length})`);
   if (isSolutionArticle && title && title.length > 65) errors.push(`${route}: title exceeds 65 characters (${title.length})`);

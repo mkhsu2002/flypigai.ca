@@ -1,3 +1,25 @@
+.article-language {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.article-language a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.article-language [aria-current="page"] {
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .forecast-table-scroll {
   margin: 32px 0;
   overflow-x: auto;

@@ -13,6 +13,7 @@ export const metadata: Metadata = makeMetadata({
   description: forecast.description,
   path: forecast.path,
   enPath: forecast.path,
+  zhPath: forecast.zhPath,
   type: "article",
   image: { url: forecast.socialImage, width: 1200, height: 630, alt: forecast.imageAlt },
   article: {
@@ -43,8 +44,9 @@ export default function PhysicalAiNextDecadePage() {
       mainEntityOfPage: articleUrl, isPartOf: { "@type": "CreativeWorkSeries", name: seriesTitle, url: `${siteUrl}${seriesPath}` },
       articleSection: seriesTitle, inLanguage: "en-CA", genre: "Technology forecast",
       citation: forecastSources.map((source) => source.url),
+      workTranslation: { "@type": "Article", "@id": `${siteUrl}${forecast.zhPath}#article`, url: `${siteUrl}${forecast.zhPath}`, inLanguage: "zh-Hant" },
     }} />
-    <SiteHeader />
+    <SiteHeader languageHref={forecast.zhPath} />
     <article className="article-shell shell">
       <nav className="article-breadcrumb" aria-label="Breadcrumb"><a href="/insights">Insights</a><span>/</span><a href={seriesPath}>{seriesTitle}</a><span>/</span><span aria-current="page">Next decade</span></nav>
       <header className="article-header">
@@ -52,6 +54,7 @@ export default function PhysicalAiNextDecadePage() {
         <h1>{forecast.title}</h1>
         <p className="article-deck">The next robotics platform may emerge around the full cycle of data, simulation, learning, validation and operations. A common operating system could be one layer in that ecosystem; it would not, by itself, make the ecosystem work.</p>
         <div className="article-meta"><span>By FlyPig AI Insights</span><span>Published <time dateTime={forecast.date}>October 24, 2026</time></span><span>Forecast horizon: {forecast.horizon}</span><span>Independent research</span></div>
+        <nav className="article-language" aria-label="Article language"><a href={forecast.path} hrefLang="en-CA" lang="en" aria-current="page">English</a><a href={forecast.zhPath} hrefLang="zh-Hant" lang="zh-Hant">繁體中文</a></nav>
       </header>
 
       <figure className="article-hero-visual">
