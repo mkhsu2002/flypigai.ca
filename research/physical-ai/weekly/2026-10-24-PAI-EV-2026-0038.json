@@ -1,0 +1,29 @@
+{
+  "id": "PAI-EV-2026-0038",
+  "date": "2026-10-22",
+  "trackerAddedAt": "2026-10-24",
+  "geography": "global",
+  "category": "edge-compute-platform-lock-in",
+  "subject": "Agility chooses NVIDIA IGX Thor as exclusive onboard compute for general-availability Digit 5",
+  "sourceType": "official",
+  "sourceUrl": "https://www.agilityrobotics.com/content/agility-robotics-expands-nvidia-collaboration-as-it-prepares-digit-5-for-commercial-scale",
+  "summary": "Agility selected NVIDIA IGX Thor as standard compute for Digit 5 and NVIDIA as its exclusive onboard-compute provider for planned general availability; it is integrating selected Halos elements into its own safety system. H1 2027 early access remains planned, not already delivered. This is direct supply-chain/platform integration evidence and counter-evidence to rapid independent hardware commoditization, not proof of compute margins or third-party certification.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-002",
+      "effect": "supports",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "weakens",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-001",
+      "effect": "neutral",
+      "strength": "weak"
+    }
+  ],
+  "publicationStatus": "incorporated-into-series-update"
+}
