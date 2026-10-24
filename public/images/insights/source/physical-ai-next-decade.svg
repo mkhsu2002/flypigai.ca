@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+    <title>Physical AI’s next decade: beyond the robot OS</title>
+    <desc>Seven proposed layers connect hardware to applications. A separate continuous lifecycle spans data, simulation, learning, validation, deployment, operations and relearning. This is a forecast, not an established standard.</desc>
+    <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#5c8c83" stroke-width="1.2"/></marker></defs>
+    <rect width="1600" height="1000" fill="#f8f6f0"/>
+    <g font-family="DejaVu Sans, Arial, sans-serif">
+      <rect x="80" y="55" width="6" height="36" fill="#0f766e"/>
+      <text x="100" y="82" font-size="22" font-weight="650" letter-spacing="2.5" fill="#0f766e">FLYPIG AI / TECHNOLOGY FORECAST</text>
+      <text x="80" y="164" font-size="67" font-weight="650" letter-spacing="-1.6" fill="#182d31">Beyond the robot OS</text>
+      <text x="80" y="207" font-size="26" fill="#4d6263">Shared capabilities. Continuous learning. No single winner assumed.</text>
+      <text x="80" y="246" font-size="17" font-weight="650" letter-spacing="1.8" fill="#566b68">PROPOSED PLATFORM LAYERS</text>
+      <text x="1010" y="246" font-size="17" font-weight="650" letter-spacing="1.8" fill="#566b68">CONTINUOUS LIFECYCLE</text>
+      <rect x="80" y="264" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="294" font-size="25" font-weight="650" fill="#182d31">Agents &amp; applications</text>
+      <text x="99" y="319" font-size="18" fill="#4d6263">Workflows and vertical services</text>
+<rect x="80" y="346" width="810" height="70" rx="9" fill="#e4f3ed" stroke="#6bada0"/>
+      <text x="99" y="376" font-size="25" font-weight="650" fill="#182d31">Capability &amp; safety interfaces</text>
+      <text x="99" y="401" font-size="18" fill="#4d6263">Permissions, limits and failure states</text>
+<rect x="80" y="428" width="810" height="70" rx="9" fill="#e4f3ed" stroke="#6bada0"/>
+      <text x="99" y="458" font-size="25" font-weight="650" fill="#182d31">Lifecycle platforms</text>
+      <text x="99" y="483" font-size="18" fill="#4d6263">Data, simulation, training and deployment</text>
+<rect x="80" y="510" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="540" font-size="25" font-weight="650" fill="#182d31">Foundation intelligence</text>
+      <text x="99" y="565" font-size="18" fill="#4d6263">World models and control policies</text>
+<rect x="80" y="592" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="622" font-size="25" font-weight="650" fill="#182d31">Robotics middleware</text>
+      <text x="99" y="647" font-size="18" fill="#4d6263">Abstraction, planning and integration</text>
+<rect x="80" y="674" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="704" font-size="25" font-weight="650" fill="#182d31">Compute &amp; control</text>
+      <text x="99" y="729" font-size="18" fill="#4d6263">Edge inference and real-time systems</text>
+<rect x="80" y="756" width="810" height="70" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="99" y="786" font-size="25" font-weight="650" fill="#182d31">Robot hardware</text>
+      <text x="99" y="811" font-size="18" fill="#4d6263">Bodies, actuation and physical limits</text>
+      <rect x="1010" y="271" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="304" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">DATA</text>
+      <path d="M1265 327v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="353" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="386" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">SIMULATION</text>
+      <path d="M1265 409v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="435" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="468" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">LEARNING</text>
+      <path d="M1265 491v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="517" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="550" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">VALIDATION</text>
+      <path d="M1265 573v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="599" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="632" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">DEPLOYMENT</text>
+      <path d="M1265 655v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="681" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="714" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">OPERATIONS</text>
+      <path d="M1265 737v20" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1010" y="763" width="510" height="52" rx="10" fill="#143f42"/>
+      <text x="1265" y="796" text-anchor="middle" font-size="19" font-weight="650" letter-spacing="1.2" fill="#ffffff">RELEARNING</text>
+
+      <path d="M1533 789h13V297h-13" fill="none" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="80" y1="890" x2="1520" y2="890" stroke="#bccbc4"/>
+      <text x="80" y="928" font-size="23" font-weight="650" fill="#143f42">The test: lower integration cost across different robot bodies.</text>
+      <text x="80" y="968" font-size="17" fill="#566b68">Original FlyPig AI analysis · October 2026 · Forecast horizon 2026–2036 · Not an industry standard</text>
+    </g>
+  </svg>

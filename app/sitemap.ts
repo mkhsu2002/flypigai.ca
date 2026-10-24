@@ -4,6 +4,7 @@ import { atlasCategories } from "./atlas/data";
 import { insightGuides } from "./insights/guides";
 import { getEvidenceReview, seriesUpdatedDate } from "./insights/physical-ai-modularization/evidenceReviews";
 import { physicalAiSeries, seriesDate, seriesPath } from "./insights/physical-ai-modularization/series";
+import { forecast } from "./insights/physical-ai-modularization/beyond-the-robot-operating-system/article";
 import { technologyOwnerTopics } from "./technologies/topics";
 
 const baseUrl = "https://flypigai.ca";
@@ -13,6 +14,7 @@ const recentPageRevisions = new Map([
   ["/zh", new Date("2026-10-01")],
   ["/signals", new Date("2026-09-28")],
   ["/Solutions", new Date("2026-10-02")],
+  ["/insights", new Date(forecast.date)],
 ]);
 const revisedCorePaths = new Set([
   "/", "/zh", "/Solutions", "/technologies", "/signals", "/services", "/zh/services",
@@ -70,5 +72,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const signalRoutes: MetadataRoute.Sitemap = getIndustrySignals().map((signal) => ({ url: `${baseUrl}/signals/${signal.slug}`, lastModified: new Date(signal.modifiedAt), changeFrequency: "monthly" as const, priority: 0.8 }));
   const solutionRoutes: MetadataRoute.Sitemap = [{ url: `${baseUrl}/Solutions/meta-rosetta-metalens`, lastModified: new Date("2026-10-02"), changeFrequency: "monthly", priority: 0.75 }];
 
-  return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...seriesRoutes, ...signalRoutes, ...solutionRoutes];
+  const forecastRoute: MetadataRoute.Sitemap = [{ url: `${baseUrl}${forecast.path}`, lastModified: new Date(forecast.date), changeFrequency: "monthly", priority: 0.75 }];
+  return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...seriesRoutes, ...forecastRoute, ...signalRoutes, ...solutionRoutes];
 }

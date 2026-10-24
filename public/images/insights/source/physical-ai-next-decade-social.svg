@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+    <title>Physical AI’s next decade: beyond the robot OS</title>
+    <desc>Seven proposed layers connect hardware to applications. A separate continuous lifecycle spans data, simulation, learning, validation, deployment, operations and relearning. This is a forecast, not an established standard.</desc>
+    <defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0 0L6 3L0 6" fill="none" stroke="#5c8c83" stroke-width="1.2"/></marker></defs>
+    <rect width="1200" height="630" fill="#f8f6f0"/>
+    <g font-family="DejaVu Sans, Arial, sans-serif">
+      <rect x="52" y="35" width="6" height="26" fill="#0f766e"/>
+      <text x="72" y="55" font-size="16" font-weight="650" letter-spacing="2.5" fill="#0f766e">FLYPIG AI / TECHNOLOGY FORECAST</text>
+      <text x="52" y="118" font-size="49" font-weight="650" letter-spacing="-1.6" fill="#182d31">Beyond the robot OS</text>
+      <text x="52" y="151" font-size="19" fill="#4d6263">Shared capabilities. Continuous learning. No single winner assumed.</text>
+      <text x="52" y="172" font-size="12" font-weight="650" letter-spacing="1.8" fill="#566b68">PROPOSED PLATFORM LAYERS</text>
+      <text x="736" y="172" font-size="12" font-weight="650" letter-spacing="1.8" fill="#566b68">CONTINUOUS LIFECYCLE</text>
+      <rect x="52" y="190" width="610" height="41" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="71" y="217" font-size="18" font-weight="650" fill="#182d31">Agents &amp; applications</text>
+
+<rect x="52" y="239" width="610" height="41" rx="9" fill="#e4f3ed" stroke="#6bada0"/>
+      <text x="71" y="266" font-size="18" font-weight="650" fill="#182d31">Capability &amp; safety interfaces</text>
+
+<rect x="52" y="288" width="610" height="41" rx="9" fill="#e4f3ed" stroke="#6bada0"/>
+      <text x="71" y="315" font-size="18" font-weight="650" fill="#182d31">Lifecycle platforms</text>
+
+<rect x="52" y="337" width="610" height="41" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="71" y="364" font-size="18" font-weight="650" fill="#182d31">Foundation intelligence</text>
+
+<rect x="52" y="386" width="610" height="41" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="71" y="413" font-size="18" font-weight="650" fill="#182d31">Robotics middleware</text>
+
+<rect x="52" y="435" width="610" height="41" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="71" y="462" font-size="18" font-weight="650" fill="#182d31">Compute &amp; control</text>
+
+<rect x="52" y="484" width="610" height="41" rx="9" fill="#fffefb" stroke="#d5ddd8"/>
+      <text x="71" y="511" font-size="18" font-weight="650" fill="#182d31">Robot hardware</text>
+
+      <rect x="736" y="193" width="412" height="48" rx="10" fill="#143f42"/>
+      <text x="942" y="223" text-anchor="middle" font-size="14" font-weight="650" letter-spacing="1.2" fill="#ffffff">DATA</text>
+      <path d="M942 245v19" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="736" y="270" width="412" height="48" rx="10" fill="#143f42"/>
+      <text x="942" y="300" text-anchor="middle" font-size="14" font-weight="650" letter-spacing="1.2" fill="#ffffff">SIMULATE + LEARN</text>
+      <path d="M942 322v19" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="736" y="347" width="412" height="48" rx="10" fill="#143f42"/>
+      <text x="942" y="377" text-anchor="middle" font-size="14" font-weight="650" letter-spacing="1.2" fill="#ffffff">VALIDATE + DEPLOY</text>
+      <path d="M942 399v19" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="736" y="424" width="412" height="48" rx="10" fill="#143f42"/>
+      <text x="942" y="454" text-anchor="middle" font-size="14" font-weight="650" letter-spacing="1.2" fill="#ffffff">OPERATE + RELEARN</text>
+
+      <path d="M1161 448h13V217h-13" fill="none" stroke="#5c8c83" stroke-width="2" marker-end="url(#arrow)"/>
+      <line x1="52" y1="555" x2="1148" y2="555" stroke="#bccbc4"/>
+      <text x="52" y="582" font-size="16" font-weight="650" fill="#143f42">The test: lower integration cost across different robot bodies.</text>
+      <text x="52" y="608" font-size="12" fill="#566b68">Original FlyPig AI analysis · October 2026 · Forecast horizon 2026–2036 · Not an industry standard</text>
+    </g>
+  </svg>
