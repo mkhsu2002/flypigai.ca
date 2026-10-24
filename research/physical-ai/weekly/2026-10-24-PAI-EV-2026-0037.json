@@ -1,0 +1,29 @@
+{
+  "id": "PAI-EV-2026-0037",
+  "date": "2026-10-21",
+  "trackerAddedAt": "2026-10-24",
+  "geography": "global",
+  "category": "reference-robot-platform",
+  "subject": "Agile Robots announces modular Agile ONE SN humanoid research reference platform",
+  "sourceType": "official",
+  "sourceUrl": "https://www.agile-robots.com/en/news/detail/agile-robots-launches-agile-one-sn/",
+  "summary": "Agile ONE SN combines a compact humanoid with Jetson Thor, preconfigured GR00T 1.7, URDF/USD simulation assets and an end-to-end reference workflow, with early-2027 availability planned. Agile claims skills and data may later transfer to its larger robot; third-party portability, delivery scale and lifecycle cost are unverified. The Agile and NVIDIA releases give inconsistent robot mass figures, which this record deliberately omits.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-002",
+      "effect": "supports",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-001",
+      "effect": "supports",
+      "strength": "weak"
+    },
+    {
+      "predictionId": "FP-PAI-004",
+      "effect": "neutral",
+      "strength": "weak"
+    }
+  ],
+  "publicationStatus": "incorporated-into-series-update"
+}
