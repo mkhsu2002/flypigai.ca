@@ -31,6 +31,12 @@
   text-wrap: balance;
 }
 
+main:lang(zh-Hant) .article-header h1 {
+  max-width: 22em;
+  line-height: 1.18;
+  line-break: strict;
+}
+
 .article-deck {
   max-width: 800px;
   font-size: clamp(18px, 1.8vw, 22px);

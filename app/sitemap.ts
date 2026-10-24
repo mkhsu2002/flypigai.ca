@@ -11,7 +11,7 @@ const baseUrl = "https://flypigai.ca";
 const currentEditorialRevision = new Date("2026-08-29");
 const recentPageRevisions = new Map([
   ["/", new Date("2026-10-01")],
-  ["/zh", new Date("2026-10-01")],
+  ["/zh", new Date(forecast.date)],
   ["/signals", new Date("2026-09-28")],
   ["/Solutions", new Date("2026-10-02")],
   ["/insights", new Date(forecast.date)],
@@ -72,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const signalRoutes: MetadataRoute.Sitemap = getIndustrySignals().map((signal) => ({ url: `${baseUrl}/signals/${signal.slug}`, lastModified: new Date(signal.modifiedAt), changeFrequency: "monthly" as const, priority: 0.8 }));
   const solutionRoutes: MetadataRoute.Sitemap = [{ url: `${baseUrl}/Solutions/meta-rosetta-metalens`, lastModified: new Date("2026-10-02"), changeFrequency: "monthly", priority: 0.75 }];
 
-  const forecastRoute: MetadataRoute.Sitemap = [{ url: `${baseUrl}${forecast.path}`, lastModified: new Date(forecast.date), changeFrequency: "monthly", priority: 0.75 }];
+  const forecastLanguages = { "en-CA": `${baseUrl}${forecast.path}`, "zh-Hant": `${baseUrl}${forecast.zhPath}`, "x-default": `${baseUrl}${forecast.path}` };
+  const forecastRoute: MetadataRoute.Sitemap = [forecast.path, forecast.zhPath].map((path) => ({ url: `${baseUrl}${path}`, lastModified: new Date(forecast.date), changeFrequency: "monthly", priority: 0.75, alternates: { languages: forecastLanguages } }));
   return [...coreRoutes, ...atlasRoutes, ...technologyRoutes, ...insightRoutes, ...seriesRoutes, ...forecastRoute, ...signalRoutes, ...solutionRoutes];
 }
