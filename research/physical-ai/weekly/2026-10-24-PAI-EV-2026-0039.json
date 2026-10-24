@@ -1,0 +1,29 @@
+{
+  "id": "PAI-EV-2026-0039",
+  "date": "2026-10-21",
+  "trackerAddedAt": "2026-10-24",
+  "geography": "global",
+  "category": "physical-ai-development-cloud",
+  "subject": "CoreWeave launches Physical AI Launchables engineering workflow templates",
+  "sourceType": "official",
+  "sourceUrl": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Unveils-CoreWeave-Physical-AI-Launchables-Taking-the-Setup-Work-Out-of-Robotics-and-AV-Development/default.aspx",
+  "summary": "CoreWeave launched tested cloud templates for Isaac Sim, CARLA, MuJoCo, AlpaSim and Cosmos 3 with machine-readable job orchestration and developer-agent skills. These are reproducible engineering workflows, not evidence of portable runtime robot skills. Customer deployments, cross-cloud switching cost and recurring software profits were not disclosed.",
+  "predictionLinks": [
+    {
+      "predictionId": "FP-PAI-003",
+      "effect": "supports",
+      "strength": "medium"
+    },
+    {
+      "predictionId": "FP-PAI-001",
+      "effect": "neutral",
+      "strength": "weak"
+    },
+    {
+      "predictionId": "FP-PAI-004",
+      "effect": "neutral",
+      "strength": "weak"
+    }
+  ],
+  "publicationStatus": "incorporated-into-series-update"
+}
