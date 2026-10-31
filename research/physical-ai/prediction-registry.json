@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-31",
   "principles": {
     "immutableOrigin": "Never rewrite the original wording or first-published date of a prediction to fit later evidence.",
     "evidenceStates": [
@@ -32,7 +32,7 @@
         "Robot applications continue to require predominantly body-specific software stacks with little reusable abstraction above ROS-class middleware."
       ],
       "latestAssessment": {
-        "date": "2026-10-24",
+        "date": "2026-10-31",
         "evidenceIds": [
           "PAI-EV-2026-0006",
           "PAI-EV-2026-0007",
@@ -50,9 +50,11 @@
           "PAI-EV-2026-0031",
           "PAI-EV-2026-0035",
           "PAI-EV-2026-0036",
-          "PAI-EV-2026-0037"
+          "PAI-EV-2026-0037",
+          "PAI-EV-2026-0041",
+          "PAI-EV-2026-0042"
         ],
-        "summary": "NVIDIA introduced an open-source Holoscan-based Isaac OS runtime, complementing the available Isaac Lab 3.0 learning framework and the proposed Agile ONE SN reference body. Confidence rises only 0.79 to 0.80: this concretizes a vendor-led runtime rather than proves cross-vendor application portability. Agility's exclusive compute choice and multiple incompatible middleware/cloud stacks preserve the central falsifiers: no independently verified third-party app contract across unlike robot bodies beyond ROS-class interfaces."
+        "summary": "October 31 review: GXO's vendor-specific Digit/Agility Arc expansion and the Section 232 import-negotiation proclamation add no independent cross-vendor application-compatibility evidence. Confidence remains 0.80 and status strengthening. Core falsifiers remain live: no third-party application transfer across unlike robots through a common certified capability/runtime contract."
       }
     },
     {
@@ -67,7 +69,7 @@
         "Mechanical, safety and task heterogeneity prevent meaningful reuse of robot bodies and subsystems."
       ],
       "latestAssessment": {
-        "date": "2026-10-24",
+        "date": "2026-10-31",
         "evidenceIds": [
           "PAI-EV-2026-0001",
           "PAI-EV-2026-0007",
@@ -79,9 +81,12 @@
           "PAI-EV-2026-0025",
           "PAI-EV-2026-0028",
           "PAI-EV-2026-0037",
-          "PAI-EV-2026-0038"
+          "PAI-EV-2026-0038",
+          "PAI-EV-2026-0041",
+          "PAI-EV-2026-0042",
+          "PAI-EV-2026-0043"
         ],
-        "summary": "Reference-body confidence rises cautiously 0.83 to 0.84 after Agile ONE SN's preconfigured research stack and Agility's standard Digit 5 compute choice. Both platforms target 2027 access, not completed volume distribution. Figure F.02 retirement, proprietary actuation, safety recertification and lack of longitudinal spare-parts/support data are counterevidence to stable ODM-like reference bodies."
+        "summary": "October 31 review: GXO and Agility agreed to expand Digit RaaS into two more sites in 2027 (supportive but not yet executed); U.S. Section 232 negotiations make cross-border robot/body and component provenance a conditional friction risk (weak counter-evidence without enacted tariff); Agility's proposed Foxconn-led financing is material capital news but not evidence of an ODM supply award or delivered robot volume. Competing signals do not justify changing confidence 0.84 or strengthening status. Reference-body standardization, price, safety recertification, migration and landed cost remain unproven."
       }
     },
     {
@@ -96,7 +101,7 @@
         "Reusable skills and application software fail to achieve meaningful portability or recurring economics across robot platforms."
       ],
       "latestAssessment": {
-        "date": "2026-10-24",
+        "date": "2026-10-31",
         "evidenceIds": [
           "PAI-EV-2026-0004",
           "PAI-EV-2026-0005",
@@ -129,9 +134,12 @@
           "PAI-EV-2026-0036",
           "PAI-EV-2026-0038",
           "PAI-EV-2026-0039",
-          "PAI-EV-2026-0040"
+          "PAI-EV-2026-0040",
+          "PAI-EV-2026-0041",
+          "PAI-EV-2026-0042",
+          "PAI-EV-2026-0043"
         ],
-        "summary": "Confidence rises cautiously 0.82 to 0.83: NVIDIA adds a runtime/learning layer, CoreWeave packages operational training and evaluation workflows, while TÜV SÜD/Accenture expose certification-evidence preparation as a potential service layer. But Agility's exclusive NVIDIA onboard-compute commitment is a concrete hardware/platform bargaining-power counter-signal. None of these product announcements or concepts measures recurring software revenue, gross margin, customer lock-in or portable application economics."
+        "summary": "October 31 review: The expanded vendor-specific Digit/Agility Arc RaaS contract shows a possible recurring fleet-operation layer but no independently disclosed unit economics, recurring software revenue or margin split. U.S. import negotiations could increase hardware/supply-chain bargaining and compliance value, but no new tariffs were enacted and no observed impact exists. Proposed Foxconn-led PIPE says nothing about ownership of deployed software value. Confidence holds 0.83, status strengthening; hardware-margin and portability falsifiers remain open."
       }
     },
     {
@@ -146,7 +154,7 @@
         "Safety and embodiment differences prevent skills from becoming meaningfully reusable across platforms."
       ],
       "latestAssessment": {
-        "date": "2026-10-24",
+        "date": "2026-10-31",
         "evidenceIds": [
           "PAI-EV-2026-0008",
           "PAI-EV-2026-0009",
@@ -163,7 +171,7 @@
           "PAI-EV-2026-0031",
           "PAI-EV-2026-0034"
         ],
-        "summary": "Confidence stays 0.53 and status weakening. Agile ONE SN markets trainable/transferrable skills without verified across-vendor skill portability; CoreWeave's coding-agent skills automate developer jobs rather than acting as robot-control primitives. General policies remain counterevidence to individually packaged behaviors; stable safety/permissions contracts remain plausible but unproven across robot embodiments. Falsifiers remain active."
+        "summary": "October 31 review: No new primary-source evidence of cross-vendor, permissioned robot skill primitives or independent compatibility tests was found in the screened high-impact events. Existing generalist-model and embodiment/safety falsifiers remain active. Confidence holds 0.53; status remains weakening."
       }
     }
   ]

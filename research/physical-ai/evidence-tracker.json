@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-31",
   "scope": {
     "existingCollectors": [
       "Taiwan Industry Signals",
@@ -1032,6 +1032,94 @@
         }
       ],
       "publicationStatus": "incorporated-into-series-update"
+    },
+    {
+      "id": "PAI-EV-2026-0041",
+      "date": "2026-10-26",
+      "trackerAddedAt": "2026-10-31",
+      "geography": "global",
+      "category": "commercial-reference-robot-fleet-deployment",
+      "subject": "GXO and Agility extend Digit RaaS agreement to two more fulfillment sites for 2027",
+      "sourceType": "official",
+      "sourceUrl": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-agility-robotics-expand-partnership-accelerate",
+      "additionalSourceUrls": [
+        "https://www.agilityrobotics.com/content/gxo-and-agility-robotics-expand-partnership-to-accelerate-deployment-of-humanoids-in-u-s-operations"
+      ],
+      "summary": "On October 26 GXO and Agility announced a broadened existing Digit Robots-as-a-Service agreement to add GXO facilities in Statesville, North Carolina and Lebanon, Tennessee. These new deployments are scheduled to start in early 2027 with Digit 4 and migrate to Digit 5 when commercially available; neither new site is an October 2026 operating installation. The companies report more than 100,000 totes moved at the existing Georgia site and use of Agility Arc fleet management. Counts, costs, uptime, per-site economics and operating performance remain first-party, with no independent proof of hardware portability or RaaS gross margins.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "supports",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "supports",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "neutral",
+          "strength": "weak"
+        }
+      ],
+      "publicationStatus": "tracker-only"
+    },
+    {
+      "id": "PAI-EV-2026-0042",
+      "date": "2026-10-28",
+      "trackerAddedAt": "2026-10-31",
+      "geography": "global",
+      "category": "robotics-odm-import-policy-and-supply-chain-risk",
+      "subject": "United States Section 232 proclamation directs robotics and industrial-machinery import negotiations, without imposing new robotics tariffs",
+      "sourceType": "official",
+      "sourceUrl": "https://www.whitehouse.gov/presidential-actions/2026/10/adjusting-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/",
+      "additionalSourceUrls": [
+        "https://www.whitehouse.gov/fact-sheets/2026/10/fact-sheet-president-donald-j-trump-adjusts-imports-of-robotics-industrial-machinery-and-their-parts-and-components-into-the-united-states/"
+      ],
+      "summary": "On October 28 the U.S. President issued a Section 232 proclamation directing Commerce and USTR to negotiate with trading partners about imported robotics, industrial machinery and their components, with a progress update due within 180 days. The proclamation states possible future remedies may include tariffs, quotas or fees, but imposes no new robotics or industrial machinery tariff in this action. It introduces a concrete provenance/localization policy uncertainty for cross-border reference-robot and ODM supply chains; no supplier-specific cost impact, final negotiation outcome or shipment displacement is established.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "weakens",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "weakens",
+          "strength": "weak"
+        },
+        {
+          "predictionId": "FP-PAI-001",
+          "effect": "neutral",
+          "strength": "weak"
+        }
+      ],
+      "publicationStatus": "tracker-only"
+    },
+    {
+      "id": "PAI-EV-2026-0043",
+      "date": "2026-10-30",
+      "trackerAddedAt": "2026-10-31",
+      "geography": "global",
+      "category": "reference-robot-financing-and-strategic-manufacturing-capital",
+      "subject": "Agility announces expected $465m gross financing including Foxconn-led $201m PIPE, pending deal close",
+      "sourceType": "official",
+      "sourceUrl": "https://www.agilityrobotics.com/content/agility-robotics-and-churchill-capital-corp-xi-announce-expected-gross-capital-raise-of-approximately-465-million-and-anticipated-closing-of-business-combination",
+      "summary": "Agility and Churchill XI announced on October 30 that planned business-combination funding is expected to total roughly US$465m before expenses, including approximately US$201m committed PIPE financing led by Foxconn, US$164m in the SPAC trust and US$100m equity already received. The business combination and PIPE financing remain subject to shareholder approval and closing conditions, with November 4 proposed as closing date. Foxconn-led financing is NOT evidence of a robot ODM contract, production sourcing award or shipment volume; Agility's multi-year orders represent potential future value rather than recognized revenue.",
+      "predictionLinks": [
+        {
+          "predictionId": "FP-PAI-002",
+          "effect": "neutral",
+          "strength": "medium"
+        },
+        {
+          "predictionId": "FP-PAI-003",
+          "effect": "neutral",
+          "strength": "weak"
+        }
+      ],
+      "publicationStatus": "tracker-only"
     }
   ]
 }
