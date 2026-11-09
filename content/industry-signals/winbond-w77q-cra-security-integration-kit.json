@@ -1,0 +1,101 @@
+{
+  "eventId": "EVT-2026-0086",
+  "slug": "winbond-w77q-cra-security-integration-kit",
+  "sourcePublishedAt": "2026-11-04",
+  "publishedAt": "2026-11-09",
+  "modifiedAt": "2026-11-09",
+  "supplier": "Winbond Electronics",
+  "category": "Secure Flash · Lifecycle Security",
+  "title": "Winbond Adds CRA Integration Resources Around W77Q Secure Flash",
+  "seoTitle": "Winbond W77Q CRA Integration Kit: Engineering Questions",
+  "socialTitle": "Winbond W77Q Security Integration Kit",
+  "seoDescription": "Winbond's W77Q Secure Flash integration kit offers CRA-oriented testing and documentation resources, but it cannot establish finished-product EU conformity.",
+  "dek": "The W77Q package connects hardware security with sample code, test cases and compliance documentation. It is not a blanket certification for products using the component.",
+  "summary": "Winbond has announced a CRA Conformance and Integration Kit for TrustME W77Q Secure Flash. The new package focuses on mapping security functions into system integration, tests and evidence. Component-level assessment, even when valid, does not establish European Cyber Resilience Act conformity for a complete device.",
+  "keyFacts": [
+    "W77Q secure flash integration kit",
+    "SESIP L2 status reported by Winbond",
+    "Product-level CRA assessment needed"
+  ],
+  "whyItMatters": [
+    "Security for long-life connected devices spans memory, boot flow, key handling, update authorization, rollback and recovery; a standalone chip feature is insufficient.",
+    "A vendor-supplied suite of reference code, tests and evidence templates may lower duplicated engineering effort if it is accessible and applicable to the product.",
+    "The EU CRA concerns a finished product's obligations; a component's SESIP assessment must never be described as product-level certification."
+  ],
+  "reporting": [
+    {
+      "heading": "Winbond packages implementation evidence with the component",
+      "paragraphs": [
+        "On November 4, 2026, Winbond announced a CRA Conformance and Integration Kit for its TrustME W77Q Secure Flash family. The package is described as including hardware integration guidance, low-level security libraries, sample code, positive and negative tests, objective mapping, risk-assessment templates and reference designs. The new part of the story is a set of integration resources around secure memory, rather than the first existence of the flash family itself.",
+        "The company also reports that W77Q has achieved SESIP Level 2 certification. That may help engineers assess component security characteristics, but neither a vendor-provided evidence bundle nor a chip-level assurance status can replace validation of an OEM's whole device. Bootloaders, network interfaces, software maintenance, incident handling and update operations remain product responsibilities."
+      ]
+    },
+    {
+      "heading": "Migration remains conditional on a particular board and firmware",
+      "paragraphs": [
+        "Winbond positions W77Q as a possible path for designs already using external NOR flash when the package, voltage, interface and system conditions match. Such a migration may avoid adding a separate security component, but it still requires engineering work on firmware authentication, key lifecycle, update rollback controls and recovery behaviour. An apparently similar footprint does not establish plug-and-play compatibility.",
+        "The announcement also discusses supported W77Q configurations using the Leighton-Micali Signature scheme specified in NIST SP 800-208 for firmware-update authentication. That statement is not a claim that a particular finished product has end-to-end post-quantum security. Device variants, cryptographic modes, key provisioning and software integration need to be checked against independent evidence."
+      ]
+    },
+    {
+      "heading": "Product compliance and commercial access remain open",
+      "paragraphs": [
+        "Connected industrial equipment, smart buildings and remotely maintained robotics can benefit from a repeatable security evidence process, especially when targeting European customers. The documentation may become a useful design-in aid if reference implementations are available and supported, but Winbond has not published complete public access terms, kit pricing or a verified catalogue of target platforms in the announcement reviewed here.",
+        "Canadian developers should request the exact W77Q ordering code and SESIP certificate scope, tool versions, integration libraries and the support policy. They must also separately determine the applicable CRA obligations for the final device. A commercially sensible security architecture is one that can be maintained, tested and documented over its real service life."
+      ]
+    }
+  ],
+  "flypigTake": "The signal is not that secure flash makes a robot CRA-compliant. It is that vendors are beginning to compete on the engineering evidence and test infrastructure needed to ship and maintain secure connected devices.",
+  "productStatus": "Winbond announced the W77Q CRA integration resources on November 4. Winbond reports SESIP Level 2 assessment; kit access, licensing, ordering terms and product-level CRA conformity are not verified.",
+  "openQuestions": [
+    "What W77Q SKUs, certificate scope and software versions are covered by the claimed SESIP evidence?",
+    "Which tests, reference designs and documentation are publicly or commercially accessible, and what remains the OEM's own CRA responsibility?"
+  ],
+  "canadaRelevance": "Canadian industrial IoT, smart-device and robotics OEMs with EU market ambitions may evaluate W77Q as one part of a secure lifecycle architecture, not as a compliance shortcut.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "winbond-cube-w77t-edge-ai-memory-security",
+    "winbond-infineon-nor-flash-fram-acquisition",
+    "nuvoton-m3351-5v-cortex-m33-robotics-control"
+  ],
+  "relatedTechnologies": [
+    "Secure Flash",
+    "Firmware Update",
+    "EU CRA",
+    "Embedded Security"
+  ],
+  "corrections": [],
+  "sourceName": "Winbond Electronics November 4, 2026 TrustME W77Q announcement",
+  "sourceUrl": "https://winbond.com/hq/about-winbond/news-and-events/news/2026_1104_winbond_cra_trustme_w77q_secure_flash_eu_cyber_resilience_act_compliance",
+  "sourceNote": "Independent FlyPig AI analysis of first-party company statements. Vendor figures and plans are attributed, not independently benchmarked. Specifications, supply status, certifications and commercial terms must be verified before procurement.",
+  "audit": {
+    "version": "1.0",
+    "auditedAt": "2026-11-09",
+    "riskLevel": "medium",
+    "action": "highlight",
+    "sourceVerified": true,
+    "findings": [
+      "SESIP L2 is company-reported; independent certificate scope was not separately checked.",
+      "The kit cannot establish product-level CRA compliance; license and integration support remain unverified."
+    ],
+    "mediaRights": "original FlyPig AI article-derived artwork generated during build"
+  },
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/winbond-w77q-cra-security-integration-kit.png",
+    "socialSrc": "/images/signals/og/winbond-w77q-cra-security-integration-kit.png",
+    "alt": "FlyPig AI original editorial infographic separating Winbond W77Q component security, integration tests and final-product EU Cyber Resilience Act assessment.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://winbond.com/hq/about-winbond/news-and-events/news/2026_1104_winbond_cra_trustme_w77q_secure_flash_eu_cyber_resilience_act_compliance",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/winbond-w77q-cra-security-integration-kit.svg"
+    }
+  }
+}
