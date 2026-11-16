@@ -10,10 +10,11 @@ const args = Object.fromEntries(process.argv.slice(2).map((argument) => {
   return [key, value];
 }));
 const start = Number(args.start ?? 0);
-const limit = Number(args.limit ?? 6);
+// Missing-only builds must generate every asset, not only the first six.
+const limit = Number(args.limit ?? (missingOnly ? 100 : 6));
 const missingOnly = args.missing === "true";
 if (!Number.isInteger(start) || start < 0) throw new Error("--start must be a non-negative integer");
-if (!Number.isInteger(limit) || limit < 1 || limit > 6) throw new Error("--limit must be an integer from 1 to 6");
+if (!Number.isInteger(limit) || limit < 1 || limit > 100) throw new Error("--limit must be an integer from 1 to 100");
 
 const root = process.cwd();
 const contentDirectory = path.join(root, "content", "industry-signals");
