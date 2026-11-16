@@ -33,4 +33,15 @@ Use the existing FlyPig AI original infographic generator, three factual labels,
 - Existing build generation fills previously missing artwork for other articles locally; only this article's four owned visual files are included in this release.
 - `git diff --check`: passed.
 
-Production readback will be recorded after execution. Canonical destination: https://flypigai.ca/signals/honda-alliston-hybrid-manufacturing-investment
+## Production release and readback
+
+- Content commit: `cee8ae76a1a9c51223813eab2314617408725a62` on `main`.
+- Cloudflare Pages check: completed successfully; deployment `8c777c74-dc42-4d42-a8d6-6fa40e49c645`.
+- The public custom domain returned the new article with HTTP 200, expected headline, canonical, November 16 publication/modified dates, English NewsArticle schema, both official citations and visible image/source/independence disclosures.
+- Hero and social PNGs returned HTTP 200 and exactly matched local SHA-256 hashes. OG references the published social graphic.
+- `/signals` lists the article; sitemap includes its canonical URL with November 16 lastmod. The current homepage provides an Industry Signals link rather than an individual latest-article card.
+- Homepage, `/zh`, `/atlas`, `/Solutions`, `/technologies`, `/insights`, `/contact`, robots, sitemap and favicon returned HTTP 200. Raw `/zh` HTML declares `zh-Hant`.
+- Detailed local evidence: `artifacts/honda-visual-check.json`, desktop/mobile screenshots and `artifacts/honda-production-readback.json` (ignored build/review artifacts).
+- No IndexNow key was configured in this session; no key was searched for, exposed or provisioned, and no indexing submission is claimed. Sitemap discovery remains available.
+
+Published canonical URL: https://flypigai.ca/signals/honda-alliston-hybrid-manufacturing-investment
