@@ -1,0 +1,103 @@
+{
+  "eventId": "EVT-2026-0091",
+  "slug": "foxconn-5g-ntn-terminal-modules-tasti-2026",
+  "publicationStatus": "published",
+  "sourcePublishedAt": "2026-11-08",
+  "publishedAt": "2026-11-16",
+  "modifiedAt": "2026-11-16",
+  "supplier": "Hon Hai Technology Group (Foxconn)",
+  "category": "Satellite Connectivity · Edge Systems",
+  "title": "Foxconn Shows 5G NTN Terminal Modules, but a Design-In Route Is Not Yet Clear",
+  "seoTitle": "Foxconn Shows 5G NTN Modem, Antenna and RF Modules",
+  "socialTitle": "Foxconn 5G NTN Terminal Modules",
+  "seoDescription": "Foxconn demonstrated a MediaTek-based 5G terrestrial/non-terrestrial modem, phased-array antenna and RF modules; device specs and supply remain unverified.",
+  "dek": "The TASTI 2026 display outlines a modular satellite-connectivity stack. The vendor has not disclosed ordering codes, RF specifications or a commercial delivery roadmap.",
+  "summary": "At Taiwan's TASTI 2026 exhibition, Foxconn displayed a terrestrial/non-terrestrial 5G user-terminal modem module based on an unspecified MediaTek communications chip, together with phased-array and RF up/down-conversion modules. These are named technology demonstrations, not publicly documented stock-keeping units or evidence of production shipment.",
+  "keyFacts": [
+    "5G TN/NTN user terminal modem",
+    "Phased-array antenna module",
+    "RF up/down-converter module"
+  ],
+  "whyItMatters": [
+    "Separating modem, beam-forming antenna and RF conversion into visible system blocks could offer a path for evaluating satellite connectivity without treating the whole terminal as a single black box.",
+    "Remote sensing and autonomous field equipment need a complete RF, power and network design; the presence of a 5G modem does not alone establish usable satellite service.",
+    "Foxconn's announcement demonstrates technical scope, but missing interface, certification and supplier terms prevent a responsible statement about near-term OEM procurement."
+  ],
+  "reporting": [
+    {
+      "heading": "Three announced building blocks, few procurement details",
+      "paragraphs": [
+        "Foxconn's November 8, 2026 announcement for TASTI 2026 describes a 5G terrestrial/non-terrestrial network user-terminal modem module using a MediaTek 5G chip. It separately identifies a phased-array antenna module for RF beam forming and a modular RF up/down converter intended to work with different generations of analogue modems. The manufacturer exhibited the devices alongside its broader low-Earth-orbit satellite program.",
+        "The modem's exact MediaTek device is not disclosed. In particular, the announcement does not identify it as the MT8875 IoT platform covered separately by FlyPig AI. It provides no independently verifiable channel bandwidth, network operator, constellation compatibility, antenna power, module dimensions, thermal budget or ordering code. Product teams should not infer interoperability merely from the use of 5G or NTN terminology."
+      ]
+    },
+    {
+      "heading": "The system question extends beyond the baseband",
+      "paragraphs": [
+        "A practical remote-terminal architecture must reconcile modem support with the antenna's steering range, RF conversion, regulatory bands, pointing strategy, platform motion, enclosure losses and battery draw. A phased-array subsystem may enable useful directional operation, yet its beam efficiency and integration constraints cannot be evaluated from an exhibition caption alone. For mobile robotics or outdoor monitoring, thermal limits and full-terminal power are as consequential as modem capability.",
+        "One attractive possibility is design separation: a team might qualify the RF chain and antenna independently of the application computer. That remains an engineering hypothesis rather than a confirmed modular interoperability feature. Developers need block-level interface information, software control surfaces, evaluation hardware and a supported satellite-network path before choosing such a route."
+      ]
+    },
+    {
+      "heading": "Demonstration status must not become a shipping claim",
+      "paragraphs": [
+        "Foxconn also discussed its PEARL-1A and PEARL-1B satellites, launched in May 2026. Their flight history is context for the group's research ambitions, not proof that the displayed user-terminal modules are certified or currently commercially available. Likewise, a demonstration using a MediaTek communications chip is not evidence that this exact terminal stack can be purchased or that MediaTek offers a particular module under the same designation.",
+        "Canadian OEMs designing remote energy, environmental monitoring or autonomous field systems would need the exact 3GPP NTN implementation, regulatory approvals, Canadian spectrum and service arrangements, environmental ratings, SDK and EVK access, and reliable supply conditions. Until those are confirmed, the announcement is useful as a supplier-discovery lead rather than a bill-of-materials recommendation."
+      ]
+    }
+  ],
+  "flypigTake": "Foxconn is signalling capability across the NTN terminal stack, not just satellite payloads. The next meaningful proof point for North American engineers will be an identified modem and antenna reference design with service compatibility, measured power, regulatory evidence and a documented procurement route.",
+  "productStatus": "Foxconn described and demonstrated modem, antenna and RF modules at TASTI 2026 on November 8–10. Official materials do not establish purchasable part numbers, samples, mass production, prices, lead times, network certification or Canadian operator compatibility.",
+  "openQuestions": [
+    "Which MediaTek chip and 3GPP NTN release does the demonstrated modem use, and for which supported constellations and frequency bands?",
+    "What are the module power, antenna aperture, beam-steering range, RF interfaces, environmental limits and reference design details?",
+    "Are evaluation kits, SDKs, regulatory filings and Canadian service/ODM partnership options documented?"
+  ],
+  "canadaRelevance": "Canadian remote-IoT, field-robotics and connectivity teams may track Taiwan NTN integration capability, but should require network, spectrum, power and delivery evidence before specifying the modules.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "mediatek-mt8875-5g-iot-genai",
+    "aaeon-rtc-1210-orin-nx-maxer-5000-smart-city-expo",
+    "advantech-weda-cross-chip-edge-ai-ecosystem"
+  ],
+  "relatedTechnologies": [
+    "5G NTN",
+    "LEO Satellite",
+    "RF Modules",
+    "Edge Connectivity"
+  ],
+  "corrections": [],
+  "sourceName": "Hon Hai Technology Group TASTI 2026 announcement, November 8, 2026",
+  "sourceUrl": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2152",
+  "sourceNote": "Independent FlyPig AI interpretation of Hon Hai's official exhibition announcement. A demonstrated engineering module does not establish market availability, certifications or a supplier relationship with FlyPig.",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-11-16",
+    "action": "highlight",
+    "sourceVerified": true,
+    "mediaRights": "FlyPig original editorial graphic generated from factual module categories; no Foxconn exhibition, satellite photo or brand assets reused",
+    "findings": [
+      "Exact MediaTek chip, satellite service compatibility, interfaces and regulatory status not disclosed; no link is asserted to MT8875.",
+      "Exhibition demonstration cannot establish independently orderable SKUs, shipment, certification or production readiness.",
+      "Foxconn group's satellite launch history is a separate historical fact, not evidence of terminal commercial status."
+    ]
+  },
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/foxconn-5g-ntn-terminal-modules-tasti-2026.png",
+    "socialSrc": "/images/signals/og/foxconn-5g-ntn-terminal-modules-tasti-2026.png",
+    "alt": "FlyPig AI editorial infographic showing three Foxconn-demonstrated NTN terminal building blocks: 5G modem, phased-array antenna and RF converter.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.honhai.com/zh-tw/press-center/press-releases/latest-news/2152",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/foxconn-5g-ntn-terminal-modules-tasti-2026.svg"
+    }
+  }
+}
