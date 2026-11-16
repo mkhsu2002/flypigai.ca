@@ -1,0 +1,121 @@
+{
+  "eventId": "EVT-2026-0089",
+  "slug": "aaeon-acp-4000-jetson-ai-panel-pc-series",
+  "publicationStatus": "published",
+  "sourcePublishedAt": "2026-11-11",
+  "publishedAt": "2026-11-16",
+  "modifiedAt": "2026-11-16",
+  "supplier": "AAEON",
+  "category": "Industrial Edge AI · AI Panel PC",
+  "title": "AAEON's ACP-4000 Series Puts Jetson AI Inside Industrial Touch Panels",
+  "seoTitle": "AAEON ACP-4000: Jetson AI Panel PCs for Industrial HMI",
+  "socialTitle": "AAEON ACP-4000 Jetson AI Panels",
+  "seoDescription": "AAEON's four ACP-4000 touch panels combine Jetson Orin compute with industrial I/O. Design teams still need to verify thermals, software and supply terms.",
+  "dek": "Four screen sizes pair embedded NVIDIA Jetson processors with industrial control interfaces, moving edge inference closer to the operator panel.",
+  "summary": "AAEON's November 11 product update presents four ACP-4000 industrial AI panel computers. Instead of adding a separate inference box to an HMI, developers can evaluate a single enclosure that houses a touchscreen, Jetson processing and industrial interfaces. The announcement establishes product identities, not verified delivery schedules or benchmark results.",
+  "keyFacts": [
+    "Four models: 7 to 21.5 inches",
+    "Jetson Orin Nano or Orin NX",
+    "IP65-rated front bezel only"
+  ],
+  "whyItMatters": [
+    "A combined AI computer and touchscreen could reduce enclosure, cabling and system-integration effort in inspection stations and robotics operator consoles.",
+    "The Nano and NX variants create distinct power, cost and model-capacity trade-offs; one series name does not imply equivalent inference performance.",
+    "Industrial interfaces and a front-bezel ingress rating are useful starting specifications, but they do not establish whole-machine environmental compliance."
+  ],
+  "reporting": [
+    {
+      "heading": "Four sizes, two Jetson compute tiers",
+      "paragraphs": [
+        "AAEON listed ACP-4070-NANO, ACP-4100-NANO, ACP-4160-NX and ACP-4210-NX in a November 11, 2026 product update. The 7-inch and 10-inch models use NVIDIA Jetson Orin Nano, while the 15.6-inch and 21.5-inch models use Orin NX. Official model pages identify the two smaller panels and the two larger panels separately. This is a hardware packaging announcement, not the introduction of a new NVIDIA processor.",
+        "Across the family, AAEON advertises fanless operation, 12–24 V input, a front bezel rated IP65, and VESA or panel installation. It also lists two LAN connections, four USB 3.2 Gen 2 ports, CANBus, serial ports and eight-bit digital I/O. Those features make the units plausible controllers for local vision tasks, but deployment suitability will depend on each ordered configuration and the OEM's application."
+      ]
+    },
+    {
+      "heading": "The design choice shifts from separate boxes to an integrated HMI",
+      "paragraphs": [
+        "For a production cell, mobile equipment console or smart retail terminal, the conventional route is to mount a display next to a separate computer. Combining them may simplify wiring, mounting and field servicing. It can also concentrate heat, vibration exposure and software responsibility in one device. Designers should compare total integration and service cost against a modular panel-plus-box architecture rather than assuming consolidation always saves money.",
+        "The processor split matters as well. Orin Nano and Orin NX should be treated as different performance and power envelopes. Camera count, inference latency, concurrency, AI model support and thermals were not independently benchmarked in the announcement. Application performance claims require a reproducible workload on the exact screen and module configuration."
+      ]
+    },
+    {
+      "heading": "Commercial readiness still requires a configuration-level check",
+      "paragraphs": [
+        "AAEON has published named product pages with enquiry links, which is useful for supplier qualification, but the reviewed materials do not independently establish stock, factory production volume, regional order terms or Canadian delivery dates. Buyers should request full ordering codes, a hardware revision matrix, BSP and JetPack support, long-term maintenance policy, and local compliance documentation for the specific panel size.",
+        "The IP65 statement applies to the front bezel, not automatically to the rear housing or the assembled cabinet. For installations involving wash-down, outdoor exposure or high-vibration mobile machinery, enclosure design and installation details therefore remain a separate engineering responsibility. A pilot should measure sustained inference load, touchscreen usability and remote-update reliability together."
+      ]
+    }
+  ],
+  "flypigTake": "The ACP-4000 family is worth tracking as a design-route option, not because panel PCs are new, but because the HMI can now be the AI computer. Its real value will be proven by thermals, BSP maintenance, integration effort and total cost relative to a replaceable Jetson box and display.",
+  "productStatus": "AAEON published four product identities and enquiry pages on November 11. Availability, confirmed production volumes, Canadian certifications, pricing, MOQ and lead times have not been independently established.",
+  "openQuestions": [
+    "Which Jetson module, memory, storage, BSP and JetPack versions ship with each exact ACP-4000 ordering code?",
+    "What sustained inference and thermal behavior is achievable in the fanless chassis under real cabinet temperatures?",
+    "Are there Canadian compliance records, samples, pricing, warranty and long-term supply terms for each panel size?"
+  ],
+  "canadaRelevance": "Canadian industrial automation integrators, robotics OEMs and vision-system developers can compare an integrated Jetson HMI against separate compute and display components for operator-facing edge inference.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "aaeon-rtc-1210-orin-nx-maxer-5000-smart-city-expo",
+    "advantech-igx-thor-edge-ai-systems",
+    "aaeon-pico-pth4-panther-lake-edge-ai-board"
+  ],
+  "relatedTechnologies": [
+    "Jetson Orin",
+    "Industrial HMI",
+    "Edge AI",
+    "Robotics"
+  ],
+  "corrections": [],
+  "sourceName": "AAEON Solutions product update, November 11, 2026",
+  "sourceUrl": "https://solutions.aaeon.com/the-acp-4000-series-elite-ai-panel-pcs-ready-for-the-edge/",
+  "sourceProductUrl": "https://www.aaeon.com/en/product/detail/ai-panel-pc-acp-4070-nano",
+  "additionalSources": [
+    {
+      "name": "AAEON product news date archive",
+      "url": "https://solutions.aaeon.com/news/"
+    },
+    {
+      "name": "ACP-4100-NANO official page",
+      "url": "https://www.aaeon.com/en/product/detail/ai-panel-pc-acp-4100-nano"
+    },
+    {
+      "name": "ACP-4160-NX official page",
+      "url": "https://www.aaeon.com/en/product/detail/ai-panel-pc-acp-4160-nx"
+    },
+    {
+      "name": "ACP-4210-NX official page",
+      "url": "https://www.aaeon.com/en/product/detail/ai-panel-pc-acp-4210-nx"
+    }
+  ],
+  "sourceNote": "FlyPig AI independently interprets AAEON's public product materials. Technical specifications and protection ratings are vendor statements, not independent qualification. Listing does not imply representation, endorsement or stock.",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-11-16",
+    "action": "highlight",
+    "sourceVerified": true,
+    "mediaRights": "Original FlyPig specification infographic generated from the repository template; no AAEON photo, logo or product rendering reused",
+    "findings": [
+      "AAEON provides named products and product-news date, but stock, shipment, BSP support and certification scope remain unverified.",
+      "IP65 applies to front bezel and must not be described as full enclosure protection; sustained performance figures are not independently validated."
+    ]
+  },
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/aaeon-acp-4000-jetson-ai-panel-pc-series.png",
+    "socialSrc": "/images/signals/og/aaeon-acp-4000-jetson-ai-panel-pc-series.png",
+    "alt": "FlyPig AI original infographic comparing four ACP-4000 industrial display sizes, Jetson processor tiers and the front-bezel ingress protection boundary.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://solutions.aaeon.com/the-acp-4000-series-elite-ai-panel-pcs-ready-for-the-edge/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/aaeon-acp-4000-jetson-ai-panel-pc-series.svg"
+    }
+  }
+}
