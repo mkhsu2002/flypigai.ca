@@ -25,4 +25,6 @@ The saved master and SVG compositions allow deterministic rebuilds through `scri
 - Desktop 1440px and mobile 390px screenshots reviewed: no overflow, browser console errors or broken article images. Visible credit identifies OpenAI ImageGen and conceptual imagery. OG metadata uses the new image URL.
 - Master, cover and OG were inspected directly. Key vehicle and maple elements survive both crops, and financial labels and the tracked brand lockup are legible.
 
-Production readback follows deployment.
+## Production verification
+
+Commit `be3cf88d9403f44adf15d544eb06d2b31cf72c68` deployed successfully through Cloudflare Pages deployment `ba8bec60-b9a6-432d-b3d9-7d9fc9235eb0`. The article, both new PNGs, Signals listing, sitemap and `/zh` returned HTTP 200. Public PNG hashes match local exports. OG and NewsArticle reference the new images; visible credit identifies ImageGen and conceptual illustration. Publication remains November 16 and modification is November 17. Raw `/zh` retains `zh-Hant`. Detailed readback is saved in ignored `artifacts/honda-imagegen-production-readback.json`.
