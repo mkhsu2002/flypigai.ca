@@ -1,0 +1,39 @@
+{
+  "type": "imagegen_editorial_background",
+  "provider": "OpenAI ImageGen",
+  "generatedAt": "2026-11-17",
+  "masterSrc": "/images/signals/source/canada-budget-2026-industrial-funding-roadmap-imagegen.png",
+  "prompt": "Create ONE premium editorial illustration for FlyPig AI about Canada's future industrial innovation funding roadmap connecting artificial intelligence, defence and aerospace technology, and advanced manufacturing. Landscape 8:5, high resolution, refined cinematic industrial magazine cover, matching a series with deep midnight navy, steel blue, warm metallic copper and maple red. Unmistakably conceptual imagery, not a photograph of a real project. Main composition middle-right: a sophisticated generic AI processor on an engineering workbench, a precision industrial robot arm assembling an unbranded high-tech module, and clean advanced manufacturing architecture with subtle luminous blue circuit pathways. An elegant satellite antenna and aerospace engineering silhouette in the middle distance suggest research and dual-use technology, no weapons, no combat. Canadian character: a large translucent crimson maple-leaf shape integrated into architectural lighting on the right; a very subtle distant Ottawa Parliament-style silhouette beyond broad windows, early-winter Canadian light. Do not copy any official Canadian government seal or branding. Show the connection between research, engineering and future industrial capacity, not money being handed out. Quiet dark uncluttered upper-left for a headline added later. Quiet dark bottom18percent for three exact funding timeline labels added later. Put all important subject matter inside the central65percent so centre cropping to1.90:1 still works. Excellent visual hierarchy, realistic fine materials, elegant depth and controlled reflections; credible innovation-policy editorial art rather than sci-fi fantasy. No people. NO readable text, NO lettering, NO numbers, NO corporate or government logos, NO watermarks. Do not depict actual funded companies, a real plant, specific military equipment or a disclosed procurement program.",
+  "rightsDecision": "Owner-commissioned FlyPig AI editorial artwork generated with OpenAI ImageGen without third-party reference images or logos. Project-owned generated artwork, not official government media; no exclusive copyright claim. The existing tracked FlyPig AI lockup is composited independently.",
+  "disclosure": "Conceptual AI illustration of policy-related technology fields, not official government artwork, a photograph, an actual funded facility or evidence of a procurement award.",
+  "exports": {
+    "hero": {
+      "width": 1600,
+      "height": 1000
+    },
+    "social": {
+      "width": 1200,
+      "height": 630
+    }
+  },
+  "composition": "Centre-crop master and add exact budget proposal labels plus tracked FlyPig AI brand using scripts/render-signal-imagegen.mjs through scripts/generate-signal-heroes.mjs.",
+  "eyebrow": "CANADA · INDUSTRY SIGNAL",
+  "titleLines": [
+    "Canada's Industrial",
+    "Funding Roadmap"
+  ],
+  "facts": [
+    [
+      "CAD 1B",
+      "Proposed SRF funding"
+    ],
+    [
+      "6 years",
+      "Proposed funding period"
+    ],
+    [
+      "2028–29",
+      "Proposed fiscal start"
+    ]
+  ]
+}
