@@ -27,10 +27,14 @@ Publication uses November17, the active America/Vancouver client date; the ISED 
 
 ## Prepublication verification
 
--85 Signals passed content/media validation, including source-image provenance, rights decision, dimensions and local editable artwork.
--All three existing test files and TypeScript passed. Production build generated151 pages; export audit passed for149 HTML pages, including metadata, JSON-LD, language, images, internal links, redirects and sitemap.
--Desktop1440px and mobile390px screenshots reviewed: no overflow or browser console errors; article/related images, ImageGen conceptual credit, exact OG path and newsletter surface verified. Funding amount, six-year period and fiscal start are labelled proposed in the visual.
--Cover and OG independently inspected; important Canadian/industrial elements survive both crops. No unrelated artwork or application changes included.
--`git diff --check` passed. Local screenshots/review files remain ignored evidence.
+- 85 Signals passed content/media validation, including source-image provenance, rights decision, dimensions and local editable artwork.
+- All three existing test files and TypeScript passed. Production build generated151 pages; export audit passed for149 HTML pages, including metadata, JSON-LD, language, images, internal links, redirects and sitemap.
+- Desktop1440px and mobile390px screenshots reviewed: no overflow or browser console errors; article/related images, ImageGen conceptual credit, exact OG path and newsletter surface verified. Funding amount, six-year period and fiscal start are labelled proposed in the visual.
+- Cover and OG independently inspected; important Canadian/industrial elements survive both crops. No unrelated artwork or application changes included.
+- `git diff --check` passed. Local screenshots/review files remain ignored evidence.
 
-Production readback follows deployment.
+## Production readback
+
+Commit `9447eb23b48d6d13ebfe073bc63cc656a48f48cf` deployed successfully through Cloudflare Pages deployment `758f0af1-aa41-4af8-ae56-59349797be87`. Public article, cover, OG, Signals listing, sitemap, homepage and core routes returned HTTP200. Cover and OG bytes match local SHA-256 hashes. Headline, canonical, OG and NewsArticle references agree; all five primary citations and the November13 visible source date match the record. ImageGen conceptual credit is visible; raw `/zh` remains `zh-Hant`. Details are in ignored `artifacts/budget-production-readback.json` and desktop/mobile screenshots.
+
+Published URL: https://flypigai.ca/signals/canada-budget-2026-industrial-funding-roadmap
