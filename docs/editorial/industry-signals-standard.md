@@ -101,6 +101,8 @@ The visible hero is 1600×1000 and the social image is 1200×630. The build must
 
 For `owned` assets, keep editable sources for both the 1600×1000 hero and 1200×630 social image, or a reproducible generation input, in the repository and identify the primary source in `evidence`.
 
+For an owner-requested ImageGen background in an original editorial infographic, retain the generated master and a `public/images/signals/source/<slug>-artwork.json` composition manifest. Record the full prompt, provider, generation date, rights/provenance decision, conceptual-scene disclosure, exact title and factual overlays. The existing generator uses this manifest through `scripts/render-signal-imagegen.mjs`, preserving the master during rebuilds. State ImageGen use and the conceptual nature in the visible credit; a generated factory scene must not be presented as a photograph or evidence of actual equipment at the named facility. Composite the tracked official FlyPig AI logo separately rather than asking the model to recreate it.
+
 For `licensed` assets, record:
 
 - licensor or platform;

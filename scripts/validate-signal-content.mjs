@@ -82,6 +82,18 @@ for (const { fileName, data } of signals) {
     if (metadata.width !== dimensions[0] || metadata.height !== dimensions[1]) errors.push(`${label}: ${field} dimensions do not match ${dimensions.join("x")}`);
   }
   const sourceMatch = hero.assetRights?.evidence?.match(/editable source: ([^;]+)$/);
+  const artworkSpecPath = path.join(root, "public", "images", "signals", "source", `${data.slug}-artwork.json`);
+  if (fs.existsSync(artworkSpecPath)) {
+    try {
+      const spec = JSON.parse(fs.readFileSync(artworkSpecPath, "utf8"));
+      if (spec.type !== "imagegen_editorial_background" || spec.provider !== "OpenAI ImageGen" || !spec.prompt || !spec.rightsDecision || !spec.disclosure || !datePattern.test(spec.generatedAt ?? "")) errors.push(`${label}: incomplete ImageGen provenance and rights decision`);
+      if (!spec.masterSrc?.startsWith("/images/signals/source/") || spec.masterSrc.includes("..") || !fs.existsSync(path.join(root, "public", spec.masterSrc))) errors.push(`${label}: missing or invalid saved ImageGen master`);
+      if (!hero.credit.includes("ImageGen") || !hero.credit.toLowerCase().includes("conceptual")) errors.push(`${label}: generated scene requires visible ImageGen and conceptual-scene credit`);
+      if (!hero.assetRights?.evidence?.includes(`source/${data.slug}-artwork.json`)) errors.push(`${label}: ImageGen provenance must be linked from rights evidence`);
+    } catch (error) {
+      errors.push(`${label}: unreadable ImageGen provenance (${error.message})`);
+    }
+  }
   if (!sourceMatch || !fs.existsSync(path.join(root, sourceMatch[1]))) errors.push(`${label}: editable source evidence does not resolve`);
   const socialSourcePath = path.join(root, "public", "images", "signals", "source", `${data.slug}-social.svg`);
   if (!fs.existsSync(socialSourcePath)) errors.push(`${label}: editable social-image source does not resolve`);

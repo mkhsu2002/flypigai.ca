@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
+import { renderImagegenSignal } from "./render-signal-imagegen.mjs";
 
 sharp.cache(false);
 sharp.concurrency(1);
@@ -35,8 +36,8 @@ function hasCompleteArtwork(signal) {
   return [
     path.join(sourceDirectory, `${signal.slug}.svg`),
     path.join(sourceDirectory, `${signal.slug}-social.svg`),
-    path.join(imageDirectory, `${signal.slug}.png`),
-    path.join(socialDirectory, `${signal.slug}.png`),
+    path.join(root, "public", signal.heroVisual.src),
+    path.join(root, "public", signal.heroVisual.socialSrc),
   ].every((filePath) => fs.existsSync(filePath));
 }
 
@@ -150,6 +151,13 @@ async function renderWithOfficialLogo(svg, outputPath, social) {
 
 const renderedSocialPaths = [];
 for (const signal of batch) {
+  const imagegenSpec = path.join(sourceDirectory, `${signal.slug}-artwork.json`);
+  if (fs.existsSync(imagegenSpec)) {
+    await renderImagegenSignal(signal, root, imagegenSpec);
+    renderedSocialPaths.push(path.join(root, "public", signal.heroVisual.socialSrc));
+    console.log(`${signal.slug}: ImageGen master composed into hero 1600x1000, social 1200x630`);
+    continue;
+  }
   const heroSvg = svgFor(signal, 1600, 1000, false);
   const socialSvg = svgFor(signal, 1200, 630, true);
   const sourcePath = path.join(sourceDirectory, `${signal.slug}.svg`);
