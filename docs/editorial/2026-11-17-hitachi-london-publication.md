@@ -31,4 +31,8 @@ Publication uses November17, the active America/Vancouver client date. Source da
 - Cover and OG independently inspected: transformer materials, Canadian maple motif and exact factual labels remain visible in both crops. No unrelated artwork or application changes included.
 - `git diff --check` passed. Local screenshot/readback artifacts are ignored build evidence, not publication assets.
 
-Production readback follows deployment.
+## Production readback
+
+Commit `1ac234275dd5116fec0e56842e2bae9881f6939b` deployed successfully through Cloudflare Pages deployment `bc508668-605d-4853-9d8c-c4480b9edecf`. The public article, cover, OG, Signals listing, sitemap, homepage and core routes returned HTTP200. Cover and OG bytes match local SHA-256 hashes. NewsArticle/canonical/OG references agree; publication and modification are November17, and the visible original source date is October16. Both primary citations, ImageGen conceptual credit and raw `/zh` language `zh-Hant` were confirmed. Details are in ignored `artifacts/hitachi-production-readback.json` and desktop/mobile screenshots.
+
+Published URL: https://flypigai.ca/signals/hitachi-energy-london-transformer-insulation-factory
