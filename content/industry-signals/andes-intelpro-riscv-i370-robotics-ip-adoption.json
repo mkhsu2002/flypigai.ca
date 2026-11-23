@@ -1,0 +1,112 @@
+{
+  "eventId": "EVT-2026-0095",
+  "slug": "andes-intelpro-riscv-i370-robotics-ip-adoption",
+  "publicationStatus": "published",
+  "sourcePublishedAt": "2026-11-18",
+  "publishedAt": "2026-11-23",
+  "modifiedAt": "2026-11-23",
+  "supplier": "Andes Technology / INTELPRO",
+  "category": "RISC-V IP · Robotics AI",
+  "title": "INTELPRO Picks Andes RISC-V CPU and NPU IP for a Planned Robotics Platform",
+  "seoTitle": "INTELPRO Selects Andes RISC-V and I370 IP for Robotics",
+  "socialTitle": "Andes and INTELPRO Robotics IP",
+  "seoDescription": "INTELPRO is adopting Andes AX46MPV RISC-V and AnDLA I370 v2.0 IP for a planned robotics platform. No chip tape-out, hardware SKU or shipment is confirmed.",
+  "dek": "A named design-stage IP selection gives the Taiwan robotics compute stack a concrete integration example, not yet a purchasable AI chip or robot board.",
+  "summary": "On November 18, Andes Technology disclosed that Taiwanese integration firm INTELPRO had adopted its AX46MPV RISC-V vector CPU IP together with AnDLA I370 v2.0 neural accelerator IP for a forthcoming robotics platform. The notable development is the named integrator and proposed heterogeneous architecture. Neither IP block is an entirely new November invention, and the announcement does not document silicon tape-out, samples or commercial robotic shipments.",
+  "keyFacts": [
+    "AX46MPV: 64-bit RISC-V vector IP",
+    "AnDLA I370 v2.0: NPU IP",
+    "INTELPRO platform: in planning"
+  ],
+  "whyItMatters": [
+    "A named CPU and NPU combination provides a specific technical direction for edge robotics silicon, rather than a generic claim that RISC-V might support AI.",
+    "The intended split between vector CPU execution and neural acceleration creates integration questions around memory bandwidth, deterministic control and a shared software toolchain.",
+    "An IP adoption milestone is upstream from a physical product; Canadian OEMs cannot yet infer availability, benchmark performance or supported developer boards."
+  ],
+  "reporting": [
+    {
+      "heading": "A design-stage choice, not a new silicon launch",
+      "paragraphs": [
+        "Andes says INTELPRO selected its AX46MPV multicore RISC-V vector processor and AndesAIRE AnDLA I370 v2.0 deep-learning accelerator for an upcoming robotics platform. This adds a named system integrator to the public story around the two IP families. It does not mean a new processor chip or finished robot computer was announced on November 18.",
+        "The AX46MPV had already been commercially discussed and supplied to licensees before this event, and Andes introduced the I370 v2.0 and related NN SDK earlier in 2026. The fresh information is the combination selected for INTELPRO's planned work. A press statement confirming adoption should not be expanded into claims about fabrication, hardware qualification, customer orders or factory shipments."
+      ]
+    },
+    {
+      "heading": "Why heterogeneous compute matters to robotics",
+      "paragraphs": [
+        "The official announcement characterizes AX46MPV as a 64-bit superscalar processor implementing the RISC-V Vector 1.0 extension, with configurable vector lengths up to 1,024 bits. It presents the I370 accelerator as supporting configurations up to 2,048 multiply-accumulate units. These figures describe selectable IP capabilities and do not establish the throughput or energy use of a future chip.",
+        "A robotics system may need high-rate perception and model inference alongside motion planning, communications and timing-sensitive control. Dividing these tasks between CPU vector execution and a dedicated NPU could change power efficiency and software architecture, but only if the memory fabric, compiler, operator coverage and scheduling overhead work together. Andes names its NN SDK as part of the approach; real model conversion and profiling remain engineering work."
+      ]
+    },
+    {
+      "heading": "The unanswered questions start at tape-out",
+      "paragraphs": [
+        "INTELPRO's proposed applications include mobile robots and intelligent service equipment. However, the announcement does not identify a foundry process, tape-out milestone, reference board, shipping module, customer program or planned launch quarter. Even a successful IP license leaves many gates before design-in: RTL integration, verification, memory and I/O configuration, silicon bring-up, driver validation and sustained model testing.",
+        "Canadian robot developers evaluating future non-mainstream compute options should request a processor/NPU partition diagram, toolchain versions, supported transformer operators, measured latency and power on representative hardware, plus a dated silicon and developer-kit roadmap. Without those materials, the adoption is a technology-direction signal rather than a procurement option."
+      ]
+    }
+  ],
+  "flypigTake": "The most meaningful part of this announcement is an identifiable integrator assembling a RISC-V vector CPU with neural accelerator IP for robots. The next credible evidence will be a specific silicon configuration and reproducible robotics workload, not another list of supported AI model families.",
+  "productStatus": "Andes officially announced INTELPRO's IP adoption on November 18, 2026. No Intelpro SoC part number, tape-out date, EVK, sample program, mass-production date, price, customer delivery or independent benchmark has been verified.",
+  "openQuestions": [
+    "Which foundry, process node and AX46MPV/I370 configuration will INTELPRO actually implement, and is tape-out scheduled?",
+    "What memory, compiler, NN SDK and robotics middleware versions will be supported by a physical developer platform?",
+    "Are there measured sensor-fusion, VLM or motion-control workloads on silicon, and when could engineering samples exist?"
+  ],
+  "canadaRelevance": "Canadian robotics and embedded silicon teams may track INTELPRO's architecture as a future Taiwan compute path, but should not treat the announcement as a currently sourceable module or a validated alternative to shipping products.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "tenstorrent-tt-ascalon-risc-v-ip-availability",
+    "nuvoton-m3351-5v-cortex-m33-robotics-control",
+    "aaeon-boxer-8653ai-plus-multicamera-edge-ai"
+  ],
+  "relatedTechnologies": [
+    "RISC-V Vector",
+    "NPU IP",
+    "Robotics SoC",
+    "Edge transformer inference"
+  ],
+  "corrections": [],
+  "sourceName": "Andes Technology official announcement, November 18, 2026",
+  "sourceUrl": "https://www.andestech.com/en/2026/11/18/intelpro-adopts-andes-ax46mpv-flagship-multicore-vector-processor-and-andesaire-andla-i370-to-power-next-generation-heterogeneous-ai-and-robotics-solutions/",
+  "additionalSources": [
+    {
+      "name": "Andes prior AX46MPV commercialization context, December 2025",
+      "url": "https://www.andestech.com/en/2025/12/09/andes-announces-first-customer-tape-out-delivery-of-the-ax46mpv-for-cloud-ai-acceleration/"
+    },
+    {
+      "name": "Andes press-release archive for prior I370 v2.0 introduction",
+      "url": "https://www.andestech.com/en/category/press-release/"
+    }
+  ],
+  "sourceNote": "Original FlyPig AI analysis of Andes's first-party announcement, not a verification of an INTELPRO chip or delivery. The disclosed relationship is between Andes and INTELPRO, not FlyPig. IP performance/configuration claims remain vendor descriptions.",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-11-23",
+    "action": "highlight",
+    "sourceVerified": true,
+    "mediaRights": "Original FlyPig AI-owned infographic generated by repository SVG/PNG generator from independently typeset facts; no manufacturer images or logos used",
+    "findings": [
+      "The named technology adoption is first-party disclosed, but no INTELPRO silicon tape-out, pricing, reference board, production or shipment is verified.",
+      "IP configuration claims are not independent robot benchmark results; earlier AX46MPV and I370 announcements are separated from the new integrator adoption."
+    ]
+  },
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/andes-intelpro-riscv-i370-robotics-ip-adoption.png",
+    "socialSrc": "/images/signals/og/andes-intelpro-riscv-i370-robotics-ip-adoption.png",
+    "alt": "Original FlyPig AI editorial infographic mapping the Andes RISC-V vector CPU and I370 NPU IP selection to a planned INTELPRO robot platform.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.andestech.com/en/2026/11/18/intelpro-adopts-andes-ax46mpv-flagship-multicore-vector-processor-and-andesaire-andla-i370-to-power-next-generation-heterogeneous-ai-and-robotics-solutions/",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/andes-intelpro-riscv-i370-robotics-ip-adoption.svg"
+    }
+  }
+}

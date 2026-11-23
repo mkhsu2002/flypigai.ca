@@ -1,0 +1,102 @@
+{
+  "eventId": "EVT-2026-0093",
+  "slug": "auo-daaz-smart-cockpit-ces2027-preview",
+  "publicationStatus": "published",
+  "sourcePublishedAt": "2026-11-12",
+  "publishedAt": "2026-11-23",
+  "modifiedAt": "2026-11-23",
+  "supplier": "AUO Mobility Solutions",
+  "category": "Automotive HMI · Zonal Architecture",
+  "title": "AUO's DaaZ Concept Puts Vehicle Displays Closer to Zonal Control",
+  "seoTitle": "AUO DaaZ: Smart Cockpit 2027 Zonal HMI Preview",
+  "socialTitle": "AUO DaaZ Smart Cockpit 2027",
+  "seoDescription": "AUO plans to show DaaZ at CES 2027, framing displays as points for cabin sensing and control. Hardware, interfaces and production status remain undisclosed.",
+  "dek": "A CES 2027 preview puts the display into the vehicle electronics architecture conversation, but gives engineers few of the details needed for a production design.",
+  "summary": "In a November 12 preview, AUO Mobility Solutions introduced the DaaZ name for Display-as-a-Zonal, a proposed integration role for automotive displays and HMIs. The company plans to present it alongside Smart Cockpit 2027 and SatGlass at CES on January 6–9, 2027. This is a future exhibition preview, not evidence of a shipping zonal controller, an automotive design win or a fully specified module.",
+  "keyFacts": [
+    "DaaZ: Display-as-a-Zonal",
+    "CES dates: January 6 to 9, 2027",
+    "Product SKU and silicon: not given"
+  ],
+  "whyItMatters": [
+    "Automotive display modules increasingly interact with sensing and control; moving them into a zonal architecture changes wiring, compute ownership and integration responsibilities.",
+    "A display-oriented supplier describing cross-domain electronics is worth watching, but a named concept does not yet establish a qualified electronic control unit or tested software stack.",
+    "Canadian automotive engineering teams should distinguish architectural direction from components they can actually specify, validate and purchase today."
+  ],
+  "reporting": [
+    {
+      "heading": "AUO reframes the screen as an electronics node",
+      "paragraphs": [
+        "AUO Mobility Solutions says its CES 2027 presentation will organize around intelligent interaction, computing and connectivity. Within that framing, DaaZ gives a name to a display/HMI role that also encompasses sensing, device control and local computing. Instead of being a passive endpoint for information from another controller, a screen assembly could become one of the points where cabin functions are integrated into the wider electrical/electronic architecture.",
+        "That shift raises engineering questions beyond brightness and touch accuracy. A zonal display node needs a defined relationship to vehicle networks, power states, safety partitions and software updates. AUO's public preview does not give a block diagram, processor identification, interface bandwidth, supported operating system, functional safety target or thermal limits. It is consequently too early to judge how much electronics consolidation the approach can achieve."
+      ]
+    },
+    {
+      "heading": "A scheduled CES demonstration is not commercialization",
+      "paragraphs": [
+        "The official November 12 statement describes what AUO Mobility Solutions intends to showcase in Las Vegas on January 6–9, 2027. It also mentions a large-format Micro LED cockpit presentation and SatGlass, the company's glass-integrated satellite connectivity concept. The combination suggests that AUO wants to be considered for integrated cockpit subsystems rather than only individual panels.",
+        "The announced exhibition is still in the future as of this publication. No demonstration outcome, production-ready DaaZ ordering number, customer design win, confirmed vehicle platform or shipment date is established by the announcement. Earlier zonal and antenna-related positioning should not be counted as newly launched silicon or an additional commercial adoption."
+      ]
+    },
+    {
+      "heading": "The design-in test is the boundary between domains",
+      "paragraphs": [
+        "An automaker or Tier 1 evaluating a zonal HMI will need clarity on which functions reside in the display assembly, which remain under a central compute platform and which interfaces carry sensor or control data. Security update authority, wake-up behavior, fault containment, latency and electromagnetic compatibility could matter more than an appealing concept diagram.",
+        "Procurement questions remain equally open: Is DaaZ a design service, an integrated ECU, a reference architecture or a future product family? AUO has not provided public answers about specific components, samples, licensing, pricing or development-kit availability. A first useful follow-up is to request a block diagram and integration responsibility matrix after CES."
+      ]
+    }
+  ],
+  "flypigTake": "DaaZ is an architectural signal, not yet a buyable part. It may become important if AUO can show how display, sensing and control functions share a validated zonal node. For now, design teams should track interfaces and responsibility boundaries rather than assuming system consolidation has been proven.",
+  "productStatus": "AUO announced a planned CES 2027 demonstration for January 6–9, 2027. No public DaaZ SKU, EVK, sample schedule, mass-production confirmation, pricing, customer designation or shipment evidence was verified.",
+  "openQuestions": [
+    "Does DaaZ refer to a hardware ECU, a reference architecture, a licensed integration approach or a future module family?",
+    "Which processors, network interfaces, safety/security mechanisms and software lifecycle tools sit inside the proposed zone?",
+    "What actually appears at CES 2027, and are any commercial samples or customer programs disclosed there?"
+  ],
+  "canadaRelevance": "Canadian automotive Tier 1 suppliers, vehicle electronics teams and HMI integrators can use the DaaZ preview as a prompt to study zonal display integration, while reserving component selection until technical data emerges.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "himax-hx83196-hx83197-edp-tddi-automotive",
+    "auo-micro-led-cpo-glass-core-ai-infrastructure",
+    "himax-sid-2026-multi-output-tcon-slim-3d"
+  ],
+  "relatedTechnologies": [
+    "Automotive HMI",
+    "Zonal E/E architecture",
+    "Micro LED",
+    "Sensing and control"
+  ],
+  "corrections": [],
+  "sourceName": "AUO Mobility Solutions, CES 2027 preview announced November 12, 2026",
+  "sourceUrl": "https://www.auo.com/en-global/New_Archive/detail/News_Archive_Product_20261112",
+  "sourceNote": "FlyPig AI independently interprets AUO's exhibition preview. A proposed CES showcase is not a verified product launch, supplier agreement or automaker design win. The announcement provides no detailed DaaZ hardware specification.",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-11-23",
+    "action": "highlight",
+    "sourceVerified": true,
+    "mediaRights": "Original FlyPig AI-owned infographic generated by repository SVG/PNG generator from independently typeset facts; no manufacturer images or logos used",
+    "findings": [
+      "CES 2027 remains a future event; no claim of completed demonstration, shipping product or customer adoption is made.",
+      "DaaZ is a named architecture concept without published SKU or design-in details; its implementation is expressly uncertain."
+    ]
+  },
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/auo-daaz-smart-cockpit-ces2027-preview.png",
+    "socialSrc": "/images/signals/og/auo-daaz-smart-cockpit-ces2027-preview.png",
+    "alt": "Original FlyPig AI editorial infographic outlining the DaaZ display, sensing and control concept and marking CES 2027 as a planned preview.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.auo.com/en-global/New_Archive/detail/News_Archive_Product_20261112",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/auo-daaz-smart-cockpit-ces2027-preview.svg"
+    }
+  }
+}

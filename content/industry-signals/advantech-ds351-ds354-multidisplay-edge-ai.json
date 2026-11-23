@@ -1,0 +1,108 @@
+{
+  "eventId": "EVT-2026-0092",
+  "slug": "advantech-ds351-ds354-multidisplay-edge-ai",
+  "publicationStatus": "published",
+  "sourcePublishedAt": "2026-11-11",
+  "publishedAt": "2026-11-23",
+  "modifiedAt": "2026-11-23",
+  "supplier": "Advantech",
+  "category": "Embedded Signage · Edge AI",
+  "title": "Advantech's DS-351 and DS-354 Split the Roles of Display Playback and Local AI",
+  "seoTitle": "Advantech DS-351 vs DS-354: Signage and Edge AI",
+  "socialTitle": "Advantech DS-351 vs DS-354",
+  "seoDescription": "Advantech's DS-351 and DS-354 target multi-display installations, but only the DS-354 includes an NPU. Airflow and software remain design-in questions.",
+  "dek": "Two similarly sized Ryzen Embedded players address different jobs: dependable multi-screen presentation and signage combined with local AI inference.",
+  "summary": "Advantech has introduced the DS-351 and DS-354 as compact fanless players for digital signage and interactive terminals. The key distinction is not the screen count alone: the DS-351 prioritizes Ryzen R2000-based playback, while the DS-354 adds Ryzen Embedded 8000 processing with an XDNA NPU. The manufacturer's webpage carries a November 11 news date and an October 11 dateline, so the exact initial publication date remains unresolved.",
+  "keyFacts": [
+    "DS-351: Ryzen Embedded R2000",
+    "DS-354: integrated XDNA NPU",
+    "Up to 16 NPU TOPS: vendor claim"
+  ],
+  "whyItMatters": [
+    "A Canadian kiosk integrator can size compute according to the application instead of paying for AI hardware when only synchronized screen playback is required.",
+    "The DS-354 combines four display outputs with an advertised on-device accelerator, but camera analytics still requires compatible inputs, models and runtime software.",
+    "Fanless packaging is not equivalent to operation without thermal design: the stated wide-temperature envelope explicitly assumes moving air."
+  ],
+  "reporting": [
+    {
+      "heading": "One enclosure size, two different engineering jobs",
+      "paragraphs": [
+        "Advantech's official product news describes both machines as 180 × 177 × 38 mm fanless embedded computers with 12–24 VDC input. The DS-351 uses AMD Ryzen Embedded R2000 processors, DDR4 memory and a display-oriented configuration. For the R2314 and R2514 variants, the company lists four HDMI outputs; the R2312 variant is limited to three. Integrators should therefore check the exact processor configuration instead of assuming every DS-351 can drive four screens.",
+        "The DS-354 moves to the Ryzen Embedded 8000 family, with up to eight CPU cores, DDR5 capacity and an AMD XDNA neural processing unit. Advantech quotes up to 16 TOPS for the NPU and identifies one HDMI output capable of up to 8K alongside three additional 4K-class outputs. Those are platform specifications and a supplier performance figure, not an independently measured result for a deployed vision application."
+      ]
+    },
+    {
+      "heading": "The design trade-off is orchestration, not just TOPS",
+      "paragraphs": [
+        "A railway information panel or restaurant menu player may need reliable display synchronization, remote recovery and predictable software updates more than neural inference. A retail kiosk that performs people counting or queue estimation introduces a different chain of dependencies: camera selection, model compatibility, inference latency, privacy handling and an interface between analytics and the signage application. None of those tasks is solved by an NPU rating alone.",
+        "Advantech names DeviceOn and SignageCMS for the DS-351 and EdgeBMC for the DS-354. The distinction invites a practical software assessment: Which management functions are licensed, supported and testable on the precise ordered model? Can a failed image or analytics process be recovered without a technician? And does the combined signage-and-analytics load leave sufficient thermal margin?"
+      ]
+    },
+    {
+      "heading": "A date discrepancy and procurement questions remain",
+      "paragraphs": [
+        "The official news page is labeled November 11, 2026, but its introductory dateline says October 11, 2026. FlyPig uses the page's visible news date for this record and does not treat it as proof of the first-ever announcement. Likewise, named products and technical specifications do not establish Canadian inventory, confirmed mass-production shipments, unit prices or lead times.",
+        "Both units are described as operating from −20 to 60°C only with 0.7 m/s airflow. Any sealed outdoor sign or behind-panel installation needs its own airflow and enclosure test. Before design-in, buyers should obtain ordering codes, full thermal specifications, supported graphics/NPU drivers, image-recovery procedure, certifications and a quotation for their target country."
+      ]
+    }
+  ],
+  "flypigTake": "The DS-351 and DS-354 illustrate a useful decision boundary: purchase an NPU when a validated local model adds value, not merely because the installation has several screens. The most valuable comparison is total software maintenance, thermal margin and deployment cost across the exact processor variants.",
+  "productStatus": "The manufacturer published model information and sales contact guidance. As reviewed November 23, stock, Canadian fulfillment, production volume, MOQ, pricing and lead times are unverified. The official article has conflicting October and November dates.",
+  "openQuestions": [
+    "Which DS-351 CPU variants, BIOS revisions and graphics drivers support each required display arrangement?",
+    "What inference throughput, sustained thermals and software runtime are achievable on the exact DS-354 configuration under concurrent playback?",
+    "What ordering numbers, Canadian approvals, pricing, availability and remote-management license terms apply?"
+  ],
+  "canadaRelevance": "Canadian retail technology integrators, transit-information contractors and self-service terminal OEMs can compare a playback-only computer against an AI-capable signage box without assuming the two are interchangeable.",
+  "author": {
+    "name": "FlyPig AI Editorial Desk",
+    "url": "/editorial-policy",
+    "type": "Organization"
+  },
+  "relatedSignals": [
+    "advantech-air-411-bartlett-lake-multi-accelerator-edge-ai",
+    "advantech-weda-1-1-edge-ai-fleet-management",
+    "aaeon-acp-4000-jetson-ai-panel-pc-series"
+  ],
+  "relatedTechnologies": [
+    "AMD XDNA",
+    "Digital signage",
+    "Edge inference",
+    "Industrial HMI"
+  ],
+  "corrections": [],
+  "sourceName": "Advantech official product news, page dated November 11, 2026",
+  "sourceUrl": "https://www.advantech.com/en-us/resources/news/advantech-introduces-ds-351-and-ds-354-amd-ryzen-embedded-platforms-for-multi-display-digital-signage-and-edge-ai",
+  "additionalSources": [
+    {
+      "name": "Advantech DS-354 illustrative application note",
+      "url": "https://www.advantech.com/ms-my/resources/case-study/advantech-ds-354-for-ai-enabled-retail-wayfinding-and-queue-analytics"
+    }
+  ],
+  "sourceNote": "Original FlyPig AI analysis of Advantech's public materials. The source shows a November 11 page date and an October 11 dateline. Specifications and 16 TOPS are manufacturer claims; coverage does not indicate product endorsement, partner status or stock.",
+  "audit": {
+    "riskLevel": "medium",
+    "reviewedAt": "2026-11-23",
+    "action": "highlight",
+    "sourceVerified": true,
+    "mediaRights": "Original FlyPig AI-owned infographic generated by repository SVG/PNG generator from independently typeset facts; no manufacturer images or logos used",
+    "findings": [
+      "Official page has a material date inconsistency (November 11 index vs October 11 dateline); both dates are disclosed.",
+      "16 TOPS and thermal range are vendor specifications rather than independent system-level benchmarks; availability remains unverified."
+    ]
+  },
+  "heroVisual": {
+    "kind": "original_infographic",
+    "src": "/images/signals/advantech-ds351-ds354-multidisplay-edge-ai.png",
+    "socialSrc": "/images/signals/og/advantech-ds351-ds354-multidisplay-edge-ai.png",
+    "alt": "Original FlyPig AI editorial infographic contrasting DS-351 signage processing, DS-354 local AI capability and the specified airflow condition.",
+    "width": 1600,
+    "height": 1000,
+    "credit": "Original editorial graphic by FlyPig AI",
+    "sourceUrl": "https://www.advantech.com/en-us/resources/news/advantech-introduces-ds-351-and-ds-354-amd-ryzen-embedded-platforms-for-multi-display-digital-signage-and-edge-ai",
+    "assetRights": {
+      "status": "owned",
+      "evidence": "Generated by scripts/generate-signal-heroes.mjs; editable source: public/images/signals/source/advantech-ds351-ds354-multidisplay-edge-ai.svg"
+    }
+  }
+}
